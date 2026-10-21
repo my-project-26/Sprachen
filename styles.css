@@ -411,3 +411,5 @@ body[data-view="learn"] .toast { bottom: calc(env(safe-area-inset-bottom) + 24px
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 .h-gap { margin-top: 14px; }
+.key-box { background: var(--marker-soft); border-radius: 14px; padding: 12px; margin: 12px 0 4px; }
+.key-box p { margin: 0 0 8px; }

@@ -504,6 +504,15 @@ function storyNew() {
     }
     <label class="field"><span>Sprachniveau des Textes</span>
       <select id="lvl">${["B1", "B2", "C1"].map((L) => `<option ${L === lvl ? "selected" : ""}>${L}</option>`).join("")}</select></label>
+    ${
+      isStaticHost() && !settings().geminiKey && !settings().apiBase
+        ? `<div class="key-box">
+             <p class="small"><b>Für die KI fehlt noch dein Gemini-Key.</b> Kostenlos unter aistudio.google.com → „Get API key“. Er bleibt nur auf diesem Gerät.</p>
+             <div class="inline-form"><input id="gkeyInline" type="password" autocomplete="off" placeholder="AIza…">
+             <button class="btn ghost" id="gkeySave">Speichern</button></div>
+           </div>`
+        : ""
+    }
     <button class="btn primary big" id="gen">Mit KI erstellen</button>
     <p class="small muted" id="status"></p>
   </section>
@@ -515,6 +524,18 @@ function storyNew() {
     <button class="btn ghost" id="usePaste">Antwort übernehmen</button>
   </details>`;
 
+  const keySave = document.getElementById("gkeySave");
+  if (keySave)
+    keySave.onclick = () => {
+      const k = document.getElementById("gkeyInline").value.trim();
+      if (!k) return toast("Bitte den Key einfügen");
+      const st = S.getState();
+      st.settings.geminiKey = k;
+      st.settings.provider = "browser";
+      S.save();
+      toast("Key gespeichert");
+      storyNew();
+    };
   const level = () => document.getElementById("lvl").value;
   const finish = (data) => {
     // geübt werden die Übungswörter; die bekannten stehen nur im Glossar
