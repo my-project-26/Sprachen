@@ -1,0 +1,91 @@
+# Alltag – Kleidung, Körper, Familie, Wetter, Stadt, Zeit (B1)
+## B1
+clothes | Kleidung | n | I need new *clothes*. | Ich brauche neue *Kleidung*. | immer Plural
+jacket | Jacke | n | Take a warm *jacket*. | Nimm eine warme *Jacke* mit. |
+coat | Mantel | n | Hang your *coat* up. | Häng deinen *Mantel* auf. |
+trousers | Hose | n | These *trousers* are too long. | Diese *Hose* ist zu lang. | US: pants; immer Plural
+shirt | Hemd | n | He wore a white *shirt*. | Er trug ein weißes *Hemd*. |
+sweater | Pullover | n | I love this wool *sweater*. | Ich liebe diesen Woll*pullover*. | UK auch: jumper
+tie | Krawatte; binden | n | Do I need to wear a *tie*? | Muss ich eine *Krawatte* tragen? |
+scarf | Schal | n | It's cold, wear a *scarf*. | Es ist kalt, trag einen *Schal*. |
+gloves | Handschuhe | n | I lost my *gloves*. | Ich habe meine *Handschuhe* verloren. |
+pocket | Tasche (an Kleidung) | n | The keys are in my *pocket*. | Die Schlüssel sind in meiner *Tasche*. |
+wear | tragen (Kleidung) | v | She always *wears* black. | Sie *trägt* immer Schwarz. | wear – wore – worn
+fashion | Mode | n | He's not interested in *fashion*. | Er interessiert sich nicht für *Mode*. |
+pattern | Muster | n | I like the *pattern* on your dress. | Mir gefällt das *Muster* auf deinem Kleid. |
+striped | gestreift | adj | He wore a *striped* shirt. | Er trug ein *gestreiftes* Hemd. |
+tight | eng | adj | These jeans are too *tight*. | Diese Jeans ist zu *eng*. |
+loose | locker, weit | adj | I prefer *loose* clothes. | Ich mag *weite* Kleidung lieber. |
+shoulder | Schulter | n | My *shoulder* hurts. | Meine *Schulter* tut weh. |
+knee | Knie | n | I hurt my *knee*. | Ich habe mir das *Knie* verletzt. |
+ankle | Knöchel | n | She twisted her *ankle*. | Sie hat sich den *Knöchel* verstaucht. |
+wrist | Handgelenk | n | He wears a watch on his left *wrist*. | Er trägt eine Uhr am linken *Handgelenk*. |
+chest | Brust(korb) | n | I have a pain in my *chest*. | Ich habe Schmerzen in der *Brust*. |
+stomach | Magen, Bauch | n | My *stomach* hurts. | Mein *Bauch* tut weh. |
+skin | Haut | n | She has very pale *skin*. | Sie hat sehr helle *Haut*. |
+bone | Knochen | n | He broke a *bone* in his foot. | Er hat sich einen *Knochen* im Fuß gebrochen. |
+brain | Gehirn | n | The *brain* needs sleep. | Das *Gehirn* braucht Schlaf. |
+heart | Herz | n | Exercise is good for your *heart*. | Sport ist gut fürs *Herz*. |
+relative | Verwandte(r) | n | We visited *relatives* in Italy. | Wir besuchten *Verwandte* in Italien. |
+parents | Eltern | n | My *parents* live nearby. | Meine *Eltern* wohnen in der Nähe. | False Friend: relatives = Verwandte
+cousin | Cousin(e) | n | My *cousin* is getting married. | Meine *Cousine* heiratet. |
+nephew | Neffe | n | My *nephew* is five. | Mein *Neffe* ist fünf. | niece = Nichte
+aunt | Tante | n | My *aunt* lives in Canada. | Meine *Tante* wohnt in Kanada. |
+uncle | Onkel | n | My *uncle* has a farm. | Mein *Onkel* hat einen Bauernhof. |
+grandchild | Enkelkind | n | They have six *grandchildren*. | Sie haben sechs *Enkelkinder*. |
+twin | Zwilling | n | She has a *twin* sister. | Sie hat eine *Zwillings*schwester. |
+wedding | Hochzeit | n | We're going to a *wedding*. | Wir gehen auf eine *Hochzeit*. |
+birthday | Geburtstag | n | Happy *birthday*! | Alles Gute zum *Geburtstag*! |
+funeral | Beerdigung | n | The *funeral* is on Friday. | Die *Beerdigung* ist am Freitag. |
+sunny | sonnig | adj | It's *sunny* today. | Es ist heute *sonnig*. |
+cloudy | bewölkt | adj | It's *cloudy* but warm. | Es ist *bewölkt*, aber warm. |
+windy | windig | adj | It's very *windy* at the coast. | An der Küste ist es sehr *windig*. |
+freezing | eiskalt | adj | It's *freezing* outside! | Draußen ist es *eiskalt*! |
+shower | (Regen-)Schauer; Dusche | n | There will be *showers* later. | Später gibt es *Schauer*. |
+fog | Nebel | n | The *fog* was very thick. | Der *Nebel* war sehr dicht. |
+snow | Schnee; schneien | n | We had a lot of *snow*. | Wir hatten viel *Schnee*. |
+ice | Eis | n | Be careful, there's *ice* on the road. | Vorsicht, auf der Straße ist *Glatteis*. |
+degree | Grad | n | It's 30 *degrees*. | Es sind 30 *Grad*. |
+season | Jahreszeit; Saison | n | Autumn is my favourite *season*. | Herbst ist meine Lieblings*jahreszeit*. |
+city centre | Innenstadt | n | We live near the *city centre*. | Wir wohnen nahe der *Innenstadt*. | US: downtown
+square | Platz | n | Let's meet in the main *square*. | Treffen wir uns auf dem Haupt*platz*. |
+corner | Ecke | n | The shop is on the *corner*. | Der Laden ist an der *Ecke*. |
+bridge | Brücke | n | Cross the *bridge*. | Geh über die *Brücke*. |
+building | Gebäude | n | It's the tallest *building* in town. | Es ist das höchste *Gebäude* der Stadt. |
+town hall | Rathaus | n | The *town hall* is closed today. | Das *Rathaus* ist heute geschlossen. |
+library | Bücherei, Bibliothek | n | I borrowed it from the *library*. | Ich habe es aus der *Bücherei* ausgeliehen. | False Friend: ≠ Libreria
+neighbourhood | Viertel, Nachbarschaft | n | It's a nice *neighbourhood*. | Es ist ein schönes *Viertel*. | US: neighborhood
+village | Dorf | n | I grew up in a small *village*. | Ich bin in einem kleinen *Dorf* aufgewachsen. |
+countryside | Land (ländliche Gegend) | n | We love the *countryside*. | Wir lieben das *Land*. |
+pavement | Gehweg, Bürgersteig | n | Don't park on the *pavement*. | Park nicht auf dem *Gehweg*. | US: sidewalk
+sign | Schild; unterschreiben | n | Follow the *signs* to the airport. | Folg den *Schildern* zum Flughafen. |
+noise | Lärm, Geräusch | n | What's that *noise*? | Was ist das für ein *Geräusch*? |
+century | Jahrhundert | n | The church is from the 12th *century*. | Die Kirche stammt aus dem 12. *Jahrhundert*. |
+decade | Jahrzehnt | n | Prices have doubled in a *decade*. | Die Preise haben sich in einem *Jahrzehnt* verdoppelt. |
+weekday | Wochentag, Werktag | n | The shop is open on *weekdays*. | Der Laden ist an *Werktagen* geöffnet. |
+midnight | Mitternacht | n | We got home after *midnight*. | Wir kamen nach *Mitternacht* nach Hause. |
+fortnight | zwei Wochen | n | I'll be away for a *fortnight*. | Ich bin *zwei Wochen* weg. | britisch
+nowadays | heutzutage | adv | *Nowadays*, everyone has a phone. | *Heutzutage* hat jeder ein Handy. |
+soon | bald | adv | See you *soon*. | Bis *bald*. |
+meanwhile | inzwischen | adv | *Meanwhile*, the others had left. | *Inzwischen* waren die anderen gegangen. |
+suddenly | plötzlich | adv | *Suddenly*, the lights went out. | *Plötzlich* ging das Licht aus. |
+at once | sofort | phrase | Come here *at once*! | Komm *sofort* her! |
+in time | rechtzeitig | phrase | We arrived just *in time*. | Wir kamen gerade noch *rechtzeitig*. |
+for ages | seit Ewigkeiten | phrase | I haven't seen her *for ages*. | Ich habe sie *seit Ewigkeiten* nicht gesehen. |
+the day after tomorrow | übermorgen | phrase | I'll call you *the day after tomorrow*. | Ich rufe dich *übermorgen* an. |
+key | Schlüssel | n | I can't find my *keys*. | Ich finde meine *Schlüssel* nicht. |
+wallet | Geldbörse | n | I left my *wallet* at home. | Ich habe meine *Geldbörse* zu Hause gelassen. |
+umbrella | Regenschirm | n | Take an *umbrella*. | Nimm einen *Regenschirm* mit. |
+glasses | Brille | n | I need my *glasses* to read. | Zum Lesen brauche ich meine *Brille*. | immer Plural
+tool | Werkzeug | n | Do you have the right *tools*? | Hast du das richtige *Werkzeug*? |
+battery | Batterie | n | The remote needs new *batteries*. | Die Fernbedienung braucht neue *Batterien*. |
+envelope | Briefumschlag | n | Put the letter in an *envelope*. | Steck den Brief in einen *Umschlag*. |
+stamp | Briefmarke | n | I need a *stamp* for this letter. | Ich brauche eine *Briefmarke* für diesen Brief. |
+form | Formular | n | Please fill in this *form*. | Bitte füllen Sie dieses *Formular* aus. |
+sign | unterschreiben | v | Please *sign* here. | Bitte hier *unterschreiben*. | Unterschrift = signature
+signature | Unterschrift | n | I need your *signature*. | Ich brauche Ihre *Unterschrift*. |
+queue | anstehen | v | We *queued* for an hour. | Wir haben eine Stunde *angestanden*. |
+hurry | Eile | n | I'm in a *hurry*. | Ich bin in *Eile*. |
+habit | Gewohnheit | n | It's a bad *habit*. | Das ist eine schlechte *Angewohnheit*. |
+routine | Routine, Alltag | n | I like my daily *routine*. | Ich mag meine tägliche *Routine*. |
+chore | lästige Pflicht, Hausarbeit | n | Ironing is my least favourite *chore*. | Bügeln ist meine unliebste *Hausarbeit*. |
