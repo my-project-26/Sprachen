@@ -1,0 +1,58 @@
+# Bildung & Lernen – B2/C1
+## B2
+curriculum | Lehrplan | n | The *curriculum* includes coding. | Der *Lehrplan* umfasst Programmieren. |
+tuition fees | Studiengebühren | n | *Tuition fees* are high in the UK. | Die *Studiengebühren* in Großbritannien sind hoch. |
+scholarship | Stipendium | n | She won a *scholarship*. | Sie hat ein *Stipendium* bekommen. |
+graduate | den Abschluss machen; Absolvent(in) | v | He *graduated* in 2015. | Er hat 2015 seinen *Abschluss* gemacht. |
+undergraduate | Student(in) im Bachelor | n | She's an *undergraduate* at Oxford. | Sie studiert im *Bachelor* in Oxford. |
+postgraduate | Masterstudent(in) | n | *Postgraduate* courses are expensive. | *Master*studiengänge sind teuer. |
+thesis | Abschlussarbeit | n | He's writing his *thesis*. | Er schreibt seine *Abschlussarbeit*. |
+essay | Aufsatz | n | Write an *essay* of 500 words. | Schreib einen *Aufsatz* mit 500 Wörtern. |
+assignment | Aufgabe, Hausarbeit | n | The *assignment* is due Monday. | Die *Hausarbeit* ist Montag fällig. |
+assessment | Bewertung, Prüfung | n | There's a final *assessment*. | Es gibt eine Abschluss*prüfung*. |
+enrol | sich einschreiben | v | I *enrolled* in an evening class. | Ich habe mich für einen Abendkurs *eingeschrieben*. | US: enroll
+attendance | Anwesenheit | n | *Attendance* is compulsory. | *Anwesenheit* ist Pflicht. |
+compulsory | Pflicht-, verpflichtend | adj | English is a *compulsory* subject. | Englisch ist ein *Pflicht*fach. |
+optional | freiwillig, Wahl- | adj | The course is *optional*. | Der Kurs ist *freiwillig*. |
+tutor | Tutor(in), Nachhilfelehrer(in) | n | I have a private *tutor*. | Ich habe einen *Nachhilfelehrer*. |
+lecturer | Dozent(in) | n | Our *lecturer* is very good. | Unsere *Dozentin* ist sehr gut. |
+seminar | Seminar | n | The *seminar* starts at ten. | Das *Seminar* beginnt um zehn. |
+academic | akademisch | adj | She has an *academic* background. | Sie hat einen *akademischen* Hintergrund. |
+research | forschen | v | She *researches* climate change. | Sie *forscht* zum Klimawandel. |
+plagiarism | Plagiat | n | *Plagiarism* is taken very seriously. | *Plagiate* werden sehr ernst genommen. |
+cheat | schummeln | v | He was caught *cheating* in the exam. | Er wurde beim *Schummeln* erwischt. |
+gifted | begabt | adj | She's a *gifted* musician. | Sie ist eine *begabte* Musikerin. |
+literacy | Lese- und Schreibfähigkeit | n | *Literacy* rates have improved. | Die *Alphabetisierungs*rate hat sich verbessert. |
+bilingual | zweisprachig | adj | Their kids are *bilingual*. | Ihre Kinder sind *zweisprachig*. |
+native speaker | Muttersprachler(in) | n | I practise with a *native speaker*. | Ich übe mit einem *Muttersprachler*. |
+accent | Akzent | n | She has a slight German *accent*. | Sie hat einen leichten deutschen *Akzent*. |
+idiom | Redewendung | n | English has many *idioms*. | Englisch hat viele *Redewendungen*. |
+phrasal verb | Phrasal Verb | n | "Give up" is a *phrasal verb*. | „Give up“ ist ein *Phrasal Verb*. |
+self-study | Selbststudium | n | I learn mainly through *self-study*. | Ich lerne hauptsächlich im *Selbststudium*. |
+concentrate | sich konzentrieren | v | I can't *concentrate*. | Ich kann mich nicht *konzentrieren*. |
+motivation | Motivation | n | *Motivation* is key. | *Motivation* ist entscheidend. |
+## C1
+pedagogy | Pädagogik | n | Modern *pedagogy* focuses on the learner. | Moderne *Pädagogik* stellt den Lernenden in den Mittelpunkt. |
+proficiency | Beherrschung, Sprachkompetenz | n | She has a high *proficiency* in English. | Sie *beherrscht* Englisch auf hohem Niveau. |
+fluency | flüssiges Sprechen | n | *Fluency* comes with practice. | *Flüssigkeit* beim Sprechen kommt mit Übung. |
+rote learning | stures Auswendiglernen | n | *Rote learning* isn't very effective. | *Stures Auswendiglernen* ist nicht sehr effektiv. |
+cram | pauken | v | I *crammed* all night for the exam. | Ich habe die ganze Nacht für die Prüfung *gepaukt*. |
+retain | behalten (im Gedächtnis) | v | I can't *retain* new words. | Ich kann mir neue Wörter nicht *merken*. |
+grasp | begreifen; Verständnis | v | He quickly *grasped* the idea. | Er *begriff* die Idee schnell. |
+comprehend | verstehen, begreifen | v | I couldn't *comprehend* the text. | Ich konnte den Text nicht *verstehen*. |
+articulate | sich gut ausdrücken können; artikulieren | adj | She's very *articulate*. | Sie kann sich sehr gut *ausdrücken*. |
+eloquent | wortgewandt | adj | He gave an *eloquent* speech. | Er hielt eine *wortgewandte* Rede. |
+erudite | gelehrt, gebildet | adj | She's an *erudite* scholar. | Sie ist eine *gelehrte* Wissenschaftlerin. |
+scholar | Gelehrte(r), Wissenschaftler(in) | n | He's a respected *scholar*. | Er ist ein angesehener *Gelehrter*. |
+dissertation | Dissertation | n | She's finishing her *dissertation*. | Sie stellt ihre *Dissertation* fertig. |
+peer review | Begutachtung (durch Fachkollegen) | n | The paper passed *peer review*. | Der Artikel hat das *Peer-Review* bestanden. |
+syllabus | Lehrplan (Kurs) | n | It's on the *syllabus*. | Das steht auf dem *Lehrplan*. |
+vocational | berufsbildend | adj | He did a *vocational* course. | Er machte eine *Berufsausbildung*. |
+apprenticeship | Lehre, Ausbildung | n | She did an *apprenticeship* as an electrician. | Sie machte eine *Ausbildung* zur Elektrikerin. |
+lifelong learning | lebenslanges Lernen | n | *Lifelong learning* keeps you sharp. | *Lebenslanges Lernen* hält geistig fit. |
+aptitude | Begabung, Eignung | n | He has an *aptitude* for languages. | Er hat eine *Begabung* für Sprachen. |
+intellectual | intellektuell | adj | It's an *intellectual* challenge. | Es ist eine *intellektuelle* Herausforderung. |
+inquisitive | wissbegierig | adj | She has an *inquisitive* mind. | Sie hat einen *wissbegierigen* Geist. |
+learning curve | Lernkurve | n | It was a steep *learning curve*. | Es war eine steile *Lernkurve*. |
+brush up on | auffrischen | v | I need to *brush up on* my French. | Ich muss mein Französisch *auffrischen*. |
+pick up | aufschnappen, lernen | v | I *picked up* some Spanish on holiday. | Ich habe im Urlaub etwas Spanisch *aufgeschnappt*. |
