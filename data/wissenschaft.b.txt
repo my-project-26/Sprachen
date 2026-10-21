@@ -1,0 +1,63 @@
+# Wissenschaft & Technik – B2/C1
+## B2
+analyse | analysieren | v | We *analysed* the data. | Wir haben die Daten *analysiert*. | US: analyze
+analysis | Analyse | n | The *analysis* took weeks. | Die *Analyse* dauerte Wochen. | Plural: analyses
+method | Methode | n | They used a new *method*. | Sie verwendeten eine neue *Methode*. |
+sample | Probe, Stichprobe | n | They took a blood *sample*. | Sie nahmen eine Blut*probe*. |
+survey | Umfrage | n | A *survey* of 1,000 people. | Eine *Umfrage* unter 1.000 Menschen. |
+statistics | Statistik | n | The *statistics* are clear. | Die *Statistik* ist eindeutig. |
+average | Durchschnitt | n | The *average* is 42. | Der *Durchschnitt* liegt bei 42. |
+percentage | Prozentsatz | n | A high *percentage* agreed. | Ein hoher *Prozentsatz* stimmte zu. |
+factor | Faktor | n | Cost is an important *factor*. | Kosten sind ein wichtiger *Faktor*. |
+trend | Trend | n | It's a growing *trend*. | Es ist ein wachsender *Trend*. |
+predict | vorhersagen | v | Nobody could *predict* the result. | Niemand konnte das Ergebnis *vorhersagen*. |
+observe | beobachten | v | Scientists *observed* the stars. | Wissenschaftler *beobachteten* die Sterne. |
+confirm | bestätigen | v | The study *confirmed* the theory. | Die Studie *bestätigte* die Theorie. |
+research | Forschung | n | *Research* shows that sleep matters. | *Forschung* zeigt, dass Schlaf wichtig ist. |
+study | Studie | n | A new *study* was published. | Eine neue *Studie* wurde veröffentlicht. |
+genetic | genetisch | adj | It's a *genetic* condition. | Es ist eine *genetische* Erkrankung. |
+gene | Gen | n | Some *genes* affect height. | Manche *Gene* beeinflussen die Körpergröße. |
+cell | Zelle | n | The body has billions of *cells*. | Der Körper hat Milliarden von *Zellen*. |
+chemical | chemisch; Chemikalie | adj | It's a *chemical* reaction. | Es ist eine *chemische* Reaktion. |
+substance | Substanz, Stoff | n | It's a toxic *substance*. | Es ist ein giftiger *Stoff*. |
+artificial intelligence | künstliche Intelligenz | n | *Artificial intelligence* is everywhere. | *Künstliche Intelligenz* ist überall. | kurz: AI
+algorithm | Algorithmus | n | The *algorithm* decides what you see. | Der *Algorithmus* entscheidet, was du siehst. |
+digital | digital | adj | We live in a *digital* world. | Wir leben in einer *digitalen* Welt. |
+network | Netzwerk | n | The *network* is down. | Das *Netzwerk* ist ausgefallen. |
+wireless | kabellos | adj | Is the mouse *wireless*? | Ist die Maus *kabellos*? |
+storage | Speicher(platz) | n | My phone has no *storage* left. | Mein Handy hat keinen *Speicherplatz* mehr. |
+backup | Sicherung, Backup | n | Make a *backup* of your files. | Mach eine *Sicherung* deiner Dateien. |
+crash | abstürzen | v | My laptop *crashed* again. | Mein Laptop ist wieder *abgestürzt*. |
+hacker | Hacker(in) | n | *Hackers* stole the data. | *Hacker* stahlen die Daten. |
+security | Sicherheit | n | Online *security* is important. | Online-*Sicherheit* ist wichtig. |
+innovation | Innovation | n | The company is known for *innovation*. | Die Firma ist für *Innovation* bekannt. |
+engineer | Ingenieur(in) | n | She's a software *engineer*. | Sie ist Software-*Ingenieurin*. |
+prototype | Prototyp | n | They built a *prototype*. | Sie bauten einen *Prototyp*. |
+gadget | technisches Spielzeug, Gerät | n | He loves new *gadgets*. | Er liebt neue *technische Spielereien*. |
+user-friendly | benutzerfreundlich | adj | The app is very *user-friendly*. | Die App ist sehr *benutzerfreundlich*. |
+## C1
+empirical evidence | empirische Belege | n | There's little *empirical evidence*. | Es gibt kaum *empirische Belege*. |
+correlation | Korrelation | n | There's a *correlation* between diet and health. | Es gibt eine *Korrelation* zwischen Ernährung und Gesundheit. |
+causation | Kausalität | n | Correlation is not *causation*. | Korrelation ist keine *Kausalität*. |
+variable | Variable | n | We controlled all *variables*. | Wir kontrollierten alle *Variablen*. |
+methodology | Methodik | n | The *methodology* was flawed. | Die *Methodik* war fehlerhaft. |
+quantitative | quantitativ | adj | It's a *quantitative* study. | Es ist eine *quantitative* Studie. | qualitative = qualitativ
+anomaly | Anomalie | n | The result was an *anomaly*. | Das Ergebnis war eine *Anomalie*. |
+validate | bestätigen, validieren | v | The results were *validated*. | Die Ergebnisse wurden *bestätigt*. |
+peer-reviewed | begutachtet | adj | It's a *peer-reviewed* journal. | Es ist eine *begutachtete* Fachzeitschrift. |
+groundbreaking | bahnbrechend | adj | It's *groundbreaking* research. | Es ist *bahnbrechende* Forschung. |
+cutting-edge | hochmodern | adj | They use *cutting-edge* technology. | Sie nutzen *hochmoderne* Technik. |
+obsolete | veraltet | adj | The software is *obsolete*. | Die Software ist *veraltet*. |
+automate | automatisieren | v | The process was *automated*. | Der Prozess wurde *automatisiert*. |
+encryption | Verschlüsselung | n | The app uses end-to-end *encryption*. | Die App nutzt Ende-zu-Ende-*Verschlüsselung*. |
+breach | Datenleck | n | There was a data *breach*. | Es gab ein Daten*leck*. |
+glitch | Störung, Panne | n | A technical *glitch* delayed the launch. | Eine technische *Störung* verzögerte den Start. |
+bandwidth | Bandbreite; Kapazität | n | I don't have the *bandwidth* for that. | Dafür habe ich keine *Kapazität*. | auch technisch
+interface | Schnittstelle, Oberfläche | n | The user *interface* is clean. | Die *Benutzeroberfläche* ist übersichtlich. |
+compatible | kompatibel | adj | Is it *compatible* with Mac? | Ist es mit Mac *kompatibel*? |
+infrastructure | Infrastruktur | n | The country invests in digital *infrastructure*. | Das Land investiert in digitale *Infrastruktur*. |
+synthesis | Synthese | n | The book is a *synthesis* of ideas. | Das Buch ist eine *Synthese* von Ideen. |
+conjecture | Vermutung | n | It's pure *conjecture*. | Das ist reine *Vermutung*. |
+discrepancy | Diskrepanz, Abweichung | n | There's a *discrepancy* in the data. | Es gibt eine *Abweichung* in den Daten. |
+extrapolate | hochrechnen, ableiten | v | We can't *extrapolate* from one study. | Aus einer Studie können wir nichts *ableiten*. |
+paradigm shift | Paradigmenwechsel | n | AI marks a *paradigm shift*. | KI markiert einen *Paradigmenwechsel*. |

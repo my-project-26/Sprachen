@@ -1,0 +1,57 @@
+# Wirtschaft & Geld – B2/C1
+## B2
+economic | wirtschaftlich | adj | The *economic* situation is difficult. | Die *wirtschaftliche* Lage ist schwierig. |
+economical | sparsam | adj | This car is very *economical*. | Dieses Auto ist sehr *sparsam*. | ≠ economic
+recession | Rezession | n | The country is in *recession*. | Das Land ist in einer *Rezession*. |
+growth | Wachstum | n | Economic *growth* slowed. | Das Wirtschafts*wachstum* verlangsamte sich. |
+interest rate | Zinssatz | n | *Interest rates* are rising. | Die *Zinsen* steigen. |
+share | Aktie | n | He bought *shares* in the company. | Er kaufte *Aktien* der Firma. | US: stock
+stock market | Aktienmarkt, Börse | n | The *stock market* fell sharply. | Die *Börse* fiel stark. |
+investor | Anleger(in), Investor(in) | n | *Investors* are nervous. | Die *Anleger* sind nervös. |
+investment | Investition, Geldanlage | n | It's a good *investment*. | Es ist eine gute *Geldanlage*. |
+return | Rendite | n | The *return* was 7%. | Die *Rendite* betrug 7 %. |
+risk | Risiko | n | Every investment carries *risk*. | Jede Geldanlage birgt ein *Risiko*. |
+asset | Vermögenswert | n | The house is their biggest *asset*. | Das Haus ist ihr größter *Vermögenswert*. |
+turnover | Umsatz | n | The company's *turnover* doubled. | Der *Umsatz* der Firma verdoppelte sich. |
+competitor | Konkurrent | n | Our main *competitor* is in China. | Unser Haupt*konkurrent* sitzt in China. |
+competition | Wettbewerb, Konkurrenz | n | *Competition* is fierce. | Der *Wettbewerb* ist hart. |
+supply and demand | Angebot und Nachfrage | phrase | Prices depend on *supply and demand*. | Preise hängen von *Angebot und Nachfrage* ab. |
+demand | Nachfrage | n | *Demand* for e-bikes is high. | Die *Nachfrage* nach E-Bikes ist hoch. |
+supply | Angebot, Versorgung | n | The *supply* of gas is limited. | Die Gas*versorgung* ist begrenzt. |
+export | exportieren; Export | v | Germany *exports* cars. | Deutschland *exportiert* Autos. |
+import | importieren; Import | v | We *import* most of our fruit. | Wir *importieren* den Großteil unseres Obstes. |
+trade | Handel | n | International *trade* is growing. | Der internationale *Handel* wächst. |
+budget | Haushalt, Budget | n | The government cut the *budget*. | Die Regierung kürzte den *Haushalt*. |
+expenses | Ausgaben | n | Our monthly *expenses* are high. | Unsere monatlichen *Ausgaben* sind hoch. |
+afford | sich leisten | v | Few people can *afford* a house. | Wenige können sich ein Haus *leisten*. |
+bankrupt | bankrott, pleite | adj | The company went *bankrupt*. | Die Firma ging *bankrott*. |
+crisis | Krise | n | The financial *crisis* hit hard. | Die Finanz*krise* traf hart. |
+consumer | Verbraucher | n | *Consumers* are spending less. | Die *Verbraucher* geben weniger aus. |
+wage | Lohn | n | The minimum *wage* went up. | Der Mindest*lohn* stieg. |
+cryptocurrency | Kryptowährung | n | He invested in *cryptocurrency*. | Er investierte in *Kryptowährung*. |
+## C1
+fiscal | fiskalisch, Haushalts- | adj | The *fiscal* year ends in March. | Das *Geschäfts*jahr endet im März. |
+monetary | geldpolitisch, monetär | adj | *Monetary* policy affects inflation. | Die *Geld*politik beeinflusst die Inflation. |
+austerity | Sparpolitik | n | *Austerity* measures were unpopular. | Die *Spar*maßnahmen waren unpopulär. |
+stagnation | Stagnation | n | The economy is in *stagnation*. | Die Wirtschaft *stagniert*. |
+downturn | Abschwung | n | Sales fell during the *downturn*. | Im *Abschwung* sanken die Verkäufe. |
+upturn | Aufschwung | n | We expect an *upturn* next year. | Wir erwarten nächstes Jahr einen *Aufschwung*. |
+liquidity | Liquidität | n | The bank had *liquidity* problems. | Die Bank hatte *Liquiditäts*probleme. |
+dividend | Dividende | n | Shareholders received a *dividend*. | Die Aktionäre erhielten eine *Dividende*. |
+portfolio | Portfolio | n | Diversify your *portfolio*. | Streue dein *Portfolio*. |
+diversify | streuen, diversifizieren | v | It's wise to *diversify*. | Es ist klug zu *streuen*. |
+speculation | Spekulation | n | Prices rose due to *speculation*. | Die Preise stiegen durch *Spekulation*. |
+leverage | Fremdkapitalhebel | n | High *leverage* increases risk. | Hoher *Hebel* erhöht das Risiko. |
+bull market | Bullenmarkt, Hausse | n | We're in a *bull market*. | Wir befinden uns in einem *Bullenmarkt*. | bear market = Bärenmarkt
+bear market | Bärenmarkt, Baisse | n | Many lost money in the *bear market*. | Viele verloren im *Bärenmarkt* Geld. |
+volatility | Volatilität, Schwankung | n | Market *volatility* is high. | Die *Schwankungen* am Markt sind hoch. |
+hedge | absichern | v | They *hedged* against currency risk. | Sie *sicherten* sich gegen Währungsrisiken *ab*. |
+lucrative | lukrativ | adj | It's a *lucrative* market. | Es ist ein *lukrativer* Markt. |
+insolvency | Insolvenz | n | The firm filed for *insolvency*. | Die Firma meldete *Insolvenz* an. |
+subsidy | Subvention | n | Farmers receive *subsidies*. | Landwirte erhalten *Subventionen*. |
+tariff | Zoll(tarif) | n | New *tariffs* hit exports. | Neue *Zölle* trafen die Exporte. |
+monopoly | Monopol | n | The company has a *monopoly*. | Die Firma hat ein *Monopol*. |
+acquisition | Übernahme, Erwerb | n | The *acquisition* cost billions. | Die *Übernahme* kostete Milliarden. |
+stakeholder | Anteilseigner | n | *Stakeholders* were consulted. | Die *Beteiligten* wurden befragt. |
+make ends meet | über die Runden kommen | phrase | Many families struggle to *make ends meet*. | Viele Familien kommen kaum *über die Runden*. |
+in the red | in den roten Zahlen | phrase | The account is *in the red*. | Das Konto ist *in den roten Zahlen*. |
