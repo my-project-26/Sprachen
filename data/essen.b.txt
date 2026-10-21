@@ -1,0 +1,64 @@
+# Essen & Trinken – B2/C1
+## B2
+appetite | Appetit | n | I've lost my *appetite*. | Ich habe keinen *Appetit* mehr. |
+beverage | Getränk | n | Hot *beverages* are served all day. | Heiße *Getränke* gibt es den ganzen Tag. | formell
+bland | fade | adj | The soup was rather *bland*. | Die Suppe war ziemlich *fade*. |
+crispy | knusprig | adj | I like my bacon *crispy*. | Ich mag meinen Speck *knusprig*. |
+crunchy | knackig | adj | The salad was fresh and *crunchy*. | Der Salat war frisch und *knackig*. |
+greasy | fettig | adj | The chips were too *greasy*. | Die Pommes waren zu *fettig*. |
+tender | zart | adj | The meat was very *tender*. | Das Fleisch war sehr *zart*. |
+juicy | saftig | adj | These peaches are so *juicy*. | Diese Pfirsiche sind so *saftig*. |
+ripe | reif | adj | The bananas aren't *ripe* yet. | Die Bananen sind noch nicht *reif*. |
+stale | altbacken, abgestanden | adj | The bread is *stale*. | Das Brot ist *altbacken*. |
+rotten | verfault | adj | The apples are *rotten*. | Die Äpfel sind *verfault*. |
+mouth-watering | appetitlich, lecker | adj | The smell was *mouth-watering*. | Der Duft ließ einem das Wasser im *Mund zusammenlaufen*. |
+portion | Portion | n | The *portions* were huge. | Die *Portionen* waren riesig. |
+nutrition | Ernährung | n | Good *nutrition* is important for athletes. | Gute *Ernährung* ist für Sportler wichtig. |
+nutritious | nahrhaft | adj | Lentils are cheap and *nutritious*. | Linsen sind günstig und *nahrhaft*. |
+protein | Eiweiß, Protein | n | Eggs are rich in *protein*. | Eier sind reich an *Eiweiß*. |
+carbohydrates | Kohlenhydrate | n | Pasta is full of *carbohydrates*. | Nudeln sind voller *Kohlenhydrate*. | kurz: carbs
+calorie | Kalorie | n | This drink has 200 *calories*. | Dieses Getränk hat 200 *Kalorien*. |
+vegan | vegan | adj | She's been *vegan* for years. | Sie lebt seit Jahren *vegan*. |
+gluten-free | glutenfrei | adj | Do you have *gluten-free* bread? | Haben Sie *glutenfreies* Brot? |
+homemade | hausgemacht | adj | Try the *homemade* lemonade. | Probier die *hausgemachte* Limonade. |
+season | würzen | v | *Season* with salt and pepper. | Mit Salz und Pfeffer *würzen*. |
+marinate | marinieren | v | *Marinate* the chicken overnight. | *Marinier* das Hähnchen über Nacht. |
+simmer | köcheln lassen | v | Let the sauce *simmer* for twenty minutes. | Lass die Soße zwanzig Minuten *köcheln*. |
+grate | reiben, raspeln | v | *Grate* some cheese on top. | *Reib* etwas Käse darüber. |
+whisk | verquirlen, schlagen | v | *Whisk* the eggs and milk. | *Verquirl* Eier und Milch. |
+knead | kneten | v | *Knead* the dough for ten minutes. | *Knete* den Teig zehn Minuten. | k stumm
+dough | Teig | n | The *dough* needs to rise. | Der *Teig* muss gehen. |
+thaw | auftauen | v | Let the meat *thaw* in the fridge. | Lass das Fleisch im Kühlschrank *auftauen*. |
+expiry date | Mindesthaltbarkeitsdatum | n | Check the *expiry date*. | Prüf das *Haltbarkeitsdatum*. | US: expiration date
+leftover | übrig geblieben | adj | Use *leftover* rice for fried rice. | Nimm *übrig gebliebenen* Reis für gebratenen Reis. |
+cuisine | Küche (Kochkunst) | n | French *cuisine* is famous. | Die französische *Küche* ist berühmt. |
+specialty | Spezialität | n | Fish is the local *specialty*. | Fisch ist die örtliche *Spezialität*. | UK auch: speciality
+book a table | einen Tisch reservieren | phrase | Shall I *book a table* for eight? | Soll ich für acht Uhr *einen Tisch reservieren*? |
+dine out | auswärts essen | v | We *dine out* once a week. | Wir *gehen* einmal die Woche *essen*. |
+help yourself | sich bedienen | phrase | Please *help yourself*. | Bitte *bedien* dich. |
+treat | einladen; Leckerei | v | Let me *treat* you to lunch. | Lass mich dich zum Mittagessen *einladen*. |
+hangover | Kater (Alkohol) | n | I had a terrible *hangover*. | Ich hatte einen schrecklichen *Kater*. |
+sip | nippen, Schluck | v | She *sipped* her wine slowly. | Sie *nippte* langsam an ihrem Wein. |
+## C1
+savour | genießen, auskosten | v | *Savour* every bite. | *Genieß* jeden Bissen. | US: savor
+palate | Gaumen | n | The wine has a smooth *palate*. | Der Wein ist am *Gaumen* weich. |
+succulent | saftig | adj | The steak was *succulent*. | Das Steak war *saftig*. |
+delectable | köstlich | adj | They served a *delectable* dessert. | Sie servierten einen *köstlichen* Nachtisch. |
+gourmet | Feinschmecker; Gourmet- | n | He's a real *gourmet*. | Er ist ein echter *Feinschmecker*. |
+indulge | sich gönnen, schwelgen | v | I *indulged* in a piece of cake. | Ich *gönnte* mir ein Stück Kuchen. |
+devour | verschlingen | v | The kids *devoured* the pizza. | Die Kinder *verschlangen* die Pizza. |
+nibble | knabbern | v | She *nibbled* on some nuts. | Sie *knabberte* an ein paar Nüssen. |
+garnish | garnieren | v | *Garnish* with fresh parsley. | Mit frischer Petersilie *garnieren*. |
+infuse | ziehen lassen, durchziehen | v | Let the tea *infuse* for five minutes. | Lass den Tee fünf Minuten *ziehen*. |
+sear | scharf anbraten | v | *Sear* the meat on both sides. | Das Fleisch von beiden Seiten *scharf anbraten*. |
+tangy | würzig-säuerlich | adj | The sauce has a *tangy* flavour. | Die Soße hat einen *würzig-säuerlichen* Geschmack. |
+pungent | stechend, scharf (Geruch) | adj | The cheese has a *pungent* smell. | Der Käse hat einen *stechenden* Geruch. |
+acquired taste | Geschmackssache, gewöhnungsbedürftig | phrase | Olives are an *acquired taste*. | Oliven sind *gewöhnungsbedürftig*. |
+staple | Grundnahrungsmittel | n | Rice is a *staple* in Asia. | Reis ist in Asien ein *Grundnahrungsmittel*. |
+binge | Fressattacke; exzessiv konsumieren | n | I went on a chocolate *binge*. | Ich hatte eine Schokoladen-*Fressattacke*. |
+abstain | verzichten, sich enthalten | v | He *abstains* from alcohol. | Er *verzichtet* auf Alkohol. |
+intolerance | Unverträglichkeit | n | I have a lactose *intolerance*. | Ich habe eine Laktose*intoleranz*. |
+scrumptious | lecker, köstlich | adj | The cake was *scrumptious*! | Der Kuchen war *köstlich*! | umgangssprachlich
+famished | ausgehungert | adj | I'm absolutely *famished*. | Ich bin völlig *ausgehungert*. |
+culinary | kulinarisch | adj | The city is a *culinary* paradise. | Die Stadt ist ein *kulinarisches* Paradies. |
+wholefood | Vollwertkost | n | They run a *wholefood* shop. | Sie betreiben einen *Bioladen* (Vollwertkost). |
