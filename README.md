@@ -7,6 +7,10 @@ Vokabeltrainer als Web-App (PWA) nach dem Vorbild von Vocabuo – mit drei Erwei
 3. **FSRS-5** statt fester Stufen: vier Bewertungen (Nochmal / Schwer / Gut / Leicht), Intervalle passen sich jedem Wort an.
 4. **C1-orientierte Karten:** Niveau-Tags (B1–C1), Themen, Kollokationen, False-Friend-Warnungen.
 
+## Wortschatz
+
+Rund **3.300 Wörter** (B1 ≈ 1.030, B2 ≈ 1.320, C1 ≈ 930) in 22 Themen – jedes mit Übersetzung, Beispielsatz EN/DE und Hinweisen (False Friends, Kollokationen, britisch/amerikanisch). Weitere Wörter lassen sich in der App je Thema mit „+ KI“ ergänzen oder dauerhaft in `data/*.txt` eintragen (danach `node tools/build-words.mjs`).
+
 ## Funktionen
 
 - Startseite mit Serie, Tageskarte (fällige + neue Wörter) und Fortschritt Richtung C1
@@ -67,7 +71,10 @@ index.html, styles.css     Oberfläche
 js/app.js                  Ansichten und Ablauf
 js/fsrs.js                 FSRS-5-Planer
 js/store.js                Speicherung (localStorage), Tageslogik
-js/words.js                Startwortschatz B1–C1 (186 Wörter in 13 Themen)
+js/words.js                Themen + Startwortschatz
+js/wordbank.js             großer Wortschatz (automatisch erzeugt aus data/)
+data/*.txt                 Wortlisten je Thema (B1/B2/C1), Quelle für wordbank.js
+tools/build-words.mjs      baut js/wordbank.js: `node tools/build-words.mjs`
 js/prompts.js              KI-Prompts (von Server und manuellem Modus genutzt)
 js/api.js, js/tts.js       Server-Aufrufe, Sprachausgabe
 api/_llm.js                Anbindung Claude / Gemini / Ollama
