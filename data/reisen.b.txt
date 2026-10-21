@@ -1,0 +1,45 @@
+# Reisen & Urlaub – weitere B2/C1
+## B2
+board | an Bord gehen | v | Passengers may now *board*. | Die Passagiere können jetzt *an Bord gehen*. |
+boarding | Einsteigen, Boarding | n | *Boarding* starts at 7:30. | Das *Boarding* beginnt um 7:30. |
+carry-on | Handgepäck | n | Is this bag OK as *carry-on*? | Geht diese Tasche als *Handgepäck* durch? | UK auch: hand luggage
+check-out | Abreise, Check-out | n | *Check-out* is at noon. | Der *Check-out* ist um zwölf. |
+claim | abholen (Gepäck) | v | *Claim* your bags at belt 3. | *Hol* dein Gepäck an Band 3 *ab*. |
+departure lounge | Abflughalle | n | We waited in the *departure lounge*. | Wir warteten in der *Abflughalle*. |
+domestic flight | Inlandsflug | n | It's a short *domestic flight*. | Es ist ein kurzer *Inlandsflug*. |
+en route | unterwegs | adv | We stopped in Lyon *en route*. | Wir hielten *unterwegs* in Lyon. |
+explore | erkunden | v | We spent a day *exploring* the old town. | Wir verbrachten einen Tag damit, die Altstadt zu *erkunden*. |
+ferry | Fähre | n | We took the *ferry* to the island. | Wir nahmen die *Fähre* zur Insel. |
+heritage site | Kulturerbestätte | n | It's a UNESCO *heritage site*. | Es ist eine UNESCO-*Welterbestätte*. |
+holidaymaker | Urlauber(in) | n | The beach was full of *holidaymakers*. | Der Strand war voller *Urlauber*. | US: vacationer
+immigration | Passkontrolle; Einwanderung | n | The queue at *immigration* was long. | Die Schlange an der *Passkontrolle* war lang. |
+inclusive | inklusive | adj | The price is *inclusive* of tax. | Der Preis ist *inklusive* Steuern. |
+nightlife | Nachtleben | n | The city has great *nightlife*. | Die Stadt hat ein tolles *Nachtleben*. |
+on foot | zu Fuß | phrase | The museum is ten minutes *on foot*. | Das Museum ist zehn Minuten *zu Fuß* entfernt. |
+package holiday | Pauschalreise | n | We booked a *package holiday*. | Wir buchten eine *Pauschalreise*. |
+phrasebook | Sprachführer | n | I bought a Spanish *phrasebook*. | Ich kaufte einen spanischen *Sprachführer*. |
+pick-up | Abholung | n | The hotel offers airport *pick-up*. | Das Hotel bietet *Abholung* vom Flughafen. |
+road trip | Roadtrip, Autoreise | n | We went on a *road trip* through Italy. | Wir machten einen *Roadtrip* durch Italien. |
+self-catering | mit Selbstverpflegung | adj | We rented a *self-catering* apartment. | Wir mieteten eine Ferienwohnung mit *Selbstverpflegung*. |
+sightseeing tour | Stadtrundfahrt | n | We took a *sightseeing tour*. | Wir machten eine *Stadtrundfahrt*. |
+sunbathe | sich sonnen | v | We *sunbathed* by the pool. | Wir *sonnten* uns am Pool. |
+travel sickness | Reisekrankheit | n | I suffer from *travel sickness*. | Ich leide unter *Reisekrankheit*. |
+unpack | auspacken | v | Let's *unpack* first. | Lass uns zuerst *auspacken*. |
+valid | gültig | adj | Your ticket is *valid* for a week. | Dein Ticket ist eine Woche *gültig*. |
+waterfront | Uferpromenade | n | We had dinner on the *waterfront*. | Wir aßen an der *Uferpromenade* zu Abend. |
+youth hostel | Jugendherberge | n | We stayed at a *youth hostel*. | Wir übernachteten in einer *Jugendherberge*. |
+## C1
+cosmopolitan | weltoffen, kosmopolitisch | adj | London is very *cosmopolitan*. | London ist sehr *kosmopolitisch*. |
+enchanting | bezaubernd | adj | The village is *enchanting*. | Das Dorf ist *bezaubernd*. |
+inhospitable | unwirtlich | adj | The desert is *inhospitable*. | Die Wüste ist *unwirtlich*. |
+meander | sich schlängeln; schlendern | v | The river *meanders* through the valley. | Der Fluss *schlängelt* sich durch das Tal. |
+nomadic | nomadisch | adj | They lead a *nomadic* life. | Sie führen ein *Nomaden*leben. |
+odyssey | Odyssee, Irrfahrt | n | The trip became an *odyssey*. | Die Reise wurde zur *Odyssee*. |
+panoramic | Panorama- | adj | The hotel has *panoramic* views. | Das Hotel bietet einen *Panorama*blick. |
+serene | heiter, ruhig | adj | The lake was *serene*. | Der See lag *still* da. |
+sightsee | Sehenswürdigkeiten besichtigen | v | We didn't have time to *sightsee*. | Wir hatten keine Zeit, *Sehenswürdigkeiten* zu *besichtigen*. |
+off the grid | abseits der Zivilisation | phrase | They live *off the grid*. | Sie leben *abseits der Zivilisation*. |
+stopover | Zwischenaufenthalt | n | We made a *stopover* in Iceland. | Wir legten einen *Zwischenaufenthalt* in Island ein. |
+travel bug | Reisefieber | n | She caught the *travel bug*. | Sie wurde vom *Reisefieber* gepackt. |
+wayfarer | Reisende(r), Wanderer | n | The inn welcomed *wayfarers*. | Das Gasthaus empfing *Reisende*. | literarisch
+excursion | Exkursion | n | The *excursion* was cancelled. | Die *Exkursion* wurde abgesagt. |
