@@ -3,6 +3,9 @@
 // Das Zielwort ist im Satz mit *Sternchen* markiert (auch in gebeugter Form).
 
 export const TOPICS = {
+  reisen: "Reisen & Urlaub",
+  camping: "Camping & Outdoor",
+  rad: "Radfahren",
   politik: "Politik & Gesellschaft",
   arbeit: "Arbeit & Karriere",
   wissenschaft: "Wissenschaft & Technik",
@@ -18,6 +21,59 @@ export const TOPICS = {
 export const LEVELS = ["B1", "B2", "C1"];
 
 const RAW = [
+  // ---------- Reisen & Urlaub ----------
+  ["luggage", "Gepäck", "n", "B1", "reisen", "Our *luggage* didn't arrive with us.", "Unser *Gepäck* kam nicht mit uns an.", "unzählbar: a piece of luggage"],
+  ["departure", "Abflug, Abfahrt", "n", "B1", "reisen", "*Departure* is at six in the morning.", "Der *Abflug* ist um sechs Uhr morgens.", ""],
+  ["delay", "Verspätung", "n", "B1", "reisen", "The flight had a two-hour *delay*.", "Der Flug hatte zwei Stunden *Verspätung*.", ""],
+  ["book", "buchen", "v", "B1", "reisen", "I *booked* a room with a sea view.", "Ich habe ein Zimmer mit Meerblick *gebucht*.", "fully booked = ausgebucht"],
+  ["sightseeing", "Besichtigungen, Sightseeing", "n", "B1", "reisen", "We spent the morning *sightseeing*.", "Wir verbrachten den Vormittag mit *Besichtigungen*.", "go sightseeing"],
+  ["destination", "Reiseziel", "n", "B2", "reisen", "Portugal is a popular *destination*.", "Portugal ist ein beliebtes *Reiseziel*.", ""],
+  ["itinerary", "Reiseroute, Reiseplan", "n", "B2", "reisen", "Our *itinerary* includes three cities.", "Unsere *Reiseroute* umfasst drei Städte.", "Aussprache: /aɪˈtɪnərəri/"],
+  ["accommodation", "Unterkunft", "n", "B2", "reisen", "*Accommodation* is expensive in summer.", "*Unterkünfte* sind im Sommer teuer.", "britisch meist unzählbar"],
+  ["currency", "Währung", "n", "B2", "reisen", "You can pay in the local *currency*.", "Man kann in der Landes*währung* bezahlen.", ""],
+  ["refund", "Rückerstattung", "n", "B2", "reisen", "I asked for a full *refund*.", "Ich bat um eine volle *Rückerstattung*.", "Verb: to refund = erstatten"],
+  ["off the beaten track", "abseits der Touristenpfade", "phrase", "B2", "reisen", "We found a little village *off the beaten track*.", "Wir fanden ein kleines Dorf *abseits der Touristenpfade*.", ""],
+  ["layover", "Zwischenstopp, Aufenthalt", "n", "C1", "reisen", "We had a long *layover* in Dubai.", "Wir hatten einen langen *Zwischenstopp* in Dubai.", "US; britisch auch: stopover"],
+  ["picturesque", "malerisch", "adj", "C1", "reisen", "The old town is very *picturesque*.", "Die Altstadt ist sehr *malerisch*.", ""],
+  ["embark", "aufbrechen; beginnen", "v", "C1", "reisen", "We *embarked* on a two-week road trip.", "Wir *brachen* zu einem zweiwöchigen Roadtrip *auf*.", "embark on something = etwas beginnen"],
+  ["wanderlust", "Fernweh", "n", "C1", "reisen", "She was gripped by *wanderlust* again.", "Sie wurde wieder von *Fernweh* gepackt.", "aus dem Deutschen entlehnt – bedeutet aber Fernweh"],
+
+  // ---------- Camping & Outdoor ----------
+  ["tent", "Zelt", "n", "B1", "camping", "We put up the *tent* before dark.", "Wir bauten das *Zelt* vor Einbruch der Dunkelheit auf.", "put up / pitch a tent"],
+  ["campsite", "Campingplatz", "n", "B1", "camping", "The *campsite* has hot showers.", "Der *Campingplatz* hat warme Duschen.", "US auch: campground"],
+  ["sleeping bag", "Schlafsack", "n", "B1", "camping", "My *sleeping bag* wasn't warm enough.", "Mein *Schlafsack* war nicht warm genug.", ""],
+  ["torch", "Taschenlampe", "n", "B1", "camping", "Don't forget to pack a *torch*.", "Vergiss nicht, eine *Taschenlampe* einzupacken.", "US: flashlight"],
+  ["mosquito", "Mücke, Stechmücke", "n", "B1", "camping", "The *mosquitoes* kept us awake all night.", "Die *Mücken* hielten uns die ganze Nacht wach.", "Plural: mosquitoes"],
+  ["pitch", "(Zelt) aufschlagen", "v", "B2", "camping", "We *pitched* our tent by the lake.", "Wir *schlugen* unser Zelt am See *auf*.", "als Nomen: Stellplatz"],
+  ["firewood", "Brennholz", "n", "B2", "camping", "We collected *firewood* in the forest.", "Wir sammelten *Brennholz* im Wald.", "unzählbar"],
+  ["shelter", "Unterschlupf, Schutz", "n", "B2", "camping", "We found *shelter* from the storm under a rock.", "Wir fanden unter einem Felsen *Schutz* vor dem Sturm.", "take shelter = Schutz suchen"],
+  ["trail", "Wanderweg, Pfad", "n", "B2", "camping", "The *trail* leads up to a small lake.", "Der *Wanderweg* führt zu einem kleinen See hinauf.", ""],
+  ["supplies", "Vorräte", "n", "B2", "camping", "We ran out of *supplies* on day three.", "Am dritten Tag gingen uns die *Vorräte* aus.", ""],
+  ["drizzle", "Nieselregen", "n", "B2", "camping", "A light *drizzle* fell all morning.", "Den ganzen Vormittag fiel leichter *Nieselregen*.", ""],
+  ["tarp", "Plane", "n", "B2", "camping", "We hung a *tarp* over the table.", "Wir spannten eine *Plane* über den Tisch.", ""],
+  ["secluded", "abgeschieden", "adj", "C1", "camping", "We found a *secluded* spot by the river.", "Wir fanden einen *abgeschiedenen* Platz am Fluss.", ""],
+  ["rugged", "zerklüftet, rau", "adj", "C1", "camping", "The coast is wild and *rugged*.", "Die Küste ist wild und *zerklüftet*.", ""],
+  ["forage", "(Essbares) sammeln", "v", "C1", "camping", "We *foraged* for berries and mushrooms.", "Wir *sammelten* Beeren und Pilze.", "forage for something"],
+  ["kindling", "Anzündholz", "n", "C1", "camping", "Use dry *kindling* to start the fire.", "Nimm trockenes *Anzündholz*, um das Feuer zu entfachen.", ""],
+
+  // ---------- Radfahren ----------
+  ["helmet", "Helm", "n", "B1", "rad", "Always wear a *helmet*.", "Trag immer einen *Helm*.", ""],
+  ["flat tyre", "Platten, platter Reifen", "n", "B1", "rad", "I got a *flat tyre* on the way home.", "Ich hatte auf dem Heimweg einen *Platten*.", "US: flat tire"],
+  ["brake", "bremsen", "v", "B1", "rad", "*Brake* gently on wet roads.", "*Bremse* auf nassen Straßen sanft.", "Nomen: the brakes = die Bremsen"],
+  ["cycle path", "Radweg", "n", "B1", "rad", "The *cycle path* runs along the river.", "Der *Radweg* verläuft am Fluss entlang.", "US: bike path / bike lane"],
+  ["gear", "Gang", "n", "B2", "rad", "Switch to a lower *gear* for the hill.", "Schalte für den Berg in einen niedrigeren *Gang*.", "auch: Ausrüstung (camping gear)"],
+  ["steep", "steil", "adj", "B2", "rad", "The last climb was really *steep*.", "Der letzte Anstieg war richtig *steil*.", ""],
+  ["pump up", "aufpumpen", "v", "B2", "rad", "I need to *pump up* my tyres.", "Ich muss meine Reifen *aufpumpen*.", ""],
+  ["saddle", "Sattel", "n", "B2", "rad", "Lower the *saddle* a little.", "Stell den *Sattel* etwas tiefer.", ""],
+  ["puncture", "Loch (im Reifen)", "n", "B2", "rad", "I fixed the *puncture* in ten minutes.", "Ich habe das *Loch* in zehn Minuten geflickt.", ""],
+  ["overtake", "überholen", "v", "B2", "rad", "A truck *overtook* me far too closely.", "Ein Lkw *überholte* mich viel zu knapp.", "overtake – overtook – overtaken"],
+  ["headwind", "Gegenwind", "n", "B2", "rad", "We rode against a strong *headwind*.", "Wir fuhren gegen starken *Gegenwind*.", "Rückenwind = tailwind"],
+  ["endurance", "Ausdauer", "n", "B2", "rad", "Long rides build *endurance*.", "Lange Touren bauen *Ausdauer* auf.", ""],
+  ["gradient", "Steigung", "n", "C1", "rad", "The *gradient* reaches twelve per cent near the top.", "Die *Steigung* erreicht oben zwölf Prozent.", ""],
+  ["descent", "Abfahrt (bergab)", "n", "C1", "rad", "The *descent* was fast and bumpy.", "Die *Abfahrt* war schnell und holprig.", ""],
+  ["chafe", "(wund) scheuern", "v", "C1", "rad", "My shorts started to *chafe*.", "Meine Hose fing an zu *scheuern*.", ""],
+  ["exhilarating", "berauschend, mitreißend", "adj", "C1", "rad", "The ride down the mountain was *exhilarating*.", "Die Fahrt den Berg hinunter war *berauschend*.", ""],
+
   // ---------- Politik & Gesellschaft ----------
   ["recent", "jüngste, kürzlich", "adj", "B1", "politik", "*Recent* events have been quite surprising.", "Die *jüngsten* Ereignisse waren ziemlich überraschend.", ""],
   ["policy", "Richtlinie, (politische) Maßnahme", "n", "B1", "politik", "The new *policy* requires employees to wear badges.", "Die neue *Richtlinie* verpflichtet Mitarbeiter, Ausweise zu tragen.", "policy = konkrete Maßnahme/Richtlinie; politics = Politik allgemein"],

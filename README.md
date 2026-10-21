@@ -3,8 +3,9 @@
 Vokabeltrainer als Web-App (PWA) nach dem Vorbild von Vocabuo – mit drei Erweiterungen:
 
 1. **Geschichten:** Nach je 10 neuen Wörtern (einstellbar) schreibt die KI eine kurze Geschichte, die genau diese Wörter verbindet – mit Vorlesefunktion, Verständnisfragen und Lückentext.
-2. **FSRS-5** statt fester Stufen: vier Bewertungen (Nochmal / Schwer / Gut / Leicht), Intervalle passen sich jedem Wort an.
-3. **C1-orientierte Karten:** Niveau-Tags (B1–C1), Themen, Kollokationen, False-Friend-Warnungen.
+2. **Themen:** Wähle, aus welchen Themen neue Wörter kommen (z. B. Reisen, Camping, Radfahren), und lege eigene Themen an, die die KI mit Wörtern füllt. Jede Geschichte entsteht aus einem Thema.
+3. **FSRS-5** statt fester Stufen: vier Bewertungen (Nochmal / Schwer / Gut / Leicht), Intervalle passen sich jedem Wort an.
+4. **C1-orientierte Karten:** Niveau-Tags (B1–C1), Themen, Kollokationen, False-Friend-Warnungen.
 
 ## Funktionen
 
@@ -60,7 +61,7 @@ index.html, styles.css     Oberfläche
 js/app.js                  Ansichten und Ablauf
 js/fsrs.js                 FSRS-5-Planer
 js/store.js                Speicherung (localStorage), Tageslogik
-js/words.js                Startwortschatz B1–C1 (139 Wörter, nach Thema)
+js/words.js                Startwortschatz B1–C1 (186 Wörter in 13 Themen)
 js/prompts.js              KI-Prompts (von Server und manuellem Modus genutzt)
 js/api.js, js/tts.js       Server-Aufrufe, Sprachausgabe
 api/_llm.js                Anbindung Claude / Gemini / Ollama

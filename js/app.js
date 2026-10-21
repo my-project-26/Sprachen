@@ -78,7 +78,7 @@ function progressRing(card) {
 }
 
 // ---------- Router ----------
-const routes = { home, learn, stories, story, words, add, stats, settings: settingsView };
+const routes = { home, learn, stories, story, words, add, topics, stats, settings: settingsView };
 
 function render() {
   tts.stop();
@@ -87,7 +87,8 @@ function render() {
   const arg = rest.length ? decodeURIComponent(rest.join("/")) : undefined;
   const view = routes[name] || home;
   document.body.dataset.view = routes[name] ? name : "home";
-  $nav.querySelectorAll("a").forEach((a) => a.classList.toggle("active", a.dataset.route === (routes[name] ? name : "home") || (a.dataset.route === "stories" && name === "story") || (a.dataset.route === "words" && name === "add")));
+  const navKey = { story: "stories", add: "words", topics: "home", settings: "home" }[name] || (routes[name] ? name : "home");
+  $nav.querySelectorAll("a").forEach((a) => a.classList.toggle("active", a.dataset.route === navKey));
   window.scrollTo(0, 0);
   view(arg);
 }
@@ -103,8 +104,13 @@ function home() {
   const st = S.streak();
   const dots = S.weekDots();
   const ready = S.storyReady();
-  const prog = Math.min(1, (s.newSinceStory || 0) / s.settings.storyEvery);
+  const storyN = S.storyProgress();
+  const prog = Math.min(1, storyN / s.settings.storyEvery);
   const all = S.cards();
+  const active = S.activeTopicKeys();
+  const allKeys = Object.keys(S.allTopics());
+  const wordsLeft = S.newWordsLeft();
+  const nextTopic = news.length ? S.topicLabel(news[news.length - 1].topic) : "";
   const lvl = LEVELS.map((L) => {
     const inL = all.filter((c) => c.level === L);
     const ok = inL.filter((c) => S.isLearned(c) || c.state === "known").length;
@@ -137,18 +143,31 @@ function home() {
       <div class="plus">+</div>
       <div class="num-box accent"><strong>${news.length}</strong><span>Neue Wörter</span></div>
     </div>
+    ${nextTopic ? `<p class="small muted center">Neue Wörter heute aus: <b>${esc(nextTopic)}</b></p>` : ""}
     ${
       total
         ? `<a class="btn primary big" href="#/learn">${total} ${total === 1 ? "Wort" : "Wörter"} üben</a>`
-        : `<p class="done-msg">Für heute ist alles erledigt.</p>
-           <a class="btn ghost" href="#/learn/extra">5 zusätzliche neue Wörter</a>`
+        : wordsLeft
+          ? `<p class="done-msg">Für heute ist alles erledigt.</p>
+             <a class="btn ghost" href="#/learn/extra">5 zusätzliche neue Wörter</a>`
+          : `<p class="done-msg">In deinen Themen gibt es keine neuen Wörter mehr.</p>
+             <a class="btn ghost" href="#/topics">Themen erweitern</a>`
     }
   </section>
+
+  <a class="card topics-teaser" href="#/topics">
+    <div class="row-between"><h2>Deine Themen</h2><span class="small muted">Ändern ›</span></div>
+    <div class="chips">${active
+      .slice(0, 8)
+      .map((k) => `<span class="chip">${esc(S.topicLabel(k))}</span>`)
+      .join("")}${active.length > 8 ? `<span class="chip">+${active.length - 8}</span>` : ""}</div>
+    ${active.length === allKeys.length ? `<p class="small muted">Alle Themen aktiv – wähle aus, was du wirklich brauchst.</p>` : ""}
+  </a>
 
   <section class="card story-teaser ${ready ? "ready" : ""}">
     <div class="row-between">
       <h2>Nächste Geschichte</h2>
-      <span class="muted small">${Math.min(s.newSinceStory || 0, s.settings.storyEvery)} / ${s.settings.storyEvery} Wörter</span>
+      <span class="muted small">${storyN} / ${s.settings.storyEvery} Wörter</span>
     </div>
     <div class="meter"><div style="width:${prog * 100}%"></div></div>
     <p class="muted">${
@@ -182,14 +201,8 @@ function buildQueue(arg) {
   }
   const due = S.dueCards().map((c) => c.id);
   let news;
-  if (arg === "extra") {
-    const minLevel = LEVELS.indexOf(settings().startLevel);
-    news = S.cards()
-      .filter((c) => c.state === "new" && LEVELS.indexOf(c.level) >= minLevel)
-      .sort((a, b) => (a.order ?? 1e9) - (b.order ?? 1e9))
-      .slice(0, 5)
-      .map((c) => c.id);
-  } else news = S.newCardsToday().map((c) => c.id);
+  if (arg === "extra") news = S.nextNewCards(5).map((c) => c.id);
+  else news = S.newCardsToday().map((c) => c.id);
   // Neue Wörter zwischen die Wiederholungen mischen (nach je 2 Wiederholungen eins)
   const q = [];
   while (due.length || news.length) {
@@ -240,7 +253,7 @@ function showCard(revealed = false, typed = null) {
 
   const meta = `<div class="card-meta">
       <span class="badge lvl-${c.level}">${c.level}</span>
-      <span class="chip">${esc(TOPICS[c.topic] || c.topic || "")}</span>
+      <span class="chip">${esc(S.topicLabel(c.topic))}</span>
       ${isNew ? '<span class="chip new">Neu</span>' : ""}
       ${c.lapses >= 2 ? '<span class="chip warn">Schwierig</span>' : ""}
     </div>`;
@@ -324,7 +337,7 @@ function rate(g) {
   const wasNew = c.state === "new";
   const next = schedule(c, g, Date.now(), settings().retention);
   S.updateCard(next);
-  S.logReview(g, wasNew);
+  S.logReview(g, next, wasNew);
   session.done++;
   if (g > 1) session.correct++;
   else {
@@ -367,18 +380,19 @@ document.addEventListener("keydown", (e) => {
 // ---------- Geschichten ----------
 function stories() {
   const s = S.getState();
-  const introduced = S.cards().filter((c) => c.introducedAt).length;
+  const n = S.storyProgress();
+  const ready = S.storyReady();
   $app.innerHTML = `
   <header class="top"><div><h1>Geschichten</h1>
     <p class="muted">Kurze Texte, die deine neuen Wörter verbinden.</p></div></header>
-  <section class="card">
+  <section class="card story-teaser ${ready ? "ready" : ""}">
     <div class="row-between"><h2>Nächste Geschichte</h2>
-      <span class="small muted">${Math.min(s.newSinceStory || 0, s.settings.storyEvery)} / ${s.settings.storyEvery}</span></div>
-    <div class="meter"><div style="width:${Math.min(100, ((s.newSinceStory || 0) / s.settings.storyEvery) * 100)}%"></div></div>
+      <span class="small muted">${n} / ${s.settings.storyEvery}</span></div>
+    <div class="meter"><div style="width:${(n / s.settings.storyEvery) * 100}%"></div></div>
     ${
-      introduced >= 3
-        ? `<a class="btn ${S.storyReady() ? "primary" : "ghost"}" href="#/story/new">${S.storyReady() ? "Geschichte erstellen" : "Trotzdem jetzt erstellen"}</a>`
-        : `<p class="muted small">Lerne zuerst ein paar neue Wörter.</p>`
+      ready
+        ? `<a class="btn primary" href="#/story/new">Geschichte erstellen</a>`
+        : `<p class="muted small">Noch ${s.settings.storyEvery - n} neue ${s.settings.storyEvery - n === 1 ? "Wort" : "Wörter"} lernen, dann kannst du die Geschichte erstellen.</p>`
     }
   </section>
   ${
@@ -387,7 +401,7 @@ function stories() {
           .map(
             (st) => `<a class="card story-item" href="#/story/${st.id}">
         <h3>${esc(st.title)}</h3>
-        <p class="small muted">${fmtDate(st.createdAt)} · ${st.words.length} Wörter${st.quizScore != null ? ` · Quiz ${st.quizScore}/${st.questions.length}` : ""}</p>
+        <p class="small muted">${fmtDate(st.createdAt)}${st.theme ? ` · ${esc(st.theme)}` : ""} · ${st.words.length} Wörter${st.quizScore != null ? ` · Quiz ${st.quizScore}/${st.questions.length}` : ""}</p>
         <div class="chips">${st.words.slice(0, 8).map((w) => `<span class="chip">${esc(w.en)}</span>`).join("")}</div>
       </a>`
           )
@@ -404,16 +418,21 @@ function story(id) {
 }
 
 function storyNew() {
-  const words = S.storyCandidates();
   const lvl = settings().storyLevel;
-  if (words.length < 3) {
-    $app.innerHTML = `<div class="center-msg"><h1>Noch zu wenige Wörter</h1><p class="muted">Lerne zuerst ein paar neue Wörter.</p><a class="btn primary" href="#/learn">Lernen</a></div>`;
+  if (!S.storyReady()) {
+    const left = settings().storyEvery - S.storyProgress();
+    $app.innerHTML = `<div class="center-msg"><h1>Noch nicht bereit</h1>
+      <p class="muted">Lerne noch ${left} neue ${left === 1 ? "Wort" : "Wörter"}, dann entsteht deine nächste Geschichte.</p>
+      <a class="btn primary" href="#/learn">Lernen</a></div>`;
     return;
   }
+  const words = S.storyCandidates();
+  const theme = S.storyTheme(words);
   $app.innerHTML = `
   <header class="top"><a class="icon-btn plain" href="#/stories" aria-label="Zurück">${ICON.back}</a>
     <h1 class="h-sm">Neue Geschichte</h1><span></span></header>
   <section class="card">
+    ${theme ? `<p class="eyebrow">Thema: ${esc(theme)}</p>` : ""}
     <h2>Diese Wörter kommen vor</h2>
     <div class="chips">${words.map((w) => `<span class="chip" title="${esc(w.de)}">${esc(w.en)}</span>`).join("")}</div>
     <label class="field"><span>Sprachniveau des Textes</span>
@@ -431,7 +450,7 @@ function storyNew() {
 
   const level = () => document.getElementById("lvl").value;
   const finish = (data) => {
-    const st = normalizeStory(data, words);
+    const st = { ...normalizeStory(data, words), theme };
     S.addStory(st);
     const s = S.getState();
     s.settings.storyLevel = level();
@@ -448,7 +467,7 @@ function storyNew() {
         ? "Lokales Modell – kann je nach Mac 30–90 Sekunden dauern."
         : "Das dauert meist 10–20 Sekunden.";
     try {
-      const data = await callApi("story", { words: words.map((w) => ({ en: w.en, de: w.de })), level: level() });
+      const data = await callApi("story", { words: words.map((w) => ({ en: w.en, de: w.de })), level: level(), theme });
       finish(data);
     } catch (err) {
       btn.disabled = false;
@@ -457,7 +476,7 @@ function storyNew() {
     }
   };
   document.getElementById("copy").onclick = async () => {
-    const text = STORY_SYSTEM + "\n\n" + storyPrompt(words, level());
+    const text = STORY_SYSTEM + "\n\n" + storyPrompt(words, level(), theme);
     try {
       await navigator.clipboard.writeText(text);
       toast("Prompt kopiert");
@@ -641,6 +660,7 @@ function storyDetail(st) {
 let wordsTab = "learning";
 let wordsQuery = "";
 let wordsLevel = "";
+let wordsTopic = "";
 
 function words() {
   const all = S.cards();
@@ -660,13 +680,17 @@ function words() {
   <div class="searchbar">${ICON.search}<input id="q" type="search" placeholder="Suchen (Englisch oder Deutsch)" value="${esc(wordsQuery)}"></div>
   <div class="chips filter">${["", ...LEVELS]
     .map((L) => `<button class="chip ${wordsLevel === L ? "active" : ""}" data-lvl="${L}">${L || "Alle"}</button>`)
-    .join("")}</div>
+    .join("")}
+    <select id="wt" class="chip-select" aria-label="Thema"><option value="">Alle Themen</option>${Object.entries(S.allTopics())
+      .map(([k, l]) => `<option value="${k}" ${wordsTopic === k ? "selected" : ""}>${esc(l)}</option>`)
+      .join("")}</select></div>
   <div id="list" class="word-list"></div>`;
 
   const renderList = () => {
     const q = wordsQuery.trim().toLowerCase();
     let list = all.filter((c) => S.categorize(c) === wordsTab);
     if (wordsLevel) list = list.filter((c) => c.level === wordsLevel);
+    if (wordsTopic) list = list.filter((c) => c.topic === wordsTopic);
     if (q) list = list.filter((c) => c.en.toLowerCase().includes(q) || c.de.toLowerCase().includes(q));
     if (wordsTab === "new") list.sort((a, b) => (a.order ?? 1e9) - (b.order ?? 1e9));
     else list.sort((a, b) => (a.due || 0) - (b.due || 0));
@@ -693,6 +717,10 @@ function words() {
 
   $app.querySelectorAll("[data-tab]").forEach((b) => (b.onclick = () => ((wordsTab = b.dataset.tab), words())));
   $app.querySelectorAll("[data-lvl]").forEach((b) => (b.onclick = () => ((wordsLevel = b.dataset.lvl), words())));
+  document.getElementById("wt").onchange = (e) => {
+    wordsTopic = e.target.value;
+    renderList();
+  };
   const qi = document.getElementById("q");
   qi.oninput = () => {
     wordsQuery = qi.value;
@@ -745,8 +773,8 @@ function wordDetail(item) {
 
 // ---------- Wort hinzufügen / KI ----------
 function add() {
-  const topicOpts = Object.entries({ ...TOPICS, alltag: "Alltag" })
-    .map(([k, v]) => `<option value="${k}">${esc(v)}</option>`)
+  const topicOpts = Object.entries(S.allTopics())
+    .map(([k, v]) => `<option value="${k}" ${k === "alltag" ? "selected" : ""}>${esc(v)}</option>`)
     .join("");
   $app.innerHTML = `
   <header class="top"><a class="icon-btn plain" href="#/words" aria-label="Zurück">${ICON.back}</a>
@@ -766,17 +794,10 @@ function add() {
     <button class="btn primary big" id="saveWord">Speichern</button>
   </section>
 
-  <section class="card">
-    <h2>Wortliste mit KI erweitern</h2>
-    <p class="small muted">Erzeugt neue Karten auf deinem Niveau, ohne Wörter, die du schon hast.</p>
-    <div class="grid2">
-      <label class="field"><span>Niveau</span><select id="g-lvl">${LEVELS.map((L) => `<option ${L === "C1" ? "selected" : ""}>${L}</option>`).join("")}</select></label>
-      <label class="field"><span>Anzahl</span><select id="g-n"><option>5</option><option selected>10</option><option>20</option></select></label>
-    </div>
-    <label class="field"><span>Thema (frei)</span><input id="g-topic" placeholder="z. B. Trading & Finanzmärkte, Reisen, Fitness"></label>
-    <button class="btn primary" id="gen">Wörter generieren</button>
-    <div id="genOut"></div>
-  </section>`;
+  <a class="card topics-teaser" href="#/topics">
+    <div class="row-between"><h2>Ganze Themen mit KI füllen</h2><span class="small muted">›</span></div>
+    <p class="small muted">Unter „Themen“ erzeugst du mit einem Tipp 10 passende Wörter – auch für eigene Themen wie Fitness oder Trading.</p>
+  </a>`;
 
   const v = (id) => document.getElementById(id).value.trim();
   const setv = (id, x) => (document.getElementById(id).value = x || "");
@@ -796,7 +817,7 @@ function add() {
       setv("f-exde", w.exDe);
       setv("f-note", w.note);
       if (LEVELS.includes(w.level)) setv("f-lvl", w.level);
-      if (TOPICS[w.topic] || w.topic === "alltag") setv("f-topic", w.topic);
+      if (S.allTopics()[w.topic]) setv("f-topic", w.topic);
     } catch (err) {
       toast(esc(err.message), 4000);
     }
@@ -822,43 +843,137 @@ function add() {
     ["f-en", "f-de", "f-ex", "f-exde", "f-note"].forEach((id) => setv(id, ""));
   };
 
-  document.getElementById("gen").onclick = async (e) => {
+}
+
+// ---------- Themen ----------
+function topics(openKey) {
+  const all = S.allTopics();
+  const active = new Set(S.activeTopicKeys());
+  const custom = S.getState().customTopics || {};
+  const keys = Object.keys(all);
+
+  $app.innerHTML = `
+  <header class="top"><a class="icon-btn plain" href="#/" aria-label="Zurück">${ICON.back}</a>
+    <h1 class="h-sm">Themen</h1><span></span></header>
+  <p class="muted intro">Neue Wörter kommen nur aus aktiven Themen – jeweils ${settings().storyEvery} am Stück aus einem Thema, damit die Geschichte dazu passt.</p>
+
+  <div class="topic-list">${keys
+    .map((k) => {
+      const st = S.topicStats(k);
+      return `<div class="card topic-row ${active.has(k) ? "on" : ""}" data-k="${k}">
+        <div class="topic-head">
+          <label class="switch"><input type="checkbox" data-toggle="${k}" ${active.has(k) ? "checked" : ""}><span></span></label>
+          <div class="topic-info">
+            <b>${esc(all[k])}</b>
+            <span class="small muted">${st.total ? `${st.new} neu · ${st.learning} im Lernen · ${st.learned + st.known} sicher` : "noch keine Wörter"}</span>
+          </div>
+          <button class="btn ghost small-btn" data-gen="${k}">${ICON.plus}<span>KI</span></button>
+        </div>
+        <div class="gen-box" id="gen-${k}" ${openKey === k ? "" : "hidden"}></div>
+        ${custom[k] ? `<button class="link-btn danger small" data-del="${k}">Thema löschen</button>` : ""}
+      </div>`;
+    })
+    .join("")}</div>
+
+  <section class="card">
+    <h2>Eigenes Thema</h2>
+    <p class="small muted">Zum Beispiel „Fitness & Ernährung“, „Trading“ oder „Arztbesuch“. Die KI erzeugt dann passende Wörter.</p>
+    <div class="inline-form">
+      <input id="newTopic" placeholder="Name des Themas" maxlength="40">
+      <button class="btn primary" id="addTopic">Anlegen</button>
+    </div>
+  </section>`;
+
+  $app.querySelectorAll("[data-toggle]").forEach(
+    (cb) =>
+      (cb.onchange = () => {
+        if (!cb.checked && S.activeTopicKeys().length <= 1) {
+          cb.checked = true;
+          return toast("Mindestens ein Thema muss aktiv bleiben");
+        }
+        S.setTopicActive(cb.dataset.toggle, cb.checked);
+        cb.closest(".topic-row").classList.toggle("on", cb.checked);
+      })
+  );
+  $app.querySelectorAll("[data-gen]").forEach(
+    (b) =>
+      (b.onclick = () => {
+        const box = document.getElementById("gen-" + b.dataset.gen);
+        box.hidden = !box.hidden;
+        if (!box.hidden && !box.innerHTML) renderGenerator(box, b.dataset.gen);
+      })
+  );
+  $app.querySelectorAll("[data-del]").forEach(
+    (b) =>
+      (b.onclick = () => {
+        if (!confirm(`Thema „${all[b.dataset.del]}“ und seine noch nicht gelernten Wörter löschen?`)) return;
+        S.deleteCustomTopic(b.dataset.del);
+        topics();
+      })
+  );
+  if (openKey) {
+    const box = document.getElementById("gen-" + openKey);
+    if (box) {
+      renderGenerator(box, openKey);
+      box.scrollIntoView({ block: "center" });
+    }
+  }
+  document.getElementById("addTopic").onclick = () => {
+    const name = document.getElementById("newTopic").value.trim();
+    if (!name) return toast("Bitte einen Namen eingeben");
+    const key = S.addCustomTopic(name);
+    topics(key);
+  };
+}
+
+function renderGenerator(box, key) {
+  const lvl = LEVELS.includes(settings().startLevel) && settings().startLevel !== "B1" ? settings().startLevel : "B2";
+  box.innerHTML = `
+    <div class="grid2">
+      <label class="field"><span>Niveau</span><select data-f="lvl">${LEVELS.map((L) => `<option ${L === lvl ? "selected" : ""}>${L}</option>`).join("")}</select></label>
+      <label class="field"><span>Anzahl</span><select data-f="n"><option>5</option><option selected>10</option><option>20</option></select></label>
+    </div>
+    <button class="btn primary" data-f="go">Wörter erzeugen</button>
+    <div data-f="out"></div>`;
+  const q = (f) => box.querySelector(`[data-f="${f}"]`);
+  q("go").onclick = async (e) => {
     const b = e.currentTarget;
-    const out = document.getElementById("genOut");
+    const out = q("out");
     b.disabled = true;
-    b.textContent = "Wird erzeugt…";
+    b.textContent = settings().provider === "ollama" ? "Lokales Modell arbeitet…" : "Wird erzeugt…";
     out.innerHTML = "";
     try {
       const data = await callApi("words", {
         mode: "generate",
-        level: v("g-lvl"),
-        topic: v("g-topic"),
-        count: Number(v("g-n")),
+        level: q("lvl").value,
+        topic: S.topicLabel(key),
+        count: Number(q("n").value),
         exclude: S.cards().map((c) => c.en),
       });
       const list = (data.words || []).filter((w) => w?.en && !S.hasWord(w.en));
-      if (!list.length) throw new Error("Keine neuen Wörter erhalten");
+      if (!list.length) throw new Error("Keine neuen Wörter erhalten – bitte erneut versuchen.");
       out.innerHTML = `<div class="gen-list">${list
         .map(
           (w, i) => `<label class="gen-item"><input type="checkbox" data-i="${i}" checked>
           <div><b>${esc(w.en)}</b> <span class="badge lvl-${esc(w.level)}">${esc(w.level)}</span><br>
           <span class="muted">${esc(w.de)}</span><br><span class="small">${marked(w.ex || "")}</span></div></label>`
         )
-        .join("")}</div><button class="btn primary" id="addGen">Ausgewählte hinzufügen</button>`;
-      document.getElementById("addGen").onclick = () => {
+        .join("")}</div><button class="btn primary" data-f="add">Ausgewählte hinzufügen</button>`;
+      q("add").onclick = () => {
         let n = 0;
         out.querySelectorAll("input[data-i]:checked").forEach((cb) => {
-          S.addCustomCard(list[Number(cb.dataset.i)]);
+          S.addCustomCard({ ...list[Number(cb.dataset.i)], topic: key, front: false });
           n++;
         });
-        toast(`${n} Wörter hinzugefügt`);
-        out.innerHTML = "";
+        S.setTopicActive(key, true);
+        toast(`${n} Wörter zu „${esc(S.topicLabel(key))}“ hinzugefügt`);
+        topics();
       };
     } catch (err) {
       out.innerHTML = `<p class="err small">${esc(err.message)}</p>`;
     }
     b.disabled = false;
-    b.textContent = "Wörter generieren";
+    b.textContent = "Wörter erzeugen";
   };
 }
 
@@ -944,6 +1059,7 @@ function settingsView() {
     <h2>Lernen</h2>
     <label class="field"><span>Neue Wörter pro Tag</span><input type="number" min="0" max="50" id="s-new" value="${s.newPerDay}"></label>
     <label class="field"><span>Geschichte nach je … neuen Wörtern</span><input type="number" min="3" max="25" id="s-story" value="${s.storyEvery}"></label>
+    <a class="btn ghost" href="#/topics">Themen auswählen</a>
     <label class="field"><span>Neue Wörter ab Niveau</span><select id="s-start">${LEVELS.map((L) => `<option ${L === s.startLevel ? "selected" : ""}>${L}</option>`).join("")}</select></label>
     <label class="field"><span>Ziel-Behaltensquote: <b id="retv">${Math.round(s.retention * 100)} %</b></span>
       <input type="range" min="0.8" max="0.95" step="0.01" id="s-ret" value="${s.retention}"></label>

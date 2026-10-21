@@ -4,11 +4,11 @@ export const STORY_SYSTEM =
   "You write short graded-reader stories for an adult German native speaker who is learning English and aims for CEFR level C1. " +
   "You write natural, engaging English, never childish. You reply with valid JSON only, no markdown fences, no commentary.";
 
-export function storyPrompt(words, level = "B2") {
+export function storyPrompt(words, level = "B2", theme = "") {
   const list = words.map((w) => `- ${w.en} (${w.de})`).join("\n");
   return `Write a short story that connects these target words:
 ${list}
-
+${theme ? `\nTheme / setting: ${theme}. Build the plot around this theme so the words appear in a natural situation.\n` : ""}
 Requirements:
 - Length: 180–260 words, 2–4 paragraphs separated by a blank line (\\n\\n).
 - Language level: ${level}. Apart from the target words, use mostly common vocabulary so the target words stand out and can be understood from context.

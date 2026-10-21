@@ -13,11 +13,12 @@ export default wrap(async (req, res) => {
   if (clean.length < 2) throw httpError(400, "Mindestens 2 Wörter nötig");
   const level = ["B1", "B2", "C1"].includes(body.level) ? body.level : "B2";
   const llm = providerFrom(body);
+  const theme = String(body.theme || "").slice(0, 60);
 
   let lastErr;
   for (let attempt = 0; attempt < 2; attempt++) {
     try {
-      const text = await callLLM(llm, STORY_SYSTEM, storyPrompt(clean, level), 2500);
+      const text = await callLLM(llm, STORY_SYSTEM, storyPrompt(clean, level, theme), 2500);
       const data = extractJson(text);
       if (!data.text) throw new Error("Antwort ohne Text");
       return send(res, 200, data);
