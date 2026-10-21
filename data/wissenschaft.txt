@@ -1,0 +1,30 @@
+# Wissenschaft & Technik
+## B1
+scientist | Wissenschaftler(in) | n | *Scientists* discovered a new species. | *Wissenschaftler* entdeckten eine neue Art. |
+experiment | Experiment, Versuch | n | We did an *experiment* in class. | Wir haben im Unterricht ein *Experiment* gemacht. |
+invent | erfinden | v | Who *invented* the telephone? | Wer hat das Telefon *erfunden*? |
+invention | Erfindung | n | The wheel was a great *invention*. | Das Rad war eine großartige *Erfindung*. |
+discovery | Entdeckung | n | It was an important *discovery*. | Es war eine wichtige *Entdeckung*. |
+technology | Technologie, Technik | n | *Technology* changes fast. | *Technologie* verändert sich schnell. |
+computer | Computer | n | My *computer* crashed. | Mein *Computer* ist abgestürzt. |
+software | Software | n | You need to update the *software*. | Du musst die *Software* aktualisieren. |
+screen | Bildschirm | n | The *screen* is too small. | Der *Bildschirm* ist zu klein. |
+battery | Akku, Batterie | n | My phone *battery* is low. | Mein Handy-*Akku* ist fast leer. |
+charge | aufladen | v | I need to *charge* my phone. | Ich muss mein Handy *aufladen*. |
+update | aktualisieren; Update | v | *Update* the app regularly. | *Aktualisiere* die App regelmäßig. |
+install | installieren | v | I *installed* a new program. | Ich habe ein neues Programm *installiert*. |
+data | Daten | n | The *data* is stored online. | Die *Daten* werden online gespeichert. |
+measure | messen | v | We *measured* the temperature. | Wir *maßen* die Temperatur. |
+result | Ergebnis | n | The *results* were surprising. | Die *Ergebnisse* waren überraschend. |
+prove | beweisen | v | They *proved* the theory was wrong. | Sie *bewiesen*, dass die Theorie falsch war. |
+theory | Theorie | n | It's just a *theory*. | Das ist nur eine *Theorie*. |
+laboratory | Labor | n | She works in a *laboratory*. | Sie arbeitet in einem *Labor*. | kurz: lab
+planet | Planet | n | Mars is the fourth *planet*. | Der Mars ist der vierte *Planet*. |
+space | Weltraum; Platz | n | He wants to travel to *space*. | Er will ins *All* reisen. |
+robot | Roboter | n | *Robots* build the cars. | *Roboter* bauen die Autos. |
+machine | Maschine | n | The *machine* is broken. | Die *Maschine* ist kaputt. |
+electricity | Strom, Elektrizität | n | The village has no *electricity*. | Das Dorf hat keinen *Strom*. |
+engine | Motor | n | The *engine* won't start. | Der *Motor* springt nicht an. |
+online | vernetzt, online | adj | Most devices are *online* now. | Die meisten Geräte sind heute *vernetzt*. |
+app | App | n | There's an *app* for that. | Dafür gibt es eine *App*. |
+smartphone | Smartphone | n | I can't live without my *smartphone*. | Ich kann nicht ohne mein *Smartphone* leben. |

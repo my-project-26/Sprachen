@@ -1,0 +1,43 @@
+# Wohnen & Haushalt
+## B1
+flat | Wohnung | n | We live in a small *flat*. | Wir wohnen in einer kleinen *Wohnung*. | US: apartment
+landlord | Vermieter | n | The *landlord* raised the rent. | Der *Vermieter* hat die Miete erhöht. | landlady = Vermieterin
+rent | Miete; mieten | n | The *rent* is due on the first. | Die *Miete* ist am Ersten fällig. |
+tenant | Mieter(in) | n | The previous *tenants* left a mess. | Die Vor*mieter* haben Chaos hinterlassen. |
+move | umziehen | v | We're *moving* next month. | Wir *ziehen* nächsten Monat *um*. | move in / move out
+neighbour | Nachbar(in) | n | Our *neighbours* are very friendly. | Unsere *Nachbarn* sind sehr freundlich. | US: neighbor
+furniture | Möbel | n | We need new *furniture*. | Wir brauchen neue *Möbel*. | unzählbar: a piece of furniture
+cupboard | Schrank | n | The plates are in the *cupboard*. | Die Teller sind im *Schrank*. |
+shelf | Regal(brett) | n | Put the books on the *shelf*. | Stell die Bücher ins *Regal*. | Plural: shelves
+drawer | Schublade | n | The scissors are in the top *drawer*. | Die Schere ist in der oberen *Schublade*. |
+carpet | Teppich | n | We spilled wine on the *carpet*. | Wir haben Wein auf den *Teppich* verschüttet. |
+curtains | Vorhänge, Gardinen | n | Close the *curtains*, please. | Zieh bitte die *Vorhänge* zu. |
+ceiling | Decke (Zimmer) | n | The *ceiling* is very high. | Die *Decke* ist sehr hoch. | Bettdecke = duvet / blanket
+floor | Boden; Stockwerk | n | We live on the third *floor*. | Wir wohnen im dritten *Stock*. | UK: ground floor = Erdgeschoss
+stairs | Treppe | n | Take the *stairs*. | Nimm die *Treppe*. |
+basement | Keller(geschoss) | n | We store our bikes in the *basement*. | Wir lagern unsere Fahrräder im *Keller*. |
+attic | Dachboden | n | The old toys are in the *attic*. | Die alten Spielsachen sind auf dem *Dachboden*. |
+balcony | Balkon | n | We have breakfast on the *balcony*. | Wir frühstücken auf dem *Balkon*. |
+garden | Garten | n | We grow tomatoes in the *garden*. | Wir ziehen Tomaten im *Garten*. | US: yard
+heating | Heizung | n | The *heating* isn't working. | Die *Heizung* funktioniert nicht. |
+washing machine | Waschmaschine | n | The *washing machine* is broken. | Die *Waschmaschine* ist kaputt. |
+dishwasher | Spülmaschine | n | Can you empty the *dishwasher*? | Kannst du die *Spülmaschine* ausräumen? |
+vacuum cleaner | Staubsauger | n | Where's the *vacuum cleaner*? | Wo ist der *Staubsauger*? | Verb: vacuum / hoover (UK)
+iron | bügeln; Bügeleisen | v | I hate *ironing* shirts. | Ich hasse es, Hemden zu *bügeln*. |
+laundry | Wäsche | n | I need to do the *laundry*. | Ich muss *Wäsche* waschen. |
+rubbish | Müll | n | Take the *rubbish* out. | Bring den *Müll* raus. | US: trash, garbage
+bin | Mülleimer | n | Throw it in the *bin*. | Wirf es in den *Mülleimer*. | US: trash can
+housework | Hausarbeit | n | We share the *housework*. | Wir teilen uns die *Hausarbeit*. |
+dust | Staub; Staub wischen | n | The shelves are covered in *dust*. | Die Regale sind voller *Staub*. |
+sink | Spülbecken, Waschbecken | n | Put the plates in the *sink*. | Stell die Teller ins *Spülbecken*. |
+tap | Wasserhahn | n | The *tap* is dripping. | Der *Wasserhahn* tropft. | US: faucet
+plug | Stecker; Stöpsel | n | Pull out the *plug*. | Zieh den *Stecker*. | socket = Steckdose
+socket | Steckdose | n | There's no *socket* near the bed. | Neben dem Bett gibt es keine *Steckdose*. | US: outlet
+lock | abschließen | v | Did you *lock* the door? | Hast du die Tür *abgeschlossen*? |
+doorbell | Türklingel | n | The *doorbell* rang. | Es *klingelte* an der Tür. |
+cosy | gemütlich | adj | The living room is very *cosy*. | Das Wohnzimmer ist sehr *gemütlich*. | US: cozy
+spacious | geräumig | adj | The kitchen is bright and *spacious*. | Die Küche ist hell und *geräumig*. |
+noisy | laut | adj | Our street is very *noisy*. | Unsere Straße ist sehr *laut*. |
+repair | Reparatur | n | The roof needs *repairs*. | Das Dach muss *repariert* werden. |
+deposit | Kaution | n | We got our *deposit* back. | Wir haben unsere *Kaution* zurückbekommen. |
+bills | Nebenkosten, Rechnungen | n | Are *bills* included in the rent? | Sind die *Nebenkosten* in der Miete enthalten? |

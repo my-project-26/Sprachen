@@ -1,0 +1,35 @@
+# Bildung & Lernen
+## B1
+course | Kurs | n | I'm doing an English *course*. | Ich mache einen Englisch*kurs*. |
+exam | Prüfung | n | I passed the *exam*! | Ich habe die *Prüfung* bestanden! |
+pass | bestehen | v | Did you *pass* your test? | Hast du deinen Test *bestanden*? | False Friend! ≠ passen
+fail | durchfallen | v | He *failed* maths. | Er ist in Mathe *durchgefallen*. |
+grade | Note | n | She got good *grades*. | Sie hat gute *Noten* bekommen. | UK auch: mark
+degree | (Studien-)Abschluss | n | She has a *degree* in biology. | Sie hat einen *Abschluss* in Biologie. |
+university | Universität | n | He studies at *university*. | Er studiert an der *Uni*. |
+subject | Schulfach; Thema | n | My favourite *subject* was history. | Mein Lieblings*fach* war Geschichte. |
+homework | Hausaufgaben | n | I have a lot of *homework*. | Ich habe viele *Hausaufgaben*. | unzählbar
+revise | wiederholen, lernen (für Prüfung) | v | I need to *revise* for my exam. | Ich muss für meine Prüfung *lernen*. | US: review
+practise | üben | v | *Practise* speaking every day. | *Übe* jeden Tag das Sprechen. | US: practice (Verb)
+learn by heart | auswendig lernen | phrase | We had to *learn* the poem *by heart*. | Wir mussten das Gedicht *auswendig lernen*. |
+memorise | sich einprägen | v | I can't *memorise* all these words. | Ich kann mir nicht all diese Wörter *einprägen*. | US: memorize
+knowledge | Wissen | n | Her *knowledge* of history is impressive. | Ihr *Wissen* über Geschichte ist beeindruckend. | unzählbar
+vocabulary | Wortschatz | n | Reading improves your *vocabulary*. | Lesen erweitert deinen *Wortschatz*. |
+grammar | Grammatik | n | English *grammar* isn't that difficult. | Die englische *Grammatik* ist nicht so schwer. |
+pronunciation | Aussprache | n | Her *pronunciation* is perfect. | Ihre *Aussprache* ist perfekt. |
+fluent | fließend | adj | He speaks *fluent* Spanish. | Er spricht *fließend* Spanisch. |
+mistake | Fehler | n | Don't be afraid of making *mistakes*. | Hab keine Angst, *Fehler* zu machen. |
+translate | übersetzen | v | Can you *translate* this for me? | Kannst du das für mich *übersetzen*? |
+dictionary | Wörterbuch | n | Look it up in a *dictionary*. | Schlag es im *Wörterbuch* nach. |
+look up | nachschlagen | v | I *looked up* the word. | Ich habe das Wort *nachgeschlagen*. |
+improve | verbessern | v | I want to *improve* my English. | Ich möchte mein Englisch *verbessern*. |
+lesson | Unterrichtsstunde, Lektion | n | The *lesson* starts at eight. | Die *Stunde* beginnt um acht. |
+lecture | Vorlesung, Vortrag | n | The *lecture* was boring. | Die *Vorlesung* war langweilig. | False Friend! ≠ Lektüre (= reading)
+student | Student(in), Schüler(in) | n | There are 30 *students* in the class. | Es sind 30 *Schüler* in der Klasse. |
+term | Semester, Trimester | n | The summer *term* starts in April. | Das Sommer*semester* beginnt im April. |
+certificate | Zeugnis, Zertifikat | n | You'll get a *certificate* at the end. | Am Ende bekommst du ein *Zertifikat*. |
+qualification | Qualifikation, Abschluss | n | What *qualifications* do you have? | Welche *Abschlüsse* hast du? |
+skill | Fertigkeit | n | Listening is an important *skill*. | Hören ist eine wichtige *Fertigkeit*. |
+progress | Fortschritt | n | You're making good *progress*. | Du machst gute *Fortschritte*. | unzählbar
+understand | verstehen | v | I don't *understand* the question. | Ich *verstehe* die Frage nicht. |
+explain | erklären | v | The teacher *explained* it twice. | Die Lehrerin hat es zweimal *erklärt*. |

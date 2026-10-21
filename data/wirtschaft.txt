@@ -1,0 +1,30 @@
+# Wirtschaft & Geld
+## B1
+bank account | Bankkonto | n | I opened a *bank account*. | Ich habe ein *Bankkonto* eröffnet. |
+cash machine | Geldautomat | n | Is there a *cash machine* near here? | Gibt es hier einen *Geldautomaten*? | US: ATM
+loan | Kredit, Darlehen | n | We took out a *loan* for the house. | Wir haben einen *Kredit* für das Haus aufgenommen. |
+savings | Ersparnisse | n | He spent all his *savings*. | Er hat all seine *Ersparnisse* ausgegeben. |
+tax | Steuer | n | We pay a lot of *tax*. | Wir zahlen viel *Steuern*. |
+income | Einkommen | n | Their *income* has fallen. | Ihr *Einkommen* ist gesunken. |
+profit | Gewinn | n | The company made a *profit*. | Die Firma hat *Gewinn* gemacht. |
+loss | Verlust | n | They reported a *loss* this year. | Sie meldeten dieses Jahr einen *Verlust*. |
+price | Preis | n | Oil *prices* are rising. | Die Öl*preise* steigen. |
+market | Markt | n | The *market* for e-bikes is growing. | Der *Markt* für E-Bikes wächst. |
+economy | Wirtschaft | n | The *economy* is growing slowly. | Die *Wirtschaft* wächst langsam. |
+industry | Industrie, Branche | n | He works in the car *industry*. | Er arbeitet in der Auto*industrie*. |
+product | Produkt | n | They launched a new *product*. | Sie brachten ein neues *Produkt* auf den Markt. |
+sell | verkaufen | v | They *sell* organic food. | Sie *verkaufen* Bio-Lebensmittel. |
+buy | kaufen | v | We *bought* a new car. | Wir haben ein neues Auto *gekauft*. |
+spend | ausgeben | v | How much did you *spend*? | Wie viel hast du *ausgegeben*? |
+owe | schulden | v | I *owe* you twenty euros. | Ich *schulde* dir zwanzig Euro. |
+coin | Münze | n | I have no *coins* for the parking meter. | Ich habe keine *Münzen* für die Parkuhr. |
+note | Geldschein | n | A fifty-euro *note*. | Ein Fünfzig-Euro-*Schein*. | US: bill
+credit card | Kreditkarte | n | Can I pay by *credit card*? | Kann ich mit *Kreditkarte* zahlen? |
+rich | reich | adj | He became *rich* very young. | Er wurde sehr jung *reich*. |
+poor | arm | adj | It's one of the *poorest* countries. | Es ist eines der *ärmsten* Länder. |
+wealth | Reichtum, Vermögen | n | The family's *wealth* comes from oil. | Das *Vermögen* der Familie stammt aus Öl. |
+cost of living | Lebenshaltungskosten | n | The *cost of living* keeps rising. | Die *Lebenshaltungskosten* steigen ständig. |
+pension | Rente | n | My *pension* is not very high. | Meine *Rente* ist nicht sehr hoch. |
+insurance | Versicherung | n | Car *insurance* is expensive. | Die Auto*versicherung* ist teuer. |
+bill | Rechnung | n | I have to pay the electricity *bill*. | Ich muss die Strom*rechnung* bezahlen. |
+waste money | Geld verschwenden | phrase | Don't *waste money* on that. | *Verschwende* dafür kein *Geld*. |

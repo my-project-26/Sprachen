@@ -1,0 +1,29 @@
+# Umwelt & Natur
+## B1
+environment | Umwelt | n | We must protect the *environment*. | Wir müssen die *Umwelt* schützen. |
+climate | Klima | n | The *climate* is changing. | Das *Klima* verändert sich. |
+weather forecast | Wettervorhersage | n | The *weather forecast* says rain. | Die *Wettervorhersage* sagt Regen voraus. |
+temperature | Temperatur | n | The *temperature* dropped below zero. | Die *Temperatur* fiel unter null. |
+recycle | recyceln | v | We *recycle* paper and glass. | Wir *recyceln* Papier und Glas. |
+waste | Abfall, Müll | n | We produce too much *waste*. | Wir produzieren zu viel *Müll*. |
+plastic | Plastik | n | Avoid single-use *plastic*. | Vermeide Einweg-*Plastik*. |
+energy | Energie | n | Solar *energy* is becoming cheaper. | Solar*energie* wird billiger. |
+save energy | Energie sparen | phrase | Switch off lights to *save energy*. | Schalte Licht aus, um *Energie zu sparen*. |
+nature | Natur | n | I love being out in *nature*. | Ich bin gern draußen in der *Natur*. |
+plant | Pflanze; pflanzen | n | Water the *plants*, please. | Gieß bitte die *Pflanzen*. |
+animal | Tier | n | Many *animals* are in danger. | Viele *Tiere* sind in Gefahr. |
+species | Art (Tier/Pflanze) | n | The *species* is endangered. | Die *Art* ist vom Aussterben bedroht. | Singular = Plural
+endangered | vom Aussterben bedroht | adj | Tigers are an *endangered* species. | Tiger sind eine *bedrohte* Art. |
+ocean | Ozean | n | Plastic pollutes the *oceans*. | Plastik verschmutzt die *Ozeane*. |
+air | Luft | n | The *air* here is clean. | Die *Luft* hier ist sauber. |
+storm | Sturm | n | The *storm* damaged many houses. | Der *Sturm* beschädigte viele Häuser. |
+heatwave | Hitzewelle | n | Europe had a long *heatwave*. | Europa hatte eine lange *Hitzewelle*. |
+earthquake | Erdbeben | n | The *earthquake* destroyed the town. | Das *Erdbeben* zerstörte die Stadt. |
+disaster | Katastrophe | n | The flood was a *disaster*. | Das Hochwasser war eine *Katastrophe*. |
+global warming | Erderwärmung | n | *Global warming* is a serious problem. | Die *Erderwärmung* ist ein ernstes Problem. |
+solar panel | Solarmodul | n | We put *solar panels* on the roof. | Wir haben *Solarmodule* aufs Dach gesetzt. |
+wind farm | Windpark | n | There's a *wind farm* off the coast. | Vor der Küste gibt es einen *Windpark*. |
+protect | schützen | v | This law *protects* wild animals. | Dieses Gesetz *schützt* wilde Tiere. |
+destroy | zerstören | v | The fire *destroyed* the forest. | Das Feuer *zerstörte* den Wald. |
+rainforest | Regenwald | n | The *rainforest* is disappearing. | Der *Regenwald* verschwindet. |
+organic | Bio-, biologisch | adj | We buy *organic* vegetables. | Wir kaufen *Bio*-Gemüse. |

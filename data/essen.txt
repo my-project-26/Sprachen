@@ -1,0 +1,48 @@
+# Essen & Trinken
+## B1
+bake | backen | v | I *baked* a cake for her birthday. | Ich habe ihr zum Geburtstag einen Kuchen *gebacken*. |
+boil | kochen (in Wasser), sieden | v | *Boil* the eggs for six minutes. | *Koch* die Eier sechs Minuten. |
+fry | braten | v | *Fry* the onions in a little oil. | *Brat* die Zwiebeln in etwas Öl an. |
+roast | braten (im Ofen), rösten | v | We *roasted* a chicken. | Wir haben ein Hähnchen im Ofen *gebraten*. |
+grill | grillen | v | Let's *grill* some sausages. | Lass uns ein paar Würstchen *grillen*. | US auch: barbecue
+recipe | Rezept (Kochen) | n | This is my grandmother's *recipe*. | Das ist das *Rezept* meiner Oma. | ≠ prescription (Arzt)
+ingredient | Zutat | n | You only need four *ingredients*. | Du brauchst nur vier *Zutaten*. |
+meal | Mahlzeit, Essen | n | We had a lovely *meal*. | Wir hatten ein schönes *Essen*. |
+dish | Gericht; Schüssel | n | Paella is a Spanish *dish*. | Paella ist ein spanisches *Gericht*. | do the dishes = abspülen
+starter | Vorspeise | n | We shared a *starter*. | Wir teilten uns eine *Vorspeise*. | US: appetizer
+main course | Hauptgericht | n | For the *main course* I'll have fish. | Als *Hauptgericht* nehme ich Fisch. |
+dessert | Nachtisch | n | Would you like *dessert*? | Möchten Sie *Nachtisch*? | ≠ desert (Wüste)
+bill | Rechnung | n | Can we have the *bill*, please? | Können wir bitte die *Rechnung* haben? | US: check
+tip | Trinkgeld | n | We left a ten per cent *tip*. | Wir gaben zehn Prozent *Trinkgeld*. |
+waiter | Kellner | n | The *waiter* brought the menu. | Der *Kellner* brachte die Karte. | waitress = Kellnerin
+menu | Speisekarte | n | Could we see the *menu*? | Könnten wir die *Speisekarte* sehen? |
+vegetarian | vegetarisch; Vegetarier(in) | adj | Do you have *vegetarian* options? | Haben Sie *vegetarische* Gerichte? |
+spicy | scharf (gewürzt) | adj | This curry is very *spicy*. | Dieses Curry ist sehr *scharf*. | hot kann auch "heiß" heißen
+sweet | süß | adj | The cake is too *sweet*. | Der Kuchen ist zu *süß*. |
+sour | sauer | adj | The milk has gone *sour*. | Die Milch ist *sauer* geworden. |
+bitter | bitter | adj | The coffee tastes *bitter*. | Der Kaffee schmeckt *bitter*. |
+salty | salzig | adj | The soup is too *salty*. | Die Suppe ist zu *salzig*. |
+tasty | lecker | adj | That was really *tasty*. | Das war richtig *lecker*. |
+fresh | frisch | adj | Use *fresh* herbs. | Nimm *frische* Kräuter. |
+raw | roh | adj | You can eat it *raw*. | Man kann es *roh* essen. |
+slice | Scheibe; in Scheiben schneiden | n | Would you like a *slice* of bread? | Möchtest du eine *Scheibe* Brot? |
+pepper | Pfeffer; Paprika | n | Add salt and *pepper*. | Gib Salz und *Pfeffer* dazu. | Paprika (Gemüse) = (bell) pepper
+flour | Mehl | n | Mix the *flour* and the eggs. | Misch das *Mehl* mit den Eiern. |
+oven | Backofen | n | Preheat the *oven* to 180 degrees. | Heiz den *Ofen* auf 180 Grad vor. |
+frying pan | Bratpfanne | n | Heat the oil in a *frying pan*. | Erhitz das Öl in einer *Pfanne*. |
+saucepan | Kochtopf | n | Put the pasta in a large *saucepan*. | Gib die Nudeln in einen großen *Topf*. |
+fridge | Kühlschrank | n | Put the milk back in the *fridge*. | Stell die Milch zurück in den *Kühlschrank*. |
+leftovers | Reste | n | We had *leftovers* for lunch. | Mittags gab es *Reste*. |
+snack | Snack, Imbiss | n | I had a quick *snack*. | Ich habe einen schnellen *Snack* gegessen. |
+takeaway | Essen zum Mitnehmen | n | Let's get a *takeaway* tonight. | Lass uns heute Abend *Essen holen*. | US: takeout
+diet | Ernährung; Diät | n | A healthy *diet* is important. | Eine gesunde *Ernährung* ist wichtig. |
+hungry | hungrig | adj | I'm really *hungry*. | Ich habe richtig *Hunger*. |
+thirsty | durstig | adj | I'm *thirsty*. | Ich habe *Durst*. |
+taste | schmecken; Geschmack | v | This soup *tastes* great. | Diese Suppe *schmeckt* toll. |
+smell | riechen; Geruch | v | Something *smells* good. | Hier *riecht* etwas gut. |
+pour | gießen, einschenken | v | Can you *pour* me some water? | Kannst du mir etwas Wasser *einschenken*? |
+stir | umrühren | v | *Stir* the sauce regularly. | *Rühr* die Soße regelmäßig *um*. |
+chop | hacken, klein schneiden | v | *Chop* the onions finely. | *Hack* die Zwiebeln fein. |
+peel | schälen | v | *Peel* the potatoes. | *Schäl* die Kartoffeln. |
+dairy | Milchprodukte | n | I don't eat *dairy*. | Ich esse keine *Milchprodukte*. |
+cutlery | Besteck | n | The *cutlery* is in the drawer. | Das *Besteck* ist in der Schublade. | US: silverware

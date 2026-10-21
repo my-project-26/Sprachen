@@ -1,0 +1,38 @@
+# Menschen & Charakter
+## B1
+friendly | freundlich | adj | The staff were very *friendly*. | Das Personal war sehr *freundlich*. |
+honest | ehrlich | adj | To be *honest*, I don't like it. | Um *ehrlich* zu sein, gefällt es mir nicht. |
+kind | nett, freundlich | adj | It's very *kind* of you. | Das ist sehr *nett* von dir. |
+shy | schüchtern | adj | He's a bit *shy* at first. | Er ist anfangs etwas *schüchtern*. |
+lazy | faul | adj | I was too *lazy* to cook. | Ich war zu *faul* zum Kochen. |
+clever | klug, schlau | adj | That's a *clever* idea. | Das ist eine *kluge* Idee. |
+funny | lustig; seltsam | adj | He's really *funny*. | Er ist echt *lustig*. |
+serious | ernst, seriös | adj | Are you *serious*? | Meinst du das *ernst*? |
+selfish | egoistisch | adj | Don't be so *selfish*. | Sei nicht so *egoistisch*. |
+confident | selbstbewusst | adj | She's very *confident*. | Sie ist sehr *selbstbewusst*. |
+reliable | zuverlässig | adj | He's a *reliable* colleague. | Er ist ein *zuverlässiger* Kollege. |
+careful | vorsichtig, sorgfältig | adj | Be *careful*! | Sei *vorsichtig*! |
+cheerful | fröhlich | adj | She's always *cheerful*. | Sie ist immer *fröhlich*. |
+brave | mutig | adj | That was very *brave*. | Das war sehr *mutig*. |
+strict | streng | adj | My teacher was very *strict*. | Mein Lehrer war sehr *streng*. |
+mean | gemein; geizig | adj | Don't be *mean* to your sister. | Sei nicht *gemein* zu deiner Schwester. | auch Verb: bedeuten
+rude | unhöflich, frech | adj | It's *rude* to interrupt. | Es ist *unhöflich*, jemanden zu unterbrechen. |
+sensible | vernünftig | adj | That's a *sensible* decision. | Das ist eine *vernünftige* Entscheidung. | False Friend! ≠ sensibel (= sensitive)
+sensitive | sensibel, empfindlich | adj | She's very *sensitive* to criticism. | Sie ist sehr *empfindlich* bei Kritik. |
+ambitious | ehrgeizig | adj | He's very *ambitious*. | Er ist sehr *ehrgeizig*. |
+hard-working | fleißig | adj | She's a *hard-working* student. | Sie ist eine *fleißige* Studentin. |
+easy-going | locker, unkompliziert | adj | My boss is quite *easy-going*. | Mein Chef ist ziemlich *locker*. |
+curious | neugierig | adj | Children are naturally *curious*. | Kinder sind von Natur aus *neugierig*. |
+moody | launisch | adj | Teenagers can be *moody*. | Teenager können *launisch* sein. |
+stubborn | stur | adj | He's as *stubborn* as a mule. | Er ist *stur* wie ein Esel. |
+appearance | Aussehen | n | He cares a lot about his *appearance*. | Er legt viel Wert auf sein *Aussehen*. |
+tall | groß (Person) | adj | He's very *tall*. | Er ist sehr *groß*. |
+slim | schlank | adj | She's tall and *slim*. | Sie ist groß und *schlank*. |
+beard | Bart | n | He's growing a *beard*. | Er lässt sich einen *Bart* wachsen. |
+wrinkles | Falten | n | She has *wrinkles* around her eyes. | Sie hat *Falten* um die Augen. |
+personality | Persönlichkeit | n | She has a strong *personality*. | Sie hat eine starke *Persönlichkeit*. |
+behaviour | Verhalten | n | His *behaviour* was unacceptable. | Sein *Verhalten* war inakzeptabel. | US: behavior
+character | Charakter | n | He has a good *character*. | Er hat einen guten *Charakter*. |
+childhood | Kindheit | n | I had a happy *childhood*. | Ich hatte eine glückliche *Kindheit*. |
+elderly | älter, betagt | adj | She looks after her *elderly* parents. | Sie kümmert sich um ihre *betagten* Eltern. |
+teenager | Teenager, Jugendliche(r) | n | They have two *teenagers*. | Sie haben zwei *Teenager*. |
