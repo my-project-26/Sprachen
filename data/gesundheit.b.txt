@@ -1,0 +1,69 @@
+# Gesundheit – B2/C1
+## B2
+symptom | Symptom | n | What are your *symptoms*? | Welche *Symptome* haben Sie? |
+infection | Infektion, Entzündung | n | She has an ear *infection*. | Sie hat eine Ohren*entzündung*. |
+inflammation | Entzündung | n | The cream reduces *inflammation*. | Die Creme lindert *Entzündungen*. |
+virus | Virus | n | It's just a *virus*. | Es ist nur ein *Virus*. |
+vaccine | Impfstoff | n | The *vaccine* is free. | Der *Impfstoff* ist kostenlos. |
+vaccinate | impfen | v | Have you been *vaccinated*? | Bist du *geimpft*? |
+immune system | Immunsystem | n | Sleep strengthens the *immune system*. | Schlaf stärkt das *Immunsystem*. |
+blood pressure | Blutdruck | n | My *blood pressure* is too high. | Mein *Blutdruck* ist zu hoch. |
+heart attack | Herzinfarkt | n | He had a *heart attack* last year. | Er hatte letztes Jahr einen *Herzinfarkt*. |
+stroke | Schlaganfall | n | She recovered well after the *stroke*. | Sie hat sich nach dem *Schlaganfall* gut erholt. |
+cancer | Krebs | n | Smoking causes *cancer*. | Rauchen verursacht *Krebs*. |
+diabetes | Diabetes | n | He was diagnosed with *diabetes*. | Bei ihm wurde *Diabetes* diagnostiziert. |
+operation | Operation | n | The *operation* went well. | Die *Operation* verlief gut. |
+surgeon | Chirurg(in) | n | The *surgeon* removed the tumour. | Die *Chirurgin* entfernte den Tumor. |
+GP | Hausarzt, Hausärztin | n | See your *GP* first. | Geh zuerst zu deinem *Hausarzt*. | UK: general practitioner
+specialist | Facharzt, Fachärztin | n | I was referred to a *specialist*. | Ich wurde an einen *Facharzt* überwiesen. |
+painkiller | Schmerzmittel | n | Take a *painkiller*. | Nimm ein *Schmerzmittel*. |
+antibiotics | Antibiotika | n | The doctor prescribed *antibiotics*. | Die Ärztin verschrieb *Antibiotika*. |
+dose | Dosis | n | Don't exceed the *dose*. | Überschreite nicht die *Dosis*. |
+heal | heilen | v | The wound *healed* quickly. | Die Wunde *heilte* schnell. |
+wound | Wunde | n | Clean the *wound* carefully. | Reinige die *Wunde* sorgfältig. | Aussprache: /wuːnd/
+bruise | blauer Fleck | n | I have a *bruise* on my leg. | Ich habe einen *blauen Fleck* am Bein. |
+sprain | verstauchen | v | I *sprained* my wrist. | Ich habe mir das Handgelenk *verstaucht*. |
+fracture | Bruch (Knochen) | n | The X-ray showed a *fracture*. | Das Röntgenbild zeigte einen *Bruch*. |
+scar | Narbe | n | He has a *scar* on his chin. | Er hat eine *Narbe* am Kinn. |
+rash | Ausschlag | n | I've got a *rash* on my arm. | Ich habe einen *Ausschlag* am Arm. |
+itch | jucken | v | My skin *itches*. | Meine Haut *juckt*. |
+nausea | Übelkeit | n | *Nausea* is a common side effect. | *Übelkeit* ist eine häufige Nebenwirkung. |
+vomit | sich übergeben | v | He *vomited* twice. | Er hat sich zweimal *übergeben*. | umgangssprachlich: throw up
+insomnia | Schlaflosigkeit | n | She suffers from *insomnia*. | Sie leidet an *Schlaflosigkeit*. |
+depression | Depression | n | *Depression* is a serious illness. | *Depression* ist eine ernste Krankheit. |
+anxiety | Angst(störung) | n | She has *anxiety* before exams. | Sie hat vor Prüfungen *Angst*. |
+therapy | Therapie | n | He's in *therapy*. | Er macht eine *Therapie*. |
+recovery | Genesung | n | He made a full *recovery*. | Er ist vollständig *genesen*. |
+sick leave | Krankschreibung | n | She's on *sick leave*. | Sie ist *krankgeschrieben*. |
+health insurance | Krankenversicherung | n | Do you have *health insurance*? | Hast du eine *Krankenversicherung*? |
+pregnant | schwanger | adj | She's six months *pregnant*. | Sie ist im sechsten Monat *schwanger*. |
+disabled | behindert | adj | The building is accessible for *disabled* people. | Das Gebäude ist für Menschen mit *Behinderung* zugänglich. |
+addiction | Sucht | n | He fought his *addiction*. | Er kämpfte gegen seine *Sucht*. |
+work out | trainieren | v | I *work out* three times a week. | Ich *trainiere* dreimal pro Woche. |
+posture | Haltung (Körper) | n | Bad *posture* causes back pain. | Schlechte *Haltung* verursacht Rückenschmerzen. |
+pulse | Puls | n | The nurse checked my *pulse*. | Die Pflegerin fühlte meinen *Puls*. |
+## C1
+ailment | Leiden, Beschwerde | n | It's a minor *ailment*. | Es ist ein leichtes *Leiden*. |
+remedy | Heilmittel | n | It's an old home *remedy*. | Es ist ein altes Haus*mittel*. |
+contract | sich (Krankheit) zuziehen | v | He *contracted* malaria abroad. | Er *zog* sich im Ausland Malaria *zu*. |
+outbreak | Ausbruch (Krankheit) | n | There was an *outbreak* of measles. | Es gab einen Masern*ausbruch*. |
+epidemic | Epidemie | n | Obesity is a growing *epidemic*. | Fettleibigkeit ist eine wachsende *Epidemie*. |
+obesity | Fettleibigkeit | n | Childhood *obesity* is increasing. | *Fettleibigkeit* bei Kindern nimmt zu. |
+terminal | unheilbar | adj | He has *terminal* cancer. | Er hat *unheilbaren* Krebs. |
+benign | gutartig | adj | Luckily the tumour was *benign*. | Zum Glück war der Tumor *gutartig*. | malignant = bösartig
+malignant | bösartig | adj | The tests showed it was *malignant*. | Die Tests zeigten, dass er *bösartig* war. |
+relapse | Rückfall | n | He suffered a *relapse*. | Er erlitt einen *Rückfall*. |
+convalesce | genesen, sich erholen | v | She's *convalescing* at home. | Sie *erholt* sich zu Hause. |
+debilitating | schwächend, zermürbend | adj | It's a *debilitating* disease. | Es ist eine *zermürbende* Krankheit. |
+fatigue | Erschöpfung, Müdigkeit | n | *Fatigue* is a common symptom. | *Erschöpfung* ist ein häufiges Symptom. |
+lethargic | träge, antriebslos | adj | I feel *lethargic* today. | Ich fühle mich heute *antriebslos*. |
+paramedic | Sanitäter(in) | n | The *paramedics* arrived quickly. | Die *Sanitäter* waren schnell da. |
+intensive care | Intensivstation | n | He's in *intensive care*. | Er liegt auf der *Intensivstation*. |
+anaesthetic | Narkose, Betäubungsmittel | n | It's done under local *anaesthetic*. | Es wird unter örtlicher *Betäubung* gemacht. | US: anesthetic
+prognosis | Prognose | n | The *prognosis* is good. | Die *Prognose* ist gut. |
+hereditary | erblich | adj | The disease is *hereditary*. | Die Krankheit ist *erblich*. |
+susceptible | anfällig | adj | Older people are more *susceptible*. | Ältere Menschen sind *anfälliger*. | susceptible to
+holistic | ganzheitlich | adj | They take a *holistic* approach. | Sie verfolgen einen *ganzheitlichen* Ansatz. |
+burnout | Burnout | n | She took time off to avoid *burnout*. | Sie nahm sich frei, um einem *Burnout* vorzubeugen. |
+under the weather | angeschlagen | phrase | I'm feeling a bit *under the weather*. | Ich fühle mich etwas *angeschlagen*. |
+on the mend | auf dem Weg der Besserung | phrase | He's *on the mend* now. | Er ist jetzt *auf dem Weg der Besserung*. |
