@@ -1,0 +1,54 @@
+# Recht & Ordnung – B2/C1
+## B2
+accuse | anklagen, beschuldigen | v | He was *accused* of theft. | Er wurde des Diebstahls *beschuldigt*. |
+charge | anklagen; Anklage | v | She was *charged* with fraud. | Sie wurde wegen Betrugs *angeklagt*. |
+defendant | Angeklagte(r) | n | The *defendant* denied everything. | Der *Angeklagte* stritt alles ab. |
+prosecutor | Staatsanwalt, Staatsanwältin | n | The *prosecutor* asked for five years. | Der *Staatsanwalt* forderte fünf Jahre. |
+jury | Geschworene | n | The *jury* found him not guilty. | Die *Geschworenen* sprachen ihn frei. |
+innocent | unschuldig | adj | He claims he's *innocent*. | Er behauptet, *unschuldig* zu sein. |
+evidence | Beweismaterial | n | There wasn't enough *evidence*. | Es gab nicht genug *Beweise*. |
+investigation | Ermittlung | n | The *investigation* is ongoing. | Die *Ermittlungen* laufen. |
+detective | Kriminalbeamte(r) | n | A *detective* questioned the witness. | Ein *Kriminalbeamter* befragte die Zeugin. |
+interrogate | verhören | v | Police *interrogated* the suspect. | Die Polizei *verhörte* den Verdächtigen. |
+confess | gestehen | v | He *confessed* to the crime. | Er *gestand* das Verbrechen. |
+alibi | Alibi | n | He has a strong *alibi*. | Er hat ein starkes *Alibi*. |
+release | freilassen | v | He was *released* from prison. | Er wurde aus dem Gefängnis *entlassen*. |
+on bail | auf Kaution | phrase | She was released *on bail*. | Sie wurde *auf Kaution* freigelassen. |
+appeal | Berufung (einlegen) | n | He lost his *appeal*. | Er verlor seine *Berufung*. |
+murder | Mord; ermorden | n | He was found guilty of *murder*. | Er wurde des *Mordes* für schuldig befunden. |
+assault | Körperverletzung, Übergriff | n | He was arrested for *assault*. | Er wurde wegen *Körperverletzung* festgenommen. |
+vandalism | Vandalismus | n | *Vandalism* is a problem in the park. | *Vandalismus* ist im Park ein Problem. |
+smuggle | schmuggeln | v | They *smuggled* drugs across the border. | Sie *schmuggelten* Drogen über die Grenze. |
+kidnap | entführen | v | The businessman was *kidnapped*. | Der Geschäftsmann wurde *entführt*. |
+blackmail | erpressen; Erpressung | v | He tried to *blackmail* her. | Er versuchte, sie zu *erpressen*. |
+bribe | bestechen; Bestechungsgeld | v | He tried to *bribe* the officer. | Er versuchte, den Beamten zu *bestechen*. |
+offence | Straftat, Vergehen | n | It's a criminal *offence*. | Es ist eine *Straftat*. | US: offense
+penalty | Strafe | n | The *penalty* for speeding is high. | Die *Strafe* für Rasen ist hoch. |
+contract | Vertrag | n | The *contract* is legally binding. | Der *Vertrag* ist rechtsverbindlich. |
+sue | verklagen | v | She *sued* the company. | Sie *verklagte* die Firma. |
+lawsuit | Klage, Prozess | n | They filed a *lawsuit*. | Sie reichten *Klage* ein. |
+regulation | Vorschrift | n | Safety *regulations* are strict. | Die Sicherheits*vorschriften* sind streng. |
+permit | Genehmigung | n | You need a *permit* to fish here. | Zum Angeln braucht man hier eine *Genehmigung*. |
+justice | Gerechtigkeit; Justiz | n | The victims want *justice*. | Die Opfer wollen *Gerechtigkeit*. |
+## C1
+acquit | freisprechen | v | She was *acquitted* of all charges. | Sie wurde in allen Punkten *freigesprochen*. |
+convict | verurteilen; Sträfling | v | He was *convicted* of fraud. | Er wurde wegen Betrugs *verurteilt*. |
+plaintiff | Kläger(in) | n | The *plaintiff* demanded compensation. | Der *Kläger* forderte Schadensersatz. |
+testimony | Zeugenaussage | n | Her *testimony* was crucial. | Ihre *Zeugenaussage* war entscheidend. |
+perjury | Meineid | n | He was charged with *perjury*. | Er wurde wegen *Meineids* angeklagt. |
+compensation | Entschädigung | n | They received *compensation*. | Sie erhielten eine *Entschädigung*. |
+jurisdiction | Zuständigkeit, Gerichtsbarkeit | n | The case is outside our *jurisdiction*. | Der Fall liegt außerhalb unserer *Zuständigkeit*. |
+statute | Gesetz, Satzung | n | The *statute* was passed in 1998. | Das *Gesetz* wurde 1998 verabschiedet. |
+loophole | Gesetzeslücke | n | They exploited a tax *loophole*. | Sie nutzten eine Steuer*lücke*. |
+precedent | Präzedenzfall | n | The ruling set a *precedent*. | Das Urteil schuf einen *Präzedenzfall*. |
+ruling | Urteil, Entscheidung | n | The court's *ruling* was final. | Die *Entscheidung* des Gerichts war endgültig. |
+infringe | verletzen (Recht) | v | It *infringes* copyright. | Es *verletzt* das Urheberrecht. |
+enforceable | durchsetzbar | adj | The contract isn't *enforceable*. | Der Vertrag ist nicht *durchsetzbar*. |
+custody | Haft; Sorgerecht | n | He was taken into *custody*. | Er wurde in *Gewahrsam* genommen. |
+parole | Bewährung (vorzeitige Entlassung) | n | He was released on *parole*. | Er wurde auf *Bewährung* entlassen. |
+misdemeanour | Vergehen, Ordnungswidrigkeit | n | It's only a *misdemeanour*. | Das ist nur ein *Vergehen*. | US: misdemeanor
+felony | schweres Verbrechen | n | Robbery is a *felony*. | Raub ist ein *schweres Verbrechen*. | v. a. US
+embezzlement | Unterschlagung | n | He was jailed for *embezzlement*. | Er kam wegen *Unterschlagung* ins Gefängnis. |
+deterrent | Abschreckung(smittel) | n | Prison is meant as a *deterrent*. | Gefängnis soll *abschreckend* wirken. |
+law-abiding | gesetzestreu | adj | He's a *law-abiding* citizen. | Er ist ein *gesetzestreuer* Bürger. |
+due process | rechtsstaatliches Verfahren | n | Everyone has the right to *due process*. | Jeder hat Anspruch auf ein *rechtsstaatliches Verfahren*. |
