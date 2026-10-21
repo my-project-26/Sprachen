@@ -18,8 +18,10 @@ export const DEFAULT_SETTINGS = {
   appSecret: "",
   typeAnswer: false,
   autoSpeak: true,
-  provider: "auto", // auto | claude | gemini | ollama
+  provider: "auto", // auto | claude | gemini | ollama | browser
   ollamaModel: "",
+  geminiKey: "", // nur für "Gemini direkt im Browser"; bleibt auf diesem Gerät
+  geminiModel: "",
   activeTopics: null, // null = alle Themen aktiv, sonst Liste der Themen-Schlüssel
   focusTopic: null, // gewähltes Thema: neue Wörter nur daraus (null = Themen abwechselnd)
 };
@@ -28,14 +30,13 @@ function fresh() {
   const cards = {};
   for (const c of seedCards()) cards[c.id] = c;
   return {
-    version: 2,
+    version: 3,
     created: Date.now(),
     cards,
     settings: { ...DEFAULT_SETTINGS },
     days: {}, // "YYYY-MM-DD": { reviews, newCards, correct }
     totalReviews: 0,
     stories: [],
-    storyQueue: [], // neu gelernte Wörter seit der letzten Geschichte
     blockTopic: null, // Thema, aus dem gerade neue Wörter kommen
     blockCount: 0,
     customTopics: {}, // eigene Themen { schlüssel: "Name" }
@@ -68,17 +69,18 @@ function migrate() {
   state.settings = { ...DEFAULT_SETTINGS, ...(state.settings || {}) };
   state.customTopics = state.customTopics || {};
   state.stories = state.stories || [];
-  if (!Array.isArray(state.storyQueue)) {
-    const n = Math.min(state.newSinceStory || 0, 30);
-    state.storyQueue = Object.values(state.cards)
-      .filter((c) => c.introducedAt && c.state !== "known")
-      .sort((a, b) => b.introducedAt - a.introducedAt)
-      .slice(0, n)
-      .map((c) => c.id)
-      .reverse();
+  if ((state.version || 1) < 3) {
+    // Wörter aus bisherigen Geschichten markieren
+    for (const st of state.stories) {
+      for (const id of st.wordIds || []) {
+        const c = state.cards[id];
+        if (c) c.inStory = Math.max(c.inStory || 0, 1);
+      }
+    }
   }
   delete state.newSinceStory;
-  state.version = 2;
+  delete state.storyQueue;
+  state.version = 3;
 }
 
 // Neue Einträge der Startliste ergänzen und Reihenfolge aktualisieren, ohne Fortschritt zu verlieren
@@ -241,7 +243,6 @@ export function logReview(grade, card, wasNew) {
   if (grade > 1) d.correct++;
   if (wasNew) {
     d.newCards++;
-    if (!s.storyQueue.includes(card.id)) s.storyQueue.push(card.id);
     if (s.blockTopic === card.topic && s.blockCount < s.settings.storyEvery) s.blockCount++;
     else {
       s.blockTopic = card.topic;
@@ -407,37 +408,58 @@ export function hasWord(en) {
 export function deleteCard(id) {
   const s = load();
   delete s.cards[id];
-  s.storyQueue = s.storyQueue.filter((x) => x !== id);
   save();
 }
 
 // ---------- Geschichten ----------
 
-function queueCards() {
-  const s = load();
-  return s.storyQueue.map((id) => s.cards[id]).filter((c) => c && c.state !== "known");
+const isSecure = (c) => c.state === "known" || isLearned(c);
+
+// Wörter, die du schon gesehen hast, aber noch nicht sicher kannst –
+// und die noch in keiner Geschichte vorkamen.
+function practiceCards() {
+  return cards().filter((c) => c.introducedAt && c.state !== "new" && !isSecure(c) && !c.inStory);
 }
 
 export function storyProgress() {
-  return Math.min(queueCards().length, load().settings.storyEvery);
+  return Math.min(practiceCards().length, load().settings.storyEvery);
 }
 
 export function storyReady() {
-  return queueCards().length >= load().settings.storyEvery;
+  return practiceCards().length >= load().settings.storyEvery;
 }
 
-// Wörter für die nächste Geschichte: die neu gelernten Wörter + bis zu 3 "schwierige"
+const shuffled = (a) => {
+  const b = [...a];
+  for (let i = b.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [b[i], b[j]] = [b[j], b[i]];
+  }
+  return b;
+};
+
+// Wörter für die nächste Geschichte:
+// - learning: 10 gesehene, noch nicht sichere Wörter (bevorzugt aus einem Thema)
+// - known: bis zu 5 Wörter, die du schon sicher kannst (bevorzugt aus demselben Thema)
 export function storyCandidates() {
   const s = load();
-  // die zuletzt gelernten Wörter = der aktuelle Themenblock
-  const recent = queueCards().slice(-s.settings.storyEvery);
-  const ids = new Set(recent.map((c) => c.id));
-  const hard = cards()
-    .filter((c) => c.introducedAt && c.state !== "known" && !ids.has(c.id))
-    .filter((c) => (c.lapses || 0) >= 2 || (c.difficulty || 0) > 8)
-    .sort((a, b) => (b.lapses || 0) - (a.lapses || 0))
-    .slice(0, 3);
-  return [...recent, ...hard];
+  const n = s.settings.storyEvery;
+  const practice = practiceCards();
+  const byTopic = {};
+  for (const c of practice) (byTopic[c.topic] ||= []).push(c);
+  const mainTopic = Object.entries(byTopic).sort((a, b) => b[1].length - a[1].length)[0]?.[0];
+  const sorted = practice.sort((a, b) => {
+    const t = Number(b.topic === mainTopic) - Number(a.topic === mainTopic);
+    return t || (a.introducedAt || 0) - (b.introducedAt || 0);
+  });
+  const learning = sorted.slice(0, n);
+
+  const secure = cards().filter(isSecure);
+  const known = [
+    ...shuffled(secure.filter((c) => c.topic === mainTopic)),
+    ...shuffled(secure.filter((c) => c.topic !== mainTopic)),
+  ].slice(0, 5);
+  return { learning, known };
 }
 
 // Häufigstes Thema der Wörter → Rahmen für die Geschichte
@@ -451,7 +473,10 @@ export function storyTheme(words) {
 export function addStory(story) {
   const s = load();
   s.stories.unshift(story);
-  s.storyQueue = []; // Zähler für die nächste Geschichte startet neu
+  // Die Übungswörter dieser Geschichte zählen für die nächste nicht mehr
+  for (const id of story.wordIds || []) {
+    if (s.cards[id]) s.cards[id].inStory = (s.cards[id].inStory || 0) + 1;
+  }
   save();
 }
 
@@ -471,13 +496,19 @@ export function deleteStory(id) {
 // ---------- Sicherung ----------
 
 export function exportData() {
-  return JSON.stringify(load(), null, 2);
+  // Schlüssel und Passwörter gehören nicht in die Sicherungsdatei
+  const copy = JSON.parse(JSON.stringify(load()));
+  copy.settings.geminiKey = "";
+  copy.settings.appSecret = "";
+  return JSON.stringify(copy, null, 2);
 }
 
 export function importData(json) {
   const data = JSON.parse(json);
   if (!data.cards || !data.settings) throw new Error("Ungültige Sicherungsdatei");
+  const keep = { geminiKey: load().settings.geminiKey, appSecret: load().settings.appSecret };
   state = data;
+  state.settings = { ...state.settings, geminiKey: state.settings.geminiKey || keep.geminiKey, appSecret: state.settings.appSecret || keep.appSecret };
   migrate();
   mergeSeed();
 }

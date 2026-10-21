@@ -4,19 +4,26 @@ export const STORY_SYSTEM =
   "You write short graded-reader stories for an adult German native speaker who is learning English and aims for CEFR level C1. " +
   "You write natural, engaging English, never childish. You reply with valid JSON only, no markdown fences, no commentary.";
 
-export function storyPrompt(words, level = "B2", theme = "") {
+// words: Wörter, die geübt werden (müssen alle vorkommen)
+// known: Wörter, die schon sitzen (zur Wiederholung, so viele wie natürlich passen)
+export function storyPrompt(words, level = "B2", theme = "", known = []) {
   const list = words.map((w) => `- ${w.en} (${w.de})`).join("\n");
-  return `Write a short story that connects these target words:
+  const knownList = known.map((w) => `- ${w.en} (${w.de})`).join("\n");
+  return `Write a short story that connects these target words the learner is currently practising:
 ${list}
-${theme ? `\nTheme / setting: ${theme}. Build the plot around this theme so the words appear in a natural situation.\n` : ""}
+${
+  known.length
+    ? `\nAlso weave in words the learner already knows, for review – use at least ${Math.min(3, known.length)} of them where they fit naturally:\n${knownList}\n`
+    : ""
+}${theme ? `\nTheme / setting: ${theme}. Build the plot around this theme so the words appear in a natural situation.\n` : ""}
 Requirements:
 - Length: 180–260 words, 2–4 paragraphs separated by a blank line (\\n\\n).
-- Language level: ${level}. Apart from the target words, use mostly common vocabulary so the target words stand out and can be understood from context.
+- Language level: ${level}. Apart from the listed words, use mostly common vocabulary so the listed words stand out and can be understood from context.
 - Use EVERY target word at least once (inflected forms are fine) in a meaning that matches the German gloss.
-- Mark every occurrence of a target word with double asterisks, e.g. **established**. Mark nothing else.
+- Mark every occurrence of a target word${known.length ? " and of every review word you use" : ""} with double asterisks, e.g. **established**. Mark nothing else.
 - A coherent plot with a small twist or a clear ending, adult everyday or professional setting, a fitting title.
 - Then write 4 multiple-choice comprehension questions in English with 4 options each. "answer" is the 0-based index of the correct option. Vary the position of the correct answer.
-- For each target word give the German meaning as used in the story.
+- For each marked word give the German meaning as used in the story.
 
 Return exactly this JSON structure:
 {"title":"...","text":"...","questions":[{"q":"...","options":["...","...","...","..."],"answer":0}],"glossary":[{"en":"...","de":"..."}]}`;

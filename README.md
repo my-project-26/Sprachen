@@ -2,7 +2,7 @@
 
 Vokabeltrainer als Web-App (PWA) nach dem Vorbild von Vocabuo – mit drei Erweiterungen:
 
-1. **Geschichten:** Nach je 10 neuen Wörtern (einstellbar) schreibt die KI eine kurze Geschichte, die genau diese Wörter verbindet – mit Vorlesefunktion, Verständnisfragen und Lückentext.
+1. **Geschichten:** Sobald 10 Wörter gesehen, aber noch nicht sicher sind, schreibt die KI eine kurze Geschichte mit genau diesen Wörtern – gemischt mit Wörtern, die schon sitzen – mit Vorlesefunktion, Verständnisfragen und Lückentext.
 2. **Themen:** Wähle, aus welchen Themen neue Wörter kommen (z. B. Reisen, Camping, Radfahren), und lege eigene Themen an, die die KI mit Wörtern füllt. Jede Geschichte entsteht aus einem Thema.
 3. **FSRS-5** statt fester Stufen: vier Bewertungen (Nochmal / Schwer / Gut / Leicht), Intervalle passen sich jedem Wort an.
 4. **C1-orientierte Karten:** Niveau-Tags (B1–C1), Themen, Kollokationen, False-Friend-Warnungen.
@@ -41,7 +41,13 @@ In der App unter **Einstellungen → KI-Server** wählbar. Es reicht einer:
 
 Ohne jeden Anbieter funktionieren Geschichten im **manuellen Modus** (Prompt kopieren → in Claude/Gemini-App einfügen → Antwort zurück einfügen).
 
-## Online stellen (Vercel, kostenlos)
+## Online stellen mit GitHub Pages (kostenlos, ohne Server)
+
+1. Im Repo auf GitHub: **Settings → Pages** → Source **Deploy from a branch** → Branch **main**, Ordner **/ (root)** → **Save**.
+2. Nach 1–2 Minuten läuft die App unter <https://my-project-26.github.io/Sprachen/>.
+3. In der App: **Einstellungen → KI-Server** → „Gemini direkt im Browser“ und den Gemini-Key aus [Google AI Studio](https://aistudio.google.com) eintragen. Der Key bleibt nur auf dem jeweiligen Gerät.
+
+## Online stellen (Vercel, kostenlos, mit Server)
 
 1. Auf <https://vercel.com> mit GitHub anmelden → **Add New → Project** → Repo `Sprachen` importieren (keine Build-Einstellungen nötig).
 2. Unter **Settings → Environment Variables** eintragen:

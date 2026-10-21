@@ -396,3 +396,4 @@ body[data-view="learn"] .toast { bottom: calc(env(safe-area-inset-bottom) + 24px
   .kpis { grid-template-columns: repeat(4, 1fr); }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+.h-gap { margin-top: 14px; }

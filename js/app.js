@@ -3,7 +3,7 @@ import * as S from "./store.js";
 import { schedule, preview, formatInterval, DAY, startOfDay } from "./fsrs.js";
 import { TOPICS, LEVELS } from "./words.js";
 import { storyPrompt, STORY_SYSTEM, extractJson } from "./prompts.js";
-import { callApi, health, normalizeStory } from "./api.js";
+import { callApi, health, normalizeStory, isStaticHost } from "./api.js";
 import * as tts from "./tts.js";
 
 const $app = document.getElementById("app");
@@ -173,13 +173,13 @@ function home() {
   <section class="card story-teaser ${ready ? "ready" : ""}">
     <div class="row-between">
       <h2>Nächste Geschichte</h2>
-      <span class="muted small">${storyN} / ${s.settings.storyEvery} Wörter</span>
+      <span class="muted small">${storyN} / ${s.settings.storyEvery} Übungswörter</span>
     </div>
     <div class="meter"><div style="width:${prog * 100}%"></div></div>
     <p class="muted">${
       ready
-        ? "Deine neuen Wörter sind bereit – lies sie in einer kurzen Geschichte im Zusammenhang."
-        : "Nach jeweils " + s.settings.storyEvery + " neuen Wörtern entsteht eine Geschichte, die sie verbindet."
+        ? "Du hast " + s.settings.storyEvery + " Wörter gesehen, die noch nicht sitzen – lies sie jetzt in einer Geschichte, zusammen mit Wörtern, die du schon kannst."
+        : "Sobald " + s.settings.storyEvery + " Wörter gesehen, aber noch nicht sicher sind, entsteht eine Geschichte – gemischt mit Wörtern, die du schon kannst."
     }</p>
     ${ready ? `<a class="btn primary" href="#/story/new">Geschichte erstellen</a>` : `<a class="btn ghost" href="#/stories">Meine Geschichten (${s.stories.length})</a>`}
   </section>
@@ -444,7 +444,7 @@ function stories() {
   const ready = S.storyReady();
   $app.innerHTML = `
   <header class="top"><div><h1>Geschichten</h1>
-    <p class="muted">Kurze Texte, die deine neuen Wörter verbinden.</p></div></header>
+    <p class="muted">Kurze Texte mit Wörtern, die du gerade übst – und solchen, die du schon kannst.</p></div></header>
   <section class="card story-teaser ${ready ? "ready" : ""}">
     <div class="row-between"><h2>Nächste Geschichte</h2>
       <span class="small muted">${n} / ${s.settings.storyEvery}</span></div>
@@ -452,7 +452,7 @@ function stories() {
     ${
       ready
         ? `<a class="btn primary" href="#/story/new">Geschichte erstellen</a>`
-        : `<p class="muted small">Noch ${s.settings.storyEvery - n} neue ${s.settings.storyEvery - n === 1 ? "Wort" : "Wörter"} lernen, dann kannst du die Geschichte erstellen.</p>`
+        : `<p class="muted small">Noch ${s.settings.storyEvery - n} ${s.settings.storyEvery - n === 1 ? "Übungswort" : "Übungswörter"} – also Wörter, die du gesehen hast, aber noch nicht sicher kannst.</p>`
     }
   </section>
   ${
@@ -482,19 +482,26 @@ function storyNew() {
   if (!S.storyReady()) {
     const left = settings().storyEvery - S.storyProgress();
     $app.innerHTML = `<div class="center-msg"><h1>Noch nicht bereit</h1>
-      <p class="muted">Lerne noch ${left} neue ${left === 1 ? "Wort" : "Wörter"}, dann entsteht deine nächste Geschichte.</p>
+      <p class="muted">Eine Geschichte entsteht, sobald ${settings().storyEvery} Wörter gesehen, aber noch nicht sicher sind. Es fehlen noch ${left}.</p>
       <a class="btn primary" href="#/learn">Lernen</a></div>`;
     return;
   }
-  const words = S.storyCandidates();
-  const theme = S.storyTheme(words);
+  const { learning, known } = S.storyCandidates();
+  const words = [...learning, ...known];
+  const theme = S.storyTheme(learning);
   $app.innerHTML = `
   <header class="top"><a class="icon-btn plain" href="#/stories" aria-label="Zurück">${ICON.back}</a>
     <h1 class="h-sm">Neue Geschichte</h1><span></span></header>
   <section class="card">
     ${theme ? `<p class="eyebrow">Thema: ${esc(theme)}</p>` : ""}
-    <h2>Diese Wörter kommen vor</h2>
-    <div class="chips">${words.map((w) => `<span class="chip" title="${esc(w.de)}">${esc(w.en)}</span>`).join("")}</div>
+    <h2>Wörter, die du gerade übst</h2>
+    <div class="chips">${learning.map((w) => `<span class="chip new" title="${esc(w.de)}">${esc(w.en)}</span>`).join("")}</div>
+    ${
+      known.length
+        ? `<h2 class="h-gap">Dazu Wörter, die du schon kannst</h2>
+           <div class="chips">${known.map((w) => `<span class="chip" title="${esc(w.de)}">${esc(w.en)}</span>`).join("")}</div>`
+        : ""
+    }
     <label class="field"><span>Sprachniveau des Textes</span>
       <select id="lvl">${["B1", "B2", "C1"].map((L) => `<option ${L === lvl ? "selected" : ""}>${L}</option>`).join("")}</select></label>
     <button class="btn primary big" id="gen">Mit KI erstellen</button>
@@ -510,7 +517,8 @@ function storyNew() {
 
   const level = () => document.getElementById("lvl").value;
   const finish = (data) => {
-    const st = { ...normalizeStory(data, words), theme };
+    // geübt werden die Übungswörter; die bekannten stehen nur im Glossar
+    const st = { ...normalizeStory(data, words), theme, wordIds: learning.map((w) => w.id), words: learning.map((w) => ({ id: w.id, en: w.en, de: w.de })) };
     S.addStory(st);
     const s = S.getState();
     s.settings.storyLevel = level();
@@ -527,7 +535,12 @@ function storyNew() {
         ? "Lokales Modell – kann je nach Mac 30–90 Sekunden dauern."
         : "Das dauert meist 10–20 Sekunden.";
     try {
-      const data = await callApi("story", { words: words.map((w) => ({ en: w.en, de: w.de })), level: level(), theme });
+      const data = await callApi("story", {
+        words: learning.map((w) => ({ en: w.en, de: w.de })),
+        known: known.map((w) => ({ en: w.en, de: w.de })),
+        level: level(),
+        theme,
+      });
       finish(data);
     } catch (err) {
       btn.disabled = false;
@@ -536,7 +549,7 @@ function storyNew() {
     }
   };
   document.getElementById("copy").onclick = async () => {
-    const text = STORY_SYSTEM + "\n\n" + storyPrompt(words, level(), theme);
+    const text = STORY_SYSTEM + "\n\n" + storyPrompt(learning, level(), theme, known);
     try {
       await navigator.clipboard.writeText(text);
       toast("Prompt kopiert");
@@ -1142,6 +1155,7 @@ function settingsView() {
       ["claude", "Claude (Anthropic)"],
       ["gemini", "Gemini (Google)"],
       ["ollama", "Ollama (lokal auf dem Mac)"],
+      ["browser", "Gemini direkt im Browser (GitHub Pages / iPhone)"],
     ]
       .map(([v, l]) => `<option value="${v}" ${s.provider === v ? "selected" : ""}>${l}</option>`)
       .join("")}</select></label>
@@ -1149,6 +1163,11 @@ function settingsView() {
       <select id="s-ollama"><option value="">Erstes installiertes Modell</option>${
         s.ollamaModel ? `<option value="${esc(s.ollamaModel)}" selected>${esc(s.ollamaModel)}</option>` : ""
       }</select></label>
+    <div id="browserFields" ${s.provider === "browser" || isStaticHost() ? "" : "hidden"}>
+      <label class="field"><span>Gemini-API-Key (bleibt nur auf diesem Gerät)</span>
+        <input id="s-gkey" type="password" autocomplete="off" placeholder="AIza…" value="${esc(s.geminiKey)}"></label>
+      <p class="small muted">Key kostenlos in Google AI Studio (aistudio.google.com → Get API key). Er wird nicht in Sicherungen exportiert.</p>
+    </div>
     <label class="field"><span>Server-Adresse (leer = diese Seite)</span><input id="s-api" placeholder="https://dein-projekt.vercel.app" value="${esc(s.apiBase)}"></label>
     <label class="field"><span>App-Passwort (falls APP_SECRET gesetzt)</span><input id="s-secret" type="password" value="${esc(s.appSecret)}"></label>
     <button class="btn ghost" id="testApi">Verbindung testen</button>
@@ -1188,11 +1207,13 @@ function settingsView() {
   document.getElementById("testVoice").onclick = () => say("The official announcement was made today.");
 
   bind("s-ollama", "ollamaModel");
+  bind("s-gkey", "geminiKey", (x) => x.trim());
   const provSel = document.getElementById("s-provider");
   provSel.addEventListener("change", () => {
     st.settings.provider = provSel.value;
     S.save();
     document.getElementById("ollamaField").hidden = provSel.value !== "ollama";
+    document.getElementById("browserFields").hidden = !(provSel.value === "browser" || isStaticHost());
     if (provSel.value === "ollama") loadOllamaModels();
   });
 
@@ -1217,6 +1238,10 @@ function settingsView() {
     out.textContent = "Prüfe…";
     try {
       const h = await health();
+      if (h.browser) {
+        out.innerHTML = `<span class="${h.ok ? "ok" : "err"}">${h.ok ? "Bereit" : "Nicht bereit"} · ${esc(h.message)}</span>`;
+        return;
+      }
       const p = h.providers || {};
       const chosen = st.settings.provider === "auto" ? h.auto : st.settings.provider;
       const line = (k) => {
