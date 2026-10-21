@@ -1,0 +1,14 @@
+{
+  "name": "wortwerk",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Englisch-Vokabeltrainer mit FSRS und KI-Geschichten (Ziel C1)",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
