@@ -1,0 +1,62 @@
+# Radfahren
+## B1
+bike | Fahrrad | n | I ride my *bike* to work. | Ich fahre mit dem *Fahrrad* zur Arbeit. | auch: bicycle
+ride | fahren (Rad, Pferd) | v | Can you *ride* a bike? | Kannst du Rad *fahren*? | ride – rode – ridden
+cyclist | Radfahrer(in) | n | The road was full of *cyclists*. | Die Straße war voller *Radfahrer*. |
+wheel | Rad, Reifen | n | The front *wheel* is bent. | Das Vorder*rad* ist verbogen. |
+tyre | Reifen | n | My back *tyre* is flat. | Mein Hinter*reifen* ist platt. | US: tire
+chain | Kette | n | The *chain* came off. | Die *Kette* ist abgesprungen. |
+bell | Klingel | n | Ring your *bell* before you overtake. | Klingel, bevor du überholst. | Verb: ring the bell
+lock | Schloss; abschließen | n | Always use a strong *lock*. | Benutz immer ein starkes *Schloss*. |
+light | Licht, Lampe | n | You need *lights* at night. | Nachts brauchst du *Licht*. |
+crossroads | Kreuzung | n | Turn left at the *crossroads*. | Bieg an der *Kreuzung* links ab. |
+traffic lights | Ampel | n | Stop at the *traffic lights*. | Halte an der *Ampel*. | Plural!
+uphill | bergauf | adv | It's hard work riding *uphill*. | *Bergauf* zu fahren ist anstrengend. | downhill = bergab
+downhill | bergab | adv | We raced *downhill*. | Wir rasten *bergab*. |
+route | Strecke, Route | n | This *route* is quieter. | Diese *Strecke* ist ruhiger. |
+tired | müde | adj | I was *tired* after 80 kilometres. | Nach 80 Kilometern war ich *müde*. |
+repair | reparieren | v | Can you *repair* my bike? | Kannst du mein Fahrrad *reparieren*? |
+bike shop | Fahrradladen | n | I took it to the *bike shop*. | Ich brachte es in den *Fahrradladen*. |
+water bottle | Trinkflasche | n | Fill your *water bottle* before the climb. | Füll deine *Trinkflasche* vor dem Anstieg. |
+## B2
+handlebars | Lenker | n | Hold the *handlebars* with both hands. | Halte den *Lenker* mit beiden Händen. | immer Plural
+pedal | treten; Pedal | v | I *pedalled* as hard as I could. | Ich *trat* so fest in die Pedale, wie ich konnte. | US: pedaled
+spoke | Speiche | n | A *spoke* broke on the descent. | Bei der Abfahrt brach eine *Speiche*. |
+inner tube | Schlauch | n | Always carry a spare *inner tube*. | Hab immer einen Ersatz*schlauch* dabei. |
+tyre lever | Reifenheber | n | Use a *tyre lever* to remove the tyre. | Nimm einen *Reifenheber*, um den Reifen abzunehmen. |
+frame | Rahmen | n | The *frame* is made of carbon. | Der *Rahmen* ist aus Carbon. |
+mudguard | Schutzblech | n | Without *mudguards* you get dirty. | Ohne *Schutzbleche* wird man dreckig. | US: fender
+pannier | Fahrradtasche | n | I carry my laptop in a *pannier*. | Ich trage meinen Laptop in einer *Fahrradtasche*. |
+e-bike | E-Bike, Pedelec | n | My parents bought *e-bikes*. | Meine Eltern haben sich *E-Bikes* gekauft. |
+mountain bike | Mountainbike | n | We rented *mountain bikes* for the trail. | Wir liehen uns *Mountainbikes* für den Trail. |
+road bike | Rennrad | n | A *road bike* is fast but uncomfortable. | Ein *Rennrad* ist schnell, aber unbequem. |
+gear shift | Schaltung | n | The *gear shift* needs adjusting. | Die *Schaltung* muss eingestellt werden. |
+climb | Anstieg; klettern | n | The final *climb* was brutal. | Der letzte *Anstieg* war brutal. |
+cycle lane | Radspur, Fahrradstreifen | n | Cars often park in the *cycle lane*. | Autos parken oft auf dem *Fahrradstreifen*. |
+signal | Handzeichen geben | v | *Signal* before you turn. | Gib vor dem Abbiegen ein *Handzeichen*. |
+pothole | Schlagloch | n | I hit a *pothole* and fell off. | Ich fuhr in ein *Schlagloch* und stürzte. |
+tailwind | Rückenwind | n | With a *tailwind* we flew along. | Mit *Rückenwind* flogen wir nur so dahin. |
+stamina | Ausdauer, Kondition | n | Long tours require *stamina*. | Lange Touren erfordern *Kondition*. |
+saddle sore | wund gesessen | adj | After the tour I was *saddle sore*. | Nach der Tour war ich *wund gesessen*. |
+cycling tour | Radtour | n | We did a *cycling tour* along the Danube. | Wir machten eine *Radtour* entlang der Donau. |
+dismount | absteigen | v | Please *dismount* in the pedestrian zone. | Bitte in der Fußgängerzone *absteigen*. |
+fall off | stürzen, herunterfallen | v | I *fell off* my bike on the ice. | Ich bin auf dem Eis vom Fahrrad *gestürzt*. |
+wobble | wackeln, schlingern | v | The bike started to *wobble*. | Das Rad fing an zu *schlingern*. |
+service | warten (Wartung) | v | I get my bike *serviced* every spring. | Ich lasse mein Rad jeden Frühling *warten*. |
+## C1
+cadence | Trittfrequenz | n | Keep a steady *cadence* on the climb. | Halte am Anstieg eine gleichmäßige *Trittfrequenz*. |
+derailleur | Schaltwerk | n | The rear *derailleur* got damaged. | Das hintere *Schaltwerk* wurde beschädigt. |
+freewheel | rollen lassen | v | We *freewheeled* down the hill. | Wir *ließen* uns den Berg hinunter*rollen*. |
+peloton | Hauptfeld | n | He attacked from the *peloton*. | Er griff aus dem *Hauptfeld* an. |
+slipstream | Windschatten | n | Ride in my *slipstream* to save energy. | Fahr in meinem *Windschatten*, um Kraft zu sparen. |
+hairpin bend | Haarnadelkurve | n | The road has twenty *hairpin bends*. | Die Straße hat zwanzig *Haarnadelkurven*. |
+switchback | Serpentine | n | The path climbs in tight *switchbacks*. | Der Weg steigt in engen *Serpentinen* an. |
+grind | sich abmühen, quälen | v | We *ground* our way up the pass. | Wir *quälten* uns den Pass hinauf. | grind – ground – ground
+bonk | einen Hungerast bekommen | v | I *bonked* after 100 km without food. | Nach 100 km ohne Essen *bekam* ich einen *Hungerast*. | umgangssprachlich
+traction | Bodenhaftung, Grip | n | The tyres lost *traction* on the gravel. | Die Reifen verloren auf dem Schotter die *Haftung*. |
+gravel | Schotter, Kies | n | The last section is on *gravel*. | Der letzte Abschnitt ist *Schotter*. |
+commute | pendeln | v | I *commute* by bike every day. | Ich *pendle* jeden Tag mit dem Rad. |
+saddle up | aufsatteln, losfahren | phrase | Time to *saddle up*! | Zeit zum *Aufsatteln*! |
+puncture-proof | pannensicher | adj | These tyres are almost *puncture-proof*. | Diese Reifen sind fast *pannensicher*. |
+headset | Steuersatz | n | The *headset* is loose. | Der *Steuersatz* ist locker. |
+grueling | zermürbend, strapaziös | adj | It was a *grueling* 200-kilometre ride. | Es war eine *strapaziöse* 200-Kilometer-Fahrt. | UK: gruelling

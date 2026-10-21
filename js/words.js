@@ -6,19 +6,30 @@ export const TOPICS = {
   reisen: "Reisen & Urlaub",
   camping: "Camping & Outdoor",
   rad: "Radfahren",
-  politik: "Politik & Gesellschaft",
+  verkehr: "Verkehr & Unterwegs",
+  freizeit: "Freizeit, Sport & Kultur",
+  alltag: "Alltag",
+  essen: "Essen & Trinken",
+  wohnen: "Wohnen & Haushalt",
+  einkaufen: "Einkaufen & Service",
+  gesundheit: "Gesundheit",
+  charakter: "Menschen & Charakter",
+  gefuehle: "Gefühle & Beziehungen",
   arbeit: "Arbeit & Karriere",
+  bildung: "Bildung & Lernen",
+  medien: "Medien & Kommunikation",
   wissenschaft: "Wissenschaft & Technik",
   umwelt: "Umwelt & Natur",
-  gefuehle: "Gefühle & Beziehungen",
-  medien: "Medien & Kommunikation",
-  recht: "Recht & Ordnung",
-  gesundheit: "Gesundheit",
   wirtschaft: "Wirtschaft & Geld",
+  recht: "Recht & Ordnung",
+  politik: "Politik & Gesellschaft",
   denken: "Argumentieren & Denken",
+  phrasal: "Phrasal Verbs & Redewendungen",
 };
 
 export const LEVELS = ["B1", "B2", "C1"];
+
+import { WORDBANK } from "./wordbank.js";
 
 const RAW = [
   // ---------- Reisen & Urlaub ----------
@@ -239,13 +250,26 @@ export function slug(en) {
 }
 
 export function seedCards() {
+  // Startliste + großer Wortschatz (wordbank.js), doppelte Wörter nur einmal.
   // Reihenfolge: Niveau aufsteigend, innerhalb des Niveaus nach Thema gebündelt.
+  const seen = new Set();
+  const rows = [];
+  for (const r of [...RAW, ...WORDBANK]) {
+    const id = slug(r[0]);
+    if (!id || seen.has(id)) continue;
+    seen.add(id);
+    rows.push(r);
+  }
   const order = Object.keys(TOPICS);
-  const sorted = [...RAW].sort((a, b) => {
-    const l = LEVELS.indexOf(a[3]) - LEVELS.indexOf(b[3]);
-    if (l) return l;
-    return order.indexOf(a[4]) - order.indexOf(b[4]);
-  });
+  const sorted = rows
+    .map((r, i) => ({ r, i }))
+    .sort((a, b) => {
+      const l = LEVELS.indexOf(a.r[3]) - LEVELS.indexOf(b.r[3]);
+      if (l) return l;
+      const t = order.indexOf(a.r[4]) - order.indexOf(b.r[4]);
+      return t || a.i - b.i;
+    })
+    .map((x) => x.r);
   return sorted.map((r, i) => ({
     id: "w-" + slug(r[0]),
     en: r[0],

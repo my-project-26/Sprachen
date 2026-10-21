@@ -1,0 +1,73 @@
+# Verkehr & Unterwegs
+## B1
+traffic | Verkehr | n | The *traffic* was terrible this morning. | Der *Verkehr* war heute Morgen schrecklich. | unzählbar
+traffic jam | Stau | n | We were stuck in a *traffic jam*. | Wir steckten im *Stau*. |
+motorway | Autobahn | n | Take the *motorway* to Munich. | Nimm die *Autobahn* nach München. | US: highway, freeway
+driving licence | Führerschein | n | I got my *driving licence* at 18. | Ich habe mit 18 meinen *Führerschein* gemacht. | US: driver's license
+petrol | Benzin | n | We need to stop for *petrol*. | Wir müssen tanken (*Benzin*). | US: gas
+petrol station | Tankstelle | n | Is there a *petrol station* nearby? | Gibt es hier eine *Tankstelle*? | US: gas station
+park | parken | v | You can't *park* here. | Hier darfst du nicht *parken*. |
+car park | Parkplatz, Parkhaus | n | The *car park* was full. | Der *Parkplatz* war voll. | US: parking lot
+pedestrian | Fußgänger(in) | n | Watch out for *pedestrians*. | Achte auf *Fußgänger*. |
+platform | Bahnsteig, Gleis | n | The train leaves from *platform* 4. | Der Zug fährt von *Gleis* 4 ab. |
+underground | U-Bahn | n | It's quicker by *underground*. | Mit der *U-Bahn* geht es schneller. | London: the Tube; US: subway
+passenger | Fahrgast, Passagier | n | All *passengers* must wear seat belts. | Alle *Passagiere* müssen sich anschnallen. |
+seat belt | Sicherheitsgurt | n | Fasten your *seat belt*. | Leg deinen *Sicherheitsgurt* an. |
+speed limit | Tempolimit | n | The *speed limit* here is 50. | Das *Tempolimit* liegt hier bei 50. |
+roundabout | Kreisverkehr | n | Take the second exit at the *roundabout*. | Nimm die zweite Ausfahrt im *Kreisverkehr*. | US: traffic circle
+turn | abbiegen | v | *Turn* right at the lights. | Bieg an der Ampel rechts *ab*. |
+ticket machine | Fahrkartenautomat | n | The *ticket machine* only takes cards. | Der *Fahrkartenautomat* nimmt nur Karten. |
+miss | verpassen | v | Hurry or we'll *miss* the bus. | Beeil dich, sonst *verpassen* wir den Bus. |
+catch | erwischen (Bus, Zug) | v | I *caught* the last train home. | Ich habe den letzten Zug nach Hause *erwischt*. |
+get off | aussteigen | v | We *get off* at the next stop. | Wir *steigen* an der nächsten Haltestelle *aus*. | get on = einsteigen
+breakdown | Panne | n | We had a *breakdown* on the motorway. | Wir hatten eine *Panne* auf der Autobahn. |
+fine | Bußgeld, Strafe | n | I got a *fine* for speeding. | Ich bekam ein *Bußgeld* wegen zu schnellen Fahrens. | auch: gut, fein
+rush hour | Hauptverkehrszeit | n | Avoid driving during *rush hour*. | Meide das Autofahren zur *Hauptverkehrszeit*. |
+taxi rank | Taxistand | n | There's a *taxi rank* outside the station. | Vor dem Bahnhof gibt es einen *Taxistand*. | US: taxi stand
+## B2
+accelerate | beschleunigen, Gas geben | v | Don't *accelerate* in the bend. | Gib in der Kurve kein *Gas*. |
+brake hard | scharf bremsen | phrase | I had to *brake hard* to avoid a deer. | Ich musste *scharf bremsen*, um einem Reh auszuweichen. |
+collision | Zusammenstoß | n | Two cars were involved in the *collision*. | Zwei Autos waren an dem *Zusammenstoß* beteiligt. |
+commuter | Pendler(in) | n | The train was packed with *commuters*. | Der Zug war voller *Pendler*. |
+detour | Umweg, Umleitung | n | We had to take a *detour*. | Wir mussten einen *Umweg* fahren. | UK auch: diversion
+diversion | Umleitung | n | There's a *diversion* because of roadworks. | Wegen Bauarbeiten gibt es eine *Umleitung*. |
+roadworks | Baustelle (Straße) | n | *Roadworks* caused long delays. | *Baustellen* führten zu langen Verzögerungen. | US: road work / construction
+junction | Kreuzung, Anschlussstelle | n | Leave the motorway at *junction* 7. | Verlass die Autobahn an der *Ausfahrt* 7. |
+lane | Fahrspur | n | Stay in the left *lane*. | Bleib auf der linken *Spur*. |
+hard shoulder | Standstreifen | n | Stop on the *hard shoulder* in an emergency. | Halte im Notfall auf dem *Standstreifen*. | US: shoulder
+tailback | Rückstau | n | There's a ten-mile *tailback*. | Es gibt einen zehn Meilen langen *Rückstau*. |
+toll | Maut | n | You have to pay a *toll* on this road. | Auf dieser Straße zahlt man *Maut*. |
+vehicle | Fahrzeug | n | Heavy *vehicles* are not allowed. | Schwere *Fahrzeuge* sind nicht erlaubt. |
+public transport | öffentliche Verkehrsmittel | n | I mostly use *public transport*. | Ich nutze meist *öffentliche Verkehrsmittel*. | US: public transportation
+season ticket | Monats-/Jahreskarte | n | A *season ticket* saves money. | Eine *Zeitkarte* spart Geld. |
+connection | Anschluss, Verbindung | n | I missed my *connection* in Cologne. | Ich habe in Köln meinen *Anschluss* verpasst. |
+reverse | rückwärts fahren | v | She *reversed* into a parking space. | Sie *fuhr rückwärts* in eine Parklücke. |
+skid | schleudern, rutschen | v | The car *skidded* on the ice. | Das Auto *schleuderte* auf dem Eis. |
+swerve | ausweichen, ausscheren | v | He *swerved* to avoid the cyclist. | Er *wich* dem Radfahrer *aus*. |
+speeding | zu schnelles Fahren | n | He was stopped for *speeding*. | Er wurde wegen *zu schnellen Fahrens* angehalten. |
+breathalyser | Alkoholtest(gerät) | n | Police asked him to take a *breathalyser* test. | Die Polizei forderte ihn zu einem *Alkoholtest* auf. | US: breathalyzer
+car-sharing | Carsharing | n | *Car-sharing* is popular in big cities. | *Carsharing* ist in Großstädten beliebt. |
+fuel consumption | Kraftstoffverbrauch | n | The new model has lower *fuel consumption*. | Das neue Modell hat einen geringeren *Verbrauch*. |
+give way | Vorfahrt gewähren | phrase | You must *give way* to traffic from the right. | Du musst dem Verkehr von rechts *Vorfahrt gewähren*. | US: yield
+right of way | Vorfahrt | n | Who has the *right of way* here? | Wer hat hier *Vorfahrt*? |
+pull over | rechts ranfahren | v | The police told him to *pull over*. | Die Polizei forderte ihn auf, *rechts ranzufahren*. |
+## C1
+congestion | Verkehrsüberlastung, Stau | n | *Congestion* in the city centre is getting worse. | Die *Verkehrsüberlastung* in der Innenstadt wird schlimmer. |
+congestion charge | City-Maut | n | London introduced a *congestion charge*. | London führte eine *City-Maut* ein. |
+gridlock | Verkehrskollaps; Stillstand | n | The strike caused total *gridlock*. | Der Streik verursachte einen totalen *Verkehrskollaps*. | auch politisch: Blockade
+tailgate | zu dicht auffahren | v | The van was *tailgating* me all the way. | Der Transporter *fuhr* mir die ganze Strecke *zu dicht auf*. |
+write off | (Auto) zu Schrott fahren | v | She *wrote off* her car in the accident. | Sie hat ihr Auto bei dem Unfall *zu Schrott gefahren*. | auch: abschreiben
+hit-and-run | Unfallflucht | n | He was the victim of a *hit-and-run*. | Er wurde Opfer einer *Unfallflucht*. |
+pile-up | Massenkarambolage | n | Fog caused a 30-car *pile-up*. | Nebel verursachte eine *Massenkarambolage* mit 30 Autos. |
+fender bender | Blechschaden | n | It was just a *fender bender*. | Es war nur ein *Blechschaden*. | US, umgangssprachlich
+jaywalk | bei Rot über die Straße gehen | v | You can get fined for *jaywalking* in the US. | In den USA kann man fürs *Überqueren bei Rot* bestraft werden. |
+infrastructure | Infrastruktur | n | The city invested in cycling *infrastructure*. | Die Stadt investierte in Fahrrad-*Infrastruktur*. |
+commuter belt | Speckgürtel | n | They moved to the *commuter belt*. | Sie zogen in den *Speckgürtel*. |
+underpass | Unterführung | n | Use the *underpass* to cross the road. | Benutz die *Unterführung*, um die Straße zu überqueren. |
+level crossing | Bahnübergang | n | Wait at the *level crossing*. | Warte am *Bahnübergang*. | US: railroad crossing
+derail | entgleisen | v | The train *derailed* near the station. | Der Zug *entgleiste* in Bahnhofsnähe. | auch: zum Scheitern bringen
+standstill | Stillstand | n | Traffic came to a *standstill*. | Der Verkehr kam zum *Stillstand*. |
+bottleneck | Engpass | n | The bridge is a major *bottleneck*. | Die Brücke ist ein großer *Engpass*. |
+emissions zone | Umweltzone | n | Old diesel cars can't enter the *emissions zone*. | Alte Diesel dürfen nicht in die *Umweltzone*. |
+roadside assistance | Pannenhilfe | n | Call *roadside assistance*. | Ruf die *Pannenhilfe*. |
+speed camera | Blitzer | n | I was caught by a *speed camera*. | Ich wurde *geblitzt*. |

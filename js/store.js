@@ -26,11 +26,21 @@ export const DEFAULT_SETTINGS = {
   focusTopic: null, // gewähltes Thema: neue Wörter nur daraus (null = Themen abwechselnd)
 };
 
+// Nur diese Felder werden für Wörter aus der Wortliste gespeichert –
+// die Wortliste selbst kommt aus dem Code (js/words.js, js/wordbank.js).
+const PROGRESS_KEYS = ["state", "stability", "difficulty", "due", "lastReview", "reps", "lapses", "introducedAt", "knownAt", "inStory"];
+
+function pickProgress(c) {
+  const p = {};
+  for (const k of PROGRESS_KEYS) if (c[k] !== undefined) p[k] = c[k];
+  return p;
+}
+
 function fresh() {
   const cards = {};
   for (const c of seedCards()) cards[c.id] = c;
   return {
-    version: 3,
+    version: 4,
     created: Date.now(),
     cards,
     settings: { ...DEFAULT_SETTINGS },
@@ -69,6 +79,7 @@ function migrate() {
   state.settings = { ...DEFAULT_SETTINGS, ...(state.settings || {}) };
   state.customTopics = state.customTopics || {};
   state.stories = state.stories || [];
+  state.cards = state.cards || {};
   if ((state.version || 1) < 3) {
     // Wörter aus bisherigen Geschichten markieren
     for (const st of state.stories) {
@@ -80,25 +91,38 @@ function migrate() {
   }
   delete state.newSinceStory;
   delete state.storyQueue;
-  state.version = 3;
+  state.version = 4;
 }
 
-// Neue Einträge der Startliste ergänzen und Reihenfolge aktualisieren, ohne Fortschritt zu verlieren
+// Wortliste aus dem Code + gespeicherter Fortschritt + eigene Wörter zusammenführen
 function mergeSeed() {
+  const saved = state.cards || {};
+  const cards = {};
   for (const c of seedCards()) {
-    const have = state.cards[c.id];
-    if (!have) state.cards[c.id] = c;
-    else if (!have.custom) {
-      have.order = c.order;
-      have.topic = c.topic;
-    }
+    const have = saved[c.id];
+    cards[c.id] = have && !have.custom ? { ...c, ...pickProgress(have) } : c;
   }
+  for (const [id, c] of Object.entries(saved)) {
+    if (c.custom) cards[id] = c;
+    else if (!cards[id] && c.en) cards[id] = c; // Wort, das es in der Liste nicht mehr gibt
+  }
+  state.cards = cards;
   save();
+}
+
+// Speichert eigene Wörter vollständig, Wörter der Liste nur mit ihrem Fortschritt
+function serialize() {
+  const out = { ...state, cards: {} };
+  for (const c of Object.values(state.cards)) {
+    if (c.custom) out.cards[c.id] = c;
+    else if (c.state !== "new" || c.inStory || c.introducedAt) out.cards[c.id] = pickProgress(c);
+  }
+  return out;
 }
 
 export function save() {
   try {
-    localStorage.setItem(KEY, JSON.stringify(state));
+    localStorage.setItem(KEY, JSON.stringify(serialize()));
   } catch (e) {
     alert("Speichern fehlgeschlagen: " + e.message);
   }
@@ -120,7 +144,7 @@ export function updateCard(card) {
 // ---------- Themen ----------
 
 export function allTopics() {
-  return { ...TOPICS, alltag: "Alltag", ...(load().customTopics || {}) };
+  return { ...TOPICS, ...(load().customTopics || {}) };
 }
 
 export function topicLabel(key) {
@@ -513,7 +537,8 @@ export function deleteStory(id) {
 
 export function exportData() {
   // Schlüssel und Passwörter gehören nicht in die Sicherungsdatei
-  const copy = JSON.parse(JSON.stringify(load()));
+  load();
+  const copy = JSON.parse(JSON.stringify(serialize()));
   copy.settings.geminiKey = "";
   copy.settings.appSecret = "";
   return JSON.stringify(copy, null, 2);

@@ -1,0 +1,84 @@
+# Camping & Outdoor
+## B1
+campfire | Lagerfeuer | n | We sat around the *campfire* and sang. | Wir saßen am *Lagerfeuer* und sangen. |
+caravan | Wohnwagen | n | They spent the summer in a *caravan*. | Sie verbrachten den Sommer im *Wohnwagen*. | US: trailer
+camper van | Wohnmobil, Campingbus | n | We rented a *camper van* for two weeks. | Wir mieteten zwei Wochen lang ein *Wohnmobil*. | US: RV
+matches | Streichhölzer | n | Keep the *matches* dry. | Halt die *Streichhölzer* trocken. |
+lighter | Feuerzeug | n | Have you got a *lighter*? | Hast du ein *Feuerzeug*? |
+rope | Seil | n | Tie the boat with a *rope*. | Bind das Boot mit einem *Seil* fest. |
+knife | Messer | n | A good pocket *knife* is essential. | Ein gutes Taschen*messer* ist unverzichtbar. |
+insect | Insekt | n | The *insects* were terrible at night. | Die *Insekten* waren nachts furchtbar. |
+lake | See | n | We swam in the *lake* every morning. | Wir schwammen jeden Morgen im *See*. | der See = lake, die See = sea
+river | Fluss | n | The *river* was too deep to cross. | Der *Fluss* war zu tief zum Durchqueren. |
+forest | Wald | n | We got lost in the *forest*. | Wir haben uns im *Wald* verirrt. |
+hill | Hügel | n | We climbed the *hill* behind the campsite. | Wir stiegen auf den *Hügel* hinter dem Campingplatz. |
+valley | Tal | n | The *valley* was full of fog. | Das *Tal* war voller Nebel. |
+mountain | Berg | n | We could see the *mountains* from our tent. | Von unserem Zelt aus sahen wir die *Berge*. |
+path | Weg, Pfad | n | Follow the *path* to the waterfall. | Folge dem *Weg* zum Wasserfall. |
+waterfall | Wasserfall | n | We had lunch next to a *waterfall*. | Wir aßen neben einem *Wasserfall* zu Mittag. |
+wildlife | Tierwelt, wilde Tiere | n | The park is full of *wildlife*. | Der Park ist voller *wilder Tiere*. | unzählbar
+cool box | Kühlbox | n | Put the drinks in the *cool box*. | Tu die Getränke in die *Kühlbox*. | US: cooler
+gas stove | Gaskocher | n | We cooked on a small *gas stove*. | Wir kochten auf einem kleinen *Gaskocher*. |
+blanket | Decke | n | Bring an extra *blanket*. | Bring eine zusätzliche *Decke* mit. |
+wet | nass | adj | Everything got *wet* in the storm. | Im Sturm wurde alles *nass*. |
+dry | trocknen; trocken | v | Hang your clothes up to *dry*. | Häng deine Kleidung zum *Trocknen* auf. |
+thunderstorm | Gewitter | n | A *thunderstorm* woke us up. | Ein *Gewitter* weckte uns. |
+lightning | Blitz | n | The tree was hit by *lightning*. | Der Baum wurde vom *Blitz* getroffen. | unzählbar; Donner = thunder
+mud | Schlamm | n | Our boots were covered in *mud*. | Unsere Stiefel waren voller *Schlamm*. |
+rain jacket | Regenjacke | n | Pack a *rain jacket* just in case. | Pack sicherheitshalber eine *Regenjacke* ein. |
+boots | Stiefel, Wanderschuhe | n | My walking *boots* are waterproof. | Meine Wander*schuhe* sind wasserdicht. |
+## B2
+peg | Hering (Zeltpflock) | n | We lost two tent *pegs*. | Wir haben zwei *Heringe* verloren. | US: stake
+groundsheet | Zeltboden, Unterlegplane | n | Put the *groundsheet* down first. | Leg zuerst die *Unterlegplane* aus. |
+sleeping mat | Isomatte | n | A thin *sleeping mat* isn't enough in winter. | Eine dünne *Isomatte* reicht im Winter nicht. |
+headlamp | Stirnlampe | n | A *headlamp* keeps your hands free. | Eine *Stirnlampe* hält die Hände frei. | auch: head torch
+compass | Kompass | n | Can you read a *compass*? | Kannst du einen *Kompass* lesen? |
+first aid kit | Erste-Hilfe-Set | n | Always carry a *first aid kit*. | Hab immer ein *Erste-Hilfe-Set* dabei. |
+insect repellent | Insektenschutzmittel | n | Don't forget the *insect repellent*. | Vergiss das *Mückenschutzmittel* nicht. |
+waterproof | wasserdicht | adj | Is your tent *waterproof*? | Ist dein Zelt *wasserdicht*? |
+summit | Gipfel | n | We reached the *summit* at sunrise. | Wir erreichten den *Gipfel* bei Sonnenaufgang. |
+ridge | Grat, Bergrücken | n | We walked along the *ridge*. | Wir gingen den *Grat* entlang. |
+cliff | Klippe | n | Don't go too close to the *cliff* edge. | Geh nicht zu nah an den Rand der *Klippe*. |
+cave | Höhle | n | We explored a *cave* by the sea. | Wir erkundeten eine *Höhle* am Meer. |
+stream | Bach | n | We filled our bottles at a *stream*. | Wir füllten unsere Flaschen an einem *Bach*. |
+meadow | Wiese | n | We camped in a *meadow* full of flowers. | Wir zelteten auf einer *Wiese* voller Blumen. |
+wilderness | Wildnis | n | They spent a week in the *wilderness*. | Sie verbrachten eine Woche in der *Wildnis*. |
+hiking trail | Wanderweg | n | The *hiking trail* is well marked. | Der *Wanderweg* ist gut ausgeschildert. |
+blister | Blase (an der Haut) | n | New boots gave me *blisters*. | Neue Schuhe haben mir *Blasen* verursacht. |
+sunburn | Sonnenbrand | n | I got a bad *sunburn* on the first day. | Ich bekam am ersten Tag einen schlimmen *Sonnenbrand*. |
+frostbite | Erfrierung | n | Climbers risk *frostbite* at high altitude. | Bergsteiger riskieren in großer Höhe *Erfrierungen*. |
+altitude | Höhe (über dem Meer) | n | We camped at an *altitude* of 2,000 metres. | Wir zelteten auf 2.000 Metern *Höhe*. |
+damp | feucht, klamm | adj | Everything in the tent felt *damp*. | Alles im Zelt fühlte sich *klamm* an. |
+chilly | kühl, frisch | adj | The nights were *chilly*. | Die Nächte waren *kühl*. |
+foggy | neblig | adj | It was too *foggy* to see the lake. | Es war zu *neblig*, um den See zu sehen. |
+set up camp | das Lager aufschlagen | phrase | We *set up camp* near the river. | Wir *schlugen* unser *Lager* am Fluss *auf*. |
+light a fire | ein Feuer anzünden | phrase | It took ages to *light a fire*. | Es dauerte ewig, ein *Feuer anzuzünden*. |
+backcountry | Hinterland, abgelegenes Gebiet | n | You need a permit for the *backcountry*. | Für das *Hinterland* braucht man eine Genehmigung. |
+nature reserve | Naturschutzgebiet | n | Camping is banned in the *nature reserve*. | Im *Naturschutzgebiet* ist Zelten verboten. |
+wild camping | Wildcampen | n | *Wild camping* is allowed in Scotland. | In Schottland ist *Wildcampen* erlaubt. |
+hammock | Hängematte | n | I slept in a *hammock* between two trees. | Ich schlief in einer *Hängematte* zwischen zwei Bäumen. |
+binoculars | Fernglas | n | We watched the birds through *binoculars*. | Wir beobachteten die Vögel mit dem *Fernglas*. | immer Plural
+## C1
+bivouac | Biwak | n | We spent the night in a *bivouac* on the glacier. | Wir verbrachten die Nacht in einem *Biwak* auf dem Gletscher. |
+glacier | Gletscher | n | The *glacier* has shrunk dramatically. | Der *Gletscher* ist dramatisch geschrumpft. |
+scree | Geröll | n | We slid down a slope of loose *scree*. | Wir rutschten einen Hang mit losem *Geröll* hinunter. |
+boulder | Felsbrocken | n | A huge *boulder* blocked the path. | Ein riesiger *Felsbrocken* versperrte den Weg. |
+undergrowth | Unterholz, Gestrüpp | n | Something moved in the *undergrowth*. | Etwas bewegte sich im *Unterholz*. |
+canopy | Blätterdach | n | Sunlight filtered through the *canopy*. | Sonnenlicht fiel durch das *Blätterdach*. |
+embers | Glut | n | We cooked potatoes in the *embers*. | Wir garten Kartoffeln in der *Glut*. |
+smoulder | glimmen, schwelen | v | The fire was still *smouldering* in the morning. | Das Feuer *glimmte* am Morgen noch. | US: smolder
+torrential | sintflutartig | adj | *Torrential* rain flooded the campsite. | *Sintflutartiger* Regen überflutete den Campingplatz. |
+trudge | (mühsam) stapfen | v | We *trudged* through the snow for hours. | Wir *stapften* stundenlang durch den Schnee. |
+scramble | kraxeln, klettern | v | We *scrambled* over the rocks. | Wir *kraxelten* über die Felsen. |
+ascent | Aufstieg | n | The *ascent* took five hours. | Der *Aufstieg* dauerte fünf Stunden. |
+treacherous | tückisch, gefährlich | adj | The path becomes *treacherous* after rain. | Nach Regen wird der Weg *tückisch*. |
+self-sufficient | autark, selbstversorgend | adj | The hut is completely *self-sufficient*. | Die Hütte ist völlig *autark*. |
+leave no trace | keine Spuren hinterlassen | phrase | Good campers *leave no trace*. | Gute Camper *hinterlassen keine Spuren*. |
+weather-beaten | verwittert, wettergegerbt | adj | He had a *weather-beaten* face. | Er hatte ein *wettergegerbtes* Gesicht. |
+pristine | unberührt, makellos | adj | The lake was *pristine* and clear. | Der See war *unberührt* und klar. |
+rough it | primitiv leben, auf Komfort verzichten | phrase | We *roughed it* for a week in the mountains. | Wir *verzichteten* eine Woche in den Bergen *auf jeden Komfort*. | umgangssprachlich
+hypothermia | Unterkühlung | n | Wet clothes can lead to *hypothermia*. | Nasse Kleidung kann zu *Unterkühlung* führen. |
+dehydrated | dehydriert, ausgetrocknet | adj | Drink often or you'll get *dehydrated*. | Trink oft, sonst *dehydrierst* du. |
+foothills | Vorgebirge, Ausläufer | n | We camped in the *foothills* of the Alps. | Wir zelteten in den *Ausläufern* der Alpen. |
+gorge | Schlucht | n | A river runs through the *gorge*. | Ein Fluss fließt durch die *Schlucht*. |
+crevasse | Gletscherspalte | n | He fell into a *crevasse*. | Er fiel in eine *Gletscherspalte*. |
