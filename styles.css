@@ -307,6 +307,20 @@ textarea { width: 100%; margin: 10px 0; border: 1px solid var(--line); backgroun
 @keyframes rise { from { transform: translateY(30px); opacity: 0; } }
 @media (min-width: 720px) { .sheet-backdrop { align-items: center; } .sheet { border-radius: 22px; } }
 
+.vocab-level .lvl-num { min-width: 64px; text-align: right; }
+.meter.two { display: flex; }
+.meter.two > div { border-radius: 0; }
+.meter.two > div:first-child { border-radius: 99px 0 0 99px; }
+.meter.two > .lrn { background: var(--marker); }
+.legend-line { display: flex; align-items: center; gap: 4px 14px; flex-wrap: wrap; }
+.legend-line span { display: inline-flex; align-items: center; gap: 6px; }
+.nw { white-space: nowrap; }
+.vocab-level .badge, .lvl-row .badge { min-width: 32px; text-align: center; }
+.sw { display: inline-block; width: 10px; height: 10px; border-radius: 50%; }
+.sw.sec { background: var(--accent); }
+.sw.lrn { background: var(--marker); }
+.lvl-counts { font-family: var(--sans); font-size: .85rem; font-weight: 500; color: var(--muted); white-space: nowrap; }
+
 /* Wortschatz */
 .tabs { display: flex; gap: 4px; background: var(--surface-2); border-radius: 99px; padding: 4px; margin-bottom: 12px; }
 .tab { flex: 1; border: 0; background: transparent; border-radius: 99px; padding: 8px 4px; font-weight: 600; font-size: .9rem; cursor: pointer; white-space: nowrap; }

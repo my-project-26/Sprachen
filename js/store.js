@@ -164,6 +164,22 @@ export function deleteCustomTopic(key) {
   save();
 }
 
+// Wörter je Niveau: wie viele es gibt und wie viele davon sicher sitzen.
+// key = Themen-Schlüssel, ohne key = gesamter Wortschatz.
+export function levelStats(key) {
+  const list = key ? cards().filter((c) => c.topic === key) : cards();
+  const out = {};
+  for (const L of LEVEL_ORDER) {
+    const inL = list.filter((c) => c.level === L);
+    out[L] = {
+      total: inL.length,
+      secure: inL.filter((c) => c.state === "known" || isLearned(c)).length,
+      learning: inL.filter((c) => categorize(c) === "learning").length,
+    };
+  }
+  return out;
+}
+
 export function topicStats(key) {
   const list = cards().filter((c) => c.topic === key);
   const st = { total: list.length, new: 0, learning: 0, learned: 0, known: 0 };

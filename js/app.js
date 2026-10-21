@@ -930,15 +930,40 @@ function topics(openKey) {
     <h1 class="h-sm">Themen</h1><span></span></header>
   <p class="muted intro">Neue Wörter kommen nur aus aktiven Themen – jeweils ${settings().storyEvery} am Stück aus einem Thema, damit die Geschichte dazu passt.</p>
 
+  ${(() => {
+    const ls = S.levelStats();
+    const sum = LEVELS.reduce((a, L) => ({ t: a.t + ls[L].total, s: a.s + ls[L].secure }), { t: 0, s: 0 });
+    return `<section class="card vocab-level">
+      <div class="row-between"><h2>Dein Wortschatz</h2><span class="small muted">${sum.s} von ${sum.t} sicher</span></div>
+      ${LEVELS.map((L) => {
+        const x = ls[L];
+        const pS = x.total ? (x.secure / x.total) * 100 : 0;
+        const pL = x.total ? (x.learning / x.total) * 100 : 0;
+        return `<div class="lvl-row">
+          <span class="badge lvl-${L}">${L}</span>
+          <div class="meter two"><div style="width:${pS}%"></div><div class="lrn" style="width:${pL}%"></div></div>
+          <span class="small lvl-num"><b>${x.secure}</b> / ${x.total}</span>
+        </div>`;
+      }).join("")}
+      <p class="small muted legend-line"><span><i class="sw sec"></i> sicher</span><span><i class="sw lrn"></i> im Lernen</span><span>rechts: sicher / Wörter in der App</span></p>
+      <p class="small muted">Die Werte werden genauer, je mehr du lernst, Geschichten liest und Fragen beantwortest. Mit „+ KI“ kannst du jedes Thema um weitere Wörter erweitern.</p>
+    </section>`;
+  })()}
+
   <div class="topic-list">${keys
     .map((k) => {
       const st = S.topicStats(k);
+      const ls = S.levelStats(k);
       return `<div class="card topic-row ${active.has(k) ? "on" : ""}" data-k="${k}">
         <div class="topic-head">
           <label class="switch"><input type="checkbox" data-toggle="${k}" ${active.has(k) ? "checked" : ""}><span></span></label>
           <div class="topic-info">
-            <b>${esc(all[k])}</b>
-            <span class="small muted">${st.total ? `${st.new} neu · ${st.learning} im Lernen · ${st.learned + st.known} sicher` : "noch keine Wörter"}</span>
+            <b>${esc(all[k])} <span class="lvl-counts" title="Wörter in B1 / B2 / C1">(${ls.B1.total}/${ls.B2.total}/${ls.C1.total})</span></b>
+            <span class="small muted">${
+              st.total
+                ? `sicher: ${LEVELS.map((L) => `<span class="nw">${L} ${ls[L].secure}/${ls[L].total}</span>`).join(" · ")}<br>${st.new} neu · ${st.learning} im Lernen`
+                : "noch keine Wörter"
+            }</span>
           </div>
           <button class="btn ghost small-btn" data-gen="${k}">${ICON.plus}<span>KI</span></button>
         </div>
