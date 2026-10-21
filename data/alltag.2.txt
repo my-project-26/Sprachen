@@ -68,7 +68,6 @@ hate | hassen | v | I *hate* waiting. | Ich *hasse* Warten. |
 heavy | schwer | adj | The box is too *heavy*. | Die Kiste ist zu *schwer*. |
 height | Höhe; Größe | n | What's your *height*? | Wie *groß* bist du? |
 hole | Loch | n | There's a *hole* in my sock. | In meiner Socke ist ein *Loch*. |
-however | wie auch immer | adv | *However* hard I try, I can't do it. | *Wie sehr* ich mich auch anstrenge, ich schaffe es nicht. |
 huge | riesig | adj | They live in a *huge* house. | Sie wohnen in einem *riesigen* Haus. |
 immediately | sofort | adv | Call me *immediately*. | Ruf mich *sofort* an. |
 important | wichtig | adj | This is very *important*. | Das ist sehr *wichtig*. |
