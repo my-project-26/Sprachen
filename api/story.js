@@ -1,4 +1,4 @@
-import { callClaude, checkAuth, readBody, send, wrap, httpError } from "./_claude.js";
+import { callLLM, checkAuth, readBody, send, wrap, httpError, providerFrom } from "./_llm.js";
 import { STORY_SYSTEM, storyPrompt, extractJson } from "../js/prompts.js";
 
 export default wrap(async (req, res) => {
@@ -12,17 +12,19 @@ export default wrap(async (req, res) => {
     .map((w) => ({ en: w.en.trim().slice(0, 60), de: String(w.de || "").slice(0, 120) }));
   if (clean.length < 2) throw httpError(400, "Mindestens 2 Wörter nötig");
   const level = ["B1", "B2", "C1"].includes(body.level) ? body.level : "B2";
+  const llm = providerFrom(body);
 
   let lastErr;
   for (let attempt = 0; attempt < 2; attempt++) {
     try {
-      const text = await callClaude(STORY_SYSTEM, storyPrompt(clean, level), 2500);
+      const text = await callLLM(llm, STORY_SYSTEM, storyPrompt(clean, level), 2500);
       const data = extractJson(text);
       if (!data.text) throw new Error("Antwort ohne Text");
       return send(res, 200, data);
     } catch (e) {
       lastErr = e;
-      if (e.status && e.status !== 502) break;
+      // Konfigurationsfehler (fehlender Key usw.) nicht wiederholen
+      if (e.status === 500 || e.status === 401) break;
     }
   }
   throw httpError(lastErr?.status || 502, "Geschichte konnte nicht erstellt werden: " + (lastErr?.message || ""));

@@ -1,4 +1,4 @@
-import { callClaude, checkAuth, readBody, send, wrap, httpError } from "./_claude.js";
+import { callLLM, checkAuth, readBody, send, wrap, httpError, providerFrom } from "./_llm.js";
 import { WORDS_SYSTEM, generateWordsPrompt, fillWordPrompt, extractJson } from "../js/prompts.js";
 
 const LEVELS = ["B1", "B2", "C1"];
@@ -36,8 +36,10 @@ export default wrap(async (req, res) => {
     });
   }
 
-  const text = await callClaude(WORDS_SYSTEM, prompt, 4000);
+  const text = await callLLM(providerFrom(body), WORDS_SYSTEM, prompt, 4000);
   const data = extractJson(text);
-  const words = (data.words || []).map(cleanCard).filter(Boolean);
+  const list = Array.isArray(data) ? data : data.words || (data.en ? [data] : []);
+  const words = list.map(cleanCard).filter(Boolean);
+  if (!words.length) throw httpError(502, "Die KI hat keine gültigen Karten geliefert. Bitte erneut versuchen.");
   send(res, 200, { words });
 });

@@ -17,6 +17,8 @@ export const DEFAULT_SETTINGS = {
   appSecret: "",
   typeAnswer: false,
   autoSpeak: true,
+  provider: "auto", // auto | claude | gemini | ollama
+  ollamaModel: "",
 };
 
 function fresh() {

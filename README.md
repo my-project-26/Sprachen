@@ -22,13 +22,23 @@ Voraussetzung: Node.js 18+ (`brew install node`).
 ```bash
 git clone https://github.com/my-project-26/Sprachen.git
 cd Sprachen
-cp .env.example .env      # dann ANTHROPIC_API_KEY eintragen
+cp .env.example .env      # optional: API-Key eintragen
 node server.js
 ```
 
-Dann <http://localhost:5173> öffnen. Ohne API-Key funktioniert alles außer den KI-Funktionen; Geschichten gehen dann über den **manuellen Modus** (Prompt kopieren → in der Claude-App einfügen → Antwort zurück einfügen).
+Dann <http://localhost:5173> öffnen.
 
-API-Key: <https://console.anthropic.com> → API Keys. Eine Geschichte kostet je nach Modell nur Bruchteile eines Cents bis wenige Cent.
+## KI-Anbieter
+
+In der App unter **Einstellungen → KI-Server** wählbar. Es reicht einer:
+
+| Anbieter | Kosten | Einrichtung |
+|---|---|---|
+| **Ollama** (lokal) | kostenlos | Ollama-App starten, Modell laden: `ollama pull gemma3` – kein Key nötig |
+| **Gemini** | Gratis-Kontingent (begrenzt) | Key in [Google AI Studio](https://aistudio.google.com) → `GEMINI_API_KEY` in `.env` |
+| **Claude** | ca. 1 Cent pro Geschichte | Key in der [Anthropic Console](https://console.anthropic.com) → `ANTHROPIC_API_KEY` in `.env` |
+
+Ohne jeden Anbieter funktionieren Geschichten im **manuellen Modus** (Prompt kopieren → in Claude/Gemini-App einfügen → Antwort zurück einfügen).
 
 ## Online stellen (Vercel, kostenlos)
 
@@ -53,6 +63,7 @@ js/store.js                Speicherung (localStorage), Tageslogik
 js/words.js                Startwortschatz B1–C1 (139 Wörter, nach Thema)
 js/prompts.js              KI-Prompts (von Server und manuellem Modus genutzt)
 js/api.js, js/tts.js       Server-Aufrufe, Sprachausgabe
+api/_llm.js                Anbindung Claude / Gemini / Ollama
 api/story.js               POST: Geschichte erzeugen
 api/words.js               POST: Wörter generieren / Karte ausfüllen
 api/health.js              GET: Verbindungstest

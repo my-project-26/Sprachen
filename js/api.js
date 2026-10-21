@@ -13,12 +13,14 @@ function headers() {
 }
 
 export async function callApi(path, body) {
+  const s = getState().settings;
+  const payload = { ...body, provider: s.provider || "auto", model: s.provider === "ollama" ? s.ollamaModel || "" : "" };
   let res;
   try {
     res = await fetch(`${base()}/api/${path}`, {
       method: "POST",
       headers: headers(),
-      body: JSON.stringify(body),
+      body: JSON.stringify(payload),
     });
   } catch (e) {
     throw new Error("Server nicht erreichbar. Läuft die App über Vercel oder `node server.js`?");

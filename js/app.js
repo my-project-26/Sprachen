@@ -443,7 +443,10 @@ function storyNew() {
     const status = document.getElementById("status");
     btn.disabled = true;
     btn.textContent = "Geschichte wird geschrieben…";
-    status.textContent = "Das dauert meist 10–20 Sekunden.";
+    status.textContent =
+      settings().provider === "ollama"
+        ? "Lokales Modell – kann je nach Mac 30–90 Sekunden dauern."
+        : "Das dauert meist 10–20 Sekunden.";
     try {
       const data = await callApi("story", { words: words.map((w) => ({ en: w.en, de: w.de })), level: level() });
       finish(data);
@@ -958,6 +961,18 @@ function settingsView() {
   </section>
   <section class="card">
     <h2>KI-Server</h2>
+    <label class="field"><span>KI-Anbieter</span><select id="s-provider">${[
+      ["auto", "Automatisch (Claude → Gemini → Ollama)"],
+      ["claude", "Claude (Anthropic)"],
+      ["gemini", "Gemini (Google)"],
+      ["ollama", "Ollama (lokal auf dem Mac)"],
+    ]
+      .map(([v, l]) => `<option value="${v}" ${s.provider === v ? "selected" : ""}>${l}</option>`)
+      .join("")}</select></label>
+    <label class="field" id="ollamaField" ${s.provider === "ollama" ? "" : "hidden"}><span>Ollama-Modell</span>
+      <select id="s-ollama"><option value="">Erstes installiertes Modell</option>${
+        s.ollamaModel ? `<option value="${esc(s.ollamaModel)}" selected>${esc(s.ollamaModel)}</option>` : ""
+      }</select></label>
     <label class="field"><span>Server-Adresse (leer = diese Seite)</span><input id="s-api" placeholder="https://dein-projekt.vercel.app" value="${esc(s.apiBase)}"></label>
     <label class="field"><span>App-Passwort (falls APP_SECRET gesetzt)</span><input id="s-secret" type="password" value="${esc(s.appSecret)}"></label>
     <button class="btn ghost" id="testApi">Verbindung testen</button>
@@ -996,14 +1011,52 @@ function settingsView() {
   document.getElementById("s-rate").addEventListener("input", (e) => (document.getElementById("ratev").textContent = e.target.value));
   document.getElementById("testVoice").onclick = () => say("The official announcement was made today.");
 
+  bind("s-ollama", "ollamaModel");
+  const provSel = document.getElementById("s-provider");
+  provSel.addEventListener("change", () => {
+    st.settings.provider = provSel.value;
+    S.save();
+    document.getElementById("ollamaField").hidden = provSel.value !== "ollama";
+    if (provSel.value === "ollama") loadOllamaModels();
+  });
+
+  const NAMES = { claude: "Claude", gemini: "Gemini", ollama: "Ollama" };
+  async function loadOllamaModels() {
+    try {
+      const h = await health();
+      const sel = document.getElementById("s-ollama");
+      const models = h.providers?.ollama?.models || [];
+      sel.innerHTML =
+        `<option value="">Erstes installiertes Modell</option>` +
+        models.map((m) => `<option value="${esc(m)}" ${m === st.settings.ollamaModel ? "selected" : ""}>${esc(m)}</option>`).join("");
+      return h;
+    } catch {
+      return null;
+    }
+  }
+  if (s.provider === "ollama") loadOllamaModels();
+
   document.getElementById("testApi").onclick = async () => {
     const out = document.getElementById("apiStatus");
     out.textContent = "Prüfe…";
     try {
       const h = await health();
-      out.innerHTML = h.hasKey
-        ? `<span class="ok">Verbunden · Modell ${esc(h.model)}</span>`
-        : `<span class="err">Server läuft, aber ANTHROPIC_API_KEY fehlt.</span>`;
+      const p = h.providers || {};
+      const chosen = st.settings.provider === "auto" ? h.auto : st.settings.provider;
+      const line = (k) => {
+        const x = p[k] || {};
+        if (k === "ollama")
+          return x.available
+            ? `✓ Ollama: ${x.models.length} Modell(e)`
+            : x.running
+              ? "✗ Ollama läuft, aber kein Modell installiert"
+              : "✗ Ollama nicht gestartet";
+        return x.available ? `✓ ${NAMES[k]} (${esc(x.model)})` : `✗ ${NAMES[k]}: kein Key in .env`;
+      };
+      const ok = p[chosen]?.available;
+      out.innerHTML = `<span class="${ok ? "ok" : "err"}">${ok ? "Bereit" : "Nicht bereit"} · verwendet wird: ${NAMES[chosen]}</span><br>
+        <span class="muted">${["claude", "gemini", "ollama"].map(line).join("<br>")}</span>`;
+      if (chosen === "ollama") loadOllamaModels();
     } catch (err) {
       out.innerHTML = `<span class="err">${esc(err.message)}</span>`;
     }

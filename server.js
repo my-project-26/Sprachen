@@ -69,7 +69,12 @@ const server = http.createServer(async (req, res) => {
 
 server.listen(PORT, () => {
   console.log(`Wortwerk läuft auf http://localhost:${PORT}`);
-  if (!process.env.ANTHROPIC_API_KEY) {
-    console.log("Hinweis: ANTHROPIC_API_KEY fehlt (.env) – Geschichten gehen dann nur im manuellen Modus.");
-  }
+  const keys = [];
+  if (process.env.ANTHROPIC_API_KEY) keys.push("Claude");
+  if (process.env.GEMINI_API_KEY) keys.push("Gemini");
+  console.log(
+    keys.length
+      ? `KI-Anbieter mit Key: ${keys.join(", ")} (Ollama wird zusätzlich automatisch erkannt)`
+      : "Kein API-Key in .env – KI läuft über Ollama (falls gestartet) oder den manuellen Modus."
+  );
 });
