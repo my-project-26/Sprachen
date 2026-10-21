@@ -83,6 +83,7 @@ const routes = { home, learn, stories, story, words, add, topics, stats, setting
 function render() {
   tts.stop();
   document.getElementById("toast").classList.remove("show");
+  document.querySelectorAll(".sheet-backdrop").forEach((x) => x.remove());
   const [name, ...rest] = location.hash.replace(/^#\/?/, "").split("/");
   const arg = rest.length ? decodeURIComponent(rest.join("/")) : undefined;
   const view = routes[name] || home;
@@ -111,6 +112,7 @@ function home() {
   const allKeys = Object.keys(S.allTopics());
   const wordsLeft = S.newWordsLeft();
   const nextTopic = news.length ? S.topicLabel(news[news.length - 1].topic) : "";
+  const focus = s.settings.focusTopic;
   const lvl = LEVELS.map((L) => {
     const inL = all.filter((c) => c.level === L);
     const ok = inL.filter((c) => S.isLearned(c) || c.state === "known").length;
@@ -143,15 +145,19 @@ function home() {
       <div class="plus">+</div>
       <div class="num-box accent"><strong>${news.length}</strong><span>Neue Wörter</span></div>
     </div>
-    ${nextTopic ? `<p class="small muted center">Neue Wörter heute aus: <b>${esc(nextTopic)}</b></p>` : ""}
+    <div class="topic-line">
+      <span class="small muted">Neue Wörter aus:</span>
+      <b class="small">${esc(focus ? S.topicLabel(focus) : nextTopic || "Themen abwechselnd")}</b>
+      <button class="link-btn small" id="pickTopic">ändern</button>
+    </div>
     ${
       total
         ? `<a class="btn primary big" href="#/learn">${total} ${total === 1 ? "Wort" : "Wörter"} üben</a>`
         : wordsLeft
           ? `<p class="done-msg">Für heute ist alles erledigt.</p>
-             <a class="btn ghost" href="#/learn/extra">5 zusätzliche neue Wörter</a>`
-          : `<p class="done-msg">In deinen Themen gibt es keine neuen Wörter mehr.</p>
-             <a class="btn ghost" href="#/topics">Themen erweitern</a>`
+             <button class="btn ghost" id="extraBtn">5 zusätzliche neue Wörter</button>`
+          : `<p class="done-msg">In diesem Bereich gibt es keine neuen Wörter mehr.</p>
+             <button class="btn ghost" id="extraBtn">Anderes Thema wählen</button>`
     }
   </section>
 
@@ -189,6 +195,60 @@ function home() {
       .join("")}
     <p class="small muted">Zählt Wörter, die gelernt (Intervall ≥ ${S.LEARNED_DAYS} Tage) oder als bekannt markiert sind.</p>
   </section>`;
+
+  document.getElementById("pickTopic").onclick = () => topicPicker({ title: "Aus welchem Bereich sollen neue Wörter kommen?", onPick: () => home() });
+  const extra = document.getElementById("extraBtn");
+  if (extra)
+    extra.onclick = () =>
+      topicPicker({ title: "Aus welchem Bereich möchtest du 5 neue Wörter?", requireWords: true, onPick: () => go("#/learn/extra") });
+}
+
+// Auswahl-Dialog: Bereich wählen, mit Fortschritt je Thema
+function topicPicker({ title, onPick, requireWords = false }) {
+  const s = S.getState();
+  const all = S.allTopics();
+  const active = new Set(S.activeTopicKeys());
+  const focus = s.settings.focusTopic;
+  const keys = Object.keys(all)
+    .filter((k) => S.topicLevelInfo(k).total > 0)
+    .sort((a, b) => Number(active.has(b)) - Number(active.has(a)));
+
+  const overlay = document.createElement("div");
+  overlay.className = "sheet-backdrop";
+  overlay.innerHTML = `
+    <div class="sheet" role="dialog" aria-modal="true" aria-label="${esc(title)}">
+      <div class="sheet-head"><h2>${esc(title)}</h2>
+        <button class="icon-btn plain" data-close aria-label="Schließen">${ICON.close}</button></div>
+      <div class="sheet-list">
+        ${
+          requireWords
+            ? ""
+            : `<button class="pick ${!focus ? "current" : ""}" data-key="">
+                 <b>Alle aktiven Themen</b><span class="small muted">abwechselnd, je ${s.settings.storyEvery} Wörter pro Thema</span></button>`
+        }
+        ${keys
+          .map((k) => {
+            const info = S.topicLevelInfo(k);
+            const empty = info.newLeft === 0;
+            return `<button class="pick ${focus === k ? "current" : ""}" data-key="${k}" ${empty && requireWords ? "disabled" : ""}>
+              <b>${esc(all[k])} <span class="pick-meta">(${esc(S.topicProgressText(k))})</span></b>
+              <span class="small muted">${empty ? "keine neuen Wörter mehr – unter Themen mit KI erweitern" : `${info.newLeft} neue Wörter verfügbar`}</span>
+            </button>`;
+          })
+          .join("")}
+      </div>
+      <a class="link-btn small" href="#/topics" data-close>Themen verwalten oder eigenes Thema anlegen</a>
+    </div>`;
+  const close = () => overlay.remove();
+  overlay.addEventListener("click", (e) => {
+    if (e.target === overlay || e.target.closest("[data-close]")) return close();
+    const b = e.target.closest(".pick");
+    if (!b || b.disabled) return;
+    S.setFocusTopic(b.dataset.key || null);
+    close();
+    onPick?.(b.dataset.key || null);
+  });
+  document.body.appendChild(overlay);
 }
 
 // ---------- Lernsitzung ----------

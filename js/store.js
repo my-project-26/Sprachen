@@ -21,6 +21,7 @@ export const DEFAULT_SETTINGS = {
   provider: "auto", // auto | claude | gemini | ollama
   ollamaModel: "",
   activeTopics: null, // null = alle Themen aktiv, sonst Liste der Themen-Schlüssel
+  focusTopic: null, // gewähltes Thema: neue Wörter nur daraus (null = Themen abwechselnd)
 };
 
 function fresh() {
@@ -168,6 +169,55 @@ export function topicStats(key) {
   return st;
 }
 
+// Fortschritt eines Themas: wie viele Wörter sicher sitzen und wie viele noch
+// fehlen, bis das aktuelle Niveau in diesem Thema abgeschlossen ist.
+export function topicLevelInfo(key) {
+  const list = cards().filter((c) => c.topic === key);
+  const secure = (c) => c.state === "known" || isLearned(c);
+  const info = {
+    total: list.length,
+    secure: list.filter(secure).length,
+    newLeft: list.filter((c) => c.state === "new").length,
+    level: null, // Niveau, an dem gerade gearbeitet wird
+    remaining: 0, // Wörter bis dieses Niveau abgeschlossen ist
+    nextLevel: null, // Niveau danach
+  };
+  for (let i = 0; i < LEVEL_ORDER.length; i++) {
+    const open = list.filter((c) => c.level === LEVEL_ORDER[i] && !secure(c)).length;
+    if (open > 0) {
+      info.level = LEVEL_ORDER[i];
+      info.remaining = open;
+      info.nextLevel = LEVEL_ORDER[i + 1] || null;
+      break;
+    }
+  }
+  return info;
+}
+
+export function topicProgressText(key) {
+  const t = topicLevelInfo(key);
+  if (!t.total) return "noch keine Wörter";
+  const parts = [];
+  if (t.secure) parts.push(`${t.secure} ${t.secure === 1 ? "Wort" : "Wörter"} sicher`);
+  if (!t.level) parts.push("alle Niveaus geschafft");
+  else if (t.nextLevel) parts.push(`noch ${t.remaining} bis ${t.nextLevel}`);
+  else parts.push(`noch ${t.remaining} bis C1 komplett`);
+  return parts.join(" · ");
+}
+
+export function setFocusTopic(key) {
+  const s = load();
+  s.settings.focusTopic = key || null;
+  if (key) {
+    // sofort mit diesem Thema einen neuen Block beginnen
+    if (s.blockTopic !== key) {
+      s.blockTopic = key;
+      s.blockCount = 0;
+    }
+  }
+  save();
+}
+
 // ---------- Tage & Wiederholungen ----------
 
 export function dayKey(t = Date.now()) {
@@ -244,6 +294,21 @@ export function nextNewCards(n) {
   }
 
   const avail = (t) => pool.find((c) => c.topic === t && !used.has(c.id));
+
+  // Gewähltes Thema: nur daraus (unabhängig vom An/Aus-Schalter)
+  const focus = s.settings.focusTopic;
+  if (focus) {
+    const focusPool = cards()
+      .filter((c) => c.state === "new" && c.topic === focus && LEVEL_ORDER.indexOf(c.level) >= minLevel && !used.has(c.id))
+      .sort((a, b) => (a.order ?? 1e9) - (b.order ?? 1e9));
+    for (const c of focusPool) {
+      if (res.length >= n) break;
+      res.push(c);
+      used.add(c.id);
+    }
+    return res;
+  }
+
   let topic = s.blockTopic;
   let count = s.blockCount || 0;
   while (res.length < n) {
