@@ -199,6 +199,7 @@ h3 { font-size: 1.1rem; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .note.ff { background: #47231b; color: #ffc8b8; } }
 .flash-actions { margin-top: 14px; }
 .flash-actions .actions-row { margin-bottom: 0; }
+.known-btn { width: 100%; margin-top: 10px; font-weight: 500; color: var(--muted); }
 .grades { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
 .grade {
   border: 0; border-radius: 16px; padding: 12px 4px; min-height: 64px; cursor: pointer; font-weight: 650;

@@ -276,7 +276,6 @@ function showCard(revealed = false, typed = null) {
     actions = `
       <div class="actions-row">
         <button class="btn ghost" id="hintBtn">Hinweis</button>
-        ${isNew ? `<button class="btn ghost" id="knownBtn">Kenne ich schon</button>` : ""}
       </div>
       <button class="btn primary big" id="reveal">Aufdecken</button>`;
   } else {
@@ -284,7 +283,8 @@ function showCard(revealed = false, typed = null) {
     const lbl = { 1: "Nochmal", 2: "Schwer", 3: "Gut", 4: "Leicht" };
     actions = `<div class="grades">${[1, 2, 3, 4]
       .map((g) => `<button class="grade g${g}" data-g="${g}"><span>${lbl[g]}</span><small>${formatInterval(p[g])}</small></button>`)
-      .join("")}</div>`;
+      .join("")}</div>
+      <button class="btn ghost known-btn" id="knownBtn">Kenne ich schon – nicht mehr abfragen</button>`;
   }
 
   $app.innerHTML = `${sessionHeader()}
@@ -298,8 +298,6 @@ function showCard(revealed = false, typed = null) {
     const doReveal = () => showCard(true, input ? input.value : null);
     document.getElementById("reveal").onclick = doReveal;
     document.getElementById("hintBtn").onclick = () => (document.getElementById("hint").hidden = false);
-    const kb = document.getElementById("knownBtn");
-    if (kb) kb.onclick = () => markKnown(c);
     if (input) {
       input.focus();
       input.onkeydown = (e) => {
@@ -309,6 +307,7 @@ function showCard(revealed = false, typed = null) {
   } else {
     if (s.autoSpeak) say(c.en);
     $app.querySelectorAll("[data-g]").forEach((b) => (b.onclick = () => rate(Number(b.dataset.g))));
+    document.getElementById("knownBtn").onclick = () => markKnown(c);
   }
 }
 
