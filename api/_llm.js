@@ -67,7 +67,8 @@ export async function ollamaModels() {
   const res = await fetch(`${OLLAMA_URL()}/api/tags`, { signal: AbortSignal.timeout(2500) });
   if (!res.ok) throw new Error(`Ollama antwortet nicht (${res.status})`);
   const data = await res.json();
-  return (data.models || []).map((m) => m.name);
+  // Embedding-Modelle (z. B. nomic-embed-text) können keinen Text schreiben → ausblenden
+  return (data.models || []).map((m) => m.name).filter((n) => !/embed/i.test(n));
 }
 
 async function callOllama(system, user, maxTokens, model) {
