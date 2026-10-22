@@ -537,11 +537,12 @@ function storyNew() {
       <select id="lvl">${["B1", "B2", "C1"].map((L) => `<option ${L === lvl ? "selected" : ""}>${L}</option>`).join("")}</select></label>
     ${
       isStaticHost() && !settings().geminiKey && !settings().apiBase
-        ? `<div class="key-box">
-             <p class="small"><b>Für die KI fehlt noch dein Gemini-Key.</b> Kostenlos unter aistudio.google.com → „Get API key“. Er bleibt nur auf diesem Gerät.</p>
+        ? `<details class="key-box">
+             <summary class="small">Läuft ohne Anmeldung über eine kostenlose KI. <u>Optional: eigenen Gemini-Key nutzen</u></summary>
+             <p class="small">Mit eigenem Key (kostenlos unter aistudio.google.com) wird es oft schneller und zuverlässiger. Er bleibt nur auf diesem Gerät.</p>
              <div class="inline-form"><input id="gkeyInline" type="password" autocomplete="off" placeholder="AIza…">
              <button class="btn ghost" id="gkeySave">Speichern</button></div>
-           </div>`
+           </details>`
         : ""
     }
     <button class="btn primary big" id="gen">Mit KI erstellen</button>
@@ -585,7 +586,7 @@ function storyNew() {
     status.textContent =
       settings().provider === "ollama"
         ? "Lokales Modell – kann je nach Mac 30–90 Sekunden dauern."
-        : "Das dauert meist 10–20 Sekunden.";
+        : "Das dauert meist 10–40 Sekunden. Ist eine KI überlastet, probiert die App automatisch die nächste.";
     try {
       const data = await callApi("story", {
         words: learning.map((w) => ({ en: w.en, de: w.de })),
@@ -1232,7 +1233,8 @@ function settingsView() {
       ["claude", "Claude (Anthropic)"],
       ["gemini", "Gemini (Google)"],
       ["ollama", "Ollama (lokal auf dem Mac)"],
-      ["browser", "Gemini direkt im Browser (GitHub Pages / iPhone)"],
+      ["browser", "Im Browser: eigener Gemini-Key, sonst kostenlose KI"],
+      ["free", "Kostenlose KI ohne Key (pollinations.ai)"],
     ]
       .map(([v, l]) => `<option value="${v}" ${s.provider === v ? "selected" : ""}>${l}</option>`)
       .join("")}</select></label>
@@ -1241,7 +1243,7 @@ function settingsView() {
         s.ollamaModel ? `<option value="${esc(s.ollamaModel)}" selected>${esc(s.ollamaModel)}</option>` : ""
       }</select></label>
     <div id="browserFields" ${s.provider === "browser" || isStaticHost() ? "" : "hidden"}>
-      <label class="field"><span>Gemini-API-Key (bleibt nur auf diesem Gerät)</span>
+      <label class="field"><span>Gemini-API-Key – optional (bleibt nur auf diesem Gerät)</span>
         <input id="s-gkey" type="password" autocomplete="off" placeholder="AIza…" value="${esc(s.geminiKey)}"></label>
       <p class="small muted">Key kostenlos in Google AI Studio (aistudio.google.com → Get API key). Er wird nicht in Sicherungen exportiert.</p>
     </div>
@@ -1290,7 +1292,7 @@ function settingsView() {
     st.settings.provider = provSel.value;
     S.save();
     document.getElementById("ollamaField").hidden = provSel.value !== "ollama";
-    document.getElementById("browserFields").hidden = !(provSel.value === "browser" || isStaticHost());
+    document.getElementById("browserFields").hidden = !(provSel.value === "browser" || provSel.value === "free" || isStaticHost());
     if (provSel.value === "ollama") loadOllamaModels();
   });
 

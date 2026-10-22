@@ -28,25 +28,26 @@ export function isStaticHost() {
   return /github\.io$/i.test(location.hostname);
 }
 
+// Im Browser-Modus (GitHub Pages, iPhone) spricht die App direkt mit der KI:
+// 1. mit deinem eigenen Gemini-Key (falls eingetragen) – mit Ersatzmodellen,
+// 2. sonst / bei Überlastung über einen kostenlosen Dienst ohne Key (Pollinations).
 export function usesBrowserGemini() {
   const s = getState().settings;
-  if (s.provider === "browser") return true;
-  return s.provider === "auto" && isStaticHost() && !!s.geminiKey && !s.apiBase;
+  if (s.provider === "browser" || s.provider === "free") return true;
+  return s.provider === "auto" && isStaticHost() && !s.apiBase;
 }
 
-// ---------- Gemini direkt aus dem Browser ----------
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+const GEMINI_MODELS = ["gemini-flash-latest", "gemini-flash-lite-latest", "gemini-2.5-flash"];
 
-async function geminiDirect(system, user, maxTokens) {
-  const s = getState().settings;
-  if (!s.geminiKey) throw new Error("Kein Gemini-Key hinterlegt (Einstellungen → KI-Server).");
-  const model = s.geminiModel || "gemini-flash-latest";
+async function geminiOnce(model, system, user, maxTokens, key) {
   let res;
   try {
     res = await fetch(
       `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent`,
       {
         method: "POST",
-        headers: { "content-type": "application/json", "x-goog-api-key": s.geminiKey },
+        headers: { "content-type": "application/json", "x-goog-api-key": key },
         body: JSON.stringify({
           systemInstruction: { parts: [{ text: system }] },
           contents: [{ role: "user", parts: [{ text: user }] }],
@@ -55,17 +56,111 @@ async function geminiDirect(system, user, maxTokens) {
       }
     );
   } catch {
-    throw new Error("Gemini nicht erreichbar – Internetverbindung prüfen.");
+    const e = new Error("Gemini nicht erreichbar");
+    e.retry = true;
+    throw e;
   }
   const data = await res.json().catch(() => ({}));
   if (!res.ok) {
-    const msg = data?.error?.message || `Fehler ${res.status}`;
-    throw new Error("Gemini: " + msg + (res.status === 429 ? " (Gratis-Kontingent erschöpft – später erneut versuchen)" : ""));
+    const e = new Error("Gemini: " + (data?.error?.message || `Fehler ${res.status}`));
+    e.status = res.status;
+    e.retry = res.status === 429 || res.status >= 500 || res.status === 404;
+    throw e;
   }
   const parts = data?.candidates?.[0]?.content?.parts || [];
   const text = parts.filter((p) => p.text && !p.thought).map((p) => p.text).join("");
-  if (!text) throw new Error("Gemini hat keinen Text geliefert.");
+  if (!text) {
+    const e = new Error("Gemini hat keinen Text geliefert");
+    e.retry = true;
+    throw e;
+  }
   return text;
+}
+
+async function geminiDirect(system, user, maxTokens) {
+  const s = getState().settings;
+  const models = [s.geminiModel, ...GEMINI_MODELS].filter((m, i, a) => m && a.indexOf(m) === i);
+  let last;
+  for (const m of models) {
+    for (let attempt = 0; attempt < 2; attempt++) {
+      try {
+        return await geminiOnce(m, system, user, maxTokens, s.geminiKey);
+      } catch (e) {
+        last = e;
+        if (!e.retry) throw e; // z. B. ungültiger Key → nicht weiter probieren
+        if (e.status === 404) break; // Modell gibt es nicht → nächstes Modell
+        await sleep(1500 * (attempt + 1));
+      }
+    }
+  }
+  throw last;
+}
+
+// Kostenloser KI-Dienst ohne Anmeldung und ohne Key (pollinations.ai)
+async function freeAI(system, user) {
+  const ref = "wortwerk";
+  let last;
+  for (let attempt = 0; attempt < 2; attempt++) {
+    try {
+      const res = await fetch(`https://text.pollinations.ai/openai?referrer=${ref}`, {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({
+          model: "openai",
+          referrer: ref,
+          messages: [
+            { role: "system", content: system },
+            { role: "user", content: user },
+          ],
+        }),
+      });
+      if (res.ok) {
+        const data = await res.json().catch(() => null);
+        const text = data?.choices?.[0]?.message?.content;
+        if (text) return text;
+      }
+      last = new Error(`Kostenloser KI-Dienst: Fehler ${res.status}`);
+    } catch {
+      last = new Error("Kostenloser KI-Dienst nicht erreichbar");
+    }
+    // zweiter Weg: einfache GET-Schnittstelle
+    try {
+      const url =
+        `https://text.pollinations.ai/${encodeURIComponent(user)}` +
+        `?system=${encodeURIComponent(system)}&model=openai&json=true&referrer=${ref}`;
+      const res = await fetch(url);
+      if (res.ok) {
+        const text = await res.text();
+        if (text && text.includes("{")) return text;
+      }
+      last = new Error(`Kostenloser KI-Dienst: Fehler ${res.status}`);
+    } catch {
+      last = new Error("Kostenloser KI-Dienst nicht erreichbar");
+    }
+    await sleep(16000); // Gratis-Dienst erlaubt ca. eine Anfrage pro 15 Sekunden
+  }
+  throw last;
+}
+
+async function browserLLM(system, user, maxTokens) {
+  const s = getState().settings;
+  const errors = [];
+  if (s.geminiKey && s.provider !== "free") {
+    try {
+      return await geminiDirect(system, user, maxTokens);
+    } catch (e) {
+      errors.push(e.message);
+      if (e.status === 400 || e.status === 403) {
+        // Key ungültig → trotzdem kostenlos weiterprobieren
+      }
+    }
+  }
+  try {
+    return await freeAI(system, user);
+  } catch (e) {
+    errors.push(e.message);
+  }
+  throw new Error(errors.join(" · ") + " – bitte in einer Minute erneut versuchen oder den manuellen Weg nutzen.");
 }
 
 function cleanCard(w) {
@@ -88,13 +183,13 @@ async function browserCall(path, body) {
     let lastErr;
     for (let attempt = 0; attempt < 2; attempt++) {
       try {
-        const text = await geminiDirect(STORY_SYSTEM, storyPrompt(body.words, level, body.theme || "", body.known || []), 2500);
+        const text = await browserLLM(STORY_SYSTEM, storyPrompt(body.words, level, body.theme || "", body.known || []), 2500);
         const data = extractJson(text);
         if (!data.text) throw new Error("Antwort ohne Text");
         return data;
       } catch (e) {
         lastErr = e;
-        if (/Key|Kontingent/.test(e.message)) break;
+        break; // browserLLM probiert intern bereits mehrere Wege
       }
     }
     throw new Error("Geschichte konnte nicht erstellt werden: " + lastErr.message);
@@ -109,7 +204,7 @@ async function browserCall(path, body) {
             count: Math.min(20, Math.max(1, Number(body.count) || 10)),
             exclude: body.exclude || [],
           });
-    const data = extractJson(await geminiDirect(WORDS_SYSTEM, prompt, 4000));
+    const data = extractJson(await browserLLM(WORDS_SYSTEM, prompt, 4000));
     const list = Array.isArray(data) ? data : data.words || (data.en ? [data] : []);
     const words = list.map(cleanCard).filter(Boolean);
     if (!words.length) throw new Error("Die KI hat keine gültigen Karten geliefert. Bitte erneut versuchen.");
@@ -150,7 +245,8 @@ export async function callApi(path, body) {
 export async function health() {
   if (usesBrowserGemini()) {
     const s = getState().settings;
-    if (!s.geminiKey) return { browser: true, ok: false, message: "Kein Gemini-Key eingetragen." };
+    if (!s.geminiKey || s.provider === "free")
+      return { browser: true, ok: true, message: "Kostenlose KI ohne Key (pollinations.ai) – wird beim Erstellen genutzt." };
     const res = await fetch("https://generativelanguage.googleapis.com/v1beta/models?pageSize=1", {
       headers: { "x-goog-api-key": s.geminiKey },
     }).catch(() => null);

@@ -49,7 +49,7 @@ Ohne jeden Anbieter funktionieren Geschichten im **manuellen Modus** (Prompt kop
 
 1. Im Repo auf GitHub: **Settings → Pages** → Source **Deploy from a branch** → Branch **main**, Ordner **/ (root)** → **Save**.
 2. Nach 1–2 Minuten läuft die App unter <https://my-project-26.github.io/Sprachen/>.
-3. In der App: **Einstellungen → KI-Server** → „Gemini direkt im Browser“ und den Gemini-Key aus [Google AI Studio](https://aistudio.google.com) eintragen. Der Key bleibt nur auf dem jeweiligen Gerät.
+3. Geschichten funktionieren dort **ohne Key** über eine kostenlose KI (pollinations.ai). Optional kann jeder unter **Einstellungen → KI-Server** einen eigenen Gemini-Key eintragen (zuverlässiger; bleibt nur auf dem Gerät). Ist ein Modell überlastet, probiert die App automatisch Ersatzmodelle und danach die kostenlose KI.
 
 ## Online stellen (Vercel, kostenlos, mit Server)
 
