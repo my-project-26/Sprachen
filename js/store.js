@@ -345,10 +345,18 @@ export function nextNewCards(n) {
   if (n <= 0) return [];
   const active = activeTopicKeys();
   const minLevel = LEVEL_ORDER.indexOf(s.settings.startLevel);
-  const pool = cards()
-    .filter((c) => c.state === "new" && LEVEL_ORDER.indexOf(c.level) >= minLevel)
-    .filter((c) => active.includes(c.topic) || (c.custom && c.order < 0))
-    .sort((a, b) => (a.order ?? 1e9) - (b.order ?? 1e9));
+  // Niveau für Niveau: erst wenn alle A1-Wörter dran waren, kommen A2-Wörter usw.
+  const lv = (c) => LEVEL_ORDER.indexOf(c.level);
+  const lowestOnly = (list) => {
+    const low = Math.min(...list.filter((c) => !c.custom).map(lv));
+    return list.filter((c) => c.custom || lv(c) === low);
+  };
+  const byOrder = (a, b) => (a.order ?? 1e9) - (b.order ?? 1e9);
+  const pool = lowestOnly(
+    cards()
+      .filter((c) => c.state === "new" && lv(c) >= minLevel)
+      .filter((c) => active.includes(c.topic) || (c.custom && c.order < 0))
+  ).sort(byOrder);
 
   const res = [];
   const used = new Set();
@@ -366,9 +374,9 @@ export function nextNewCards(n) {
   // Gewähltes Thema: nur daraus (unabhängig vom An/Aus-Schalter)
   const focus = s.settings.focusTopic;
   if (focus) {
-    const focusPool = cards()
-      .filter((c) => c.state === "new" && c.topic === focus && LEVEL_ORDER.indexOf(c.level) >= minLevel && !used.has(c.id))
-      .sort((a, b) => (a.order ?? 1e9) - (b.order ?? 1e9));
+    const focusPool = lowestOnly(
+      cards().filter((c) => c.state === "new" && c.topic === focus && lv(c) >= minLevel && !used.has(c.id))
+    ).sort(byOrder);
     for (const c of focusPool) {
       if (res.length >= n) break;
       res.push(c);
