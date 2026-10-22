@@ -7,6 +7,8 @@ für alle Wörter und Beispielsätze einer Sprache.
   python tools/make-audio.py es          # nur Spanisch
   python tools/make-audio.py en es       # mehrere
   python tools/make-audio.py all         # alle Sprachen mit Wortliste
+  python tools/make-audio.py en:A1       # nur Englisch, Niveau A1
+  python tools/make-audio.py en:A1,A2 es # Englisch A1+A2, Spanisch komplett
 
 Ergebnis: audio/<sprache>/<hash>.mp3 und audio/<sprache>/index.json
 (Liste der vorhandenen Aufnahmen). Bereits vorhandene Dateien werden
@@ -82,7 +84,7 @@ def rows_from(path, start=None, end="];"):
     return rows
 
 
-def texts_for(lang):
+def texts_for(lang, levels=None):
     js = os.path.join(ROOT, "js")
     if lang == "en":
         rows = rows_from(os.path.join(js, "words.js"), "const RAW = [")
@@ -92,6 +94,8 @@ def texts_for(lang):
         if not os.path.exists(p):
             return []
         rows = rows_from(p)
+    if levels:
+        rows = [r for r in rows if len(r) > 3 and r[3] in levels]
     out = []
     for r in rows:
         if r and r[0]:
@@ -131,9 +135,11 @@ async def one(text, voice, path, sem, stats):
                 await asyncio.sleep(2 + attempt * 4)
 
 
-async def build(lang, deadline):
+async def build(arg, deadline):
+    lang, _, lv = arg.partition(":")
+    levels = set(lv.upper().split(",")) if lv else None
     voice = VOICES.get(lang)
-    texts = texts_for(lang)
+    texts = texts_for(lang, levels)
     if not voice or not texts:
         print(f"{lang}: keine Wortliste/Stimme – übersprungen")
         return True
@@ -165,8 +171,8 @@ async def main():
     args = sys.argv[1:] or ["all"]
     langs = list(VOICES) if args == ["all"] else args
     deadline = time.time() + MAX_MIN * 60 if MAX_MIN else 0
-    for lang in langs:
-        if not await build(lang, deadline):
+    for arg in langs:
+        if not await build(arg, deadline):
             break
 
 

@@ -5,6 +5,10 @@ name: Sprachaufnahmen erzeugen
 # sich Wortlisten ändern, und lässt sich unter „Actions“ auch von Hand starten.
 on:
   workflow_dispatch:
+    inputs:
+      langs:
+        description: "Sprachen/Niveaus, z. B. en:A1 oder en es"
+        default: "en:A1"
   push:
     branches: [main]
     paths:
@@ -19,7 +23,7 @@ permissions:
 
 concurrency:
   group: audio
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   audio:
@@ -35,7 +39,7 @@ jobs:
         env:
           AUDIO_MAX_MIN: "300"
           AUDIO_PARALLEL: "6"
-        run: python tools/make-audio.py all
+        run: python tools/make-audio.py ${{ inputs.langs || 'en:A1' }}
       - name: Hochladen
         run: |
           git config user.name "wortwerk-bot"
