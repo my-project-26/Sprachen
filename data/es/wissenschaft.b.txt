@@ -1,0 +1,67 @@
+# Spanisch – Wissenschaft, Gesellschaft, Alltag B2/C1 (Teil 4)
+## B2
+la encuesta | die Umfrage | n | Hicimos una *encuesta* a los clientes. | Wir machten eine *Umfrage* unter den Kunden. |
+la estadística | die Statistik | n | Según las *estadísticas*, ha mejorado. | Laut *Statistik* hat es sich verbessert. |
+el porcentaje | der Prozentsatz | n | Un alto *porcentaje* está de acuerdo. | Ein hoher *Prozentsatz* stimmt zu. |
+la media | der Durchschnitt | n | Está por encima de la *media*. | Es liegt über dem *Durchschnitt*. |
+la cifra | die Zahl, Ziffer | n | Las *cifras* son preocupantes. | Die *Zahlen* sind besorgniserregend. |
+el gráfico | die Grafik | n | Mira el *gráfico*. | Schau dir die *Grafik* an. |
+el aumento progresivo | der stetige Anstieg | n | Hay un *aumento progresivo* de casos. | Es gibt einen *stetigen Anstieg* der Fälle. |
+la disminución | der Rückgang | n | Se registró una *disminución* del paro. | Es wurde ein *Rückgang* der Arbeitslosigkeit verzeichnet. |
+la proporción | das Verhältnis | n | La *proporción* es de uno a tres. | Das *Verhältnis* ist eins zu drei. |
+el fenómeno social | das gesellschaftliche Phänomen | n | Es un *fenómeno social* nuevo. | Es ist ein neues *gesellschaftliches Phänomen*. |
+la generación Z | die Generation Z | n | La *generación Z* usa otras redes. | Die *Generation Z* nutzt andere Netzwerke. |
+la brecha generacional | die Generationenkluft | n | Hay una *brecha generacional* evidente. | Es gibt eine deutliche *Kluft zwischen den Generationen*. |
+el consumo responsable | der verantwortungsvolle Konsum | n | Fomentan el *consumo responsable*. | Sie fördern *bewussten Konsum*. |
+el comercio justo | der faire Handel | n | Compro café de *comercio justo*. | Ich kaufe Kaffee aus *fairem Handel*. |
+la movilidad sostenible | die nachhaltige Mobilität | n | La ciudad apuesta por la *movilidad sostenible*. | Die Stadt setzt auf *nachhaltige Mobilität*. |
+el estilo de vida | der Lebensstil | n | Cambió su *estilo de vida*. | Er änderte seinen *Lebensstil*. |
+la calidad del aire | die Luftqualität | n | La *calidad del aire* ha empeorado. | Die *Luftqualität* hat sich verschlechtert. |
+empeorar | sich verschlechtern | v | La situación *empeoró*. | Die Lage *verschlechterte* sich. |
+el tratamiento de datos | die Datenverarbeitung | n | Acepta el *tratamiento de datos*. | Stimme der *Datenverarbeitung* zu. |
+el consentimiento | die Einwilligung | n | Necesitamos tu *consentimiento*. | Wir brauchen deine *Einwilligung*. |
+el aviso legal | das Impressum, der rechtliche Hinweis | n | Lee el *aviso legal*. | Lies den *rechtlichen Hinweis*. |
+la descarga | der Download; die Entladung | n | La *descarga* tarda mucho. | Der *Download* dauert lange. |
+la ventana emergente | das Pop-up | n | Cierra la *ventana emergente*. | Schließ das *Pop-up*. |
+la pantalla táctil | der Touchscreen | n | Tiene *pantalla táctil*. | Es hat einen *Touchscreen*. |
+el navegador | der Browser; das Navi | n | Abre el *navegador*. | Öffne den *Browser*. |
+el buscador | die Suchmaschine | n | Búscalo en el *buscador*. | Such es in der *Suchmaschine*. |
+la búsqueda avanzada | die erweiterte Suche | n | Usa la *búsqueda avanzada*. | Nutze die *erweiterte Suche*. |
+el teletrabajo híbrido | das hybride Arbeiten | n | Tenemos un modelo de *teletrabajo híbrido*. | Wir arbeiten *hybrid*. |
+la videollamada | der Videoanruf | n | Hacemos una *videollamada* semanal. | Wir machen einen wöchentlichen *Videoanruf*. |
+la aplicación de mensajería | der Messenger | n | Uso una *aplicación de mensajería* segura. | Ich nutze einen sicheren *Messenger*. |
+## C1
+la epistemología | die Erkenntnistheorie | n | Estudia *epistemología*. | Er studiert *Erkenntnistheorie*. |
+la metodología | die Methodik | n | Cuestionan la *metodología* del estudio. | Man stellt die *Methodik* der Studie infrage. |
+el muestreo | die Stichprobenerhebung | n | El *muestreo* no es representativo. | Die *Stichprobe* ist nicht repräsentativ. |
+representativo | repräsentativ | adj | La muestra es *representativa*. | Die Stichprobe ist *repräsentativ*. |
+el espectro | das Spektrum | n | Abarca un amplio *espectro*. | Es umfasst ein breites *Spektrum*. |
+la tendencia al alza | der Aufwärtstrend | n | Hay una *tendencia al alza*. | Es gibt einen *Aufwärtstrend*. |
+la tendencia a la baja | der Abwärtstrend | n | Los precios siguen una *tendencia a la baja*. | Die Preise zeigen einen *Abwärtstrend*. |
+exponencial | exponentiell | adj | El crecimiento es *exponencial*. | Das Wachstum ist *exponentiell*. |
+la proyección | die Hochrechnung | n | Según las *proyecciones*, crecerá. | Laut *Hochrechnungen* wird es wachsen. |
+el escenario | das Szenario | n | Es el peor *escenario* posible. | Das ist das schlimmste mögliche *Szenario*. |
+la prospectiva | die Zukunftsforschung | n | Trabaja en *prospectiva* tecnológica. | Er arbeitet in der technologischen *Zukunftsforschung*. |
+la bioética | die Bioethik | n | Es un dilema de *bioética*. | Es ist ein Dilemma der *Bioethik*. |
+la sociedad de consumo | die Konsumgesellschaft | n | Critica la *sociedad de consumo*. | Er kritisiert die *Konsumgesellschaft*. |
+la globalización | die Globalisierung | n | La *globalización* tiene ventajas e inconvenientes. | Die *Globalisierung* hat Vor- und Nachteile. |
+la deslocalización industrial | die Industrieverlagerung | n | La *deslocalización industrial* afectó a la región. | Die *Industrieverlagerung* traf die Region. |
+el éxodo rural | die Landflucht | n | El *éxodo rural* vació los pueblos. | Die *Landflucht* entvölkerte die Dörfer. |
+la urbanización | die Verstädterung | n | La *urbanización* avanza rápido. | Die *Verstädterung* schreitet schnell voran. |
+el hacinamiento | die Überfüllung | n | El *hacinamiento* en las cárceles es grave. | Die *Überbelegung* der Gefängnisse ist gravierend. |
+la marginación | die Ausgrenzung | n | Sufren *marginación*. | Sie leiden unter *Ausgrenzung*. |
+la precariedad laboral | die prekäre Beschäftigung | n | La *precariedad laboral* afecta a los jóvenes. | *Prekäre Beschäftigung* trifft junge Menschen. |
+el estado del bienestar | der Sozialstaat | n | Defienden el *estado del bienestar*. | Sie verteidigen den *Sozialstaat*. |
+la renta básica universal | das bedingungslose Grundeinkommen | n | Debaten sobre la *renta básica universal*. | Man debattiert über das *bedingungslose Grundeinkommen*. |
+la meritocracia | die Leistungsgesellschaft | n | Cuestiona la *meritocracia*. | Er hinterfragt die *Leistungsgesellschaft*. |
+el ascensor social | der soziale Aufstieg | n | La educación es el *ascensor social*. | Bildung ist der Motor des *sozialen Aufstiegs*. |
+la movilidad social | die soziale Mobilität | n | La *movilidad social* ha disminuido. | Die *soziale Mobilität* hat abgenommen. |
+la vivienda digna | die menschenwürdige Wohnung | n | Exigen una *vivienda digna*. | Sie fordern *angemessenen Wohnraum*. |
+el relevo generacional | der Generationswechsel | n | Falta *relevo generacional* en el campo. | In der Landwirtschaft fehlt der *Nachwuchs*. |
+la longevidad | die Langlebigkeit | n | La *longevidad* plantea retos. | Die *Langlebigkeit* bringt Herausforderungen. |
+el individualismo | der Individualismus | n | El *individualismo* crece. | Der *Individualismus* nimmt zu. |
+el sentido de pertenencia | das Zugehörigkeitsgefühl | n | Busca un *sentido de pertenencia*. | Er sucht ein *Zugehörigkeitsgefühl*. |
+la idiosincrasia nacional | die nationale Eigenart | n | Es parte de la *idiosincrasia nacional*. | Es gehört zur *nationalen Eigenart*. |
+el multiculturalismo | der Multikulturalismus | n | El *multiculturalismo* enriquece. | *Multikulturalismus* bereichert. |
+la laicidad | der Laizismus | n | Defienden la *laicidad* del Estado. | Sie verteidigen die *Laizität* des Staates. |
+la secularización | die Säkularisierung | n | La *secularización* avanza. | Die *Säkularisierung* schreitet voran. |

@@ -1,0 +1,55 @@
+# Spanisch – Natur, Wetter, Landwirtschaft B2/C1 (Ergänzung)
+## B2
+el chaparrón | der Regenschauer | n | Nos pilló un *chaparrón*. | Uns überraschte ein *Regenschauer*. |
+la llovizna | der Nieselregen | n | Cae una *llovizna* suave. | Es fällt leichter *Nieselregen*. |
+el granizo | der Hagel | n | El *granizo* dañó los coches. | Der *Hagel* beschädigte die Autos. |
+la helada | der Frost | n | Esta noche habrá *helada*. | Heute Nacht gibt es *Frost*. |
+el bochorno | die Schwüle | n | Hace un *bochorno* insoportable. | Es ist unerträglich *schwül*. |
+la brisa | die Brise | n | Corre una *brisa* agradable. | Es weht eine angenehme *Brise*. |
+el relámpago | der Blitz (Lichterscheinung) | n | Vimos un *relámpago* a lo lejos. | Wir sahen in der Ferne einen *Blitz*. |
+el arco iris | der Regenbogen | n | ¡Mira el *arco iris*! | Schau, der *Regenbogen*! |
+el amanecer | die Morgendämmerung | n | Salimos al *amanecer*. | Wir brachen bei *Tagesanbruch* auf. |
+el atardecer | die Abenddämmerung | n | El *atardecer* en la playa es precioso. | Die *Abenddämmerung* am Strand ist wunderschön. |
+la cosecha | die Ernte | n | La *cosecha* fue buena. | Die *Ernte* war gut. |
+cosechar | ernten | v | *Cosechamos* las uvas en septiembre. | Wir *ernten* die Trauben im September. |
+sembrar | säen | v | *Sembramos* tomates. | Wir *säen* Tomaten. | siembro
+el cultivo | der Anbau | n | El *cultivo* del olivo es típico. | Der *Anbau* von Oliven ist typisch. |
+el agricultor | der Landwirt | n | Los *agricultores* protestan. | Die *Landwirte* protestieren. |
+la ganadería | die Viehzucht | n | Viven de la *ganadería*. | Sie leben von der *Viehzucht*. |
+el ganado | das Vieh | n | El *ganado* pasta en el prado. | Das *Vieh* weidet auf der Wiese. |
+el regadío | die Bewässerung | n | El *regadío* consume mucha agua. | Die *Bewässerung* verbraucht viel Wasser. |
+el olivo | der Olivenbaum | n | Hay miles de *olivos*. | Es gibt Tausende *Olivenbäume*. |
+la viña | der Weinberg | n | Paseamos entre las *viñas*. | Wir spazierten durch die *Weinberge*. |
+la mariposa | der Schmetterling | n | Una *mariposa* se posó en la flor. | Ein *Schmetterling* setzte sich auf die Blume. |
+la hormiga | die Ameise | n | Hay *hormigas* en la cocina. | In der Küche sind *Ameisen*. |
+el mosquito tigre | die Tigermücke | n | El *mosquito tigre* se ha extendido. | Die *Tigermücke* hat sich ausgebreitet. |
+la tortuga | die Schildkröte | n | Las *tortugas* ponen huevos en la playa. | Die *Schildkröten* legen am Strand Eier. |
+el ciervo | der Hirsch | n | Vimos un *ciervo* en el bosque. | Wir sahen einen *Hirsch* im Wald. |
+el jabalí | das Wildschwein | n | Hay *jabalíes* cerca del pueblo. | In der Nähe des Dorfes gibt es *Wildschweine*. |
+## C1
+la canícula | die Hundstage (Hochsommerhitze) | n | En plena *canícula* no se puede salir. | In den *Hundstagen* kann man nicht raus. |
+el temporal | das Unwetter | n | El *temporal* causó daños en la costa. | Das *Unwetter* richtete an der Küste Schäden an. |
+la gota fría | das Starkregenereignis (DANA) | n | La *gota fría* inundó Valencia. | Das *Starkregenereignis* überflutete Valencia. | heute meist: DANA
+la riada | die Sturzflut | n | La *riada* arrastró coches. | Die *Sturzflut* riss Autos mit. |
+el aguacero | der Wolkenbruch | n | Cayó un *aguacero* tremendo. | Es gab einen gewaltigen *Wolkenbruch*. |
+la escarcha | der Raureif | n | Los campos amanecieron con *escarcha*. | Die Felder waren morgens mit *Raureif* bedeckt. |
+la sequía prolongada | die anhaltende Dürre | n | La *sequía prolongada* arruina las cosechas. | Die *anhaltende Dürre* ruiniert die Ernten. |
+el barbecho | die Brache | n | Dejan la tierra en *barbecho*. | Sie lassen das Land *brachliegen*. |
+el monocultivo | die Monokultur | n | El *monocultivo* empobrece el suelo. | *Monokultur* laugt den Boden aus. |
+el pesticida | das Pestizid | n | Prohíben ciertos *pesticidas*. | Bestimmte *Pestizide* werden verboten. |
+el abono | der Dünger | n | Usan *abono* orgánico. | Sie verwenden organischen *Dünger*. |
+la trashumancia | die Wanderweidewirtschaft | n | La *trashumancia* es una tradición antigua. | Die *Transhumanz* ist eine alte Tradition. |
+el rebaño | die Herde | n | Un *rebaño* de ovejas cruzó la carretera. | Eine Schaf*herde* überquerte die Straße. |
+el depredador | das Raubtier | n | El lobo es un *depredador* natural. | Der Wolf ist ein natürliches *Raubtier*. |
+la presa | die Beute; der Staudamm | n | El águila atrapó a su *presa*. | Der Adler fing seine *Beute*. |
+la madriguera | der Bau (Tier) | n | El conejo se escondió en la *madriguera*. | Das Kaninchen versteckte sich im *Bau*. |
+el humedal | das Feuchtgebiet | n | Protegen los *humedales*. | Sie schützen die *Feuchtgebiete*. |
+la marisma | das Marschland | n | Las *marismas* de Doñana. | Die *Marschen* von Doñana. |
+la dehesa | die Weidelandschaft mit Eichen | n | Los cerdos ibéricos viven en la *dehesa*. | Die iberischen Schweine leben in der *Dehesa*. |
+el matorral | das Gestrüpp | n | El fuego se extendió por el *matorral*. | Das Feuer breitete sich im *Gestrüpp* aus. |
+el sotobosque | das Unterholz | n | Limpiaron el *sotobosque*. | Sie räumten das *Unterholz*. |
+la polinización | die Bestäubung | n | Las abejas son clave para la *polinización*. | Bienen sind entscheidend für die *Bestäubung*. |
+la cadena trófica | die Nahrungskette | n | Afecta a toda la *cadena trófica*. | Es betrifft die gesamte *Nahrungskette*. |
+el equilibrio ecológico | das ökologische Gleichgewicht | n | Se rompió el *equilibrio ecológico*. | Das *ökologische Gleichgewicht* wurde gestört. |
+la huella hídrica | der Wasserfußabdruck | n | La carne tiene una gran *huella hídrica*. | Fleisch hat einen großen *Wasserfußabdruck*. |
+la desalinización | die Meerwasserentsalzung | n | Construyen una planta de *desalinización*. | Sie bauen eine *Entsalzungsanlage*. |
