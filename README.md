@@ -96,7 +96,7 @@ sw.js, manifest.webmanifest PWA / Offline
 
 ## Designs
 
-Unter Einstellungen → Design gibt es 10 Designs: Klassisch, Bordkarte, Stapel (Karten wischen), Tutor-Chat, Vokabelheft, iOS-Glas, 80er, Musik, Kunst und Sport.
+Unter Einstellungen → Design gibt es 6 Designs: Klassisch, Bordkarte, Stapel (Karten wischen), Tutor-Chat, Vokabelheft und iOS-Glas.
 Jedes hat ein eigenes Layout für Startseite und Lernkarte (`js/skins.js`), alle übrigen Seiten passen sich über `skins.css` an.
 
 ## Niveaus

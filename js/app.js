@@ -191,7 +191,7 @@ function home() {
       }),
       focus, focusLabel: focus ? S.topicLabel(focus) : nextTopic || "Themen abwechselnd", nextTopicLabel: nextTopic, wordsLeft,
     };
-    const extraLevel = ["stapel", "glas", "musik", "kunst", "sport"].includes(design)
+    const extraLevel = ["stapel", "glas"].includes(design)
       ? `<section class="card sk-level"><h2>Weg zu C1</h2>${lv
           .map(
             (x) => `<div class="lvl-row"><span class="badge lvl-${x.L}">${x.L}</span>

@@ -13,14 +13,6 @@ export const DESIGNS = [
   { key: "heft", name: "Vokabelheft", desc: "Linien, Handschrift, Textmarker", colors: ["#FDFDFB", "#23408E", "#FFF27A"], theme: "#FDFDFB",
     fonts: "Caveat:wght@500;700&family=Lora:ital,wght@0,400;0,600;1,400" },
   { key: "glas", name: "iOS-Glas", desc: "wie Apple Karten, Glas und Listen", colors: ["#F2F2F7", "#2F7CF6", "#34C759"], theme: "#F2F2F7" },
-  { key: "retro", name: "80er", desc: "Arcade-Neon und Windows 3.1", colors: ["#12002b", "#ff2e88", "#00f0ff"], theme: "#12002b",
-    fonts: "VT323&family=Orbitron:wght@700;900" },
-  { key: "musik", name: "Musik", desc: "Player und Karaoke-Text", colors: ["#121212", "#c2185b", "#ffd23f"], theme: "#121212",
-    fonts: "Manrope:wght@500;700;800" },
-  { key: "kunst", name: "Kunst", desc: "Bauhaus und Museum", colors: ["#F3F1EC", "#E8322B", "#1F4FB8"], theme: "#F3F1EC",
-    fonts: "Jost:wght@400;500;700" },
-  { key: "sport", name: "Sport", desc: "Anzeigetafel, Tabelle, Karten", colors: ["#0B3D2E", "#FFB800", "#E10600"], theme: "#0B3D2E",
-    fonts: "Oswald:wght@500;700&family=Share+Tech+Mono" },
 ];
 
 export const designKey = (k) => (DESIGNS.some((d) => d.key === k) ? k : "paper");
@@ -201,82 +193,6 @@ const HOME = {
     </section>`;
   },
 
-  // ---------- 6 80er ----------
-  retro(d) {
-    return `
-    <section class="rt-hero">
-      <div class="rt-sky"></div><div class="rt-sun"></div><div class="rt-grid"></div>
-      <a class="rt-gear" href="#/settings" aria-label="Einstellungen"><span class="sk-flag">${d.lang.flag}</span>${d.icon.gear}</a>
-      <div class="rt-logo">WORTWERK<small>Turbo ${esc(d.lang.native)}</small></div>
-      <nav class="rt-menu">
-        ${d.total ? `<a class="on" href="#/learn"><span>START</span><span>${d.total}</span></a>` : `<button class="on" id="extraBtn"><span>${d.wordsLeft ? "+10 NEUE" : "ANDERES THEMA"}</span><span>▶</span></button>`}
-        <a href="${d.weak ? "#/learn/weak" : "#/words"}"><span>NOCH LERNEN</span><span>${d.weak}</span></a>
-        <a href="${d.ready ? "#/story/new" : "#/stories"}"><span>GESCHICHTE</span><span>${d.storyN}/${d.storyEvery}</span></a>
-        <button id="pickTopic"><span>THEMA</span><span class="rt-t">${esc(d.focusLabel.split(/[ ,&]/)[0].toUpperCase())}</span></button>
-        <a href="#/topics"><span>LEVEL ${d.lvl[0].L}→C1</span><span>${d.levelPct}%</span></a>
-      </nav>
-      <p class="rt-hs">HIGHSCORE ${String(d.secure).padStart(3, "0")} · <span>PRESS START</span></p>
-    </section>`;
-  },
-
-  // ---------- 7 Musik ----------
-  musik(d) {
-    const pct = d.total ? 0 : 100;
-    return `
-    <header class="mu-head"><span>Heute für dich</span><a class="icon-btn plain" href="#/settings" aria-label="Einstellungen"><span class="sk-flag">${d.lang.flag}</span>${d.icon.gear}</a></header>
-    <section class="mu-cover" style="--h:${hash(d.focusLabel) % 360}">
-      <div class="mu-vinyl"><span>${esc(d.lvl.find((x) => x.ok < x.total)?.L || "C1")}</span></div>
-      <h1>${esc(d.focusLabel)}<small>Sessions</small></h1>
-    </section>
-    <div class="mu-meta"><b>Heute: ${n(d.total, "Track", "Tracks")}</b><span>${d.news} neu · ${d.due} Wiederholungen · ${d.streak} Tage Serie</span></div>
-    <div class="mu-bar"><i style="width:${pct}%"></i></div>
-    <div class="mu-ctrl">
-      <button id="pickTopic" aria-label="Thema wählen">⤮</button>
-      <a href="#/stories" aria-label="Geschichten">⏮</a>
-      ${d.total ? `<a class="mu-play" href="#/learn" aria-label="Lernen starten">▶</a>` : `<button class="mu-play" id="extraBtn" aria-label="10 weitere neue Wörter">＋</button>`}
-      <a href="${d.weak ? "#/learn/weak" : "#/words"}" aria-label="Noch lernen">⏭</a>
-      <a href="#/topics" aria-label="Themen">↻</a>
-    </div>
-    ${d.total ? "" : `<p class="mu-done">${d.wordsLeft ? "Playlist für heute durchgehört – ＋ für 10 neue Wörter." : "Keine neuen Wörter mehr hier – ⤮ wählt ein anderes Thema."}</p>`}
-    <a class="mu-lyr" href="${d.ready ? "#/story/new" : "#/stories"}">${d.ready ? "Neue Geschichte bereit – jetzt mitlesen ♪" : `Nächste Geschichte: ${d.storyN}/${d.storyEvery} Wörter ♪`}</a>
-    ${d.weak ? `<a class="mu-lyr alt" href="#/learn/weak">Auf Wiederholung: ${n(d.weak, "Wort", "Wörter")} noch lernen ↺</a>` : ""}`;
-  },
-
-  // ---------- 8 Kunst ----------
-  kunst(d) {
-    return `
-    <section class="ku-hero" aria-hidden="true"><i class="k1"></i><i class="k2"></i><i class="k3"></i><i class="k4"></i></section>
-    <a class="icon-btn plain ku-gear" href="#/settings" aria-label="Einstellungen"><span class="sk-flag">${d.lang.flag}</span>${d.icon.gear}</a>
-    <h1 class="ku-title">Heute in der Ausstellung</h1>
-    <div class="ku-list">
-      <button id="pickTopic"><span>Neue Werke · ${esc(d.focusLabel)}</span><b>${d.news}</b></button>
-      <div><span>Wiederholung</span><b>${d.due}</b></div>
-      ${d.weak ? `<a href="#/learn/weak"><span>Restaurierung (noch lernen)</span><b>${d.weak}</b></a>` : ""}
-      <a href="${d.ready ? "#/story/new" : "#/stories"}"><span>${d.ready ? "Neue Geschichte – Vernissage" : "Nächste Geschichte"}</span><b>${d.storyN}/${d.storyEvery}</b></a>
-      <a href="#/topics"><span>Sammlung sicher</span><b>${d.secure}</b></a>
-    </div>
-    <div class="ku-cta">${cta(d, `Ausstellung betreten · ${d.total}`, "ku-btn")}</div>`;
-  },
-
-  // ---------- 9 Sport ----------
-  sport(d) {
-    const table = [...d.topics]
-      .sort((a, b) => b.secure - a.secure || (a.key === d.focus ? -1 : 0))
-      .slice(0, 5);
-    return `
-    <section class="sp-score">
-      <div class="sp-tm"><span>SICHER</span><b>${d.secure}<i>:</i>${d.weak}</b><span>NOCH LERNEN</span></div>
-      <div class="sp-min">● Spieltag ${d.streak} · ${d.streak ? "Serie läuft" : "neue Serie"}</div>
-      <a class="sp-gear" href="#/settings" aria-label="Einstellungen"><span class="sk-flag">${d.lang.flag}</span>${d.icon.gear}</a>
-    </section>
-    <div class="sp-pitch"><i></i></div>
-    <section class="sp-table">
-      <div class="sp-th"><span>Tabelle · deine Themen</span><button class="link-btn" id="pickTopic">Aufstellung ändern</button></div>
-      ${table.map((t, i) => `<div class="sp-r ${t.key === d.focus || t.label === d.nextTopicLabel ? "me" : ""}"><span>${i + 1}</span><span>${esc(t.label)}</span><span>${t.secure}</span><span>${t.level || (t.secure ? "✓" : "–")}</span></div>`).join("")}
-    </section>
-    <div class="sp-stats"><a href="#/stories"><b>${d.storyN}/${d.storyEvery}</b>bis zur Geschichte</a><a href="${d.weak ? "#/learn/weak" : "#/words"}"><b>${d.weak}</b>Nachholspiele</a></div>
-    ${cta(d, `Anstoß · ${n(d.total, "Wort", "Wörter")}`, "sp-kick")}`;
-  },
 };
 
 // ================= LERNKARTE =================
@@ -425,107 +341,6 @@ const CARD = {
     return `${x.ui.header}${hero}<div class="flash-actions">${list}</div>`;
   },
 
-  // ---------- 6 80er ----------
-  retro(x) {
-    const c = x.c;
-    const segs = Math.round((x.pct / 100) * 20);
-    const card = `
-      <article class="w31">
-        <div class="w31-tb"><span>WORTWERK.EXE – Karte ${x.pos}/${x.total}</span><i>_</i></div>
-        <div class="w31-bd">
-          <div class="w31-in">
-            <div class="w31-w">${x.revealed ? x.enHtml : "?????"}</div>
-            <div class="w31-d">= ${esc(c.de)} [${esc(x.posLabel || "–")}, ${c.level}]</div>
-            ${x.revealed ? x.ui.typed : ""}
-            <p>${x.revealed ? x.exMarked : x.cloze}${c.exDe ? `<br><span class="w31-g">${x.exDeMarked}</span>` : ""}</p>
-            ${x.revealed ? x.ui.note : x.ui.hint + x.ui.input}
-          </div>
-          <div class="w31-prog" aria-label="${Math.round(x.pct)} %">${"<i></i>".repeat(segs)}</div>
-          ${
-            x.revealed
-              ? `<div class="w31-btns">${gradeBtns(x, ["Noch lernen", "Unsicher", "<u>W</u>usste ich"], "w31-btn")}</div>`
-              : `<div class="w31-btns"><button class="w31-btn" id="hintBtn">Hinweis…</button><button class="w31-btn def" id="reveal">Aufdecken</button></div>`
-          }
-        </div>
-      </article>`;
-    const icons = x.revealed
-      ? `<div class="w31-icons"><button data-say="${esc(c.en)}"><span>🔊</span>Anhören</button>${c.ex ? `<button data-say="${esc(x.exPlain)}"><span>📼</span>Satz</button>` : ""}<button id="knownBtn"><span>📁</span>Kenne ich</button></div>`
-      : `<div class="w31-icons"><a href="#/"><span>🖥️</span>Programm-Manager</a></div>`;
-    return `${x.ui.header}${card}<div class="flash-actions">${icons}</div>`;
-  },
-
-  // ---------- 7 Musik ----------
-  musik(x) {
-    const c = x.c;
-    const prevLine = x.prev.length ? x.prev[x.prev.length - 1].exPlain : "";
-    const nextLine = x.next.length ? x.next[0].clozePlain : "";
-    const card = `
-      <article class="mu-lyrics">
-        <div class="mu-hd"><span>${esc(x.topic)} · Track ${x.pos}</span><span>${c.level}</span></div>
-        <div class="mu-lines">
-          ${prevLine ? `<p class="dim">${esc(prevLine)}</p>` : ""}
-          <p class="now">${x.revealed ? x.exMarked || esc(c.en) : x.cloze || "♪ ♪ ♪"}</p>
-          ${nextLine ? `<p class="dim">${esc(nextLine)}</p>` : ""}
-        </div>
-        <p class="mu-tr">${x.revealed ? `<b>${x.enHtml}</b> = ${esc(c.de)}` : esc(c.de)}</p>
-        ${c.exDe ? `<p class="mu-trde">${x.exDeMarked}</p>` : ""}
-        ${x.revealed ? x.ui.typed + x.ui.listen + x.ui.note : x.ui.hint + x.ui.input}
-        <div class="mu-eq ${x.revealed ? "on" : ""}" aria-hidden="true">${"<i></i>".repeat(16)}</div>
-      </article>`;
-    const actions = x.revealed
-      ? `<div class="mu-rate">${gradeBtns(x, ["Muss ich noch lernen ↺", "Unsicher ♪", "Wusste ich ♥"], "mu-pill")}</div>${x.ui.known}`
-      : `<div class="actions-row"><button class="btn ghost" id="hintBtn">Hinweis</button><button class="btn primary" id="reveal">▶ Aufdecken</button></div>`;
-    return `${x.ui.header}${card}<div class="flash-actions">${actions}</div>`;
-  },
-
-  // ---------- 8 Kunst ----------
-  kunst(x) {
-    const c = x.c;
-    const h = hash(c.en);
-    const pal = ["#E8322B", "#F6C523", "#1F4FB8", "#151515"];
-    const a = pal[h % 4], b = pal[(h >> 3) % 4 === h % 4 ? (h % 4 + 1) % 4 : (h >> 3) % 4];
-    const shapes = `
-      <i class="kf-c" style="background:${a};left:${8 + (h % 30)}%;top:${6 + ((h >> 4) % 20)}%"></i>
-      <i class="kf-r" style="background:${b};right:${6 + ((h >> 6) % 20)}%;bottom:${8 + ((h >> 8) % 18)}%"></i>
-      <i class="kf-l"></i>`;
-    const card = `
-      <article class="ku-room">
-        <div class="ku-frame">${shapes}<span class="ku-wd">${x.revealed ? x.enHtml : "?"}</span></div>
-        <div class="ku-label">
-          <b>${esc(c.de)}</b>
-          <span>${esc(x.posLabel || "Wort")}, ${c.level} · Saal ${esc(x.topic)}</span>
-          ${c.ex ? `<i>„${x.revealed ? x.exMarked : x.cloze}“</i>` : ""}
-          ${c.exDe ? `<small>${x.exDeMarked}</small>` : ""}
-          ${x.revealed ? x.ui.typed + x.ui.listen + x.ui.note : x.ui.hint + x.ui.input}
-        </div>
-      </article>`;
-    const actions = x.revealed
-      ? `<div class="ku-rt">${gradeBtns(x, ["Noch lernen", "Unsicher", "Wusste ich"], "ku-blk")}</div>${x.ui.known}`
-      : `<div class="actions-row"><button class="btn ghost" id="hintBtn">Hinweis</button><button class="btn primary" id="reveal">Enthüllen</button></div>`;
-    return `${x.ui.header}${card}<div class="flash-actions">${actions}</div>`;
-  },
-
-  // ---------- 9 Sport ----------
-  sport(x) {
-    const c = x.c;
-    const card = `
-      <article class="sp-card">
-        <div class="sp-hd2"><span>Spielzug ${x.pos}/${x.total}</span><span>${c.level} · ${esc(x.topic)}</span></div>
-        <div class="sp-jersey ${x.revealed ? "back" : ""}">
-          <span class="sp-name">${esc((x.revealed ? c.en : c.de.split(",")[0]).toUpperCase())}</span>
-          <span class="sp-num">${x.pos}</span>
-          <span class="sp-sub">${x.revealed ? (c.rd ? esc(c.rd) + " · " : "") + esc(c.de) : `Wie heißt das auf ${x.langName}?`}</span>
-        </div>
-        ${x.revealed ? x.ui.typed : ""}
-        <p class="sp-ex">${x.revealed ? x.exMarked : x.cloze}</p>
-        ${c.exDe ? `<p class="sp-exde">${x.exDeMarked}</p>` : ""}
-        ${x.revealed ? x.ui.listen + x.ui.note : x.ui.hint + x.ui.input}
-      </article>`;
-    const actions = x.revealed
-      ? `<div class="sp-cards">${gradeBtns(x, ["Noch lernen", "Unsicher", "Wusste ich"], "sp-c")}</div>${x.ui.known}`
-      : `<div class="actions-row"><button class="btn ghost" id="hintBtn">Taktik-Tipp</button><button class="btn primary" id="reveal">Abpfiff – aufdecken</button></div>`;
-    return `${x.ui.header}${card}<div class="flash-actions">${actions}</div>`;
-  },
 };
 
 // Wischgesten für das Design „Stapel“: links = 1, hoch = 2, rechts = 3
