@@ -33,7 +33,7 @@ export const DEFAULT_SETTINGS = {
   startLevel: "B1",
   storyLevel: "B2",
   voiceRate: 0.95,
-  design: "paper", // paper | bordkarte | stapel | chat | heft | glas | retro | musik | kunst | sport
+  design: "glas", // glas | bordkarte | heft
   voicePreset: "clear-f", // clear-f/m, friend-f/m, strict-f/m
   apiBase: "",
   appSecret: "",

@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="de">
-<script>(function(){var k="paper";try{var g=JSON.parse(localStorage.getItem("wortwerk.settings")||"null");var d=g?{settings:g}:JSON.parse(localStorage.getItem("wortwerk.v1")||"{}");k=(d.settings&&d.settings.design)||"paper";}catch(e){}
-var F={bordkarte:"Barlow+Condensed:wght@500;600;700",stapel:"Poppins:wght@400;500;600;700",heft:"Caveat:wght@500;700&family=Lora:ital,wght@0,400;0,600;1,400"};
-var ok=["paper","bordkarte","stapel","chat","heft","glas"];if(ok.indexOf(k)<0)k="paper";
+<script>(function(){var k="glas";try{var g=JSON.parse(localStorage.getItem("wortwerk.settings")||"null");var d=g?{settings:g}:JSON.parse(localStorage.getItem("wortwerk.v1")||"{}");k=(d.settings&&d.settings.design)||"glas";}catch(e){}
+var F={bordkarte:"Barlow+Condensed:wght@500;600;700",heft:"Caveat:wght@500;700&family=Lora:ital,wght@0,400;0,600;1,400"};
+var ok=["bordkarte","heft","glas"];if(ok.indexOf(k)<0)k="glas";
 document.documentElement.dataset.style=k;
 if(F[k])document.write('<link id="skinFonts" rel="stylesheet" href="https://fonts.googleapis.com/css2?family='+F[k]+'&display=swap">');})();</script>
 <head>
@@ -10,8 +10,8 @@ if(F[k])document.write('<link id="skinFonts" rel="stylesheet" href="https://font
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Wortwerk</title>
   <meta name="description" content="Englisch-Vokabeln mit Intervallwiederholung und Geschichten – bis C1.">
-  <meta name="theme-color" content="#f5efe3" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#14191b" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#F2F2F7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">

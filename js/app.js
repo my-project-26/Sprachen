@@ -5,7 +5,7 @@ import { TOPICS, LEVELS } from "./words.js";
 import { storyPrompt, STORY_SYSTEM, extractJson } from "./prompts.js";
 import { callApi, health, normalizeStory, isStaticHost } from "./api.js";
 import * as tts from "./tts.js";
-import { DESIGNS, designKey, applyDesign, skinHome, skinCard, bindSwipe } from "./skins.js";
+import { DESIGNS, designKey, applyDesign, skinHome, skinCard } from "./skins.js";
 import { LANGS, READY, L, checkAnswer } from "./langs.js";
 
 const $app = document.getElementById("app");
@@ -191,7 +191,7 @@ function home() {
       }),
       focus, focusLabel: focus ? S.topicLabel(focus) : nextTopic || "Themen abwechselnd", nextTopicLabel: nextTopic, wordsLeft,
     };
-    const extraLevel = ["stapel", "glas"].includes(design)
+    const extraLevel = design === "glas"
       ? `<section class="card sk-level"><h2>Weg zu C1</h2>${lv
           .map(
             (x) => `<div class="lvl-row"><span class="badge lvl-${x.L}">${x.L}</span>
@@ -521,13 +521,6 @@ function showCard(revealed = false, typed = null) {
     };
     $app.innerHTML = `<div class="sk-learn sk-${design}">${skinCard(design, x)}</div>`;
     bindCardEvents(c, revealed);
-    if (revealed && design === "stapel") bindSwipe(document.getElementById("stTop"), (g) => rate(g));
-    if (!revealed && design === "stapel") {
-      const top = document.getElementById("stTop");
-      top.onclick = (e) => {
-        if (!e.target.closest("button, input")) document.getElementById("reveal").click();
-      };
-    }
     return;
   }
 

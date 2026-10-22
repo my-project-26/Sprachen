@@ -4,18 +4,14 @@
 // damit die Logik in app.js für jedes Design gleich funktioniert.
 
 export const DESIGNS = [
-  { key: "paper", name: "Klassisch", desc: "ruhig, wie ein Buch", colors: ["#f5efe3", "#0f6b5f", "#ffd86b"], theme: "#f5efe3" },
+  { key: "glas", name: "iOS-Glas", desc: "Standard – wie Apple Karten, Glas und Listen", colors: ["#F2F2F7", "#2F7CF6", "#34C759"], theme: "#F2F2F7" },
   { key: "bordkarte", name: "Bordkarte", desc: "Lernen als Reise, jede Vokabel ein Ticket", colors: ["#0E2240", "#FFC72C", "#E6E9EE"], theme: "#0E2240",
     fonts: "Barlow+Condensed:wght@500;600;700" },
-  { key: "stapel", name: "Stapel", desc: "jugendlich, Karten wischen", colors: ["#5B2EFF", "#D4FF3A", "#FF5C7A"], theme: "#5B2EFF",
-    fonts: "Poppins:wght@400;500;600;700" },
-  { key: "chat", name: "Tutor-Chat", desc: "die App als Messenger", colors: ["#ffffff", "#2B6BF3", "#0FA37F"], theme: "#ffffff" },
   { key: "heft", name: "Vokabelheft", desc: "Linien, Handschrift, Textmarker", colors: ["#FDFDFB", "#23408E", "#FFF27A"], theme: "#FDFDFB",
     fonts: "Caveat:wght@500;700&family=Lora:ital,wght@0,400;0,600;1,400" },
-  { key: "glas", name: "iOS-Glas", desc: "wie Apple Karten, Glas und Listen", colors: ["#F2F2F7", "#2F7CF6", "#34C759"], theme: "#F2F2F7" },
 ];
 
-export const designKey = (k) => (DESIGNS.some((d) => d.key === k) ? k : "paper");
+export const designKey = (k) => (DESIGNS.some((d) => d.key === k) ? k : "glas");
 
 // Design setzen: data-style, Schriften nachladen, Statusleisten-Farbe
 export function applyDesign(key) {
@@ -33,7 +29,7 @@ export function applyDesign(key) {
     if (link.getAttribute("href") !== href) link.setAttribute("href", href);
   } else if (link) link.remove();
   document.querySelectorAll('meta[name="theme-color"]').forEach((m) => {
-    if (d.key === "paper") m.setAttribute("content", m.media.includes("dark") ? "#14191b" : "#f5efe3");
+    if (d.key === "glas") m.setAttribute("content", m.media.includes("dark") ? "#000000" : "#F2F2F7");
     else m.setAttribute("content", d.theme);
   });
 }
@@ -87,50 +83,6 @@ const HOME = {
     <section class="bk-stamps">
       <div><b>${d.streak}</b>Tage in Folge</div><div><b>${d.secure}</b>Wörter sicher</div><a href="#/stories"><b>${d.stories}</b>Geschichten</a>
     </section>`;
-  },
-
-  // ---------- 2 Stapel ----------
-  stapel(d) {
-    return `
-    <header class="st-head"><div><span>Hey 👋</span><h1>${d.total ? `Bereit für ${n(d.total, "Karte", "Karten")}?` : "Alles weggewischt!"}</h1></div>
-      <a class="icon-btn plain" href="#/settings" aria-label="Einstellungen"><span class="sk-flag">${d.lang.flag}</span>${d.icon.gear}</a></header>
-    <div class="st-bento">
-      <div class="st-tile big"><small>Tage am Stück</small><b>${d.streak}</b><span class="st-fl">🔥</span></div>
-      <div class="st-tile pink"><small>neue Wörter</small><b>${d.news}</b></div>
-      <a class="st-tile sky" href="${d.weak ? "#/learn/weak" : "#/words"}"><small>noch lernen</small><b>${d.weak}</b></a>
-      <div class="st-tile wide"><div><small>Nächste Geschichte</small><b>${d.storyN}/${d.storyEvery}</b></div>
-        ${d.ready ? `<a class="st-go" href="#/story/new">Geschichte!</a>` : cta(d, "Los geht's", "st-go")}</div>
-    </div>
-    ${d.ready && d.total ? `<a class="st-tile wide st-learn" href="#/learn"><b>${d.total}</b> Karten wischen</a>` : ""}
-    <div class="st-chips">
-      ${d.topics.slice(0, 7).map((t) => `<span class="${t.key === d.focus ? "on" : ""}">${esc(t.label)}</span>`).join("")}
-      <button id="pickTopic">＋ Thema wählen</button>
-    </div>`;
-  },
-
-  // ---------- 3 Tutor-Chat ----------
-  chat(d) {
-    const conv = (av, color, title, text, meta, badge, href, id = "") =>
-      `<${href ? `a href="${href}"` : "button"} class="ch-conv" ${id ? `id="${id}"` : ""}>
-        <span class="ch-av" style="background:${color}">${av}</span>
-        <span class="ch-tx"><b>${title}</b><span>${text}</span></span>
-        <span class="ch-meta">${meta}${badge ? `<i style="${badge.bg ? `background:${badge.bg}` : ""}">${badge.n}</i>` : ""}</span>
-      </${href ? "a" : "button"}>`;
-    return `
-    <header class="ch-head"><h1>Chats</h1><a class="icon-btn plain" href="#/settings" aria-label="Einstellungen"><span class="sk-flag">${d.lang.flag}</span>${d.icon.gear}</a></header>
-    <a class="ch-search" href="#/words">${d.icon.search}<span>Wörter suchen</span></a>
-    <div class="ch-list">
-      ${
-        d.total
-          ? conv("M", "#0FA37F", "Mia · deine Tutorin", `${n(d.total, "Wort wartet", "Wörter warten")} heute auf dich 😊`, "jetzt", { n: d.total }, "#/learn")
-          : conv("M", "#0FA37F", "Mia · deine Tutorin", d.wordsLeft ? "Für heute ist alles erledigt 🎉 – noch 10 neue?" : "Hier sind alle Wörter durch – anderes Thema?", "", null, "", "extraBtn")
-      }
-      ${conv("📖", "#F59E0B", "Geschichte", d.ready ? "Neue Geschichte bereit – tippen zum Erstellen" : `${d.storyN} von ${d.storyEvery} Übungswörtern gesammelt`, d.stories ? n(d.stories, "Geschichte", "Geschichten") : "", d.ready ? { n: "1" } : null, d.ready ? "#/story/new" : "#/stories")}
-      ${d.weak ? conv("!", "#E11D48", "Noch lernen", esc(d.weakWords.join(", ")), "", { n: d.weak, bg: "#E11D48" }, "#/learn/weak") : ""}
-      ${conv("#", "#2B6BF3", esc(d.focusLabel), "Thema für neue Wörter – tippen zum Ändern", "", null, "", "pickTopic")}
-      ${conv("C1", "#7C3AED", "Dein Weg zu C1", d.lvl.map((x) => `${x.L} ${x.total ? Math.round((x.ok / x.total) * 100) : 0} %`).join(" · "), "", null, "#/topics")}
-    </div>
-    <div class="ch-stats"><div><b>${d.streak}</b>Tage Serie</div><div><b>${d.secure}</b>sicher</div><div><b>${d.stories}</b>Geschichten</div></div>`;
   },
 
   // ---------- 4 Vokabelheft ----------
@@ -235,54 +187,6 @@ const CARD = {
     return `${x.ui.header}${card}<div class="flash-actions">${actions}</div>`;
   },
 
-  // ---------- 2 Stapel ----------
-  stapel(x) {
-    const c = x.c;
-    const top = `
-      <article class="st-card st-top ${x.revealed ? "swipe" : "tap"}" id="stTop">
-        <div class="st-tags"><span>${c.level}</span><span>${esc(x.topic)}</span>${x.isNew ? "<span>neu</span>" : ""}${c.weak ? "<span class=w>noch lernen</span>" : ""}</div>
-        ${x.revealed ? `<button class="st-spk" data-say="${esc(c.en)}" aria-label="Anhören">${x.icon.speaker}</button>` : ""}
-        <div class="st-de">${esc(c.de)}</div>
-        <div class="st-w">${x.revealed ? x.enHtml : "?"}</div>
-        ${x.revealed ? x.ui.typed : ""}
-        <p class="st-ex">${x.revealed ? x.exMarked : x.cloze}</p>
-        ${x.revealed ? `<p class="st-exde">${x.exDeMarked}</p>${x.ui.note}` : x.ui.hint + x.ui.input}
-        ${x.revealed ? "" : `<p class="st-tap">Tippen zum Aufdecken</p>`}
-      </article>`;
-    const actions = x.revealed
-      ? `<div class="st-hints">
-          <button class="grade g1" data-g="1"><i>←</i><span>noch lernen</span></button>
-          <button class="grade g2" data-g="2"><i>↑</i><span>unsicher</span></button>
-          <button class="grade g3" data-g="3"><i>→</i><span>wusste ich</span></button>
-        </div>
-        <p class="st-swipe">Wischen oder tippen · ${x.practice ? "Übung" : `unsicher: ${x.iv2} · gewusst: ${x.iv3}`}</p>
-        ${x.ui.known}`
-      : `<div class="actions-row"><button class="btn ghost" id="hintBtn">Hinweis</button><button class="btn primary" id="reveal">Umdrehen</button></div>`;
-    return `${x.ui.header}<div class="st-deck"><div class="st-card b2"></div><div class="st-card b1"></div>${top}</div><div class="flash-actions">${actions}</div>`;
-  },
-
-  // ---------- 3 Tutor-Chat ----------
-  chat(x) {
-    const c = x.c;
-    let thread = `
-      <div class="ch-day">Karte ${x.pos} von ${x.total}</div>
-      <div class="bub t">Wie heißt das auf ${esc(x.langName)}?<span class="q">${esc(c.de)}</span>${c.ex ? `<span class="cz">${x.cloze}</span>` : ""}</div>
-      <div class="bub t" id="hint" hidden>Tipp: <code>${esc(x.hint)}</code></div>`;
-    if (x.revealed) {
-      thread += `
-        <div class="bub m">${x.typedRaw != null ? esc(x.typedRaw || "–") : "Zeig's mir 🙈"}</div>
-        <div class="bub t">${x.ok === true ? "Genau! 👏 " : x.ok === false ? "Fast! Richtig ist: " : "Das ist: "}<b class="ch-ans">${x.enHtml}</b>${c.ex ? `<span class="cz">${x.exMarked}</span>` : ""}${c.exDe ? `<span class="de">${x.exDeMarked}</span>` : ""}</div>
-        ${c.note ? `<div class="bub t ${x.noteFF ? "ff" : ""}">💡 ${esc(c.note)}</div>` : ""}
-        <div class="bub t voice"><button class="ch-play" data-say="${esc(c.en)}" aria-label="Wort anhören">▶</button><span class="wave">${"<i></i>".repeat(14)}</span><span>Wort</span>
-          ${c.ex ? `<button class="ch-play" data-say="${esc(x.exPlain)}" aria-label="Satz anhören">▶</button><span>Satz</span>` : ""}</div>
-        <div class="bub t">Wie sicher warst du?</div>`;
-    }
-    const chips = x.revealed
-      ? `<div class="ch-chips">${gradeBtns(x, L3, "chip-g")}</div>${x.ui.known}`
-      : `${x.ui.input}<div class="ch-chips"><button class="btn ghost" id="hintBtn">Tipp</button><button class="btn primary" id="reveal">Zeig's mir</button></div>`;
-    return `${x.ui.header}<div class="ch-thread">${thread}</div><div class="flash-actions ch-bottom">${chips}</div>`;
-  },
-
   // ---------- 4 Vokabelheft ----------
   heft(x) {
     const c = x.c;
@@ -342,41 +246,3 @@ const CARD = {
   },
 
 };
-
-// Wischgesten für das Design „Stapel“: links = 1, hoch = 2, rechts = 3
-export function bindSwipe(el, onGrade) {
-  if (!el) return;
-  let sx = 0, sy = 0, dx = 0, dy = 0, active = false;
-  el.addEventListener("pointerdown", (e) => {
-    if (e.target.closest("button")) return;
-    active = true;
-    sx = e.clientX;
-    sy = e.clientY;
-    dx = dy = 0;
-    el.setPointerCapture(e.pointerId);
-    el.style.transition = "none";
-  });
-  el.addEventListener("pointermove", (e) => {
-    if (!active) return;
-    dx = e.clientX - sx;
-    dy = e.clientY - sy;
-    el.style.transform = `translate(${dx}px, ${Math.min(0, dy)}px) rotate(${dx / 14}deg)`;
-    el.dataset.dir = Math.abs(dx) > Math.abs(dy) ? (dx > 40 ? "r" : dx < -40 ? "l" : "") : dy < -40 ? "u" : "";
-  });
-  const end = () => {
-    if (!active) return;
-    active = false;
-    el.style.transition = "";
-    const g = Math.abs(dx) > Math.abs(dy) ? (dx > 90 ? 3 : dx < -90 ? 1 : 0) : dy < -90 ? 2 : 0;
-    if (g) {
-      el.style.transform = g === 3 ? "translate(140%, 0) rotate(20deg)" : g === 1 ? "translate(-140%, 0) rotate(-20deg)" : "translate(0, -140%)";
-      el.style.opacity = "0";
-      setTimeout(() => onGrade(g), 180);
-    } else {
-      el.style.transform = "";
-      el.dataset.dir = "";
-    }
-  };
-  el.addEventListener("pointerup", end);
-  el.addEventListener("pointercancel", end);
-}
