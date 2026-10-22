@@ -31,6 +31,7 @@ const WEEKDAYS = ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"];
 
 function say(text, onend) {
   const s = settings();
+  tts.setNatural(s.voiceNatural);
   tts.speak(text, { rate: s.voiceRate, preset: s.voicePreset, onend });
 }
 
@@ -1508,6 +1509,8 @@ function settingsView() {
   </section>
   <section class="card">
     <h2>Stimme</h2>
+    <label class="check"><input type="checkbox" id="s-natural" ${s.voiceNatural !== false ? "checked" : ""}> Natürliche Stimme (Aufnahmen für alle Wörter und Beispielsätze)</label>
+    <p class="small muted">${tts.naturalAvailable() ? "Aufnahmen sind da. Die Stimmen unten gelten dann nur noch für Geschichten und als Ersatz." : "Für diese Sprache werden die Aufnahmen gerade erstellt – bis dahin liest die Gerätestimme."}</p>
     <div class="voice-list">${tts.PRESETS.map((p) => {
       const ok = tts.presetAvailable(p.key);
       const v = tts.resolvePreset(p.key).voice;
@@ -1571,6 +1574,7 @@ function settingsView() {
   bind("s-ret", "retention", Number, "input");
   bind("s-type", "typeAnswer");
   bind("s-auto", "autoSpeak");
+  bind("s-natural", "voiceNatural");
   $app.querySelectorAll("[data-design]").forEach(
     (b) =>
       (b.onclick = () => {
@@ -1592,6 +1596,7 @@ function settingsView() {
     (b) =>
       (b.onclick = (e) => {
         e.preventDefault();
+        tts.setNatural(false);
         tts.speak(L().hello, { rate: st.settings.voiceRate, preset: b.dataset.try });
       })
   );

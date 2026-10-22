@@ -12,6 +12,56 @@ let LANG = { code: "en", tts: ["en-US", "en-GB"] };
 export function setLang(code, tts) {
   LANG = { code, tts: tts && tts.length ? tts : [code] };
   loadVoices();
+  loadAudioIndex(code);
+}
+
+// ---------- Natürliche Stimme: fertige MP3-Aufnahmen (audio/<sprache>/) ----------
+// Für jedes Wort und jeden Beispielsatz gibt es eine Aufnahme einer neuronalen
+// Stimme (erzeugt mit tools/make-audio.py). Fehlt eine Aufnahme (z. B. bei
+// KI-Geschichten), liest die Gerätestimme vor.
+let AUDIO = { code: null, keys: null, voice: "" };
+let natural = true;
+let current = null; // laufende Aufnahme
+
+export function setNatural(on) {
+  natural = on !== false;
+}
+export function naturalAvailable() {
+  return !!(AUDIO.keys && AUDIO.keys.size);
+}
+async function loadAudioIndex(code) {
+  AUDIO = { code, keys: null, voice: "" };
+  try {
+    const r = await fetch(`audio/${code}/index.json`, { cache: "no-cache" });
+    if (!r.ok) return;
+    const j = await r.json();
+    if (AUDIO.code === code) AUDIO = { code, keys: new Set(j.keys || []), voice: j.voice || "" };
+  } catch {
+    /* offline oder noch keine Aufnahmen */
+  }
+}
+
+const normText = (t) => String(t).normalize("NFC").replace(/\*+/g, "").replace(/\s+/g, " ").trim();
+function fnv(bytes, h) {
+  for (const b of bytes) {
+    h ^= b;
+    h = Math.imul(h, 0x01000193) >>> 0;
+  }
+  return h >>> 0;
+}
+// Muss exakt audio_key() in tools/make-audio.py entsprechen
+export function audioKey(text) {
+  const b = new TextEncoder().encode(normText(text));
+  const hex = (n) => n.toString(16).padStart(8, "0");
+  return hex(fnv(b, 0x811c9dc5)) + hex(fnv(b, 0x01000193));
+}
+
+function stopAudio() {
+  if (current) {
+    current.onended = current.onerror = null;
+    current.pause();
+    current = null;
+  }
 }
 
 // Spaß-, Effekt- und Roboterstimmen von macOS/iOS – nie verwenden
@@ -35,7 +85,7 @@ if (synth) {
 }
 
 export function available() {
-  return !!synth;
+  return !!synth || typeof Audio !== "undefined";
 }
 
 function gender(v) {
@@ -119,8 +169,34 @@ export function stepOfRate(rate) {
 }
 
 export function speak(text, { rate = 0.95, preset = "clear-f", onend } = {}) {
-  if (!synth) return;
-  synth.cancel();
+  stopAudio();
+  if (synth) synth.cancel();
+  if (natural && AUDIO.keys) {
+    const key = audioKey(text);
+    if (AUDIO.keys.has(key)) {
+      const a = new Audio(`audio/${AUDIO.code}/${key}.mp3`);
+      a.playbackRate = Math.min(2, Math.max(0.5, rate / 0.95));
+      a.preservesPitch = true;
+      current = a;
+      a.onended = () => {
+        current = null;
+        onend && onend();
+      };
+      a.onerror = () => {
+        current = null;
+        speakDevice(text, { rate, preset, onend });
+      };
+      a.play().catch(() => {
+        if (current === a) a.onerror();
+      });
+      return;
+    }
+  }
+  speakDevice(text, { rate, preset, onend });
+}
+
+function speakDevice(text, { rate, preset, onend }) {
+  if (!synth) return onend && onend();
   const u = new SpeechSynthesisUtterance(String(text).replace(/\*+/g, ""));
   const { preset: p, voice } = resolvePreset(preset);
   if (voice) {
@@ -139,9 +215,10 @@ export function speak(text, { rate = 0.95, preset = "clear-f", onend } = {}) {
 }
 
 export function stop() {
+  stopAudio();
   if (synth) synth.cancel();
 }
 
 export function speaking() {
-  return !!synth && synth.speaking;
+  return !!current || (!!synth && synth.speaking);
 }
