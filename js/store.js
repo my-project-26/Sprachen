@@ -17,7 +17,7 @@ export const DEFAULT_SETTINGS = {
   apiBase: "",
   appSecret: "",
   typeAnswer: false,
-  autoSpeak: true,
+  autoSpeak: true, // Stimme an/aus (automatisches Vorlesen)
   provider: "auto", // auto | claude | gemini | ollama | browser
   ollamaModel: "",
   geminiKey: "", // nur für "Gemini direkt im Browser"; bleibt auf diesem Gerät

@@ -27,9 +27,49 @@ const shuffle = (a) => {
 const fmtDate = (t) => new Date(t).toLocaleDateString("de-DE", { day: "numeric", month: "short", year: "numeric" });
 const WEEKDAYS = ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"];
 
-function say(text) {
+function say(text, onend) {
   const s = settings();
-  tts.speak(text, { rate: s.voiceRate, voiceName: s.voiceName });
+  tts.speak(text, { rate: s.voiceRate, voiceName: s.voiceName, onend });
+}
+
+// Schieberegler mit 5 Tempostufen (überall gleich, Wert wird gespeichert)
+function rateSlider(id) {
+  const step = tts.stepOfRate(settings().voiceRate);
+  return `<div class="rate-slider">
+    <span class="small muted">Tempo</span>
+    <input type="range" id="${id}" min="0" max="4" step="1" value="${step}" aria-label="Sprechtempo">
+    <b class="small" id="${id}-l">${tts.RATE_STEPS[step].label}</b>
+  </div>`;
+}
+function bindRateSlider(id) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.oninput = () => {
+    const st = tts.RATE_STEPS[Number(el.value)];
+    document.getElementById(id + "-l").textContent = st.label;
+    S.getState().settings.voiceRate = st.rate;
+    S.save();
+  };
+}
+
+// Schalter „mit Stimme / ohne Stimme“
+function voiceToggle() {
+  const on = settings().autoSpeak;
+  return `<button class="icon-btn voice-toggle ${on ? "on" : ""}" id="voiceToggle" aria-pressed="${on}" title="${on ? "Mit Stimme" : "Ohne Stimme"}">${on ? ICON.speaker : ICON.mute}</button>`;
+}
+function bindVoiceToggle(after) {
+  const b = document.getElementById("voiceToggle");
+  if (!b) return;
+  b.onclick = () => {
+    const st = S.getState();
+    st.settings.autoSpeak = !st.settings.autoSpeak;
+    S.save();
+    if (!st.settings.autoSpeak) tts.stop();
+    toast(st.settings.autoSpeak ? "Mit Stimme" : "Ohne Stimme");
+    b.outerHTML = voiceToggle();
+    bindVoiceToggle(after);
+    after?.();
+  };
 }
 
 let toastTimer;
@@ -44,6 +84,7 @@ function toast(msg, ms = 2600) {
 const ICON = {
   gear: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.6 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.6-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg>',
   speaker: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/></svg>',
+  mute: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"/><path d="m22 9-6 6M16 9l6 6"/></svg>',
   close: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>',
   back: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>',
   flame: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c1 4 5 6 5 11a5 5 0 0 1-10 0c0-2 1-3.5 2-4.5 0 2 1 3 2 3 0-4-1-6 1-9.5Z"/></svg>',
@@ -323,6 +364,7 @@ function sessionHeader() {
     <a class="icon-btn plain" href="#/" aria-label="Beenden">${ICON.close}</a>
     <div class="meter thin"><div style="width:${pct}%"></div></div>
     <span class="small muted">${left}</span>
+    ${voiceToggle()}
   </header>`;
 }
 
@@ -356,11 +398,14 @@ function showCard(revealed = false, typed = null) {
       ${meta}
       <div class="en-row">
         <p class="en-word">${esc(c.en)}</p>
-        <button class="icon-btn" data-say="${esc(c.en)}" aria-label="Aussprechen">${ICON.speaker}</button>
       </div>
       ${typed != null ? `<p class="typed ${ok ? "ok" : "bad"}">${ok ? "Richtig!" : `Deine Eingabe: <s>${esc(typed) || "–"}</s>`}</p>` : ""}
       <p class="de-small">${esc(c.de)}</p>
-      ${c.ex ? `<p class="ex">${marked(c.ex)} <button class="icon-btn small" data-say="${esc(plain(c.ex))}" aria-label="Satz vorlesen">${ICON.speaker}</button></p>` : ""}
+      <div class="listen-row">
+        <button class="btn ghost listen" data-say="${esc(c.en)}">${ICON.speaker}<span>Wort anhören</span></button>
+        ${c.ex ? `<button class="btn ghost listen" data-say="${esc(plain(c.ex))}">${ICON.speaker}<span>Satz anhören</span></button>` : ""}
+      </div>
+      ${c.ex ? `<p class="ex">${marked(c.ex)}</p>` : ""}
       ${c.exDe ? `<p class="ex-de">${marked(c.exDe)}</p>` : ""}
       ${c.note ? `<p class="note ${noteFF ? "ff" : ""}">${esc(c.note)}</p>` : ""}
     `;
@@ -389,6 +434,7 @@ function showCard(revealed = false, typed = null) {
     <div class="flash-actions">${actions}</div>`;
 
   $app.querySelectorAll("[data-say]").forEach((b) => (b.onclick = () => say(b.dataset.say)));
+  bindVoiceToggle();
 
   if (!revealed) {
     const input = document.getElementById("answer");
@@ -663,7 +709,10 @@ function storyDetail(st) {
     <h1 class="story-title">${esc(st.title)}</h1>
     <div class="reader-controls">
       <button class="btn ghost" id="play">${ICON.play}<span>Vorlesen</span></button>
-      <select id="rate" aria-label="Tempo"><option value="0.8">langsam</option><option value="0.95" selected>normal</option><option value="1.1">schnell</option></select>
+      ${voiceToggle()}
+    </div>
+    <div class="reader-controls">
+      ${rateSlider("storyRate")}
     </div>
     <div class="story-text">${storyHtml(st)}</div>
     <p class="small muted">Tippe auf ein markiertes Wort für die Übersetzung.</p>
@@ -711,12 +760,14 @@ function storyDetail(st) {
     (b) =>
       (b.onclick = () => {
         const g = glossFor(st, b.dataset.w);
-        say(b.dataset.w);
+        if (settings().autoSpeak) say(b.dataset.w);
         toast(`<b>${esc(b.dataset.w)}</b> – ${esc(g || "?")}`);
       })
   );
 
   // Vorlesen
+  bindRateSlider("storyRate");
+  bindVoiceToggle();
   const play = document.getElementById("play");
   play.onclick = () => {
     if (tts.speaking()) {
@@ -726,7 +777,7 @@ function storyDetail(st) {
     }
     play.innerHTML = `${ICON.stop}<span>Stopp</span>`;
     tts.speak(st.title + ". " + plain(st.text), {
-      rate: Number(document.getElementById("rate").value),
+      rate: settings().voiceRate,
       voiceName: settings().voiceName,
       onend: () => (play.innerHTML = `${ICON.play}<span>Vorlesen</span>`),
     });
@@ -1216,14 +1267,14 @@ function settingsView() {
       <input type="range" min="0.8" max="0.95" step="0.01" id="s-ret" value="${s.retention}"></label>
     <p class="small muted">Höher = öfter wiederholen, sicherer behalten. 90 % ist ein guter Standard.</p>
     <label class="check"><input type="checkbox" id="s-type" ${s.typeAnswer ? "checked" : ""}> Antwort eintippen</label>
-    <label class="check"><input type="checkbox" id="s-auto" ${s.autoSpeak ? "checked" : ""}> Wort beim Aufdecken vorlesen</label>
+    <label class="check"><input type="checkbox" id="s-auto" ${s.autoSpeak ? "checked" : ""}> Mit Stimme (Wort beim Aufdecken automatisch vorlesen)</label>
   </section>
   <section class="card">
     <h2>Stimme</h2>
-    <label class="field"><span>Englische Stimme</span><select id="s-voice"><option value="">Automatisch</option>${voices
+    <label class="field"><span>Englische Stimme</span><select id="s-voice"><option value="">Automatisch (natürlichste Stimme)</option>${voices
       .map((v) => `<option value="${esc(v.name)}" ${v.name === s.voiceName ? "selected" : ""}>${esc(v.name)} (${esc(v.lang)})</option>`)
       .join("")}</select></label>
-    <label class="field"><span>Tempo: <b id="ratev">${s.voiceRate}</b></span><input type="range" min="0.6" max="1.3" step="0.05" id="s-rate" value="${s.voiceRate}"></label>
+    ${rateSlider("s-rate5")}
     <button class="btn ghost" id="testVoice">${ICON.speaker}<span>Testen</span></button>
   </section>
   <section class="card">
@@ -1278,11 +1329,11 @@ function settingsView() {
   bind("s-type", "typeAnswer");
   bind("s-auto", "autoSpeak");
   bind("s-voice", "voiceName");
-  bind("s-rate", "voiceRate", Number, "input");
+  bindRateSlider("s-rate5");
   bind("s-api", "apiBase");
   bind("s-secret", "appSecret");
   document.getElementById("s-ret").addEventListener("input", (e) => (document.getElementById("retv").textContent = Math.round(e.target.value * 100) + " %"));
-  document.getElementById("s-rate").addEventListener("input", (e) => (document.getElementById("ratev").textContent = e.target.value));
+
   document.getElementById("testVoice").onclick = () => say("The official announcement was made today.");
 
   bind("s-ollama", "ollamaModel");
