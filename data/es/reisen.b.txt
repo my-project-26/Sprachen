@@ -1,0 +1,55 @@
+# Spanisch – Reisen, Wohnen, Freizeit B2/C1 (Ergänzung)
+## B2
+la escapada | der Kurzurlaub | n | Hicimos una *escapada* a Lisboa. | Wir machten einen *Kurztrip* nach Lissabon. |
+la reserva anticipada | die Frühbuchung | n | Hay descuento por *reserva anticipada*. | Es gibt Rabatt für *Frühbuchung*. |
+la tarifa | der Tarif, Preis | n | La *tarifa* incluye el desayuno. | Der *Preis* beinhaltet Frühstück. |
+el suplemento | der Zuschlag | n | Hay un *suplemento* por la habitación individual. | Für das Einzelzimmer gibt es einen *Zuschlag*. |
+la cancelación gratuita | die kostenlose Stornierung | n | Ofrecen *cancelación gratuita*. | Sie bieten *kostenlose Stornierung* an. |
+el huésped | der Gast (Hotel) | n | El hotel tiene cien *huéspedes*. | Das Hotel hat hundert *Gäste*. |
+el anfitrión | der Gastgeber | n | Nuestro *anfitrión* fue muy amable. | Unser *Gastgeber* war sehr freundlich. |
+el alojamiento rural | die Ferienunterkunft auf dem Land | n | Nos quedamos en un *alojamiento rural*. | Wir übernachteten in einer *Landunterkunft*. |
+el parador | das staatliche Hotel (Spanien) | n | Dormimos en un *parador* histórico. | Wir schliefen in einem historischen *Parador*. |
+la ruta turística | die Touristenroute | n | Seguimos una *ruta turística*. | Wir folgten einer *Touristenroute*. |
+el atractivo | die Attraktion, der Reiz | n | El gran *atractivo* es la playa. | Die Hauptattraktion ist der Strand. |
+la gastronomía local | die regionale Küche | n | Probamos la *gastronomía local*. | Wir probierten die *regionale Küche*. |
+el chiringuito | die Strandbar | n | Comimos en un *chiringuito*. | Wir aßen in einer *Strandbar*. |
+la sombrilla | der Sonnenschirm | n | Alquila una *sombrilla*. | Miete einen *Sonnenschirm*. |
+la tumbona | die Liege | n | Las *tumbonas* cuestan diez euros. | Die *Liegen* kosten zehn Euro. |
+la marea alta | die Flut | n | Con la *marea alta* no hay playa. | Bei *Flut* gibt es keinen Strand. |
+la marea baja | die Ebbe | n | Paseamos con la *marea baja*. | Wir gingen bei *Ebbe* spazieren. |
+el socorrista | der Rettungsschwimmer | n | Pregunta al *socorrista*. | Frag den *Rettungsschwimmer*. |
+la bandera roja | die rote Flagge (Badeverbot) | n | Hay *bandera roja*; no se puede nadar. | Die *rote Flagge* ist gehisst; Baden verboten. |
+la estación de esquí | das Skigebiet | n | Fuimos a una *estación de esquí*. | Wir fuhren in ein *Skigebiet*. |
+el remonte | der Skilift | n | Hay cola en el *remonte*. | Am *Lift* gibt es eine Schlange. |
+la casa rural | das Landhaus (Ferien) | n | Alquilamos una *casa rural*. | Wir mieteten ein *Landhaus*. |
+el piso compartido | die WG | n | Vive en un *piso compartido*. | Er wohnt in einer *WG*. |
+el compañero de piso | der Mitbewohner | n | Mi *compañero de piso* cocina muy bien. | Mein *Mitbewohner* kocht sehr gut. |
+la comunidad | die Hausgemeinschaft; Nebenkosten | n | Pagamos cincuenta euros de *comunidad*. | Wir zahlen fünfzig Euro *Hausgeld*. |
+los gastos | die Nebenkosten; Ausgaben | n | El alquiler no incluye *gastos*. | Die Miete enthält keine *Nebenkosten*. |
+el recibo de la luz | die Stromrechnung | n | El *recibo de la luz* ha subido. | Die *Stromrechnung* ist gestiegen. |
+la decoración | die Einrichtung, Deko | n | Me encanta la *decoración*. | Ich liebe die *Einrichtung*. |
+reformar | renovieren | v | Vamos a *reformar* la cocina. | Wir *renovieren* die Küche. |
+la azotea | die Dachterrasse | n | Cenamos en la *azotea*. | Wir aßen auf der *Dachterrasse*. |
+el patio | der Innenhof | n | El *patio* está lleno de flores. | Der *Innenhof* ist voller Blumen. |
+el aficionado al cine | der Kinofan | n | Es un gran *aficionado al cine*. | Er ist ein großer *Kinofan*. |
+la temporada | die Saison; Staffel | n | Ya ha salido la nueva *temporada*. | Die neue *Staffel* ist erschienen. |
+el maratón | der Marathon | n | Corrió su primer *maratón*. | Er lief seinen ersten *Marathon*. |
+el gimnasio al aire libre | der Outdoor-Fitnesspark | n | Entreno en el *gimnasio al aire libre*. | Ich trainiere im *Outdoor-Fitnesspark*. |
+## C1
+el turismo sostenible | der nachhaltige Tourismus | n | Promueven el *turismo sostenible*. | Sie fördern *nachhaltigen Tourismus*. |
+la saturación turística | die touristische Überlastung | n | La *saturación turística* afecta al centro. | Die *Überlastung durch Touristen* trifft das Zentrum. |
+el piso turístico | die Ferienwohnung (Kurzzeitvermietung) | n | Limitan los *pisos turísticos*. | Sie begrenzen *Ferienwohnungen*. |
+la tasa turística | die Touristensteuer | n | Hay que pagar una *tasa turística*. | Man muss eine *Kurtaxe* zahlen. |
+el desembarco | die Ausschiffung | n | El *desembarco* duró una hora. | Das *Von-Bord-Gehen* dauerte eine Stunde. |
+la pernoctación | die Übernachtung | n | Hubo un millón de *pernoctaciones*. | Es gab eine Million *Übernachtungen*. |
+el guía local | der örtliche Führer | n | Contratamos a un *guía local*. | Wir engagierten einen *örtlichen Führer*. |
+el enclave | die Enklave, der besondere Ort | n | Es un *enclave* natural único. | Es ist ein einzigartiger Natur*ort*. |
+idílico | idyllisch | adj | Es un rincón *idílico*. | Es ist ein *idyllisches* Fleckchen. |
+la quietud | die Stille | n | Disfrutamos de la *quietud* del lugar. | Wir genossen die *Stille* des Ortes. |
+el bullicio | der Trubel | n | Echo de menos el *bullicio* de la ciudad. | Ich vermisse den *Trubel* der Stadt. |
+la ensenada | die Bucht | n | El barco entró en la *ensenada*. | Das Boot fuhr in die *Bucht*. |
+el acantilado | die Steilküste | n | Paseamos por los *acantilados*. | Wir spazierten an den *Klippen* entlang. |
+la vivienda unifamiliar | das Einfamilienhaus | n | Viven en una *vivienda unifamiliar*. | Sie wohnen in einem *Einfamilienhaus*. |
+la mudanza internacional | der Auslandsumzug | n | Organizar una *mudanza internacional* es complicado. | Ein *Auslandsumzug* ist kompliziert. |
+el ocio nocturno | das Nachtleben | n | La ciudad tiene mucho *ocio nocturno*. | Die Stadt hat ein reges *Nachtleben*. |
+la afición desmedida | die übertriebene Leidenschaft | n | Tiene una *afición desmedida* por el fútbol. | Er hat eine *übertriebene Leidenschaft* für Fußball. |

@@ -1,0 +1,57 @@
+# Spanisch – Gesundheit & Körper B2/C1 (Ergänzung)
+## B2
+la tensión arterial | der Blutdruck | n | Tiene la *tensión arterial* alta. | Er hat hohen *Blutdruck*. |
+el colesterol | das Cholesterin | n | Tengo el *colesterol* alto. | Ich habe hohes *Cholesterin*. |
+la diabetes | die Diabetes | n | Padece *diabetes* tipo dos. | Er hat Typ-2-*Diabetes*. |
+el infarto | der Herzinfarkt | n | Sufrió un *infarto*. | Er erlitt einen *Herzinfarkt*. |
+el ictus | der Schlaganfall | n | Tuvo un *ictus* el año pasado. | Er hatte letztes Jahr einen *Schlaganfall*. |
+el cáncer | der Krebs | n | Superó el *cáncer*. | Er hat den *Krebs* besiegt. |
+el tumor | der Tumor | n | Le extirparon un *tumor*. | Man entfernte ihm einen *Tumor*. |
+la radiografía | die Röntgenaufnahme | n | Le hicieron una *radiografía*. | Er wurde *geröntgt*. |
+la ecografía | der Ultraschall | n | La *ecografía* fue normal. | Der *Ultraschall* war unauffällig. |
+el análisis | die Untersuchung (Labor) | n | Los *análisis* salieron bien. | Die *Werte* waren gut. |
+el antibiótico | das Antibiotikum | n | Toma un *antibiótico*. | Er nimmt ein *Antibiotikum*. |
+el analgésico | das Schmerzmittel | n | Tómate un *analgésico*. | Nimm ein *Schmerzmittel*. |
+el jarabe | der Sirup (Hustensaft) | n | Toma este *jarabe* para la tos. | Nimm diesen *Hustensaft*. |
+la pomada | die Salbe | n | Ponte esta *pomada*. | Trag diese *Salbe* auf. |
+la venda | der Verband | n | Le pusieron una *venda*. | Man legte ihm einen *Verband* an. |
+el esguince | die Verstauchung | n | Tiene un *esguince* de tobillo. | Er hat eine Knöchel*verstauchung*. |
+la fractura | der Bruch | n | Es una *fractura* complicada. | Es ist ein komplizierter *Bruch*. |
+la migraña | die Migräne | n | Sufre *migrañas*. | Sie leidet unter *Migräne*. |
+el asma | das Asthma | n | Tiene *asma* desde niña. | Sie hat seit ihrer Kindheit *Asthma*. | feminin: el asma
+la alergia | die Allergie | n | Tiene *alergia* al polen. | Sie hat eine *Pollenallergie*. |
+la intolerancia | die Unverträglichkeit | n | Tiene *intolerancia* a la lactosa. | Sie hat eine Laktose*intoleranz*. |
+la dieta equilibrada | die ausgewogene Ernährung | n | Sigue una *dieta equilibrada*. | Sie ernährt sich *ausgewogen*. |
+el sobrepeso | das Übergewicht | n | Tiene un poco de *sobrepeso*. | Er hat etwas *Übergewicht*. |
+la obesidad | die Fettleibigkeit | n | La *obesidad* infantil preocupa. | *Übergewicht* bei Kindern ist besorgniserregend. |
+el bienestar emocional | das seelische Wohlbefinden | n | Cuida tu *bienestar emocional*. | Achte auf dein *seelisches Wohlbefinden*. |
+el psicólogo | der Psychologe | n | Va al *psicólogo* cada semana. | Er geht jede Woche zum *Psychologen*. |
+la terapia | die Therapie | n | La *terapia* le ayudó mucho. | Die *Therapie* hat ihm sehr geholfen. |
+el cansancio | die Müdigkeit | n | Siento mucho *cansancio*. | Ich bin sehr *erschöpft*. |
+el agotamiento físico | die körperliche Erschöpfung | n | Sufrió *agotamiento físico*. | Er litt unter *körperlicher Erschöpfung*. |
+la postura | die Körperhaltung | n | Corrige tu *postura*. | Achte auf deine *Haltung*. |
+estirar | dehnen | v | *Estira* antes de correr. | *Dehn* dich vor dem Laufen. |
+el calentamiento | das Aufwärmen | n | No te saltes el *calentamiento*. | Lass das *Aufwärmen* nicht aus. |
+la donación de sangre | die Blutspende | n | Hago una *donación de sangre* al año. | Ich *spende* einmal im Jahr *Blut*. |
+el trasplante | die Transplantation | n | Necesita un *trasplante* de riñón. | Er braucht eine Nieren*transplantation*. |
+## C1
+la patología | die Krankheit, Pathologie | n | Es una *patología* poco frecuente. | Es ist eine seltene *Erkrankung*. |
+el cuadro clínico | das Krankheitsbild | n | Presenta un *cuadro clínico* complejo. | Er zeigt ein komplexes *Krankheitsbild*. |
+la medicina preventiva | die Präventivmedizin | n | Apuestan por la *medicina preventiva*. | Sie setzen auf *Präventivmedizin*. |
+el cribado | das Screening | n | Hacen *cribados* de cáncer de mama. | Sie machen Brustkrebs-*Screenings*. |
+la remisión | die Remission | n | El cáncer está en *remisión*. | Der Krebs ist in *Remission*. |
+la metástasis | die Metastase | n | No hay *metástasis*. | Es gibt keine *Metastasen*. |
+el contagio | die Ansteckung | n | Evita el *contagio*. | Vermeide eine *Ansteckung*. |
+la inmunidad | die Immunität | n | La vacuna genera *inmunidad*. | Die Impfung erzeugt *Immunität*. |
+el brote | der Ausbruch | n | Hubo un *brote* de gripe. | Es gab einen Grippe*ausbruch*. |
+la pandemia | die Pandemie | n | La *pandemia* cambió nuestras vidas. | Die *Pandemie* veränderte unser Leben. |
+el repunte de casos | der Anstieg der Fallzahlen | n | Hay un *repunte de casos*. | Die *Fallzahlen steigen wieder*. |
+la automedicación | die Selbstmedikation | n | La *automedicación* es peligrosa. | *Selbstmedikation* ist gefährlich. |
+la dependencia | die Abhängigkeit; Pflegebedürftigkeit | n | Es una persona en situación de *dependencia*. | Er ist *pflegebedürftig*. |
+el cuidador | die Pflegeperson | n | Es la *cuidadora* de su madre. | Sie *pflegt* ihre Mutter. |
+la esperanza de vida | die Lebenserwartung | n | La *esperanza de vida* ha aumentado. | Die *Lebenserwartung* ist gestiegen. |
+la eutanasia | die Sterbehilfe | n | El debate sobre la *eutanasia* sigue abierto. | Die Debatte über *Sterbehilfe* läuft weiter. |
+psicosomático | psychosomatisch | adj | El dolor es *psicosomático*. | Der Schmerz ist *psychosomatisch*. |
+la somnolencia | die Schläfrigkeit | n | El medicamento produce *somnolencia*. | Das Medikament macht *schläfrig*. |
+la fatiga | die Ermüdung | n | Siente *fatiga* constante. | Er fühlt sich ständig *müde*. |
+el sedentarismo | der Bewegungsmangel | n | El *sedentarismo* causa enfermedades. | *Bewegungsmangel* verursacht Krankheiten. |

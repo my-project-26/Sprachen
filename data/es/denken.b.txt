@@ -1,0 +1,69 @@
+# Spanisch – Argumentieren & abstrakte Begriffe B2/C1 (Ergänzung)
+## B2
+el aspecto clave | der Schlüsselaspekt | n | Es un *aspecto clave* del debate. | Es ist ein *Schlüsselaspekt* der Debatte. |
+el criterio | das Kriterium; Urteilsvermögen | n | Usa tu propio *criterio*. | Nutze dein eigenes *Urteilsvermögen*. |
+la perspectiva crítica | die kritische Sichtweise | n | Analiza el tema desde una *perspectiva crítica*. | Er analysiert das Thema *kritisch*. |
+el pro | das Pro | n | Hay *pros* y contras. | Es gibt *Vor-* und Nachteile. |
+el contra | das Kontra | n | Analiza los *contras*. | Analysiere die *Nachteile*. |
+a favor | dafür | phrase | Estoy *a favor* de la propuesta. | Ich bin *für* den Vorschlag. |
+en contra | dagegen | phrase | La mayoría votó *en contra*. | Die Mehrheit stimmte *dagegen*. |
+al contrario | im Gegenteil | phrase | No es aburrido; *al contrario*. | Es ist nicht langweilig; *im Gegenteil*. |
+es decir | das heißt | phrase | Llega mañana, *es decir*, el lunes. | Er kommt morgen, *das heißt* am Montag. |
+o sea | also, das heißt | phrase | No puedo, *o sea*, no quiero. | Ich kann nicht, *also*, ich will nicht. |
+así pues | also | phrase | *Así pues*, empezamos mañana. | *Also* fangen wir morgen an. |
+en consecuencia | folglich | phrase | No estudió; *en consecuencia*, suspendió. | Er lernte nicht; *folglich* fiel er durch. |
+por consiguiente | folglich | phrase | Hubo pocos votos; *por consiguiente*, perdió. | Es gab wenige Stimmen; *folglich* verlor er. |
+dado que | da, weil | conj | *Dado que* llueve, nos quedamos. | *Da* es regnet, bleiben wir. |
+puesto que | da ja | conj | *Puesto que* insistes, iré. | *Da* du darauf bestehst, gehe ich. |
+ya que | da | conj | *Ya que* estás aquí, ayúdame. | *Da* du schon hier bist, hilf mir. |
+aun cuando | selbst wenn | conj | *Aun cuando* llueva, iremos. | *Selbst wenn* es regnet, gehen wir. |
+con tal de que | vorausgesetzt, dass | conj | Te lo presto *con tal de que* me lo devuelvas. | Ich leihe es dir, *vorausgesetzt*, du gibst es zurück. |
+en caso de que | falls | conj | *En caso de que* no venga, llámame. | *Falls* er nicht kommt, ruf mich an. |
+de manera que | sodass | conj | Habla despacio, *de manera que* todos entiendan. | Er spricht langsam, *sodass* alle verstehen. |
+la generalización | die Verallgemeinerung | n | Es una *generalización* injusta. | Das ist eine ungerechte *Verallgemeinerung*. |
+generalizar | verallgemeinern | v | No hay que *generalizar*. | Man soll nicht *verallgemeinern*. |
+la excepción | die Ausnahme | n | Es la *excepción* que confirma la regla. | Das ist die *Ausnahme*, die die Regel bestätigt. |
+el matiz importante | die wichtige Nuance | n | Hay un *matiz importante* que añadir. | Es gibt eine *wichtige Nuance* zu ergänzen. |
+la interpretación | die Interpretation | n | Admite varias *interpretaciones*. | Es lässt mehrere *Deutungen* zu. |
+interpretar | interpretieren | v | Lo *interpretó* mal. | Er hat es falsch *interpretiert*. |
+la valoración | die Bewertung | n | Mi *valoración* es positiva. | Meine *Bewertung* ist positiv. |
+la reflexión crítica | die kritische Reflexion | n | Invita a la *reflexión crítica*. | Es regt zum *kritischen Nachdenken* an. |
+el enfoque | der Blickwinkel | n | Cambia el *enfoque*. | Ändere den *Blickwinkel*. |
+el razonamiento lógico | das logische Denken | n | Requiere *razonamiento lógico*. | Es erfordert *logisches Denken*. |
+la abstracción | die Abstraktion | n | Es un concepto de gran *abstracción*. | Es ist ein sehr *abstrakter* Begriff. |
+abstracto | abstrakt | adj | Es demasiado *abstracto*. | Das ist zu *abstrakt*. |
+el concepto | der Begriff, das Konzept | n | No entiendo el *concepto*. | Ich verstehe das *Konzept* nicht. |
+la definición | die Definition | n | Busca la *definición*. | Such die *Definition*. |
+## C1
+la falacia ad hominem | das Argumentum ad hominem | n | Eso es una *falacia ad hominem*. | Das ist ein *Angriff auf die Person* statt aufs Argument. |
+la tautología | die Tautologie | n | Su frase es una *tautología*. | Sein Satz ist eine *Tautologie*. |
+el silogismo | der Syllogismus | n | Construyó un *silogismo* perfecto. | Er baute einen perfekten *Syllogismus*. |
+la dialéctica | die Dialektik | n | Domina la *dialéctica*. | Er beherrscht die *Dialektik*. |
+el axioma | das Axiom | n | Lo da por *axioma*. | Er setzt es als *Axiom* voraus. |
+la antítesis | die Antithese | n | Es la *antítesis* de lo que dijo. | Es ist das *Gegenteil* dessen, was er sagte. |
+la síntesis | die Synthese, Zusammenfassung | n | Haz una *síntesis* del debate. | Mach eine *Zusammenfassung* der Debatte. |
+el paradigma | das Paradigma | n | Es un cambio de *paradigma*. | Es ist ein *Paradigmenwechsel*. |
+la disquisición | die Abhandlung, Erörterung | n | Se perdió en largas *disquisiciones*. | Er verlor sich in langen *Erörterungen*. |
+la elucubración | die Grübelei, Spekulation | n | Son puras *elucubraciones*. | Das sind reine *Spekulationen*. |
+la refutación | die Widerlegung | n | Presentó una *refutación* sólida. | Er legte eine solide *Widerlegung* vor. |
+la salvedad | der Vorbehalt | n | Acepto, con una *salvedad*. | Ich stimme zu, mit einem *Vorbehalt*. |
+la objeción | der Einwand | n | ¿Alguna *objeción*? | Irgendwelche *Einwände*? |
+objetar | einwenden | v | No tengo nada que *objetar*. | Ich habe nichts *einzuwenden*. |
+el contraargumento | das Gegenargument | n | Expuso un buen *contraargumento*. | Er brachte ein gutes *Gegenargument*. |
+la consideración | die Überlegung, Rücksicht | n | Lo tendré en *consideración*. | Ich werde es *berücksichtigen*. |
+la ponderación | die Abwägung | n | Requiere *ponderación*. | Es erfordert *Abwägung*. |
+ponderar | abwägen | v | Hay que *ponderar* las opciones. | Die Optionen müssen *abgewogen* werden. |
+la salvaguarda | die Absicherung | n | Es una *salvaguarda* necesaria. | Es ist eine notwendige *Absicherung*. |
+inequívoco | eindeutig | adj | Dio una señal *inequívoca*. | Er gab ein *eindeutiges* Signal. |
+irrefutable | unwiderlegbar | adj | Las pruebas son *irrefutables*. | Die Beweise sind *unwiderlegbar*. |
+discutible | fragwürdig | adj | Es una decisión *discutible*. | Es ist eine *fragwürdige* Entscheidung. |
+ineludible | unausweichlich | adj | Es una pregunta *ineludible*. | Es ist eine *unausweichliche* Frage. |
+somero | oberflächlich | adj | Hizo un análisis *somero*. | Er machte eine *oberflächliche* Analyse. |
+exhaustivamente | erschöpfend | adv | Lo estudió *exhaustivamente*. | Er untersuchte es *gründlich*. |
+cabalmente | vollständig, genau | adv | No lo entendió *cabalmente*. | Er verstand es nicht *vollständig*. |
+huelga decir | es versteht sich von selbst | phrase | *Huelga decir* que estás invitado. | *Es versteht sich von selbst*, dass du eingeladen bist. |
+dicho sea de paso | nebenbei gesagt | phrase | *Dicho sea de paso*, llegó tarde. | *Nebenbei gesagt*, er kam zu spät. |
+en aras de | um … willen | phrase | *En aras de* la paz, cedió. | *Um* des Friedens *willen* gab er nach. |
+so pena de | bei Strafe von | phrase | Hay que pagar *so pena de* multa. | Man muss zahlen, *sonst droht* eine Geldstrafe. |
+a tenor de | gemäß | phrase | *A tenor de* los datos, ha mejorado. | *Gemäß* den Daten hat es sich verbessert. |
+en lo que respecta a | was … betrifft | phrase | *En lo que respecta al* precio, es justo. | *Was* den Preis *betrifft*, ist er fair. |

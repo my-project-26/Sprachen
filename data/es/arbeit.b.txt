@@ -1,0 +1,65 @@
+# Spanisch – Arbeit & Bildung B2/C1 (Ergänzung)
+## B2
+la vacante | die offene Stelle | n | Hay una *vacante* en el departamento. | In der Abteilung gibt es eine *offene Stelle*. |
+el candidato | der Bewerber | n | Entrevistaron a cinco *candidatos*. | Sie führten Gespräche mit fünf *Bewerbern*. |
+la selección de personal | die Personalauswahl | n | Trabaja en *selección de personal*. | Sie arbeitet in der *Personalauswahl*. |
+los recursos humanos | die Personalabteilung | n | Habla con *recursos humanos*. | Sprich mit der *Personalabteilung*. |
+la carta de presentación | das Anschreiben | n | Adjunta una *carta de presentación*. | Füg ein *Anschreiben* bei. |
+el periodo de prueba | die Probezeit | n | Estoy en *periodo de prueba*. | Ich bin in der *Probezeit*. |
+el contrato temporal | der befristete Vertrag | n | Solo le ofrecen un *contrato temporal*. | Man bietet ihr nur einen *befristeten Vertrag* an. |
+el contrato indefinido | der unbefristete Vertrag | n | Por fin tengo un *contrato indefinido*. | Endlich habe ich einen *unbefristeten Vertrag*. |
+la subida de sueldo | die Gehaltserhöhung | n | Pidió una *subida de sueldo*. | Er bat um eine *Gehaltserhöhung*. |
+la jornada completa | die Vollzeit | n | Trabajo a *jornada completa*. | Ich arbeite in *Vollzeit*. |
+la media jornada | die Halbtagsstelle | n | Busca un trabajo de *media jornada*. | Sie sucht eine *Halbtagsstelle*. |
+el horario de oficina | die Bürozeiten | n | Llama en *horario de oficina*. | Ruf während der *Bürozeiten* an. |
+la reunión de equipo | die Teambesprechung | n | Los lunes hay *reunión de equipo*. | Montags gibt es eine *Teambesprechung*. |
+la presentación | die Präsentation | n | Prepara la *presentación* para el cliente. | Bereite die *Präsentation* für den Kunden vor. |
+el plazo de entrega | der Abgabetermin | n | No cumplimos el *plazo de entrega*. | Wir haben den *Abgabetermin* nicht eingehalten. |
+la eficiencia | die Effizienz | n | Hay que mejorar la *eficiencia*. | Die *Effizienz* muss verbessert werden. |
+eficiente | effizient | adj | Es un método muy *eficiente*. | Es ist eine sehr *effiziente* Methode. |
+la colaboración | die Zusammenarbeit | n | Gracias por tu *colaboración*. | Danke für die *Zusammenarbeit*. |
+colaborar | zusammenarbeiten | v | *Colaboramos* con otra empresa. | Wir *arbeiten* mit einer anderen Firma *zusammen*. |
+el socio | der Geschäftspartner | n | Busca un *socio* para el proyecto. | Er sucht einen *Geschäftspartner* für das Projekt. |
+fundar | gründen | v | *Fundó* su empresa en 2010. | Er *gründete* seine Firma 2010. |
+la gestión | das Management | n | Estudió *gestión* de empresas. | Er studierte Betriebs*wirtschaft*. |
+el gerente | der Geschäftsführer | n | El *gerente* firmó el contrato. | Der *Geschäftsführer* unterschrieb den Vertrag. |
+el cargo directivo | die Führungsposition | n | Ocupa un *cargo directivo*. | Sie hat eine *Führungsposition*. |
+la jerarquía | die Hierarchie | n | La empresa tiene poca *jerarquía*. | Die Firma hat flache *Hierarchien*. |
+el cliente fiel | der Stammkunde | n | Es un *cliente fiel* desde hace años. | Er ist seit Jahren *Stammkunde*. |
+el mercado laboral | der Arbeitsmarkt | n | El *mercado laboral* es complicado. | Der *Arbeitsmarkt* ist schwierig. |
+la oferta laboral | das Jobangebot | n | Recibió una *oferta laboral* en Londres. | Sie bekam ein *Jobangebot* in London. |
+la formación continua | die Weiterbildung | n | La empresa invierte en *formación continua*. | Die Firma investiert in *Weiterbildung*. |
+el título universitario | der Hochschulabschluss | n | Se requiere *título universitario*. | Ein *Hochschulabschluss* ist erforderlich. |
+el grado | der Bachelor(studiengang) | n | Estudia un *grado* en Psicología. | Sie studiert einen *Bachelor* in Psychologie. |
+el expediente | die Akte; das Zeugnis | n | Tiene un *expediente* brillante. | Sie hat glänzende *Noten*. |
+el curso intensivo | der Intensivkurs | n | Hice un *curso intensivo* de alemán. | Ich habe einen *Intensivkurs* Deutsch gemacht. |
+la certificación | die Zertifizierung | n | Obtuvo la *certificación* oficial. | Er erhielt die offizielle *Zertifizierung*. |
+el aprendizaje | das Lernen; die Lehre | n | El *aprendizaje* de idiomas lleva tiempo. | Das *Lernen* von Sprachen braucht Zeit. |
+el aprendiz | der Lehrling | n | Empezó como *aprendiz* de carpintero. | Er begann als Schreiner*lehrling*. |
+la vocación | die Berufung | n | Tiene *vocación* de médico. | Er ist zum Arzt *berufen*. |
+## C1
+la plantilla | die Belegschaft | n | Han reducido la *plantilla*. | Sie haben die *Belegschaft* verkleinert. |
+el cese | die Entlassung, Beendigung | n | Anunció el *cese* de la actividad. | Er kündigte die *Einstellung* der Tätigkeit an. |
+la excedencia | der unbezahlte Urlaub (Freistellung) | n | Pidió una *excedencia* de un año. | Sie nahm ein Jahr *Auszeit*. |
+el emprendimiento | das Unternehmertum | n | Fomentan el *emprendimiento* joven. | Sie fördern junges *Unternehmertum*. |
+la sinergia | die Synergie | n | Buscan *sinergias* entre los equipos. | Man sucht *Synergien* zwischen den Teams. |
+la competitividad | die Wettbewerbsfähigkeit | n | Hay que aumentar la *competitividad*. | Die *Wettbewerbsfähigkeit* muss gesteigert werden. |
+la deslocalización | die Verlagerung | n | La *deslocalización* afecta a la industria. | Die *Verlagerung* trifft die Industrie. |
+la conciliación | die Vereinbarkeit | n | La *conciliación* es una prioridad. | Die *Vereinbarkeit* ist eine Priorität. |
+el desgaste profesional | das Burnout | n | Sufre *desgaste profesional*. | Er leidet an *Burnout*. |
+la proactividad | die Eigeninitiative | n | Valoramos la *proactividad*. | Wir schätzen *Eigeninitiative*. |
+proactivo | proaktiv | adj | Buscamos a alguien *proactivo*. | Wir suchen jemanden *Proaktiven*. |
+la polivalencia | die Vielseitigkeit | n | Se valora la *polivalencia*. | *Vielseitigkeit* wird geschätzt. |
+la meritocracia | die Leistungsgesellschaft | n | Defiende la *meritocracia*. | Er verteidigt das *Leistungsprinzip*. |
+el escalafón | die Rangordnung | n | Escaló rápido en el *escalafón*. | Er stieg schnell in der *Rangordnung* auf. |
+la remuneración | die Vergütung | n | La *remuneración* es competitiva. | Die *Vergütung* ist wettbewerbsfähig. |
+el emolumento | die Bezüge | n | Sus *emolumentos* son elevados. | Seine *Bezüge* sind hoch. |
+la dieta | das Spesengeld | n | Cobra *dietas* por viaje. | Er bekommt Reise*spesen*. |
+el teletrabajador | der Telearbeiter | n | Es *teletrabajador* desde 2020. | Er arbeitet seit 2020 *von zu Hause*. |
+el nómada digital | der digitale Nomade | n | Vive como *nómada digital*. | Er lebt als *digitaler Nomade*. |
+la capacitación | die Qualifizierung | n | Ofrecen *capacitación* gratuita. | Sie bieten kostenlose *Qualifizierung* an. |
+el doctorando | der Doktorand | n | Es *doctorando* en Física. | Er ist *Doktorand* in Physik. |
+el catedrático | der Lehrstuhlinhaber | n | Es *catedrático* de Historia. | Er ist *Professor* für Geschichte. |
+la beca de investigación | das Forschungsstipendium | n | Obtuvo una *beca de investigación*. | Sie erhielt ein *Forschungsstipendium*. |
+la evaluación continua | die laufende Bewertung | n | Hay *evaluación continua*. | Es gibt eine *laufende Bewertung*. |
+la deserción escolar | der Schulabbruch | n | La *deserción escolar* ha disminuido. | Die *Schulabbrüche* sind zurückgegangen. |

@@ -1,0 +1,67 @@
+# Spanisch – Wirtschaft, Recht, Verkehr B2/C1 (Ergänzung)
+## B2
+el ahorrador | der Sparer | n | Los *ahorradores* pierden con la inflación. | *Sparer* verlieren durch die Inflation. |
+la cartera de inversión | das Portfolio | n | Diversifica tu *cartera de inversión*. | Diversifiziere dein *Portfolio*. |
+el fondo de inversión | der Investmentfonds | n | Invirtió en un *fondo de inversión*. | Er investierte in einen *Fonds*. |
+el dividendo | die Dividende | n | La empresa reparte *dividendos*. | Das Unternehmen schüttet *Dividenden* aus. |
+la rentabilidad | die Rendite | n | Ofrece una *rentabilidad* del cuatro por ciento. | Es bietet eine *Rendite* von vier Prozent. |
+el riesgo financiero | das finanzielle Risiko | n | Asumió un *riesgo financiero*. | Er ging ein *finanzielles Risiko* ein. |
+la moneda extranjera | die Fremdwährung | n | Paga en *moneda extranjera*. | Er zahlt in *Fremdwährung*. |
+el tipo de cambio | der Wechselkurs | n | El *tipo de cambio* es favorable. | Der *Wechselkurs* ist günstig. |
+la devaluación | die Abwertung | n | La *devaluación* del peso afectó a todos. | Die *Abwertung* des Peso traf alle. |
+el endeudamiento | die Verschuldung | n | Su *endeudamiento* es alto. | Seine *Verschuldung* ist hoch. |
+moroso | säumig (Zahler) | adj | Es un cliente *moroso*. | Er ist ein *säumiger* Kunde. |
+el embargo | die Pfändung | n | Le hicieron un *embargo* del sueldo. | Sein Gehalt wurde *gepfändet*. |
+el patrimonio | das Vermögen | n | Tiene un gran *patrimonio*. | Er hat ein großes *Vermögen*. |
+la herencia | das Erbe | n | Repartieron la *herencia*. | Sie teilten das *Erbe* auf. |
+el testamento | das Testament | n | Dejó *testamento*. | Er hinterließ ein *Testament*. |
+el notario | der Notar | n | Firmamos ante *notario*. | Wir unterschrieben beim *Notar*. |
+el abogado laboralista | der Arbeitsrechtsanwalt | n | Consulta a un *abogado laboralista*. | Frag einen *Arbeitsrechtsanwalt*. |
+la normativa | die Vorschriften | n | Cumple la *normativa* vigente. | Es erfüllt die geltenden *Vorschriften*. |
+el reglamento | die Verordnung, Geschäftsordnung | n | Según el *reglamento*, no se puede. | Laut *Vorschrift* geht das nicht. |
+infringir | verstoßen gegen | v | *Infringió* las normas de tráfico. | Er *verstieß* gegen die Verkehrsregeln. |
+la infracción | der Verstoß | n | Es una *infracción* grave. | Es ist ein schwerer *Verstoß*. |
+el recurso | der Einspruch, die Berufung | n | Presentó un *recurso* contra la multa. | Er legte *Einspruch* gegen das Bußgeld ein. |
+la reclamación judicial | die gerichtliche Klage | n | Iniciaron una *reclamación judicial*. | Sie reichten *Klage* ein. |
+el derecho laboral | das Arbeitsrecht | n | Es experta en *derecho laboral*. | Sie ist Expertin für *Arbeitsrecht*. |
+el derecho penal | das Strafrecht | n | Estudió *derecho penal*. | Er studierte *Strafrecht*. |
+la propiedad intelectual | das geistige Eigentum | n | Protege la *propiedad intelectual*. | Es schützt das *geistige Eigentum*. |
+los derechos de autor | das Urheberrecht | n | Viola los *derechos de autor*. | Es verletzt das *Urheberrecht*. |
+la seguridad vial | die Verkehrssicherheit | n | Campaña de *seguridad vial*. | Kampagne für *Verkehrssicherheit*. |
+el control de alcoholemia | die Alkoholkontrolle | n | Le hicieron un *control de alcoholemia*. | Er wurde einer *Alkoholkontrolle* unterzogen. |
+los puntos del carné | die Punkte (Führerschein) | n | Perdió tres *puntos del carné*. | Er verlor drei *Punkte* im Führerschein. |
+el accidente de tráfico | der Verkehrsunfall | n | Hubo un *accidente de tráfico* grave. | Es gab einen schweren *Verkehrsunfall*. |
+el seguro a todo riesgo | die Vollkaskoversicherung | n | Tengo *seguro a todo riesgo*. | Ich habe eine *Vollkasko*. |
+la red de transporte | das Verkehrsnetz | n | La *red de transporte* es excelente. | Das *Verkehrsnetz* ist hervorragend. |
+el tren de alta velocidad | der Hochgeschwindigkeitszug | n | El *tren de alta velocidad* tarda dos horas. | Der *Schnellzug* braucht zwei Stunden. | AVE
+el cercanías | die S-Bahn | n | Cojo el *cercanías* cada día. | Ich nehme jeden Tag die *S-Bahn*. |
+el billete sencillo | die Einzelfahrkarte | n | Un *billete sencillo* cuesta dos euros. | Eine *Einzelfahrkarte* kostet zwei Euro. |
+## C1
+la volatilidad | die Volatilität | n | La *volatilidad* del mercado asusta. | Die *Schwankungen* des Marktes machen Angst. |
+el apalancamiento | die Hebelwirkung (Kredit) | n | El *apalancamiento* aumenta el riesgo. | Die *Hebelwirkung* erhöht das Risiko. |
+la solvencia | die Zahlungsfähigkeit | n | Dudan de su *solvencia*. | Man zweifelt an seiner *Zahlungsfähigkeit*. |
+la insolvencia | die Zahlungsunfähigkeit | n | La empresa está en *insolvencia*. | Das Unternehmen ist *zahlungsunfähig*. |
+el concurso de acreedores | das Insolvenzverfahren | n | Presentó *concurso de acreedores*. | Er meldete *Insolvenz* an. |
+el acreedor | der Gläubiger | n | Los *acreedores* exigen el pago. | Die *Gläubiger* verlangen Zahlung. |
+el deudor | der Schuldner | n | El *deudor* no puede pagar. | Der *Schuldner* kann nicht zahlen. |
+la amortización | die Tilgung; Abschreibung | n | Pagamos la *amortización* mensual. | Wir zahlen die monatliche *Tilgung*. |
+el tipo de interés variable | der variable Zinssatz | n | Tiene la hipoteca a *tipo de interés variable*. | Seine Hypothek hat einen *variablen Zins*. |
+el euríbor | der Euribor | n | Subió el *euríbor*. | Der *Euribor* stieg. |
+la fiscalidad | die Besteuerung | n | La *fiscalidad* es compleja. | Die *Besteuerung* ist komplex. |
+la elusión fiscal | die Steuervermeidung | n | La *elusión fiscal* es legal, pero inmoral. | *Steuervermeidung* ist legal, aber unmoralisch. |
+el fraude fiscal | der Steuerbetrug | n | Lo condenaron por *fraude fiscal*. | Er wurde wegen *Steuerbetrugs* verurteilt. |
+la cláusula | die Klausel | n | Hay una *cláusula* abusiva. | Es gibt eine missbräuchliche *Klausel*. |
+la letra pequeña | das Kleingedruckte | n | Lee la *letra pequeña*. | Lies das *Kleingedruckte*. |
+el litigio | der Rechtsstreit | n | El *litigio* duró años. | Der *Rechtsstreit* dauerte Jahre. |
+el pleito | der Prozess, Streit | n | Ganó el *pleito*. | Er gewann den *Prozess*. |
+el fallo | das Urteil; der Fehler | n | El *fallo* del tribunal es firme. | Das *Urteil* des Gerichts ist rechtskräftig. |
+firme | rechtskräftig; fest | adj | La sentencia es *firme*. | Das Urteil ist *rechtskräftig*. |
+la jurisdicción | die Gerichtsbarkeit | n | No está bajo su *jurisdicción*. | Es fällt nicht in seine *Zuständigkeit*. |
+el peritaje | das Gutachten | n | El *peritaje* confirmó los daños. | Das *Gutachten* bestätigte die Schäden. |
+el perito | der Gutachter | n | Llamaron a un *perito*. | Sie riefen einen *Gutachter*. |
+el desacato | die Missachtung (des Gerichts) | n | Lo acusan de *desacato*. | Man wirft ihm *Missachtung des Gerichts* vor. |
+la orden de alejamiento | die Kontaktsperre | n | El juez dictó una *orden de alejamiento*. | Der Richter verhängte eine *Kontaktsperre*. |
+el atestado | das Polizeiprotokoll | n | La policía redactó el *atestado*. | Die Polizei verfasste das *Protokoll*. |
+el siniestro total | der Totalschaden | n | El coche fue *siniestro total*. | Das Auto hatte einen *Totalschaden*. |
+la intermodalidad | die Verknüpfung von Verkehrsmitteln | n | Mejoran la *intermodalidad*. | Man verbessert die *Verknüpfung der Verkehrsmittel*. |
+la infraestructura | die Infrastruktur | n | Invierten en *infraestructura*. | Sie investieren in *Infrastruktur*. |
