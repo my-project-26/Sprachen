@@ -1,5 +1,326 @@
+# Spanisch – Grundwortschatz
 ## A1
 hola | hallo | phrase | *Hola*, ¿qué tal? | *Hallo*, wie geht's? |
-el libro | das Buch | n | Leo *el libro* cada noche. | Ich lese *das Buch* jeden Abend. | maskulin
-la casa | das Haus | n | *La casa* es grande. | *Das Haus* ist groß. | feminin
-comer | essen | v | Me gusta *comer* fruta. | Ich *esse* gern Obst. |
+adiós | tschüss, auf Wiedersehen | phrase | *Adiós*, hasta mañana. | *Tschüss*, bis morgen. |
+buenos días | guten Morgen, guten Tag | phrase | *Buenos días*, señora García. | *Guten Morgen*, Frau García. | bis ca. 12–14 Uhr
+buenas tardes | guten Tag (nachmittags) | phrase | *Buenas tardes*, ¿puedo ayudarle? | *Guten Tag*, kann ich Ihnen helfen? |
+buenas noches | guten Abend, gute Nacht | phrase | *Buenas noches*, que duermas bien. | *Gute Nacht*, schlaf gut. |
+por favor | bitte | phrase | Un café, *por favor*. | Einen Kaffee, *bitte*. |
+gracias | danke | phrase | Muchas *gracias* por tu ayuda. | Vielen *Dank* für deine Hilfe. |
+de nada | gern geschehen | phrase | —Gracias. —*De nada*. | „Danke.“ – „*Gern geschehen*.“ |
+perdón | Entschuldigung | phrase | *Perdón*, ¿dónde está la estación? | *Entschuldigung*, wo ist der Bahnhof? |
+lo siento | es tut mir leid | phrase | *Lo siento*, llego tarde. | *Es tut mir leid*, ich komme zu spät. |
+sí | ja | adv | *Sí*, me gusta mucho. | *Ja*, das gefällt mir sehr. | mit Akzent; si = wenn
+no | nein; nicht | adv | *No* tengo tiempo. | Ich habe *keine* Zeit. |
+uno | eins | num | Tengo *un* hermano. | Ich habe *einen* Bruder. | vor maskulinem Nomen: un
+dos | zwei | num | Tenemos *dos* gatos. | Wir haben *zwei* Katzen. |
+tres | drei | num | La tienda abre a las *tres*. | Der Laden öffnet um *drei*. |
+cuatro | vier | num | Somos *cuatro* en mi familia. | Wir sind *vier* in meiner Familie. |
+cinco | fünf | num | Me levanto a las *cinco*. | Ich stehe um *fünf* auf. |
+seis | sechs | num | La película empieza a las *seis*. | Der Film beginnt um *sechs*. |
+siete | sieben | num | Una semana tiene *siete* días. | Eine Woche hat *sieben* Tage. |
+ocho | acht | num | El colegio empieza a las *ocho*. | Die Schule beginnt um *acht*. |
+nueve | neun | num | Mi hijo tiene *nueve* años. | Mein Sohn ist *neun* Jahre alt. |
+diez | zehn | num | Vuelvo en *diez* minutos. | Ich bin in *zehn* Minuten zurück. |
+once | elf | num | Un equipo tiene *once* jugadores. | Eine Mannschaft hat *elf* Spieler. | False Friend: ≠ englisch „once“
+doce | zwölf | num | Comemos a las *doce*. | Wir essen um *zwölf*. |
+quince | fünfzehn | num | El autobús pasa cada *quince* minutos. | Der Bus kommt alle *fünfzehn* Minuten. |
+veinte | zwanzig | num | Cuesta *veinte* euros. | Es kostet *zwanzig* Euro. |
+treinta | dreißig | num | Tiene *treinta* años. | Er ist *dreißig* Jahre alt. |
+cincuenta | fünfzig | num | Pagué *cincuenta* euros. | Ich habe *fünfzig* Euro bezahlt. |
+cien | hundert | num | Había *cien* personas en la fiesta. | Auf der Party waren *hundert* Leute. | ciento + Zahl: ciento dos
+mil | tausend | num | La bici costó *mil* euros. | Das Fahrrad kostete *tausend* Euro. |
+primero | erste(r, s) | num | Es mi *primera* vez en Madrid. | Ich bin zum *ersten* Mal in Madrid. | vor mask. Nomen: primer
+segundo | zweite(r, s); Sekunde | num | Toma la *segunda* calle a la izquierda. | Nimm die *zweite* Straße links. |
+el número | die Zahl, Nummer | n | ¿Cuál es tu *número* de teléfono? | Wie ist deine Telefon*nummer*? |
+lunes | Montag | n | Empiezo a trabajar el *lunes*. | Ich fange am *Montag* an zu arbeiten. | Wochentage klein, mit Artikel: el lunes
+martes | Dienstag | n | El museo cierra los *martes*. | Das Museum hat *dienstags* zu. |
+miércoles | Mittwoch | n | Nos vemos el *miércoles*. | Wir sehen uns am *Mittwoch*. |
+jueves | Donnerstag | n | La fiesta es el *jueves*. | Die Party ist am *Donnerstag*. |
+viernes | Freitag | n | Me encantan los *viernes*. | Ich liebe *Freitage*. |
+sábado | Samstag | n | El *sábado* vamos de compras. | Am *Samstag* gehen wir einkaufen. |
+domingo | Sonntag | n | Las tiendas cierran el *domingo*. | Am *Sonntag* sind die Läden zu. |
+enero | Januar | n | Mi cumpleaños es en *enero*. | Mein Geburtstag ist im *Januar*. | Monate klein geschrieben
+febrero | Februar | n | *Febrero* es el mes más corto. | Der *Februar* ist der kürzeste Monat. |
+marzo | März | n | La primavera empieza en *marzo*. | Der Frühling beginnt im *März*. |
+abril | April | n | En *abril* llueve mucho. | Im *April* regnet es viel. |
+mayo | Mai | n | Nos casamos en *mayo*. | Wir haben im *Mai* geheiratet. |
+junio | Juni | n | Las clases terminan en *junio*. | Der Unterricht endet im *Juni*. |
+julio | Juli | n | *Julio* suele ser muy caluroso. | Der *Juli* ist meistens sehr heiß. |
+agosto | August | n | En *agosto* nos vamos de vacaciones. | Im *August* fahren wir in den Urlaub. |
+septiembre | September | n | El curso empieza en *septiembre*. | Der Kurs beginnt im *September*. | auch: setiembre
+octubre | Oktober | n | En *octubre* caen las hojas. | Im *Oktober* fallen die Blätter. |
+noviembre | November | n | *Noviembre* es gris y lluvioso. | Der *November* ist grau und regnerisch. |
+diciembre | Dezember | n | La Navidad es en *diciembre*. | Weihnachten ist im *Dezember*. |
+el día | der Tag | n | ¡Que tengas un buen *día*! | Einen schönen *Tag*! | maskulin trotz -a
+la semana | die Woche | n | La veo una vez a la *semana*. | Ich sehe sie einmal pro *Woche*. |
+el mes | der Monat | n | El alquiler se paga cada *mes*. | Die Miete wird jeden *Monat* bezahlt. |
+el año | das Jahr | n | Nos mudamos aquí el *año* pasado. | Wir sind letztes *Jahr* hierhergezogen. | ñ! ano = Anus
+la hora | die Stunde; Uhrzeit | n | ¿Qué *hora* es? | Wie *spät* ist es? |
+el minuto | die Minute | n | Espera un *minuto*. | Warte eine *Minute*. |
+el tiempo | die Zeit; das Wetter | n | No tengo *tiempo*. | Ich habe keine *Zeit*. | ¿Qué tiempo hace? = Wie ist das Wetter?
+la mañana | der Morgen, Vormittag | n | Tomo café cada *mañana*. | Ich trinke jeden *Morgen* Kaffee. | mañana (adv) = morgen
+la tarde | der Nachmittag, frühe Abend | n | Te llamo esta *tarde*. | Ich rufe dich heute *Nachmittag* an. |
+la noche | die Nacht, der Abend | n | Anoche dormí mal. Fue una *noche* larga. | Letzte Nacht habe ich schlecht geschlafen. Es war eine lange *Nacht*. |
+hoy | heute | adv | *Hoy* hace mucho calor. | *Heute* ist es sehr heiß. |
+mañana | morgen | adv | Llámame *mañana*. | Ruf mich *morgen* an. |
+ayer | gestern | adv | Lo vi *ayer*. | Ich habe ihn *gestern* gesehen. |
+ahora | jetzt | adv | Tengo que irme *ahora*. | Ich muss *jetzt* gehen. |
+el fin de semana | das Wochenende | n | ¿Qué haces el *fin de semana*? | Was machst du am *Wochenende*? |
+la primavera | der Frühling | n | El jardín es precioso en *primavera*. | Im *Frühling* ist der Garten wunderschön. |
+el verano | der Sommer | n | En *verano* vamos a la playa. | Im *Sommer* fahren wir ans Meer. |
+el otoño | der Herbst | n | Me encantan los colores del *otoño*. | Ich liebe die Farben des *Herbstes*. |
+el invierno | der Winter | n | En *invierno* nieva mucho. | Im *Winter* schneit es viel. |
+el color | die Farbe | n | ¿Cuál es tu *color* favorito? | Was ist deine Lieblings*farbe*? |
+rojo | rot | adj | Tiene un coche *rojo*. | Sie hat ein *rotes* Auto. |
+azul | blau | adj | El cielo está *azul*. | Der Himmel ist *blau*. |
+verde | grün | adj | Lleva una chaqueta *verde*. | Er trägt eine *grüne* Jacke. |
+amarillo | gelb | adj | Los plátanos están *amarillos*. | Die Bananen sind *gelb*. |
+negro | schwarz | adj | Quiero el café *negro*. | Ich möchte den Kaffee *schwarz*. | Kaffee meist: café solo
+blanco | weiß | adj | Las paredes son *blancas*. | Die Wände sind *weiß*. |
+marrón | braun | adj | Tengo los zapatos *marrones*. | Ich habe *braune* Schuhe. | Augen/Haare: castaño
+gris | grau | adj | Hoy el cielo está *gris*. | Heute ist der Himmel *grau*. |
+naranja | orange; Orange | adj | Pintó la puerta de *naranja*. | Er hat die Tür *orange* gestrichen. |
+rosa | rosa; Rose | adj | Compró un vestido *rosa*. | Sie kaufte ein *rosa* Kleid. |
+yo | ich | pron | *Yo* vivo en Berlín. | *Ich* wohne in Berlin. | wird oft weggelassen
+tú | du | pron | ¿Y *tú*, de dónde eres? | Und *du*, woher kommst du? | mit Akzent; tu = dein
+él | er | pron | *Él* trabaja en un banco. | *Er* arbeitet in einer Bank. | el (ohne Akzent) = der
+ella | sie (Einzahl) | pron | *Ella* habla tres idiomas. | *Sie* spricht drei Sprachen. |
+usted | Sie (Höflichkeit) | pron | ¿Es *usted* el señor López? | Sind *Sie* Herr López? | Verb in 3. Person
+nosotros | wir | pron | *Nosotros* llegamos tarde. | *Wir* kommen zu spät. | weiblich: nosotras
+vosotros | ihr | pron | ¿*Vosotros* venís a la fiesta? | Kommt *ihr* zur Party? | in Lateinamerika: ustedes
+ellos | sie (Mehrzahl) | pron | *Ellos* viven al lado. | *Sie* wohnen nebenan. | weiblich: ellas
+ustedes | Sie (Mehrzahl); ihr (Lateinamerika) | pron | ¿*Ustedes* son de aquí? | Sind *Sie* von hier? |
+me | mich, mir | pron | ¿*Me* ayudas? | Hilfst du *mir*? |
+te | dich, dir | pron | *Te* quiero. | Ich liebe *dich*. |
+mi | mein(e) | det | *Mi* nombre es Kai. | *Mein* Name ist Kai. | Plural: mis
+tu | dein(e) | det | ¿Es esta *tu* bolsa? | Ist das *deine* Tasche? | ohne Akzent; Plural: tus
+su | sein(e), ihr(e), Ihr(e) | det | *Su* coche es nuevo. | *Sein* Auto ist neu. | Plural: sus
+nuestro | unser(e) | det | *Nuestro* piso es pequeño. | *Unsere* Wohnung ist klein. |
+este | diese(r, s) (hier) | det | *Este* café está muy bueno. | *Dieser* Kaffee ist sehr gut. | esta, estos, estas
+ese | diese(r, s) (da) | det | ¿Quién es *ese* hombre? | Wer ist *der* Mann da? | esa, esos, esas
+aquel | jene(r, s) (dort) | det | *Aquel* edificio es muy antiguo. | *Jenes* Gebäude dort ist sehr alt. |
+el | der (mask.) | det | *El* tren llega tarde. | *Der* Zug kommt zu spät. |
+la | die (fem.) | det | *La* casa es grande. | *Das* Haus ist groß. |
+un | ein (mask.) | det | Quiero *un* café. | Ich möchte *einen* Kaffee. | fem.: una
+algo | etwas | pron | ¿Quieres *algo* de beber? | Möchtest du *etwas* trinken? |
+nada | nichts | pron | No hay *nada* en la nevera. | Es ist *nichts* im Kühlschrank. |
+todo | alles; ganz | pron | *Todo* está bien. | *Alles* ist gut. | todo el día = den ganzen Tag
+mucho | viel; sehr | adj | Tengo *mucho* trabajo. | Ich habe *viel* Arbeit. |
+poco | wenig | adj | Tengo *poco* tiempo. | Ich habe *wenig* Zeit. | un poco = ein bisschen
+más | mehr | adv | ¿Quieres *más* agua? | Möchtest du *mehr* Wasser? |
+otro | andere(r, s); noch ein | adj | ¿Me das *otro* café? | Gibst du mir *noch einen* Kaffee? | nie: un otro!
+en | in, auf | prep | Las llaves están *en* mi bolso. | Die Schlüssel sind *in* meiner Tasche. |
+a | nach, zu; um | prep | Voy *a* Madrid. | Ich fahre *nach* Madrid. | a las tres = um drei
+de | von, aus | prep | Soy *de* Alemania. | Ich komme *aus* Deutschland. | de + el = del
+con | mit | prep | Vivo *con* mi hermana. | Ich wohne *mit* meiner Schwester. | conmigo = mit mir
+sin | ohne | prep | No puedo vivir *sin* café. | Ich kann nicht *ohne* Kaffee leben. |
+para | für; um zu | prep | Este regalo es *para* ti. | Dieses Geschenk ist *für* dich. |
+por | durch; wegen; für | prep | Gracias *por* todo. | Danke *für* alles. | por la mañana = morgens
+sobre | auf, über | prep | El libro está *sobre* la mesa. | Das Buch liegt *auf* dem Tisch. |
+debajo de | unter | prep | El gato está *debajo de* la cama. | Die Katze ist *unter* dem Bett. |
+al lado de | neben | prep | Siéntate *al lado de* mí. | Setz dich *neben* mich. |
+entre | zwischen | prep | El banco está *entre* el café y la farmacia. | Die Bank ist *zwischen* dem Café und der Apotheke. |
+y | und | conj | Me gusta el té *y* el café. | Ich mag Tee *und* Kaffee. | vor i-/hi-: e
+o | oder | conj | ¿Té *o* café? | Tee *oder* Kaffee? | vor o-/ho-: u
+pero | aber | conj | Es pequeño, *pero* bonito. | Es ist klein, *aber* schön. |
+porque | weil | conj | Me quedé en casa *porque* estaba enfermo. | Ich bin zu Hause geblieben, *weil* ich krank war. | ¿por qué? = warum?
+si | wenn, falls; ob | conj | Llámame *si* necesitas ayuda. | Ruf mich an, *wenn* du Hilfe brauchst. |
+qué | was; welche(r, s) | pron | ¿*Qué* es esto? | *Was* ist das? | in Fragen mit Akzent
+quién | wer | pron | ¿*Quién* es? | *Wer* ist das? |
+dónde | wo | adv | ¿*Dónde* vives? | *Wo* wohnst du? | adónde = wohin
+cuándo | wann | adv | ¿*Cuándo* sale el tren? | *Wann* fährt der Zug ab? |
+por qué | warum | adv | ¿*Por qué* estás triste? | *Warum* bist du traurig? |
+cómo | wie | adv | ¿*Cómo* estás? | *Wie* geht es dir? |
+cuánto | wie viel | adv | ¿*Cuánto* cuesta? | *Wie viel* kostet das? | cuántos = wie viele
+cuál | welche(r, s) | pron | ¿*Cuál* prefieres? | *Welches* ist dir lieber? |
+muy | sehr | adv | La comida está *muy* buena. | Das Essen ist *sehr* gut. |
+también | auch | adv | Ella *también* habla francés. | Sie spricht *auch* Französisch. |
+tampoco | auch nicht | adv | Yo *tampoco* lo sé. | Ich weiß es *auch nicht*. |
+siempre | immer | adv | *Siempre* llega tarde. | Er kommt *immer* zu spät. |
+nunca | nie | adv | *Nunca* como carne. | Ich esse *nie* Fleisch. |
+a veces | manchmal | adv | *A veces* trabajo desde casa. | *Manchmal* arbeite ich von zu Hause. |
+aquí | hier | adv | Ven *aquí*. | Komm *hierher*. |
+allí | dort | adv | Nunca he estado *allí*. | Ich war noch nie *dort*. |
+bien | gut (Adverb) | adv | Estoy *bien*, gracias. | Mir geht's *gut*, danke. |
+mal | schlecht | adv | Dormí *mal*. | Ich habe *schlecht* geschlafen. |
+ser | sein (Wesen, Herkunft) | v | *Soy* profesor. | Ich *bin* Lehrer. | soy, eres, es, somos, sois, son
+estar | sein (Zustand, Ort) | v | *Estoy* cansado. | Ich *bin* müde. | estoy, estás, está …
+tener | haben | v | *Tengo* dos hermanas. | Ich *habe* zwei Schwestern. | tengo, tienes, tiene …; tener que = müssen
+haber | haben (Hilfsverb); es gibt (hay) | v | *Hay* un problema. | *Es gibt* ein Problem. | hay = es gibt
+hacer | machen, tun | v | ¿Qué *haces*? | Was *machst* du? | hago, haces …; hace frío = es ist kalt
+ir | gehen, fahren | v | *Vamos* a casa. | Wir *gehen* nach Hause. | voy, vas, va, vamos, vais, van
+venir | kommen | v | ¿*Vienes* a la fiesta? | *Kommst* du zur Party? | vengo, vienes …
+querer | wollen; lieben | v | *Quiero* un móvil nuevo. | Ich *will* ein neues Handy. | quiero, quieres …
+poder | können, dürfen | v | ¿*Puedo* pasar? | *Darf* ich reinkommen? | puedo, puedes …
+saber | wissen; können (gelernt) | v | No lo *sé*. | Ich *weiß* es nicht. | sé, sabes …
+conocer | kennen | v | ¿*Conoces* a María? | *Kennst* du María? | conozco
+decir | sagen | v | ¿Qué *dijo* ella? | Was hat sie *gesagt*? | digo, dices …; dije
+hablar | sprechen | v | ¿*Hablas* inglés? | *Sprichst* du Englisch? |
+ver | sehen | v | No *veo* nada. | Ich *sehe* nichts. | veo, ves …; visto
+mirar | ansehen, schauen | v | *Mira* esto. | *Schau* dir das an. |
+escuchar | (zu)hören | v | *Escucho* la radio en el coche. | Ich *höre* im Auto Radio. |
+oír | hören | v | No te *oigo*. | Ich *höre* dich nicht. | oigo, oyes …
+comer | essen | v | ¿Qué quieres *comer*? | Was möchtest du *essen*? |
+beber | trinken | v | *Bebo* mucha agua. | Ich *trinke* viel Wasser. |
+dormir | schlafen | v | ¿Has *dormido* bien? | Hast du gut *geschlafen*? | duermo
+vivir | leben, wohnen | v | ¿Dónde *vives*? | Wo *wohnst* du? |
+trabajar | arbeiten | v | *Trabajo* en una oficina. | Ich *arbeite* in einem Büro. |
+estudiar | studieren, lernen | v | *Estudia* medicina. | Sie *studiert* Medizin. |
+leer | lesen | v | *Leo* todas las noches. | Ich *lese* jeden Abend. |
+escribir | schreiben | v | *Escribe* tu nombre aquí. | *Schreib* deinen Namen hierhin. |
+dar | geben | v | *Dame* la mano. | *Gib* mir die Hand. | doy, das …
+tomar | nehmen; trinken | v | ¿Qué vas a *tomar*? | Was *nimmst* du? |
+llevar | tragen; mitnehmen | v | *Lleva* un paraguas. | *Nimm* einen Schirm *mit*. |
+buscar | suchen | v | *Busco* mis llaves. | Ich *suche* meine Schlüssel. |
+encontrar | finden | v | No *encuentro* el móvil. | Ich *finde* das Handy nicht. | encuentro
+necesitar | brauchen | v | *Necesito* vacaciones. | Ich *brauche* Urlaub. |
+gustar | gefallen, mögen | v | Me *gusta* tu camisa. | Mir *gefällt* dein Hemd. | me gusta(n) = ich mag
+abrir | öffnen | v | ¿Puedes *abrir* la ventana? | Kannst du das Fenster *öffnen*? | abierto
+cerrar | schließen | v | *Cierra* la puerta, por favor. | *Schließ* bitte die Tür. | cierro
+empezar | anfangen | v | ¿Cuándo *empieza* la película? | Wann *fängt* der Film *an*? | empiezo
+terminar | beenden, enden | v | La clase *termina* a las dos. | Der Unterricht *endet* um zwei. |
+ayudar | helfen | v | ¿Me puedes *ayudar*? | Kannst du mir *helfen*? |
+esperar | warten; hoffen | v | *Espérame*, por favor. | *Warte* bitte auf mich. |
+llamar | (an)rufen; nennen | v | Te *llamo* luego. | Ich *rufe* dich später *an*. | llamarse = heißen
+llegar | ankommen | v | El tren *llega* a las seis. | Der Zug *kommt* um sechs *an*. |
+salir | hinausgehen; abfahren | v | El avión *sale* a las diez. | Das Flugzeug *startet* um zehn. | salgo
+entrar | hineingehen | v | *Entra*, por favor. | *Komm herein*, bitte. |
+volver | zurückkommen | v | ¿Cuándo *vuelves*? | Wann *kommst* du *zurück*? | vuelvo
+jugar | spielen | v | Los niños *juegan* fuera. | Die Kinder *spielen* draußen. | juego; Instrument: tocar
+aprender | lernen | v | *Aprendo* español. | Ich *lerne* Spanisch. |
+entender | verstehen | v | No *entiendo* esta palabra. | Ich *verstehe* dieses Wort nicht. | entiendo
+preguntar | fragen | v | ¿Puedo *preguntarte* algo? | Darf ich dich etwas *fragen*? |
+contestar | antworten | v | *Contesta* la pregunta. | *Beantworte* die Frage. |
+bueno | gut | adj | Es una *buena* idea. | Das ist eine *gute* Idee. | vor mask. Nomen: buen
+malo | schlecht | adj | Hace *mal* tiempo. | Das Wetter ist *schlecht*. | vor mask. Nomen: mal
+grande | groß | adj | Tienen una casa *grande*. | Sie haben ein *großes* Haus. | vor Nomen: gran (= großartig)
+pequeño | klein | adj | Es un pueblo *pequeño*. | Es ist ein *kleines* Dorf. |
+nuevo | neu | adj | Necesito zapatos *nuevos*. | Ich brauche *neue* Schuhe. |
+viejo | alt | adj | Esta casa es muy *vieja*. | Dieses Haus ist sehr *alt*. |
+joven | jung | adj | Parece muy *joven*. | Sie sieht sehr *jung* aus. |
+largo | lang | adj | Fue un día *largo*. | Es war ein *langer* Tag. | False Friend: ≠ groß
+corto | kurz | adj | Tiene el pelo *corto*. | Sie hat *kurze* Haare. |
+caliente | heiß, warm | adj | La sopa está *caliente*. | Die Suppe ist *heiß*. | Wetter: hace calor
+frío | kalt | adj | El agua está *fría*. | Das Wasser ist *kalt*. |
+contento | froh, zufrieden | adj | Estoy muy *contento* aquí. | Ich bin hier sehr *zufrieden*. |
+triste | traurig | adj | ¿Por qué estás *triste*? | Warum bist du *traurig*? |
+bonito | schön, hübsch | adj | ¡Qué vista tan *bonita*! | Was für eine *schöne* Aussicht! |
+fácil | leicht, einfach | adj | El examen fue *fácil*. | Die Prüfung war *leicht*. |
+difícil | schwierig | adj | La gramática es *difícil*. | Die Grammatik ist *schwierig*. |
+mismo | gleich, derselbe | adj | Tenemos el *mismo* móvil. | Wir haben *dasselbe* Handy. |
+favorito | Lieblings- | adj | ¿Cuál es tu película *favorita*? | Was ist dein *Lieblings*film? |
+## A2
+el cuarto | das Viertel; Zimmer | n | Son las tres y *cuarto*. | Es ist *Viertel* nach drei. |
+la mitad | die Hälfte | n | Comí la *mitad* de la pizza. | Ich habe die *Hälfte* der Pizza gegessen. |
+temprano | früh | adv | Mañana me levanto *temprano*. | Morgen stehe ich *früh* auf. |
+tarde | spät | adv | Es muy *tarde*. | Es ist sehr *spät*. | llegar tarde = zu spät kommen
+pronto | bald | adv | ¡Hasta *pronto*! | Bis *bald*! |
+ya | schon; jetzt | adv | *Ya* he comido. | Ich habe *schon* gegessen. | ya no = nicht mehr
+todavía | noch | adv | ¿*Todavía* estás en el trabajo? | Bist du *noch* auf der Arbeit? | todavía no = noch nicht
+después | danach, später | adv | *Después* vamos al cine. | *Danach* gehen wir ins Kino. | después de = nach
+antes | vorher, früher | adv | *Antes* vivía en Sevilla. | *Früher* habe ich in Sevilla gewohnt. | antes de = vor
+luego | dann, später | adv | Hasta *luego*. | Bis *später*. |
+entonces | dann; also | adv | *Entonces*, ¿vienes o no? | *Also*, kommst du oder nicht? |
+hace | vor (zeitlich) | prep | Lo conocí *hace* dos años. | Ich habe ihn *vor* zwei Jahren kennengelernt. |
+desde | seit; von | prep | Vivo aquí *desde* 2019. | Ich wohne hier *seit* 2019. |
+hasta | bis | prep | La tienda abre *hasta* las ocho. | Der Laden hat *bis* acht offen. |
+durante | während | prep | Me dormí *durante* la película. | Ich bin *während* des Films eingeschlafen. |
+mientras | während (Konjunktion) | conj | Llamó *mientras* cocinaba. | Er rief an, *während* ich kochte. |
+una vez | einmal | phrase | He estado allí *una vez*. | Ich war *einmal* dort. | dos veces = zweimal
+la fecha | das Datum | n | ¿Qué *fecha* es hoy? | Welches *Datum* ist heute? |
+el siglo | das Jahrhundert | n | La iglesia es del *siglo* XII. | Die Kirche stammt aus dem 12. *Jahrhundert*. |
+el momento | der Moment | n | Un *momento*, por favor. | Einen *Moment*, bitte. |
+el futuro | die Zukunft | n | ¿Qué planes tienes para el *futuro*? | Was hast du für *Zukunfts*pläne? |
+el pasado | die Vergangenheit | n | No pienses tanto en el *pasado*. | Denk nicht so viel an die *Vergangenheit*. |
+alguien | jemand | pron | *Alguien* llama a la puerta. | *Jemand* klopft an die Tür. |
+nadie | niemand | pron | *Nadie* contestó. | *Niemand* hat geantwortet. |
+alguno | irgendein(e); einige | adj | ¿Tienes *alguna* pregunta? | Hast du *irgendeine* Frage? | vor mask. Nomen: algún
+ninguno | kein(e) | adj | No tengo *ninguna* idea. | Ich habe *keine* Ahnung. | vor mask. Nomen: ningún
+cada | jede(r, s) | det | Voy al gimnasio *cada* semana. | Ich gehe *jede* Woche ins Fitnessstudio. | unveränderlich
+ambos | beide | adj | *Ambos* hermanos son médicos. | *Beide* Brüder sind Ärzte. |
+bastante | ziemlich; genug | adv | La película fue *bastante* buena. | Der Film war *ziemlich* gut. |
+demasiado | zu (viel) | adv | Este café está *demasiado* caliente. | Dieser Kaffee ist *zu* heiß. |
+menos | weniger | adv | Quiero gastar *menos* dinero. | Ich will *weniger* Geld ausgeben. |
+casi | fast | adv | *Casi* lo olvido. | Ich hätte es *fast* vergessen. |
+solo | nur; allein | adv | *Solo* cuesta cinco euros. | Es kostet *nur* fünf Euro. | früher: sólo
+incluso | sogar | adv | *Incluso* a mi padre le gustó. | *Sogar* meinem Vater hat es gefallen. |
+juntos | zusammen | adj | Trabajamos *juntos*. | Wir arbeiten *zusammen*. |
+quizás | vielleicht | adv | *Quizás* podemos vernos mañana. | *Vielleicht* können wir uns morgen sehen. | auch: quizá, a lo mejor
+de verdad | wirklich | phrase | ¿*De verdad*? No lo sabía. | *Wirklich*? Das wusste ich nicht. |
+encima de | auf, über | prep | Las llaves están *encima de* la mesa. | Die Schlüssel liegen *auf* dem Tisch. |
+delante de | vor (räumlich) | prep | Te espero *delante del* cine. | Ich warte *vor* dem Kino auf dich. |
+detrás de | hinter | prep | El jardín está *detrás de* la casa. | Der Garten liegt *hinter* dem Haus. |
+cerca de | in der Nähe von | prep | ¿Hay un banco *cerca de* aquí? | Gibt es hier *in der Nähe* eine Bank? |
+lejos de | weit weg von | prep | Vivo *lejos del* centro. | Ich wohne *weit weg vom* Zentrum. |
+enfrente de | gegenüber | prep | El banco está *enfrente de* la estación. | Die Bank ist *gegenüber* vom Bahnhof. |
+dentro | drinnen | adv | Vamos *dentro*, hace frío. | Lass uns *reingehen*, es ist kalt. |
+fuera | draußen | adv | Los niños juegan *fuera*. | Die Kinder spielen *draußen*. |
+hacia | in Richtung, auf … zu | prep | Caminó *hacia* mí. | Er ging *auf* mich *zu*. |
+contra | gegen | prep | Estoy *contra* esa idea. | Ich bin *gegen* diese Idee. |
+según | laut, gemäß | prep | *Según* el pronóstico, va a llover. | *Laut* Vorhersage wird es regnen. |
+aunque | obwohl | conj | *Aunque* llovía, salimos. | *Obwohl* es regnete, gingen wir raus. |
+como | wie; da | conj | *Como* no tenía dinero, me quedé en casa. | *Da* ich kein Geld hatte, blieb ich zu Hause. |
+cuando | wenn, als | conj | *Cuando* llegues, llámame. | *Wenn* du ankommst, ruf mich an. |
+sino | sondern | conj | No es rojo, *sino* naranja. | Es ist nicht rot, *sondern* orange. |
+que | dass; der/die/das | conj | Creo *que* tienes razón. | Ich glaube, *dass* du recht hast. |
+sin embargo | jedoch, trotzdem | adv | Es barato. *Sin embargo*, no es bueno. | Es ist billig. Es ist *jedoch* nicht gut. |
+además | außerdem | adv | *Además*, el hotel tiene piscina. | *Außerdem* hat das Hotel einen Pool. |
+por eso | deshalb | adv | Estaba cansado, *por eso* me fui. | Ich war müde, *deshalb* bin ich gegangen. |
+claro | klar; natürlich | adv | ¡*Claro* que sí! | *Natürlich*! |
+listo | fertig, bereit; klug | adj | ¿Estás *listo*? | Bist du *fertig*? | ser listo = klug sein
+importante | wichtig | adj | Es muy *importante*. | Das ist sehr *wichtig*. |
+interesante | interessant | adj | ¡Qué idea tan *interesante*! | Was für eine *interessante* Idee! |
+aburrido | langweilig; gelangweilt | adj | La clase fue *aburrida*. | Der Unterricht war *langweilig*. | estar aburrido = sich langweilen
+posible | möglich | adj | ¿Es *posible* pagar con tarjeta? | Ist es *möglich*, mit Karte zu zahlen? |
+verdadero | wahr, echt | adj | Es una historia *verdadera*. | Es ist eine *wahre* Geschichte. |
+libre | frei | adj | ¿Está *libre* este asiento? | Ist dieser Platz *frei*? | gratis = kostenlos
+lleno | voll | adj | El autobús iba *lleno*. | Der Bus war *voll*. |
+vacío | leer | adj | La nevera está *vacía*. | Der Kühlschrank ist *leer*. |
+limpio | sauber | adj | La cocina está *limpia*. | Die Küche ist *sauber*. |
+sucio | schmutzig | adj | Tus zapatos están *sucios*. | Deine Schuhe sind *schmutzig*. |
+pesado | schwer; lästig | adj | Esta maleta es muy *pesada*. | Dieser Koffer ist sehr *schwer*. |
+ligero | leicht | adj | La caja es bastante *ligera*. | Die Kiste ist ziemlich *leicht*. |
+oscuro | dunkel | adj | En invierno oscurece pronto; todo está *oscuro*. | Im Winter wird es früh dunkel; alles ist *dunkel*. |
+tranquilo | ruhig | adj | Es una calle *tranquila*. | Es ist eine *ruhige* Straße. |
+ruidoso | laut | adj | Los vecinos son muy *ruidosos*. | Die Nachbarn sind sehr *laut*. |
+alto | hoch; groß | adj | Las montañas son muy *altas*. | Die Berge sind sehr *hoch*. |
+bajo | niedrig; klein | adj | Los precios son *bajos* aquí. | Die Preise sind hier *niedrig*. |
+fuerte | stark | adj | Necesito un café *fuerte*. | Ich brauche einen *starken* Kaffee. |
+débil | schwach | adj | Me sentí *débil* después de la gripe. | Nach der Grippe fühlte ich mich *schwach*. |
+real | echt; königlich | adj | Es un diamante *real*. | Es ist ein *echter* Diamant. |
+especial | besonders | adj | Hoy es un día *especial*. | Heute ist ein *besonderer* Tag. |
+perfecto | perfekt | adj | El tiempo fue *perfecto*. | Das Wetter war *perfekt*. |
+maravilloso | wunderbar | adj | Pasamos unos días *maravillosos*. | Wir hatten *wunderbare* Tage. |
+horrible | schrecklich | adj | La comida estaba *horrible*. | Das Essen war *schrecklich*. |
+seguro | sicher | adj | ¿Estás *seguro*? | Bist du *sicher*? |
+peligroso | gefährlich | adj | Esta carretera es *peligrosa*. | Diese Straße ist *gefährlich*. |
+famoso | berühmt | adj | Es un cantante *famoso*. | Er ist ein *berühmter* Sänger. |
+útil | nützlich | adj | Esta aplicación es muy *útil*. | Diese App ist sehr *nützlich*. |
+raro | seltsam; selten | adj | Es *raro* que no conteste. | Es ist *seltsam*, dass er nicht antwortet. |
+normal | normal | adj | Es *normal* estar nervioso. | Es ist *normal*, nervös zu sein. |
+necesario | notwendig | adj | ¿Es *necesario* reservar? | Muss man *reservieren*? |
+llegar a ser | werden | v | Quiere *llegar a ser* médica. | Sie will Ärztin *werden*. | auch: hacerse, convertirse en
+traer | (mit)bringen | v | ¿Puedes *traer* pan? | Kannst du Brot *mitbringen*? | traigo; traje
+enviar | schicken | v | Te *envío* un correo. | Ich *schicke* dir eine E-Mail. | auch: mandar
+mostrar | zeigen | v | *Muéstrame* tus fotos. | *Zeig* mir deine Fotos. | auch: enseñar
+dejar | lassen; verlassen | v | *Déjame* ayudarte. | *Lass* mich dir helfen. | dejar de = aufhören mit
+cambiar | (ver)ändern; wechseln | v | Tienes que *cambiar* de tren en Córdoba. | Du musst in Córdoba *umsteigen*. |
+caer | fallen | v | ¡Cuidado, no te *caigas*! | Vorsicht, *fall* nicht hin! | caigo; caerse = hinfallen
+perder | verlieren; verpassen | v | *Perdí* mi cartera. | Ich habe meinen Geldbeutel *verloren*. | pierdo
+ganar | gewinnen; verdienen | v | ¿Quién *ganó* el partido? | Wer hat das Spiel *gewonnen*? |
+olvidar | vergessen | v | No *olvides* las llaves. | *Vergiss* die Schlüssel nicht. |
+recordar | sich erinnern | v | No *recuerdo* su nombre. | Ich *erinnere* mich nicht an seinen Namen. | recuerdo
+creer | glauben | v | No te *creo*. | Ich *glaube* dir nicht. |
+pensar | denken | v | ¿Qué *piensas*? | Was *denkst* du? | pienso
+sentir | fühlen; bedauern | v | Lo *siento* mucho. | Es *tut* mir sehr *leid*. | siento; sentirse = sich fühlen
+parecer | scheinen; aussehen wie | v | *Parece* simpática. | Sie *scheint* nett zu sein. | parecerse a = ähneln
+significar | bedeuten | v | ¿Qué *significa* esta palabra? | Was *bedeutet* dieses Wort? |
+decidir | entscheiden | v | *Decidimos* quedarnos en casa. | Wir haben *beschlossen*, zu Hause zu bleiben. |
+pasar | passieren; verbringen | v | ¿Qué *pasó*? | Was ist *passiert*? |
+explicar | erklären | v | ¿Me lo puedes *explicar*? | Kannst du mir das *erklären*? |
+repetir | wiederholen | v | ¿Puede *repetir*, por favor? | Können Sie das bitte *wiederholen*? | repito
+elegir | (aus)wählen | v | *Elige* un color. | *Wähle* eine Farbe. | elijo
+comprobar | überprüfen | v | *Comprueba* tus respuestas. | *Überprüfe* deine Antworten. |
+rellenar | ausfüllen | v | *Rellene* este formulario, por favor. | Bitte *füllen* Sie dieses Formular *aus*. |
+describir | beschreiben | v | ¿Puede *describir* al hombre? | Können Sie den Mann *beschreiben*? |

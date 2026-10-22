@@ -1,0 +1,196 @@
+# Spanisch – Essen & Trinken
+## A1
+la comida | das Essen; Mittagessen | n | La *comida* aquí es buenísima. | Das *Essen* hier ist super. |
+el agua | das Wasser | n | ¿Me das un vaso de *agua*? | Gibst du mir ein Glas *Wasser*? | feminin: el agua fría
+el café | der Kaffee | n | Tomo un *café* cada mañana. | Ich trinke jeden Morgen einen *Kaffee*. |
+el té | der Tee | n | ¿Quieres una taza de *té*? | Möchtest du eine Tasse *Tee*? |
+la leche | die Milch | n | Necesitamos *leche*. | Wir brauchen *Milch*. |
+el zumo | der Saft | n | Un *zumo* de naranja, por favor. | Einen Orangen*saft*, bitte. | Lateinamerika: el jugo
+la cerveza | das Bier | n | Dos *cervezas*, por favor. | Zwei *Bier*, bitte. |
+el vino | der Wein | n | ¿*Vino* tinto o blanco? | Rot- oder Weiß*wein*? |
+el pan | das Brot | n | He comprado *pan* fresco. | Ich habe frisches *Brot* gekauft. |
+la mantequilla | die Butter | n | Pásame la *mantequilla*. | Gib mir die *Butter*. |
+el queso | der Käse | n | Me encanta el *queso* manchego. | Ich liebe Manchego-*Käse*. |
+el huevo | das Ei | n | Desayuno dos *huevos*. | Ich frühstücke zwei *Eier*. |
+la carne | das Fleisch | n | No como *carne*. | Ich esse kein *Fleisch*. |
+el pollo | das Hähnchen | n | Hoy cenamos *pollo*. | Heute gibt es *Hähnchen* zum Abendessen. |
+el pescado | der Fisch (Speise) | n | ¿Te gusta el *pescado*? | Magst du *Fisch*? | lebender Fisch: el pez
+el arroz | der Reis | n | Cuece el *arroz* diez minutos. | Koch den *Reis* zehn Minuten. |
+la pasta | die Nudeln | n | A los niños les encanta la *pasta*. | Die Kinder lieben *Nudeln*. |
+la patata | die Kartoffel | n | Pela las *patatas*. | Schäl die *Kartoffeln*. | Lateinamerika: la papa
+la ensalada | der Salat (Gericht) | n | Tomaré una *ensalada* mixta. | Ich nehme einen gemischten *Salat*. |
+la sopa | die Suppe | n | La *sopa* está demasiado caliente. | Die *Suppe* ist zu heiß. |
+la fruta | das Obst | n | Come más *fruta*. | Iss mehr *Obst*. |
+la verdura | das Gemüse | n | ¡Cómete la *verdura*! | Iss dein *Gemüse*! |
+la manzana | der Apfel | n | Me como una *manzana* al día. | Ich esse jeden Tag einen *Apfel*. |
+el plátano | die Banane | n | Llevo un *plátano* al trabajo. | Ich nehme eine *Banane* mit zur Arbeit. |
+el tomate | die Tomate | n | Corta los *tomates* por la mitad. | Schneide die *Tomaten* in zwei Hälften. |
+la cebolla | die Zwiebel | n | Pica una *cebolla*. | Hack eine *Zwiebel*. |
+el azúcar | der Zucker | n | Sin *azúcar*, gracias. | Ohne *Zucker*, danke. |
+la sal | das Salz | n | Añade un poco de *sal*. | Gib etwas *Salz* dazu. |
+el pastel | der Kuchen | n | Hizo un *pastel* de chocolate. | Sie hat einen Schokoladen*kuchen* gebacken. | auch: la tarta
+el chocolate | die Schokolade | n | No puedo dejar de comer *chocolate*. | Ich kann nicht aufhören, *Schokolade* zu essen. |
+el helado | das Eis | n | Vamos a por un *helado*. | Lass uns ein *Eis* holen. |
+el bocadillo | das belegte Brötchen | n | Me comí un *bocadillo* de jamón. | Ich habe ein *Brötchen* mit Schinken gegessen. |
+el desayuno | das Frühstück | n | ¿Qué tomas de *desayuno*? | Was isst du zum *Frühstück*? |
+desayunar | frühstücken | v | *Desayunamos* a las siete. | Wir *frühstücken* um sieben. |
+el almuerzo | das Mittagessen | n | El *almuerzo* es a las dos. | Das *Mittagessen* ist um zwei. | Spanien oft: la comida
+la cena | das Abendessen | n | ¡La *cena* está lista! | Das *Abendessen* ist fertig! |
+cenar | zu Abend essen | v | ¿Dónde *cenamos* hoy? | Wo *essen* wir heute *zu Abend*? |
+el restaurante | das Restaurant | n | Reservamos mesa en un *restaurante* italiano. | Wir haben einen Tisch in einem italienischen *Restaurant* reserviert. |
+la carta | die Speisekarte; der Brief | n | ¿Nos trae la *carta*, por favor? | Bringen Sie uns bitte die *Speisekarte*? |
+la taza | die Tasse | n | Una *taza* de café, por favor. | Eine *Tasse* Kaffee, bitte. |
+el vaso | das Glas (Trinkglas) | n | He roto un *vaso*. | Ich habe ein *Glas* zerbrochen. | Material: el vidrio
+la botella | die Flasche | n | Una *botella* de agua, por favor. | Eine *Flasche* Wasser, bitte. |
+el plato | der Teller; das Gericht | n | Pon los *platos* en la mesa. | Stell die *Teller* auf den Tisch. |
+el hambre | der Hunger | n | Tengo mucha *hambre*. | Ich habe großen *Hunger*. | feminin: el hambre, mucha hambre
+la sed | der Durst | n | ¿Tienes *sed*? | Hast du *Durst*? |
+rico | lecker; reich | adj | ¡Esta sopa está muy *rica*! | Diese Suppe ist sehr *lecker*! | estar rico = lecker; ser rico = reich
+cocinar | kochen | v | Mi marido *cocina* todos los días. | Mein Mann *kocht* jeden Tag. |
+pedir | bestellen; bitten | v | ¿Ya han *pedido*? | Haben Sie schon *bestellt*? | pido
+## A2
+la merienda | der Nachmittagsimbiss | n | Los niños toman la *merienda* a las cinco. | Die Kinder essen um fünf ihre *Zwischenmahlzeit*. |
+la tapa | die Tapa (Häppchen) | n | Pedimos unas *tapas* para compartir. | Wir bestellen ein paar *Tapas* zum Teilen. |
+el postre | der Nachtisch | n | ¿Qué hay de *postre*? | Was gibt's zum *Nachtisch*? |
+el primer plato | die Vorspeise | n | De *primer plato* quiero sopa. | Als *Vorspeise* möchte ich Suppe. |
+el segundo plato | das Hauptgericht | n | De *segundo plato*, el pescado. | Als *Hauptgericht* den Fisch. |
+el menú del día | das Tagesmenü | n | El *menú del día* cuesta doce euros. | Das *Tagesmenü* kostet zwölf Euro. |
+la cuenta | die Rechnung | n | ¿Nos trae la *cuenta*, por favor? | Bringen Sie uns bitte die *Rechnung*? |
+la propina | das Trinkgeld | n | Dejamos un diez por ciento de *propina*. | Wir haben zehn Prozent *Trinkgeld* gegeben. |
+el camarero | der Kellner | n | El *camarero* trajo las bebidas. | Der *Kellner* brachte die Getränke. | Lateinamerika: el mesero
+el tenedor | die Gabel | n | ¿Me trae un *tenedor* limpio? | Bringen Sie mir eine saubere *Gabel*? |
+el cuchillo | das Messer | n | Este *cuchillo* no corta. | Dieses *Messer* schneidet nicht. |
+la cuchara | der Löffel | n | Necesito una *cuchara* para la sopa. | Ich brauche einen *Löffel* für die Suppe. |
+el cuenco | die Schüssel, Schale | n | Un *cuenco* de cereales, por favor. | Eine *Schüssel* Müsli, bitte. | auch: el bol
+la ternera | das Rindfleisch, Kalbfleisch | n | La *ternera* estaba muy tierna. | Das *Rindfleisch* war sehr zart. |
+el cerdo | das Schwein(efleisch) | n | No como *cerdo*. | Ich esse kein *Schweinefleisch*. |
+la salchicha | das Würstchen | n | Hicimos *salchichas* a la parrilla. | Wir haben *Würstchen* gegrillt. |
+el jamón | der Schinken | n | Un bocadillo de *jamón* serrano. | Ein Brötchen mit luftgetrocknetem *Schinken*. |
+los mariscos | die Meeresfrüchte | n | Soy alérgico al *marisco*. | Ich bin allergisch gegen *Meeresfrüchte*. |
+las judías | die Bohnen | n | Me gustan las *judías* verdes. | Ich mag grüne *Bohnen*. | Lateinamerika: los frijoles
+los guisantes | die Erbsen | n | Los *guisantes* congelados se cuecen rápido. | Tiefkühl*erbsen* sind schnell gekocht. |
+el pepino | die Gurke | n | Corta el *pepino* en rodajas. | Schneide die *Gurke* in Scheiben. |
+el pimiento | die Paprika | n | Un *pimiento* rojo y uno verde. | Eine rote und eine grüne *Paprika*. | Gewürz Pfeffer: la pimienta
+el ajo | der Knoblauch | n | Añade dos dientes de *ajo*. | Gib zwei Zehen *Knoblauch* dazu. |
+el champiñón | der Champignon | n | Una pizza con *champiñones*. | Eine Pizza mit *Champignons*. | allg. Pilz: la seta
+el limón | die Zitrone | n | Té con *limón*, por favor. | Tee mit *Zitrone*, bitte. |
+la naranja | die Orange | n | He exprimido unas *naranjas*. | Ich habe ein paar *Orangen* ausgepresst. |
+la pera | die Birne | n | Esta *pera* está muy dulce. | Diese *Birne* ist sehr süß. |
+las uvas | die Weintrauben | n | Compramos un racimo de *uvas*. | Wir haben eine Traube *Weintrauben* gekauft. | Silvester: zwölf Trauben
+la fresa | die Erdbeere | n | Ahora es temporada de *fresas*. | Jetzt ist *Erdbeer*saison. |
+la harina | das Mehl | n | Necesitas 200 gramos de *harina*. | Du brauchst 200 Gramm *Mehl*. |
+el aceite | das Öl | n | Calienta el *aceite* en una sartén. | Erhitze das *Öl* in einer Pfanne. | aceite de oliva
+la miel | der Honig | n | Le pongo *miel* al té. | Ich tue *Honig* in den Tee. |
+la mermelada | die Marmelade | n | Tostadas con mantequilla y *mermelada*. | Toast mit Butter und *Marmelade*. |
+el yogur | der Joghurt | n | Tomo *yogur* con fruta. | Ich esse *Joghurt* mit Obst. |
+la galleta | der Keks | n | ¿Quieres una *galleta*? | Möchtest du einen *Keks*? |
+los dulces | die Süßigkeiten | n | Demasiados *dulces* son malos para los dientes. | Zu viele *Süßigkeiten* sind schlecht für die Zähne. |
+el refresco | das Erfrischungsgetränk | n | Solo tenemos *refrescos*. | Wir haben nur *Softdrinks*. |
+saber | schmecken | v | Esto *sabe* muy bien. | Das *schmeckt* sehr gut. | saber a = schmecken nach
+oler | riechen | v | Algo *huele* bien. | Etwas *riecht* gut. | huelo, hueles …
+dulce | süß | adj | Este pastel es demasiado *dulce*. | Dieser Kuchen ist zu *süß*. |
+salado | salzig | adj | La sopa está un poco *salada*. | Die Suppe ist etwas *salzig*. |
+picante | scharf | adj | Me encanta la comida *picante*. | Ich liebe *scharfes* Essen. |
+fresco | frisch | adj | El pescado está muy *fresco*. | Der Fisch ist sehr *frisch*. |
+crudo | roh | adj | No comas pollo *crudo*. | Iss kein *rohes* Hähnchen. |
+frito | frittiert, gebraten | adj | Quiero dos huevos *fritos*. | Ich möchte zwei *Spiegel*eier. |
+hervir | kochen (in Wasser) | v | *Hierve* la pasta ocho minutos. | *Koch* die Nudeln acht Minuten. | hiervo
+hornear | backen | v | Hoy he *horneado* pan. | Heute habe ich Brot *gebacken*. |
+freír | braten, frittieren | v | *Fríe* la cebolla en un poco de aceite. | *Brate* die Zwiebel in etwas Öl an. | frío, fríes …
+cortar | schneiden | v | *Corta* el pan, por favor. | *Schneid* bitte das Brot. |
+mezclar | mischen | v | *Mezcla* los huevos con el azúcar. | *Verrühre* die Eier mit dem Zucker. |
+la receta | das Rezept | n | ¿Me pasas la *receta*? | Schickst du mir das *Rezept*? | auch: ärztliches Rezept
+la sartén | die Pfanne | n | Calienta primero la *sartén*. | Erhitze zuerst die *Pfanne*. |
+la olla | der Topf | n | Pon las patatas en una *olla* grande. | Gib die Kartoffeln in einen großen *Topf*. |
+vegetariano | vegetarisch | adj | ¿Tienen platos *vegetarianos*? | Haben Sie *vegetarische* Gerichte? |
+la dieta | die Ernährung; Diät | n | Una *dieta* sana es importante. | Eine gesunde *Ernährung* ist wichtig. |
+la rebanada | die Scheibe (Brot) | n | Una *rebanada* de pan, por favor. | Eine *Scheibe* Brot, bitte. |
+el trozo | das Stück | n | ¿Me das un *trozo* de pastel? | Gibst du mir ein *Stück* Kuchen? |
+el paquete | die Packung | n | Compra un *paquete* de arroz. | Kauf eine *Packung* Reis. |
+la lata | die Dose | n | Abre una *lata* de tomate. | Mach eine *Dose* Tomaten auf. | ¡Qué lata! = Wie lästig!
+el pícnic | das Picknick | n | Hagamos un *pícnic* en el parque. | Lass uns im Park *picknicken*. |
+## B1
+el ingrediente | die Zutat | n | ¿Qué *ingredientes* necesito? | Welche *Zutaten* brauche ich? |
+la cucharada | der Esslöffel (Menge) | n | Añade una *cucharada* de aceite. | Gib einen *Esslöffel* Öl dazu. | cucharadita = Teelöffel
+pelar | schälen | v | *Pela* las zanahorias. | *Schäl* die Karotten. |
+picar | hacken; stechen | v | *Pica* el perejil muy fino. | *Hack* die Petersilie sehr fein. |
+rallar | reiben | v | *Ralla* un poco de queso. | *Reib* etwas Käse. |
+asar | braten (Ofen), grillen | v | Vamos a *asar* un pollo. | Wir *braten* ein Hähnchen im Ofen. |
+a la plancha | gegrillt (auf der Platte) | phrase | Quiero el pescado *a la plancha*. | Ich möchte den Fisch *gegrillt*. |
+el horno | der Ofen | n | Mete el pastel en el *horno*. | Schieb den Kuchen in den *Ofen*. |
+el microondas | die Mikrowelle | n | Calienta la leche en el *microondas*. | Wärm die Milch in der *Mikrowelle*. |
+la nevera | der Kühlschrank | n | Pon la leche en la *nevera*. | Stell die Milch in den *Kühlschrank*. | auch: el frigorífico
+congelado | tiefgekühlt | adj | Compro verdura *congelada*. | Ich kaufe *Tiefkühl*gemüse. |
+caducar | ablaufen (Haltbarkeit) | v | El yogur *caduca* mañana. | Der Joghurt *läuft* morgen *ab*. |
+la ración | die Portion | n | Una *ración* de calamares, por favor. | Eine *Portion* Tintenfisch, bitte. |
+el aperitivo | der Aperitif; Snack vorm Essen | n | Tomamos un *aperitivo* antes de comer. | Wir trinken vor dem Essen einen *Aperitif*. |
+la bebida | das Getränk | n | ¿Qué *bebidas* tienen? | Welche *Getränke* haben Sie? |
+el sabor | der Geschmack | n | ¿De qué *sabor* quieres el helado? | Welche *Sorte* Eis möchtest du? |
+soso | fad, ungewürzt | adj | La sopa está un poco *sosa*. | Die Suppe ist etwas *fad*. |
+amargo | bitter | adj | El café está muy *amargo*. | Der Kaffee ist sehr *bitter*. |
+ácido | sauer | adj | Este limón es muy *ácido*. | Diese Zitrone ist sehr *sauer*. |
+maduro | reif | adj | Los plátanos todavía no están *maduros*. | Die Bananen sind noch nicht *reif*. |
+casero | hausgemacht | adj | La tarta es *casera*. | Der Kuchen ist *hausgemacht*. |
+integral | Vollkorn- | adj | Prefiero el pan *integral*. | Ich mag lieber *Vollkorn*brot. |
+la especia | das Gewürz | n | Esta comida lleva muchas *especias*. | In diesem Gericht sind viele *Gewürze*. |
+la salsa | die Soße | n | Pasta con *salsa* de tomate. | Nudeln mit Tomaten*soße*. |
+la zanahoria | die Karotte | n | A los conejos les gustan las *zanahorias*. | Kaninchen mögen *Karotten*. |
+la lechuga | der Kopfsalat | n | Lava bien la *lechuga*. | Wasch den *Salat* gut. |
+el atún | der Thunfisch | n | Una ensalada con *atún*. | Ein Salat mit *Thunfisch*. |
+el marisco | die Meeresfrüchte | n | En la costa se come mucho *marisco*. | An der Küste isst man viele *Meeresfrüchte*. |
+el calamar | der Tintenfisch | n | Pedimos *calamares* fritos. | Wir bestellen frittierte *Tintenfischringe*. |
+la gamba | die Garnele | n | Las *gambas* al ajillo están riquísimas. | Die *Garnelen* in Knoblauch sind köstlich. |
+el embutido | die Wurstwaren | n | España tiene muchos *embutidos*. | Spanien hat viele *Wurst*sorten. |
+la tortilla | das Omelett (span. Kartoffeltortilla) | n | Hice una *tortilla* de patatas. | Ich habe eine Kartoffel-*Tortilla* gemacht. | Mexiko: Maisfladen
+el pan tostado | der Toast | n | Desayuno *pan tostado* con tomate. | Ich frühstücke *Toast* mit Tomate. |
+el cereal | das Getreide; Müsli | n | Los niños desayunan *cereales*. | Die Kinder frühstücken *Müsli*. |
+la bodega | der Weinkeller; das Weingut | n | Visitamos una *bodega* en La Rioja. | Wir besichtigten ein *Weingut* in La Rioja. |
+la reserva | die Reservierung | n | Tengo una *reserva* para dos. | Ich habe eine *Reservierung* für zwei. |
+para llevar | zum Mitnehmen | phrase | Dos cafés *para llevar*. | Zwei Kaffee *zum Mitnehmen*. |
+alimentarse | sich ernähren | v | Hay que *alimentarse* bien. | Man muss sich gut *ernähren*. |
+la alergia | die Allergie | n | Tengo *alergia* a los frutos secos. | Ich habe eine *Allergie* gegen Nüsse. |
+los frutos secos | die Nüsse, Trockenfrüchte | n | Llevo *frutos secos* para el camino. | Ich nehme *Nüsse* für unterwegs mit. |
+## B2
+la gastronomía | die Gastronomie, Küche | n | La *gastronomía* vasca es famosa. | Die baskische *Küche* ist berühmt. |
+el paladar | der Gaumen | n | Tiene un *paladar* muy fino. | Er hat einen sehr feinen *Gaumen*. |
+saborear | genießen, auskosten | v | *Saborea* cada bocado. | *Genieße* jeden Bissen. |
+el bocado | der Bissen | n | No ha probado *bocado* en todo el día. | Er hat den ganzen Tag keinen *Bissen* gegessen. |
+apetecer | Lust haben auf | v | ¿Te *apetece* un café? | Hast du *Lust* auf einen Kaffee? |
+apetitoso | appetitlich | adj | El plato tiene un aspecto muy *apetitoso*. | Das Gericht sieht sehr *appetitlich* aus. |
+empalagoso | übermäßig süß | adj | El postre era demasiado *empalagoso*. | Der Nachtisch war viel zu *süß*. |
+indigesto | schwer verdaulich | adj | La fritura me resulta *indigesta*. | Frittiertes ist für mich *schwer verdaulich*. |
+el guiso | der Eintopf | n | Mi abuela hace un *guiso* de lentejas buenísimo. | Meine Oma macht einen tollen Linsen*eintopf*. |
+las lentejas | die Linsen | n | Las *lentejas* tienen mucho hierro. | *Linsen* enthalten viel Eisen. |
+los garbanzos | die Kichererbsen | n | El cocido lleva *garbanzos*. | Der Eintopf enthält *Kichererbsen*. |
+cocer a fuego lento | köcheln lassen | phrase | Deja *cocer a fuego lento* veinte minutos. | Lass es zwanzig Minuten *köcheln*. |
+sofreír | anbraten, anschwitzen | v | *Sofríe* el ajo sin que se queme. | *Schwitze* den Knoblauch *an*, ohne dass er verbrennt. |
+escurrir | abtropfen lassen | v | *Escurre* bien la pasta. | Lass die Nudeln gut *abtropfen*. |
+aderezar | würzen, anmachen | v | *Adereza* la ensalada con aceite y vinagre. | *Mach* den Salat mit Öl und Essig *an*. |
+el vinagre | der Essig | n | Un chorrito de *vinagre*. | Ein Schuss *Essig*. |
+el chorro | der Schuss (Flüssigkeit) | n | Añade un *chorro* de vino blanco. | Gib einen *Schuss* Weißwein dazu. |
+la pizca | die Prise | n | Una *pizca* de sal. | Eine *Prise* Salz. |
+el envase | die Verpackung, der Behälter | n | Recicla los *envases* de plástico. | Recycle die Plastik*verpackungen*. |
+la fecha de caducidad | das Haltbarkeitsdatum | n | Mira la *fecha de caducidad*. | Schau auf das *Haltbarkeitsdatum*. |
+ecológico | Bio-, ökologisch | adj | Compramos verdura *ecológica*. | Wir kaufen *Bio*gemüse. |
+el comensal | der Tischgast | n | La mesa es para seis *comensales*. | Der Tisch ist für sechs *Gäste*. |
+el brindis | der Trinkspruch | n | Hagamos un *brindis* por los novios. | Lasst uns auf das Brautpaar *anstoßen*. |
+brindar | anstoßen | v | *Brindemos* por el nuevo año. | Lasst uns auf das neue Jahr *anstoßen*. |
+la sobremesa | das Beisammensitzen nach dem Essen | n | La *sobremesa* duró dos horas. | Das *Beisammensitzen nach dem Essen* dauerte zwei Stunden. | typisch spanisch
+el atracón | das Vollstopfen | n | Me di un *atracón* de dulces. | Ich habe mich mit Süßigkeiten *vollgestopft*. |
+## C1
+el maridaje | die Kombination (Wein & Speise) | n | El sumiller recomendó un buen *maridaje*. | Der Sommelier empfahl eine gute *Weinbegleitung*. |
+el sumiller | der Sommelier | n | El *sumiller* nos aconsejó un vino blanco. | Der *Sommelier* riet uns zu einem Weißwein. |
+el regusto | der Nachgeschmack | n | Deja un *regusto* amargo. | Es hinterlässt einen bitteren *Nachgeschmack*. |
+suculento | saftig, reichhaltig | adj | Nos sirvieron un asado *suculento*. | Man servierte uns einen *saftigen* Braten. |
+exquisito | köstlich, erlesen | adj | El vino era *exquisito*. | Der Wein war *köstlich*. |
+el manjar | die Delikatesse | n | Ese queso es un auténtico *manjar*. | Dieser Käse ist eine echte *Delikatesse*. |
+el comilón | der Vielfraß | n | Mi hijo es un *comilón*. | Mein Sohn ist ein *Vielfraß*. |
+frugal | genügsam, karg | adj | Hicimos una comida *frugal*. | Wir aßen eine *bescheidene* Mahlzeit. |
+el ayuno | das Fasten | n | Practica el *ayuno* intermitente. | Er macht Intervall*fasten*. |
+macerar | marinieren, ziehen lassen | v | Deja *macerar* la carne toda la noche. | Lass das Fleisch über Nacht *marinieren*. |
+rehogar | dünsten | v | *Rehoga* las verduras a fuego medio. | *Dünste* das Gemüse bei mittlerer Hitze. |
+emplatar | anrichten | v | El chef *emplató* con mucho cuidado. | Der Koch *richtete* sehr sorgfältig *an*. |
+la guarnición | die Beilage | n | El filete viene con *guarnición* de patatas. | Das Filet kommt mit einer Kartoffel*beilage*. |
+el tentempié | der kleine Imbiss | n | Tomé un *tentempié* a media mañana. | Ich aß am Vormittag einen kleinen *Snack*. |
+el avituallamiento | die Verpflegung | n | Hay *avituallamiento* en el kilómetro diez. | Bei Kilometer zehn gibt es *Verpflegung*. |
+la hostelería | das Gastgewerbe | n | Trabaja en la *hostelería* desde joven. | Er arbeitet seit seiner Jugend im *Gastgewerbe*. |

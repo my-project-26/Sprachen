@@ -1,0 +1,46 @@
+# Spanisch – Radfahren
+## A2
+montar en bici | Fahrrad fahren | phrase | Me encanta *montar en bici*. | Ich *fahre* sehr gern *Fahrrad*. |
+el casco | der Helm | n | Ponte siempre el *casco*. | Setz immer den *Helm* auf. |
+el carril bici | der Radweg | n | El *carril bici* va junto al río. | Der *Radweg* verläuft am Fluss entlang. |
+la cadena | die Kette | n | Se me salió la *cadena*. | Mir ist die *Kette* abgesprungen. |
+el freno | die Bremse | n | Los *frenos* no funcionan bien. | Die *Bremsen* funktionieren nicht gut. |
+el ciclista | der Radfahrer | n | Hay muchos *ciclistas* en la ciudad. | In der Stadt gibt es viele *Radfahrer*. |
+## B1
+la rueda pinchada | der platte Reifen | n | Volví a casa con la *rueda pinchada*. | Ich kam mit einem *Platten* nach Hause. |
+pinchar | einen Platten haben | v | *Pinché* en el camino de vuelta. | Auf dem Rückweg hatte ich einen *Platten*. |
+el sillín | der Sattel | n | Sube un poco el *sillín*. | Stell den *Sattel* etwas höher. |
+el manillar | der Lenker | n | Agarra bien el *manillar*. | Halt den *Lenker* gut fest. |
+el pedal | das Pedal | n | Se rompió un *pedal*. | Ein *Pedal* ist kaputt. |
+pedalear | in die Pedale treten | v | *Pedalea* más fuerte en la subida. | Tritt am Anstieg kräftiger in die *Pedale*. |
+el candado | das Fahrradschloss | n | Ata la bici con un buen *candado*. | Schließ das Rad mit einem guten *Schloss* ab. |
+la bomba | die Luftpumpe | n | ¿Tienes una *bomba* para inflar la rueda? | Hast du eine *Luftpumpe*? |
+inflar | aufpumpen | v | Tengo que *inflar* las ruedas. | Ich muss die Reifen *aufpumpen*. |
+la cuesta | der Anstieg, Hang | n | Esa *cuesta* es muy dura. | Dieser *Anstieg* ist sehr hart. |
+cuesta abajo | bergab | phrase | *Cuesta abajo* vamos muy rápido. | *Bergab* fahren wir sehr schnell. |
+cuesta arriba | bergauf | phrase | Me cuesta ir *cuesta arriba*. | *Bergauf* fällt es mir schwer. |
+la ruta | die Route, Tour | n | Hicimos una *ruta* de sesenta kilómetros. | Wir fuhren eine *Tour* von sechzig Kilometern. |
+el timbre | die Klingel | n | Toca el *timbre* antes de adelantar. | *Klingel* vor dem Überholen. |
+la luz | das Licht | n | Por la noche enciende la *luz*. | Mach nachts das *Licht* an. |
+la bici eléctrica | das E-Bike | n | Mi padre se compró una *bici eléctrica*. | Mein Vater hat sich ein *E-Bike* gekauft. |
+## B2
+la marcha | der Gang | n | Cambia de *marcha* antes de la subida. | Schalte vor dem Anstieg einen *Gang* zurück. |
+el cambio de marchas | die Gangschaltung | n | El *cambio de marchas* hace ruido. | Die *Gangschaltung* macht Geräusche. |
+el radio | die Speiche | n | Se ha roto un *radio*. | Eine *Speiche* ist gebrochen. |
+el neumático | der Reifen | n | Necesito *neumáticos* nuevos. | Ich brauche neue *Reifen*. |
+la cámara | der Schlauch (Reifen) | n | Cambié la *cámara* en cinco minutos. | Ich habe den *Schlauch* in fünf Minuten gewechselt. |
+el parche | der Flicken | n | Pon un *parche* en la cámara. | Kleb einen *Flicken* auf den Schlauch. |
+la bicicleta de montaña | das Mountainbike | n | Salimos con la *bicicleta de montaña*. | Wir fuhren mit dem *Mountainbike* los. |
+la bici de carretera | das Rennrad | n | Su *bici de carretera* pesa siete kilos. | Sein *Rennrad* wiegt sieben Kilo. |
+el portabicicletas | der Fahrradträger | n | Llevamos las bicis en el *portabicicletas*. | Wir transportierten die Räder auf dem *Fahrradträger*. |
+el chaleco reflectante | die Warnweste | n | Lleva un *chaleco reflectante* de noche. | Trag nachts eine *Warnweste*. |
+el desnivel | der Höhenunterschied | n | La etapa tiene 1.500 metros de *desnivel*. | Die Etappe hat 1.500 Höhenmeter. |
+la etapa | die Etappe | n | Hoy toca la *etapa* más larga. | Heute steht die längste *Etappe* an. |
+el pelotón | das Hauptfeld | n | Se escapó del *pelotón*. | Er setzte sich vom *Hauptfeld* ab. |
+## C1
+el puerto de montaña | der Gebirgspass | n | Subimos el *puerto de montaña* sin parar. | Wir fuhren den *Pass* ohne Pause hoch. |
+el repecho | der kurze steile Anstieg | n | Al final hay un *repecho* durísimo. | Am Ende gibt es einen sehr harten *Stich*. |
+la pájara | der Leistungseinbruch | n | Me dio una *pájara* en el kilómetro ochenta. | Bei Kilometer achtzig hatte ich einen *Hungerast*. |
+el rebufo | der Windschatten | n | Iba a *rebufo* de su compañero. | Er fuhr im *Windschatten* seines Kollegen. |
+el cicloturismo | der Radtourismus | n | El *cicloturismo* crece cada año. | Der *Radtourismus* wächst jedes Jahr. |
+la ciclovía | die Radtrasse | n | La nueva *ciclovía* une los dos pueblos. | Die neue *Radtrasse* verbindet die beiden Dörfer. |

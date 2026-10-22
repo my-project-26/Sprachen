@@ -1,0 +1,115 @@
+# Spanisch – Gesundheit
+## A1
+el médico | der Arzt | n | Tengo que ir al *médico*. | Ich muss zum *Arzt*. | la médica = Ärztin
+el hospital | das Krankenhaus | n | Está en el *hospital*. | Sie ist im *Krankenhaus*. |
+enfermo | krank | adj | Hoy me siento *enfermo*. | Heute fühle ich mich *krank*. |
+sano | gesund | adj | La fruta es *sana*. | Obst ist *gesund*. |
+doler | wehtun | v | Me *duele* la espalda. | Mir *tut* der Rücken *weh*. | me duele(n)
+cansado | müde | adj | Estoy muy *cansado*. | Ich bin sehr *müde*. |
+la medicina | die Medizin; das Medikament | n | Toma esta *medicina* dos veces al día. | Nimm dieses *Medikament* zweimal täglich. |
+el dolor de cabeza | die Kopfschmerzen | n | Tengo un *dolor de cabeza* terrible. | Ich habe schreckliche *Kopfschmerzen*. |
+el dentista | der Zahnarzt | n | Mañana voy al *dentista*. | Morgen gehe ich zum *Zahnarzt*. |
+el enfermero | der Krankenpfleger | n | La *enfermera* me tomó la tensión. | Die *Krankenschwester* hat meinen Blutdruck gemessen. |
+el problema | das Problem | n | ¿Cuál es el *problema*? | Was ist das *Problem*? | maskulin trotz -a
+mejor | besser | adj | Hoy me encuentro mucho *mejor*. | Heute geht es mir viel *besser*. |
+## A2
+el dolor | der Schmerz | n | Tengo *dolor* en el pecho. | Ich habe *Schmerzen* in der Brust. |
+la tos | der Husten | n | Tengo mucha *tos*. | Ich habe starken *Husten*. |
+la gripe | die Grippe | n | Media oficina tiene la *gripe*. | Das halbe Büro hat die *Grippe*. |
+la fiebre | das Fieber | n | El bebé tiene *fiebre*. | Das Baby hat *Fieber*. |
+el resfriado | die Erkältung | n | Tengo un *resfriado*. | Ich bin *erkältet*. | constipado = erkältet (False Friend!)
+el dolor de garganta | die Halsschmerzen | n | Tengo *dolor de garganta*. | Ich habe *Halsschmerzen*. |
+el dolor de estómago | die Bauchschmerzen | n | Comí demasiado y ahora tengo *dolor de estómago*. | Ich habe zu viel gegessen und jetzt *Bauchschmerzen*. |
+la herida | die Wunde | n | Es solo una *herida* pequeña. | Es ist nur eine kleine *Wunde*. |
+romperse | sich brechen | v | *Se rompió* la pierna esquiando. | Er hat sich beim Skifahren das Bein *gebrochen*. |
+la tirita | das Pflaster | n | ¿Tienes una *tirita*? | Hast du ein *Pflaster*? |
+la pastilla | die Tablette | n | Toma una *pastilla* después de comer. | Nimm nach dem Essen eine *Tablette*. |
+la cita | der Termin | n | Tengo *cita* con el médico a las diez. | Ich habe um zehn einen *Arzttermin*. |
+el paciente | der Patient | n | La doctora tiene muchos *pacientes*. | Die Ärztin hat viele *Patienten*. |
+la ambulancia | der Krankenwagen | n | ¡Llama a una *ambulancia*! | Ruf einen *Krankenwagen*! |
+la urgencia | der Notfall; die Notaufnahme | n | Fuimos a *urgencias*. | Wir sind in die *Notaufnahme* gefahren. |
+el accidente | der Unfall | n | Tuvo un *accidente* en el trabajo. | Er hatte einen *Unfall* bei der Arbeit. |
+encontrarse mal | sich schlecht fühlen | phrase | *Me encuentro mal*. | Ich *fühle mich schlecht*. |
+mejorarse | gesund werden | v | ¡Que te *mejores*! | Gute *Besserung*! |
+descansar | sich ausruhen | v | Necesitas *descansar*. | Du musst dich *ausruhen*. |
+tumbarse | sich hinlegen | v | Necesito *tumbarme* un rato. | Ich muss mich kurz *hinlegen*. |
+en forma | fit | phrase | Quiero ponerme *en forma*. | Ich will *fit* werden. |
+el ejercicio | die Bewegung; Übung | n | No hago suficiente *ejercicio*. | Ich bewege mich nicht genug. |
+el gimnasio | das Fitnessstudio | n | Voy al *gimnasio* después del trabajo. | Ich gehe nach der Arbeit ins *Fitnessstudio*. |
+adelgazar | abnehmen | v | Quiero *adelgazar* cinco kilos. | Ich will fünf Kilo *abnehmen*. |
+fumar | rauchen | v | Dejé de *fumar* el año pasado. | Ich habe letztes Jahr aufgehört zu *rauchen*. |
+vivo | lebendig | adj | ¿Está *vivo* el pez? | Lebt der Fisch noch? |
+muerto | tot | adj | Las plantas están *muertas*. | Die Pflanzen sind *eingegangen*. |
+morir | sterben | v | Su abuelo *murió* el año pasado. | Ihr Großvater ist letztes Jahr *gestorben*. | muero; murió
+respirar | atmen | v | *Respira* hondo. | *Atme* tief ein. |
+estornudar | niesen | v | No paro de *estornudar*. | Ich muss ständig *niesen*. |
+alérgico | allergisch | adj | Soy *alérgico* a los gatos. | Ich bin *allergisch* gegen Katzen. |
+## B1
+el síntoma | das Symptom | n | ¿Qué *síntomas* tiene? | Welche *Symptome* haben Sie? |
+el tratamiento | die Behandlung | n | El *tratamiento* funcionó bien. | Die *Behandlung* hat gut angeschlagen. |
+la receta | das Rezept (ärztlich) | n | Necesita una *receta* para este medicamento. | Für dieses Medikament brauchen Sie ein *Rezept*. |
+el medicamento | das Medikament | n | ¿Toma algún *medicamento*? | Nehmen Sie *Medikamente*? |
+recuperarse | sich erholen | v | Tardó semanas en *recuperarse* de la gripe. | Sie brauchte Wochen, um sich von der Grippe zu *erholen*. |
+prevenir | vorbeugen | v | El ejercicio *previene* el dolor de espalda. | Sport *beugt* Rückenschmerzen *vor*. |
+agotado | erschöpft | adj | Estaba *agotado* después del turno. | Nach der Schicht war ich *erschöpft*. |
+el mareo | der Schwindel; die Übelkeit | n | Tengo *mareos* por la mañana. | Morgens ist mir *schwindlig*. |
+mareado | schwindlig; seekrank | adj | Me siento *mareado*. | Mir ist *schwindlig*. |
+vomitar | sich übergeben | v | El niño ha *vomitado*. | Das Kind hat sich *übergeben*. |
+la diarrea | der Durchfall | n | Tiene *diarrea* desde ayer. | Er hat seit gestern *Durchfall*. |
+la infección | die Infektion | n | Tiene una *infección* de oído. | Er hat eine Ohren*entzündung*. |
+la inyección | die Spritze | n | La enfermera me puso una *inyección*. | Die Krankenschwester gab mir eine *Spritze*. |
+la vacuna | die Impfung | n | ¿Te has puesto la *vacuna*? | Hast du dich *impfen* lassen? |
+el análisis de sangre | die Blutuntersuchung | n | Mañana me hacen un *análisis de sangre*. | Morgen wird mir *Blut abgenommen*. |
+la tensión | der Blutdruck; die Spannung | n | Tiene la *tensión* alta. | Er hat hohen *Blutdruck*. |
+el seguro médico | die Krankenversicherung | n | ¿Tiene *seguro médico*? | Haben Sie eine *Krankenversicherung*? |
+el centro de salud | das Gesundheitszentrum, die Arztpraxis | n | Pide cita en el *centro de salud*. | Mach einen Termin in der *Praxis*. |
+la baja | die Krankschreibung | n | Estoy de *baja* esta semana. | Ich bin diese Woche *krankgeschrieben*. |
+hinchado | geschwollen | adj | Tengo el tobillo *hinchado*. | Mein Knöchel ist *geschwollen*. |
+el estrés | der Stress | n | El *estrés* me quita el sueño. | Der *Stress* raubt mir den Schlaf. |
+la salud mental | die psychische Gesundheit | n | La *salud mental* es tan importante como la física. | Die *psychische Gesundheit* ist so wichtig wie die körperliche. |
+dormirse | einschlafen | v | No consigo *dormirme*. | Ich kann nicht *einschlafen*. |
+el insomnio | die Schlaflosigkeit | n | Sufre de *insomnio*. | Er leidet an *Schlaflosigkeit*. |
+la operación | die Operation | n | La *operación* salió bien. | Die *Operation* ist gut verlaufen. |
+operar | operieren | v | Le *operaron* de la rodilla. | Er wurde am Knie *operiert*. |
+la quemadura | die Verbrennung | n | Ponte crema en la *quemadura*. | Creme die *Verbrennung* ein. |
+sangrar | bluten | v | Le *sangra* la nariz. | Seine Nase *blutet*. |
+el embarazo | die Schwangerschaft | n | Durante el *embarazo* no bebió alcohol. | In der *Schwangerschaft* trank sie keinen Alkohol. |
+la discapacidad | die Behinderung | n | Es una persona con *discapacidad*. | Er ist ein Mensch mit *Behinderung*. |
+## B2
+el diagnóstico | die Diagnose | n | El *diagnóstico* fue claro. | Die *Diagnose* war eindeutig. |
+el especialista | der Facharzt | n | Me derivaron a un *especialista*. | Ich wurde an einen *Facharzt* überwiesen. |
+la consulta | die Sprechstunde; Praxis | n | La *consulta* está en la segunda planta. | Die *Praxis* ist im zweiten Stock. |
+los efectos secundarios | die Nebenwirkungen | n | El medicamento tiene pocos *efectos secundarios*. | Das Medikament hat wenige *Nebenwirkungen*. |
+la dosis | die Dosis | n | No superes la *dosis* recomendada. | Überschreite die empfohlene *Dosis* nicht. |
+crónico | chronisch | adj | Padece una enfermedad *crónica*. | Er leidet an einer *chronischen* Krankheit. |
+contagioso | ansteckend | adj | ¿Es *contagioso*? | Ist das *ansteckend*? |
+contagiar | anstecken | v | Me has *contagiado* el resfriado. | Du hast mich mit der Erkältung *angesteckt*. |
+la recaída | der Rückfall | n | Sufrió una *recaída*. | Er erlitt einen *Rückfall*. |
+la rehabilitación | die Reha | n | Después de la operación hizo *rehabilitación*. | Nach der Operation machte er *Reha*. |
+el fisioterapeuta | der Physiotherapeut | n | El *fisioterapeuta* me dio ejercicios. | Der *Physiotherapeut* gab mir Übungen. |
+la lesión | die Verletzung | n | Tiene una *lesión* de rodilla. | Er hat eine Knie*verletzung*. |
+la escayola | der Gips | n | Llevó *escayola* seis semanas. | Er trug sechs Wochen einen *Gips*. |
+la cirugía | die Chirurgie | n | Necesita *cirugía*. | Er muss *operiert* werden. |
+la anestesia | die Narkose | n | Le pusieron *anestesia* general. | Er bekam eine Voll*narkose*. |
+la ansiedad | die Angst(störung) | n | Sufre *ansiedad* desde hace años. | Er leidet seit Jahren an *Angstzuständen*. |
+la depresión | die Depression | n | La *depresión* es una enfermedad seria. | *Depression* ist eine ernste Krankheit. |
+la adicción | die Sucht | n | Superó su *adicción* al tabaco. | Er hat seine Nikotin*sucht* überwunden. |
+el sistema inmunitario | das Immunsystem | n | El sueño fortalece el *sistema inmunitario*. | Schlaf stärkt das *Immunsystem*. |
+la alimentación | die Ernährung | n | Una buena *alimentación* es clave. | Eine gute *Ernährung* ist entscheidend. |
+sedentario | bewegungsarm | adj | Lleva una vida muy *sedentaria*. | Er führt ein sehr *bewegungsarmes* Leben. |
+el reconocimiento médico | die ärztliche Untersuchung | n | La empresa exige un *reconocimiento médico*. | Die Firma verlangt eine *ärztliche Untersuchung*. |
+## C1
+la dolencia | das Leiden | n | Padece una *dolencia* cardíaca. | Er hat ein Herz*leiden*. |
+la secuela | die Folgeerscheinung | n | El accidente le dejó *secuelas*. | Der Unfall hinterließ *Folgeschäden*. |
+el pronóstico | die Prognose | n | El *pronóstico* es favorable. | Die *Prognose* ist günstig. |
+paliativo | palliativ, lindernd | adj | Recibe cuidados *paliativos*. | Er erhält *Palliativ*pflege. |
+la convalecencia | die Genesungszeit | n | Pasó la *convalecencia* en casa de sus padres. | Er verbrachte die *Genesungszeit* bei seinen Eltern. |
+el agotamiento | die Erschöpfung | n | Sufre de *agotamiento* laboral. | Er leidet an beruflicher *Erschöpfung*. |
+el desgaste | der Verschleiß | n | Tiene *desgaste* en la cadera. | Er hat *Verschleiß* in der Hüfte. |
+asintomático | symptomfrei | adj | Muchos pacientes son *asintomáticos*. | Viele Patienten sind *symptomfrei*. |
+la propagación | die Ausbreitung | n | Hay que frenar la *propagación* del virus. | Man muss die *Ausbreitung* des Virus bremsen. |
+la cuarentena | die Quarantäne | n | Estuvo en *cuarentena* diez días. | Er war zehn Tage in *Quarantäne*. |
+el historial médico | die Krankengeschichte | n | El médico revisó su *historial médico*. | Der Arzt prüfte seine *Krankenakte*. |
+el triaje | die Ersteinschätzung (Notaufnahme) | n | En urgencias pasas primero por el *triaje*. | In der Notaufnahme kommt man zuerst zur *Ersteinschätzung*. |
+la sanidad | das Gesundheitswesen | n | La *sanidad* pública es gratuita. | Das öffentliche *Gesundheitswesen* ist kostenlos. |
+el trastorno | die Störung | n | Padece un *trastorno* del sueño. | Er hat eine Schlaf*störung*. |

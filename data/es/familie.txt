@@ -1,0 +1,190 @@
+# Spanisch – Familie & Freunde, Körper, Aussehen
+## A1
+la familia | die Familie | n | Tengo una *familia* grande. | Ich habe eine große *Familie*. |
+la madre | die Mutter | n | Mi *madre* es enfermera. | Meine *Mutter* ist Krankenschwester. |
+el padre | der Vater | n | Mi *padre* cocina muy bien. | Mein *Vater* kocht sehr gut. |
+los padres | die Eltern | n | Mis *padres* viven en Múnich. | Meine *Eltern* wohnen in München. | False Friend: ≠ Väter allein
+mamá | Mama | n | *Mamá*, ¿dónde están mis calcetines? | *Mama*, wo sind meine Socken? |
+papá | Papa | n | Mi *papá* es taxista. | Mein *Papa* ist Taxifahrer. | Achtung: la papa = Kartoffel (Lateinamerika)
+el hermano | der Bruder | n | Mi *hermano* es mayor que yo. | Mein *Bruder* ist älter als ich. | hermanos = Geschwister
+la hermana | die Schwester | n | Su *hermana* vive en Valencia. | Ihre *Schwester* wohnt in Valencia. |
+el hijo | der Sohn | n | Su *hijo* es estudiante. | Ihr *Sohn* ist Student. | hijos = Kinder (eigene)
+la hija | die Tochter | n | Nuestra *hija* tiene cinco años. | Unsere *Tochter* ist fünf. |
+el niño | das Kind, der Junge | n | Los *niños* están en el colegio. | Die *Kinder* sind in der Schule. | la niña = Mädchen
+el bebé | das Baby | n | El *bebé* está durmiendo. | Das *Baby* schläft. |
+el marido | der Ehemann | n | Su *marido* es irlandés. | Ihr *Mann* ist Ire. | auch: el esposo
+la mujer | die Frau; Ehefrau | n | Esta es mi *mujer*, Ana. | Das ist meine *Frau*, Ana. |
+el abuelo | der Großvater | n | Mi *abuelo* era agricultor. | Mein *Großvater* war Landwirt. | abuelos = Großeltern
+la abuela | die Großmutter | n | Mi *abuela* tiene noventa años. | Meine *Großmutter* ist neunzig. |
+el tío | der Onkel; Typ (ugs.) | n | Mi *tío* vive en México. | Mein *Onkel* lebt in Mexiko. |
+la tía | die Tante | n | Mi *tía* tiene tres gatos. | Meine *Tante* hat drei Katzen. |
+el primo | der Cousin | n | Mi *primo* se casa en junio. | Mein *Cousin* heiratet im Juni. | la prima = Cousine
+el amigo | der Freund | n | Es mi mejor *amigo*. | Er ist mein bester *Freund*. | la amiga = Freundin
+el novio | der (feste) Freund; Bräutigam | n | Su *novio* es muy simpático. | Ihr *Freund* ist sehr nett. | la novia = Freundin; Braut
+el hombre | der Mann, Mensch | n | ¿Quién es ese *hombre*? | Wer ist dieser *Mann*? |
+el chico | der Junge, junge Mann | n | El *chico* juega al fútbol. | Der *Junge* spielt Fußball. | la chica = Mädchen
+la gente | die Leute | n | Hay mucha *gente* en la calle. | Auf der Straße sind viele *Leute*. | Singular! la gente es …
+la persona | die Person, der Mensch | n | Es una *persona* muy amable. | Sie ist ein sehr freundlicher *Mensch*. |
+el nombre | der Name, Vorname | n | ¿Cuál es tu *nombre*? | Wie ist dein *Name*? |
+el apellido | der Nachname | n | ¿Me deletrea su *apellido*? | Können Sie mir Ihren *Nachnamen* buchstabieren? | Spanier haben meist zwei
+llamarse | heißen | v | ¿Cómo *te llamas*? | Wie *heißt* du? | me llamo …
+la edad | das Alter | n | ¿Qué *edad* tiene tu hijo? | Wie *alt* ist dein Sohn? |
+el cumpleaños | der Geburtstag | n | ¡Feliz *cumpleaños*! | Alles Gute zum *Geburtstag*! |
+la fiesta | die Party, das Fest | n | ¿Vienes a mi *fiesta*? | Kommst du zu meiner *Party*? |
+casado | verheiratet | adj | ¿Estás *casado*? | Bist du *verheiratet*? | casarse = heiraten
+soltero | ledig | adj | Mi hermano sigue *soltero*. | Mein Bruder ist noch *ledig*. |
+el cuerpo | der Körper | n | El deporte es bueno para el *cuerpo*. | Sport ist gut für den *Körper*. |
+la cabeza | der Kopf | n | Me duele la *cabeza*. | Mir tut der *Kopf* weh. |
+la cara | das Gesicht | n | Lávate la *cara*. | Wasch dir das *Gesicht*. | caro = teuer!
+el ojo | das Auge | n | Tiene los *ojos* azules. | Sie hat blaue *Augen*. | ¡Ojo! = Achtung!
+la oreja | das Ohr | n | Tengo las *orejas* frías. | Meine *Ohren* sind kalt. | Gehör: el oído
+la nariz | die Nase | n | Se rompió la *nariz*. | Er hat sich die *Nase* gebrochen. |
+la boca | der Mund | n | Abra la *boca*, por favor. | Öffnen Sie bitte den *Mund*. |
+el pelo | die Haare | n | Tiene el *pelo* largo. | Sie hat lange *Haare*. | Singular!
+la mano | die Hand | n | Levanta la *mano*. | Heb die *Hand*. | feminin trotz -o
+el brazo | der Arm | n | Me hice daño en el *brazo*. | Ich habe mir den *Arm* verletzt. |
+la pierna | das Bein | n | Me duelen las *piernas*. | Mir tun die *Beine* weh. |
+el pie | der Fuß | n | Me duele el *pie* izquierdo. | Mein linker *Fuß* tut weh. | a pie = zu Fuß
+alto | groß (Person) | adj | Es muy *alto*. | Er ist sehr *groß*. |
+simpático | nett, sympathisch | adj | La gente aquí es muy *simpática*. | Die Leute hier sind sehr *nett*. |
+divertido | lustig, unterhaltsam | adj | Mi padre es muy *divertido*. | Mein Vater ist sehr *lustig*. |
+guapo | hübsch, gut aussehend | adj | Es muy *guapa*. | Sie ist sehr *hübsch*. |
+gordo | dick | adj | Nuestro gato está *gordo*. | Unsere Katze ist *dick*. | bei Menschen unhöflich
+delgado | dünn, schlank | adj | Es alto y *delgado*. | Er ist groß und *schlank*. |
+el perro | der Hund | n | Nuestro *perro* adora el parque. | Unser *Hund* liebt den Park. |
+el gato | die Katze | n | El *gato* duerme en el sofá. | Die *Katze* schläft auf dem Sofa. |
+el beso | der Kuss | n | Le dio un *beso*. | Er gab ihr einen *Kuss*. | Grußküsschen: dos besos
+el abrazo | die Umarmung | n | Un *abrazo* fuerte. | Eine feste *Umarmung*. | Briefschluss: Un abrazo
+visitar | besuchen | v | *Visitamos* a mis padres cada mes. | Wir *besuchen* jeden Monat meine Eltern. | Person: visitar a alguien
+## A2
+el pariente | der/die Verwandte | n | Vinieron todos los *parientes*. | Alle *Verwandten* kamen. | False Friend: ≠ Eltern
+el nieto | der Enkel | n | Su *nieto* aprende a andar. | Ihr *Enkel* lernt laufen. | la nieta = Enkelin
+el sobrino | der Neffe | n | Mi *sobrino* tiene doce años. | Mein *Neffe* ist zwölf. | la sobrina = Nichte
+el gemelo | der Zwilling | n | Mis hermanas son *gemelas*. | Meine Schwestern sind *Zwillinge*. |
+la pareja | das Paar; Partner(in) | n | Son una *pareja* encantadora. | Sie sind ein reizendes *Paar*. |
+el vecino | der Nachbar | n | Nuestros *vecinos* son muy tranquilos. | Unsere *Nachbarn* sind sehr ruhig. |
+el invitado | der Gast | n | Este fin de semana tenemos *invitados*. | Dieses Wochenende haben wir *Gäste*. |
+el adolescente | der/die Jugendliche | n | Su hijo ya es *adolescente*. | Ihr Sohn ist schon ein *Teenager*. |
+el adulto | der Erwachsene | n | La entrada cuesta diez euros para *adultos*. | Der Eintritt kostet zehn Euro für *Erwachsene*. |
+la infancia | die Kindheit | n | Tuve una *infancia* feliz. | Ich hatte eine glückliche *Kindheit*. |
+la boda | die Hochzeit | n | La *boda* es en junio. | Die *Hochzeit* ist im Juni. |
+casarse | heiraten | v | Se *casaron* el año pasado. | Sie haben letztes Jahr *geheiratet*. | casarse con alguien
+nacer | geboren werden | v | *Nací* en 1985. | Ich bin 1985 *geboren*. | nazco
+crecer | aufwachsen; wachsen | v | *Crecí* en un pueblo pequeño. | Ich bin in einem kleinen Dorf *aufgewachsen*. |
+parecerse a | ähnlich sehen | v | *Te pareces a* tu madre. | Du *siehst* deiner Mutter *ähnlich*. |
+cuidar | sich kümmern um | v | ¿Puedes *cuidar* a los niños esta noche? | Kannst du dich heute Abend um die Kinder *kümmern*? |
+llevarse bien | sich gut verstehen | v | *Me llevo bien* con mi hermana. | Ich *verstehe mich gut* mit meiner Schwester. |
+invitar | einladen | v | *Invitamos* a todos nuestros amigos. | Wir haben alle unsere Freunde *eingeladen*. |
+la invitación | die Einladung | n | ¡Gracias por la *invitación*! | Danke für die *Einladung*! |
+celebrar | feiern | v | ¿Cómo *celebráis* la Navidad? | Wie *feiert* ihr Weihnachten? |
+el regalo | das Geschenk | n | Necesito un *regalo* para mi madre. | Ich brauche ein *Geschenk* für meine Mutter. |
+felicidades | herzlichen Glückwunsch | phrase | ¡*Felicidades* por tu nuevo trabajo! | *Glückwunsch* zum neuen Job! |
+la barba | der Bart | n | Se está dejando *barba*. | Er lässt sich einen *Bart* wachsen. |
+rizado | lockig | adj | Tiene el pelo *rizado*. | Sie hat *lockige* Haare. |
+liso | glatt | adj | Su pelo es *liso* y oscuro. | Seine Haare sind *glatt* und dunkel. |
+rubio | blond | adj | Los dos niños son *rubios*. | Beide Kinder sind *blond*. |
+moreno | dunkelhaarig; braun gebrannt | adj | Volvió muy *morena* de la playa. | Sie kam sehr *braun gebrannt* vom Strand zurück. |
+feo | hässlich | adj | ¡Qué edificio tan *feo*! | Was für ein *hässliches* Gebäude! |
+el hombro | die Schulter | n | Me duele el *hombro*. | Mir tut die *Schulter* weh. |
+el cuello | der Hals, Nacken | n | Tengo el *cuello* rígido. | Ich habe einen steifen *Nacken*. |
+la espalda | der Rücken | n | Duermo boca arriba, sobre la *espalda*. | Ich schlafe auf dem *Rücken*. |
+el estómago | der Magen | n | Me duele el *estómago*. | Ich habe *Magen*schmerzen. |
+el dedo | der Finger; Zeh | n | Me corté el *dedo*. | Ich habe mich in den *Finger* geschnitten. |
+la rodilla | das Knie | n | Me lesioné la *rodilla* jugando al fútbol. | Ich habe mir beim Fußball das *Knie* verletzt. |
+el diente | der Zahn | n | Se me rompió un *diente*. | Mir ist ein *Zahn* abgebrochen. |
+la piel | die Haut | n | Tiene la *piel* muy clara. | Sie hat sehr helle *Haut*. |
+el corazón | das Herz | n | Su *corazón* latía rápido. | Sein *Herz* schlug schnell. |
+educado | höflich | adj | Sé siempre *educado* con los clientes. | Sei immer *höflich* zu Kunden. | False Friend: ≠ gebildet (culto)
+maleducado | unhöflich | adj | ¡No seas tan *maleducado*! | Sei nicht so *unhöflich*! |
+tímido | schüchtern | adj | Al principio es un poco *tímido*. | Am Anfang ist er etwas *schüchtern*. |
+vago | faul | adj | Este fin de semana he sido muy *vago*. | Dieses Wochenende war ich sehr *faul*. | auch: perezoso
+inteligente | intelligent, klug | adj | Es una niña muy *inteligente*. | Sie ist ein sehr *kluges* Mädchen. |
+tonto | dumm | adj | Fue un error *tonto*. | Es war ein *dummer* Fehler. |
+sincero | ehrlich | adj | Por favor, sé *sincero* conmigo. | Bitte sei *ehrlich* zu mir. |
+alegre | fröhlich | adj | Siempre está muy *alegre*. | Sie ist immer sehr *fröhlich*. |
+la amistad | die Freundschaft | n | Nuestra *amistad* es muy importante para mí. | Unsere *Freundschaft* ist mir sehr wichtig. |
+enamorarse | sich verlieben | v | Se *enamoraron* en París. | Sie haben sich in Paris *verliebt*. | enamorarse de alguien
+la cita | die Verabredung; der Termin | n | Esta noche tengo una *cita*. | Heute Abend habe ich ein *Date*. |
+la mascota | das Haustier | n | ¿Tienes *mascotas*? | Hast du *Haustiere*? |
+## B1
+la suegra | die Schwiegermutter | n | Mi *suegra* viene a comer el domingo. | Meine *Schwiegermutter* kommt am Sonntag zum Essen. | el suegro = Schwiegervater
+el cuñado | der Schwager | n | Mi *cuñado* trabaja en un hospital. | Mein *Schwager* arbeitet in einem Krankenhaus. | la cuñada = Schwägerin
+el yerno | der Schwiegersohn | n | Su *yerno* es muy trabajador. | Ihr *Schwiegersohn* ist sehr fleißig. | la nuera = Schwiegertochter
+el padrastro | der Stiefvater | n | Se lleva bien con su *padrastro*. | Er versteht sich gut mit seinem *Stiefvater*. | la madrastra = Stiefmutter
+el hijo único | das Einzelkind | n | Soy *hijo único*. | Ich bin *Einzelkind*. |
+el embarazo | die Schwangerschaft | n | El *embarazo* fue sin problemas. | Die *Schwangerschaft* verlief ohne Probleme. |
+embarazada | schwanger | adj | Está *embarazada* de seis meses. | Sie ist im sechsten Monat *schwanger*. | False Friend: ≠ embarrassed!
+criar | aufziehen, großziehen | v | La *crio* su abuela. | Ihre Großmutter hat sie *großgezogen*. |
+la generación | die Generation | n | Tres *generaciones* viven en la misma casa. | Drei *Generationen* leben im selben Haus. |
+el matrimonio | die Ehe; Ehepaar | n | Llevan treinta años de *matrimonio*. | Sie sind seit dreißig Jahren *verheiratet*. |
+divorciarse | sich scheiden lassen | v | Sus padres *se divorciaron* hace años. | Ihre Eltern haben sich vor Jahren *scheiden lassen*. |
+separado | getrennt (lebend) | adj | Están *separados* desde marzo. | Sie leben seit März *getrennt*. |
+el viudo | der Witwer | n | Mi abuelo es *viudo*. | Mein Großvater ist *Witwer*. | la viuda = Witwe
+el compañero de piso | der Mitbewohner | n | Mi *compañera de piso* es enfermera. | Meine *Mitbewohnerin* ist Krankenschwester. |
+el conocido | der Bekannte | n | No es un amigo, es solo un *conocido*. | Er ist kein Freund, nur ein *Bekannter*. |
+la relación | die Beziehung | n | Tenemos una buena *relación*. | Wir haben eine gute *Beziehung*. |
+confiar en | vertrauen | v | *Confío en* ti. | Ich *vertraue* dir. |
+apoyar | unterstützen | v | Mis padres siempre me han *apoyado*. | Meine Eltern haben mich immer *unterstützt*. |
+la frente | die Stirn | n | Tiene una cicatriz en la *frente*. | Er hat eine Narbe auf der *Stirn*. |
+la mejilla | die Wange | n | Le dio un beso en la *mejilla*. | Sie gab ihm einen Kuss auf die *Wange*. |
+la ceja | die Augenbraue | n | Levantó las *cejas*. | Er zog die *Augenbrauen* hoch. |
+el labio | die Lippe | n | Tengo los *labios* secos. | Meine *Lippen* sind trocken. |
+el pecho | die Brust | n | Siento presión en el *pecho*. | Ich spüre Druck auf der *Brust*. |
+la cintura | die Taille | n | Los pantalones me quedan grandes de *cintura*. | Die Hose ist mir an der *Taille* zu weit. |
+el tobillo | der Knöchel | n | Me torcí el *tobillo*. | Ich habe mir den *Knöchel* verstaucht. |
+la uña | der Nagel (Finger/Zeh) | n | Se muerde las *uñas*. | Sie kaut an den *Nägeln*. |
+el hueso | der Knochen | n | Se rompió un *hueso* del pie. | Er hat sich einen *Knochen* im Fuß gebrochen. |
+la sangre | das Blut | n | Había *sangre* en su camisa. | Auf seinem Hemd war *Blut*. |
+el aspecto | das Aussehen | n | Tiene buen *aspecto* hoy. | Du siehst heute gut *aus*. |
+la altura | die Größe, Höhe | n | ¿Qué *altura* tienes? | Wie *groß* bist du? |
+el peso | das Gewicht | n | Ha perdido *peso*. | Sie hat *abgenommen*. |
+las gafas | die Brille | n | No veo nada sin *gafas*. | Ohne *Brille* sehe ich nichts. | Lateinamerika: los lentes
+las pecas | die Sommersprossen | n | Tiene la cara llena de *pecas*. | Sie hat das Gesicht voller *Sommersprossen*. |
+calvo | glatzköpfig | adj | Mi padre es *calvo*. | Mein Vater hat eine *Glatze*. |
+atractivo | attraktiv | adj | Es un hombre muy *atractivo*. | Er ist ein sehr *attraktiver* Mann. |
+mayor | älter; alt (Person) | adj | Mi hermana *mayor* vive en Lima. | Meine *ältere* Schwester wohnt in Lima. | höflich für alt: una persona mayor
+menor | jünger; kleiner | adj | Es mi hermano *menor*. | Er ist mein *jüngerer* Bruder. |
+## B2
+el antepasado | der Vorfahre | n | Mis *antepasados* eran de Galicia. | Meine *Vorfahren* stammten aus Galicien. |
+la herencia | das Erbe | n | Recibió una pequeña *herencia*. | Er bekam ein kleines *Erbe*. |
+heredar | erben | v | *Heredó* la casa de su tía. | Sie *erbte* das Haus ihrer Tante. |
+el huérfano | das Waisenkind | n | Se quedó *huérfano* a los diez años. | Mit zehn Jahren wurde er *Waise*. |
+adoptar | adoptieren | v | *Adoptaron* a una niña. | Sie haben ein Mädchen *adoptiert*. |
+la crianza | die Erziehung (Aufziehen) | n | Compartimos la *crianza* de los niños. | Wir teilen uns die *Erziehung* der Kinder. |
+mimar | verwöhnen | v | Los abuelos *miman* demasiado a los nietos. | Die Großeltern *verwöhnen* die Enkel zu sehr. |
+mimado | verwöhnt | adj | Es un niño muy *mimado*. | Er ist ein sehr *verwöhntes* Kind. |
+el vínculo | die Bindung | n | Hay un *vínculo* fuerte entre ellas. | Zwischen ihnen gibt es eine starke *Bindung*. |
+el parentesco | die Verwandtschaft | n | ¿Qué *parentesco* tenéis? | Wie seid ihr *verwandt*? |
+el prometido | der Verlobte | n | Te presento a mi *prometida*. | Darf ich dir meine *Verlobte* vorstellen? |
+comprometerse | sich verloben; sich verpflichten | v | Se *comprometieron* en Navidad. | Sie haben sich an Weihnachten *verlobt*. |
+la convivencia | das Zusammenleben | n | La *convivencia* no siempre es fácil. | Das *Zusammenleben* ist nicht immer leicht. |
+reconciliarse | sich versöhnen | v | Por fin *se reconciliaron*. | Endlich haben sie sich *versöhnt*. |
+el rasgo | der (Gesichts-)Zug, das Merkmal | n | Tiene los *rasgos* de su padre. | Sie hat die *Züge* ihres Vaters. |
+la arruga | die Falte | n | Tiene *arrugas* alrededor de los ojos. | Sie hat *Fältchen* um die Augen. |
+la cicatriz | die Narbe | n | La herida dejó una *cicatriz*. | Die Wunde hinterließ eine *Narbe*. |
+el lunar | das Muttermal | n | Tiene un *lunar* en la mejilla. | Sie hat ein *Muttermal* auf der Wange. |
+la complexión | der Körperbau | n | Es de *complexión* atlética. | Er hat einen athletischen *Körperbau*. |
+corpulento | kräftig gebaut | adj | Era un hombre alto y *corpulento*. | Er war ein großer, *kräftig gebauter* Mann. |
+canoso | grauhaarig | adj | A los cuarenta ya estaba *canoso*. | Mit vierzig war er schon *grauhaarig*. |
+el codo | der Ellbogen | n | Se apoyó en los *codos*. | Er stützte sich auf die *Ellbogen*. |
+la muñeca | das Handgelenk; die Puppe | n | Lleva el reloj en la *muñeca* izquierda. | Er trägt die Uhr am linken *Handgelenk*. |
+el talón | die Ferse | n | Me salió una ampolla en el *talón*. | Ich habe eine Blase an der *Ferse*. |
+el pulmón | die Lunge | n | Fumar daña los *pulmones*. | Rauchen schädigt die *Lunge*. |
+el hígado | die Leber | n | El alcohol perjudica el *hígado*. | Alkohol schadet der *Leber*. |
+el cerebro | das Gehirn | n | El *cerebro* necesita descanso. | Das *Gehirn* braucht Ruhe. |
+## C1
+la descendencia | die Nachkommenschaft | n | Murió sin *descendencia*. | Er starb ohne *Nachkommen*. |
+el linaje | die Abstammung, das Geschlecht | n | Procede de un antiguo *linaje* noble. | Er stammt aus einem alten Adels*geschlecht*. |
+consanguíneo | blutsverwandt | adj | No son hermanos *consanguíneos*. | Sie sind keine *leiblichen* Geschwister. |
+la tutela | die Vormundschaft | n | El tribunal le concedió la *tutela*. | Das Gericht übertrug ihm die *Vormundschaft*. |
+la custodia | das Sorgerecht | n | Ella tiene la *custodia* de los niños. | Sie hat das *Sorgerecht* für die Kinder. |
+la pensión alimenticia | der Unterhalt | n | Paga una *pensión alimenticia* mensual. | Er zahlt monatlich *Unterhalt*. |
+el desapego | die Distanziertheit | n | Habla de su familia con cierto *desapego*. | Er spricht mit gewisser *Distanz* über seine Familie. |
+entrañable | herzlich, liebenswert | adj | Fue un reencuentro muy *entrañable*. | Es war ein sehr *herzliches* Wiedersehen. |
+el distanciamiento | die Entfremdung | n | Hubo un *distanciamiento* entre los hermanos. | Es kam zu einer *Entfremdung* zwischen den Geschwistern. |
+afín | verwandt, ähnlich | adj | Tenemos gustos *afines*. | Wir haben *ähnliche* Vorlieben. |
+la tez | der Teint | n | Tenía la *tez* pálida. | Sie hatte einen blassen *Teint*. |
+esbelto | schlank, grazil | adj | Una figura alta y *esbelta*. | Eine große, *schlanke* Gestalt. |
+desaliñado | ungepflegt | adj | Llegó con aspecto *desaliñado*. | Er kam *ungepflegt* an. |
+el semblante | die Miene | n | Su *semblante* cambió de repente. | Seine *Miene* veränderte sich plötzlich. |
+el ademán | die Geste, Gebärde | n | Hizo un *ademán* de despedida. | Er machte eine Abschieds*geste*. |
