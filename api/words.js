@@ -1,5 +1,6 @@
 import { callLLM, checkAuth, readBody, send, wrap, httpError, providerFrom } from "./_llm.js";
-import { WORDS_SYSTEM, generateWordsPrompt, fillWordPrompt, extractJson } from "../js/prompts.js";
+import { wordsSystem, generateWordsPrompt, fillWordPrompt, extractJson } from "../js/prompts.js";
+import { langName } from "../js/langs.js";
 
 const LEVELS = ["A1", "A2", "B1", "B2", "C1"];
 
@@ -14,6 +15,7 @@ function cleanCard(w) {
     ex: String(w.ex || "").slice(0, 300),
     exDe: String(w.exDe || "").slice(0, 300),
     note: String(w.note || "").slice(0, 200),
+    rd: String(w.rd || "").slice(0, 80),
   };
 }
 
@@ -21,11 +23,12 @@ export default wrap(async (req, res) => {
   if (req.method !== "POST") throw httpError(405, "Nur POST erlaubt");
   checkAuth(req);
   const body = await readBody(req);
+  const lang = langName(body.lang);
 
   let prompt;
   if (body.mode === "fill") {
     if (!body.en) throw httpError(400, "Wort fehlt");
-    prompt = fillWordPrompt({ en: String(body.en).slice(0, 60), de: String(body.de || "").slice(0, 120) });
+    prompt = fillWordPrompt({ en: String(body.en).slice(0, 60), de: String(body.de || "").slice(0, 120), lang });
   } else {
     const count = Math.min(20, Math.max(1, Number(body.count) || 10));
     prompt = generateWordsPrompt({
@@ -33,10 +36,11 @@ export default wrap(async (req, res) => {
       topic: String(body.topic || "").slice(0, 80),
       count,
       exclude: Array.isArray(body.exclude) ? body.exclude.map(String) : [],
+      lang,
     });
   }
 
-  const text = await callLLM(providerFrom(body), WORDS_SYSTEM, prompt, 4000);
+  const text = await callLLM(providerFrom(body), wordsSystem(lang), prompt, 4000);
   const data = extractJson(text);
   const list = Array.isArray(data) ? data : data.words || (data.en ? [data] : []);
   const words = list.map(cleanCard).filter(Boolean);

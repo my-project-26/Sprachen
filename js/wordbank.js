@@ -1,5 +1,5 @@
-// Automatisch erzeugt mit `node tools/build-words.mjs` aus data/*.txt – nicht von Hand bearbeiten.
-// Format: [englisch, deutsch, Wortart, Niveau, Thema, Beispiel EN, Beispiel DE, Hinweis]
+// Automatisch erzeugt mit `node tools/build-words.mjs` – nicht von Hand bearbeiten.
+// Format: [Wort, deutsch, Wortart, Niveau, Thema, Beispiel, Beispiel DE, Hinweis, Lautschrift]
 export const WORDBANK = [
   ["achieve","erreichen, schaffen","v","B1","alltag","She *achieved* her goal.","Sie hat ihr Ziel *erreicht*.",""],
   ["admit","zugeben","v","B1","alltag","He *admitted* he was wrong.","Er *gab zu*, dass er falsch lag.",""],

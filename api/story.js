@@ -1,5 +1,6 @@
 import { callLLM, checkAuth, readBody, send, wrap, httpError, providerFrom } from "./_llm.js";
-import { STORY_SYSTEM, storyPrompt, extractJson } from "../js/prompts.js";
+import { storySystem, storyPrompt, extractJson } from "../js/prompts.js";
+import { langName } from "../js/langs.js";
 
 const cleanList = (list, max) =>
   (Array.isArray(list) ? list : [])
@@ -17,11 +18,12 @@ export default wrap(async (req, res) => {
   const level = ["A1", "A2", "B1", "B2", "C1"].includes(body.level) ? body.level : "B2";
   const llm = providerFrom(body);
   const theme = String(body.theme || "").slice(0, 60);
+  const lang = langName(body.lang);
 
   let lastErr;
   for (let attempt = 0; attempt < 2; attempt++) {
     try {
-      const text = await callLLM(llm, STORY_SYSTEM, storyPrompt(words, level, theme, known), 2500);
+      const text = await callLLM(llm, storySystem(lang), storyPrompt(words, level, theme, known, lang), 2500);
       const data = extractJson(text);
       if (!data.text) throw new Error("Antwort ohne Text");
       return send(res, 200, data);

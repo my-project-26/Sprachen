@@ -7,21 +7,27 @@
 
 const synth = typeof window !== "undefined" ? window.speechSynthesis : null;
 let voices = [];
+// Aktuelle Lernsprache: Code (z. B. "es") und bevorzugte Regionen (z. B. ["es-ES", "es-MX"])
+let LANG = { code: "en", tts: ["en-US", "en-GB"] };
+export function setLang(code, tts) {
+  LANG = { code, tts: tts && tts.length ? tts : [code] };
+  loadVoices();
+}
 
 // Spaß-, Effekt- und Roboterstimmen von macOS/iOS – nie verwenden
 const NOVELTY =
   /\b(Albert|Bad News|Bahh|Bells|Boing|Bubbles|Cellos|Good News|Jester|Organ|Orgel|Glocken|Superstar|Trinoids|Whisper|Wobble|Zarvox|Fred|Junior|Ralph|Kathy|Eddy|Flo|Grandma|Grandpa|Reed|Rocko|Sandy|Shelley|Hysterical|Deranged|Pipe Organ|Princess|Agnes|Bruce|Vicki|Victoria)\b/i;
 
 const FEMALE =
-  /\b(Samantha|Ava|Allison|Susan|Zoe|Nicky|Serena|Kate|Stephanie|Karen|Moira|Tessa|Fiona|Veena|Martha|Catherine|Aria|Jenny|Emma|Michelle|Sonia|Libby|Natasha|Clara|Hazel|Zira|Female|Joanna|Salli|Kimberly|Ivy|Amy)\b/i;
+  /\b(Monica|Mónica|Paulina|Marisol|Lucia|Lucía|Elvira|Dalia|Amélie|Amelie|Audrey|Aurélie|Marie|Thérèse|Denise|Alice|Federica|Paola|Elsa|Isabella|Milena|Katya|Svetlana|Dariya|Kyoko|Nanami|Mizuki|O-ren|Yuna|Sora|SunHi|Heami|Tingting|Ting-Ting|Meijia|Sinji|Xiaoxiao|Xiaoyi|Huihui|Lekha|Kalpana|Swara|Zosia|Ewa|Agnieszka|Paulina|Zofia|Samantha|Ava|Allison|Susan|Zoe|Nicky|Serena|Kate|Stephanie|Karen|Moira|Tessa|Fiona|Veena|Martha|Catherine|Aria|Jenny|Emma|Michelle|Sonia|Libby|Natasha|Clara|Hazel|Zira|Female|Joanna|Salli|Kimberly|Ivy|Amy)\b/i;
 const MALE =
-  /\b(Alex|Tom|Evan|Nathan|Aaron|Daniel|Oliver|Arthur|Rishi|Lee|Gordon|Guy|Andrew|Brian|Christopher|Eric|Ryan|Thomas|William|Liam|David|Mark|George|Male|Matthew|Joey|Justin)\b/i;
+  /\b(Jorge|Diego|Juan|Carlos|Álvaro|Alvaro|Pablo|Thomas|Nicolas|Henri|Rémy|Luca|Diego|Cosimo|Giorgio|Yuri|Dmitry|Pavel|Maxim|Otoya|Hattori|Keita|Ichiro|Minsu|InJoon|Hyunsu|Yunyang|Yunxi|Kangkang|Li-mu|Rishi|Madhur|Hemant|Krzysztof|Marek|Jacek|Alex|Tom|Evan|Nathan|Aaron|Daniel|Oliver|Arthur|Rishi|Lee|Gordon|Guy|Andrew|Brian|Christopher|Eric|Ryan|Thomas|William|Liam|David|Mark|George|Male|Matthew|Joey|Justin)\b/i;
 
 function loadVoices() {
   if (!synth) return;
   voices = synth
     .getVoices()
-    .filter((v) => v.lang && v.lang.toLowerCase().startsWith("en") && !NOVELTY.test(v.name));
+    .filter((v) => v.lang && v.lang.toLowerCase().replace("_", "-").startsWith(LANG.code) && !NOVELTY.test(v.name));
 }
 if (synth) {
   loadVoices();
@@ -52,38 +58,44 @@ function quality(v) {
   return q;
 }
 
-function pick(g, langPref) {
+// langPref: Region-Code wie "en-GB"
+function pick(g, langPref, avoid) {
   loadVoices();
-  const list = voices.filter((v) => gender(v) === g);
+  let list = voices.filter((v) => gender(v) === g && v !== avoid);
+  // In anderen Sprachen ist das Geschlecht oft nicht am Namen erkennbar → unbekannte Stimmen zulassen
+  if (!list.length && LANG.code !== "en") list = voices.filter((v) => gender(v) === "?" && v !== avoid);
   if (!list.length) return null;
-  const score = (v) => quality(v) + (langPref && new RegExp(`en[-_]${langPref}`, "i").test(v.lang) ? 60 : 0);
+  const norm = (x) => String(x).replace("_", "-").toLowerCase();
+  const score = (v) => quality(v) + (langPref && norm(v.lang) === norm(langPref) ? 60 : 0);
   return [...list].sort((a, b) => score(b) - score(a))[0];
 }
 
-// Die 6 Stimm-Profile
+// Die 6 Stimm-Profile (r: 0 = Hauptregion, 1 = zweite Region, z. B. britisch)
 export const PRESETS = [
-  { key: "clear-f", label: "Klar & deutlich – weiblich", hint: "wie eine Navi-Ansage", g: "f", lang: "US", pitch: 1.0, rateMul: 1.0 },
-  { key: "clear-m", label: "Klar & deutlich – männlich", hint: "wie eine Navi-Ansage", g: "m", lang: "US", pitch: 1.0, rateMul: 1.0 },
-  { key: "friend-f", label: "Beste Freundin", hint: "warm, locker, etwas lebhafter", g: "f", lang: "US", pitch: 1.12, rateMul: 1.05 },
-  { key: "friend-m", label: "Bester Freund", hint: "warm, locker, etwas lebhafter", g: "m", lang: "US", pitch: 1.1, rateMul: 1.05 },
-  { key: "strict-f", label: "Strenge Lehrerin", hint: "britisch, tiefer, betont langsam", g: "f", lang: "GB", pitch: 0.85, rateMul: 0.88 },
-  { key: "strict-m", label: "Strenger Lehrer", hint: "britisch, tiefer, betont langsam", g: "m", lang: "GB", pitch: 0.8, rateMul: 0.88 },
+  { key: "clear-f", label: "Klar & deutlich – weiblich", hint: "wie eine Navi-Ansage", g: "f", r: 0, pitch: 1.0, rateMul: 1.0 },
+  { key: "clear-m", label: "Klar & deutlich – männlich", hint: "wie eine Navi-Ansage", g: "m", r: 0, pitch: 1.0, rateMul: 1.0 },
+  { key: "friend-f", label: "Beste Freundin", hint: "warm, locker, etwas lebhafter", g: "f", r: 0, pitch: 1.12, rateMul: 1.05 },
+  { key: "friend-m", label: "Bester Freund", hint: "warm, locker, etwas lebhafter", g: "m", r: 0, pitch: 1.1, rateMul: 1.05 },
+  { key: "strict-f", label: "Strenge Lehrerin", hint: "tiefer, betont langsam", g: "f", r: 1, pitch: 0.85, rateMul: 0.88 },
+  { key: "strict-m", label: "Strenger Lehrer", hint: "tiefer, betont langsam", g: "m", r: 1, pitch: 0.8, rateMul: 0.88 },
 ];
 
 // Liefert für ein Profil die Stimme dieses Geräts (oder null, wenn keine passt)
+const region = (r) => LANG.tts[r] || LANG.tts[0];
 export function resolvePreset(key) {
   const p = PRESETS.find((x) => x.key === key) || PRESETS[0];
-  let voice = pick(p.g, p.lang);
+  let voice = pick(p.g, region(p.r));
   // Freund/in: möglichst eine andere Stimme als „klar“, damit sie sich unterscheiden
   if (p.key.startsWith("friend")) {
-    const clear = pick(p.g, "US");
-    const us = (v) => (/en[-_]US/i.test(v.lang) ? 20 : 0);
-    const alt = voices
-      .filter((v) => gender(v) === p.g && v !== clear)
-      .sort((a, b) => quality(b) + us(b) - (quality(a) + us(a)))[0];
+    const alt = pick(p.g, region(0), pick(p.g, region(0)));
     if (alt) voice = alt;
   }
   return { preset: p, voice };
+}
+
+// Hinweistext je Sprache (beim Englischen ist der strenge Lehrer britisch)
+export function presetHint(p) {
+  return p.key.startsWith("strict") && LANG.code === "en" ? "britisch, tiefer, betont langsam" : p.hint;
 }
 
 export function presetAvailable(key) {
@@ -115,7 +127,7 @@ export function speak(text, { rate = 0.95, preset = "clear-f", onend } = {}) {
     u.voice = voice;
     u.lang = voice.lang;
   } else {
-    u.lang = p.lang === "GB" ? "en-GB" : "en-US";
+    u.lang = region(p.r);
   }
   u.rate = Math.min(2, Math.max(0.4, rate * p.rateMul));
   u.pitch = p.pitch;

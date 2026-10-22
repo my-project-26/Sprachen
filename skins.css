@@ -674,3 +674,7 @@ html:root[data-style="sport"] {
   .bk-row { font-size: 1.05rem; grid-template-columns: 1fr 50px 76px; }
   .st-tile.big b { font-size: 4.2rem; }
 }
+
+/* Sprachflagge am Einstellungen-Knopf, Lautschrift */
+.sk-home a[href="#/settings"] { position: relative; }
+.sk-flag { position: absolute; left: -6px; bottom: -4px; font-size: 15px; line-height: 1; }

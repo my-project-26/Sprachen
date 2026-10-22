@@ -1,8 +1,28 @@
 // Datenhaltung im Browser (localStorage)
-import { seedCards, TOPICS, slug, LEVELS } from "./words.js";
+import { seedCards, topicsFor, slug, LEVELS, loadBank, bankLang } from "./words.js";
 import { DAY, startOfDay } from "./fsrs.js";
+import { LANGS, READY, SETTINGS_KEY, currentLang } from "./langs.js";
 
-const KEY = "wortwerk.v1";
+// Jede Lernsprache hat ihren eigenen Speicher (Englisch behält den alten Schlüssel).
+// Die Einstellungen sind gemeinsam – bis auf die, die nur für eine Sprache gelten.
+const keyFor = (lang) => (lang === "en" ? "wortwerk.v1" : "wortwerk.v1." + lang);
+const PER_LANG = ["startLevel", "storyLevel", "activeTopics", "focusTopic"];
+const pickKeys = (o, keys) => Object.fromEntries(keys.filter((k) => o[k] !== undefined).map((k) => [k, o[k]]));
+const omitKeys = (o, keys) => Object.fromEntries(Object.entries(o).filter(([k]) => !keys.includes(k)));
+
+function readGlobal() {
+  try {
+    const g = JSON.parse(localStorage.getItem(SETTINGS_KEY) || "null");
+    if (g) return g;
+    // Umstieg: bisher standen alle Einstellungen im englischen Speicher
+    const en = JSON.parse(localStorage.getItem("wortwerk.v1") || "null");
+    return en?.settings ? omitKeys(en.settings, PER_LANG) : {};
+  } catch {
+    return {};
+  }
+}
+
+export const lang = () => bankLang();
 export const LEARNED_DAYS = 21; // ab dieser Stabilität gilt ein Wort als "gelernt"
 const LEVEL_ORDER = LEVELS;
 
@@ -44,7 +64,7 @@ function fresh() {
     version: 4,
     created: Date.now(),
     cards,
-    settings: { ...DEFAULT_SETTINGS },
+    settings: { ...DEFAULT_SETTINGS, ...readGlobal(), lang: bankLang() },
     days: {}, // "YYYY-MM-DD": { reviews, newCards, correct }
     totalReviews: 0,
     stories: [],
@@ -59,9 +79,10 @@ let state = null;
 export function load() {
   if (state) return state;
   try {
-    const raw = localStorage.getItem(KEY);
+    const raw = localStorage.getItem(keyFor(bankLang()));
     if (raw) {
       state = JSON.parse(raw);
+      state.settings = { ...(state.settings || {}), ...readGlobal(), ...pickKeys(state.settings || {}, PER_LANG), lang: bankLang() };
       migrate();
       mergeSeed();
     }
@@ -123,7 +144,10 @@ function serialize() {
 
 export function save() {
   try {
-    localStorage.setItem(KEY, JSON.stringify(serialize()));
+    const out = serialize();
+    out.settings = pickKeys(state.settings, PER_LANG);
+    localStorage.setItem(keyFor(bankLang()), JSON.stringify(out));
+    localStorage.setItem(SETTINGS_KEY, JSON.stringify({ ...omitKeys(state.settings, PER_LANG), lang: bankLang() }));
   } catch (e) {
     alert("Speichern fehlgeschlagen: " + e.message);
   }
@@ -145,7 +169,7 @@ export function updateCard(card) {
 // ---------- Themen ----------
 
 export function allTopics() {
-  return { ...TOPICS, ...(load().customTopics || {}) };
+  return { ...topicsFor(bankLang()), ...(load().customTopics || {}) };
 }
 
 export function topicLabel(key) {
@@ -431,6 +455,10 @@ function index() {
 
 // Grundform raten: travelled → travel, countries → country, making → make …
 export function lemmaCandidates(word) {
+  if (bankLang() !== "en") {
+    const w = word.toLowerCase();
+    return [w, w.replace(/(es|s)$/, ""), w.replace(/s$/, "")].filter((x, i, a) => x && a.indexOf(x) === i);
+  }
   const w = word.toLowerCase().replace(/[’']s$/, "");
   const c = [w];
   const add = (x) => x && x.length > 1 && !c.includes(x) && c.push(x);
@@ -606,26 +634,68 @@ export function deleteStory(id) {
 // ---------- Sicherung ----------
 
 export function exportData() {
-  // Schlüssel und Passwörter gehören nicht in die Sicherungsdatei
+  // Alle Sprachen in einer Datei; Schlüssel und Passwörter gehören nicht hinein
   load();
-  const copy = JSON.parse(JSON.stringify(serialize()));
-  copy.settings.geminiKey = "";
-  copy.settings.appSecret = "";
-  return JSON.stringify(copy, null, 2);
+  save();
+  const langs = {};
+  for (const code of Object.keys(LANGS)) {
+    const raw = localStorage.getItem(keyFor(code));
+    if (raw) langs[code] = JSON.parse(raw);
+  }
+  const settings = { ...JSON.parse(localStorage.getItem(SETTINGS_KEY) || "{}"), geminiKey: "", appSecret: "" };
+  return JSON.stringify({ format: "wortwerk-multi", version: 5, settings, langs }, null, 2);
 }
 
 export function importData(json) {
   const data = JSON.parse(json);
-  if (!data.cards || !data.settings) throw new Error("Ungültige Sicherungsdatei");
   const keep = { geminiKey: load().settings.geminiKey, appSecret: load().settings.appSecret };
-  state = data;
-  state.settings = { ...state.settings, geminiKey: state.settings.geminiKey || keep.geminiKey, appSecret: state.settings.appSecret || keep.appSecret };
-  migrate();
-  mergeSeed();
-}
-
-export function resetAll() {
-  localStorage.removeItem(KEY);
+  if (data.format === "wortwerk-multi") {
+    for (const [code, st] of Object.entries(data.langs || {})) if (LANGS[code]) localStorage.setItem(keyFor(code), JSON.stringify(st));
+    const g = { ...data.settings, geminiKey: data.settings?.geminiKey || keep.geminiKey, appSecret: data.settings?.appSecret || keep.appSecret, lang: bankLang() };
+    localStorage.setItem(SETTINGS_KEY, JSON.stringify(g));
+    state = null;
+    load();
+    return;
+  }
+  // ältere Sicherung (nur Englisch)
+  if (!data.cards || !data.settings) throw new Error("Ungültige Sicherungsdatei");
+  localStorage.setItem("wortwerk.v1", JSON.stringify(data));
+  localStorage.setItem(SETTINGS_KEY, JSON.stringify({ ...omitKeys(data.settings, PER_LANG), geminiKey: keep.geminiKey, appSecret: keep.appSecret, lang: bankLang() }));
   state = null;
   load();
+}
+
+// Setzt nur die aktuelle Sprache zurück; Einstellungen bleiben
+export function resetAll() {
+  localStorage.removeItem(keyFor(bankLang()));
+  state = null;
+  load();
+}
+
+// Lernsprache wechseln: Wortliste laden, Speicher der Sprache öffnen
+export async function setLanguage(code) {
+  if (!LANGS[code] || !READY.includes(code)) return;
+  if (state) save();
+  await loadBank(code);
+  const g = readGlobal();
+  localStorage.setItem(SETTINGS_KEY, JSON.stringify({ ...g, lang: code }));
+  state = null;
+  load();
+}
+
+export async function init() {
+  await loadBank(currentLang());
+  load();
+}
+
+// Kurzüberblick für die Sprachauswahl: wie viele Wörter sicher sitzen
+export function langSummary(code) {
+  try {
+    const raw = JSON.parse(localStorage.getItem(keyFor(code)) || "null");
+    if (!raw) return null;
+    const cs = Object.values(raw.cards || {});
+    return { started: cs.length, learned: cs.filter((c) => c.state === "known" || (c.stability || 0) >= LEARNED_DAYS).length };
+  } catch {
+    return null;
+  }
 }

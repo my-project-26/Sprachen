@@ -75,7 +75,7 @@ const HOME = {
       `<${href ? `a href="${href}"` : "div"} class="bk-row"><span>${esc(dest)}</span><span>${num}</span><span class="bk-st ${cls}">${st}</span></${href ? "a" : "div"}>`;
     return `
     <section class="bk-top">
-      <div class="bk-bar"><p>${esc(d.dateStr)}</p><a class="icon-btn plain" href="#/settings" aria-label="Einstellungen">${d.icon.gear}</a></div>
+      <div class="bk-bar"><p>${esc(d.dateStr)}</p><a class="icon-btn plain" href="#/settings" aria-label="Einstellungen"><span class="sk-flag">${d.lang.flag}</span>${d.icon.gear}</a></div>
       <h1>Guten Flug!</h1>
       <div class="bk-route" aria-label="Flugroute ${stops[0].L} bis C1">
         <div class="bk-line"></div><div class="bk-done" style="width:${pct}%"></div>
@@ -101,7 +101,7 @@ const HOME = {
   stapel(d) {
     return `
     <header class="st-head"><div><span>Hey 👋</span><h1>${d.total ? `Bereit für ${n(d.total, "Karte", "Karten")}?` : "Alles weggewischt!"}</h1></div>
-      <a class="icon-btn plain" href="#/settings" aria-label="Einstellungen">${d.icon.gear}</a></header>
+      <a class="icon-btn plain" href="#/settings" aria-label="Einstellungen"><span class="sk-flag">${d.lang.flag}</span>${d.icon.gear}</a></header>
     <div class="st-bento">
       <div class="st-tile big"><small>Tage am Stück</small><b>${d.streak}</b><span class="st-fl">🔥</span></div>
       <div class="st-tile pink"><small>neue Wörter</small><b>${d.news}</b></div>
@@ -125,7 +125,7 @@ const HOME = {
         <span class="ch-meta">${meta}${badge ? `<i style="${badge.bg ? `background:${badge.bg}` : ""}">${badge.n}</i>` : ""}</span>
       </${href ? "a" : "button"}>`;
     return `
-    <header class="ch-head"><h1>Chats</h1><a class="icon-btn plain" href="#/settings" aria-label="Einstellungen">${d.icon.gear}</a></header>
+    <header class="ch-head"><h1>Chats</h1><a class="icon-btn plain" href="#/settings" aria-label="Einstellungen"><span class="sk-flag">${d.lang.flag}</span>${d.icon.gear}</a></header>
     <a class="ch-search" href="#/words">${d.icon.search}<span>Wörter suchen</span></a>
     <div class="ch-list">
       ${
@@ -149,7 +149,7 @@ const HOME = {
     };
     return `
     <div class="hf-tabs">${d.topics.slice(0, 4).map((t) => `<a href="#/topics">${esc(t.label.split(/[ ,&]/)[0].slice(0, 10))}</a>`).join("")}</div>
-    <header class="hf-head"><h1>${esc(d.weekday)}</h1><a class="icon-btn plain" href="#/settings" aria-label="Einstellungen">${d.icon.gear}</a></header>
+    <header class="hf-head"><h1>${esc(d.weekday)}</h1><a class="icon-btn plain" href="#/settings" aria-label="Einstellungen"><span class="sk-flag">${d.lang.flag}</span>${d.icon.gear}</a></header>
     <p class="hf-hand">Heute zu tun:</p>
     <ul class="hf-todo">
       <li class="${d.due ? "" : "x"}">${n(d.due, "Wiederholung", "Wiederholungen")}</li>
@@ -180,7 +180,7 @@ const HOME = {
       <svg class="gl-path" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M14 78 C 30 20, 70 20, 86 48"/></svg>
       ${pins}
       <span class="gl-pill">☀︎ ${n(d.streak, "Tag", "Tage")} Serie</span>
-      <a class="gl-gear" href="#/settings" aria-label="Einstellungen">${d.icon.gear}</a>
+      <a class="gl-gear" href="#/settings" aria-label="Einstellungen"><span class="sk-flag">${d.lang.flag}</span>${d.icon.gear}</a>
     </section>
     <section class="gl-sheet">
       <div class="gl-grab"></div>
@@ -206,8 +206,8 @@ const HOME = {
     return `
     <section class="rt-hero">
       <div class="rt-sky"></div><div class="rt-sun"></div><div class="rt-grid"></div>
-      <a class="rt-gear" href="#/settings" aria-label="Einstellungen">${d.icon.gear}</a>
-      <div class="rt-logo">WORTWERK<small>Turbo English</small></div>
+      <a class="rt-gear" href="#/settings" aria-label="Einstellungen"><span class="sk-flag">${d.lang.flag}</span>${d.icon.gear}</a>
+      <div class="rt-logo">WORTWERK<small>Turbo ${esc(d.lang.native)}</small></div>
       <nav class="rt-menu">
         ${d.total ? `<a class="on" href="#/learn"><span>START</span><span>${d.total}</span></a>` : `<button class="on" id="extraBtn"><span>${d.wordsLeft ? "+10 NEUE" : "ANDERES THEMA"}</span><span>▶</span></button>`}
         <a href="${d.weak ? "#/learn/weak" : "#/words"}"><span>NOCH LERNEN</span><span>${d.weak}</span></a>
@@ -223,7 +223,7 @@ const HOME = {
   musik(d) {
     const pct = d.total ? 0 : 100;
     return `
-    <header class="mu-head"><span>Heute für dich</span><a class="icon-btn plain" href="#/settings" aria-label="Einstellungen">${d.icon.gear}</a></header>
+    <header class="mu-head"><span>Heute für dich</span><a class="icon-btn plain" href="#/settings" aria-label="Einstellungen"><span class="sk-flag">${d.lang.flag}</span>${d.icon.gear}</a></header>
     <section class="mu-cover" style="--h:${hash(d.focusLabel) % 360}">
       <div class="mu-vinyl"><span>${esc(d.lvl.find((x) => x.ok < x.total)?.L || "C1")}</span></div>
       <h1>${esc(d.focusLabel)}<small>Sessions</small></h1>
@@ -246,7 +246,7 @@ const HOME = {
   kunst(d) {
     return `
     <section class="ku-hero" aria-hidden="true"><i class="k1"></i><i class="k2"></i><i class="k3"></i><i class="k4"></i></section>
-    <a class="icon-btn plain ku-gear" href="#/settings" aria-label="Einstellungen">${d.icon.gear}</a>
+    <a class="icon-btn plain ku-gear" href="#/settings" aria-label="Einstellungen"><span class="sk-flag">${d.lang.flag}</span>${d.icon.gear}</a>
     <h1 class="ku-title">Heute in der Ausstellung</h1>
     <div class="ku-list">
       <button id="pickTopic"><span>Neue Werke · ${esc(d.focusLabel)}</span><b>${d.news}</b></button>
@@ -267,7 +267,7 @@ const HOME = {
     <section class="sp-score">
       <div class="sp-tm"><span>SICHER</span><b>${d.secure}<i>:</i>${d.weak}</b><span>NOCH LERNEN</span></div>
       <div class="sp-min">● Spieltag ${d.streak} · ${d.streak ? "Serie läuft" : "neue Serie"}</div>
-      <a class="sp-gear" href="#/settings" aria-label="Einstellungen">${d.icon.gear}</a>
+      <a class="sp-gear" href="#/settings" aria-label="Einstellungen"><span class="sk-flag">${d.lang.flag}</span>${d.icon.gear}</a>
     </section>
     <div class="sp-pitch"><i></i></div>
     <section class="sp-table">
@@ -302,7 +302,7 @@ const CARD = {
         <div class="bk-ph"><span>${esc(x.topic)}</span><span>${c.level}</span></div>
         <div class="bk-route2">
           <div class="bk-city"><small>Von</small>${esc(c.de.split(",")[0])}</div><div class="bk-arrow">✈</div>
-          <div class="bk-city to"><small>Nach</small>${x.revealed ? esc(c.en) : "· · ·"}</div>
+          <div class="bk-city to"><small>Nach</small>${x.revealed ? x.enHtml : "· · ·"}</div>
         </div>
         <div class="bk-meta"><div>Wortart<b>${esc(x.posLabel || "–")}</b></div><div>Gate<b>${status}</b></div><div>Ticket<b>${x.pos}/${x.total}</b></div></div>
         <div class="bk-perf"></div>
@@ -327,7 +327,7 @@ const CARD = {
         <div class="st-tags"><span>${c.level}</span><span>${esc(x.topic)}</span>${x.isNew ? "<span>neu</span>" : ""}${c.weak ? "<span class=w>noch lernen</span>" : ""}</div>
         ${x.revealed ? `<button class="st-spk" data-say="${esc(c.en)}" aria-label="Anhören">${x.icon.speaker}</button>` : ""}
         <div class="st-de">${esc(c.de)}</div>
-        <div class="st-w">${x.revealed ? esc(c.en) : "?"}</div>
+        <div class="st-w">${x.revealed ? x.enHtml : "?"}</div>
         ${x.revealed ? x.ui.typed : ""}
         <p class="st-ex">${x.revealed ? x.exMarked : x.cloze}</p>
         ${x.revealed ? `<p class="st-exde">${x.exDeMarked}</p>${x.ui.note}` : x.ui.hint + x.ui.input}
@@ -350,12 +350,12 @@ const CARD = {
     const c = x.c;
     let thread = `
       <div class="ch-day">Karte ${x.pos} von ${x.total}</div>
-      <div class="bub t">Wie heißt das auf Englisch?<span class="q">${esc(c.de)}</span>${c.ex ? `<span class="cz">${x.cloze}</span>` : ""}</div>
+      <div class="bub t">Wie heißt das auf ${esc(x.langName)}?<span class="q">${esc(c.de)}</span>${c.ex ? `<span class="cz">${x.cloze}</span>` : ""}</div>
       <div class="bub t" id="hint" hidden>Tipp: <code>${esc(x.hint)}</code></div>`;
     if (x.revealed) {
       thread += `
         <div class="bub m">${x.typedRaw != null ? esc(x.typedRaw || "–") : "Zeig's mir 🙈"}</div>
-        <div class="bub t">${x.ok === true ? "Genau! 👏 " : x.ok === false ? "Fast! Richtig ist: " : "Das ist: "}<b class="ch-ans">${esc(c.en)}</b>${c.ex ? `<span class="cz">${x.exMarked}</span>` : ""}${c.exDe ? `<span class="de">${x.exDeMarked}</span>` : ""}</div>
+        <div class="bub t">${x.ok === true ? "Genau! 👏 " : x.ok === false ? "Fast! Richtig ist: " : "Das ist: "}<b class="ch-ans">${x.enHtml}</b>${c.ex ? `<span class="cz">${x.exMarked}</span>` : ""}${c.exDe ? `<span class="de">${x.exDeMarked}</span>` : ""}</div>
         ${c.note ? `<div class="bub t ${x.noteFF ? "ff" : ""}">💡 ${esc(c.note)}</div>` : ""}
         <div class="bub t voice"><button class="ch-play" data-say="${esc(c.en)}" aria-label="Wort anhören">▶</button><span class="wave">${"<i></i>".repeat(14)}</span><span>Wort</span>
           ${c.ex ? `<button class="ch-play" data-say="${esc(x.exPlain)}" aria-label="Satz anhören">▶</button><span>Satz</span>` : ""}</div>
@@ -372,7 +372,7 @@ const CARD = {
     const c = x.c;
     const rows = [];
     for (const p of x.prev) rows.push(`<tr class="done"><td class="hf-de">${esc(p.de.split(",")[0])}</td><td class="hf-en">${esc(p.en)}</td></tr>`);
-    rows.push(`<tr class="cur"><td class="hf-de">${esc(c.de)}</td><td class="hf-en">${x.revealed ? `<mark>${esc(c.en)}</mark>` : ""}</td></tr>`);
+    rows.push(`<tr class="cur"><td class="hf-de">${esc(c.de)}</td><td class="hf-en">${x.revealed ? `<mark>${x.enHtml}</mark>` : ""}</td></tr>`);
     for (const p of x.next) rows.push(`<tr class="next"><td class="hf-de">${esc(p.de.split(",")[0])}</td><td class="hf-en"></td></tr>`);
     const card = `
       <article class="hf-page">
@@ -398,8 +398,8 @@ const CARD = {
       `<${attrs ? "button" : "div"} class="gl-li" ${attrs}><span class="gl-ic" style="background:${bg}">${ic}</span><span class="gl-t"><b>${title}</b>${sub ? `<small>${sub}</small>` : ""}</span></${attrs ? "button" : "div"}>`;
     const hero = `
       <section class="gl-grp gl-hero">
-        <div class="gl-w">${x.revealed ? esc(c.en) : esc(c.de)}</div>
-        <div class="gl-d">${x.revealed ? esc(c.de) : "Wie heißt das auf Englisch?"}${x.posLabel ? " · " + esc(x.posLabel) : ""}</div>
+        <div class="gl-w">${x.revealed ? x.enHtml : esc(c.de)}</div>
+        <div class="gl-d">${x.revealed ? esc(c.de) : `Wie heißt das auf ${x.langName}?`}${x.posLabel ? " · " + esc(x.posLabel) : ""}</div>
         <span class="gl-lv">${c.level} · ${esc(x.topic)}</span>
         ${x.revealed ? x.ui.typed : x.ui.hint + x.ui.input}
       </section>`;
@@ -434,7 +434,7 @@ const CARD = {
         <div class="w31-tb"><span>WORTWERK.EXE – Karte ${x.pos}/${x.total}</span><i>_</i></div>
         <div class="w31-bd">
           <div class="w31-in">
-            <div class="w31-w">${x.revealed ? esc(c.en) : "?????"}</div>
+            <div class="w31-w">${x.revealed ? x.enHtml : "?????"}</div>
             <div class="w31-d">= ${esc(c.de)} [${esc(x.posLabel || "–")}, ${c.level}]</div>
             ${x.revealed ? x.ui.typed : ""}
             <p>${x.revealed ? x.exMarked : x.cloze}${c.exDe ? `<br><span class="w31-g">${x.exDeMarked}</span>` : ""}</p>
@@ -467,7 +467,7 @@ const CARD = {
           <p class="now">${x.revealed ? x.exMarked || esc(c.en) : x.cloze || "♪ ♪ ♪"}</p>
           ${nextLine ? `<p class="dim">${esc(nextLine)}</p>` : ""}
         </div>
-        <p class="mu-tr">${x.revealed ? `<b>${esc(c.en)}</b> = ${esc(c.de)}` : esc(c.de)}</p>
+        <p class="mu-tr">${x.revealed ? `<b>${x.enHtml}</b> = ${esc(c.de)}` : esc(c.de)}</p>
         ${c.exDe ? `<p class="mu-trde">${x.exDeMarked}</p>` : ""}
         ${x.revealed ? x.ui.typed + x.ui.listen + x.ui.note : x.ui.hint + x.ui.input}
         <div class="mu-eq ${x.revealed ? "on" : ""}" aria-hidden="true">${"<i></i>".repeat(16)}</div>
@@ -490,7 +490,7 @@ const CARD = {
       <i class="kf-l"></i>`;
     const card = `
       <article class="ku-room">
-        <div class="ku-frame">${shapes}<span class="ku-wd">${x.revealed ? esc(c.en) : "?"}</span></div>
+        <div class="ku-frame">${shapes}<span class="ku-wd">${x.revealed ? x.enHtml : "?"}</span></div>
         <div class="ku-label">
           <b>${esc(c.de)}</b>
           <span>${esc(x.posLabel || "Wort")}, ${c.level} · Saal ${esc(x.topic)}</span>
@@ -514,7 +514,7 @@ const CARD = {
         <div class="sp-jersey ${x.revealed ? "back" : ""}">
           <span class="sp-name">${esc((x.revealed ? c.en : c.de.split(",")[0]).toUpperCase())}</span>
           <span class="sp-num">${x.pos}</span>
-          <span class="sp-sub">${x.revealed ? esc(c.de) : "Wie heißt das auf Englisch?"}</span>
+          <span class="sp-sub">${x.revealed ? (c.rd ? esc(c.rd) + " · " : "") + esc(c.de) : `Wie heißt das auf ${x.langName}?`}</span>
         </div>
         ${x.revealed ? x.ui.typed : ""}
         <p class="sp-ex">${x.revealed ? x.exMarked : x.cloze}</p>

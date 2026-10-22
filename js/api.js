@@ -1,14 +1,8 @@
 // KI-Aufrufe: entweder über den eigenen Server (api/*) oder direkt aus dem Browser
 // an Gemini (für GitHub Pages / iPhone, wo kein eigener Server läuft).
 import { getState } from "./store.js";
-import {
-  STORY_SYSTEM,
-  storyPrompt,
-  WORDS_SYSTEM,
-  generateWordsPrompt,
-  fillWordPrompt,
-  extractJson,
-} from "./prompts.js";
+import { storySystem, storyPrompt, wordsSystem, generateWordsPrompt, fillWordPrompt, extractJson } from "./prompts.js";
+import { L, langName } from "./langs.js";
 
 const LEVELS = ["A1", "A2", "B1", "B2", "C1"];
 
@@ -174,6 +168,7 @@ function cleanCard(w) {
     ex: String(w.ex || "").slice(0, 300),
     exDe: String(w.exDe || "").slice(0, 300),
     note: String(w.note || "").slice(0, 200),
+    rd: String(w.rd || "").slice(0, 80),
   };
 }
 
@@ -183,7 +178,8 @@ async function browserCall(path, body) {
     let lastErr;
     for (let attempt = 0; attempt < 2; attempt++) {
       try {
-        const text = await browserLLM(STORY_SYSTEM, storyPrompt(body.words, level, body.theme || "", body.known || []), 2500);
+        const lang = langName(body.lang);
+        const text = await browserLLM(storySystem(lang), storyPrompt(body.words, level, body.theme || "", body.known || [], lang), 2500);
         const data = extractJson(text);
         if (!data.text) throw new Error("Antwort ohne Text");
         return data;
@@ -197,14 +193,15 @@ async function browserCall(path, body) {
   if (path === "words") {
     const prompt =
       body.mode === "fill"
-        ? fillWordPrompt({ en: body.en, de: body.de || "" })
+        ? fillWordPrompt({ en: body.en, de: body.de || "", lang: langName(body.lang) })
         : generateWordsPrompt({
             level: LEVELS.includes(body.level) ? body.level : "B2",
             topic: body.topic || "",
             count: Math.min(20, Math.max(1, Number(body.count) || 10)),
             exclude: body.exclude || [],
+            lang: langName(body.lang),
           });
-    const data = extractJson(await browserLLM(WORDS_SYSTEM, prompt, 4000));
+    const data = extractJson(await browserLLM(wordsSystem(langName(body.lang)), prompt, 4000));
     const list = Array.isArray(data) ? data : data.words || (data.en ? [data] : []);
     const words = list.map(cleanCard).filter(Boolean);
     if (!words.length) throw new Error("Die KI hat keine gültigen Karten geliefert. Bitte erneut versuchen.");
@@ -216,6 +213,7 @@ async function browserCall(path, body) {
 // ---------- Öffentliche Funktionen ----------
 
 export async function callApi(path, body) {
+  body = { ...body, lang: L().en };
   if (usesBrowserGemini()) return browserCall(path, body);
   const s = getState().settings;
   const payload = { ...body, provider: s.provider || "auto", model: s.provider === "ollama" ? s.ollamaModel || "" : "" };
@@ -279,6 +277,8 @@ export function normalizeStory(data, words) {
   const glossary = {};
   for (const g of data.glossary || []) if (g?.en) glossary[g.en.toLowerCase()] = String(g.de || "");
   for (const w of words) if (!glossary[w.en.toLowerCase()]) glossary[w.en.toLowerCase()] = w.de;
+  const readings = {};
+  for (const g of data.glossary || []) if (g?.en && g.rd) readings[g.en.toLowerCase()] = String(g.rd);
   return {
     id: "s-" + Date.now().toString(36),
     createdAt: Date.now(),
@@ -286,6 +286,7 @@ export function normalizeStory(data, words) {
     text: data.text.trim(),
     questions,
     glossary,
+    readings,
     wordIds: words.map((w) => w.id),
     words: words.map((w) => ({ id: w.id, en: w.en, de: w.de })),
     quizScore: null,

@@ -1,0 +1,5 @@
+## A1
+hola | hallo | phrase | *Hola*, ¿qué tal? | *Hallo*, wie geht's? |
+el libro | das Buch | n | Leo *el libro* cada noche. | Ich lese *das Buch* jeden Abend. | maskulin
+la casa | das Haus | n | *La casa* es grande. | *Das Haus* ist groß. | feminin
+comer | essen | v | Me gusta *comer* fruta. | Ich *esse* gern Obst. |

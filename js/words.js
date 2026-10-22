@@ -31,7 +31,6 @@ export const TOPICS = {
 
 export const LEVELS = ["A1", "A2", "B1", "B2", "C1"];
 
-import { WORDBANK } from "./wordbank.js";
 
 const RAW = [
   // ---------- Reisen & Urlaub ----------
@@ -251,13 +250,33 @@ export function slug(en) {
   return en.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 }
 
+// Für alle Schriften (Kyrillisch, Kanji, Devanagari …)
+export function uslug(w) {
+  return String(w).toLowerCase().normalize("NFC").replace(/[^\p{L}\p{M}\p{N}]+/gu, "-").replace(/^-|-$/g, "");
+}
+
+// Wortliste der aktuellen Lernsprache – wird beim Start bzw. Sprachwechsel geladen
+let BANK = { lang: "en", rows: [] };
+export async function loadBank(lang) {
+  if (BANK.lang === lang && BANK.rows.length) return;
+  const mod = lang === "en" ? await import("./wordbank.js") : await import(`./wordbank.${lang}.js`);
+  BANK = { lang, rows: lang === "en" ? [...RAW, ...mod.WORDBANK] : mod.WORDBANK };
+}
+export const bankLang = () => BANK.lang;
+export const wordId = (w) => (BANK.lang === "en" ? slug(w) : uslug(w));
+
+// Themennamen je Sprache (Phrasal Verbs gibt es nur im Englischen)
+export function topicsFor(lang) {
+  return lang === "en" ? TOPICS : { ...TOPICS, phrasal: "Redewendungen & feste Ausdrücke" };
+}
+
 export function seedCards() {
   // Startliste + großer Wortschatz (wordbank.js), doppelte Wörter nur einmal.
   // Reihenfolge: Niveau aufsteigend, innerhalb des Niveaus nach Thema gebündelt.
   const seen = new Set();
   const rows = [];
-  for (const r of [...RAW, ...WORDBANK]) {
-    const id = slug(r[0]);
+  for (const r of BANK.rows) {
+    const id = wordId(r[0]);
     if (!id || seen.has(id)) continue;
     seen.add(id);
     rows.push(r);
@@ -273,7 +292,7 @@ export function seedCards() {
     })
     .map((x) => x.r);
   return sorted.map((r, i) => ({
-    id: "w-" + slug(r[0]),
+    id: "w-" + wordId(r[0]),
     en: r[0],
     de: r[1],
     pos: r[2],
@@ -282,6 +301,7 @@ export function seedCards() {
     ex: r[5],
     exDe: r[6],
     note: r[7] || "",
+    rd: r[8] || "",
     order: i,
     state: "new",
     custom: false,

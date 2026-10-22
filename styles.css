@@ -457,8 +457,21 @@ body[data-view="learn"] .toast { bottom: calc(env(safe-area-inset-bottom) + 24px
 
 /* Design-Auswahl */
 .design-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
-.design-opt { border: 2px solid var(--line); border-radius: 16px; padding: 10px; cursor: pointer; background: var(--bg); text-align: left; }
+.design-opt { border: 2px solid var(--line); border-radius: 16px; padding: 10px; cursor: pointer; background: var(--surface-2); color: var(--ink); text-align: left; }
 .design-opt.on { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-soft); }
 .design-opt .sw-row { display: flex; gap: 4px; margin-bottom: 8px; }
 .design-opt .sw-row i { flex: 1; height: 26px; border-radius: 6px; }
 .design-opt b { display: block; }
+
+/* Sprachen */
+.top-actions { display: flex; gap: 8px; }
+.lang-btn { font-size: 1.3rem; }
+.lang-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
+.lang-opt { display: flex; align-items: center; gap: 10px; border: 2px solid var(--line); border-radius: 14px; padding: 10px; background: var(--surface-2); color: var(--ink); cursor: pointer; text-align: left; }
+.lang-opt.on { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-soft); }
+.lang-opt:disabled { opacity: .45; cursor: default; }
+.lang-flag { font-size: 1.6rem; }
+.lang-t { display: flex; flex-direction: column; min-width: 0; }
+.rd { display: block; font-family: var(--sans); font-size: .95rem; font-weight: 500; color: var(--muted); letter-spacing: .02em; margin: 2px 0 8px; }
+small.rd { font-size: .45em; margin: 4px 0 0; }
+.wp-main .rd { display: inline; font-size: .9rem; margin: 0; }

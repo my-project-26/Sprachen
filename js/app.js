@@ -6,6 +6,7 @@ import { storyPrompt, STORY_SYSTEM, extractJson } from "./prompts.js";
 import { callApi, health, normalizeStory, isStaticHost } from "./api.js";
 import * as tts from "./tts.js";
 import { DESIGNS, designKey, applyDesign, skinHome, skinCard, bindSwipe } from "./skins.js";
+import { LANGS, READY, L, checkAnswer } from "./langs.js";
 
 const $app = document.getElementById("app");
 const $nav = document.getElementById("nav");
@@ -176,6 +177,7 @@ function home() {
     const weakList = S.weakCards();
     const d = {
       icon: ICON,
+      lang: L(),
       dateStr: new Date().toLocaleDateString("de-DE", { weekday: "long", day: "numeric", month: "long" }),
       weekday: new Date().toLocaleDateString("de-DE", { weekday: "long" }),
       total, due: due.length, news: news.length, weak: weakList.length,
@@ -221,7 +223,8 @@ function home() {
       <p class="eyebrow">${new Date().toLocaleDateString("de-DE", { weekday: "long", day: "numeric", month: "long" })}</p>
       <h1>Hallo!</h1>
     </div>
-    <a class="icon-btn" href="#/settings" aria-label="Einstellungen">${ICON.gear}</a>
+    <span class="top-actions"><a class="icon-btn lang-btn" href="#/settings" aria-label="Sprache: ${L().name}">${L().flag}</a>
+    <a class="icon-btn" href="#/settings" aria-label="Einstellungen">${ICON.gear}</a></span>
   </header>
 
   <section class="card streak">
@@ -447,16 +450,18 @@ function showCard(revealed = false, typed = null) {
       ${c.ex ? `<p class="ex">${clozeHtml(c.ex)}</p>` : ""}
       ${c.exDe ? `<p class="ex-de">${marked(c.exDe)}</p>` : ""}
       <p class="hint" id="hint" hidden>${esc(hintFor(c.en))}</p>
-      ${s.typeAnswer ? `<input id="answer" class="answer" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Englisches Wort eingeben…">` : ""}
+      ${s.typeAnswer ? `<input id="answer" class="answer" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Wort auf ${L().name} eingeben…">` : ""}
     `;
   } else {
-    const ok = typed == null ? null : typed.trim().toLowerCase() === c.en.toLowerCase();
+    const res = typed == null ? null : checkAnswer(typed, c);
+    const ok = res == null ? null : res !== "bad";
     body = `
       ${meta}
       <div class="en-row">
         <p class="en-word">${esc(c.en)}</p>
       </div>
-      ${typed != null ? `<p class="typed ${ok ? "ok" : "bad"}">${ok ? "Richtig!" : `Deine Eingabe: <s>${esc(typed) || "–"}</s>`}</p>` : ""}
+      ${c.rd ? `<p class="rd">${esc(c.rd)}</p>` : ""}
+      ${typed != null ? `<p class="typed ${ok ? "ok" : "bad"}">${res === "ok" ? "Richtig!" : res === "almost" ? `Fast richtig – achte auf die Schreibweise: <s>${esc(typed)}</s>` : `Deine Eingabe: <s>${esc(typed) || "–"}</s>`}</p>` : ""}
       <p class="de-small">${esc(c.de)}</p>
       <div class="listen-row">
         <button class="btn ghost listen" data-say="${esc(c.en)}">${ICON.speaker}<span>Wort anhören</span></button>
@@ -471,7 +476,8 @@ function showCard(revealed = false, typed = null) {
   const design = designKey(s.design);
   if (design !== "paper") {
     const left = session.queue.length - session.pos;
-    const ok = typed == null ? null : typed.trim().toLowerCase() === c.en.toLowerCase();
+    const res = typed == null ? null : checkAnswer(typed, c);
+    const ok = res == null ? null : res !== "bad";
     const p = preview(c, Date.now(), s.retention);
     const card = (id) => S.getState().cards[id];
     const prev = [session.queue[session.pos - 2], session.queue[session.pos - 1]]
@@ -487,6 +493,8 @@ function showCard(revealed = false, typed = null) {
       .map((x) => ({ en: x.en, de: x.de, clozePlain: String(x.ex || "").replace(/\*[^*]+\*/g, "____") }));
     const x = {
       c, revealed, isNew, noteFF, icon: ICON,
+      langName: L().name,
+      enHtml: esc(c.en) + (c.rd ? `<small class="rd">${esc(c.rd)}</small>` : ""),
       topic: S.topicLabel(c.topic),
       posLabel: POS_LABEL[c.pos] || c.pos || "",
       cloze: c.ex ? clozeHtml(c.ex) : "",
@@ -501,9 +509,9 @@ function showCard(revealed = false, typed = null) {
       prev, next,
       ui: {
         header: sessionHeader(),
-        input: s.typeAnswer && !revealed ? `<input id="answer" class="answer" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Englisches Wort eingeben…">` : "",
+        input: s.typeAnswer && !revealed ? `<input id="answer" class="answer" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Wort auf ${L().name} eingeben…">` : "",
         hint: `<p class="hint" id="hint" hidden>${esc(hintFor(c.en))}</p>`,
-        typed: typed != null ? `<p class="typed ${ok ? "ok" : "bad"}">${ok ? "Richtig!" : `Deine Eingabe: <s>${esc(typed) || "–"}</s>`}</p>` : "",
+        typed: typed != null ? `<p class="typed ${ok ? "ok" : "bad"}">${res === "ok" ? "Richtig!" : res === "almost" ? `Fast richtig – achte auf die Schreibweise: <s>${esc(typed)}</s>` : `Deine Eingabe: <s>${esc(typed) || "–"}</s>`}</p>` : "",
         listen: `<div class="listen-row">
           <button class="btn ghost listen" data-say="${esc(c.en)}">${ICON.speaker}<span>Wort anhören</span></button>
           ${c.ex ? `<button class="btn ghost listen" data-say="${esc(plain(c.ex))}">${ICON.speaker}<span>Satz anhören</span></button>` : ""}</div>`,
@@ -789,7 +797,11 @@ function storyNew() {
 
 // Jedes Wort antippbar: markierte Lernwörter gelb, alle anderen unauffällig
 function storyHtml(st) {
-  const wrapWords = (t) => t.replace(/[A-Za-z][A-Za-z’'-]*[A-Za-z]|[A-Za-z]/g, (w) => `<span class="ow" data-w="${w}">${w}</span>`);
+  const seg = L().cjk && typeof Intl !== "undefined" && Intl.Segmenter ? new Intl.Segmenter(S.lang(), { granularity: "word" }) : null;
+  const wrapWords = (t) =>
+    seg
+      ? [...seg.segment(t)].map((x) => (x.isWordLike ? `<span class="ow" data-w="${x.segment}">${x.segment}</span>` : x.segment)).join("")
+      : t.replace(/[\p{L}\p{M}][\p{L}\p{M}’'-]*[\p{L}\p{M}]|[\p{L}\p{M}]/gu, (w) => `<span class="ow" data-w="${w}">${w}</span>`);
   return st.text
     .split(/\n\s*\n/)
     .map((p) => {
@@ -811,7 +823,7 @@ async function translateWord(word) {
   if (transCache.has(k)) return transCache.get(k);
   let out = "";
   try {
-    const res = await fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(word)}&langpair=en|de`);
+    const res = await fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(word)}&langpair=${L().mm}|de`);
     const data = await res.json();
     out = data?.responseData?.translatedText || "";
     if (out.toLowerCase() === k || /MYMEMORY|QUERY LENGTH/i.test(out)) out = "";
@@ -822,8 +834,9 @@ async function translateWord(word) {
 
 function sentenceWith(text, word) {
   const plainText = plain(text).replace(/\n+/g, " ");
-  const sentences = plainText.match(/[^.!?]+[.!?]+["”’]?/g) || [plainText];
-  const re = new RegExp(`\\b${word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i");
+  const sentences = plainText.match(/[^.!?。！？।]+[.!?。！？।]+["”’」]?/g) || [plainText];
+  const w = word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const re = L().cjk ? new RegExp(w, "i") : new RegExp(`(?<![\\p{L}\\p{M}])${w}(?![\\p{L}\\p{M}])`, "iu");
   const s = (sentences.find((x) => re.test(x)) || "").trim();
   return s ? s.replace(re, (m) => `*${m}*`) : "";
 }
@@ -843,7 +856,7 @@ async function showWordPop(st, word, isTarget) {
     const stateTxt = { new: "im Wortschatz – noch nicht gelernt", learning: "im Lernen", learned: "gelernt", known: "als bekannt markiert" }[state] || "";
     pop.innerHTML = `
       <div class="wp-main">
-        <div><b class="wp-en">${esc(word)}</b>${card && card.en.toLowerCase() !== word.toLowerCase() ? ` <span class="small muted">(${esc(card.en)})</span>` : ""}</div>
+        <div><b class="wp-en">${esc(word)}</b>${card && card.en.toLowerCase() !== word.toLowerCase() ? ` <span class="small muted">(${esc(card.en)})</span>` : ""}${(card?.rd || st.readings?.[word.toLowerCase()]) ? ` <span class="rd">${esc(card?.rd || st.readings[word.toLowerCase()])}</span>` : ""}</div>
         <div class="wp-de">${loading ? '<span class="muted">übersetze …</span>' : esc(trans || "keine Übersetzung gefunden")}</div>
         ${stateTxt ? `<div class="small muted">${stateTxt}</div>` : ""}
       </div>
@@ -1064,7 +1077,7 @@ function words() {
   <div class="tabs">${tabs
     .map(([k, l]) => `<button class="tab ${wordsTab === k ? "active" : ""}" data-tab="${k}">${l} <small>${counts[k]}</small></button>`)
     .join("")}</div>
-  <div class="searchbar">${ICON.search}<input id="q" type="search" placeholder="Suchen (Englisch oder Deutsch)" value="${esc(wordsQuery)}"></div>
+  <div class="searchbar">${ICON.search}<input id="q" type="search" placeholder="Suchen (${L().name} oder Deutsch)" value="${esc(wordsQuery)}"></div>
   <div class="chips filter">${["", ...LEVELS]
     .map((L) => `<button class="chip ${wordsLevel === L ? "active" : ""}" data-lvl="${L}">${L || "Alle"}</button>`)
     .join("")}
@@ -1167,7 +1180,7 @@ function add() {
   <header class="top"><a class="icon-btn plain" href="#/words" aria-label="Zurück">${ICON.back}</a>
     <h1 class="h-sm">Wort hinzufügen</h1><span></span></header>
   <section class="card">
-    <label class="field"><span>Englisch *</span><input id="f-en" autocapitalize="off" placeholder="z. B. reluctant"></label>
+    <label class="field"><span>${L().name} *</span><input id="f-en" autocapitalize="off" placeholder="z. B. reluctant"></label>
     <label class="field"><span>Deutsch</span><input id="f-de" placeholder="z. B. widerwillig, zögerlich"></label>
     <button class="btn ghost" id="fill">Rest mit KI ausfüllen</button>
     <label class="field"><span>Beispielsatz (Zielwort in *Sternchen*)</span><input id="f-ex" placeholder="He was *reluctant* to leave."></label>
@@ -1191,7 +1204,7 @@ function add() {
 
   document.getElementById("fill").onclick = async (e) => {
     const en = v("f-en");
-    if (!en) return toast("Bitte zuerst das englische Wort eingeben");
+    if (!en) return toast("Bitte zuerst das Wort auf " + L().name + " eingeben");
     const b = e.currentTarget;
     b.disabled = true;
     b.textContent = "KI füllt aus…";
@@ -1214,7 +1227,7 @@ function add() {
 
   document.getElementById("saveWord").onclick = () => {
     const en = v("f-en");
-    if (!en) return toast("Das englische Wort fehlt");
+    if (!en) return toast("Das Wort auf " + L().name + " fehlt");
     if (S.hasWord(en) && !confirm(`„${en}“ gibt es schon. Trotzdem hinzufügen?`)) return;
     S.addCustomCard({
       en,
@@ -1467,6 +1480,19 @@ function settingsView() {
   <header class="top"><a class="icon-btn plain" href="#/" aria-label="Zurück">${ICON.back}</a>
     <h1 class="h-sm">Einstellungen</h1><span></span></header>
   <section class="card">
+    <h2>Sprache</h2>
+    <p class="small muted">Jede Sprache hat ihren eigenen Fortschritt, eigene Geschichten und eine passende Stimme.</p>
+    <div class="lang-list">${Object.entries(LANGS)
+      .map(([code, l]) => {
+        const ready = READY.includes(code);
+        const sum = S.langSummary(code);
+        return `<button type="button" class="lang-opt ${code === S.lang() ? "on" : ""}" data-lang="${code}" ${ready ? "" : "disabled"}>
+          <span class="lang-flag">${l.flag}</span><span class="lang-t"><b>${l.name}</b>
+          <small class="muted">${!ready ? "kommt bald" : code === S.lang() ? "aktiv" : sum?.started ? `${sum.learned} Wörter sicher` : l.native}</small></span></button>`;
+      })
+      .join("")}</div>
+  </section>
+  <section class="card">
     <h2>Lernen</h2>
     <label class="field"><span>Neue Wörter pro Lerneinheit</span><input type="number" min="0" max="50" id="s-new" value="${s.newPerDay}"></label>
     <label class="field"><span>Geschichte nach je … neuen Wörtern</span><input type="number" min="3" max="25" id="s-story" value="${s.storyEvery}"></label>
@@ -1494,7 +1520,7 @@ function settingsView() {
       const v = tts.resolvePreset(p.key).voice;
       return `<label class="voice-opt ${ok ? "" : "na"}">
         <input type="radio" name="vp" value="${p.key}" ${s.voicePreset === p.key ? "checked" : ""} ${ok ? "" : "disabled"}>
-        <span class="vo-text"><b>${esc(p.label)}</b><small class="muted">${ok ? esc(p.hint) + (v ? " · " + esc(v.name.replace(/\s*\(.*\)$/, "")) : "") : "auf diesem Gerät keine passende Stimme"}</small></span>
+        <span class="vo-text"><b>${esc(p.label)}</b><small class="muted">${ok ? esc(tts.presetHint(p)) + (v ? " · " + esc(v.name.replace(/\s*\(.*\)$/, "")) : "") : "auf diesem Gerät keine passende Stimme"}</small></span>
         <button type="button" class="icon-btn small" data-try="${p.key}" ${ok ? "" : "disabled"} aria-label="Probe hören">${ICON.speaker}</button>
       </label>`;
     }).join("")}</div>
@@ -1566,14 +1592,14 @@ function settingsView() {
       (r.onchange = () => {
         st.settings.voicePreset = r.value;
         S.save();
-        say("Hello! This is how I will read your words to you.");
+        say(L().hello);
       })
   );
   $app.querySelectorAll("[data-try]").forEach(
     (b) =>
       (b.onclick = (e) => {
         e.preventDefault();
-        tts.speak("Hello! This is how I will read your words to you.", { rate: st.settings.voiceRate, preset: b.dataset.try });
+        tts.speak(L().hello, { rate: st.settings.voiceRate, preset: b.dataset.try });
       })
   );
   bindRateSlider("s-rate5");
@@ -1581,7 +1607,18 @@ function settingsView() {
   bind("s-secret", "appSecret");
   document.getElementById("s-ret").addEventListener("input", (e) => (document.getElementById("retv").textContent = Math.round(e.target.value * 100) + " %"));
 
-  document.getElementById("testVoice").onclick = () => say("The official announcement was made today.");
+  document.getElementById("testVoice").onclick = () => say(L().hello);
+  $app.querySelectorAll("[data-lang]").forEach(
+    (b) =>
+      (b.onclick = async () => {
+        if (b.dataset.lang === S.lang()) return;
+        await S.setLanguage(b.dataset.lang);
+        tts.setLang(S.lang(), L().tts);
+        applyDesign(settings().design);
+        toast(`${L().flag} Du lernst jetzt ${L().name}`);
+        go("#/");
+      })
+  );
 
   bind("s-ollama", "ollamaModel");
   bind("s-gkey", "geminiKey", (x) => x.trim());
@@ -1669,7 +1706,8 @@ function settingsView() {
 }
 
 // ---------- Start ----------
-S.load();
+await S.init();
+tts.setLang(S.lang(), L().tts);
 applyDesign(settings().design);
 render();
 
