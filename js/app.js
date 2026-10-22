@@ -29,7 +29,7 @@ const WEEKDAYS = ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"];
 
 function say(text, onend) {
   const s = settings();
-  tts.speak(text, { rate: s.voiceRate, voiceName: s.voiceName, onend });
+  tts.speak(text, { rate: s.voiceRate, preset: s.voicePreset, onend });
 }
 
 // Schieberegler mit 5 Tempostufen (überall gleich, Wert wird gespeichert)
@@ -867,7 +867,7 @@ function storyDetail(st) {
     play.innerHTML = `${ICON.stop}<span>Stopp</span>`;
     tts.speak(st.title + ". " + plain(st.text), {
       rate: settings().voiceRate,
-      voiceName: settings().voiceName,
+      preset: settings().voicePreset,
       onend: () => (play.innerHTML = `${ICON.play}<span>Vorlesen</span>`),
     });
   };
@@ -1342,7 +1342,6 @@ function stats() {
 // ---------- Einstellungen ----------
 function settingsView() {
   const s = settings();
-  const voices = tts.englishVoices();
   $app.innerHTML = `
   <header class="top"><a class="icon-btn plain" href="#/" aria-label="Zurück">${ICON.back}</a>
     <h1 class="h-sm">Einstellungen</h1><span></span></header>
@@ -1360,9 +1359,15 @@ function settingsView() {
   </section>
   <section class="card">
     <h2>Stimme</h2>
-    <label class="field"><span>Englische Stimme</span><select id="s-voice"><option value="">Automatisch (natürlichste Stimme)</option>${voices
-      .map((v) => `<option value="${esc(v.name)}" ${v.name === s.voiceName ? "selected" : ""}>${esc(v.name)} (${esc(v.lang)})</option>`)
-      .join("")}</select></label>
+    <div class="voice-list">${tts.PRESETS.map((p) => {
+      const ok = tts.presetAvailable(p.key);
+      const v = tts.resolvePreset(p.key).voice;
+      return `<label class="voice-opt ${ok ? "" : "na"}">
+        <input type="radio" name="vp" value="${p.key}" ${s.voicePreset === p.key ? "checked" : ""} ${ok ? "" : "disabled"}>
+        <span class="vo-text"><b>${esc(p.label)}</b><small class="muted">${ok ? esc(p.hint) + (v ? " · " + esc(v.name.replace(/\s*\(.*\)$/, "")) : "") : "auf diesem Gerät keine passende Stimme"}</small></span>
+        <button type="button" class="icon-btn small" data-try="${p.key}" ${ok ? "" : "disabled"} aria-label="Probe hören">${ICON.speaker}</button>
+      </label>`;
+    }).join("")}</div>
     ${rateSlider("s-rate5")}
     <button class="btn ghost" id="testVoice">${ICON.speaker}<span>Testen</span></button>
   </section>
@@ -1417,7 +1422,21 @@ function settingsView() {
   bind("s-ret", "retention", Number, "input");
   bind("s-type", "typeAnswer");
   bind("s-auto", "autoSpeak");
-  bind("s-voice", "voiceName");
+  $app.querySelectorAll('input[name="vp"]').forEach(
+    (r) =>
+      (r.onchange = () => {
+        st.settings.voicePreset = r.value;
+        S.save();
+        say("Hello! This is how I will read your words to you.");
+      })
+  );
+  $app.querySelectorAll("[data-try]").forEach(
+    (b) =>
+      (b.onclick = (e) => {
+        e.preventDefault();
+        tts.speak("Hello! This is how I will read your words to you.", { rate: st.settings.voiceRate, preset: b.dataset.try });
+      })
+  );
   bindRateSlider("s-rate5");
   bind("s-api", "apiBase");
   bind("s-secret", "appSecret");

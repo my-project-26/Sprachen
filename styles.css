@@ -444,3 +444,9 @@ body[data-view="learn"] .toast { bottom: calc(env(safe-area-inset-bottom) + 24px
 .wp-en { font-family: var(--serif); font-size: 1.25rem; }
 .wp-de { font-size: 1.02rem; }
 .wp-actions { display: flex; gap: 6px; align-items: center; }
+.voice-list { display: flex; flex-direction: column; gap: 8px; margin: 6px 0 10px; }
+.voice-opt { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 14px; background: var(--bg); cursor: pointer; }
+.voice-opt input { width: 20px; height: 20px; accent-color: var(--accent); flex: none; }
+.voice-opt .vo-text { flex: 1; display: flex; flex-direction: column; min-width: 0; }
+.voice-opt.na { opacity: .5; cursor: default; }
+.voice-opt:has(input:checked) { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); }
