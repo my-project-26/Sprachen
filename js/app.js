@@ -155,7 +155,7 @@ function home() {
         ? `<a class="btn primary big" href="#/learn">${total} ${total === 1 ? "Wort" : "Wörter"} üben</a>`
         : wordsLeft
           ? `<p class="done-msg">Für heute ist alles erledigt.</p>
-             <button class="btn ghost" id="extraBtn">5 zusätzliche neue Wörter</button>`
+             <button class="btn ghost" id="extraBtn">10 weitere neue Wörter</button>`
           : `<p class="done-msg">In diesem Bereich gibt es keine neuen Wörter mehr.</p>
              <button class="btn ghost" id="extraBtn">Anderes Thema wählen</button>`
     }
@@ -211,7 +211,7 @@ function home() {
   const extra = document.getElementById("extraBtn");
   if (extra)
     extra.onclick = () =>
-      topicPicker({ title: "Aus welchem Bereich möchtest du 5 neue Wörter?", requireWords: true, onPick: () => go("#/learn/extra") });
+      topicPicker({ title: "Aus welchem Bereich möchtest du 10 neue Wörter?", requireWords: true, onPick: () => go("#/learn/extra") });
 }
 
 // Auswahl-Dialog: Bereich wählen, mit Fortschritt je Thema
@@ -273,7 +273,7 @@ function buildQueue(arg) {
   if (arg === "weak") return shuffle(S.weakCards().map((c) => c.id));
   const due = S.dueCards().map((c) => c.id);
   let news;
-  if (arg === "extra") news = S.nextNewCards(5).map((c) => c.id);
+  if (arg === "extra") news = S.nextNewCards(Math.max(1, settings().newPerDay)).map((c) => c.id);
   else news = S.newCardsToday().map((c) => c.id);
   // Neue Wörter zwischen die Wiederholungen mischen (nach je 2 Wiederholungen eins)
   const q = [];
@@ -1207,7 +1207,7 @@ function settingsView() {
     <h1 class="h-sm">Einstellungen</h1><span></span></header>
   <section class="card">
     <h2>Lernen</h2>
-    <label class="field"><span>Neue Wörter pro Tag</span><input type="number" min="0" max="50" id="s-new" value="${s.newPerDay}"></label>
+    <label class="field"><span>Neue Wörter pro Lerneinheit</span><input type="number" min="0" max="50" id="s-new" value="${s.newPerDay}"></label>
     <label class="field"><span>Geschichte nach je … neuen Wörtern</span><input type="number" min="3" max="25" id="s-story" value="${s.storyEvery}"></label>
     <a class="btn ghost" href="#/topics">Themen auswählen</a>
     <label class="field"><span>Neue Wörter ab Niveau</span><select id="s-start">${LEVELS.map((L) => `<option ${L === s.startLevel ? "selected" : ""}>${L}</option>`).join("")}</select></label>

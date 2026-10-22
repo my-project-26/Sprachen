@@ -375,9 +375,11 @@ export function nextNewCards(n) {
   return res;
 }
 
+// Jede Lerneinheit bietet immer volle Blöcke neuer Wörter an (Standard: 10),
+// unabhängig davon, wie viele heute schon gelernt wurden.
 export function newCardsToday() {
   const s = load();
-  return nextNewCards(Math.max(0, s.settings.newPerDay - today().newCards));
+  return nextNewCards(Math.max(1, s.settings.newPerDay));
 }
 
 export function newWordsLeft() {
