@@ -28,7 +28,7 @@ export const DEFAULT_SETTINGS = {
 
 // Nur diese Felder werden für Wörter aus der Wortliste gespeichert –
 // die Wortliste selbst kommt aus dem Code (js/words.js, js/wordbank.js).
-const PROGRESS_KEYS = ["state", "stability", "difficulty", "due", "lastReview", "reps", "lapses", "introducedAt", "knownAt", "inStory"];
+const PROGRESS_KEYS = ["state", "stability", "difficulty", "due", "lastReview", "reps", "lapses", "introducedAt", "knownAt", "inStory", "weak", "weakOk"];
 
 function pickProgress(c) {
   const p = {};
@@ -413,6 +413,30 @@ export function weekDots() {
       future: i > dow,
     };
   });
+}
+
+// ---------- „Muss ich noch lernen“ ----------
+// Wörter, die du als „Muss ich noch lernen“ markiert hast. Sie kommen zusätzlich
+// immer wieder dran, bis du sie zweimal hintereinander gewusst hast.
+export function weakCards() {
+  return cards().filter((c) => c.weak && c.state !== "known");
+}
+
+export function markWeak(card, knewIt) {
+  const c = { ...card };
+  if (knewIt) {
+    if (c.weak) {
+      c.weakOk = (c.weakOk || 0) + 1;
+      if (c.weakOk >= 2) {
+        c.weak = false;
+        c.weakOk = 0;
+      }
+    }
+  } else {
+    c.weak = true;
+    c.weakOk = 0;
+  }
+  return c;
 }
 
 // ---------- Eigene Wörter ----------

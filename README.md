@@ -4,7 +4,7 @@ Vokabeltrainer als Web-App (PWA) nach dem Vorbild von Vocabuo – mit drei Erwei
 
 1. **Geschichten:** Sobald 10 Wörter gesehen, aber noch nicht sicher sind, schreibt die KI eine kurze Geschichte mit genau diesen Wörtern – gemischt mit Wörtern, die schon sitzen – mit Vorlesefunktion, Verständnisfragen und Lückentext.
 2. **Themen:** Wähle, aus welchen Themen neue Wörter kommen (z. B. Reisen, Camping, Radfahren), und lege eigene Themen an, die die KI mit Wörtern füllt. Jede Geschichte entsteht aus einem Thema.
-3. **FSRS-5** statt fester Stufen: vier Bewertungen (Nochmal / Schwer / Gut / Leicht), Intervalle passen sich jedem Wort an.
+3. **FSRS-5** statt fester Stufen: drei Bewertungen (Muss ich noch lernen / Unsicher / Wusste ich). „Muss ich noch lernen“-Wörter kommen in jeder Sitzung zwischendurch wieder dran, bis sie zweimal hintereinander sitzen.
 4. **C1-orientierte Karten:** Niveau-Tags (B1–C1), Themen, Kollokationen, False-Friend-Warnungen.
 
 ## Wortschatz

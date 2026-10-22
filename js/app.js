@@ -170,6 +170,17 @@ function home() {
     ${active.length === allKeys.length ? `<p class="small muted">Alle Themen aktiv – wähle aus, was du wirklich brauchst.</p>` : ""}
   </a>
 
+  ${(() => {
+    const w = S.weakCards().length;
+    return w
+      ? `<section class="card weak-card">
+          <div class="row-between"><h2>Muss ich noch lernen</h2><span class="badge-num">${w}</span></div>
+          <p class="small muted">Diese Wörter kommen in jeder Sitzung zwischendurch wieder dran, bis du sie zweimal hintereinander gewusst hast.</p>
+          <a class="btn ghost" href="#/learn/weak">Jetzt gezielt üben</a>
+        </section>`
+      : "";
+  })()}
+
   <section class="card story-teaser ${ready ? "ready" : ""}">
     <div class="row-between">
       <h2>Nächste Geschichte</h2>
@@ -259,6 +270,7 @@ function buildQueue(arg) {
     const st = S.getState().stories.find((x) => x.id === arg.slice(6));
     return (st?.wordIds || []).filter((id) => S.getState().cards[id]);
   }
+  if (arg === "weak") return shuffle(S.weakCards().map((c) => c.id));
   const due = S.dueCards().map((c) => c.id);
   let news;
   if (arg === "extra") news = S.nextNewCards(5).map((c) => c.id);
@@ -269,12 +281,22 @@ function buildQueue(arg) {
     q.push(...due.splice(0, 2));
     if (news.length) q.push(news.shift());
   }
+  // „Muss ich noch lernen“-Wörter zwischendurch immer wieder abfragen (bis zu 3 pro Sitzung)
+  if (q.length && arg !== "extra") {
+    const inQ = new Set(q);
+    const extra = shuffle(S.weakCards().filter((c) => !inQ.has(c.id))).slice(0, 3);
+    extra.forEach((c, i) => q.splice(Math.min(q.length, 3 + i * 4), 0, c.id));
+  }
   return q;
 }
 
 function learn(arg) {
   session = { queue: buildQueue(arg), pos: 0, done: 0, correct: 0, again: 0, total: 0, fromStory: arg?.startsWith("story:") };
   session.total = session.queue.length;
+  // Karten, die heute nicht fällig sind, werden nur geübt (ohne Intervall-Änderung)
+  const dueIds = new Set([...S.dueCards(), ...S.cards().filter((c) => c.state === "new")].map((c) => c.id));
+  session.practice = new Set(session.queue.filter((id) => !dueIds.has(id)));
+  session.scheduled = new Set();
   if (!session.total) {
     $app.innerHTML = `<div class="center-msg"><h1>Nichts fällig</h1><p class="muted">Alle Karten sind erledigt.</p>
       <a class="btn primary" href="#/">Zur Startseite</a></div>`;
@@ -315,7 +337,7 @@ function showCard(revealed = false, typed = null) {
       <span class="badge lvl-${c.level}">${c.level}</span>
       <span class="chip">${esc(S.topicLabel(c.topic))}</span>
       ${isNew ? '<span class="chip new">Neu</span>' : ""}
-      ${c.lapses >= 2 ? '<span class="chip warn">Schwierig</span>' : ""}
+      ${c.weak ? '<span class="chip warn">Noch lernen</span>' : ""}
     </div>`;
 
   let body;
@@ -352,11 +374,13 @@ function showCard(revealed = false, typed = null) {
       </div>
       <button class="btn primary big" id="reveal">Aufdecken</button>`;
   } else {
+    const practice = session.practice.has(c.id);
     const p = preview(c, Date.now(), s.retention);
-    const lbl = { 1: "Nochmal", 2: "Schwer", 3: "Gut", 4: "Leicht" };
-    actions = `<div class="grades">${[1, 2, 3, 4]
-      .map((g) => `<button class="grade g${g}" data-g="${g}"><span>${lbl[g]}</span><small>${formatInterval(p[g])}</small></button>`)
-      .join("")}</div>
+    actions = `<div class="grades three">
+        <button class="grade g1" data-g="1"><span>Muss ich noch lernen</span><small>gleich nochmal</small></button>
+        <button class="grade g2" data-g="2"><span>Unsicher</span><small>${practice ? "Übung" : "in " + formatInterval(p[2])}</small></button>
+        <button class="grade g3" data-g="3"><span>Wusste ich</span><small>${practice ? "Übung" : "in " + formatInterval(p[3])}</small></button>
+      </div>
       <button class="btn ghost known-btn" id="knownBtn">Kenne ich schon – nicht mehr abfragen</button>`;
   }
 
@@ -394,15 +418,22 @@ function markKnown(c) {
 
 function rate(g) {
   const c = currentCard();
+  const knew = g > 1;
   const wasNew = c.state === "new";
-  const next = schedule(c, g, Date.now(), settings().retention);
+  // Zusätzliche Übung (nicht fällig): Intervalle nicht verändern, nur „noch lernen“ pflegen
+  const practice = session.practice.has(c.id) && !session.scheduled.has(c.id);
+  let next = practice ? { ...c } : schedule(c, g, Date.now(), settings().retention);
+  if (!practice) session.scheduled.add(c.id);
+  // „Unsicher“ (2): kürzeres Intervall, ändert den „noch lernen“-Status nicht
+  if (g !== 2) next = S.markWeak(next, knew);
   S.updateCard(next);
   S.logReview(g, next, wasNew);
   session.done++;
-  if (g > 1) session.correct++;
+  if (knew) session.correct++;
   else {
     session.again++;
-    // Karte später in dieser Sitzung erneut zeigen
+    // Karte nach 3 anderen Karten erneut zeigen – so lange, bis du sie weißt
+    session.practice.add(c.id);
     const at = Math.min(session.queue.length, session.pos + 4);
     session.queue.splice(at, 0, c.id);
   }
@@ -431,7 +462,7 @@ document.addEventListener("keydown", (e) => {
   if (reveal && (e.key === " " || e.key === "Enter")) {
     e.preventDefault();
     reveal.click();
-  } else if (!reveal && ["1", "2", "3", "4"].includes(e.key)) {
+  } else if (!reveal && ["1", "2", "3"].includes(e.key)) {
     const b = $app.querySelector(`[data-g="${e.key}"]`);
     if (b) b.click();
   }
