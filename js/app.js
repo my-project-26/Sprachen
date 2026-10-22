@@ -1358,6 +1358,21 @@ function settingsView() {
     <label class="check"><input type="checkbox" id="s-auto" ${s.autoSpeak ? "checked" : ""}> Mit Stimme (Wort beim Aufdecken automatisch vorlesen)</label>
   </section>
   <section class="card">
+    <h2>Design</h2>
+    <div class="design-list">${[
+      ["paper", "Papier", "warm, ruhig, wie ein Buch", ["#f5efe3", "#0f6b5f", "#ffd86b"]],
+      ["business", "Fresh Business", "kühl, klar, präzise", ["#f4f6f9", "#1f5eff", "#9fd8ff"]],
+      ["pop", "Pop", "jugendlich, bunt, verspielt", ["#fff4e8", "#7b2ff7", "#c6ff4d"]],
+      ["night", "Nacht", "dunkel, Fokus, schont die Augen", ["#0d1117", "#36e0b0", "#ffb84d"]],
+    ]
+      .map(
+        ([k, n, d, c]) => `<button type="button" class="design-opt ${s.design === k ? "on" : ""}" data-design="${k}">
+          <span class="sw-row">${c.map((x) => `<i style="background:${x}"></i>`).join("")}</span>
+          <b>${n}</b><span class="small muted">${d}</span></button>`
+      )
+      .join("")}</div>
+  </section>
+  <section class="card">
     <h2>Stimme</h2>
     <div class="voice-list">${tts.PRESETS.map((p) => {
       const ok = tts.presetAvailable(p.key);
@@ -1422,6 +1437,15 @@ function settingsView() {
   bind("s-ret", "retention", Number, "input");
   bind("s-type", "typeAnswer");
   bind("s-auto", "autoSpeak");
+  $app.querySelectorAll("[data-design]").forEach(
+    (b) =>
+      (b.onclick = () => {
+        st.settings.design = b.dataset.design;
+        S.save();
+        document.documentElement.dataset.style = b.dataset.design;
+        $app.querySelectorAll("[data-design]").forEach((x) => x.classList.toggle("on", x === b));
+      })
+  );
   $app.querySelectorAll('input[name="vp"]').forEach(
     (r) =>
       (r.onchange = () => {
@@ -1531,6 +1555,7 @@ function settingsView() {
 
 // ---------- Start ----------
 S.load();
+document.documentElement.dataset.style = settings().design || "paper";
 render();
 
 if ("serviceWorker" in navigator && location.protocol !== "file:") {

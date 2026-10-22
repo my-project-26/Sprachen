@@ -13,6 +13,7 @@ export const DEFAULT_SETTINGS = {
   startLevel: "B1",
   storyLevel: "B2",
   voiceRate: 0.95,
+  design: "paper", // paper | business | pop | night
   voicePreset: "clear-f", // clear-f/m, friend-f/m, strict-f/m
   apiBase: "",
   appSecret: "",
