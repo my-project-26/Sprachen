@@ -430,3 +430,17 @@ body[data-view="learn"] .toast { bottom: calc(env(safe-area-inset-bottom) + 24px
 .rate-slider input { flex: 1; accent-color: var(--accent); }
 .rate-slider b { min-width: 84px; text-align: right; }
 .reader-controls { flex-wrap: wrap; }
+.ow { cursor: pointer; border-radius: 3px; }
+.ow:hover { background: var(--surface-2); }
+.ow.sel { background: var(--accent-soft); }
+.tw.sel { outline: 2px solid var(--accent); }
+.word-pop {
+  position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(env(safe-area-inset-bottom) + 84px); z-index: 25;
+  width: min(528px, calc(100% - 24px)); background: var(--surface); border: 1px solid var(--line); border-radius: 18px;
+  box-shadow: 0 14px 40px -12px rgba(0,0,0,.35); padding: 12px 12px 12px 16px; display: flex; gap: 10px; align-items: center;
+  animation: rise .15s ease;
+}
+.wp-main { flex: 1; min-width: 0; }
+.wp-en { font-family: var(--serif); font-size: 1.25rem; }
+.wp-de { font-size: 1.02rem; }
+.wp-actions { display: flex; gap: 6px; align-items: center; }

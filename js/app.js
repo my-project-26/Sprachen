@@ -124,7 +124,7 @@ const routes = { home, learn, stories, story, words, add, topics, stats, setting
 function render() {
   tts.stop();
   document.getElementById("toast").classList.remove("show");
-  document.querySelectorAll(".sheet-backdrop").forEach((x) => x.remove());
+  document.querySelectorAll(".sheet-backdrop, .word-pop").forEach((x) => x.remove());
   const [name, ...rest] = location.hash.replace(/^#\/?/, "").split("/");
   const arg = rest.length ? decodeURIComponent(rest.join("/")) : undefined;
   const view = routes[name] || home;
@@ -666,14 +666,104 @@ function storyNew() {
   };
 }
 
+// Jedes Wort antippbar: markierte Lernwörter gelb, alle anderen unauffällig
 function storyHtml(st) {
+  const wrapWords = (t) => t.replace(/[A-Za-z][A-Za-z’'-]*[A-Za-z]|[A-Za-z]/g, (w) => `<span class="ow" data-w="${w}">${w}</span>`);
   return st.text
     .split(/\n\s*\n/)
-    .map(
-      (p) =>
-        `<p>${esc(p).replace(/\*\*([^*]+)\*\*/g, (m, w) => `<button class="tw" data-w="${esc(w)}">${w}</button>`)}</p>`
-    )
+    .map((p) => {
+      const parts = p.split(/(\*\*[^*]+\*\*)/g);
+      return `<p>${parts
+        .map((part) => {
+          const m = part.match(/^\*\*([^*]+)\*\*$/);
+          return m ? `<button class="tw" data-w="${esc(m[1])}">${esc(m[1])}</button>` : wrapWords(esc(part));
+        })
+        .join("")}</p>`;
+    })
     .join("");
+}
+
+// Übersetzung für beliebige Wörter: erst eigener Wortschatz, dann kostenloser Übersetzer
+const transCache = new Map();
+async function translateWord(word) {
+  const k = word.toLowerCase();
+  if (transCache.has(k)) return transCache.get(k);
+  let out = "";
+  try {
+    const res = await fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(word)}&langpair=en|de`);
+    const data = await res.json();
+    out = data?.responseData?.translatedText || "";
+    if (out.toLowerCase() === k || /MYMEMORY|QUERY LENGTH/i.test(out)) out = "";
+  } catch {}
+  transCache.set(k, out);
+  return out;
+}
+
+function sentenceWith(text, word) {
+  const plainText = plain(text).replace(/\n+/g, " ");
+  const sentences = plainText.match(/[^.!?]+[.!?]+["”’]?/g) || [plainText];
+  const re = new RegExp(`\\b${word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i");
+  const s = (sentences.find((x) => re.test(x)) || "").trim();
+  return s ? s.replace(re, (m) => `*${m}*`) : "";
+}
+
+// Kleines Fenster unten: Wort, Übersetzung, Anhören, „Zum Lernen“
+async function showWordPop(st, word, isTarget) {
+  document.querySelectorAll(".word-pop").forEach((x) => x.remove());
+  say(word);
+  const card = S.lookupWord(word);
+  let de = isTarget ? glossFor(st, word) : "";
+  if (!de && card) de = card.de;
+  const pop = document.createElement("div");
+  pop.className = "word-pop";
+  pop.setAttribute("role", "dialog");
+  const render = (trans, loading) => {
+    const state = card ? S.categorize(card) : null;
+    const stateTxt = { new: "im Wortschatz – noch nicht gelernt", learning: "im Lernen", learned: "gelernt", known: "als bekannt markiert" }[state] || "";
+    pop.innerHTML = `
+      <div class="wp-main">
+        <div><b class="wp-en">${esc(word)}</b>${card && card.en.toLowerCase() !== word.toLowerCase() ? ` <span class="small muted">(${esc(card.en)})</span>` : ""}</div>
+        <div class="wp-de">${loading ? '<span class="muted">übersetze …</span>' : esc(trans || "keine Übersetzung gefunden")}</div>
+        ${stateTxt ? `<div class="small muted">${stateTxt}</div>` : ""}
+      </div>
+      <div class="wp-actions">
+        <button class="icon-btn" data-wp="say" aria-label="Anhören">${ICON.speaker}</button>
+        ${!card || card.state === "known" || card.state === "new" ? `<button class="btn primary small-btn" data-wp="add">${ICON.plus}<span>Lernen</span></button>` : ""}
+        <button class="icon-btn plain" data-wp="close" aria-label="Schließen">${ICON.close}</button>
+      </div>`;
+  };
+  render(de, !de);
+  document.body.appendChild(pop);
+  pop.onclick = (e) => {
+    const a = e.target.closest("[data-wp]")?.dataset.wp;
+    if (a === "say") say(card && card.en.toLowerCase() !== word.toLowerCase() ? word : card?.en || word);
+    if (a === "close") pop.remove();
+    if (a === "add") {
+      const trans = pop.querySelector(".wp-de")?.textContent || "";
+      if (card) {
+        // vorhandenes Wort: als Nächstes lernen bzw. wieder aufnehmen
+        const r = { ...card, state: "new", order: -Date.now(), weak: true, weakOk: 0 };
+        S.updateCard(r);
+      } else {
+        const topicKey = Object.entries(S.allTopics()).find(([, v]) => v === st.theme)?.[0] || "alltag";
+        S.addCustomCard({
+          en: word.toLowerCase(),
+          de: /keine Übersetzung/.test(trans) ? "" : trans,
+          ex: sentenceWith(st.text, word),
+          exDe: "",
+          level: "B2",
+          topic: topicKey,
+          front: true,
+        });
+      }
+      toast(`„${esc(word)}“ kommt in deiner nächsten Lerneinheit dran`);
+      pop.remove();
+    }
+  };
+  if (!de) {
+    const t = await translateWord(card?.en || word);
+    if (document.body.contains(pop)) render(t, false);
+  }
 }
 
 function glossFor(st, word) {
@@ -715,7 +805,7 @@ function storyDetail(st) {
       ${rateSlider("storyRate")}
     </div>
     <div class="story-text">${storyHtml(st)}</div>
-    <p class="small muted">Tippe auf ein markiertes Wort für die Übersetzung.</p>
+    <p class="small muted">Tippe auf ein beliebiges Wort für Übersetzung und Aussprache. Gelb = deine Lernwörter.</p>
   </article>
 
   ${
@@ -755,15 +845,14 @@ function storyDetail(st) {
     <a class="btn primary" href="#/learn/story:${st.id}">Diese Wörter jetzt üben</a>
   </section>`;
 
-  // Wort-Übersetzung
-  $app.querySelectorAll(".tw").forEach(
-    (b) =>
-      (b.onclick = () => {
-        const g = glossFor(st, b.dataset.w);
-        if (settings().autoSpeak) say(b.dataset.w);
-        toast(`<b>${esc(b.dataset.w)}</b> – ${esc(g || "?")}`);
-      })
-  );
+  // Jedes Wort antippen: Übersetzung + Aussprache
+  $app.querySelector(".story-text").addEventListener("click", (e) => {
+    const t = e.target.closest(".tw, .ow");
+    if (!t) return;
+    $app.querySelectorAll(".ow.sel, .tw.sel").forEach((x) => x.classList.remove("sel"));
+    t.classList.add("sel");
+    showWordPop(st, t.dataset.w, t.classList.contains("tw"));
+  });
 
   // Vorlesen
   bindRateSlider("storyRate");

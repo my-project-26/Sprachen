@@ -1,6 +1,6 @@
 // Service Worker: macht die App offline nutzbar (Lernen geht ohne Internet,
 // nur Geschichten/KI brauchen eine Verbindung).
-const CACHE = "wortwerk-v6";
+const CACHE = "wortwerk-v7";
 const ASSETS = [
   "./",
   "index.html",
@@ -36,6 +36,8 @@ self.addEventListener("fetch", (e) => {
   const url = new URL(e.request.url);
   if (e.request.method !== "GET" || url.pathname.includes("/api/")) return;
   if (url.origin !== location.origin) {
+    // Nur Schriften cachen; KI-, Übersetzungs- und andere Dienste direkt durchlassen
+    if (!/fonts\.(googleapis|gstatic)\.com$/.test(url.hostname)) return;
     // Schriften: aus dem Cache, sonst Netz
     e.respondWith(
       caches.match(e.request).then(

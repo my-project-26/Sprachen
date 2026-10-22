@@ -417,6 +417,47 @@ export function weekDots() {
   });
 }
 
+// ---------- Wort nachschlagen (für Geschichten) ----------
+let wordIndex = null;
+function index() {
+  if (!wordIndex) {
+    wordIndex = new Map();
+    for (const c of cards()) wordIndex.set(c.en.toLowerCase(), c);
+  }
+  return wordIndex;
+}
+
+// Grundform raten: travelled → travel, countries → country, making → make …
+export function lemmaCandidates(word) {
+  const w = word.toLowerCase().replace(/[’']s$/, "");
+  const c = [w];
+  const add = (x) => x && x.length > 1 && !c.includes(x) && c.push(x);
+  if (w.endsWith("ies")) add(w.slice(0, -3) + "y");
+  if (w.endsWith("es")) add(w.slice(0, -2));
+  if (w.endsWith("s")) add(w.slice(0, -1));
+  if (w.endsWith("ied")) add(w.slice(0, -3) + "y");
+  if (w.endsWith("ed")) {
+    add(w.slice(0, -2));
+    add(w.slice(0, -1));
+    if (/(.)\1ed$/.test(w)) add(w.slice(0, -3));
+  }
+  if (w.endsWith("ing")) {
+    add(w.slice(0, -3));
+    add(w.slice(0, -3) + "e");
+    if (/(.)\1ing$/.test(w)) add(w.slice(0, -4));
+  }
+  if (w.endsWith("er")) add(w.slice(0, -2));
+  if (w.endsWith("est")) add(w.slice(0, -3));
+  if (w.endsWith("ly")) add(w.slice(0, -2));
+  return c;
+}
+
+export function lookupWord(word) {
+  const idx = index();
+  for (const k of lemmaCandidates(word)) if (idx.has(k)) return idx.get(k);
+  return null;
+}
+
 // ---------- „Muss ich noch lernen“ ----------
 // Wörter, die du als „Muss ich noch lernen“ markiert hast. Sie kommen zusätzlich
 // immer wieder dran, bis du sie zweimal hintereinander gewusst hast.
@@ -462,6 +503,7 @@ export function addCustomCard(data) {
     custom: true,
   };
   s.cards[id] = card;
+  wordIndex = null;
   save();
   return card;
 }
