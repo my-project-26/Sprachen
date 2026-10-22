@@ -1,6 +1,10 @@
 <!doctype html>
 <html lang="de">
-<script>try{var d=JSON.parse(localStorage.getItem("wortwerk.v1")||"{}");document.documentElement.dataset.style=(d.settings&&d.settings.design)||"paper";}catch(e){document.documentElement.dataset.style="paper";}</script>
+<script>(function(){var k="paper";try{var d=JSON.parse(localStorage.getItem("wortwerk.v1")||"{}");k=(d.settings&&d.settings.design)||"paper";}catch(e){}
+var F={bordkarte:"Barlow+Condensed:wght@500;600;700",stapel:"Poppins:wght@400;500;600;700",heft:"Caveat:wght@500;700&family=Lora:ital,wght@0,400;0,600;1,400",retro:"VT323&family=Orbitron:wght@700;900",musik:"Manrope:wght@500;700;800",kunst:"Jost:wght@400;500;700",sport:"Oswald:wght@500;700&family=Share+Tech+Mono"};
+var ok=["paper","bordkarte","stapel","chat","heft","glas","retro","musik","kunst","sport"];if(ok.indexOf(k)<0)k="paper";
+document.documentElement.dataset.style=k;
+if(F[k])document.write('<link id="skinFonts" rel="stylesheet" href="https://fonts.googleapis.com/css2?family='+F[k]+'&display=swap">');})();</script>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -17,8 +21,9 @@
   <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;700;800&family=Nunito:wght@600;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="skins.css">
 </head>
 <body>
   <main id="app" class="app"></main>

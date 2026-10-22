@@ -13,6 +13,8 @@
   --ok: #2f8a4a;
   --bad: #c2412d;
   --warn: #b7791f;
+  --a1: #c0841a;
+  --a2: #b0602a;
   --b1: #4f8a6b;
   --b2: #2f6f9f;
   --c1: #8a4fa0;
@@ -159,6 +161,8 @@ h3 { font-size: 1.1rem; }
 .lvl-row { display: flex; align-items: center; gap: 10px; margin: 10px 0; }
 
 .badge { display: inline-block; font-size: .72rem; font-weight: 700; padding: 2px 8px; border-radius: 6px; color: #fff; vertical-align: middle; letter-spacing: .03em; }
+.badge.lvl-A1 { background: var(--a1); }
+.badge.lvl-A2 { background: var(--a2); }
 .badge.lvl-B1 { background: var(--b1); }
 .badge.lvl-B2 { background: var(--b2); }
 .badge.lvl-C1 { background: var(--c1); }
@@ -451,60 +455,10 @@ body[data-view="learn"] .toast { bottom: calc(env(safe-area-inset-bottom) + 24px
 .voice-opt.na { opacity: .5; cursor: default; }
 .voice-opt:has(input:checked) { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); }
 
-/* ================= Designs (Einstellungen → Design) ================= */
-/* 2 · Fresh Business – kühl, klar, präzise */
-html:root[data-style="business"] {
-  --bg: #f4f6f9; --surface: #ffffff; --surface-2: #eef1f6; --ink: #0f1b2d; --muted: #5d6b80; --line: #dfe4ec;
-  --accent: #1f5eff; --accent-ink: #ffffff; --accent-soft: #e4ecff; --marker: #9fd8ff; --marker-soft: #e6f5ff;
-  --ok: #138a5b; --bad: #d23b3b; --b1: #2f9e7a; --b2: #1f5eff; --c1: #7a3cff;
-  --radius: 12px; --shadow: 0 1px 2px rgba(15, 27, 45, .06), 0 8px 24px -16px rgba(15, 27, 45, .25);
-  --serif: "Plus Jakarta Sans", Inter, system-ui, sans-serif; --sans: "Inter", system-ui, sans-serif; color-scheme: light;
-}
-html:root[data-style="business"] h1, html:root[data-style="business"] h2, html:root[data-style="business"] h3 { font-weight: 800; letter-spacing: -.02em; }
-html:root[data-style="business"] .btn, html:root[data-style="business"] .tab, html:root[data-style="business"] .nav a { border-radius: 10px; }
-html:root[data-style="business"] .story-text { font-family: var(--sans); font-weight: 400; }
-
-/* 3 · Pop – jugendlich, bunt, verspielt */
-html:root[data-style="pop"] {
-  --bg: #fff4e8; --surface: #ffffff; --surface-2: #ffe9d6; --ink: #241339; --muted: #6e5a86; --line: #241339;
-  --accent: #7b2ff7; --accent-ink: #ffffff; --accent-soft: #efe4ff; --marker: #c6ff4d; --marker-soft: #f1ffd0;
-  --ok: #10a36a; --bad: #ff3d6e; --b1: #00b39b; --b2: #ff8a00; --c1: #ff3d6e;
-  --radius: 24px; --shadow: 0 4px 0 #241339;
-  --serif: "Nunito", system-ui, sans-serif; --sans: "Nunito", system-ui, sans-serif; color-scheme: light;
-}
-html:root[data-style="pop"] .card, html:root[data-style="pop"] .flash, html:root[data-style="pop"] .kpi { border: 2px solid var(--ink); }
-html:root[data-style="pop"] h1, html:root[data-style="pop"] h2, html:root[data-style="pop"] h3 { font-weight: 900; letter-spacing: 0; }
-html:root[data-style="pop"] .btn { border: 2px solid var(--ink); box-shadow: 0 3px 0 var(--ink); font-weight: 800; }
-html:root[data-style="pop"] .btn:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--ink); }
-html:root[data-style="pop"] .grade { border: 2px solid var(--ink); box-shadow: 0 3px 0 var(--ink); }
-html:root[data-style="pop"] .num-box.accent { background: var(--marker); }
-html:root[data-style="pop"] .story-text { font-weight: 600; }
-html:root[data-style="pop"] .nav { border-top: 2px solid var(--ink); }
-
-/* 4 · Nacht – dunkel, ruhig, Fokus */
-html:root[data-style="night"] {
-  --bg: #0d1117; --surface: #161b24; --surface-2: #1f2633; --ink: #e8edf5; --muted: #8b96a8; --line: #2a3242;
-  --accent: #36e0b0; --accent-ink: #06231b; --accent-soft: #123a31; --marker: #ffb84d; --marker-soft: #3a2c14;
-  --ok: #4ade80; --bad: #ff6b6b; --b1: #2bb38a; --b2: #4c8dff; --c1: #b07cff;
-  --radius: 16px; --shadow: 0 10px 30px -18px rgba(0, 0, 0, .8);
-  --serif: "Space Grotesk", system-ui, sans-serif; --sans: "Inter", system-ui, sans-serif; color-scheme: dark;
-}
-html:root[data-style="night"] h1, html:root[data-style="night"] h2, html:root[data-style="night"] h3 { font-weight: 700; letter-spacing: -.01em; }
-html:root[data-style="night"] .story-text { font-family: var(--sans); font-weight: 400; }
-html:root[data-style="night"] .grade.g1 { background: #3a1d22; color: #ffb3b3; }
-html:root[data-style="night"] .grade.g2 { background: #3a2e17; color: #ffd38a; }
-html:root[data-style="night"] .grade.g3 { background: #143428; color: #9ff0c9; }
-html:root[data-style="night"] .note.ff { background: #3a1d22; color: #ffc8b8; }
-html:root[data-style="night"] .chip.warn { background: #3a1d22; color: #ffb3b3; }
-
 /* Design-Auswahl */
-.design-list { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.design-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
 .design-opt { border: 2px solid var(--line); border-radius: 16px; padding: 10px; cursor: pointer; background: var(--bg); text-align: left; }
 .design-opt.on { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-soft); }
 .design-opt .sw-row { display: flex; gap: 4px; margin-bottom: 8px; }
 .design-opt .sw-row i { flex: 1; height: 26px; border-radius: 6px; }
 .design-opt b { display: block; }
-html:root[data-style="pop"] .grade.g1 { background: #ffc2d1; color: #241339; }
-html:root[data-style="pop"] .grade.g2 { background: #ffe08a; color: #241339; }
-html:root[data-style="pop"] .grade.g3 { background: #c6ff4d; color: #241339; }
-html:root[data-style="business"] .grade.g3 { background: #dcf3e8; }

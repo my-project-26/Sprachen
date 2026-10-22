@@ -5,6 +5,7 @@ import { TOPICS, LEVELS } from "./words.js";
 import { storyPrompt, STORY_SYSTEM, extractJson } from "./prompts.js";
 import { callApi, health, normalizeStory, isStaticHost } from "./api.js";
 import * as tts from "./tts.js";
+import { DESIGNS, designKey, applyDesign, skinHome, skinCard, bindSwipe } from "./skins.js";
 
 const $app = document.getElementById("app");
 const $nav = document.getElementById("nav");
@@ -159,6 +160,60 @@ function home() {
     const ok = inL.filter((c) => S.isLearned(c) || c.state === "known").length;
     return { L, ok, total: inL.length };
   });
+
+  const design = designKey(s.settings.design);
+  if (design !== "paper") {
+    const startIdx = Math.max(0, LEVELS.indexOf(s.settings.startLevel));
+    const lv = lvl.slice(startIdx);
+    let levelPos = lv.length - 1;
+    for (let i = 0; i < lv.length; i++)
+      if (lv[i].ok < lv[i].total) {
+        levelPos = i + (lv[i].total ? lv[i].ok / lv[i].total : 0);
+        break;
+      }
+    const sumT = lv.reduce((a, x) => a + x.total, 0);
+    const sumOk = lv.reduce((a, x) => a + x.ok, 0);
+    const weakList = S.weakCards();
+    const d = {
+      icon: ICON,
+      dateStr: new Date().toLocaleDateString("de-DE", { weekday: "long", day: "numeric", month: "long" }),
+      weekday: new Date().toLocaleDateString("de-DE", { weekday: "long" }),
+      total, due: due.length, news: news.length, weak: weakList.length,
+      weakWords: weakList.slice(0, 5).map((c) => c.en),
+      storyN, storyEvery: s.settings.storyEvery, ready, stories: s.stories.length,
+      streak: st, secure: all.filter((c) => S.isLearned(c) || c.state === "known").length,
+      lvl: lv, levelPos, levelPct: sumT ? Math.round((sumOk / sumT) * 100) : 0,
+      topics: active.map((k) => {
+        const info = S.topicLevelInfo(k);
+        return { key: k, label: S.topicLabel(k), newLeft: info.newLeft, secure: info.secure, level: info.level };
+      }),
+      focus, focusLabel: focus ? S.topicLabel(focus) : nextTopic || "Themen abwechselnd", nextTopicLabel: nextTopic, wordsLeft,
+    };
+    const extraLevel = ["stapel", "glas", "musik", "kunst", "sport"].includes(design)
+      ? `<section class="card sk-level"><h2>Weg zu C1</h2>${lv
+          .map(
+            (x) => `<div class="lvl-row"><span class="badge lvl-${x.L}">${x.L}</span>
+            <div class="meter"><div style="width:${x.total ? (x.ok / x.total) * 100 : 0}%"></div></div>
+            <span class="small muted">${x.ok}/${x.total}</span></div>`
+          )
+          .join("")}</section>`
+      : "";
+    $app.innerHTML = `<div class="sk-home sk-${design}">${skinHome(design, d)}</div>${extraLevel}`;
+    const pick = document.getElementById("pickTopic");
+    if (pick) pick.onclick = () => topicPicker({ title: "Aus welchem Bereich sollen neue Wörter kommen?", onPick: () => home() });
+    const ex = document.getElementById("extraBtn");
+    if (ex)
+      ex.onclick = () =>
+        topicPicker({ title: "Aus welchem Bereich möchtest du 10 neue Wörter?", requireWords: true, onPick: () => go("#/learn/extra") });
+    $app.querySelectorAll("[data-focus]").forEach(
+      (b) =>
+        (b.onclick = () => {
+          S.setFocusTopic(b.dataset.focus === focus ? null : b.dataset.focus);
+          home();
+        })
+    );
+    return;
+  }
 
   $app.innerHTML = `
   <header class="top">
@@ -368,6 +423,8 @@ function sessionHeader() {
   </header>`;
 }
 
+const POS_LABEL = { n: "Nomen", v: "Verb", adj: "Adjektiv", adv: "Adverb", prep: "Präposition", conj: "Konjunktion", phrase: "Ausdruck", num: "Zahl", pron: "Pronomen", det: "Begleiter" };
+
 function showCard(revealed = false, typed = null) {
   const c = currentCard();
   if (!c) return sessionEnd();
@@ -411,6 +468,61 @@ function showCard(revealed = false, typed = null) {
     `;
   }
 
+  const design = designKey(s.design);
+  if (design !== "paper") {
+    const left = session.queue.length - session.pos;
+    const ok = typed == null ? null : typed.trim().toLowerCase() === c.en.toLowerCase();
+    const p = preview(c, Date.now(), s.retention);
+    const card = (id) => S.getState().cards[id];
+    const prev = [session.queue[session.pos - 2], session.queue[session.pos - 1]]
+      .filter((id) => id && id !== c.id)
+      .map(card)
+      .filter(Boolean)
+      .map((x) => ({ en: x.en, de: x.de, exPlain: plain(x.ex) }));
+    const next = session.queue
+      .slice(session.pos + 1, session.pos + 3)
+      .filter((id) => id !== c.id)
+      .map(card)
+      .filter(Boolean)
+      .map((x) => ({ en: x.en, de: x.de, clozePlain: String(x.ex || "").replace(/\*[^*]+\*/g, "____") }));
+    const x = {
+      c, revealed, isNew, noteFF, icon: ICON,
+      topic: S.topicLabel(c.topic),
+      posLabel: POS_LABEL[c.pos] || c.pos || "",
+      cloze: c.ex ? clozeHtml(c.ex) : "",
+      exMarked: c.ex ? marked(c.ex) : "",
+      exDeMarked: c.exDe ? marked(c.exDe) : "",
+      exPlain: plain(c.ex),
+      hint: hintFor(c.en),
+      ok, typedRaw: typed,
+      practice: session.practice.has(c.id),
+      iv2: formatInterval(p[2]), iv3: formatInterval(p[3]),
+      pos: session.done + 1, total: session.done + left, pct: session.total ? Math.min(100, (session.done / (session.done + left)) * 100) : 0,
+      prev, next,
+      ui: {
+        header: sessionHeader(),
+        input: s.typeAnswer && !revealed ? `<input id="answer" class="answer" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Englisches Wort eingeben…">` : "",
+        hint: `<p class="hint" id="hint" hidden>${esc(hintFor(c.en))}</p>`,
+        typed: typed != null ? `<p class="typed ${ok ? "ok" : "bad"}">${ok ? "Richtig!" : `Deine Eingabe: <s>${esc(typed) || "–"}</s>`}</p>` : "",
+        listen: `<div class="listen-row">
+          <button class="btn ghost listen" data-say="${esc(c.en)}">${ICON.speaker}<span>Wort anhören</span></button>
+          ${c.ex ? `<button class="btn ghost listen" data-say="${esc(plain(c.ex))}">${ICON.speaker}<span>Satz anhören</span></button>` : ""}</div>`,
+        note: c.note ? `<p class="note ${noteFF ? "ff" : ""}">${esc(c.note)}</p>` : "",
+        known: `<button class="btn ghost known-btn" id="knownBtn">Kenne ich schon – nicht mehr abfragen</button>`,
+      },
+    };
+    $app.innerHTML = `<div class="sk-learn sk-${design}">${skinCard(design, x)}</div>`;
+    bindCardEvents(c, revealed);
+    if (revealed && design === "stapel") bindSwipe(document.getElementById("stTop"), (g) => rate(g));
+    if (!revealed && design === "stapel") {
+      const top = document.getElementById("stTop");
+      top.onclick = (e) => {
+        if (!e.target.closest("button, input")) document.getElementById("reveal").click();
+      };
+    }
+    return;
+  }
+
   let actions;
   if (!revealed) {
     actions = `
@@ -433,6 +545,11 @@ function showCard(revealed = false, typed = null) {
     <article class="flash ${revealed ? "back" : "front"}">${body}</article>
     <div class="flash-actions">${actions}</div>`;
 
+  bindCardEvents(c, revealed);
+}
+
+function bindCardEvents(c, revealed) {
+  const s = settings();
   $app.querySelectorAll("[data-say]").forEach((b) => (b.onclick = () => say(b.dataset.say)));
   bindVoiceToggle();
 
@@ -440,7 +557,10 @@ function showCard(revealed = false, typed = null) {
     const input = document.getElementById("answer");
     const doReveal = () => showCard(true, input ? input.value : null);
     document.getElementById("reveal").onclick = doReveal;
-    document.getElementById("hintBtn").onclick = () => (document.getElementById("hint").hidden = false);
+    document.getElementById("hintBtn").onclick = () => {
+      const h = document.getElementById("hint");
+      if (h) h.hidden = false;
+    };
     if (input) {
       input.focus();
       input.onkeydown = (e) => {
@@ -450,7 +570,8 @@ function showCard(revealed = false, typed = null) {
   } else {
     if (s.autoSpeak) say(c.en);
     $app.querySelectorAll("[data-g]").forEach((b) => (b.onclick = () => rate(Number(b.dataset.g))));
-    document.getElementById("knownBtn").onclick = () => markKnown(c);
+    const kb = document.getElementById("knownBtn");
+    if (kb) kb.onclick = () => markKnown(c);
   }
 }
 
@@ -1359,18 +1480,12 @@ function settingsView() {
   </section>
   <section class="card">
     <h2>Design</h2>
-    <div class="design-list">${[
-      ["paper", "Papier", "warm, ruhig, wie ein Buch", ["#f5efe3", "#0f6b5f", "#ffd86b"]],
-      ["business", "Fresh Business", "kühl, klar, präzise", ["#f4f6f9", "#1f5eff", "#9fd8ff"]],
-      ["pop", "Pop", "jugendlich, bunt, verspielt", ["#fff4e8", "#7b2ff7", "#c6ff4d"]],
-      ["night", "Nacht", "dunkel, Fokus, schont die Augen", ["#0d1117", "#36e0b0", "#ffb84d"]],
-    ]
-      .map(
-        ([k, n, d, c]) => `<button type="button" class="design-opt ${s.design === k ? "on" : ""}" data-design="${k}">
-          <span class="sw-row">${c.map((x) => `<i style="background:${x}"></i>`).join("")}</span>
-          <b>${n}</b><span class="small muted">${d}</span></button>`
-      )
-      .join("")}</div>
+    <p class="small muted">Jedes Design hat ein eigenes Layout für Startseite und Lernkarten.</p>
+    <div class="design-list">${DESIGNS.map(
+      (d) => `<button type="button" class="design-opt ${designKey(s.design) === d.key ? "on" : ""}" data-design="${d.key}">
+          <span class="sw-row">${d.colors.map((x) => `<i style="background:${x}"></i>`).join("")}</span>
+          <b>${d.name}</b><span class="small muted">${d.desc}</span></button>`
+    ).join("")}</div>
   </section>
   <section class="card">
     <h2>Stimme</h2>
@@ -1442,7 +1557,7 @@ function settingsView() {
       (b.onclick = () => {
         st.settings.design = b.dataset.design;
         S.save();
-        document.documentElement.dataset.style = b.dataset.design;
+        applyDesign(b.dataset.design);
         $app.querySelectorAll("[data-design]").forEach((x) => x.classList.toggle("on", x === b));
       })
   );
@@ -1555,7 +1670,7 @@ function settingsView() {
 
 // ---------- Start ----------
 S.load();
-document.documentElement.dataset.style = settings().design || "paper";
+applyDesign(settings().design);
 render();
 
 if ("serviceWorker" in navigator && location.protocol !== "file:") {

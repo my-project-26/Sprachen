@@ -92,3 +92,14 @@ sw.js, manifest.webmanifest PWA / Offline
 - Synchronisierung zwischen Geräten (z. B. Supabase)
 - Wechselnde Beispielsätze pro Wiederholung
 - FSRS-Parameter aus den eigenen Wiederholungsdaten optimieren
+
+
+## Designs
+
+Unter Einstellungen → Design gibt es 10 Designs: Klassisch, Bordkarte, Stapel (Karten wischen), Tutor-Chat, Vokabelheft, iOS-Glas, 80er, Musik, Kunst und Sport.
+Jedes hat ein eigenes Layout für Startseite und Lernkarte (`js/skins.js`), alle übrigen Seiten passen sich über `skins.css` an.
+
+## Niveaus
+
+Der Wortschatz deckt A1 bis C1 ab (rund 4.400 Wörter). A1/A2-Listen liegen in `data/*.a.txt`.
+Unter Einstellungen → „Neue Wörter ab Niveau“ legst du fest, ab welchem Niveau neue Wörter kommen.
