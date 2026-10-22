@@ -1,0 +1,78 @@
+# Spanisch – Menschen & Charakter
+## A2
+amable | freundlich | adj | La gente aquí es muy *amable*. | Die Leute hier sind sehr *freundlich*. |
+trabajador | fleißig | adj | Es una persona muy *trabajadora*. | Sie ist eine sehr *fleißige* Person. |
+serio | ernst; seriös | adj | Es un chico muy *serio*. | Er ist ein sehr *ernster* Junge. |
+gracioso | witzig | adj | ¡Qué *gracioso* eres! | Wie *witzig* du bist! |
+abierto | offen | adj | Es una persona muy *abierta*. | Sie ist ein sehr *offener* Mensch. |
+cuidadoso | sorgfältig, vorsichtig | adj | Sé *cuidadoso* con el cristal. | Sei *vorsichtig* mit dem Glas. |
+## B1
+el carácter | der Charakter | n | Tiene mucho *carácter*. | Sie hat einen starken *Charakter*. |
+la personalidad | die Persönlichkeit | n | Tiene una *personalidad* fuerte. | Sie hat eine starke *Persönlichkeit*. |
+generoso | großzügig | adj | Es muy *generoso* con sus amigos. | Er ist sehr *großzügig* zu seinen Freunden. |
+egoísta | egoistisch | adj | No seas *egoísta*. | Sei nicht so *egoistisch*. |
+tacaño | geizig | adj | Mi tío es muy *tacaño*. | Mein Onkel ist sehr *geizig*. |
+paciente | geduldig | adj | Hay que ser *paciente* con los niños. | Mit Kindern muss man *geduldig* sein. |
+impaciente | ungeduldig | adj | Es muy *impaciente*. | Er ist sehr *ungeduldig*. |
+responsable | verantwortungsbewusst | adj | Es una chica muy *responsable*. | Sie ist sehr *verantwortungsbewusst*. |
+puntual | pünktlich | adj | Siempre es *puntual*. | Er ist immer *pünktlich*. |
+optimista | optimistisch | adj | Es muy *optimista*. | Sie ist sehr *optimistisch*. |
+pesimista | pessimistisch | adj | No seas tan *pesimista*. | Sei nicht so *pessimistisch*. |
+valiente | mutig | adj | Fue muy *valiente*. | Sie war sehr *mutig*. |
+cobarde | feige | adj | No seas *cobarde*. | Sei nicht *feige*. |
+creativo | kreativ | adj | Es un diseñador muy *creativo*. | Er ist ein sehr *kreativer* Designer. |
+sensible | empfindsam | adj | Es una persona muy *sensible*. | Sie ist ein sehr *sensibler* Mensch. | False Friend: ≠ vernünftig (sensato)
+sensato | vernünftig | adj | Fue una decisión *sensata*. | Es war eine *vernünftige* Entscheidung. |
+terco | stur | adj | Es tan *terco* como su padre. | Er ist so *stur* wie sein Vater. |
+orgulloso | stolz, hochmütig | adj | Es demasiado *orgulloso* para pedir ayuda. | Er ist zu *stolz*, um Hilfe zu bitten. |
+celoso | eifersüchtig | adj | Su novio es muy *celoso*. | Ihr Freund ist sehr *eifersüchtig*. |
+maduro | reif | adj | Es muy *maduro* para su edad. | Er ist sehr *reif* für sein Alter. |
+inmaduro | unreif | adj | Se comporta de forma *inmadura*. | Er benimmt sich *unreif*. |
+ambicioso | ehrgeizig | adj | Es una mujer *ambiciosa*. | Sie ist eine *ehrgeizige* Frau. |
+modesto | bescheiden | adj | A pesar del éxito sigue siendo *modesto*. | Trotz des Erfolgs ist er *bescheiden* geblieben. |
+fiable | zuverlässig | adj | Es un compañero muy *fiable*. | Er ist ein sehr *zuverlässiger* Kollege. |
+el comportamiento | das Verhalten | n | Su *comportamiento* fue inaceptable. | Sein *Verhalten* war inakzeptabel. |
+comportarse | sich benehmen | v | Los niños se *comportaron* muy bien. | Die Kinder *benahmen* sich sehr gut. |
+la actitud | die Einstellung | n | Tiene una *actitud* muy positiva. | Sie hat eine sehr positive *Einstellung*. |
+el defecto | die Schwäche, der Fehler | n | Todos tenemos *defectos*. | Wir alle haben *Schwächen*. |
+la virtud | die Tugend | n | La paciencia es una *virtud*. | Geduld ist eine *Tugend*. |
+## B2
+extrovertido | extrovertiert | adj | Es muy *extrovertida* y hace amigos fácilmente. | Sie ist sehr *extrovertiert* und findet leicht Freunde. |
+introvertido | introvertiert | adj | Es *introvertido*, pero muy simpático. | Er ist *introvertiert*, aber sehr nett. |
+testarudo | dickköpfig | adj | Es tan *testarudo* que nunca cambia de opinión. | Er ist so *dickköpfig*, dass er nie seine Meinung ändert. |
+arrogante | arrogant | adj | Su actitud *arrogante* molesta a todos. | Seine *arrogante* Art stört alle. |
+humilde | demütig, bescheiden | adj | Viene de una familia *humilde*. | Er stammt aus *einfachen* Verhältnissen. |
+ingenuo | naiv | adj | Fue muy *ingenuo* al confiar en él. | Es war sehr *naiv*, ihm zu vertrauen. |
+astuto | schlau, gerissen | adj | Es un negociador *astuto*. | Er ist ein *gerissener* Verhandler. |
+despistado | zerstreut | adj | Soy muy *despistado*, siempre olvido las llaves. | Ich bin sehr *zerstreut*, ich vergesse immer die Schlüssel. |
+perezoso | faul | adj | No seas tan *perezoso*. | Sei nicht so *faul*. |
+exigente | anspruchsvoll | adj | Es una jefa muy *exigente*. | Sie ist eine sehr *anspruchsvolle* Chefin. |
+comprensivo | verständnisvoll | adj | Mis padres son muy *comprensivos*. | Meine Eltern sind sehr *verständnisvoll*. |
+cariñoso | liebevoll | adj | Es un padre muy *cariñoso*. | Er ist ein sehr *liebevoller* Vater. |
+rencoroso | nachtragend | adj | No es nada *rencoroso*. | Er ist überhaupt nicht *nachtragend*. |
+mandón | herrisch | adj | Mi hermana mayor es muy *mandona*. | Meine ältere Schwester ist sehr *herrisch*. |
+quejica | Jammerlappen, weinerlich | adj | No seas *quejica*. | Sei nicht so *wehleidig*. | umgangssprachlich
+cotilla | klatschsüchtig | adj | Mi vecina es muy *cotilla*. | Meine Nachbarin ist sehr *klatschsüchtig*. |
+caprichoso | launisch | adj | Es un niño muy *caprichoso*. | Er ist ein sehr *launisches* Kind. |
+leal | loyal, treu | adj | Es un amigo muy *leal*. | Er ist ein sehr *treuer* Freund. |
+la lealtad | die Loyalität | n | Valoro mucho la *lealtad*. | Ich schätze *Loyalität* sehr. |
+la autoestima | das Selbstwertgefühl | n | Tiene la *autoestima* baja. | Sie hat ein geringes *Selbstwertgefühl*. |
+la madurez | die Reife | n | Demostró mucha *madurez*. | Er zeigte große *Reife*. |
+el temperamento | das Temperament | n | Tiene un *temperamento* fuerte. | Er hat ein hitziges *Temperament*. |
+## C1
+altruista | selbstlos | adj | Es una persona *altruista*. | Sie ist ein *selbstloser* Mensch. |
+mezquino | kleinlich, gemein | adj | Fue un comentario *mezquino*. | Es war eine *gemeine* Bemerkung. |
+soberbio | hochmütig; großartig | adj | Su actitud *soberbia* le aisló. | Seine *hochmütige* Art isolierte ihn. |
+pusilánime | kleinmütig | adj | Es demasiado *pusilánime* para decidir. | Er ist zu *zaghaft*, um zu entscheiden. |
+íntegro | integer, rechtschaffen | adj | Es un político *íntegro*. | Er ist ein *integrer* Politiker. |
+la integridad | die Integrität | n | Nadie duda de su *integridad*. | Niemand zweifelt an seiner *Integrität*. |
+hipócrita | heuchlerisch | adj | No seas *hipócrita*. | Sei nicht *scheinheilig*. |
+la hipocresía | die Heuchelei | n | Me molesta su *hipocresía*. | Mich stört seine *Heuchelei*. |
+perspicaz | scharfsinnig | adj | Es una observadora muy *perspicaz*. | Sie ist eine sehr *scharfsinnige* Beobachterin. |
+ecuánime | ausgeglichen, unparteiisch | adj | Es un juez *ecuánime*. | Er ist ein *unparteiischer* Richter. |
+voluble | wankelmütig | adj | Tiene un carácter muy *voluble*. | Er hat einen sehr *wankelmütigen* Charakter. |
+afable | umgänglich | adj | Es un hombre *afable* y educado. | Er ist ein *umgänglicher*, höflicher Mann. |
+taciturno | schweigsam, verschlossen | adj | Desde la muerte de su mujer está *taciturno*. | Seit dem Tod seiner Frau ist er *verschlossen*. |
+pedante | besserwisserisch | adj | Habla de forma muy *pedante*. | Er redet sehr *besserwisserisch*. |
+la templanza | die Mäßigung | n | Actuó con *templanza*. | Er handelte mit *Besonnenheit*. |
+tenaz | beharrlich | adj | Es una investigadora *tenaz*. | Sie ist eine *beharrliche* Forscherin. |

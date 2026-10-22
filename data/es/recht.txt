@@ -1,0 +1,74 @@
+# Spanisch – Recht & Ordnung
+## A2
+la policía | die Polizei | n | ¡Llama a la *policía*! | Ruf die *Polizei*! |
+el ladrón | der Dieb | n | El *ladrón* huyó. | Der *Dieb* floh. |
+robar | stehlen | v | Me *robaron* la cartera. | Mir wurde der Geldbeutel *gestohlen*. |
+la ley | das Gesetz | n | Es contra la *ley*. | Das ist gegen das *Gesetz*. |
+## B1
+culpable | schuldig | adj | El jurado lo declaró *culpable*. | Die Geschworenen befanden ihn für *schuldig*. |
+inocente | unschuldig | adj | Él dice que es *inocente*. | Er sagt, er sei *unschuldig*. |
+el sospechoso | der Verdächtige | n | La policía detuvo a dos *sospechosos*. | Die Polizei nahm zwei *Verdächtige* fest. |
+sospechar | vermuten, verdächtigen | v | *Sospecho* que miente. | Ich *vermute*, dass er lügt. |
+el delito | die Straftat | n | Es un *delito* grave. | Es ist eine schwere *Straftat*. |
+el crimen | das Verbrechen | n | El *crimen* ocurrió de noche. | Das *Verbrechen* geschah nachts. |
+el delincuente | der Straftäter | n | Detuvieron al *delincuente*. | Der *Täter* wurde festgenommen. |
+detener | festnehmen; anhalten | v | La policía lo *detuvo* ayer. | Die Polizei hat ihn gestern *festgenommen*. | detengo
+el juez | der Richter | n | El *juez* dictó sentencia. | Der *Richter* verkündete das Urteil. |
+el juicio | der Prozess; das Urteil(svermögen) | n | El *juicio* empieza el lunes. | Der *Prozess* beginnt am Montag. |
+el tribunal | das Gericht | n | El caso llegó al *tribunal*. | Der Fall kam vor *Gericht*. |
+el testigo | der Zeuge | n | Hay dos *testigos*. | Es gibt zwei *Zeugen*. |
+la cárcel | das Gefängnis | n | Pasó tres años en la *cárcel*. | Er saß drei Jahre im *Gefängnis*. |
+la multa | die Geldstrafe | n | Le pusieron una *multa* de cien euros. | Er bekam eine *Geldstrafe* von hundert Euro. |
+denunciar | anzeigen | v | *Denuncié* el robo en comisaría. | Ich habe den Diebstahl bei der Polizei *angezeigt*. |
+la denuncia | die Anzeige | n | Puso una *denuncia*. | Er erstattete *Anzeige*. |
+el robo | der Diebstahl, Raub | n | Hubo un *robo* en el banco. | In der Bank gab es einen *Raub*. |
+el asesinato | der Mord | n | Investigan un *asesinato*. | Sie ermitteln in einem *Mord*fall. |
+el asesino | der Mörder | n | Buscan al *asesino*. | Sie suchen den *Mörder*. |
+la víctima | das Opfer | n | La *víctima* tiene treinta años. | Das *Opfer* ist dreißig Jahre alt. |
+el derecho | das Recht; Jura | n | Tienes *derecho* a un abogado. | Sie haben das *Recht* auf einen Anwalt. |
+legal | legal | adj | ¿Es *legal* aparcar aquí? | Ist es *erlaubt*, hier zu parken? |
+ilegal | illegal | adj | Eso es *ilegal*. | Das ist *illegal*. |
+prohibido | verboten | adj | Está *prohibido* fumar. | Rauchen ist *verboten*. |
+permitir | erlauben | v | No *permiten* perros. | Hunde sind nicht *erlaubt*. |
+la seguridad | die Sicherheit | n | La *seguridad* es lo primero. | *Sicherheit* geht vor. |
+## B2
+la sentencia | das Urteil | n | La *sentencia* fue muy dura. | Das *Urteil* war sehr hart. |
+condenar | verurteilen | v | Lo *condenaron* a cinco años. | Er wurde zu fünf Jahren *verurteilt*. |
+absolver | freisprechen | v | El tribunal lo *absolvió*. | Das Gericht *sprach* ihn *frei*. |
+el acusado | der Angeklagte | n | El *acusado* se declaró inocente. | Der *Angeklagte* erklärte sich für unschuldig. |
+acusar | anklagen, beschuldigen | v | Lo *acusan* de fraude. | Er wird des Betrugs *beschuldigt*. |
+la acusación | die Anklage | n | La *acusación* pidió diez años. | Die *Anklage* forderte zehn Jahre. |
+el fiscal | der Staatsanwalt | n | El *fiscal* presentó pruebas nuevas. | Der *Staatsanwalt* legte neue Beweise vor. |
+la defensa | die Verteidigung | n | La *defensa* recurrirá. | Die *Verteidigung* geht in Berufung. |
+recurrir | Berufung einlegen | v | Van a *recurrir* la sentencia. | Sie werden gegen das Urteil *Berufung einlegen*. |
+la fianza | die Kaution | n | Salió en libertad bajo *fianza*. | Er kam gegen *Kaution* frei. |
+el fraude | der Betrug | n | Es un caso de *fraude* fiscal. | Es ist ein Fall von Steuer*betrug*. |
+el soborno | die Bestechung | n | Aceptó un *soborno*. | Er nahm *Bestechungsgeld* an. |
+la corrupción | die Korruption | n | El juicio por *corrupción* duró años. | Der *Korruptions*prozess dauerte Jahre. |
+el contrato | der Vertrag | n | El *contrato* es nulo. | Der *Vertrag* ist nichtig. |
+la demanda | die Klage | n | Presentó una *demanda* contra la empresa. | Er reichte *Klage* gegen die Firma ein. |
+demandar | verklagen | v | Lo *demandó* por daños. | Sie *verklagte* ihn auf Schadenersatz. |
+el abogado defensor | der Verteidiger | n | Su *abogado defensor* es muy bueno. | Sein *Verteidiger* ist sehr gut. |
+la orden de detención | der Haftbefehl | n | Hay una *orden de detención* contra él. | Gegen ihn liegt ein *Haftbefehl* vor. |
+la prueba | das Beweismittel | n | Las *pruebas* eran insuficientes. | Die *Beweise* reichten nicht aus. |
+el agente | der Polizeibeamte | n | Un *agente* nos paró. | Ein *Polizist* hielt uns an. |
+la estafa | der Betrug (Abzocke) | n | Fue víctima de una *estafa* online. | Er wurde Opfer eines Online-*Betrugs*. |
+estafar | betrügen | v | Lo *estafaron* con una falsa inversión. | Man *betrog* ihn mit einer Scheininvestition. |
+la agresión | der Angriff, Übergriff | n | Denunció una *agresión*. | Sie zeigte einen *Übergriff* an. |
+## C1
+el sumario | die Ermittlungsakte | n | El juez levantó el secreto del *sumario*. | Der Richter hob die Geheimhaltung der *Ermittlungsakte* auf. |
+la imputación | die Beschuldigung (förmlich) | n | El juez confirmó su *imputación*. | Der Richter bestätigte die *Beschuldigung*. |
+imputado | beschuldigt (Ermittlungsverfahren) | adj | El exministro está *imputado*. | Gegen den Ex-Minister wird *ermittelt*. | heute: investigado
+la prescripción | die Verjährung | n | El delito ha *prescrito*; hubo *prescripción*. | Die Tat ist *verjährt*. |
+prescribir | verjähren; verschreiben | v | El delito *prescribió* hace años. | Die Tat ist vor Jahren *verjährt*. |
+el indulto | die Begnadigung | n | El gobierno concedió el *indulto*. | Die Regierung gewährte die *Begnadigung*. |
+la jurisprudencia | die Rechtsprechung | n | Según la *jurisprudencia*, es válido. | Laut *Rechtsprechung* ist es gültig. |
+la reincidencia | der Rückfall (Straftat) | n | La *reincidencia* agrava la pena. | Ein *Rückfall* verschärft die Strafe. |
+el atenuante | der mildernde Umstand | n | El juez apreció un *atenuante*. | Der Richter sah einen *mildernden Umstand*. |
+el agravante | der erschwerende Umstand | n | La premeditación es un *agravante*. | Vorsatz ist ein *erschwerender Umstand*. |
+la querella | die Strafanzeige, Privatklage | n | Presentaron una *querella* por calumnias. | Sie reichten eine *Klage* wegen Verleumdung ein. |
+la calumnia | die Verleumdung | n | Lo acusan de *calumnia*. | Man wirft ihm *Verleumdung* vor. |
+el blanqueo de capitales | die Geldwäsche | n | Lo detuvieron por *blanqueo de capitales*. | Er wurde wegen *Geldwäsche* festgenommen. |
+la prevaricación | die Rechtsbeugung | n | El alcalde fue condenado por *prevaricación*. | Der Bürgermeister wurde wegen *Rechtsbeugung* verurteilt. |
+la presunción de inocencia | die Unschuldsvermutung | n | Rige la *presunción de inocencia*. | Es gilt die *Unschuldsvermutung*. |
+el vacío legal | die Gesetzeslücke | n | Aprovecharon un *vacío legal*. | Sie nutzten eine *Gesetzeslücke*. |

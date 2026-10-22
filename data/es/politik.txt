@@ -1,0 +1,85 @@
+# Spanisch – Politik & Gesellschaft
+## A2
+el gobierno | die Regierung | n | El *gobierno* aprobó la ley. | Die *Regierung* hat das Gesetz verabschiedet. |
+el presidente | der Präsident | n | El *presidente* dio un discurso. | Der *Präsident* hielt eine Rede. |
+votar | wählen, abstimmen | v | ¿Has *votado* ya? | Hast du schon *gewählt*? |
+el rey | der König | n | El *rey* visitó la ciudad. | Der *König* besuchte die Stadt. |
+## B1
+la política | die Politik | n | No me interesa la *política*. | Ich interessiere mich nicht für *Politik*. |
+el político | der Politiker | n | Es un *político* conocido. | Er ist ein bekannter *Politiker*. |
+reciente | jüngste(r), kürzlich | adj | Los acontecimientos *recientes* sorprenden. | Die *jüngsten* Ereignisse überraschen. |
+las elecciones | die Wahlen | n | Las *elecciones* son en mayo. | Die *Wahlen* sind im Mai. |
+el voto | die Stimme (Wahl) | n | Cada *voto* cuenta. | Jede *Stimme* zählt. |
+el partido | die Partei | n | ¿Qué *partido* ganó? | Welche *Partei* hat gewonnen? |
+el ministro | der Minister | n | La *ministra* presentó el plan. | Die *Ministerin* stellte den Plan vor. |
+el alcalde | der Bürgermeister | n | El *alcalde* inauguró el parque. | Der *Bürgermeister* eröffnete den Park. |
+el ayuntamiento | der Stadtrat; das Rathaus | n | El *ayuntamiento* votó en contra. | Der *Stadtrat* stimmte dagegen. |
+oficial | offiziell; Offizier | adj | Hoy se hizo el anuncio *oficial*. | Heute erfolgte die *offizielle* Ankündigung. |
+antiguo | ehemalig; alt | adj | Su *antiguo* profesor vino a la ceremonia. | Ihr *ehemaliger* Lehrer kam zur Feier. | vor dem Nomen = ehemalig
+la campaña | die Kampagne, der Wahlkampf | n | Su *campaña* se centró en la educación. | Ihr *Wahlkampf* konzentrierte sich auf Bildung. |
+el ciudadano | der Bürger | n | Los *ciudadanos* exigen cambios. | Die *Bürger* fordern Veränderungen. |
+la sociedad | die Gesellschaft | n | Vivimos en una *sociedad* diversa. | Wir leben in einer vielfältigen *Gesellschaft*. |
+el país | das Land | n | El *país* atraviesa una crisis. | Das *Land* steckt in einer Krise. |
+el estado | der Staat; Zustand | n | El *Estado* financia la sanidad. | Der *Staat* finanziert das Gesundheitswesen. |
+la nación | die Nation | n | Toda la *nación* vio el partido. | Die ganze *Nation* sah das Spiel. |
+la ley | das Gesetz | n | El parlamento aprobó una nueva *ley*. | Das Parlament verabschiedete ein neues *Gesetz*. |
+la libertad | die Freiheit | n | Lucharon por la *libertad*. | Sie kämpften für die *Freiheit*. |
+la guerra | der Krieg | n | La *guerra* duró tres años. | Der *Krieg* dauerte drei Jahre. |
+la paz | der Frieden | n | Firmaron la *paz*. | Sie schlossen *Frieden*. |
+la manifestación | die Demonstration | n | Miles de personas fueron a la *manifestación*. | Tausende gingen zur *Demonstration*. |
+protestar | protestieren | v | Los estudiantes *protestan* contra la reforma. | Die Studenten *protestieren* gegen die Reform. |
+la opinión | die Meinung | n | En mi *opinión*, es un error. | Meiner *Meinung* nach ist das ein Fehler. |
+apoyar | unterstützen | v | *Apoyo* esta propuesta. | Ich *unterstütze* diesen Vorschlag. |
+el derecho | das Recht | n | Es un *derecho* fundamental. | Es ist ein Grund*recht*. |
+la igualdad | die Gleichheit | n | Luchan por la *igualdad*. | Sie kämpfen für *Gleichberechtigung*. |
+la pobreza | die Armut | n | La *pobreza* ha aumentado. | Die *Armut* hat zugenommen. |
+el inmigrante | der Einwanderer | n | Muchos *inmigrantes* trabajan en el campo. | Viele *Einwanderer* arbeiten in der Landwirtschaft. |
+## B2
+el parlamento | das Parlament | n | El *parlamento* debatirá la ley. | Das *Parlament* wird das Gesetz debattieren. |
+el diputado | der Abgeordnete | n | El *diputado* votó en contra. | Der *Abgeordnete* stimmte dagegen. |
+el Congreso | der Kongress (Abgeordnetenhaus) | n | El *Congreso* aprobó los presupuestos. | Der *Kongress* verabschiedete den Haushalt. |
+el senado | der Senat | n | La ley pasa ahora al *senado*. | Das Gesetz geht nun an den *Senat*. |
+la oposición | die Opposition | n | La *oposición* criticó el plan. | Die *Opposition* kritisierte den Plan. |
+la coalición | die Koalition | n | Formaron una *coalición* de gobierno. | Sie bildeten eine Regierungs*koalition*. |
+la mayoría absoluta | die absolute Mehrheit | n | Ganó por *mayoría absoluta*. | Er gewann mit *absoluter Mehrheit*. |
+el escaño | der Sitz (Parlament) | n | El partido perdió diez *escaños*. | Die Partei verlor zehn *Sitze*. |
+el candidato | der Kandidat | n | Es el *candidato* de la izquierda. | Er ist der *Kandidat* der Linken. |
+la encuesta | die Umfrage | n | Según las *encuestas*, ganará. | Laut *Umfragen* wird er gewinnen. |
+el referéndum | der Volksentscheid | n | Convocaron un *referéndum*. | Sie riefen einen *Volksentscheid* aus. |
+la reforma | die Reform | n | La *reforma* laboral es polémica. | Die Arbeitsmarkt*reform* ist umstritten. |
+polémico | umstritten | adj | Es una decisión *polémica*. | Es ist eine *umstrittene* Entscheidung. |
+la democracia | die Demokratie | n | La *democracia* necesita participación. | Die *Demokratie* braucht Beteiligung. |
+la dictadura | die Diktatur | n | El país vivió cuarenta años de *dictadura*. | Das Land erlebte vierzig Jahre *Diktatur*. |
+la constitución | die Verfassung | n | La *constitución* garantiza ese derecho. | Die *Verfassung* garantiert dieses Recht. |
+la monarquía | die Monarchie | n | España es una *monarquía* parlamentaria. | Spanien ist eine parlamentarische *Monarchie*. |
+la república | die Republik | n | Proclamaron la *república*. | Sie riefen die *Republik* aus. |
+el gobierno autonómico | die Regionalregierung | n | El *gobierno autonómico* gestiona la sanidad. | Die *Regionalregierung* verwaltet das Gesundheitswesen. |
+la comunidad autónoma | die autonome Region | n | España tiene diecisiete *comunidades autónomas*. | Spanien hat siebzehn *autonome Regionen*. |
+la inmigración | die Einwanderung | n | La *inmigración* es un tema central. | *Einwanderung* ist ein zentrales Thema. |
+el refugiado | der Flüchtling | n | El país acogió a miles de *refugiados*. | Das Land nahm Tausende *Flüchtlinge* auf. |
+la integración | die Integration | n | La *integración* lleva tiempo. | *Integration* braucht Zeit. |
+la discriminación | die Diskriminierung | n | Luchan contra la *discriminación*. | Sie kämpfen gegen *Diskriminierung*. |
+los derechos humanos | die Menschenrechte | n | Defienden los *derechos humanos*. | Sie verteidigen die *Menschenrechte*. |
+el bienestar | der Wohlstand, das Wohlergehen | n | El Estado de *bienestar* está en peligro. | Der Sozial*staat* ist in Gefahr. |
+la huelga general | der Generalstreik | n | Los sindicatos convocaron una *huelga general*. | Die Gewerkschaften riefen einen *Generalstreik* aus. |
+la ideología | die Ideologie | n | No comparto su *ideología*. | Ich teile seine *Ideologie* nicht. |
+conservador | konservativ | adj | Es un partido *conservador*. | Es ist eine *konservative* Partei. |
+progresista | progressiv | adj | Defiende ideas *progresistas*. | Er vertritt *progressive* Ideen. |
+## C1
+el electorado | die Wählerschaft | n | El *electorado* castigó al gobierno. | Die *Wählerschaft* strafte die Regierung ab. |
+la abstención | die Wahlenthaltung | n | La *abstención* fue muy alta. | Die *Wahlbeteiligung* war sehr niedrig. |
+la investidura | die Amtseinführung, Wahl (Regierungschef) | n | Perdió la votación de *investidura*. | Er verlor die *Wahl zum Regierungschef*. |
+la moción de censura | das Misstrauensvotum | n | La oposición presentó una *moción de censura*. | Die Opposition stellte ein *Misstrauensvotum*. |
+el populismo | der Populismus | n | El *populismo* crece en Europa. | Der *Populismus* wächst in Europa. |
+la polarización | die Polarisierung | n | La *polarización* política es preocupante. | Die politische *Polarisierung* ist besorgniserregend. |
+el independentismo | die Unabhängigkeitsbewegung | n | El *independentismo* catalán ganó apoyo. | Die katalanische *Unabhängigkeitsbewegung* gewann Unterstützung. |
+la soberanía | die Souveränität | n | Defienden la *soberanía* nacional. | Sie verteidigen die nationale *Souveränität*. |
+el clientelismo | die Vetternwirtschaft | n | Denuncian el *clientelismo* local. | Sie prangern lokale *Vetternwirtschaft* an. |
+la legislatura | die Legislaturperiode | n | Al final de la *legislatura* habrá elecciones. | Am Ende der *Legislaturperiode* gibt es Wahlen. |
+el decreto | das Dekret, die Verordnung | n | El gobierno aprobó un *decreto* ley. | Die Regierung erließ eine *Notverordnung*. |
+la cartera | das Ressort (Ministerium) | n | Ocupa la *cartera* de Hacienda. | Sie leitet das Finanz*ressort*. |
+la Hacienda | das Finanzministerium, Finanzamt | n | *Hacienda* revisa tu declaración. | Das *Finanzamt* prüft deine Steuererklärung. |
+la transparencia | die Transparenz | n | Piden más *transparencia*. | Sie fordern mehr *Transparenz*. |
+el bipartidismo | das Zweiparteiensystem | n | El *bipartidismo* ha terminado. | Das *Zweiparteiensystem* ist vorbei. |
+el desencanto | die Ernüchterung | n | Hay *desencanto* con la política. | Es herrscht *Politikverdrossenheit*. |
+la lacra | das Übel, die Plage | n | La corrupción es una *lacra* social. | Korruption ist ein gesellschaftliches *Übel*. |

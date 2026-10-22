@@ -1,0 +1,80 @@
+# Spanisch – Wissenschaft & Technik
+## A2
+la ciencia | die Wissenschaft | n | Me interesa mucho la *ciencia*. | Ich interessiere mich sehr für *Wissenschaft*. |
+la máquina | die Maschine | n | La *máquina* de café está rota. | Die Kaffee*maschine* ist kaputt. |
+el experimento | das Experiment | n | Hicimos un *experimento* en clase. | Wir machten ein *Experiment* im Unterricht. |
+## B1
+la investigación | die Forschung; Ermittlung | n | Su *investigación* se centra en el sueño. | Ihre *Forschung* konzentriert sich auf den Schlaf. |
+investigar | forschen; ermitteln | v | *Investigan* nuevas vacunas. | Sie *forschen* an neuen Impfstoffen. |
+el investigador | der Forscher | n | Es *investigadora* en el CSIC. | Sie ist *Forscherin* am CSIC. |
+el descubrimiento | die Entdeckung | n | Fue un *descubrimiento* importante. | Es war eine wichtige *Entdeckung*. |
+descubrir | entdecken | v | *Descubrieron* una nueva especie. | Sie *entdeckten* eine neue Art. |
+el invento | die Erfindung | n | El teléfono fue un gran *invento*. | Das Telefon war eine große *Erfindung*. |
+inventar | erfinden | v | ¿Quién *inventó* la bombilla? | Wer hat die Glühbirne *erfunden*? |
+el laboratorio | das Labor | n | Trabaja en un *laboratorio*. | Sie arbeitet in einem *Labor*. |
+el resultado | das Ergebnis | n | Los *resultados* son sorprendentes. | Die *Ergebnisse* sind überraschend. |
+los datos | die Daten | n | Necesitamos *datos* fiables. | Wir brauchen zuverlässige *Daten*. |
+fiable | zuverlässig | adj | Los datos no son *fiables*. | Die Daten sind nicht *zuverlässig*. |
+el estudio | die Studie; das Studium | n | Según un *estudio*, dormir poco es malo. | Laut einer *Studie* ist wenig Schlaf schlecht. |
+demostrar | beweisen, zeigen | v | El estudio *demuestra* que funciona. | Die Studie *beweist*, dass es funktioniert. | demuestro
+la prueba | der Beweis; Test | n | No hay *pruebas*. | Es gibt keine *Beweise*. |
+la teoría | die Theorie | n | Es solo una *teoría*. | Das ist nur eine *Theorie*. |
+el método | die Methode | n | Usan un *método* nuevo. | Sie verwenden eine neue *Methode*. |
+medir | messen | v | *Mide* la temperatura cada hora. | Er *misst* stündlich die Temperatur. | mido
+calcular | berechnen | v | *Calcula* el precio total. | *Berechne* den Gesamtpreis. |
+el aparato | das Gerät | n | Este *aparato* mide la presión. | Dieses *Gerät* misst den Druck. |
+funcionar | funktionieren | v | La impresora no *funciona*. | Der Drucker *funktioniert* nicht. |
+la electricidad | der Strom | n | Se fue la *electricidad*. | Der *Strom* ist ausgefallen. | auch: la luz
+el motor | der Motor | n | El *motor* hace un ruido raro. | Der *Motor* macht ein seltsames Geräusch. |
+el robot | der Roboter | n | Un *robot* limpia el suelo. | Ein *Roboter* putzt den Boden. |
+digital | digital | adj | Vivimos en la era *digital*. | Wir leben im *digitalen* Zeitalter. |
+el espacio | der Weltraum; Platz | n | Quiere viajar al *espacio*. | Er will ins *All* reisen. |
+el planeta | der Planet | n | Marte es un *planeta* rojo. | Der Mars ist ein roter *Planet*. |
+la química | die Chemie | n | Estudió *química*. | Er hat *Chemie* studiert. |
+la física | die Physik | n | La *física* explica el universo. | Die *Physik* erklärt das Universum. |
+la biología | die Biologie | n | En *biología* estudiamos las células. | In *Biologie* lernen wir die Zellen. |
+## B2
+la hipótesis | die Hypothese | n | Confirmaron la *hipótesis*. | Sie bestätigten die *Hypothese*. |
+el avance | der Fortschritt | n | Es un *avance* científico enorme. | Es ist ein enormer wissenschaftlicher *Fortschritt*. |
+la innovación | die Innovation | n | La empresa apuesta por la *innovación*. | Die Firma setzt auf *Innovation*. |
+innovador | innovativ | adj | Es un proyecto muy *innovador*. | Es ist ein sehr *innovatives* Projekt. |
+el prototipo | der Prototyp | n | Presentaron el *prototipo* ayer. | Sie stellten gestern den *Prototyp* vor. |
+la patente | das Patent | n | Registraron la *patente*. | Sie meldeten das *Patent* an. |
+el ensayo clínico | die klinische Studie | n | El medicamento está en *ensayo clínico*. | Das Medikament ist in der *klinischen Prüfung*. |
+la muestra | die Probe; Stichprobe | n | Analizaron una *muestra* de sangre. | Sie analysierten eine Blut*probe*. |
+analizar | analysieren | v | Hay que *analizar* los datos. | Man muss die Daten *analysieren*. |
+el análisis | die Analyse | n | El *análisis* tardará una semana. | Die *Analyse* dauert eine Woche. |
+la inteligencia artificial | die künstliche Intelligenz | n | La *inteligencia artificial* cambia el trabajo. | *Künstliche Intelligenz* verändert die Arbeitswelt. |
+el software | die Software | n | Instalaron un nuevo *software*. | Sie installierten eine neue *Software*. |
+programar | programmieren | v | Aprendió a *programar* a los doce años. | Er lernte mit zwölf zu *programmieren*. |
+el programador | der Programmierer | n | Busca trabajo como *programador*. | Er sucht eine Stelle als *Programmierer*. |
+el código | der Code | n | Revisa el *código*. | Überprüf den *Code*. |
+la base de datos | die Datenbank | n | Los clientes están en la *base de datos*. | Die Kunden sind in der *Datenbank*. |
+el satélite | der Satellit | n | Lanzaron un nuevo *satélite*. | Sie starteten einen neuen *Satelliten*. |
+el universo | das Universum | n | El *universo* es infinito. | Das *Universum* ist unendlich. |
+la gravedad | die Schwerkraft; Schwere | n | La *gravedad* de la Luna es menor. | Die *Schwerkraft* des Mondes ist geringer. |
+la célula | die Zelle | n | El cuerpo tiene billones de *células*. | Der Körper hat Billionen *Zellen*. |
+el gen | das Gen | n | Es una enfermedad causada por un *gen*. | Es ist eine durch ein *Gen* verursachte Krankheit. |
+la evolución | die Evolution | n | Darwin explicó la *evolución*. | Darwin erklärte die *Evolution*. |
+el microscopio | das Mikroskop | n | Lo observamos con el *microscopio*. | Wir betrachteten es unter dem *Mikroskop*. |
+la tecnología punta | die Spitzentechnologie | n | Es una empresa de *tecnología punta*. | Es ist ein *Hightech*-Unternehmen. |
+la fiabilidad | die Zuverlässigkeit | n | Dudan de la *fiabilidad* del estudio. | Sie zweifeln an der *Zuverlässigkeit* der Studie. |
+el margen de error | die Fehlertoleranz | n | Tiene un *margen de error* del tres por ciento. | Die *Fehlertoleranz* liegt bei drei Prozent. |
+## C1
+el hallazgo | der Fund, die Entdeckung | n | El *hallazgo* cambió la historia. | Der *Fund* veränderte die Geschichte. |
+empírico | empirisch | adj | Faltan datos *empíricos*. | Es fehlen *empirische* Daten. |
+la revisión por pares | das Peer-Review | n | El artículo pasó la *revisión por pares*. | Der Artikel durchlief das *Peer-Review*. |
+refutar | widerlegen | v | Nadie ha podido *refutar* la teoría. | Niemand konnte die Theorie *widerlegen*. |
+la variable | die Variable | n | Controlaron todas las *variables*. | Sie kontrollierten alle *Variablen*. |
+la correlación | die Korrelation | n | Hay una *correlación* entre ambos factores. | Es gibt eine *Korrelation* zwischen beiden Faktoren. |
+la causalidad | die Kausalität | n | Correlación no implica *causalidad*. | Korrelation bedeutet nicht *Kausalität*. |
+el sesgo | die Verzerrung | n | El estudio tiene un *sesgo* de selección. | Die Studie weist eine Auswahl*verzerrung* auf. |
+replicar | wiederholen (Experiment) | v | No lograron *replicar* el experimento. | Es gelang nicht, das Experiment zu *wiederholen*. |
+la nanotecnología | die Nanotechnologie | n | La *nanotecnología* revoluciona la medicina. | Die *Nanotechnologie* revolutioniert die Medizin. |
+la computación cuántica | das Quantencomputing | n | Invierten en *computación cuántica*. | Sie investieren in *Quantencomputing*. |
+el aprendizaje automático | das maschinelle Lernen | n | Usan *aprendizaje automático* para detectar fraudes. | Sie nutzen *maschinelles Lernen*, um Betrug zu erkennen. |
+el umbral | die Schwelle | n | Superó el *umbral* crítico. | Es überschritt die kritische *Schwelle*. |
+el rigor | die Strenge, Genauigkeit | n | Falta *rigor* científico. | Es fehlt an wissenschaftlicher *Genauigkeit*. |
+riguroso | streng, gründlich | adj | Es un análisis *riguroso*. | Es ist eine *gründliche* Analyse. |
+el escepticismo | die Skepsis | n | La comunidad científica reaccionó con *escepticismo*. | Die Fachwelt reagierte mit *Skepsis*. |
+la divulgación | die Verbreitung (Wissenschaftskommunikation) | n | Se dedica a la *divulgación* científica. | Er widmet sich der *Wissenschaftsvermittlung*. |

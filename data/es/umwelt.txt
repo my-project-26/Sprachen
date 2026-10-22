@@ -1,0 +1,126 @@
+# Spanisch – Wetter, Natur, Tiere, Umwelt
+## A1
+el sol | die Sonne | n | Hace *sol*. | Die *Sonne* scheint. |
+la lluvia | der Regen | n | Volvimos a casa bajo la *lluvia*. | Wir gingen im *Regen* nach Hause. |
+llover | regnen | v | Está *lloviendo*. | Es *regnet*. | llueve
+la nieve | der Schnee | n | Los niños juegan en la *nieve*. | Die Kinder spielen im *Schnee*. |
+nevar | schneien | v | En invierno *nieva* mucho. | Im Winter *schneit* es viel. | nieva
+el viento | der Wind | n | Hace mucho *viento*. | Es ist sehr *windig*. |
+el calor | die Hitze, Wärme | n | Hace mucho *calor*. | Es ist sehr *heiß*. |
+el frío | die Kälte | n | Hace *frío*. | Es ist *kalt*. |
+el cielo | der Himmel | n | El *cielo* está despejado. | Der *Himmel* ist klar. |
+el árbol | der Baum | n | Hay un *árbol* grande en el jardín. | Im Garten steht ein großer *Baum*. |
+el río | der Fluss | n | El *río* atraviesa la ciudad. | Der *Fluss* fließt durch die Stadt. |
+el animal | das Tier | n | ¿Cuál es tu *animal* favorito? | Was ist dein Lieblings*tier*? |
+el pájaro | der Vogel | n | Un *pájaro* canta fuera. | Draußen singt ein *Vogel*. |
+el caballo | das Pferd | n | Monta a *caballo*. | Sie reitet. |
+la vaca | die Kuh | n | Las *vacas* están en el prado. | Die *Kühe* stehen auf der Weide. |
+## A2
+la tormenta | das Gewitter, der Sturm | n | La *tormenta* duró toda la noche. | Das *Gewitter* dauerte die ganze Nacht. |
+el trueno | der Donner | n | ¿Has oído el *trueno*? | Hast du den *Donner* gehört? |
+el rayo | der Blitz | n | Un *rayo* cayó en el árbol. | Ein *Blitz* schlug in den Baum ein. |
+la niebla | der Nebel | n | Había mucha *niebla*. | Es war sehr *neblig*. |
+el hielo | das Eis | n | Cuidado, hay *hielo* en la carretera. | Vorsicht, auf der Straße ist *Glatteis*. |
+la nube | die Wolke | n | No hay ni una *nube*. | Es ist keine einzige *Wolke* da. |
+nublado | bewölkt | adj | Hoy está *nublado*. | Heute ist es *bewölkt*. |
+el grado | der Grad | n | Hoy estamos a treinta *grados*. | Heute hat es dreißig *Grad*. |
+el pronóstico del tiempo | die Wettervorhersage | n | Según el *pronóstico del tiempo*, lloverá. | Laut *Wettervorhersage* wird es regnen. |
+seco | trocken | adj | Este verano ha sido muy *seco*. | Dieser Sommer war sehr *trocken*. |
+mojado | nass | adj | Tengo los zapatos *mojados*. | Meine Schuhe sind *nass*. |
+el campo | das Land; Feld | n | Vivimos en el *campo*. | Wir wohnen auf dem *Land*. |
+la colina | der Hügel | n | La casa está en una *colina*. | Das Haus steht auf einem *Hügel*. |
+el valle | das Tal | n | El pueblo está en un *valle*. | Das Dorf liegt in einem *Tal*. |
+el océano | der Ozean | n | El Pacífico es el *océano* más grande. | Der Pazifik ist der größte *Ozean*. |
+la ola | die Welle | n | Hoy las *olas* son enormes. | Heute sind die *Wellen* riesig. |
+la arena | der Sand | n | La *arena* quema. | Der *Sand* ist glühend heiß. |
+la piedra | der Stein | n | Tiró una *piedra* al lago. | Er warf einen *Stein* in den See. |
+la hierba | das Gras | n | No pises la *hierba*. | Betritt den *Rasen* nicht. |
+la hoja | das Blatt | n | Las *hojas* se vuelven rojas. | Die *Blätter* werden rot. |
+la Tierra | die Erde | n | La *Tierra* gira alrededor del sol. | Die *Erde* dreht sich um die Sonne. |
+la luna | der Mond | n | Esta noche hay *luna* llena. | Heute Nacht ist Voll*mond*. |
+la estrella | der Stern | n | ¡Mira cuántas *estrellas*! | Schau, wie viele *Sterne*! |
+el aire | die Luft | n | Necesito aire fresco. Abre la ventana para que entre *aire*. | Ich brauche frische Luft. Mach das Fenster auf, damit *Luft* reinkommt. |
+el medio ambiente | die Umwelt | n | Hay que proteger el *medio ambiente*. | Wir müssen die *Umwelt* schützen. |
+reciclar | recyceln | v | *Reciclamos* vidrio y papel. | Wir *recyceln* Glas und Papier. |
+el insecto | das Insekt | n | En verano hay muchos *insectos*. | Im Sommer gibt es viele *Insekten*. |
+la abeja | die Biene | n | Me picó una *abeja*. | Mich hat eine *Biene* gestochen. |
+la mosca | die Fliege | n | ¡Hay una *mosca* en mi sopa! | In meiner Suppe ist eine *Fliege*! |
+la araña | die Spinne | n | Me dan miedo las *arañas*. | Ich habe Angst vor *Spinnen*. |
+la serpiente | die Schlange | n | ¿Hay *serpientes* aquí? | Gibt es hier *Schlangen*? |
+el conejo | das Kaninchen | n | Mi hija tiene un *conejo*. | Meine Tochter hat ein *Kaninchen*. |
+el pato | die Ente | n | Dimos de comer a los *patos*. | Wir haben die *Enten* gefüttert. |
+el león | der Löwe | n | El *león* está durmiendo. | Der *Löwe* schläft. |
+el oso | der Bär | n | Vimos un *oso* en los Pirineos. | Wir sahen einen *Bären* in den Pyrenäen. |
+el mono | der Affe | n | Los *monos* nos robaron la comida. | Die *Affen* klauten unser Essen. |
+el zoo | der Zoo | n | Llevemos a los niños al *zoo*. | Lass uns mit den Kindern in den *Zoo* gehen. |
+la granja | der Bauernhof | n | Viven en una *granja*. | Sie wohnen auf einem *Bauernhof*. |
+salvaje | wild | adj | Vimos caballos *salvajes*. | Wir sahen *wilde* Pferde. |
+## B1
+la contaminación | die Verschmutzung | n | La *contaminación* del aire es un problema. | Die Luft*verschmutzung* ist ein Problem. |
+la inundación | die Überschwemmung | n | La *inundación* destruyó cientos de casas. | Das *Hochwasser* zerstörte Hunderte Häuser. |
+la sequía | die Dürre | n | La *sequía* afecta a la agricultura. | Die *Dürre* trifft die Landwirtschaft. |
+el incendio forestal | der Waldbrand | n | El *incendio forestal* quemó mil hectáreas. | Der *Waldbrand* vernichtete tausend Hektar. |
+el cambio climático | der Klimawandel | n | El *cambio climático* es una realidad. | Der *Klimawandel* ist Realität. |
+el clima | das Klima | n | El *clima* aquí es suave. | Das *Klima* hier ist mild. | maskulin trotz -a
+la energía renovable | die erneuerbare Energie | n | Apostamos por la *energía renovable*. | Wir setzen auf *erneuerbare Energie*. |
+la energía solar | die Solarenergie | n | Tenemos placas de *energía solar*. | Wir haben *Solar*anlagen. |
+los residuos | der Abfall | n | Hay que reducir los *residuos*. | Man muss den *Abfall* reduzieren. |
+el contenedor | der Container, die Tonne | n | Echa el vidrio en el *contenedor* verde. | Wirf das Glas in den grünen *Container*. |
+proteger | schützen | v | Hay que *proteger* los bosques. | Man muss die Wälder *schützen*. | protejo
+la especie | die Art | n | Es una *especie* en peligro de extinción. | Es ist eine vom Aussterben bedrohte *Art*. |
+en peligro de extinción | vom Aussterben bedroht | phrase | El lince está *en peligro de extinción*. | Der Luchs ist *vom Aussterben bedroht*. |
+el planeta | der Planet | n | Debemos cuidar el *planeta*. | Wir müssen auf den *Planeten* achten. | maskulin trotz -a
+el paisaje | die Landschaft | n | El *paisaje* es precioso. | Die *Landschaft* ist wunderschön. |
+el desierto | die Wüste | n | Cruzamos el *desierto* en jeep. | Wir durchquerten die *Wüste* im Jeep. |
+la selva | der Dschungel, Urwald | n | La *selva* amazónica es enorme. | Der Amazonas-*Regenwald* ist riesig. |
+la cueva | die Höhle | n | Exploramos una *cueva*. | Wir erkundeten eine *Höhle*. |
+el volcán | der Vulkan | n | El *volcán* entró en erupción. | Der *Vulkan* brach aus. |
+el terremoto | das Erdbeben | n | Hubo un *terremoto* fuerte. | Es gab ein starkes *Erdbeben*. |
+la temperatura | die Temperatur | n | Las *temperaturas* bajarán mañana. | Die *Temperaturen* sinken morgen. |
+húmedo | feucht | adj | El clima es muy *húmedo*. | Das Klima ist sehr *feucht*. |
+el polvo | der Staub | n | El viento trae *polvo* del desierto. | Der Wind bringt *Staub* aus der Wüste. |
+la granja | der Bauernhof | n | Visitamos una *granja* ecológica. | Wir besuchten einen Bio-*Bauernhof*. |
+la agricultura | die Landwirtschaft | n | La *agricultura* necesita agua. | Die *Landwirtschaft* braucht Wasser. |
+la ballena | der Wal | n | Vimos *ballenas* en Canarias. | Wir sahen *Wale* auf den Kanaren. |
+el delfín | der Delfin | n | Los *delfines* son muy inteligentes. | *Delfine* sind sehr intelligent. |
+el águila | der Adler | n | Un *águila* volaba sobre el valle. | Ein *Adler* kreiste über dem Tal. | feminin: el águila
+el lobo | der Wolf | n | Los *lobos* han vuelto a la sierra. | Die *Wölfe* sind ins Gebirge zurückgekehrt. |
+## B2
+el calentamiento global | die globale Erwärmung | n | El *calentamiento global* derrite los glaciares. | Die *Erderwärmung* lässt die Gletscher schmelzen. |
+las emisiones | die Emissionen | n | Hay que reducir las *emisiones* de CO2. | Man muss die CO2-*Emissionen* senken. |
+el efecto invernadero | der Treibhauseffekt | n | El *efecto invernadero* aumenta la temperatura. | Der *Treibhauseffekt* erhöht die Temperatur. |
+la huella de carbono | der CO2-Fußabdruck | n | Quiero reducir mi *huella de carbono*. | Ich will meinen *CO2-Fußabdruck* verringern. |
+sostenible | nachhaltig | adj | Es un turismo *sostenible*. | Es ist *nachhaltiger* Tourismus. |
+la sostenibilidad | die Nachhaltigkeit | n | La empresa apuesta por la *sostenibilidad*. | Die Firma setzt auf *Nachhaltigkeit*. |
+los combustibles fósiles | die fossilen Brennstoffe | n | Dependemos de los *combustibles fósiles*. | Wir hängen von *fossilen Brennstoffen* ab. |
+la biodiversidad | die Artenvielfalt | n | La *biodiversidad* está amenazada. | Die *Artenvielfalt* ist bedroht. |
+el ecosistema | das Ökosystem | n | El *ecosistema* del río es frágil. | Das *Ökosystem* des Flusses ist empfindlich. |
+la deforestación | die Abholzung | n | La *deforestación* destruye la selva. | Die *Abholzung* zerstört den Regenwald. |
+el glaciar | der Gletscher | n | Los *glaciares* se están derritiendo. | Die *Gletscher* schmelzen. |
+derretirse | schmelzen | v | El hielo se *derrite* con el calor. | Das Eis *schmilzt* in der Hitze. |
+el vertido | die Einleitung (Schadstoffe) | n | Un *vertido* de petróleo contaminó la costa. | Eine Öl*pest* verschmutzte die Küste. |
+los plásticos de un solo uso | das Einwegplastik | n | Prohíben los *plásticos de un solo uso*. | *Einwegplastik* wird verboten. |
+el reciclaje | das Recycling | n | El *reciclaje* es obligatorio aquí. | *Recycling* ist hier Pflicht. |
+la reserva natural | das Naturschutzgebiet | n | Es una *reserva natural* protegida. | Es ist ein geschütztes *Naturschutzgebiet*. |
+el parque nacional | der Nationalpark | n | Visitamos el *parque nacional* de Doñana. | Wir besuchten den *Nationalpark* Doñana. |
+la ola de calor | die Hitzewelle | n | Sufrimos una *ola de calor*. | Wir litten unter einer *Hitzewelle*. |
+el huracán | der Hurrikan | n | El *huracán* arrasó la isla. | Der *Hurrikan* verwüstete die Insel. |
+escaso | knapp, spärlich | adj | El agua es un recurso *escaso*. | Wasser ist eine *knappe* Ressource. |
+los recursos naturales | die Bodenschätze, natürlichen Ressourcen | n | El país es rico en *recursos naturales*. | Das Land ist reich an *Bodenschätzen*. |
+el ecologista | der Umweltschützer | n | Los *ecologistas* protestaron. | Die *Umweltschützer* protestierten. |
+## C1
+la mitigación | die Eindämmung | n | Se necesitan medidas de *mitigación*. | Es braucht Maßnahmen zur *Eindämmung*. |
+la descarbonización | die Dekarbonisierung | n | La *descarbonización* de la industria llevará años. | Die *Dekarbonisierung* der Industrie wird Jahre dauern. |
+la desertificación | die Wüstenbildung | n | La *desertificación* avanza en el sur. | Die *Wüstenbildung* schreitet im Süden voran. |
+la erosión | die Erosion | n | La *erosión* del suelo es grave. | Die Boden*erosion* ist gravierend. |
+el acuífero | der Grundwasserleiter | n | El *acuífero* está sobreexplotado. | Das *Grundwasser* wird übernutzt. |
+la escorrentía | der Oberflächenabfluss | n | La *escorrentía* arrastró la tierra. | Der *Abfluss* schwemmte die Erde weg. |
+la contaminación acústica | die Lärmbelastung | n | La *contaminación acústica* afecta a la salud. | *Lärmbelastung* schadet der Gesundheit. |
+el ecocidio | der Ökozid | n | Lo califican de *ecocidio*. | Sie bezeichnen es als *Ökozid*. |
+la transición energética | die Energiewende | n | La *transición energética* exige inversiones. | Die *Energiewende* erfordert Investitionen. |
+el lavado verde | das Greenwashing | n | Acusan a la empresa de *lavado verde*. | Man wirft der Firma *Greenwashing* vor. |
+la cuenca | das Flussgebiet; Becken | n | La *cuenca* del Ebro sufre sequía. | Das *Einzugsgebiet* des Ebro leidet unter Dürre. |
+la marea | die Gezeiten | n | Con la *marea* alta la playa desaparece. | Bei Flut verschwindet der Strand. | marea alta/baja = Flut/Ebbe
+el litoral | der Küstenstreifen | n | El *litoral* mediterráneo está muy urbanizado. | Die Mittelmeer*küste* ist stark bebaut. |
+autóctono | einheimisch | adj | Plantaron especies *autóctonas*. | Sie pflanzten *heimische* Arten. |
+invasor | invasiv | adj | Es una especie *invasora*. | Es ist eine *invasive* Art. |
