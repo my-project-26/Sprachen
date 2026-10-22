@@ -68,6 +68,16 @@ function build(lang) {
           }
           return skippedA++;
         }
+        // andere Sprachen: Wort mehrfach in den Listen → niedrigstes Niveau zählt
+        if (lang !== "en") {
+          const prev = rows.find((r) => idOf(r[0]) === id);
+          if (prev && LEVELS.indexOf(level) < LEVELS.indexOf(prev[3])) {
+            perTopic[prev[4]][prev[3]]--;
+            prev[3] = level;
+            perTopic[prev[4]][level]++;
+          }
+          return;
+        }
         return problems.push(`${where}: doppelt „${en}“ (schon in ${seen.get(id)})`);
       }
       seen.set(id, where);
