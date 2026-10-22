@@ -1,0 +1,59 @@
+# Gesundheit A1/A2
+## A1
+doctor | Arzt, Ärztin | n | I have to see a *doctor*. | Ich muss zum *Arzt*. |
+hospital | Krankenhaus | n | She is in *hospital*. | Sie ist im *Krankenhaus*. |
+ill | krank | adj | I feel *ill* today. | Ich fühle mich heute *krank*. | US meist: sick
+sick | krank; übel | adj | He's been *sick* all week. | Er ist schon die ganze Woche *krank*. | feel sick = mir ist übel
+healthy | gesund | adj | Fruit is *healthy*. | Obst ist *gesund*. |
+hurt | wehtun; verletzen | v | My back *hurts*. | Mir *tut* der Rücken *weh*. | hurt – hurt
+tired | müde | adj | I'm very *tired*. | Ich bin sehr *müde*. |
+fine | gut, in Ordnung | adj | I'm *fine*, thanks. | Mir geht's *gut*, danke. |
+medicine | Medizin, Medikament | n | Take this *medicine* twice a day. | Nimm dieses *Medikament* zweimal täglich. |
+headache | Kopfschmerzen | n | I have a terrible *headache*. | Ich habe schreckliche *Kopfschmerzen*. |
+toothache | Zahnschmerzen | n | I've got *toothache*. | Ich habe *Zahnschmerzen*. |
+dentist | Zahnarzt, Zahnärztin | n | I'm going to the *dentist* tomorrow. | Ich gehe morgen zum *Zahnarzt*. |
+nurse | Krankenpfleger, Krankenschwester | n | The *nurse* took my blood pressure. | Die *Krankenschwester* hat meinen Blutdruck gemessen. |
+problem | Problem | n | What's the *problem*? | Was ist das *Problem*? |
+better | besser | adj | I feel much *better* today. | Heute geht es mir viel *besser*. |
+## A2
+pain | Schmerz | n | I have a *pain* in my chest. | Ich habe *Schmerzen* in der Brust. |
+ache | schmerzen; Schmerz | v | My whole body *aches*. | Mir *tut* alles *weh*. | Aussprache „eik“
+cough | Husten; husten | n | I have a bad *cough*. | Ich habe schlimmen *Husten*. | Aussprache „koff“
+flu | Grippe | n | Half the office has *flu*. | Das halbe Büro hat die *Grippe*. |
+fever | Fieber | n | The baby has a *fever*. | Das Baby hat *Fieber*. |
+temperature | Temperatur; Fieber | n | Do you have a *temperature*? | Hast du *Fieber*? |
+sore throat | Halsschmerzen | n | I've got a *sore throat*. | Ich habe *Halsschmerzen*. |
+stomachache | Bauchschmerzen | n | I ate too much and now I have a *stomachache*. | Ich habe zu viel gegessen und jetzt *Bauchschmerzen*. |
+backache | Rückenschmerzen | n | Sitting all day gives me *backache*. | Vom ganzen Tag Sitzen bekomme ich *Rückenschmerzen*. |
+injury | Verletzung | n | It's only a small *injury*. | Es ist nur eine kleine *Verletzung*. |
+break | brechen | v | He *broke* his leg skiing. | Er hat sich beim Skifahren das Bein *gebrochen*. | broke – broken
+cut | Schnitt(wunde) | n | Put a plaster on that *cut*. | Kleb ein Pflaster auf den *Schnitt*. |
+plaster | Pflaster | n | Have you got a *plaster*? | Hast du ein *Pflaster*? | US: Band-Aid
+pill | Tablette | n | Take one *pill* after each meal. | Nimm nach jeder Mahlzeit eine *Tablette*. |
+tablet | Tablette; Tablet | n | Take two *tablets* with water. | Nimm zwei *Tabletten* mit Wasser. |
+chemist | Apotheke(r) | n | Ask the *chemist* for advice. | Frag in der *Apotheke* um Rat. | auch: pharmacy
+appointment | Termin | n | I have a doctor's *appointment* at ten. | Ich habe um zehn einen *Arzttermin*. |
+patient | Patient(in); geduldig | n | The doctor has many *patients*. | Die Ärztin hat viele *Patienten*. |
+ambulance | Krankenwagen | n | Call an *ambulance*! | Ruf einen *Krankenwagen*! |
+emergency | Notfall | n | In an *emergency*, call 112. | Im *Notfall* 112 anrufen. |
+accident | Unfall | n | He had an *accident* at work. | Er hatte einen *Unfall* bei der Arbeit. |
+blood | Blut | n | There was *blood* on his shirt. | Auf seinem Hemd war *Blut*. |
+well | gesund | adj | I'm not feeling *well*. | Ich fühle mich nicht *wohl*. |
+unwell | unwohl, krank | adj | She felt *unwell* and went home. | Sie fühlte sich *unwohl* und ging nach Hause. |
+get better | gesund werden | phrase | Get well soon – I hope you *get better* quickly! | Gute Besserung – ich hoffe, du wirst schnell *gesund*! |
+rest | (sich) ausruhen; Ruhe | v | You need to *rest*. | Du musst dich *ausruhen*. |
+lie down | sich hinlegen | v | I need to *lie down* for a bit. | Ich muss mich kurz *hinlegen*. |
+sleepy | schläfrig | adj | I always get *sleepy* after lunch. | Nach dem Mittagessen werde ich immer *schläfrig*. |
+fit | fit | adj | I want to get *fit*. | Ich will *fit* werden. |
+exercise | Bewegung, Sport; Übung | n | I don't get enough *exercise*. | Ich bewege mich nicht *genug*. |
+gym | Fitnessstudio | n | I go to the *gym* after work. | Ich gehe nach der Arbeit ins *Fitnessstudio*. |
+weight | Gewicht | n | I want to lose *weight*. | Ich will *abnehmen*. | lose weight = abnehmen
+smoke | rauchen; Rauch | v | I stopped *smoking* last year. | Ich habe letztes Jahr aufgehört zu *rauchen*. |
+alive | lebendig, am Leben | adj | Is the fish still *alive*? | Lebt der Fisch noch? |
+dead | tot | adj | My plants are all *dead*. | Meine Pflanzen sind alle *eingegangen*. |
+die | sterben | v | Her grandfather *died* last year. | Ihr Großvater ist letztes Jahr *gestorben*. |
+breathe | atmen | v | *Breathe* in deeply. | *Atme* tief ein. |
+sneeze | niesen | v | I can't stop *sneezing*. | Ich muss ständig *niesen*. |
+allergic | allergisch | adj | I'm *allergic* to cats. | Ich bin *allergisch* gegen Katzen. |
+swollen | geschwollen | adj | My ankle is *swollen*. | Mein Knöchel ist *geschwollen*. |
+check-up | Vorsorgeuntersuchung | n | I go for a *check-up* every year. | Ich gehe jedes Jahr zur *Vorsorgeuntersuchung*. |

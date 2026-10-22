@@ -1,8 +1,10 @@
-// Startwortschatz B1–C1, nach Thema gruppiert.
+// Startwortschatz A1–C1, nach Thema gruppiert.
 // Format: [englisch, deutsch, Wortart, Niveau, Thema, Beispielsatz EN, Beispielsatz DE, Hinweis]
 // Das Zielwort ist im Satz mit *Sternchen* markiert (auch in gebeugter Form).
 
 export const TOPICS = {
+  grundlagen: "Grundwortschatz",
+  familie: "Familie & Freunde",
   reisen: "Reisen & Urlaub",
   camping: "Camping & Outdoor",
   rad: "Radfahren",
@@ -27,7 +29,7 @@ export const TOPICS = {
   phrasal: "Phrasal Verbs & Redewendungen",
 };
 
-export const LEVELS = ["B1", "B2", "C1"];
+export const LEVELS = ["A1", "A2", "B1", "B2", "C1"];
 
 import { WORDBANK } from "./wordbank.js";
 

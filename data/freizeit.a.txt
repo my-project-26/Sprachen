@@ -1,0 +1,79 @@
+# Freizeit, Sport & Kultur A1/A2
+## A1
+hobby | Hobby | n | What are your *hobbies*? | Was sind deine *Hobbys*? |
+sport | Sport | n | Do you do any *sport*? | Machst du *Sport*? | US: sports
+football | Fußball | n | The boys play *football* every day. | Die Jungs spielen jeden Tag *Fußball*. | US: soccer
+tennis | Tennis | n | Do you want to play *tennis*? | Willst du *Tennis* spielen? |
+swim | schwimmen | v | Can you *swim*? | Kannst du *schwimmen*? | swam – swum
+dance | tanzen; Tanz | v | Let's *dance*! | Lass uns *tanzen*! |
+sing | singen | v | She *sings* in a band. | Sie *singt* in einer Band. | sang – sung
+music | Musik | n | What *music* do you like? | Welche *Musik* magst du? |
+song | Lied | n | I love this *song*. | Ich liebe dieses *Lied*. |
+film | Film | n | Have you seen the new *film*? | Hast du den neuen *Film* gesehen? | US: movie
+book | Buch | n | I'm reading a good *book*. | Ich lese gerade ein gutes *Buch*. |
+game | Spiel | n | Let's play a *game*. | Lass uns ein *Spiel* spielen. |
+ball | Ball | n | Throw me the *ball*. | Wirf mir den *Ball* zu. |
+team | Mannschaft, Team | n | Which *team* do you support? | Für welche *Mannschaft* bist du? |
+guitar | Gitarre | n | He plays the *guitar*. | Er spielt *Gitarre*. |
+piano | Klavier | n | My daughter is learning the *piano*. | Meine Tochter lernt *Klavier*. |
+camera | Kamera | n | I forgot my *camera*. | Ich habe meine *Kamera* vergessen. |
+fun | Spaß | n | Have *fun*! | Viel *Spaß*! |
+draw | zeichnen | v | Can you *draw* a cat? | Kannst du eine Katze *zeichnen*? | drew – drawn
+paint | malen; streichen | v | She *paints* landscapes. | Sie *malt* Landschaften. |
+free time | Freizeit | n | What do you do in your *free time*? | Was machst du in deiner *Freizeit*? |
+## A2
+activity | Aktivität | n | The hotel offers lots of *activities*. | Das Hotel bietet viele *Aktivitäten*. |
+match | Spiel (Sport) | n | Did you watch the *match*? | Hast du das *Spiel* gesehen? |
+player | Spieler(in) | n | He's the best *player* in the team. | Er ist der beste *Spieler* der Mannschaft. |
+win | Sieg | n | It was a great *win* for the team. | Es war ein großer *Sieg* für das Team. |
+score | (Tor) erzielen; Spielstand | v | He *scored* two goals. | Er hat zwei Tore *geschossen*. |
+goal | Tor; Ziel | n | What a *goal*! | Was für ein *Tor*! |
+race | Rennen | n | She won the *race*. | Sie hat das *Rennen* gewonnen. |
+competition | Wettbewerb | n | He entered a photo *competition*. | Er hat an einem Foto*wettbewerb* teilgenommen. |
+prize | Preis (Gewinn) | n | She won first *prize*. | Sie hat den ersten *Preis* gewonnen. | Kaufpreis = price
+champion | Meister(in), Sieger(in) | n | They are the world *champions*. | Sie sind *Weltmeister*. |
+cycling | Radfahren | n | *Cycling* is my favourite sport. | *Radfahren* ist mein Lieblingssport. |
+running | Laufen, Joggen | n | *Running* keeps me fit. | *Laufen* hält mich fit. |
+jogging | Joggen | n | I go *jogging* in the park. | Ich gehe im Park *joggen*. |
+skiing | Skifahren | n | We go *skiing* every winter. | Wir fahren jeden Winter *Ski*. |
+hiking | Wandern | n | We love *hiking* in the mountains. | Wir *wandern* gern in den Bergen. |
+climb | klettern, besteigen | v | We *climbed* to the top. | Wir sind bis zum Gipfel *geklettert*. |
+fishing | Angeln | n | My dad loves *fishing*. | Mein Vater *angelt* gern. |
+camping | Camping, Zelten | n | We go *camping* every summer. | Wir gehen jeden Sommer *zelten*. |
+concert | Konzert | n | We're going to a *concert* tonight. | Wir gehen heute Abend auf ein *Konzert*. |
+band | Band | n | My brother plays in a *band*. | Mein Bruder spielt in einer *Band*. |
+singer | Sänger(in) | n | She's my favourite *singer*. | Sie ist meine Lieblings*sängerin*. |
+instrument | Instrument | n | Do you play an *instrument*? | Spielst du ein *Instrument*? |
+drum | Trommel; Schlagzeug | n | He plays the *drums*. | Er spielt *Schlagzeug*. |
+art | Kunst | n | I'm interested in modern *art*. | Ich interessiere mich für moderne *Kunst*. |
+artist | Künstler(in) | n | He's a famous *artist*. | Er ist ein berühmter *Künstler*. |
+painting | Gemälde, Bild | n | This *painting* is beautiful. | Dieses *Gemälde* ist wunderschön. |
+gallery | Galerie | n | We visited an art *gallery*. | Wir haben eine Kunst*galerie* besucht. |
+exhibition | Ausstellung | n | The *exhibition* opens on Friday. | Die *Ausstellung* öffnet am Freitag. |
+festival | Festival, Fest | n | We went to a music *festival*. | Wir waren auf einem Musik*festival*. |
+show | Show, Vorstellung | n | The *show* starts at eight. | Die *Vorstellung* beginnt um acht. |
+actor | Schauspieler | n | He's a famous *actor*. | Er ist ein berühmter *Schauspieler*. |
+actress | Schauspielerin | n | She's my favourite *actress*. | Sie ist meine Lieblings*schauspielerin*. |
+story | Geschichte | n | Tell me a *story*. | Erzähl mir eine *Geschichte*. |
+novel | Roman | n | I'm reading a crime *novel*. | Ich lese einen Krimi*roman*. | False Friend: ≠ Novelle
+magazine | Zeitschrift | n | She reads fashion *magazines*. | Sie liest Mode*zeitschriften*. |
+comic | Comic | n | My son loves *comics*. | Mein Sohn liebt *Comics*. |
+photography | Fotografie | n | *Photography* is my hobby. | *Fotografie* ist mein Hobby. |
+collect | sammeln | v | He *collects* stamps. | Er *sammelt* Briefmarken. |
+join | beitreten; sich anschließen | v | Why don't you *join* us? | Komm doch *mit*! |
+club | Verein, Club | n | I joined a tennis *club*. | Ich bin einem Tennis*verein* beigetreten. |
+member | Mitglied | n | Are you a *member*? | Bist du *Mitglied*? |
+practise | üben, trainieren | v | I *practise* the piano every day. | Ich *übe* jeden Tag Klavier. | US: practice
+train | trainieren | v | She *trains* three times a week. | Sie *trainiert* dreimal pro Woche. |
+relax | sich entspannen | v | I just want to *relax*. | Ich will mich einfach *entspannen*. |
+enjoy | genießen, Spaß haben | v | Did you *enjoy* the party? | Hat dir die Party *gefallen*? |
+go out | ausgehen | v | Let's *go out* tonight. | Lass uns heute Abend *ausgehen*. |
+hang out | abhängen, rumhängen | v | We *hang out* at the park. | Wir *hängen* im Park *ab*. |
+nightclub | Nachtclub, Disko | n | They went to a *nightclub*. | Sie sind in einen *Club* gegangen. |
+ticket office | Kasse, Ticketschalter | n | Buy your ticket at the *ticket office*. | Kauf deine Karte an der *Kasse*. |
+favourite | Liebling | n | This song is my *favourite*. | Dieses Lied ist mein *Lieblingslied*. |
+toy | Spielzeug | n | The kids' *toys* are everywhere. | Das *Spielzeug* der Kinder liegt überall. |
+cards | Karten (Spiel) | n | Let's play *cards*. | Lass uns *Karten* spielen. |
+chess | Schach | n | Can you play *chess*? | Kannst du *Schach* spielen? |
+puzzle | Rätsel, Puzzle | n | I like doing *puzzles*. | Ich mache gern *Rätsel*. |
+video game | Videospiel | n | He plays *video games* all day. | Er spielt den ganzen Tag *Videospiele*. |

@@ -1,0 +1,125 @@
+# Familie & Freunde A1/A2
+## A1
+family | Familie | n | I have a big *family*. | Ich habe eine große *Familie*. |
+mother | Mutter | n | My *mother* is a nurse. | Meine *Mutter* ist Krankenschwester. |
+father | Vater | n | My *father* likes cooking. | Mein *Vater* kocht gern. |
+mum | Mama | n | *Mum*, where are my socks? | *Mama*, wo sind meine Socken? | US: mom
+dad | Papa | n | My *dad* drives a taxi. | Mein *Papa* fährt Taxi. |
+parents | Eltern | n | My *parents* live in Munich. | Meine *Eltern* wohnen in München. |
+brother | Bruder | n | My *brother* is older than me. | Mein *Bruder* ist älter als ich. |
+sister | Schwester | n | Her *sister* lives in Spain. | Ihre *Schwester* lebt in Spanien. |
+son | Sohn | n | Their *son* is a student. | Ihr *Sohn* ist Student. |
+daughter | Tochter | n | Our *daughter* is five. | Unsere *Tochter* ist fünf. |
+child | Kind | n | They have one *child*. | Sie haben ein *Kind*. | Plural: children
+children | Kinder | n | The *children* are at school. | Die *Kinder* sind in der Schule. |
+baby | Baby | n | The *baby* is sleeping. | Das *Baby* schläft. |
+husband | Ehemann | n | Her *husband* is from Ireland. | Ihr *Mann* kommt aus Irland. |
+wife | Ehefrau | n | This is my *wife*, Anna. | Das ist meine *Frau*, Anna. | Plural: wives
+grandmother | Großmutter | n | My *grandmother* is ninety. | Meine *Großmutter* ist neunzig. | auch: grandma
+grandfather | Großvater | n | My *grandfather* was a farmer. | Mein *Großvater* war Bauer. | auch: grandpa
+grandparents | Großeltern | n | We visit our *grandparents* on Sundays. | Wir besuchen sonntags unsere *Großeltern*. |
+uncle | Onkel | n | My *uncle* lives in Canada. | Mein *Onkel* lebt in Kanada. |
+aunt | Tante | n | My *aunt* has three cats. | Meine *Tante* hat drei Katzen. |
+cousin | Cousin, Cousine | n | My *cousin* is getting married. | Meine *Cousine* heiratet. | für beide Geschlechter
+friend | Freund(in) | n | She's my best *friend*. | Sie ist meine beste *Freundin*. | boyfriend / girlfriend = fester Freund / feste Freundin
+boyfriend | (fester) Freund | n | Her *boyfriend* is very nice. | Ihr *Freund* ist sehr nett. |
+girlfriend | (feste) Freundin | n | I'm meeting my *girlfriend* tonight. | Ich treffe heute Abend meine *Freundin*. |
+man | Mann | n | Who is that *man*? | Wer ist dieser *Mann*? | Plural: men
+woman | Frau | n | A *woman* asked me the way. | Eine *Frau* fragte mich nach dem Weg. | Plural: women (Aussprache „wimin“)
+boy | Junge | n | The *boy* is playing football. | Der *Junge* spielt Fußball. |
+girl | Mädchen | n | The *girl* has long hair. | Das *Mädchen* hat lange Haare. |
+people | Leute, Menschen | n | Many *people* live in the city. | Viele *Menschen* leben in der Stadt. | Plural von person
+person | Person, Mensch | n | She's a very kind *person*. | Sie ist ein sehr freundlicher *Mensch*. |
+name | Name | n | What's your *name*? | Wie ist dein *Name*? |
+first name | Vorname | n | His *first name* is Paul. | Sein *Vorname* ist Paul. |
+surname | Nachname | n | Can you spell your *surname*? | Können Sie Ihren *Nachnamen* buchstabieren? | auch: last name
+age | Alter | n | What *age* is your son? | Wie *alt* ist dein Sohn? |
+birthday | Geburtstag | n | Happy *birthday*! | Alles Gute zum *Geburtstag*! |
+party | Party, Feier | n | Are you coming to my *party*? | Kommst du zu meiner *Party*? |
+married | verheiratet | adj | Are you *married*? | Bist du *verheiratet*? | get married = heiraten
+single | ledig, Single | adj | My brother is still *single*. | Mein Bruder ist noch *Single*. |
+body | Körper | n | Exercise is good for your *body*. | Sport ist gut für deinen *Körper*. |
+head | Kopf | n | My *head* hurts. | Mir tut der *Kopf* weh. |
+face | Gesicht | n | Wash your *face*. | Wasch dir das *Gesicht*. |
+eye | Auge | n | She has blue *eyes*. | Sie hat blaue *Augen*. |
+ear | Ohr | n | My *ears* are cold. | Meine *Ohren* sind kalt. |
+nose | Nase | n | He broke his *nose*. | Er hat sich die *Nase* gebrochen. |
+mouth | Mund | n | Open your *mouth*, please. | Öffnen Sie bitte den *Mund*. |
+hair | Haare | n | She has long *hair*. | Sie hat lange *Haare*. | unzählbar: her hair is …
+hand | Hand | n | Raise your *hand*. | Heb die *Hand*. |
+arm | Arm | n | I hurt my *arm*. | Ich habe mir den *Arm* verletzt. |
+leg | Bein | n | My *legs* are tired. | Meine *Beine* sind müde. |
+foot | Fuß | n | My left *foot* hurts. | Mein linker *Fuß* tut weh. | Plural: feet
+tall | groß (Person) | adj | He is very *tall*. | Er ist sehr *groß*. |
+friendly | freundlich | adj | The people here are very *friendly*. | Die Leute hier sind sehr *freundlich*. |
+funny | lustig | adj | My dad is really *funny*. | Mein Vater ist echt *lustig*. |
+kind | freundlich, lieb; Art | adj | That's very *kind* of you. | Das ist sehr *lieb* von dir. |
+pretty | hübsch; ziemlich | adj | She's very *pretty*. | Sie ist sehr *hübsch*. |
+fat | dick | adj | Our cat is too *fat*. | Unsere Katze ist zu *dick*. | über Menschen unhöflich
+thin | dünn | adj | He's very *thin*. | Er ist sehr *dünn*. |
+hug | umarmen; Umarmung | v | She *hugged* her son. | Sie *umarmte* ihren Sohn. |
+kiss | küssen; Kuss | v | He *kissed* her goodbye. | Er gab ihr einen Abschieds*kuss*. |
+visit | besuchen; Besuch | v | We *visit* my parents every month. | Wir *besuchen* jeden Monat meine Eltern. |
+meet | treffen; kennenlernen | v | Nice to *meet* you! | Schön, dich *kennenzulernen*! | met – met
+dog | Hund | n | Our *dog* loves the park. | Unser *Hund* liebt den Park. |
+cat | Katze | n | The *cat* is sleeping on the sofa. | Die *Katze* schläft auf dem Sofa. |
+pet | Haustier | n | Do you have any *pets*? | Hast du *Haustiere*? |
+## A2
+relative | Verwandte(r) | n | All our *relatives* came to the wedding. | Alle unsere *Verwandten* kamen zur Hochzeit. |
+grandson | Enkel | n | Her *grandson* is learning to walk. | Ihr *Enkel* lernt gerade laufen. |
+granddaughter | Enkelin | n | My *granddaughter* loves drawing. | Meine *Enkelin* malt gern. |
+grandchild | Enkelkind | n | They have six *grandchildren*. | Sie haben sechs *Enkelkinder*. |
+nephew | Neffe | n | My *nephew* is twelve. | Mein *Neffe* ist zwölf. |
+niece | Nichte | n | I bought my *niece* a book. | Ich habe meiner *Nichte* ein Buch gekauft. |
+twin | Zwilling | n | My sisters are *twins*. | Meine Schwestern sind *Zwillinge*. |
+partner | Partner(in) | n | Bring your *partner* to the party. | Bring deinen *Partner* zur Party mit. |
+couple | Paar; ein paar | n | They're a lovely *couple*. | Sie sind ein schönes *Paar*. | a couple of = ein paar
+neighbour | Nachbar(in) | n | Our *neighbours* are very quiet. | Unsere *Nachbarn* sind sehr ruhig. | US: neighbor
+guest | Gast | n | We have *guests* this weekend. | Wir haben dieses Wochenende *Gäste*. |
+teenager | Teenager, Jugendliche(r) | n | Their son is a *teenager* now. | Ihr Sohn ist jetzt ein *Teenager*. |
+adult | Erwachsene(r) | n | Tickets cost ten euros for *adults*. | Karten kosten zehn Euro für *Erwachsene*. |
+childhood | Kindheit | n | I had a happy *childhood*. | Ich hatte eine glückliche *Kindheit*. |
+wedding | Hochzeit | n | The *wedding* is in June. | Die *Hochzeit* ist im Juni. |
+marry | heiraten | v | He wants to *marry* her. | Er will sie *heiraten*. |
+born | geboren | adj | I was *born* in 1985. | Ich bin 1985 *geboren*. |
+grow up | aufwachsen | v | I *grew up* in a small village. | Ich bin in einem kleinen Dorf *aufgewachsen*. |
+look like | aussehen wie | v | You *look like* your mother. | Du *siehst* aus *wie* deine Mutter. |
+look after | sich kümmern um | v | Can you *look after* the kids tonight? | Kannst du dich heute Abend um die Kinder *kümmern*? |
+get on with | sich verstehen mit | v | I *get on* well *with* my sister. | Ich *verstehe* mich gut *mit* meiner Schwester. |
+invite | einladen | v | We *invited* all our friends. | Wir haben alle unsere Freunde *eingeladen*. |
+invitation | Einladung | n | Thanks for the *invitation*! | Danke für die *Einladung*! |
+celebrate | feiern | v | How do you *celebrate* Christmas? | Wie *feiert* ihr Weihnachten? |
+present | Geschenk | n | I need a *present* for my mum. | Ich brauche ein *Geschenk* für meine Mama. | auch: gift
+congratulations | Glückwunsch | phrase | *Congratulations* on your new job! | *Glückwunsch* zum neuen Job! |
+appearance | Aussehen | n | Don't judge people by their *appearance*. | Beurteile Menschen nicht nach ihrem *Aussehen*. |
+beard | Bart | n | He's growing a *beard*. | Er lässt sich einen *Bart* wachsen. |
+curly | lockig | adj | She has *curly* hair. | Sie hat *lockige* Haare. |
+straight | glatt; gerade | adj | His hair is *straight* and dark. | Seine Haare sind *glatt* und dunkel. |
+blond | blond | adj | Both kids are *blond*. | Beide Kinder sind *blond*. |
+handsome | gut aussehend (Mann) | adj | He's a *handsome* young man. | Er ist ein *gut aussehender* junger Mann. |
+good-looking | gut aussehend | adj | Her brother is very *good-looking*. | Ihr Bruder sieht sehr *gut aus*. |
+ugly | hässlich | adj | What an *ugly* building! | Was für ein *hässliches* Gebäude! |
+slim | schlank | adj | She is tall and *slim*. | Sie ist groß und *schlank*. |
+shoulder | Schulter | n | My *shoulder* hurts after training. | Meine *Schulter* tut nach dem Training weh. |
+neck | Hals, Nacken | n | I have a stiff *neck*. | Ich habe einen steifen *Nacken*. |
+stomach | Bauch, Magen | n | My *stomach* hurts. | Ich habe *Bauch*schmerzen. |
+finger | Finger | n | I cut my *finger*. | Ich habe mir in den *Finger* geschnitten. |
+knee | Knie | n | I hurt my *knee* playing football. | Ich habe mir beim Fußball das *Knie* verletzt. | k stumm
+tooth | Zahn | n | I broke a *tooth*. | Ich habe mir einen *Zahn* abgebrochen. | Plural: teeth
+skin | Haut | n | She has very pale *skin*. | Sie hat sehr helle *Haut*. |
+heart | Herz | n | His *heart* was beating fast. | Sein *Herz* schlug schnell. |
+lips | Lippen | n | My *lips* are dry. | Meine *Lippen* sind trocken. |
+polite | höflich | adj | Always be *polite* to customers. | Sei immer *höflich* zu Kunden. |
+rude | unhöflich | adj | Don't be so *rude*! | Sei nicht so *unhöflich*! |
+shy | schüchtern | adj | He's a bit *shy* at first. | Er ist anfangs etwas *schüchtern*. |
+lazy | faul | adj | I was *lazy* this weekend. | Ich war dieses Wochenende *faul*. |
+clever | klug, schlau | adj | She's a very *clever* girl. | Sie ist ein sehr *kluges* Mädchen. |
+stupid | dumm | adj | That was a *stupid* mistake. | Das war ein *dummer* Fehler. |
+honest | ehrlich | adj | Please be *honest* with me. | Bitte sei *ehrlich* zu mir. | h stumm: an honest man
+nervous | nervös | adj | I'm always *nervous* before exams. | Vor Prüfungen bin ich immer *nervös*. |
+careful | vorsichtig | adj | Be *careful* on the stairs. | Sei auf der Treppe *vorsichtig*. |
+cheerful | fröhlich | adj | She's always so *cheerful*. | Sie ist immer so *fröhlich*. |
+best friend | beste(r) Freund(in) | n | We've been *best friends* since school. | Wir sind seit der Schule *beste Freunde*. |
+friendship | Freundschaft | n | Our *friendship* means a lot to me. | Unsere *Freundschaft* bedeutet mir viel. |
+fall in love | sich verlieben | phrase | They *fell in love* in Paris. | Sie haben sich in Paris *verliebt*. |
+together with | zusammen mit | prep | I live *together with* two friends. | Ich wohne *zusammen mit* zwei Freunden. |

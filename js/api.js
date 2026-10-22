@@ -10,7 +10,7 @@ import {
   extractJson,
 } from "./prompts.js";
 
-const LEVELS = ["B1", "B2", "C1"];
+const LEVELS = ["A1", "A2", "B1", "B2", "C1"];
 
 function base() {
   return (getState().settings.apiBase || "").trim().replace(/\/$/, "");

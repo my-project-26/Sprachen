@@ -1,0 +1,88 @@
+# Wohnen & Haushalt A1/A2
+## A1
+house | Haus | n | They live in a big *house*. | Sie wohnen in einem großen *Haus*. |
+home | Zuhause; nach Hause | n | I'm going *home*. | Ich gehe nach *Hause*. | at home = zu Hause
+flat | Wohnung | n | My *flat* is on the second floor. | Meine *Wohnung* ist im zweiten Stock. | US: apartment
+apartment | Wohnung | n | They rent a small *apartment*. | Sie mieten eine kleine *Wohnung*. |
+room | Zimmer, Raum | n | My *room* is very small. | Mein *Zimmer* ist sehr klein. |
+bedroom | Schlafzimmer | n | The flat has two *bedrooms*. | Die Wohnung hat zwei *Schlafzimmer*. |
+bathroom | Badezimmer | n | Where is the *bathroom*? | Wo ist das *Badezimmer*? |
+living room | Wohnzimmer | n | We watch TV in the *living room*. | Wir sehen im *Wohnzimmer* fern. |
+garden | Garten | n | The kids play in the *garden*. | Die Kinder spielen im *Garten*. |
+door | Tür | n | Close the *door*, please. | Mach bitte die *Tür* zu. |
+window | Fenster | n | Open the *window*. | Mach das *Fenster* auf. |
+wall | Wand, Mauer | n | There's a picture on the *wall*. | An der *Wand* hängt ein Bild. |
+floor | Boden; Stockwerk | n | The keys are on the *floor*. | Die Schlüssel liegen auf dem *Boden*. |
+stairs | Treppe | n | Go up the *stairs*. | Geh die *Treppe* hoch. |
+table | Tisch | n | Dinner is on the *table*. | Das Essen steht auf dem *Tisch*. |
+chair | Stuhl | n | Take a *chair*. | Nimm dir einen *Stuhl*. |
+bed | Bett | n | I go to *bed* at eleven. | Ich gehe um elf ins *Bett*. |
+sofa | Sofa | n | The cat is on the *sofa*. | Die Katze liegt auf dem *Sofa*. |
+lamp | Lampe | n | Turn on the *lamp*. | Mach die *Lampe* an. |
+fridge | Kühlschrank | n | Put the milk in the *fridge*. | Stell die Milch in den *Kühlschrank*. |
+shower | Dusche; duschen | n | I take a *shower* every morning. | Ich *dusche* jeden Morgen. |
+toilet | Toilette | n | Where's the *toilet*? | Wo ist die *Toilette*? |
+key | Schlüssel | n | I lost my *key*. | Ich habe meinen *Schlüssel* verloren. |
+television | Fernseher, Fernsehen | n | Turn off the *television*. | Mach den *Fernseher* aus. | kurz: TV
+clock | Uhr (Wand-, Stand-) | n | The *clock* in the kitchen is slow. | Die *Uhr* in der Küche geht nach. | Armbanduhr = watch
+picture | Bild | n | I love this *picture*. | Ich liebe dieses *Bild*. |
+box | Kiste, Schachtel | n | Put the books in a *box*. | Pack die Bücher in eine *Kiste*. |
+bag | Tasche, Tüte | n | Do you need a *bag*? | Brauchen Sie eine *Tüte*? |
+address | Adresse | n | What's your *address*? | Wie ist deine *Adresse*? |
+street | Straße | n | I live in a quiet *street*. | Ich wohne in einer ruhigen *Straße*. |
+wash | waschen | v | *Wash* your hands. | *Wasch* dir die Hände. |
+## A2
+kitchen table | Küchentisch | n | We eat at the *kitchen table*. | Wir essen am *Küchentisch*. |
+furniture | Möbel | n | We need new *furniture*. | Wir brauchen neue *Möbel*. | unzählbar: a piece of furniture
+cupboard | Schrank | n | The cups are in the *cupboard*. | Die Tassen sind im *Schrank*. |
+wardrobe | Kleiderschrank | n | Hang your coat in the *wardrobe*. | Häng deinen Mantel in den *Kleiderschrank*. |
+shelf | Regal(brett) | n | Put the book back on the *shelf*. | Stell das Buch zurück ins *Regal*. | Plural: shelves
+desk | Schreibtisch | n | My laptop is on my *desk*. | Mein Laptop liegt auf meinem *Schreibtisch*. |
+armchair | Sessel | n | Grandpa sleeps in his *armchair*. | Opa schläft in seinem *Sessel*. |
+carpet | Teppich | n | The *carpet* is dirty. | Der *Teppich* ist schmutzig. |
+curtain | Vorhang, Gardine | n | Close the *curtains*. | Zieh die *Vorhänge* zu. |
+mirror | Spiegel | n | Look in the *mirror*. | Schau in den *Spiegel*. |
+pillow | Kopfkissen | n | I need a softer *pillow*. | Ich brauche ein weicheres *Kissen*. |
+blanket | Decke | n | Can I have another *blanket*? | Kann ich noch eine *Decke* haben? |
+towel | Handtuch | n | There are clean *towels* in the bathroom. | Im Bad liegen saubere *Handtücher*. |
+bath | Badewanne; Bad | n | I'll have a hot *bath*. | Ich nehme ein heißes *Bad*. |
+cooker | Herd | n | The *cooker* is still hot. | Der *Herd* ist noch heiß. | US: stove
+oven | Backofen | n | Put the cake in the *oven*. | Schieb den Kuchen in den *Ofen*. |
+washing machine | Waschmaschine | n | The *washing machine* is broken. | Die *Waschmaschine* ist kaputt. |
+dishwasher | Spülmaschine | n | Can you empty the *dishwasher*? | Kannst du die *Spülmaschine* ausräumen? |
+heating | Heizung | n | Turn the *heating* up. | Dreh die *Heizung* auf. |
+roof | Dach | n | The *roof* needs repairing. | Das *Dach* muss repariert werden. |
+garage | Garage | n | The car is in the *garage*. | Das Auto steht in der *Garage*. |
+balcony | Balkon | n | We have breakfast on the *balcony*. | Wir frühstücken auf dem *Balkon*. |
+hall | Flur; Halle | n | Leave your shoes in the *hall*. | Lass deine Schuhe im *Flur*. |
+downstairs | unten | adv | The kitchen is *downstairs*. | Die Küche ist *unten*. |
+upstairs | oben | adv | The bedrooms are *upstairs*. | Die Schlafzimmer sind *oben*. |
+ground floor | Erdgeschoss | n | We live on the *ground floor*. | Wir wohnen im *Erdgeschoss*. | US: first floor
+lift | Aufzug | n | Let's take the *lift*. | Lass uns den *Aufzug* nehmen. | US: elevator
+gate | Tor | n | Close the *gate* behind you. | Mach das *Tor* hinter dir zu. |
+fence | Zaun | n | The dog jumped over the *fence*. | Der Hund sprang über den *Zaun*. |
+rent | Miete; mieten | n | The *rent* is very high. | Die *Miete* ist sehr hoch. |
+landlord | Vermieter | n | Our *landlord* lives next door. | Unser *Vermieter* wohnt nebenan. |
+move in | einziehen | v | We *moved in* last month. | Wir sind letzten Monat *eingezogen*. |
+housework | Hausarbeit | n | I hate *housework*. | Ich hasse *Hausarbeit*. |
+tidy | ordentlich; aufräumen | adj | Keep your room *tidy*. | Halte dein Zimmer *ordentlich*. |
+mess | Unordnung, Durcheinander | n | Your room is a *mess*! | Dein Zimmer ist ein einziges *Chaos*! |
+clean up | aufräumen, sauber machen | v | Let's *clean up* after the party. | Lass uns nach der Party *aufräumen*. |
+dust | Staub; abstauben | n | There's *dust* everywhere. | Überall ist *Staub*. |
+rubbish | Müll | n | Take the *rubbish* out. | Bring den *Müll* raus. | US: garbage / trash
+bin | Mülleimer | n | Throw it in the *bin*. | Wirf es in den *Mülleimer*. |
+iron | Bügeleisen; bügeln | n | Be careful, the *iron* is hot. | Vorsicht, das *Bügeleisen* ist heiß. |
+switch on | einschalten | v | *Switch on* the light. | *Schalt* das Licht *ein*. |
+switch off | ausschalten | v | *Switch off* the TV. | *Schalt* den Fernseher *aus*. |
+turn on | anmachen, aufdrehen | v | *Turn on* the radio. | *Mach* das Radio *an*. |
+turn off | ausmachen, abdrehen | v | *Turn off* the tap. | *Dreh* den Wasserhahn *zu*. |
+tap | Wasserhahn | n | The *tap* is dripping. | Der *Wasserhahn* tropft. | US: faucet
+plant | Pflanze; pflanzen | n | Water the *plants*. | Gieß die *Pflanzen*. |
+flower | Blume | n | He bought her *flowers*. | Er hat ihr *Blumen* gekauft. |
+comfortable | bequem, gemütlich | adj | This bed is very *comfortable*. | Dieses Bett ist sehr *bequem*. |
+modern | modern | adj | The kitchen is very *modern*. | Die Küche ist sehr *modern*. |
+village | Dorf | n | I grew up in a small *village*. | Ich bin in einem kleinen *Dorf* aufgewachsen. |
+town | Kleinstadt, Stadt | n | It's a nice little *town*. | Es ist eine hübsche kleine *Stadt*. |
+city | (Groß-)Stadt | n | Berlin is a big *city*. | Berlin ist eine große *Stadt*. |
+neighbourhood | Nachbarschaft, Viertel | n | It's a quiet *neighbourhood*. | Es ist ein ruhiges *Viertel*. | US: neighborhood
+building | Gebäude | n | Our office is in that *building*. | Unser Büro ist in dem *Gebäude* da. |

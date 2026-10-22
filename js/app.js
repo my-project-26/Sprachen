@@ -580,7 +580,7 @@ function storyNew() {
         : ""
     }
     <label class="field"><span>Sprachniveau des Textes</span>
-      <select id="lvl">${["B1", "B2", "C1"].map((L) => `<option ${L === lvl ? "selected" : ""}>${L}</option>`).join("")}</select></label>
+      <select id="lvl">${["A2", "B1", "B2", "C1"].map((L) => `<option ${L === lvl ? "selected" : ""}>${L}</option>`).join("")}</select></label>
     ${
       isStaticHost() && !settings().geminiKey && !settings().apiBase
         ? `<details class="key-box">
@@ -1151,7 +1151,7 @@ function topics(openKey) {
         <div class="topic-head">
           <label class="switch"><input type="checkbox" data-toggle="${k}" ${active.has(k) ? "checked" : ""}><span></span></label>
           <div class="topic-info">
-            <b>${esc(all[k])} <span class="lvl-counts" title="Wörter in B1 / B2 / C1">(${ls.B1.total}/${ls.B2.total}/${ls.C1.total})</span></b>
+            <b>${esc(all[k])} <span class="lvl-counts" title="Wörter in ${LEVELS.join(" / ")}">(${LEVELS.map((L) => ls[L].total).join("/")})</span></b>
             <span class="small muted">${
               st.total
                 ? `sicher: ${LEVELS.map((L) => `<span class="nw">${L} ${ls[L].secure}/${ls[L].total}</span>`).join(" · ")}<br>${st.new} neu · ${st.learning} im Lernen`
@@ -1218,7 +1218,7 @@ function topics(openKey) {
 }
 
 function renderGenerator(box, key) {
-  const lvl = LEVELS.includes(settings().startLevel) && settings().startLevel !== "B1" ? settings().startLevel : "B2";
+  const lvl = LEVELS.includes(settings().startLevel) ? settings().startLevel : "B2";
   box.innerHTML = `
     <div class="grid2">
       <label class="field"><span>Niveau</span><select data-f="lvl">${LEVELS.map((L) => `<option ${L === lvl ? "selected" : ""}>${L}</option>`).join("")}</select></label>

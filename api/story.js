@@ -14,7 +14,7 @@ export default wrap(async (req, res) => {
   const words = cleanList(body.words, 20);
   const known = cleanList(body.known, 8);
   if (words.length < 2) throw httpError(400, "Mindestens 2 Wörter nötig");
-  const level = ["B1", "B2", "C1"].includes(body.level) ? body.level : "B2";
+  const level = ["A1", "A2", "B1", "B2", "C1"].includes(body.level) ? body.level : "B2";
   const llm = providerFrom(body);
   const theme = String(body.theme || "").slice(0, 60);
 

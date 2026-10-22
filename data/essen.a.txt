@@ -1,0 +1,120 @@
+# Essen & Trinken A1/A2
+## A1
+food | Essen, Lebensmittel | n | The *food* here is great. | Das *Essen* hier ist super. |
+water | Wasser | n | Can I have a glass of *water*? | Kann ich ein Glas *Wasser* haben? |
+coffee | Kaffee | n | I drink *coffee* every morning. | Ich trinke jeden Morgen *Kaffee*. |
+tea | Tee | n | Would you like a cup of *tea*? | Möchtest du eine Tasse *Tee*? |
+milk | Milch | n | We need *milk*. | Wir brauchen *Milch*. |
+juice | Saft | n | I'd like an orange *juice*. | Ich hätte gern einen Orangen*saft*. |
+beer | Bier | n | Two *beers*, please. | Zwei *Bier*, bitte. |
+wine | Wein | n | Red or white *wine*? | Rot- oder Weiß*wein*? |
+bread | Brot | n | I bought fresh *bread*. | Ich habe frisches *Brot* gekauft. |
+butter | Butter | n | Pass the *butter*, please. | Gib mir bitte die *Butter*. |
+cheese | Käse | n | I love French *cheese*. | Ich liebe französischen *Käse*. |
+egg | Ei | n | I had two *eggs* for breakfast. | Ich hatte zwei *Eier* zum Frühstück. |
+meat | Fleisch | n | I don't eat *meat*. | Ich esse kein *Fleisch*. |
+chicken | Hähnchen, Huhn | n | We're having *chicken* for dinner. | Wir essen *Hähnchen* zum Abendessen. |
+fish | Fisch | n | Do you like *fish*? | Magst du *Fisch*? |
+rice | Reis | n | Cook the *rice* for ten minutes. | Koche den *Reis* zehn Minuten. |
+pasta | Nudeln | n | The kids love *pasta*. | Die Kinder lieben *Nudeln*. |
+potato | Kartoffel | n | Peel the *potatoes*. | Schäl die *Kartoffeln*. | Plural: potatoes
+salad | Salat (Gericht) | n | I'll have a green *salad*. | Ich nehme einen grünen *Salat*. | Kopfsalat = lettuce
+soup | Suppe | n | The *soup* is too hot. | Die *Suppe* ist zu heiß. |
+fruit | Obst | n | Eat more *fruit*. | Iss mehr *Obst*. |
+vegetable | Gemüse | n | Eat your *vegetables*! | Iss dein *Gemüse*! | meist Plural
+apple | Apfel | n | An *apple* a day keeps the doctor away. | Ein *Apfel* am Tag … |
+banana | Banane | n | I take a *banana* to work. | Ich nehme eine *Banane* mit zur Arbeit. |
+tomato | Tomate | n | Cut the *tomatoes* in half. | Schneide die *Tomaten* in zwei Hälften. | Plural: tomatoes
+carrot | Karotte, Möhre | n | Rabbits love *carrots*. | Kaninchen lieben *Karotten*. |
+onion | Zwiebel | n | Chop an *onion*. | Hack eine *Zwiebel*. |
+sugar | Zucker | n | No *sugar*, thanks. | Keinen *Zucker*, danke. |
+salt | Salz | n | Add a little *salt*. | Gib etwas *Salz* dazu. |
+cake | Kuchen | n | She baked a chocolate *cake*. | Sie hat einen Schokoladen*kuchen* gebacken. |
+chocolate | Schokolade | n | I can't stop eating *chocolate*. | Ich kann nicht aufhören, *Schokolade* zu essen. |
+ice cream | Eis (Speiseeis) | n | Let's get an *ice cream*. | Lass uns ein *Eis* holen. |
+sandwich | belegtes Brot, Sandwich | n | I had a cheese *sandwich* for lunch. | Ich hatte ein Käse*brot* zum Mittagessen. |
+pizza | Pizza | n | Shall we order a *pizza*? | Sollen wir eine *Pizza* bestellen? |
+breakfast | Frühstück | n | What do you have for *breakfast*? | Was isst du zum *Frühstück*? |
+lunch | Mittagessen | n | Let's have *lunch* together. | Lass uns zusammen *zu Mittag essen*. |
+dinner | Abendessen | n | *Dinner* is ready! | Das *Abendessen* ist fertig! |
+restaurant | Restaurant | n | We booked a table at an Italian *restaurant*. | Wir haben einen Tisch in einem italienischen *Restaurant* reserviert. |
+café | Café | n | Let's meet at the *café*. | Lass uns im *Café* treffen. |
+menu | Speisekarte | n | Can we see the *menu*, please? | Können wir bitte die *Speisekarte* sehen? | False Friend: Menü = set meal
+cup | Tasse | n | A *cup* of coffee, please. | Eine *Tasse* Kaffee, bitte. |
+glass | Glas | n | I broke a *glass*. | Ich habe ein *Glas* zerbrochen. |
+bottle | Flasche | n | A *bottle* of water, please. | Eine *Flasche* Wasser, bitte. |
+plate | Teller | n | Put the *plates* on the table. | Stell die *Teller* auf den Tisch. |
+hungry | hungrig | adj | I'm really *hungry*. | Ich habe richtig *Hunger*. |
+thirsty | durstig | adj | Are you *thirsty*? | Hast du *Durst*? |
+delicious | lecker, köstlich | adj | This soup is *delicious*! | Diese Suppe ist *köstlich*! |
+cook | kochen; Koch | v | My husband *cooks* every day. | Mein Mann *kocht* jeden Tag. |
+order | bestellen; Bestellung | v | Are you ready to *order*? | Möchten Sie *bestellen*? |
+## A2
+snack | Snack, Imbiss | n | I need a quick *snack*. | Ich brauche einen schnellen *Snack*. |
+meal | Mahlzeit, Essen | n | Enjoy your *meal*! | Guten *Appetit*! |
+dish | Gericht; Schüssel | n | Paella is a Spanish *dish*. | Paella ist ein spanisches *Gericht*. | do the dishes = abspülen
+dessert | Nachtisch | n | What's for *dessert*? | Was gibt's zum *Nachtisch*? | ≠ desert (Wüste)
+starter | Vorspeise | n | We shared a *starter*. | Wir haben uns eine *Vorspeise* geteilt. | US: appetizer
+main course | Hauptgericht | n | For the *main course* I'll have the fish. | Als *Hauptgericht* nehme ich den Fisch. |
+bill | Rechnung | n | Can we have the *bill*, please? | Können wir bitte die *Rechnung* haben? | US: check
+tip | Trinkgeld; Tipp | n | We left a ten percent *tip*. | Wir haben zehn Prozent *Trinkgeld* gegeben. |
+waiter | Kellner | n | The *waiter* brought the drinks. | Der *Kellner* brachte die Getränke. | waitress = Kellnerin
+fork | Gabel | n | Can I have a clean *fork*? | Kann ich eine saubere *Gabel* haben? |
+knife | Messer | n | This *knife* isn't sharp. | Dieses *Messer* ist nicht scharf. | Plural: knives, k stumm
+spoon | Löffel | n | I need a *spoon* for my soup. | Ich brauche einen *Löffel* für meine Suppe. |
+bowl | Schüssel, Schale | n | A *bowl* of cereal, please. | Eine *Schüssel* Müsli, bitte. |
+beef | Rindfleisch | n | The *beef* was very tender. | Das *Rindfleisch* war sehr zart. |
+pork | Schweinefleisch | n | I don't eat *pork*. | Ich esse kein *Schweinefleisch*. |
+sausage | Wurst, Würstchen | n | We grilled *sausages*. | Wir haben *Würstchen* gegrillt. |
+ham | Schinken | n | A *ham* and cheese sandwich, please. | Ein *Schinken*-Käse-Sandwich, bitte. |
+steak | Steak | n | How would you like your *steak*? | Wie hätten Sie Ihr *Steak* gern? |
+seafood | Meeresfrüchte | n | I'm allergic to *seafood*. | Ich bin allergisch gegen *Meeresfrüchte*. |
+beans | Bohnen | n | I like *beans* on toast. | Ich mag *Bohnen* auf Toast. |
+peas | Erbsen | n | Frozen *peas* are quick to cook. | Tiefkühl*erbsen* sind schnell gekocht. |
+cucumber | Gurke | n | Slice the *cucumber*. | Schneide die *Gurke* in Scheiben. |
+pepper | Pfeffer; Paprika | n | Salt and *pepper*? | Salz und *Pfeffer*? | red pepper = rote Paprika
+garlic | Knoblauch | n | Add two cloves of *garlic*. | Gib zwei Zehen *Knoblauch* dazu. |
+mushroom | Pilz, Champignon | n | A pizza with *mushrooms*, please. | Eine Pizza mit *Pilzen*, bitte. |
+lemon | Zitrone | n | Tea with *lemon*, please. | Tee mit *Zitrone*, bitte. |
+orange | Orange, Apfelsine | n | I squeezed some *oranges*. | Ich habe ein paar *Orangen* ausgepresst. |
+pear | Birne | n | This *pear* is very sweet. | Diese *Birne* ist sehr süß. |
+grapes | Weintrauben | n | We bought a bunch of *grapes*. | Wir haben ein paar *Weintrauben* gekauft. |
+strawberry | Erdbeere | n | *Strawberries* are in season now. | *Erdbeeren* haben jetzt Saison. |
+cherry | Kirsche | n | The *cherries* are ripe. | Die *Kirschen* sind reif. |
+nut | Nuss | n | Are there any *nuts* in this? | Sind da *Nüsse* drin? |
+flour | Mehl | n | You need 200 grams of *flour*. | Du brauchst 200 Gramm *Mehl*. |
+oil | Öl | n | Heat the *oil* in a pan. | Erhitze das *Öl* in einer Pfanne. |
+honey | Honig | n | I put *honey* in my tea. | Ich tue *Honig* in meinen Tee. |
+jam | Marmelade | n | Toast with butter and *jam*. | Toast mit Butter und *Marmelade*. | marmalade = Orangenmarmelade
+cereal | Müsli, Frühstücksflocken | n | The kids eat *cereal* every morning. | Die Kinder essen jeden Morgen *Müsli*. |
+yoghurt | Joghurt | n | I have *yoghurt* with fruit. | Ich esse *Joghurt* mit Obst. | auch: yogurt
+biscuit | Keks | n | Would you like a *biscuit*? | Möchtest du einen *Keks*? | US: cookie
+sweets | Süßigkeiten | n | Too many *sweets* are bad for your teeth. | Zu viele *Süßigkeiten* sind schlecht für die Zähne. | US: candy
+crisps | Chips | n | A packet of *crisps*, please. | Eine Tüte *Chips*, bitte. | US: chips; britisch chips = Pommes
+chips | Pommes (GB) | n | Fish and *chips*, please. | Fisch und *Pommes*, bitte. |
+soft drink | Erfrischungsgetränk | n | We only have *soft drinks*. | Wir haben nur *alkoholfreie Getränke*. |
+taste | schmecken; Geschmack | v | This *tastes* great! | Das *schmeckt* toll! |
+smell | riechen; Geruch | v | Something *smells* good. | Etwas *riecht* gut. |
+sweet | süß | adj | This cake is too *sweet*. | Dieser Kuchen ist zu *süß*. |
+salty | salzig | adj | The soup is a bit *salty*. | Die Suppe ist etwas *salzig*. |
+spicy | scharf (gewürzt) | adj | I love *spicy* food. | Ich liebe *scharfes* Essen. |
+fresh | frisch | adj | The fish is very *fresh*. | Der Fisch ist sehr *frisch*. |
+raw | roh | adj | Don't eat *raw* chicken. | Iss kein *rohes* Hähnchen. |
+fried | gebraten, frittiert | adj | I'd like *fried* eggs. | Ich hätte gern *Spiegel*eier. |
+boil | kochen (in Wasser) | v | *Boil* the pasta for eight minutes. | *Koch* die Nudeln acht Minuten. |
+bake | backen | v | I *baked* bread today. | Ich habe heute Brot *gebacken*. |
+fry | braten | v | *Fry* the onions in a little oil. | *Brate* die Zwiebeln in etwas Öl. |
+cut | schneiden | v | *Cut* the bread, please. | *Schneid* bitte das Brot. | cut – cut
+mix | mischen, verrühren | v | *Mix* the eggs and the sugar. | *Verrühre* die Eier mit dem Zucker. |
+recipe | Rezept (Kochen) | n | Can you send me the *recipe*? | Kannst du mir das *Rezept* schicken? | Arzt-Rezept = prescription
+kitchen | Küche | n | We eat in the *kitchen*. | Wir essen in der *Küche*. |
+pan | Pfanne | n | Heat the *pan* first. | Erhitze zuerst die *Pfanne*. |
+pot | Topf | n | Put the potatoes in a big *pot*. | Gib die Kartoffeln in einen großen *Topf*. |
+vegetarian | vegetarisch; Vegetarier | adj | Do you have *vegetarian* dishes? | Haben Sie *vegetarische* Gerichte? |
+diet | Ernährung; Diät | n | A healthy *diet* is important. | Eine gesunde *Ernährung* ist wichtig. |
+slice | Scheibe | n | A *slice* of bread, please. | Eine *Scheibe* Brot, bitte. |
+piece | Stück | n | Can I have a *piece* of cake? | Kann ich ein *Stück* Kuchen haben? |
+packet | Packung, Päckchen | n | Buy a *packet* of rice. | Kauf eine *Packung* Reis. |
+can | Dose | n | Open a *can* of tomatoes. | Mach eine *Dose* Tomaten auf. | GB auch: tin
+picnic | Picknick | n | Let's have a *picnic* in the park. | Lass uns im Park *picknicken*. |
+takeaway | Essen zum Mitnehmen | n | Let's get a *takeaway* tonight. | Lass uns heute Abend *Essen holen*. | US: takeout

@@ -1,0 +1,65 @@
+# Verkehr, Stadt & Wege A1/A2
+## A1
+car | Auto | n | We went by *car*. | Wir sind mit dem *Auto* gefahren. |
+bus | Bus | n | I take the *bus* to work. | Ich nehme den *Bus* zur Arbeit. |
+train | Zug | n | The *train* is late again. | Der *Zug* hat schon wieder Verspätung. |
+bike | Fahrrad | n | I ride my *bike* to school. | Ich fahre mit dem *Fahrrad* zur Schule. | auch: bicycle
+taxi | Taxi | n | Let's take a *taxi*. | Lass uns ein *Taxi* nehmen. |
+station | Bahnhof; Station | n | Where is the *station*? | Wo ist der *Bahnhof*? |
+road | Straße (Landstraße) | n | The *road* is very busy. | Auf der *Straße* ist viel los. |
+left | links | adv | Turn *left*. | Bieg *links* ab. |
+right | rechts | adv | The bank is on the *right*. | Die Bank ist *rechts*. |
+straight on | geradeaus | adv | Go *straight on*. | Geh *geradeaus*. | US: straight ahead
+far | weit | adv | Is it *far* from here? | Ist es *weit* von hier? |
+drive | fahren (Auto) | v | Can you *drive*? | Kannst du Auto *fahren*? | drove – driven
+ride | fahren (Rad, Pferd) | v | I *ride* my bike every day. | Ich *fahre* jeden Tag Fahrrad. | rode – ridden
+way | Weg; Art | n | Is this the *way* to the station? | Ist das der *Weg* zum Bahnhof? |
+place | Ort, Platz | n | This is a nice *place*. | Das ist ein schöner *Ort*. |
+park | Park; parken | n | Let's go for a walk in the *park*. | Lass uns im *Park* spazieren gehen. |
+bridge | Brücke | n | We walked across the *bridge*. | Wir sind über die *Brücke* gegangen. |
+## A2
+underground | U-Bahn | n | Take the *underground* to the centre. | Nimm die *U-Bahn* ins Zentrum. | US: subway; London: the Tube
+tram | Straßenbahn | n | The *tram* stops right outside. | Die *Straßenbahn* hält direkt vor der Tür. |
+motorbike | Motorrad | n | He rides a *motorbike*. | Er fährt *Motorrad*. |
+lorry | Lastwagen | n | A *lorry* blocked the road. | Ein *Lastwagen* blockierte die Straße. | US: truck
+ship | Schiff | n | We crossed to Ireland by *ship*. | Wir sind mit dem *Schiff* nach Irland gefahren. |
+boat | Boot | n | We rented a *boat* on the lake. | Wir haben auf dem See ein *Boot* gemietet. |
+ferry | Fähre | n | The *ferry* leaves every hour. | Die *Fähre* fährt stündlich ab. |
+bus stop | Bushaltestelle | n | I'll wait at the *bus stop*. | Ich warte an der *Bushaltestelle*. |
+platform | Bahnsteig, Gleis | n | The train leaves from *platform* 4. | Der Zug fährt von *Gleis* 4 ab. |
+timetable | Fahrplan; Stundenplan | n | Check the *timetable*. | Schau auf den *Fahrplan*. | US: schedule
+single | einfache Fahrt | n | A *single* to Oxford, please. | Eine *einfache Fahrt* nach Oxford, bitte. | US: one-way
+return | Rückfahrkarte | n | A *return* to London, please. | Eine *Rückfahrkarte* nach London, bitte. | US: round trip
+catch | erwischen, nehmen (Bus, Zug) | v | I have to *catch* the 8:15 train. | Ich muss den Zug um 8:15 *erwischen*. | caught – caught
+miss | verpassen; vermissen | v | Hurry, or we'll *miss* the bus! | Beeil dich, sonst *verpassen* wir den Bus! |
+get on | einsteigen | v | *Get on* the bus at the station. | *Steig* am Bahnhof in den Bus *ein*. |
+get off | aussteigen | v | *Get off* at the next stop. | *Steig* an der nächsten Haltestelle *aus*. |
+get in | einsteigen (Auto) | v | *Get in*, I'll drive you home. | *Steig ein*, ich fahr dich heim. |
+get out | aussteigen (Auto) | v | Let me *get out* here. | Lass mich hier *aussteigen*. |
+traffic | Verkehr | n | There's a lot of *traffic* today. | Heute ist viel *Verkehr*. |
+traffic lights | Ampel | n | Turn right at the *traffic lights*. | Bieg an der *Ampel* rechts ab. |
+corner | Ecke | n | The café is on the *corner*. | Das Café ist an der *Ecke*. |
+crossroads | Kreuzung | n | Go left at the *crossroads*. | Fahr an der *Kreuzung* links. |
+roundabout | Kreisverkehr | n | Take the second exit at the *roundabout*. | Nimm im *Kreisverkehr* die zweite Ausfahrt. |
+motorway | Autobahn | n | The *motorway* was closed. | Die *Autobahn* war gesperrt. | US: highway / freeway
+car park | Parkplatz (Platz/Haus) | n | Is there a *car park* near here? | Gibt es hier in der Nähe einen *Parkplatz*? | US: parking lot
+petrol | Benzin | n | We need *petrol*. | Wir müssen *tanken*. | US: gas
+petrol station | Tankstelle | n | Stop at the next *petrol station*. | Halt an der nächsten *Tankstelle*. | US: gas station
+driver | Fahrer(in) | n | The *driver* was very friendly. | Der *Fahrer* war sehr freundlich. |
+passenger | Fahrgast, Passagier | n | All *passengers* must show their tickets. | Alle *Fahrgäste* müssen ihre Fahrkarten zeigen. |
+driving licence | Führerschein | n | I got my *driving licence* at 18. | Ich habe meinen *Führerschein* mit 18 gemacht. | US: driver's license
+seat | Sitz, Sitzplatz | n | Is this *seat* free? | Ist dieser *Platz* frei? |
+direction | Richtung | n | We went in the wrong *direction*. | Wir sind in die falsche *Richtung* gegangen. |
+centre | Zentrum, Mitte | n | The hotel is in the city *centre*. | Das Hotel ist im Stadt*zentrum*. | US: center
+square | Platz | n | Let's meet in the main *square*. | Lass uns auf dem Haupt*platz* treffen. |
+crowded | überfüllt | adj | The train was very *crowded*. | Der Zug war sehr *voll*. |
+busy | belebt, voll; beschäftigt | adj | The streets are always *busy*. | Auf den Straßen ist immer viel los. |
+cross | überqueren | v | *Cross* the road carefully. | *Überquere* die Straße vorsichtig. |
+follow | folgen | v | *Follow* me! | *Folg* mir! |
+get lost | sich verlaufen | phrase | We *got lost* in the old town. | Wir haben uns in der Altstadt *verlaufen*. |
+on foot | zu Fuß | phrase | It's ten minutes *on foot*. | Es sind zehn Minuten *zu Fuß*. |
+post office | Post(amt) | n | Is the *post office* still open? | Hat die *Post* noch offen? |
+police station | Polizeiwache | n | Where's the nearest *police station*? | Wo ist die nächste *Polizeiwache*? |
+library | Bibliothek | n | I borrowed this book from the *library*. | Ich habe das Buch aus der *Bibliothek* ausgeliehen. | False Friend: ≠ Buchhandlung
+cinema | Kino | n | Let's go to the *cinema*. | Lass uns ins *Kino* gehen. | US: movie theater
+theatre | Theater | n | We went to the *theatre* last night. | Wir waren gestern Abend im *Theater*. | US: theater

@@ -1,0 +1,63 @@
+# Arbeit & Berufe A1/A2
+## A1
+job | Job, Stelle | n | I love my *job*. | Ich liebe meinen *Job*. |
+office | Büro | n | I work in an *office*. | Ich arbeite in einem *Büro*. |
+teacher | Lehrer(in) | n | My mum is a *teacher*. | Meine Mama ist *Lehrerin*. |
+student | Student(in), Schüler(in) | n | I'm a *student* at Bonn University. | Ich bin *Student* an der Uni Bonn. |
+company | Firma, Unternehmen | n | She works for a big *company*. | Sie arbeitet für eine große *Firma*. |
+boss | Chef(in) | n | My *boss* is very nice. | Meine *Chefin* ist sehr nett. |
+farmer | Landwirt(in) | n | His father is a *farmer*. | Sein Vater ist *Landwirt*. |
+police officer | Polizist(in) | n | Ask the *police officer*. | Frag den *Polizisten*. |
+waitress | Kellnerin | n | She works as a *waitress*. | Sie arbeitet als *Kellnerin*. |
+shop assistant | Verkäufer(in) | n | The *shop assistant* was very helpful. | Die *Verkäuferin* war sehr hilfsbereit. |
+computer | Computer | n | I work on a *computer* all day. | Ich arbeite den ganzen Tag am *Computer*. |
+email | E-Mail | n | I'll send you an *email*. | Ich schicke dir eine *E-Mail*. |
+meeting | Besprechung, Treffen | n | I have a *meeting* at ten. | Ich habe um zehn eine *Besprechung*. |
+busy | beschäftigt | adj | I'm very *busy* this week. | Ich habe diese Woche viel *zu tun*. |
+## A2
+career | Karriere, Laufbahn | n | She wants a *career* in law. | Sie möchte *Karriere* als Juristin machen. |
+work | arbeiten | v | Where do you *work*? | Wo *arbeitest* du? |
+worker | Arbeiter(in) | n | The factory has 200 *workers*. | Die Fabrik hat 200 *Arbeiter*. |
+employee | Angestellte(r) | n | The company has fifty *employees*. | Die Firma hat fünfzig *Angestellte*. |
+colleague | Kollege, Kollegin | n | My *colleagues* are great. | Meine *Kollegen* sind toll. |
+manager | Manager(in), Leiter(in) | n | I'd like to speak to the *manager*. | Ich möchte mit dem *Leiter* sprechen. |
+factory | Fabrik | n | He works in a car *factory*. | Er arbeitet in einer Auto*fabrik*. |
+engineer | Ingenieur(in) | n | She's a software *engineer*. | Sie ist Software*entwicklerin*. |
+lawyer | Anwalt, Anwältin | n | You should talk to a *lawyer*. | Du solltest mit einem *Anwalt* sprechen. |
+chef | Koch, Köchin (Beruf) | n | He's a *chef* in a hotel. | Er ist *Koch* in einem Hotel. | False Friend: ≠ Chef (= boss)
+cook | Koch, Köchin | n | My grandma was a great *cook*. | Meine Oma war eine tolle *Köchin*. |
+mechanic | Mechaniker(in) | n | The *mechanic* fixed my car. | Der *Mechaniker* hat mein Auto repariert. |
+pilot | Pilot(in) | n | He's an airline *pilot*. | Er ist *Pilot* bei einer Airline. |
+secretary | Sekretär(in) | n | Leave a message with my *secretary*. | Hinterlassen Sie meiner *Sekretärin* eine Nachricht. |
+receptionist | Empfangsmitarbeiter(in) | n | The *receptionist* gave me a key. | Die Frau am *Empfang* gab mir einen Schlüssel. |
+journalist | Journalist(in) | n | She works as a *journalist*. | Sie arbeitet als *Journalistin*. |
+scientist | Wissenschaftler(in) | n | He's a *scientist* at a university. | Er ist *Wissenschaftler* an einer Uni. |
+businessman | Geschäftsmann | n | He's a successful *businessman*. | Er ist ein erfolgreicher *Geschäftsmann*. |
+businesswoman | Geschäftsfrau | n | She's a *businesswoman*. | Sie ist *Geschäftsfrau*. |
+salary | Gehalt | n | The *salary* is good. | Das *Gehalt* ist gut. |
+earn | verdienen | v | How much do you *earn*? | Wie viel *verdienst* du? |
+part-time | Teilzeit | adj | I work *part-time*. | Ich arbeite *Teilzeit*. |
+full-time | Vollzeit | adj | She has a *full-time* job. | Sie hat eine *Vollzeit*stelle. |
+apply | sich bewerben | v | I *applied* for a job in Berlin. | Ich habe mich für eine Stelle in Berlin *beworben*. | apply for a job
+interview | Vorstellungsgespräch; Interview | n | I have a job *interview* tomorrow. | Ich habe morgen ein *Vorstellungsgespräch*. |
+CV | Lebenslauf | n | Send us your *CV*. | Schicken Sie uns Ihren *Lebenslauf*. | US: résumé
+experience | Erfahrung | n | Do you have any *experience*? | Hast du *Erfahrung*? |
+skill | Fähigkeit | n | Communication is an important *skill*. | Kommunikation ist eine wichtige *Fähigkeit*. |
+retire | in Rente gehen | v | My dad *retired* last year. | Mein Vater ist letztes Jahr *in Rente gegangen*. |
+unemployed | arbeitslos | adj | He's been *unemployed* for a year. | Er ist seit einem Jahr *arbeitslos*. |
+customer | Kunde, Kundin | n | We have many regular *customers*. | Wir haben viele Stamm*kunden*. |
+business | Geschäft; Firma | n | He runs a small *business*. | Er führt ein kleines *Unternehmen*. |
+uniform | Uniform | n | Nurses wear a *uniform*. | Pflegekräfte tragen eine *Uniform*. |
+desk | Schreibtisch | n | She's not at her *desk*. | Sie ist nicht an ihrem *Platz*. |
+printer | Drucker | n | The *printer* isn't working. | Der *Drucker* funktioniert nicht. |
+document | Dokument | n | Please sign this *document*. | Bitte unterschreiben Sie dieses *Dokument*. |
+form | Formular | n | Fill in this *form*, please. | Füllen Sie bitte dieses *Formular* aus. |
+sign | unterschreiben; Schild | v | *Sign* here, please. | *Unterschreiben* Sie bitte hier. |
+report | Bericht | n | I have to write a *report*. | Ich muss einen *Bericht* schreiben. |
+project | Projekt | n | We're working on a new *project*. | Wir arbeiten an einem neuen *Projekt*. |
+task | Aufgabe | n | I have three *tasks* for today. | Ich habe drei *Aufgaben* für heute. |
+break | Pause | n | Let's take a short *break*. | Lass uns eine kurze *Pause* machen. |
+holiday | Urlaub (freie Tage) | n | I have 30 days' *holiday* a year. | Ich habe 30 Tage *Urlaub* im Jahr. |
+work from home | von zu Hause arbeiten | phrase | I *work from home* on Fridays. | Freitags *arbeite* ich *von zu Hause*. |
+deadline | Abgabetermin | n | The *deadline* is Friday. | Der *Abgabetermin* ist Freitag. |
+successful | erfolgreich | adj | She's a very *successful* manager. | Sie ist eine sehr *erfolgreiche* Managerin. |

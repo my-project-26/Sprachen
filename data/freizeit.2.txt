@@ -1,0 +1,98 @@
+# B1-Ergänzung: Kultur, Medien, Gesellschaft
+## B1
+adventure | Abenteuer | n | Our trip was a real *adventure*. | Unsere Reise war ein echtes *Abenteuer*. |
+advertisement | Anzeige, Werbung | n | I saw an *advertisement* for the job. | Ich habe eine *Anzeige* für die Stelle gesehen. |
+album | Album | n | Their new *album* is great. | Ihr neues *Album* ist super. |
+architect | Architekt(in) | n | The *architect* designed the new library. | Die *Architektin* hat die neue Bibliothek entworfen. |
+architecture | Architektur | n | I love the *architecture* in Prague. | Ich liebe die *Architektur* in Prag. |
+author | Autor(in) | n | Who's the *author* of this book? | Wer ist der *Autor* dieses Buches? |
+award | Preis, Auszeichnung | n | The film won several *awards*. | Der Film hat mehrere *Preise* gewonnen. |
+background | Hintergrund | n | There's a castle in the *background*. | Im *Hintergrund* ist eine Burg. |
+celebrity | Promi, Berühmtheit | n | He's a TV *celebrity*. | Er ist ein Fernseh-*Promi*. |
+ceremony | Zeremonie, Feier | n | The wedding *ceremony* was beautiful. | Die Trau*ung* war wunderschön. |
+chapter | Kapitel | n | Read *chapter* three for tomorrow. | Lies bis morgen *Kapitel* drei. |
+classic | klassisch; Klassiker | adj | It's a *classic* film. | Es ist ein *Klassiker*. |
+comedy | Komödie | n | We watched a romantic *comedy*. | Wir haben eine romantische *Komödie* gesehen. |
+contest | Wettbewerb | n | She won a singing *contest*. | Sie hat einen Gesangs*wettbewerb* gewonnen. |
+costume | Kostüm | n | The kids wore funny *costumes*. | Die Kinder trugen lustige *Kostüme*. |
+critic | Kritiker(in) | n | The *critics* loved the play. | Die *Kritiker* liebten das Stück. |
+cultural | kulturell | adj | Berlin has a rich *cultural* life. | Berlin hat ein reiches *kulturelles* Leben. |
+designer | Designer(in) | n | She's a fashion *designer*. | Sie ist Mode*designerin*. |
+director | Regisseur(in); Direktor(in) | n | Who's the *director* of the film? | Wer ist der *Regisseur* des Films? |
+drama | Drama; Theater | n | It's a TV *drama* about a hospital. | Es ist eine Fernseh*serie* über ein Krankenhaus. |
+drawing | Zeichnung | n | What a lovely *drawing*! | Was für eine schöne *Zeichnung*! |
+edition | Ausgabe | n | I have the first *edition*. | Ich habe die Erst*ausgabe*. |
+entertain | unterhalten | v | The clown *entertained* the children. | Der Clown *unterhielt* die Kinder. |
+entertainment | Unterhaltung | n | There's live *entertainment* every night. | Jeden Abend gibt es Live-*Unterhaltung*. |
+fiction | Belletristik; Fiktion | n | I mostly read *fiction*. | Ich lese meistens *Romane*. |
+folk | Volks- | adj | They play traditional *folk* music. | Sie spielen traditionelle *Volks*musik. |
+ghost | Geist, Gespenst | n | Do you believe in *ghosts*? | Glaubst du an *Geister*? |
+golf | Golf | n | My dad plays *golf* on Sundays. | Mein Vater spielt sonntags *Golf*. |
+hero | Held(in) | n | He's my *hero*. | Er ist mein *Held*. |
+horror | Horror | n | I don't like *horror* films. | Ich mag keine *Horror*filme. |
+imagination | Fantasie, Vorstellungskraft | n | Kids have a great *imagination*. | Kinder haben eine tolle *Fantasie*. |
+journalism | Journalismus | n | She studied *journalism*. | Sie hat *Journalismus* studiert. |
+literature | Literatur | n | I studied English *literature*. | Ich habe englische *Literatur* studiert. |
+media | Medien | n | The story was all over the *media*. | Die Geschichte war in allen *Medien*. |
+opera | Oper | n | We went to the *opera*. | Wir waren in der *Oper*. |
+passion | Leidenschaft | n | Music is his *passion*. | Musik ist seine *Leidenschaft*. |
+photographer | Fotograf(in) | n | She works as a *photographer*. | Sie arbeitet als *Fotografin*. |
+poem | Gedicht | n | He wrote her a *poem*. | Er schrieb ihr ein *Gedicht*. |
+poet | Dichter(in) | n | Shakespeare was a great *poet*. | Shakespeare war ein großer *Dichter*. |
+poetry | Lyrik, Dichtung | n | I don't read much *poetry*. | Ich lese nicht viel *Lyrik*. |
+portrait | Porträt | n | There's a *portrait* of the queen. | Da hängt ein *Porträt* der Königin. |
+producer | Produzent(in) | n | He's a music *producer*. | Er ist Musik*produzent*. |
+production | Produktion; Inszenierung | n | It's a new *production* of Hamlet. | Es ist eine neue *Inszenierung* von Hamlet. |
+racing | Rennsport | n | He loves motor *racing*. | Er liebt *Motorsport*. |
+rhythm | Rhythmus | n | She has a great sense of *rhythm*. | Sie hat ein tolles *Rhythmus*gefühl. |
+romance | Romanze, Liebesgeschichte | n | It was a summer *romance*. | Es war eine Sommer*romanze*. |
+sail | segeln; Segel | v | We *sailed* around the island. | Wir sind um die Insel *gesegelt*. |
+sailor | Seemann, Segler(in) | n | My grandfather was a *sailor*. | Mein Großvater war *Seemann*. |
+statue | Statue | n | There's a *statue* in the square. | Auf dem Platz steht eine *Statue*. |
+studio | Studio, Atelier | n | The band is in the *studio*. | Die Band ist im *Studio*. |
+swing | schaukeln; Schaukel | v | The kids are *swinging* in the park. | Die Kinder *schaukeln* im Park. |
+symbol | Symbol | n | The dove is a *symbol* of peace. | Die Taube ist ein *Symbol* des Friedens. |
+technique | Technik (Methode) | n | She has a great *technique*. | Sie hat eine tolle *Technik*. |
+teenage | jugendlich, Teenager- | adj | I have two *teenage* sons. | Ich habe zwei Söhne im *Teenageralter*. |
+terrific | großartig | adj | You look *terrific*! | Du siehst *großartig* aus! |
+tragedy | Tragödie | n | The accident was a *tragedy*. | Der Unfall war eine *Tragödie*. |
+trainer | Trainer(in); Turnschuh | n | My personal *trainer* is very strict. | Mein Personal *Trainer* ist sehr streng. |
+victory | Sieg | n | It was a great *victory*. | Es war ein großer *Sieg*. |
+web | Netz, Web | n | I found it on the *web*. | Ich habe es im *Netz* gefunden. |
+## B1
+agency | Agentur | n | We booked through a travel *agency*. | Wir haben über ein Reise*büro* gebucht. |
+agent | Vertreter(in), Makler(in) | n | Talk to an estate *agent*. | Sprich mit einem *Makler*. |
+assistant | Assistent(in) | n | Ask my *assistant*. | Frag meine *Assistentin*. |
+captain | Kapitän(in) | n | The *captain* welcomed us on board. | Der *Kapitän* begrüßte uns an Bord. |
+chief | Chef(in), Leiter(in) | n | He's the *chief* of police. | Er ist der Polizei*chef*. |
+discussion | Diskussion | n | We had a long *discussion*. | Wir hatten eine lange *Diskussion*. |
+educated | gebildet | adj | She's a well-*educated* woman. | Sie ist eine sehr *gebildete* Frau. |
+fee | Gebühr | n | There's a small *fee*. | Es gibt eine kleine *Gebühr*. |
+finance | Finanzen; finanzieren | n | He works in *finance*. | Er arbeitet im *Finanz*bereich. |
+financial | finanziell | adj | They have *financial* problems. | Sie haben *finanzielle* Probleme. |
+firm | Firma; fest | n | He works for a law *firm*. | Er arbeitet für eine Anwalts*kanzlei*. |
+guard | Wächter(in); bewachen | n | The *guard* checked our bags. | Der *Wachmann* kontrollierte unsere Taschen. |
+identity | Identität | n | Can you prove your *identity*? | Können Sie Ihre *Identität* nachweisen? |
+individual | einzeln; Einzelperson | adj | Each *individual* room has a TV. | Jedes *einzelne* Zimmer hat einen Fernseher. |
+jail | Gefängnis | n | He spent two years in *jail*. | Er saß zwei Jahre im *Gefängnis*. |
+junior | jünger, Junior- | adj | She's a *junior* doctor. | Sie ist *Assistenz*ärztin. |
+kingdom | Königreich | n | The United *Kingdom*. | Das Vereinigte *Königreich*. |
+military | militärisch; Militär | adj | He did *military* service. | Er hat *Wehr*dienst geleistet. |
+nation | Nation | n | The whole *nation* watched the game. | Die ganze *Nation* sah das Spiel. |
+officer | Beamter, Beamtin; Offizier | n | A police *officer* stopped us. | Ein Polizei*beamter* hielt uns an. |
+organisation | Organisation | n | She works for a charity *organisation*. | Sie arbeitet für eine Wohltätigkeits*organisation*. | US: organization
+political | politisch | adj | They talked about the *political* situation. | Sie sprachen über die *politische* Lage. |
+pray | beten | v | They *pray* every evening. | Sie *beten* jeden Abend. |
+prince | Prinz | n | The *prince* visited the hospital. | Der *Prinz* besuchte das Krankenhaus. |
+princess | Prinzessin | n | My daughter wants to be a *princess*. | Meine Tochter möchte *Prinzessin* werden. |
+prisoner | Gefangene(r) | n | Two *prisoners* escaped. | Zwei *Gefangene* sind geflohen. |
+profession | Beruf | n | Teaching is a demanding *profession*. | Lehrer ist ein anspruchsvoller *Beruf*. |
+professional | professionell; Profi | adj | He's a *professional* footballer. | Er ist *Profi*fußballer. |
+queen | Königin | n | The *queen* visited the city. | Die *Königin* besuchte die Stadt. |
+religious | religiös | adj | Are you *religious*? | Bist du *religiös*? |
+resident | Bewohner(in) | n | Parking for *residents* only. | Parken nur für *Anwohner*. |
+royal | königlich | adj | The *royal* family lives here. | Die *königliche* Familie wohnt hier. |
+soldier | Soldat(in) | n | Her son is a *soldier*. | Ihr Sohn ist *Soldat*. |
+statistic | Statistik | n | The *statistics* show a clear trend. | Die *Statistik* zeigt einen klaren Trend. |
+violence | Gewalt | n | There's too much *violence* on TV. | Im Fernsehen gibt es zu viel *Gewalt*. |
+weapon | Waffe | n | The police found a *weapon*. | Die Polizei fand eine *Waffe*. |

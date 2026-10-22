@@ -30,11 +30,11 @@ Return exactly this JSON structure:
 }
 
 export const WORDS_SYSTEM =
-  "You are a lexicographer creating English vocabulary flashcards for German native speakers (CEFR B1–C1). " +
+  "You are a lexicographer creating English vocabulary flashcards for German native speakers (CEFR A1–C1). " +
   "Translations are idiomatic German. Example sentences are natural, modern and adult. You reply with valid JSON only.";
 
 const CARD_FORMAT = `Each card has this structure:
-{"en":"headword","de":"German meanings, comma separated, most common first","pos":"n|v|adj|adv|conj|prep|phrase","level":"B1|B2|C1","topic":"politik|arbeit|wissenschaft|umwelt|gefuehle|medien|recht|gesundheit|wirtschaft|denken|alltag","ex":"English example sentence with the target word marked in *single asterisks*","exDe":"German translation of the sentence with the matching German word marked in *single asterisks*","note":"short German hint ONLY if useful: False Friend, typical collocation, irregular form, pronunciation trap or register – otherwise empty string"}`;
+{"en":"headword","de":"German meanings, comma separated, most common first","pos":"n|v|adj|adv|conj|prep|phrase","level":"A1|A2|B1|B2|C1","topic":"grundlagen|familie|politik|arbeit|wissenschaft|umwelt|gefuehle|medien|recht|gesundheit|wirtschaft|denken|alltag","ex":"English example sentence with the target word marked in *single asterisks*","exDe":"German translation of the sentence with the matching German word marked in *single asterisks*","note":"short German hint ONLY if useful: False Friend, typical collocation, irregular form, pronunciation trap or register – otherwise empty string"}`;
 
 export function generateWordsPrompt({ level = "B2", topic = "", count = 10, exclude = [] }) {
   return `Create ${count} new English vocabulary flashcards at CEFR level ${level}${

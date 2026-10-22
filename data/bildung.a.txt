@@ -1,0 +1,64 @@
+# Schule & Lernen A1/A2
+## A1
+school | Schule | n | The kids are at *school*. | Die Kinder sind in der *Schule*. |
+class | Klasse; Unterricht | n | There are 25 students in my *class*. | In meiner *Klasse* sind 25 Schüler. |
+lesson | Unterrichtsstunde, Lektion | n | The *lesson* starts at nine. | Die *Stunde* beginnt um neun. |
+homework | Hausaufgaben | n | Have you done your *homework*? | Hast du deine *Hausaufgaben* gemacht? | unzählbar
+word | Wort | n | What does this *word* mean? | Was bedeutet dieses *Wort*? |
+sentence | Satz | n | Write a *sentence* with this word. | Schreib einen *Satz* mit diesem Wort. |
+question | Frage | n | Can I ask a *question*? | Darf ich eine *Frage* stellen? |
+example | Beispiel | n | Can you give me an *example*? | Kannst du mir ein *Beispiel* geben? |
+page | Seite | n | Open your books at *page* ten. | Schlagt eure Bücher auf *Seite* zehn auf. |
+pen | Kuli, Stift | n | Can I borrow your *pen*? | Kann ich mir deinen *Kuli* leihen? |
+pencil | Bleistift | n | Write it in *pencil*. | Schreib es mit *Bleistift*. |
+paper | Papier | n | I need a piece of *paper*. | Ich brauche ein Blatt *Papier*. |
+test | Test, Prüfung | n | We have a *test* on Monday. | Wir schreiben am Montag einen *Test*. |
+study | lernen, studieren | v | She *studies* medicine. | Sie *studiert* Medizin. |
+teach | unterrichten, beibringen | v | He *teaches* English. | Er *unterrichtet* Englisch. | taught – taught
+university | Universität | n | My brother goes to *university*. | Mein Bruder geht zur *Uni*. |
+## A2
+subject | (Schul-)Fach; Thema | n | My favourite *subject* is history. | Mein Lieblings*fach* ist Geschichte. |
+maths | Mathe | n | I was never good at *maths*. | In *Mathe* war ich nie gut. | US: math
+history | Geschichte (Fach) | n | We're learning about *history*. | Wir lernen *Geschichte*. |
+geography | Erdkunde | n | *Geography* was my favourite subject. | *Erdkunde* war mein Lieblingsfach. |
+science | Naturwissenschaft | n | She teaches *science*. | Sie unterrichtet *Naturwissenschaften*. |
+biology | Biologie | n | We had *biology* this morning. | Heute Morgen hatten wir *Bio*. |
+chemistry | Chemie | n | *Chemistry* is difficult. | *Chemie* ist schwierig. |
+physics | Physik | n | He studied *physics*. | Er hat *Physik* studiert. |
+exam | Prüfung | n | I passed the *exam*! | Ich habe die *Prüfung* bestanden! |
+pass | bestehen | v | Did you *pass* your driving test? | Hast du deine Fahrprüfung *bestanden*? |
+fail | durchfallen; scheitern | v | He *failed* his maths exam. | Er ist in Mathe *durchgefallen*. |
+mark | Note; Markierung | n | I got a good *mark* in English. | Ich habe eine gute *Note* in Englisch bekommen. | US: grade
+grade | Note; Klassenstufe | n | She got top *grades*. | Sie hat Bestnoten bekommen. |
+mistake | Fehler | n | I made a *mistake*. | Ich habe einen *Fehler* gemacht. |
+correct | richtig; korrigieren | adj | That's *correct*! | Das ist *richtig*! |
+practice | Übung | n | You need more *practice*. | Du brauchst mehr *Übung*. |
+course | Kurs | n | I'm doing an English *course*. | Ich mache einen Englisch*kurs*. |
+classroom | Klassenzimmer | n | The *classroom* is on the first floor. | Das *Klassenzimmer* ist im ersten Stock. |
+pupil | Schüler(in) | n | The school has 500 *pupils*. | Die Schule hat 500 *Schüler*. |
+dictionary | Wörterbuch | n | Look it up in a *dictionary*. | Schlag es in einem *Wörterbuch* nach. |
+look up | nachschlagen | v | *Look* the word *up* online. | *Schlag* das Wort online *nach*. |
+notebook | Heft, Notizbuch | n | Write the words in your *notebook*. | Schreib die Wörter in dein *Heft*. |
+rubber | Radiergummi | n | Can I borrow your *rubber*? | Kann ich deinen *Radiergummi* haben? | US: eraser
+ruler | Lineal | n | Draw a line with a *ruler*. | Zeichne eine Linie mit dem *Lineal*. |
+board | Tafel | n | Write it on the *board*. | Schreib es an die *Tafel*. |
+grammar | Grammatik | n | English *grammar* isn't that hard. | Die englische *Grammatik* ist gar nicht so schwer. |
+vocabulary | Wortschatz | n | I want to improve my *vocabulary*. | Ich möchte meinen *Wortschatz* verbessern. |
+pronunciation | Aussprache | n | Your *pronunciation* is very good. | Deine *Aussprache* ist sehr gut. |
+meaning | Bedeutung | n | What's the *meaning* of this word? | Was ist die *Bedeutung* dieses Wortes? |
+translate | übersetzen | v | Can you *translate* this for me? | Kannst du mir das *übersetzen*? |
+text | Text; SMS | n | Read the *text* and answer the questions. | Lies den *Text* und beantworte die Fragen. |
+paragraph | Absatz | n | Read the first *paragraph*. | Lies den ersten *Absatz*. |
+exercise | Übung (Aufgabe) | n | Do *exercise* 3 on page 20. | Macht *Übung* 3 auf Seite 20. |
+instructions | Anweisungen, Anleitung | n | Read the *instructions* carefully. | Lies die *Anleitung* sorgfältig. |
+knowledge | Wissen | n | She has a lot of *knowledge* about plants. | Sie hat viel *Wissen* über Pflanzen. | k stumm
+improve | (sich) verbessern | v | My English has *improved* a lot. | Mein Englisch hat sich sehr *verbessert*. |
+remember | sich merken | v | I can't *remember* new words. | Ich kann mir neue Wörter nicht *merken*. |
+revise | wiederholen (Lernstoff) | v | I need to *revise* for my exam. | Ich muss für meine Prüfung *lernen*. | US: review
+education | Bildung, Ausbildung | n | *Education* is important. | *Bildung* ist wichtig. |
+degree | Abschluss; Grad | n | She has a *degree* in economics. | Sie hat einen *Abschluss* in Wirtschaft. |
+term | Semester, Trimester | n | The summer *term* starts in April. | Das Sommer*semester* beginnt im April. |
+timetable | Stundenplan | n | Check your *timetable*. | Schau auf deinen *Stundenplan*. |
+kindergarten | Kindergarten | n | Our son goes to *kindergarten*. | Unser Sohn geht in den *Kindergarten*. |
+primary school | Grundschule | n | She teaches at a *primary school*. | Sie unterrichtet an einer *Grundschule*. | US: elementary school
+secondary school | weiterführende Schule | n | He's at *secondary school* now. | Er ist jetzt auf der *weiterführenden Schule*. | US: high school

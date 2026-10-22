@@ -1,0 +1,72 @@
+# Reisen & Urlaub A1/A2
+## A1
+holiday | Urlaub; Feiertag | n | We're going on *holiday* next week. | Wir fahren nächste Woche in den *Urlaub*. | US: vacation
+hotel | Hotel | n | Our *hotel* is near the beach. | Unser *Hotel* ist in Strandnähe. |
+beach | Strand | n | Let's go to the *beach*. | Lass uns an den *Strand* gehen. |
+sea | Meer | n | The *sea* is very warm. | Das *Meer* ist sehr warm. |
+country | Land | n | Which *country* are you from? | Aus welchem *Land* kommst du? | auch: auf dem Land = in the country
+passport | Reisepass | n | Don't forget your *passport*. | Vergiss deinen *Reisepass* nicht. |
+ticket | Fahrkarte, Ticket | n | I bought a *ticket* online. | Ich habe online ein *Ticket* gekauft. |
+suitcase | Koffer | n | My *suitcase* is too heavy. | Mein *Koffer* ist zu schwer. |
+map | Landkarte, Stadtplan | n | Can you show me on the *map*? | Kannst du es mir auf der *Karte* zeigen? |
+photo | Foto | n | Can you take a *photo* of us? | Kannst du ein *Foto* von uns machen? |
+trip | Reise, Ausflug | n | How was your *trip*? | Wie war deine *Reise*? |
+travel | reisen | v | I love to *travel*. | Ich *reise* gern. |
+visit | besichtigen, besuchen | v | We *visited* the castle. | Wir haben das Schloss *besichtigt*. |
+tourist | Tourist(in) | n | The city is full of *tourists*. | Die Stadt ist voller *Touristen*. |
+airport | Flughafen | n | I'll pick you up at the *airport*. | Ich hole dich am *Flughafen* ab. |
+plane | Flugzeug | n | The *plane* landed on time. | Das *Flugzeug* ist pünktlich gelandet. |
+fly | fliegen | v | We're *flying* to Rome. | Wir *fliegen* nach Rom. | flew – flown
+stay | bleiben; übernachten | v | We *stayed* in a small hotel. | Wir haben in einem kleinen Hotel *übernachtet*. |
+English | Englisch; englisch | n | Do you speak *English*? | Sprichst du *Englisch*? |
+German | Deutsch; deutsch | n | My first language is *German*. | Meine Muttersprache ist *Deutsch*. |
+language | Sprache | n | She speaks four *languages*. | Sie spricht vier *Sprachen*. |
+world | Welt | n | I want to travel around the *world*. | Ich will um die *Welt* reisen. |
+## A2
+abroad | im Ausland, ins Ausland | adv | I've never lived *abroad*. | Ich habe noch nie im *Ausland* gelebt. |
+foreign | ausländisch, fremd | adj | Do you speak any *foreign* languages? | Sprichst du *Fremd*sprachen? |
+journey | Reise, Fahrt | n | The *journey* takes six hours. | Die *Fahrt* dauert sechs Stunden. |
+tour | Rundgang, Tour | n | We did a guided *tour* of the city. | Wir haben eine Stadt*führung* gemacht. |
+guide | Reiseführer(in) | n | Our *guide* spoke great English. | Unser *Reiseführer* sprach super Englisch. |
+guidebook | Reiseführer (Buch) | n | I bought a *guidebook* about Italy. | Ich habe einen *Reiseführer* über Italien gekauft. |
+reception | Rezeption | n | Leave the key at *reception*. | Gib den Schlüssel an der *Rezeption* ab. |
+single room | Einzelzimmer | n | I'd like a *single room* for two nights. | Ich hätte gern ein *Einzelzimmer* für zwei Nächte. |
+double room | Doppelzimmer | n | We booked a *double room*. | Wir haben ein *Doppelzimmer* gebucht. |
+check in | einchecken | v | You can *check in* after 2 pm. | Sie können ab 14 Uhr *einchecken*. |
+check out | auschecken | v | We have to *check out* by eleven. | Wir müssen bis elf *auschecken*. |
+reservation | Reservierung | n | I have a *reservation* for two. | Ich habe eine *Reservierung* für zwei Personen. |
+flight | Flug | n | Our *flight* was cancelled. | Unser *Flug* wurde gestrichen. |
+pack | packen | v | Have you *packed* yet? | Hast du schon *gepackt*? |
+souvenir | Andenken, Souvenir | n | We brought back some *souvenirs*. | Wir haben ein paar *Souvenirs* mitgebracht. |
+postcard | Postkarte | n | Send me a *postcard*! | Schick mir eine *Postkarte*! |
+sightseeing | Sightseeing | n | We did some *sightseeing* in Paris. | Wir haben in Paris *Sehenswürdigkeiten* angeschaut. |
+museum | Museum | n | The *museum* is free on Sundays. | Das *Museum* ist sonntags kostenlos. |
+castle | Burg, Schloss | n | There's an old *castle* on the hill. | Auf dem Hügel steht eine alte *Burg*. |
+church | Kirche | n | The *church* is 800 years old. | Die *Kirche* ist 800 Jahre alt. |
+island | Insel | n | We spent a week on an *island*. | Wir haben eine Woche auf einer *Insel* verbracht. | s stumm
+coast | Küste | n | We drove along the *coast*. | Wir sind die *Küste* entlanggefahren. |
+lake | See | n | We went swimming in the *lake*. | Wir sind im *See* schwimmen gegangen. |
+mountain | Berg | n | We climbed a *mountain*. | Wir haben einen *Berg* bestiegen. |
+view | Aussicht, Blick | n | The room has a great *view*. | Das Zimmer hat eine tolle *Aussicht*. |
+sunbathe | sich sonnen | v | We *sunbathed* all afternoon. | Wir haben uns den ganzen Nachmittag *gesonnt*. |
+sun cream | Sonnencreme | n | Put on some *sun cream*. | Creme dich mit *Sonnencreme* ein. |
+swimming pool | Schwimmbad, Pool | n | The hotel has a *swimming pool*. | Das Hotel hat einen *Pool*. |
+backpack | Rucksack | n | I travel with just a *backpack*. | Ich reise nur mit einem *Rucksack*. | GB auch: rucksack
+luggage | Gepäck | n | Where can I leave my *luggage*? | Wo kann ich mein *Gepäck* lassen? |
+visa | Visum | n | Do I need a *visa* for the USA? | Brauche ich ein *Visum* für die USA? |
+border | Grenze | n | We crossed the *border* at night. | Wir haben nachts die *Grenze* überquert. |
+local | einheimisch, örtlich | adj | Try the *local* food. | Probier das *einheimische* Essen. |
+international | international | adj | It's an *international* airport. | Es ist ein *internationaler* Flughafen. |
+capital | Hauptstadt | n | Berlin is the *capital* of Germany. | Berlin ist die *Hauptstadt* Deutschlands. |
+north | Norden | n | We live in the *north* of England. | Wir wohnen im *Norden* Englands. |
+south | Süden | n | Spain is in the *south* of Europe. | Spanien liegt im *Süden* Europas. |
+east | Osten | n | The sun rises in the *east*. | Die Sonne geht im *Osten* auf. |
+west | Westen | n | They live in the *west* of the city. | Sie wohnen im *Westen* der Stadt. |
+Europe | Europa | n | I've travelled all over *Europe*. | Ich bin durch ganz *Europa* gereist. |
+European | europäisch | adj | It's a *European* tradition. | Es ist eine *europäische* Tradition. |
+Britain | Großbritannien | n | Have you ever been to *Britain*? | Warst du schon mal in *Großbritannien*? |
+British | britisch | adj | He's *British*, but he lives in Spain. | Er ist *Brite*, lebt aber in Spanien. |
+American | amerikanisch | adj | I love *American* films. | Ich liebe *amerikanische* Filme. |
+French | Französisch; französisch | n | She speaks *French* fluently. | Sie spricht fließend *Französisch*. |
+Spanish | Spanisch; spanisch | n | I'm learning *Spanish*. | Ich lerne *Spanisch*. |
+Italian | Italienisch; italienisch | adj | Let's go to an *Italian* restaurant. | Lass uns zum *Italiener* gehen. |

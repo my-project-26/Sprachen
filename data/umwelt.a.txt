@@ -1,0 +1,71 @@
+# Wetter, Natur & Tiere A1/A2
+## A1
+weather | Wetter | n | What's the *weather* like? | Wie ist das *Wetter*? |
+sun | Sonne | n | The *sun* is shining. | Die *Sonne* scheint. |
+rain | Regen; regnen | n | We walked home in the *rain*. | Wir sind im *Regen* nach Hause gelaufen. |
+snow | Schnee; schneien | n | The kids are playing in the *snow*. | Die Kinder spielen im *Schnee*. |
+wind | Wind | n | The *wind* is very strong today. | Der *Wind* ist heute sehr stark. |
+sunny | sonnig | adj | It's a *sunny* day. | Es ist ein *sonniger* Tag. |
+rainy | regnerisch | adj | It was a *rainy* weekend. | Es war ein *verregnetes* Wochenende. |
+cloudy | bewölkt | adj | It's *cloudy* but warm. | Es ist *bewölkt*, aber warm. |
+windy | windig | adj | It's very *windy* at the coast. | An der Küste ist es sehr *windig*. |
+sky | Himmel | n | The *sky* is clear tonight. | Der *Himmel* ist heute Nacht klar. |
+tree | Baum | n | There's a big *tree* in our garden. | In unserem Garten steht ein großer *Baum*. |
+river | Fluss | n | The *river* runs through the city. | Der *Fluss* fließt durch die Stadt. |
+animal | Tier | n | What's your favourite *animal*? | Was ist dein Lieblings*tier*? |
+bird | Vogel | n | A *bird* is singing outside. | Draußen singt ein *Vogel*. |
+horse | Pferd | n | She rides a *horse*. | Sie reitet ein *Pferd*. |
+cow | Kuh | n | The *cows* are in the field. | Die *Kühe* stehen auf der Weide. |
+pig | Schwein | n | The farm has *pigs* and chickens. | Der Hof hat *Schweine* und Hühner. |
+sheep | Schaf | n | There are lots of *sheep* in Wales. | In Wales gibt es viele *Schafe*. | Plural: sheep
+mouse | Maus | n | There's a *mouse* in the kitchen! | In der Küche ist eine *Maus*! | Plural: mice
+fire | Feuer | n | We sat around the *fire*. | Wir saßen ums *Feuer*. |
+## A2
+nature | Natur | n | I love being out in *nature*. | Ich bin gern draußen in der *Natur*. |
+storm | Sturm, Gewitter | n | The *storm* lasted all night. | Der *Sturm* dauerte die ganze Nacht. |
+thunder | Donner | n | Did you hear the *thunder*? | Hast du den *Donner* gehört? |
+lightning | Blitz | n | The tree was hit by *lightning*. | Der Baum wurde vom *Blitz* getroffen. |
+fog | Nebel | n | The *fog* was very thick. | Der *Nebel* war sehr dicht. |
+foggy | neblig | adj | It's *foggy* this morning. | Heute Morgen ist es *neblig*. |
+ice | Eis (gefroren) | n | Be careful, there's *ice* on the road. | Vorsicht, auf der Straße ist *Glatteis*. |
+cloud | Wolke | n | There isn't a *cloud* in the sky. | Am Himmel ist keine einzige *Wolke*. |
+degree | Grad | n | It's 30 *degrees* today. | Heute hat es 30 *Grad*. |
+forecast | Vorhersage | n | The *forecast* says it will rain. | Die *Vorhersage* sagt Regen voraus. |
+dry | trocken | adj | It's been very *dry* this summer. | Dieser Sommer war sehr *trocken*. |
+wet | nass | adj | My shoes are *wet*. | Meine Schuhe sind *nass*. |
+freezing | eiskalt | adj | It's *freezing* outside! | Draußen ist es *eiskalt*! |
+countryside | Land(schaft) | n | We live in the *countryside*. | Wir wohnen auf dem *Land*. |
+field | Feld, Wiese | n | The horses are in the *field*. | Die Pferde stehen auf der *Weide*. |
+forest | Wald | n | We went for a walk in the *forest*. | Wir sind im *Wald* spazieren gegangen. |
+wood | Holz; Wald | n | The table is made of *wood*. | Der Tisch ist aus *Holz*. |
+hill | Hügel | n | The house is on a *hill*. | Das Haus steht auf einem *Hügel*. |
+valley | Tal | n | The village is in a green *valley*. | Das Dorf liegt in einem grünen *Tal*. |
+ocean | Ozean | n | The Pacific is the biggest *ocean*. | Der Pazifik ist der größte *Ozean*. |
+wave | Welle; winken | n | The *waves* are huge today. | Die *Wellen* sind heute riesig. |
+sand | Sand | n | The *sand* is very hot. | Der *Sand* ist sehr heiß. |
+stone | Stein | n | He threw a *stone* into the lake. | Er warf einen *Stein* in den See. |
+rock | Fels, Stein | n | We sat on a big *rock*. | Wir saßen auf einem großen *Felsen*. |
+grass | Gras, Rasen | n | Don't walk on the *grass*. | Betreten Sie nicht den *Rasen*. |
+leaf | Blatt | n | The *leaves* are turning red. | Die *Blätter* werden rot. | Plural: leaves
+earth | Erde | n | The *Earth* goes around the sun. | Die *Erde* kreist um die Sonne. |
+moon | Mond | n | There's a full *moon* tonight. | Heute Nacht ist Voll*mond*. |
+star | Stern | n | Look at all the *stars*! | Sieh dir all die *Sterne* an! |
+air | Luft | n | I need some fresh *air*. | Ich brauche frische *Luft*. |
+environment | Umwelt | n | We must protect the *environment*. | Wir müssen die *Umwelt* schützen. |
+recycle | recyceln | v | We *recycle* glass and paper. | Wir *recyceln* Glas und Papier. |
+insect | Insekt | n | There are lots of *insects* in summer. | Im Sommer gibt es viele *Insekten*. |
+bee | Biene | n | A *bee* stung me. | Mich hat eine *Biene* gestochen. |
+fly | Fliege | n | There's a *fly* in my soup! | In meiner Suppe ist eine *Fliege*! |
+spider | Spinne | n | I'm scared of *spiders*. | Ich habe Angst vor *Spinnen*. |
+snake | Schlange (Tier) | n | Are there *snakes* here? | Gibt es hier *Schlangen*? |
+rabbit | Kaninchen, Hase | n | My daughter has a pet *rabbit*. | Meine Tochter hat ein *Kaninchen*. |
+duck | Ente | n | We fed the *ducks* in the park. | Wir haben im Park die *Enten* gefüttert. |
+lion | Löwe | n | The *lion* is sleeping. | Der *Löwe* schläft. |
+tiger | Tiger | n | *Tigers* are in danger. | *Tiger* sind bedroht. |
+elephant | Elefant | n | *Elephants* have a great memory. | *Elefanten* haben ein tolles Gedächtnis. |
+bear | Bär | n | We saw a *bear* in Canada. | Wir haben in Kanada einen *Bären* gesehen. |
+monkey | Affe | n | The *monkeys* stole our food. | Die *Affen* haben unser Essen geklaut. |
+zoo | Zoo | n | Let's take the kids to the *zoo*. | Lass uns mit den Kindern in den *Zoo* gehen. |
+farm | Bauernhof | n | They live on a *farm*. | Sie wohnen auf einem *Bauernhof*. |
+wild | wild | adj | We saw *wild* horses. | Wir haben *wilde* Pferde gesehen. |
+feed | füttern | v | Don't *feed* the animals. | Bitte die Tiere nicht *füttern*. | fed – fed

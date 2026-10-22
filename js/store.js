@@ -1,10 +1,10 @@
 // Datenhaltung im Browser (localStorage)
-import { seedCards, TOPICS, slug } from "./words.js";
+import { seedCards, TOPICS, slug, LEVELS } from "./words.js";
 import { DAY, startOfDay } from "./fsrs.js";
 
 const KEY = "wortwerk.v1";
 export const LEARNED_DAYS = 21; // ab dieser Stabilität gilt ein Wort als "gelernt"
-const LEVEL_ORDER = ["B1", "B2", "C1"];
+const LEVEL_ORDER = LEVELS;
 
 export const DEFAULT_SETTINGS = {
   newPerDay: 10,
@@ -13,7 +13,7 @@ export const DEFAULT_SETTINGS = {
   startLevel: "B1",
   storyLevel: "B2",
   voiceRate: 0.95,
-  design: "paper", // paper | business | pop | night
+  design: "paper", // paper | bordkarte | stapel | chat | heft | glas | retro | musik | kunst | sport
   voicePreset: "clear-f", // clear-f/m, friend-f/m, strict-f/m
   apiBase: "",
   appSecret: "",
@@ -225,7 +225,8 @@ export function topicLevelInfo(key) {
     remaining: 0, // Wörter bis dieses Niveau abgeschlossen ist
     nextLevel: null, // Niveau danach
   };
-  for (let i = 0; i < LEVEL_ORDER.length; i++) {
+  const from = Math.max(0, LEVEL_ORDER.indexOf(load().settings.startLevel));
+  for (let i = from; i < LEVEL_ORDER.length; i++) {
     const open = list.filter((c) => c.level === LEVEL_ORDER[i] && !secure(c)).length;
     if (open > 0) {
       info.level = LEVEL_ORDER[i];

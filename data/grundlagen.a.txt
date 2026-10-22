@@ -1,0 +1,374 @@
+# Grundwortschatz A1/A2 – Zahlen, Zeit, Farben, kleine Wörter, Grundverben
+## A1
+one | eins | num | I have *one* brother. | Ich habe *einen* Bruder. |
+two | zwei | num | We have *two* cats. | Wir haben *zwei* Katzen. |
+three | drei | num | The shop opens at *three*. | Der Laden öffnet um *drei*. |
+four | vier | num | There are *four* people in my family. | In meiner Familie sind wir *vier* Personen. |
+five | fünf | num | I get up at *five* o'clock. | Ich stehe um *fünf* Uhr auf. |
+six | sechs | num | The film starts at *six*. | Der Film beginnt um *sechs*. |
+seven | sieben | num | A week has *seven* days. | Eine Woche hat *sieben* Tage. |
+eight | acht | num | School starts at *eight*. | Die Schule beginnt um *acht*. |
+nine | neun | num | My son is *nine* years old. | Mein Sohn ist *neun* Jahre alt. |
+ten | zehn | num | I'll be back in *ten* minutes. | Ich bin in *zehn* Minuten zurück. |
+eleven | elf | num | There are *eleven* players in a team. | Eine Mannschaft hat *elf* Spieler. |
+twelve | zwölf | num | We have lunch at *twelve*. | Wir essen um *zwölf* zu Mittag. |
+thirteen | dreizehn | num | She is *thirteen* today. | Sie wird heute *dreizehn*. |
+fifteen | fünfzehn | num | The bus comes every *fifteen* minutes. | Der Bus kommt alle *fünfzehn* Minuten. |
+twenty | zwanzig | num | It costs *twenty* euros. | Es kostet *zwanzig* Euro. |
+thirty | dreißig | num | He is *thirty* years old. | Er ist *dreißig* Jahre alt. |
+forty | vierzig | num | The drive takes *forty* minutes. | Die Fahrt dauert *vierzig* Minuten. |
+fifty | fünfzig | num | I paid *fifty* pounds for it. | Ich habe *fünfzig* Pfund dafür bezahlt. |
+hundred | hundert | num | There were a *hundred* people at the party. | Auf der Party waren *hundert* Leute. | a/one hundred
+thousand | tausend | num | The bike cost a *thousand* euros. | Das Fahrrad hat *tausend* Euro gekostet. |
+million | Million | num | The city has two *million* people. | Die Stadt hat zwei *Millionen* Einwohner. |
+first | erste(r, s) | num | This is my *first* time in London. | Ich bin zum *ersten* Mal in London. |
+second | zweite(r, s) | num | Take the *second* street on the left. | Nimm die *zweite* Straße links. | auch: Sekunde
+third | dritte(r, s) | num | We live on the *third* floor. | Wir wohnen im *dritten* Stock. |
+number | Zahl, Nummer | n | What's your phone *number*? | Wie ist deine Telefon*nummer*? |
+Monday | Montag | n | I start work on *Monday*. | Ich fange am *Montag* an zu arbeiten. | Wochentage groß schreiben
+Tuesday | Dienstag | n | The museum is closed on *Tuesday*. | Das Museum hat am *Dienstag* geschlossen. |
+Wednesday | Mittwoch | n | We meet every *Wednesday*. | Wir treffen uns jeden *Mittwoch*. | Aussprache: „Wens-day“
+Thursday | Donnerstag | n | The party is on *Thursday*. | Die Party ist am *Donnerstag*. |
+Friday | Freitag | n | I love *Friday* evenings. | Ich liebe *Freitag*abende. |
+Saturday | Samstag | n | On *Saturday* we go shopping. | Am *Samstag* gehen wir einkaufen. |
+Sunday | Sonntag | n | The shops are closed on *Sunday*. | Am *Sonntag* sind die Läden zu. |
+January | Januar | n | My birthday is in *January*. | Mein Geburtstag ist im *Januar*. |
+February | Februar | n | *February* is the shortest month. | Der *Februar* ist der kürzeste Monat. |
+March | März | n | Spring starts in *March*. | Der Frühling beginnt im *März*. |
+April | April | n | It often rains in *April*. | Im *April* regnet es oft. |
+May | Mai | n | We got married in *May*. | Wir haben im *Mai* geheiratet. |
+June | Juni | n | School ends in *June*. | Die Schule endet im *Juni*. |
+July | Juli | n | *July* is usually hot. | Der *Juli* ist meistens heiß. |
+August | August | n | We go on holiday in *August*. | Im *August* fahren wir in den Urlaub. |
+September | September | n | The course starts in *September*. | Der Kurs beginnt im *September*. |
+October | Oktober | n | The leaves fall in *October*. | Im *Oktober* fallen die Blätter. |
+November | November | n | *November* is grey and wet. | Der *November* ist grau und nass. |
+December | Dezember | n | Christmas is in *December*. | Weihnachten ist im *Dezember*. |
+day | Tag | n | Have a nice *day*! | Einen schönen *Tag*! |
+week | Woche | n | I see her once a *week*. | Ich sehe sie einmal pro *Woche*. |
+month | Monat | n | The rent is due every *month*. | Die Miete ist jeden *Monat* fällig. |
+year | Jahr | n | We moved here last *year*. | Wir sind letztes *Jahr* hierhergezogen. |
+hour | Stunde | n | The trip takes an *hour*. | Die Fahrt dauert eine *Stunde*. | h stumm: an hour
+minute | Minute | n | Wait a *minute*, please. | Warte bitte eine *Minute*. |
+time | Zeit; Mal | n | What *time* is it? | Wie viel *Uhr* ist es? | this time = dieses Mal
+morning | Morgen, Vormittag | n | I drink coffee every *morning*. | Ich trinke jeden *Morgen* Kaffee. |
+afternoon | Nachmittag | n | See you this *afternoon*. | Bis heute *Nachmittag*. |
+evening | Abend | n | We had a quiet *evening* at home. | Wir hatten einen ruhigen *Abend* zu Hause. |
+night | Nacht | n | I slept badly last *night*. | Ich habe letzte *Nacht* schlecht geschlafen. |
+today | heute | adv | It's very warm *today*. | Es ist *heute* sehr warm. |
+tomorrow | morgen | adv | Call me *tomorrow*. | Ruf mich *morgen* an. |
+yesterday | gestern | adv | I saw him *yesterday*. | Ich habe ihn *gestern* gesehen. |
+now | jetzt | adv | I have to go *now*. | Ich muss *jetzt* gehen. |
+weekend | Wochenende | n | What are you doing at the *weekend*? | Was machst du am *Wochenende*? | US: on the weekend
+o'clock | Uhr (volle Stunde) | adv | It's three *o'clock*. | Es ist drei *Uhr*. | nur bei vollen Stunden
+spring | Frühling | n | The garden is beautiful in *spring*. | Im *Frühling* ist der Garten wunderschön. |
+summer | Sommer | n | We go swimming in the *summer*. | Im *Sommer* gehen wir schwimmen. |
+autumn | Herbst | n | I love the colours of *autumn*. | Ich liebe die Farben des *Herbstes*. | US: fall
+winter | Winter | n | It snows a lot in *winter*. | Im *Winter* schneit es viel. |
+colour | Farbe | n | What's your favourite *colour*? | Was ist deine Lieblings*farbe*? | US: color
+red | rot | adj | She has a *red* car. | Sie hat ein *rotes* Auto. |
+blue | blau | adj | The sky is *blue* today. | Der Himmel ist heute *blau*. |
+green | grün | adj | He's wearing a *green* jacket. | Er trägt eine *grüne* Jacke. |
+yellow | gelb | adj | The bananas are still *yellow*. | Die Bananen sind noch *gelb*. |
+black | schwarz | adj | I'd like my coffee *black*. | Ich hätte meinen Kaffee gern *schwarz*. |
+white | weiß | adj | The walls are *white*. | Die Wände sind *weiß*. |
+brown | braun | adj | She has *brown* eyes. | Sie hat *braune* Augen. |
+grey | grau | adj | His hair is going *grey*. | Seine Haare werden *grau*. | US: gray
+orange | orange; Orange | adj | He painted the door *orange*. | Er hat die Tür *orange* gestrichen. |
+pink | rosa, pink | adj | She bought a *pink* dress. | Sie hat ein *rosa* Kleid gekauft. |
+I | ich | pron | *I* live in Berlin. | *Ich* wohne in Berlin. | immer groß geschrieben
+you | du, Sie, ihr | pron | Are *you* hungry? | Hast *du* Hunger? |
+he | er | pron | *He* works in a bank. | *Er* arbeitet in einer Bank. |
+she | sie (Einzahl) | pron | *She* speaks three languages. | *Sie* spricht drei Sprachen. |
+it | es | pron | *It* is raining. | *Es* regnet. |
+we | wir | pron | *We* are late. | *Wir* sind spät dran. |
+they | sie (Mehrzahl) | pron | *They* live next door. | *Sie* wohnen nebenan. |
+me | mich, mir | pron | Can you help *me*? | Kannst du *mir* helfen? |
+him | ihn, ihm | pron | I called *him* yesterday. | Ich habe *ihn* gestern angerufen. |
+her | sie, ihr; ihr(e) | pron | I gave *her* the keys. | Ich habe *ihr* die Schlüssel gegeben. |
+us | uns | pron | Come with *us*! | Komm mit *uns*! |
+them | sie, ihnen | pron | I don't know *them*. | Ich kenne *sie* nicht. |
+my | mein(e) | det | *My* name is Kai. | *Mein* Name ist Kai. |
+your | dein(e), Ihr(e), euer | det | Is this *your* bag? | Ist das *deine* Tasche? |
+his | sein(e) | det | *His* car is new. | *Sein* Auto ist neu. |
+our | unser(e) | det | *Our* flat is small. | *Unsere* Wohnung ist klein. |
+their | ihr(e) (Mehrzahl) | det | *Their* kids are very loud. | *Ihre* Kinder sind sehr laut. | nicht verwechseln: there / they're
+this | dies(e, er, es) | det | *This* coffee is great. | *Dieser* Kaffee ist toll. |
+that | das, jene(r, s); dass | det | Who is *that* man? | Wer ist *der* Mann da? |
+these | diese (Mehrzahl) | det | *These* shoes are too small. | *Diese* Schuhe sind zu klein. |
+those | jene, die da | det | Can I try *those* jeans? | Kann ich *die* Jeans *da* anprobieren? |
+a | ein(e) | det | I'd like *a* coffee. | Ich hätte gern *einen* Kaffee. | vor Vokal-Laut: an
+the | der, die, das | det | *The* train is late. | *Der* Zug hat Verspätung. |
+some | etwas, einige | det | Would you like *some* tea? | Möchtest du *etwas* Tee? |
+any | (irgend)welche; kein (verneint) | det | Do you have *any* questions? | Habt ihr *irgendwelche* Fragen? |
+all | alle, ganz | det | *All* my friends were there. | *Alle* meine Freunde waren da. |
+every | jede(r, s) | det | I go running *every* day. | Ich gehe *jeden* Tag laufen. |
+many | viele | det | There aren't *many* people here. | Hier sind nicht *viele* Leute. | zählbar; unzählbar: much
+much | viel | det | I don't have *much* time. | Ich habe nicht *viel* Zeit. |
+more | mehr | det | Can I have *more* milk? | Kann ich *mehr* Milch haben? |
+other | andere(r, s) | adj | Where are the *other* children? | Wo sind die *anderen* Kinder? |
+in | in | prep | The keys are *in* my bag. | Die Schlüssel sind *in* meiner Tasche. |
+on | auf, an | prep | The book is *on* the table. | Das Buch liegt *auf* dem Tisch. | on Monday = am Montag
+at | an, bei, um | prep | I'm *at* home. | Ich bin *zu* Hause. | at 5 o'clock = um 5 Uhr
+under | unter | prep | The cat is *under* the bed. | Die Katze ist *unter* dem Bett. |
+next to | neben | prep | Sit *next to* me. | Setz dich *neben* mich. |
+from | von, aus | prep | I'm *from* Germany. | Ich komme *aus* Deutschland. |
+to | zu, nach | prep | I'm going *to* London. | Ich fahre *nach* London. |
+with | mit | prep | I live *with* my sister. | Ich wohne *mit* meiner Schwester zusammen. |
+without | ohne | prep | I can't live *without* coffee. | Ich kann *ohne* Kaffee nicht leben. |
+for | für | prep | This present is *for* you. | Dieses Geschenk ist *für* dich. | for two hours = seit/zwei Stunden lang
+about | über; ungefähr | prep | It's a film *about* love. | Es ist ein Film *über* die Liebe. |
+before | vor, bevor | prep | Wash your hands *before* dinner. | Wasch dir *vor* dem Essen die Hände. |
+after | nach, nachdem | prep | Let's go for a walk *after* lunch. | Lass uns *nach* dem Mittagessen spazieren gehen. |
+between | zwischen | prep | The bank is *between* the café and the post office. | Die Bank liegt *zwischen* dem Café und der Post. |
+behind | hinter | prep | The garden is *behind* the house. | Der Garten liegt *hinter* dem Haus. |
+in front of | vor (räumlich) | prep | I'll wait *in front of* the cinema. | Ich warte *vor* dem Kino. |
+near | nahe, in der Nähe von | prep | Is there a bank *near* here? | Gibt es hier *in der Nähe* eine Bank? |
+and | und | conj | I like tea *and* coffee. | Ich mag Tee *und* Kaffee. |
+but | aber | conj | It's small *but* nice. | Es ist klein, *aber* schön. |
+or | oder | conj | Tea *or* coffee? | Tee *oder* Kaffee? |
+because | weil | conj | I stayed at home *because* I was ill. | Ich bin zu Hause geblieben, *weil* ich krank war. |
+if | wenn, falls; ob | conj | Call me *if* you need help. | Ruf mich an, *wenn* du Hilfe brauchst. |
+when | wann; wenn, als | adv | *When* does the train leave? | *Wann* fährt der Zug ab? |
+what | was | pron | *What* is your name? | *Wie* heißt du? | Achtung: „Wie heißt du?“ = What's your name?
+who | wer | pron | *Who* is that? | *Wer* ist das? |
+where | wo, wohin | adv | *Where* do you live? | *Wo* wohnst du? |
+why | warum | adv | *Why* are you sad? | *Warum* bist du traurig? |
+how | wie | adv | *How* are you? | *Wie* geht es dir? |
+which | welche(r, s) | det | *Which* bus goes to the station? | *Welcher* Bus fährt zum Bahnhof? |
+how much | wie viel (unzählbar) | phrase | *How much* is this? | *Wie viel* kostet das? |
+how many | wie viele (zählbar) | phrase | *How many* children do you have? | *Wie viele* Kinder hast du? |
+yes | ja | adv | *Yes*, please. | *Ja*, bitte. |
+no | nein; kein | adv | *No*, thank you. | *Nein*, danke. |
+not | nicht | adv | I'm *not* tired. | Ich bin *nicht* müde. |
+very | sehr | adv | The food was *very* good. | Das Essen war *sehr* gut. |
+too | zu; auch | adv | This coffee is *too* hot. | Dieser Kaffee ist *zu* heiß. | me too = ich auch
+also | auch | adv | She *also* speaks French. | Sie spricht *auch* Französisch. |
+again | wieder, noch einmal | adv | Can you say that *again*? | Kannst du das *noch einmal* sagen? |
+always | immer | adv | He is *always* late. | Er kommt *immer* zu spät. |
+never | nie | adv | I *never* eat meat. | Ich esse *nie* Fleisch. |
+often | oft | adv | We *often* go to the cinema. | Wir gehen *oft* ins Kino. |
+sometimes | manchmal | adv | I *sometimes* work from home. | Ich arbeite *manchmal* von zu Hause. |
+usually | normalerweise | adv | I *usually* get up at seven. | *Normalerweise* stehe ich um sieben auf. |
+here | hier | adv | Come *here*! | Komm *her*! |
+there | dort, da | adv | I've never been *there*. | Ich war noch nie *dort*. | there is/are = es gibt
+please | bitte | adv | Two coffees, *please*. | Zwei Kaffee, *bitte*. |
+thank you | danke | phrase | *Thank you* for your help. | *Danke* für deine Hilfe. |
+sorry | Entschuldigung; tut mir leid | adj | *Sorry*, I'm late. | *Entschuldigung*, ich bin spät dran. |
+hello | hallo | phrase | *Hello*, how are you? | *Hallo*, wie geht's? |
+goodbye | auf Wiedersehen | phrase | Say *goodbye* to grandma. | Sag Oma *auf Wiedersehen*. |
+be | sein | v | I *am* a teacher. | Ich *bin* Lehrer. | am / is / are – was / were – been
+have | haben | v | I *have* two sisters. | Ich *habe* zwei Schwestern. | had – had
+do | tun, machen | v | What do you *do*? | Was *machst* du beruflich? | did – done
+go | gehen, fahren | v | Let's *go* home. | Lass uns nach Hause *gehen*. | went – gone
+come | kommen | v | *Come* in, please! | *Komm* bitte herein! | came – come
+get | bekommen; werden; holen | v | I *got* a letter today. | Ich habe heute einen Brief *bekommen*. | got – got (US: gotten)
+make | machen, herstellen | v | I'll *make* some tea. | Ich *mache* Tee. | made – made
+see | sehen | v | I can't *see* anything. | Ich kann nichts *sehen*. | saw – seen
+know | wissen, kennen | v | I don't *know*. | Ich *weiß* es nicht. | knew – known
+think | denken, glauben | v | I *think* it's a good idea. | Ich *glaube*, das ist eine gute Idee. | thought – thought
+want | wollen | v | I *want* a new phone. | Ich *will* ein neues Handy. |
+like | mögen | v | I *like* your shoes. | Ich *mag* deine Schuhe. | would like = hätte gern
+love | lieben | v | I *love* this song. | Ich *liebe* dieses Lied. |
+say | sagen | v | What did she *say*? | Was hat sie *gesagt*? | said – said
+tell | erzählen, sagen | v | *Tell* me a story. | *Erzähl* mir eine Geschichte. | told – told
+ask | fragen, bitten | v | Can I *ask* you something? | Darf ich dich etwas *fragen*? |
+answer | antworten; Antwort | v | Please *answer* the question. | Bitte *beantworte* die Frage. |
+give | geben | v | *Give* me your hand. | *Gib* mir deine Hand. | gave – given
+take | nehmen; bringen; dauern | v | *Take* an umbrella. | *Nimm* einen Schirm mit. | took – taken
+put | legen, stellen | v | *Put* the milk in the fridge. | *Stell* die Milch in den Kühlschrank. | put – put
+find | finden | v | I can't *find* my keys. | Ich kann meine Schlüssel nicht *finden*. | found – found
+look | schauen; aussehen | v | *Look* at this! | *Schau* dir das an! | look for = suchen
+watch | ansehen, zuschauen | v | We *watched* a film last night. | Wir haben gestern Abend einen Film *gesehen*. |
+listen | zuhören | v | *Listen* to me! | Hör mir *zu*! | listen to something
+hear | hören | v | I can't *hear* you. | Ich kann dich nicht *hören*. | heard – heard
+speak | sprechen | v | Do you *speak* English? | *Sprichst* du Englisch? | spoke – spoken
+talk | reden, sich unterhalten | v | We *talked* for hours. | Wir haben stundenlang *geredet*. |
+read | lesen | v | I *read* every evening. | Ich *lese* jeden Abend. | read – read (Aussprache „red“)
+write | schreiben | v | *Write* your name here. | *Schreib* deinen Namen hierhin. | wrote – written
+eat | essen | v | What do you want to *eat*? | Was möchtest du *essen*? | ate – eaten
+drink | trinken | v | I *drink* a lot of water. | Ich *trinke* viel Wasser. | drank – drunk
+sleep | schlafen | v | Did you *sleep* well? | Hast du gut *geschlafen*? | slept – slept
+live | leben, wohnen | v | Where do you *live*? | Wo *wohnst* du? |
+work | arbeiten; Arbeit | v | I *work* in an office. | Ich *arbeite* in einem Büro. |
+play | spielen | v | The kids are *playing* outside. | Die Kinder *spielen* draußen. |
+open | öffnen; offen | v | Can you *open* the window? | Kannst du das Fenster *öffnen*? |
+close | schließen | v | Please *close* the door. | Bitte *schließ* die Tür. |
+start | anfangen, beginnen | v | When does the film *start*? | Wann *fängt* der Film *an*? |
+stop | aufhören, anhalten | v | *Stop* the car! | *Halt* das Auto *an*! |
+help | helfen; Hilfe | v | Can you *help* me? | Kannst du mir *helfen*? |
+need | brauchen | v | I *need* a holiday. | Ich *brauche* Urlaub. |
+can | können | v | I *can* swim. | Ich *kann* schwimmen. | could = konnte / könnte
+must | müssen | v | You *must* be tired. | Du *musst* müde sein. | must not = nicht dürfen!
+call | anrufen; rufen; nennen | v | I'll *call* you later. | Ich *rufe* dich später *an*. |
+wait | warten | v | *Wait* for me! | *Warte* auf mich! | wait for somebody
+try | versuchen, probieren | v | *Try* this cake. | *Probier* diesen Kuchen. |
+use | benutzen | v | Can I *use* your phone? | Darf ich dein Handy *benutzen*? |
+understand | verstehen | v | I don't *understand* this word. | Ich *verstehe* dieses Wort nicht. | understood – understood
+learn | lernen | v | I'm *learning* English. | Ich *lerne* Englisch. |
+sit | sitzen | v | Can I *sit* here? | Darf ich hier *sitzen*? | sat – sat; sit down = sich setzen
+stand | stehen | v | We *stood* in the rain. | Wir *standen* im Regen. | stood – stood
+walk | gehen, laufen; Spaziergang | v | I *walk* to work. | Ich *gehe* zu Fuß zur Arbeit. |
+run | rennen, laufen | v | I *run* every morning. | Ich *laufe* jeden Morgen. | ran – run
+good | gut | adj | That's a *good* idea. | Das ist eine *gute* Idee. | better – best
+bad | schlecht | adj | The weather is *bad* today. | Das Wetter ist heute *schlecht*. | worse – worst
+big | groß | adj | They have a *big* house. | Sie haben ein *großes* Haus. |
+small | klein | adj | It's a *small* village. | Es ist ein *kleines* Dorf. |
+long | lang | adj | It was a *long* day. | Es war ein *langer* Tag. |
+short | kurz; klein (Person) | adj | She has *short* hair. | Sie hat *kurze* Haare. |
+new | neu | adj | I need *new* shoes. | Ich brauche *neue* Schuhe. |
+old | alt | adj | This house is very *old*. | Dieses Haus ist sehr *alt*. |
+young | jung | adj | She looks very *young*. | Sie sieht sehr *jung* aus. |
+hot | heiß | adj | It's really *hot* today. | Heute ist es richtig *heiß*. |
+cold | kalt; Erkältung | adj | The water is *cold*. | Das Wasser ist *kalt*. |
+warm | warm | adj | Wear a *warm* coat. | Zieh einen *warmen* Mantel an. |
+happy | glücklich, froh | adj | I am very *happy* here. | Ich bin hier sehr *glücklich*. |
+sad | traurig | adj | Why are you *sad*? | Warum bist du *traurig*? |
+nice | nett, schön | adj | Have a *nice* weekend! | Schönes Wochenende! |
+beautiful | schön, wunderschön | adj | What a *beautiful* view! | Was für eine *wunderschöne* Aussicht! |
+easy | leicht, einfach | adj | The test was *easy*. | Der Test war *leicht*. |
+difficult | schwierig | adj | English spelling is *difficult*. | Die englische Rechtschreibung ist *schwierig*. |
+right | richtig; rechts | adj | That's the *right* answer. | Das ist die *richtige* Antwort. |
+wrong | falsch | adj | I took the *wrong* bus. | Ich habe den *falschen* Bus genommen. |
+same | gleich, derselbe | adj | We have the *same* phone. | Wir haben *dasselbe* Handy. |
+different | anders, verschieden | adj | My sister is very *different* from me. | Meine Schwester ist ganz *anders* als ich. |
+favourite | Lieblings- | adj | What's your *favourite* film? | Was ist dein *Lieblings*film? | US: favorite
+## A2
+half | halb, Hälfte | n | I'll be there in *half* an hour. | Ich bin in einer *halben* Stunde da. | half past two = halb drei!
+quarter | Viertel | n | It's a *quarter* to six. | Es ist *Viertel* vor sechs. |
+early | früh | adj | I have an *early* flight. | Ich habe einen *frühen* Flug. |
+late | spät; zu spät | adj | Sorry I'm *late*. | Tut mir leid, dass ich *zu spät* bin. |
+soon | bald | adv | See you *soon*! | Bis *bald*! |
+already | schon, bereits | adv | I've *already* eaten. | Ich habe *schon* gegessen. |
+yet | schon (Frage); noch (verneint) | adv | Have you finished *yet*? | Bist du *schon* fertig? | not yet = noch nicht
+still | noch, immer noch | adv | Are you *still* at work? | Bist du *noch* auf der Arbeit? |
+just | gerade; nur | adv | I've *just* arrived. | Ich bin *gerade* angekommen. |
+ago | vor (zeitlich) | adv | I met him two years *ago*. | Ich habe ihn *vor* zwei Jahren kennengelernt. | steht nach der Zeitangabe
+later | später | adv | I'll call you *later*. | Ich rufe dich *später* an. |
+during | während | prep | I fell asleep *during* the film. | Ich bin *während* des Films eingeschlafen. |
+until | bis | prep | The shop is open *until* eight. | Der Laden hat *bis* acht geöffnet. |
+since | seit | prep | I've lived here *since* 2019. | Ich wohne hier *seit* 2019. | since + Zeitpunkt, for + Zeitraum
+while | während (Konjunktion) | conj | He called *while* I was cooking. | Er rief an, *während* ich kochte. |
+then | dann; damals | adv | First we eat, *then* we go out. | Erst essen wir, *dann* gehen wir aus. |
+once | einmal; sobald | adv | I've been there *once*. | Ich war *einmal* dort. |
+twice | zweimal | adv | I go to the gym *twice* a week. | Ich gehe *zweimal* pro Woche ins Fitnessstudio. |
+date | Datum; Verabredung | n | What's the *date* today? | Welches *Datum* ist heute? |
+century | Jahrhundert | n | The church is from the 12th *century*. | Die Kirche stammt aus dem 12. *Jahrhundert*. |
+moment | Moment, Augenblick | n | Just a *moment*, please. | Einen *Moment*, bitte. |
+past | Vergangenheit; nach (Uhrzeit) | n | It's ten *past* four. | Es ist zehn *nach* vier. |
+future | Zukunft | n | What are your plans for the *future*? | Was sind deine Pläne für die *Zukunft*? |
+anything | (irgend)etwas; nichts (verneint) | pron | Do you need *anything*? | Brauchst du *irgendetwas*? |
+something | etwas | pron | I have *something* for you. | Ich habe *etwas* für dich. |
+nothing | nichts | pron | There's *nothing* in the fridge. | Es ist *nichts* im Kühlschrank. |
+everything | alles | pron | *Everything* is fine. | *Alles* ist gut. |
+someone | jemand | pron | *Someone* is at the door. | *Jemand* ist an der Tür. | auch: somebody
+everyone | jeder, alle | pron | *Everyone* was happy. | *Alle* waren glücklich. | auch: everybody
+nobody | niemand | pron | *Nobody* answered the phone. | *Niemand* ging ans Telefon. |
+somewhere | irgendwo | adv | I left my glasses *somewhere*. | Ich habe meine Brille *irgendwo* liegen lassen. |
+everywhere | überall | adv | I looked *everywhere*. | Ich habe *überall* gesucht. |
+each | jede(r, s) (einzeln) | det | *Each* room has a balcony. | *Jedes* Zimmer hat einen Balkon. |
+both | beide | det | *Both* my parents are teachers. | *Beide* Eltern von mir sind Lehrer. |
+few | wenige | det | Only a *few* people came. | Nur *wenige* Leute kamen. | a few = ein paar
+enough | genug | det | We don't have *enough* chairs. | Wir haben nicht *genug* Stühle. |
+most | die meisten; am meisten | det | *Most* people work on Mondays. | *Die meisten* Leute arbeiten montags. |
+less | weniger | det | I want to spend *less* money. | Ich will *weniger* Geld ausgeben. |
+own | eigen | adj | I'd love my *own* garden. | Ich hätte gern einen *eigenen* Garten. |
+whose | wessen | pron | *Whose* bag is this? | *Wessen* Tasche ist das? |
+above | über, oberhalb | prep | The flat *above* us is empty. | Die Wohnung *über* uns ist leer. |
+below | unter, unterhalb | prep | Write your name *below* the line. | Schreib deinen Namen *unter* die Linie. |
+across | über, quer durch | prep | We walked *across* the bridge. | Wir gingen *über* die Brücke. |
+along | entlang | prep | We walked *along* the beach. | Wir gingen den Strand *entlang*. |
+through | durch | prep | The train goes *through* a tunnel. | Der Zug fährt *durch* einen Tunnel. |
+into | in … hinein | prep | She walked *into* the room. | Sie ging *in* das Zimmer. |
+out of | aus … heraus | prep | Get *out of* the car! | Steig *aus* dem Auto! |
+around | um … herum; ungefähr | prep | We walked *around* the lake. | Wir gingen *um* den See *herum*. |
+opposite | gegenüber | prep | The bank is *opposite* the station. | Die Bank ist *gegenüber* vom Bahnhof. |
+inside | drinnen; in | adv | Let's go *inside*, it's cold. | Lass uns *reingehen*, es ist kalt. |
+outside | draußen | adv | The kids are playing *outside*. | Die Kinder spielen *draußen*. |
+towards | auf … zu, in Richtung | prep | He walked *towards* me. | Er ging *auf* mich *zu*. |
+so | also, deshalb; so | conj | I was tired, *so* I went to bed. | Ich war müde, *also* ging ich ins Bett. |
+although | obwohl | conj | *Although* it was raining, we went out. | *Obwohl* es regnete, gingen wir raus. |
+than | als (Vergleich) | conj | She is taller *than* me. | Sie ist größer *als* ich. | Nicht verwechseln: then = dann
+as | als; wie; da | conj | He works *as* a nurse. | Er arbeitet *als* Krankenpfleger. |
+however | jedoch, allerdings | adv | It's cheap. *However*, it's not very good. | Es ist billig. Es ist *allerdings* nicht sehr gut. |
+maybe | vielleicht | adv | *Maybe* we can meet tomorrow. | *Vielleicht* können wir uns morgen treffen. |
+perhaps | vielleicht | adv | *Perhaps* she missed the bus. | *Vielleicht* hat sie den Bus verpasst. |
+really | wirklich | adv | I *really* like this place. | Ich mag diesen Ort *wirklich*. |
+quite | ziemlich | adv | The film was *quite* good. | Der Film war *ziemlich* gut. |
+almost | fast, beinahe | adv | I *almost* forgot. | Ich hätte es *fast* vergessen. |
+only | nur; einzig | adv | It *only* costs five euros. | Es kostet *nur* fünf Euro. |
+even | sogar | adv | *Even* my dad liked the film. | *Sogar* mein Vater mochte den Film. |
+together | zusammen | adv | We work *together*. | Wir arbeiten *zusammen*. |
+alone | allein | adj | She lives *alone*. | Sie lebt *allein*. |
+away | weg, entfernt | adv | Go *away*! | Geh *weg*! |
+back | zurück; Rücken | adv | I'll be *back* soon. | Ich bin bald *zurück*. |
+fast | schnell | adv | Don't drive so *fast*. | Fahr nicht so *schnell*. |
+slowly | langsam | adv | Please speak *slowly*. | Bitte sprich *langsam*. |
+well | gut (Adverb); gesund | adv | She speaks English very *well*. | Sie spricht sehr *gut* Englisch. | good = Adjektiv, well = Adverb
+hard | hart; schwer; fleißig | adj | The exam was *hard*. | Die Prüfung war *schwer*. | hardly = kaum!
+possible | möglich | adj | Is it *possible* to pay by card? | Ist es *möglich*, mit Karte zu zahlen? |
+important | wichtig | adj | This is very *important*. | Das ist sehr *wichtig*. |
+interesting | interessant | adj | What an *interesting* idea! | Was für eine *interessante* Idee! |
+boring | langweilig | adj | The lesson was *boring*. | Der Unterricht war *langweilig*. |
+true | wahr | adj | Is it *true* that you're moving? | Stimmt es, dass du umziehst? |
+ready | fertig, bereit | adj | Are you *ready*? | Bist du *fertig*? |
+free | frei; kostenlos | adj | Entry is *free*. | Der Eintritt ist *kostenlos*. |
+full | voll; satt | adj | The bus was *full*. | Der Bus war *voll*. |
+empty | leer | adj | The fridge is *empty*. | Der Kühlschrank ist *leer*. |
+clean | sauber; putzen | adj | The kitchen is *clean*. | Die Küche ist *sauber*. |
+dirty | schmutzig | adj | Your shoes are *dirty*. | Deine Schuhe sind *schmutzig*. |
+heavy | schwer (Gewicht) | adj | This bag is really *heavy*. | Diese Tasche ist echt *schwer*. |
+light | leicht; hell; Licht | adj | The box is quite *light*. | Die Kiste ist ziemlich *leicht*. |
+dark | dunkel | adj | It gets *dark* early in winter. | Im Winter wird es früh *dunkel*. |
+quiet | ruhig, leise | adj | It's a *quiet* street. | Es ist eine *ruhige* Straße. |
+loud | laut | adj | The music is too *loud*. | Die Musik ist zu *laut*. |
+wide | breit, weit | adj | The river is very *wide* here. | Der Fluss ist hier sehr *breit*. |
+deep | tief | adj | Is the water *deep*? | Ist das Wasser *tief*? |
+high | hoch | adj | The mountains are very *high*. | Die Berge sind sehr *hoch*. |
+low | niedrig, tief | adj | Prices are *low* here. | Die Preise sind hier *niedrig*. |
+strong | stark | adj | I need a *strong* coffee. | Ich brauche einen *starken* Kaffee. |
+weak | schwach | adj | I felt *weak* after the flu. | Nach der Grippe fühlte ich mich *schwach*. |
+round | rund | adj | We have a *round* table. | Wir haben einen *runden* Tisch. |
+square | quadratisch; Platz | adj | The room is almost *square*. | Das Zimmer ist fast *quadratisch*. |
+real | echt, wirklich | adj | Is that a *real* diamond? | Ist das ein *echter* Diamant? |
+special | besonders | adj | Today is a *special* day. | Heute ist ein *besonderer* Tag. |
+simple | einfach | adj | The recipe is very *simple*. | Das Rezept ist sehr *einfach*. |
+perfect | perfekt | adj | The weather was *perfect*. | Das Wetter war *perfekt*. |
+wonderful | wunderbar | adj | We had a *wonderful* time. | Wir hatten eine *wunderbare* Zeit. |
+terrible | schrecklich | adj | The food was *terrible*. | Das Essen war *schrecklich*. |
+become | werden | v | She wants to *become* a doctor. | Sie möchte Ärztin *werden*. | False Friend! ≠ bekommen
+bring | bringen, mitbringen | v | *Bring* a jacket. | *Bring* eine Jacke *mit*. | brought – brought
+carry | tragen | v | Can you *carry* this box? | Kannst du diese Kiste *tragen*? |
+send | schicken | v | I'll *send* you an email. | Ich *schicke* dir eine E-Mail. | sent – sent
+show | zeigen | v | *Show* me your photos. | *Zeig* mir deine Fotos. |
+leave | verlassen; abfahren; lassen | v | The train *leaves* at six. | Der Zug *fährt* um sechs *ab*. | left – left
+arrive | ankommen | v | We *arrived* late. | Wir sind spät *angekommen*. | arrive in / at
+return | zurückkehren; zurückgeben | v | When do you *return* from Spain? | Wann *kommst* du aus Spanien *zurück*? |
+turn | (ab)biegen; drehen | v | *Turn* left at the lights. | *Bieg* an der Ampel links *ab*. |
+move | (sich) bewegen; umziehen | v | We're *moving* to Hamburg. | Wir *ziehen* nach Hamburg. |
+change | (sich) ändern; umsteigen | v | You have to *change* trains in Cologne. | Du musst in Köln *umsteigen*. |
+fall | fallen; Herbst (US) | v | Be careful, don't *fall*! | Pass auf, *fall* nicht hin! | fell – fallen
+hold | halten | v | Can you *hold* my coffee? | Kannst du meinen Kaffee *halten*? | held – held
+keep | behalten; aufbewahren | v | You can *keep* the change. | Sie können das Wechselgeld *behalten*. | kept – kept
+let | lassen | v | *Let* me help you. | *Lass* mich dir helfen. | let – let
+lose | verlieren | v | I *lost* my wallet. | Ich habe meinen Geldbeutel *verloren*. | lost – lost
+win | gewinnen | v | Who *won* the game? | Wer hat das Spiel *gewonnen*? | won – won
+forget | vergessen | v | Don't *forget* your keys. | *Vergiss* deine Schlüssel nicht. | forgot – forgotten
+remember | sich erinnern | v | I can't *remember* his name. | Ich kann mich nicht an seinen Namen *erinnern*. |
+believe | glauben | v | I don't *believe* you. | Ich *glaube* dir nicht. |
+hope | hoffen | v | I *hope* you feel better soon. | Ich *hoffe*, es geht dir bald besser. |
+feel | (sich) fühlen | v | I *feel* tired. | Ich *fühle* mich müde. | felt – felt
+seem | scheinen | v | She *seems* nice. | Sie *scheint* nett zu sein. |
+mean | bedeuten; meinen | v | What does this word *mean*? | Was *bedeutet* dieses Wort? | meant – meant
+decide | entscheiden | v | We *decided* to stay at home. | Wir haben *beschlossen*, zu Hause zu bleiben. |
+plan | planen; Plan | v | We're *planning* a trip to Italy. | Wir *planen* eine Reise nach Italien. |
+finish | beenden, fertig machen | v | Did you *finish* your homework? | Bist du mit deinen Hausaufgaben *fertig*? |
+happen | passieren | v | What *happened*? | Was ist *passiert*? |
+agree | zustimmen | v | I *agree* with you. | Ich *stimme* dir *zu*. |
+explain | erklären | v | Can you *explain* this to me? | Kannst du mir das *erklären*? |
+repeat | wiederholen | v | Could you *repeat* that, please? | Könnten Sie das bitte *wiederholen*? |
+spell | buchstabieren | v | How do you *spell* your name? | Wie *buchstabiert* man deinen Namen? |
+choose | (aus)wählen | v | *Choose* a colour. | *Wähle* eine Farbe. | chose – chosen
+check | überprüfen, kontrollieren | v | *Check* your answers. | *Überprüfe* deine Antworten. |
+fill in | ausfüllen | v | Please *fill in* this form. | Bitte *füllen* Sie dieses Formular *aus*. |
+describe | beschreiben | v | Can you *describe* the man? | Können Sie den Mann *beschreiben*? |

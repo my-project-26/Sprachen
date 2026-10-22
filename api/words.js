@@ -1,7 +1,7 @@
 import { callLLM, checkAuth, readBody, send, wrap, httpError, providerFrom } from "./_llm.js";
 import { WORDS_SYSTEM, generateWordsPrompt, fillWordPrompt, extractJson } from "../js/prompts.js";
 
-const LEVELS = ["B1", "B2", "C1"];
+const LEVELS = ["A1", "A2", "B1", "B2", "C1"];
 
 function cleanCard(w) {
   if (!w || typeof w.en !== "string" || !w.en.trim()) return null;
