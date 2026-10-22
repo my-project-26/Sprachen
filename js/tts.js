@@ -152,30 +152,48 @@ export function presetAvailable(key) {
   return !!resolvePreset(key).voice;
 }
 
-// Fünf Tempostufen für den Schieberegler
+// Drei Tempostufen – überall gleich (Lernen, Wörterliste, Geschichten, Einstellungen).
+// Bei Aufnahmen: Faktor zur Originalgeschwindigkeit (0.95 = Original).
 export const RATE_STEPS = [
-  { rate: 0.6, label: "sehr langsam" },
-  { rate: 0.8, label: "langsam" },
-  { rate: 0.95, label: "normal" },
-  { rate: 1.1, label: "schnell" },
-  { rate: 1.3, label: "sehr schnell" },
+  { key: "slow", rate: 0.7, label: "Langsam" },
+  { key: "mid", rate: 0.95, label: "Mittel" },
+  { key: "fast", rate: 1.25, label: "Schnell" },
 ];
 export function stepOfRate(rate) {
-  let best = 2;
+  let best = 1;
   RATE_STEPS.forEach((st, i) => {
     if (Math.abs(st.rate - rate) < Math.abs(RATE_STEPS[best].rate - rate)) best = i;
   });
   return best;
 }
 
+let lastSpeak = null; // für Tempowechsel während der Wiedergabe
+const audioRate = (rate) => Math.min(2, Math.max(0.5, rate / 0.95));
+
+// Tempo ändern. Läuft gerade etwas, wird es sofort angepasst (Aufnahme live,
+// Gerätestimme startet neu). Rückgabe: true, wenn gerade etwas lief.
+export function setRate(rate) {
+  if (current) {
+    current.playbackRate = audioRate(rate);
+    if (lastSpeak) lastSpeak.opts.rate = rate;
+    return true;
+  }
+  if (synth && synth.speaking && lastSpeak) {
+    speak(lastSpeak.text, { ...lastSpeak.opts, rate });
+    return true;
+  }
+  return false;
+}
+
 export function speak(text, { rate = 0.95, preset = "clear-f", onend } = {}) {
+  lastSpeak = { text, opts: { rate, preset, onend } };
   stopAudio();
   if (synth) synth.cancel();
   if (natural && AUDIO.keys) {
     const key = audioKey(text);
     if (AUDIO.keys.has(key)) {
       const a = new Audio(`audio/${AUDIO.code}/${key}.mp3`);
-      a.playbackRate = Math.min(2, Math.max(0.5, rate / 0.95));
+      a.playbackRate = audioRate(rate);
       a.preservesPitch = true;
       current = a;
       a.onended = () => {

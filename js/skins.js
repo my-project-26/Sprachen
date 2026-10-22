@@ -228,6 +228,7 @@ const CARD = {
       list = `<section class="gl-grp">
         ${li("#2F7CF6", "🔊", "Wort anhören", "", `data-say="${esc(c.en)}"`)}
         ${c.ex ? li("#FF9500", "❝", x.exMarked, x.exDeMarked, `data-say="${esc(x.exPlain)}"`) : ""}
+        <div class="gl-li gl-speed"><span class="gl-ic" style="background:#5856D6">⏱</span>${x.ui.speed}</div>
         ${c.note ? li(x.noteFF ? "#FF3B30" : "#8E8E93", "i", "Hinweis", esc(c.note)) : ""}
       </section>
       <section class="gl-grp gl-grades">

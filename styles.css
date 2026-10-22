@@ -430,9 +430,16 @@ body[data-view="learn"] .toast { bottom: calc(env(safe-area-inset-bottom) + 24px
 .voice-toggle:not(.on) { color: var(--muted); }
 .listen-row { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin: 6px 0 4px; }
 .btn.listen { min-height: 40px; padding: 8px 14px; font-size: .92rem; }
-.rate-slider { display: flex; align-items: center; gap: 10px; width: 100%; margin: 6px 0; }
-.rate-slider input { flex: 1; accent-color: var(--accent); }
-.rate-slider b { min-width: 84px; text-align: right; }
+/* Tempowahl Langsam / Mittel / Schnell */
+.speed { display: flex; gap: 2px; padding: 2px; margin: 8px 0; width: 100%; max-width: 360px; border-radius: 10px; background: rgba(120, 120, 128, 0.14); }
+.speed button { flex: 1; min-height: 34px; border: 0; border-radius: 8px; background: transparent; color: inherit; font: inherit; font-size: 14px; font-weight: 500; cursor: pointer; }
+.speed button.on { background: #fff; color: #111; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); font-weight: 600; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .speed button.on { background: #636366; color: #fff; } }
+:root[data-theme="dark"] .speed button.on { background: #636366; color: #fff; }
+.speed button:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.listen-row + .speed { margin-top: 4px; }
+.gl-speed .speed { margin: 0; max-width: none; flex: 1; }
+.word-pop .speed { margin: 8px 0 0; }
 .reader-controls { flex-wrap: wrap; }
 .ow { cursor: pointer; border-radius: 3px; }
 .ow:hover { background: var(--surface-2); }

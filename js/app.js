@@ -31,29 +31,42 @@ const WEEKDAYS = ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"];
 
 function say(text, onend) {
   const s = settings();
+  lastSaid = text;
   tts.setNatural(s.voiceNatural);
   tts.speak(text, { rate: s.voiceRate, preset: s.voicePreset, onend });
 }
 
-// Schieberegler mit 5 Tempostufen (überall gleich, Wert wird gespeichert)
-function rateSlider(id) {
-  const step = tts.stepOfRate(settings().voiceRate);
-  return `<div class="rate-slider">
-    <span class="small muted">Tempo</span>
-    <input type="range" id="${id}" min="0" max="4" step="1" value="${step}" aria-label="Sprechtempo">
-    <b class="small" id="${id}-l">${tts.RATE_STEPS[step].label}</b>
+// Tempowahl Langsam / Mittel / Schnell – steht überall, wo etwas vorgelesen wird.
+// replay: Text, der beim Umschalten (wenn gerade nichts läuft) als Probe kommt.
+let lastSaid = "";
+function rateSlider(id, replay = "") {
+  const cur = tts.stepOfRate(settings().voiceRate);
+  return `<div class="speed" role="group" aria-label="Sprechtempo" ${id ? `id="${id}"` : ""} ${replay ? `data-replay="${esc(replay)}"` : ""}>
+    ${tts.RATE_STEPS.map((st, i) => `<button type="button" data-speed="${i}" class="${i === cur ? "on" : ""}" aria-pressed="${i === cur}">${st.label}</button>`).join("")}
   </div>`;
 }
-function bindRateSlider(id) {
-  const el = document.getElementById(id);
-  if (!el) return;
-  el.oninput = () => {
-    const st = tts.RATE_STEPS[Number(el.value)];
-    document.getElementById(id + "-l").textContent = st.label;
-    S.getState().settings.voiceRate = st.rate;
-    S.save();
-  };
+function bindRateSlider() {
+  /* Tempowahl wird global über einen Klick-Listener bedient (siehe unten) */
 }
+document.addEventListener("click", (e) => {
+  const b = e.target.closest("[data-speed]");
+  if (!b) return;
+  e.preventDefault();
+  e.stopPropagation();
+  const i = Number(b.dataset.speed);
+  const st = tts.RATE_STEPS[i];
+  S.getState().settings.voiceRate = st.rate;
+  S.save();
+  document.querySelectorAll(".speed [data-speed]").forEach((x) => {
+    const on = Number(x.dataset.speed) === i;
+    x.classList.toggle("on", on);
+    x.setAttribute("aria-pressed", on);
+  });
+  if (!tts.setRate(st.rate)) {
+    const replay = b.closest(".speed")?.dataset.replay || "";
+    if (replay) say(replay);
+  }
+}, true);
 
 // Schalter „mit Stimme / ohne Stimme“
 function voiceToggle() {
@@ -468,6 +481,7 @@ function showCard(revealed = false, typed = null) {
         <button class="btn ghost listen" data-say="${esc(c.en)}">${ICON.speaker}<span>Wort anhören</span></button>
         ${c.ex ? `<button class="btn ghost listen" data-say="${esc(plain(c.ex))}">${ICON.speaker}<span>Satz anhören</span></button>` : ""}
       </div>
+      ${rateSlider("", c.en)}
       ${c.ex ? `<p class="ex">${marked(c.ex)}</p>` : ""}
       ${c.exDe ? `<p class="ex-de">${marked(c.exDe)}</p>` : ""}
       ${c.note ? `<p class="note ${noteFF ? "ff" : ""}">${esc(c.note)}</p>` : ""}
@@ -515,7 +529,8 @@ function showCard(revealed = false, typed = null) {
         typed: typed != null ? `<p class="typed ${ok ? "ok" : "bad"}">${res === "ok" ? "Richtig!" : res === "almost" ? `Fast richtig – achte auf die Schreibweise: <s>${esc(typed)}</s>` : `Deine Eingabe: <s>${esc(typed) || "–"}</s>`}</p>` : "",
         listen: `<div class="listen-row">
           <button class="btn ghost listen" data-say="${esc(c.en)}">${ICON.speaker}<span>Wort anhören</span></button>
-          ${c.ex ? `<button class="btn ghost listen" data-say="${esc(plain(c.ex))}">${ICON.speaker}<span>Satz anhören</span></button>` : ""}</div>`,
+          ${c.ex ? `<button class="btn ghost listen" data-say="${esc(plain(c.ex))}">${ICON.speaker}<span>Satz anhören</span></button>` : ""}</div>${rateSlider("", c.en)}`,
+        speed: rateSlider("", c.en),
         note: c.note ? `<p class="note ${noteFF ? "ff" : ""}">${esc(c.note)}</p>` : "",
         known: `<button class="btn ghost known-btn" id="knownBtn">Kenne ich schon – nicht mehr abfragen</button>`,
       },
@@ -858,7 +873,8 @@ async function showWordPop(st, word, isTarget) {
         <button class="icon-btn" data-wp="say" aria-label="Anhören">${ICON.speaker}</button>
         ${!card || card.state === "known" || card.state === "new" ? `<button class="btn primary small-btn" data-wp="add">${ICON.plus}<span>Lernen</span></button>` : ""}
         <button class="icon-btn plain" data-wp="close" aria-label="Schließen">${ICON.close}</button>
-      </div>`;
+      </div>
+      ${rateSlider("", card && card.en.toLowerCase() !== word.toLowerCase() ? word : card?.en || word)}`;
   };
   render(de, !de);
   document.body.appendChild(pop);
@@ -1141,6 +1157,7 @@ function wordDetail(item) {
     <p class="small muted">${dueTxt}</p>
     <div class="actions-row wrap">
       <button class="btn ghost" data-a="say">${ICON.speaker}<span>Anhören</span></button>
+      ${rateSlider("", c.ex ? plain(c.ex) : c.en)}
       ${c.state !== "known" ? `<button class="btn ghost" data-a="known">Kenne ich</button>` : ""}
       ${c.state !== "new" ? `<button class="btn ghost" data-a="reset">Zurücksetzen</button>` : ""}
       ${c.custom ? `<button class="btn ghost danger" data-a="delete">Löschen</button>` : ""}
@@ -1520,7 +1537,7 @@ function settingsView() {
         <button type="button" class="icon-btn small" data-try="${p.key}" ${ok ? "" : "disabled"} aria-label="Probe hören">${ICON.speaker}</button>
       </label>`;
     }).join("")}</div>
-    ${rateSlider("s-rate5")}
+    ${rateSlider("s-rate5", L().hello)}
     <button class="btn ghost" id="testVoice">${ICON.speaker}<span>Testen</span></button>
   </section>
   <section class="card">
