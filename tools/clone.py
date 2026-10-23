@@ -187,7 +187,18 @@ def probe(voice):
 
 def run(voice, lang, outdir):
     shard, n = (int(x) for x in os.environ.get("OV_SHARD", "0/1").split("/"))
-    texts = [t for i, t in enumerate(texts_for(lang, levels())) if i % n == shard]
+    # Niveau für Niveau: erst alle A1, dann A2 … (jedes Niveau auf alle Teile verteilt)
+    order, seen = [], set()
+    for lv in sorted(levels() or {"A1", "A2", "B1", "B2", "C1"}):
+        for t in texts_for(lang, {lv}):
+            if t not in seen:
+                seen.add(t)
+                order.append(t)
+    for t in texts_for(lang, levels()):  # Rest (z. B. Begrüßung)
+        if t not in seen:
+            seen.add(t)
+            order.append(t)
+    texts = [t for i, t in enumerate(order) if i % n == shard]
     os.makedirs(outdir, exist_ok=True)
     todo = [t for t in texts if not os.path.exists(os.path.join(outdir, audio_key(t) + ".mp3"))]
     print(f"{outdir} Teil {shard + 1}/{n}: {len(todo)} von {len(texts)} fehlen", flush=True)
