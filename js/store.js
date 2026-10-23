@@ -14,10 +14,10 @@ function readGlobal() {
   try {
     const g = JSON.parse(localStorage.getItem(SETTINGS_KEY) || "null");
     if (g) {
-      // einmalig: neues Standard-Design „Einfach“ für alle
-      if (!g.designV) {
-        g.design = "einfach";
-        g.designV = 2;
+      // einmalig: neues Standard-Design „Award“ für alle
+      if ((g.designV || 0) < 3) {
+        g.design = "award";
+        g.designV = 3;
       }
       return g;
     }
@@ -40,8 +40,8 @@ export const DEFAULT_SETTINGS = {
   startLevel: "B1",
   storyLevel: "B2",
   voiceRate: 0.95,
-  design: "einfach", // einfach | glas | bordkarte | heft
-  designV: 2,
+  design: "award", // award | einfach | glas | bordkarte | heft
+  designV: 3,
   voicePreset: "clear-f", // clear-f/m, friend-f/m, strict-f/m
   apiBase: "",
   appSecret: "",

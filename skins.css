@@ -332,3 +332,119 @@ html:root[data-style="einfach"] {
 .ef-grades .grade small { opacity: .95; font-size: .85rem; }
 .ef-set .sk-flag { position: static; font-size: 20px; }
 .ef-tile:last-child:nth-child(odd) { grid-column: span 2; min-height: 0; }
+
+/* =====================================================================
+   AWARD – Sticker, satte Farben, taktile Knöpfe (inspiriert von CapWords,
+   Duolingo, Speak). Eine Freude-Bewegung: die Karte dreht sich beim Aufdecken.
+   ===================================================================== */
+html:root[data-style="award"] {
+  --bg: #F4F1FB; --surface: #FFFFFF; --surface-2: #ECE7F8; --ink: #1B1530; --muted: #5E5675; --line: #DCD4F0;
+  --accent: #6C4BF4; --accent-ink: #FFFFFF; --accent-soft: #E7E0FE; --marker: #FFD84D; --marker-soft: #FFF1B8;
+  --ok: #10A884; --bad: #F0524A; --radius: 22px; --shadow: 0 2px 0 rgba(27, 21, 48, .06);
+  --grape: #6C4BF4; --grape-d: #4B2FC9; --mint: #18C29C; --mint-d: #0E9273; --sun: #FFC83D; --sun-d: #D99A00;
+  --coral: #FF6B5B; --coral-d: #D6463A; --sky: #3FA9F5; --sky-d: #1F7FC4;
+  --serif: "Bricolage Grotesque", system-ui, sans-serif; --sans: "Bricolage Grotesque", system-ui, sans-serif;
+  color-scheme: light; font-size: 18px;
+}
+@media (prefers-color-scheme: dark) {
+  html:root[data-style="award"]:not([data-theme="light"]) {
+    --bg: #141024; --surface: #221B3A; --surface-2: #2C2448; --ink: #F3F0FF; --muted: #B5ACD3; --line: #3A3060;
+    --accent-soft: #33295A; --marker-soft: #4A3F12; color-scheme: dark;
+  }
+}
+html:root[data-style="award"][data-theme="dark"] {
+  --bg: #141024; --surface: #221B3A; --surface-2: #2C2448; --ink: #F3F0FF; --muted: #B5ACD3; --line: #3A3060;
+  --accent-soft: #33295A; --marker-soft: #4A3F12; color-scheme: dark;
+}
+[data-style="award"] body { font-family: var(--sans); }
+[data-style="award"] h1, [data-style="award"] h2, [data-style="award"] h3 { font-family: var(--sans); font-weight: 800; letter-spacing: -.02em; }
+[data-style="award"] .card { border: 2px solid var(--line); box-shadow: 0 4px 0 var(--line); border-radius: 22px; }
+[data-style="award"] .btn.primary { background: var(--grape); box-shadow: 0 5px 0 var(--grape-d); border-radius: 16px; font-weight: 800; }
+[data-style="award"] .btn.primary:active { transform: translateY(4px); box-shadow: 0 1px 0 var(--grape-d); }
+[data-style="award"] .nav a.active { color: var(--grape); background: var(--accent-soft); }
+[data-style="award"] :focus-visible { outline: 3px solid var(--sun); outline-offset: 2px; }
+/* taktile Knöpfe */
+.aw-btn { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; min-height: 64px; border: 0; border-radius: 18px; color: #fff; font: inherit; font-weight: 800; font-size: 1.2rem; cursor: pointer; transition: transform .06s, box-shadow .06s; }
+.aw-btn small { font-weight: 500; font-size: .78rem; opacity: .95; }
+.aw-btn.big { min-height: 72px; font-size: 1.35rem; }
+.aw-btn.grape { background: var(--grape); box-shadow: 0 6px 0 var(--grape-d); }
+.aw-btn.mint { background: var(--mint); box-shadow: 0 6px 0 var(--mint-d); }
+.aw-btn.sun { background: var(--sun); box-shadow: 0 6px 0 var(--sun-d); color: #3A2A00; }
+.aw-btn.coral { background: var(--coral); box-shadow: 0 6px 0 var(--coral-d); }
+.aw-btn:active { transform: translateY(5px); box-shadow: 0 1px 0 rgba(0, 0, 0, .25); }
+.aw-chip { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 48px; padding: 0 18px; border: 2px solid var(--line); border-radius: 16px; background: var(--surface); color: var(--ink); font: inherit; font-weight: 700; box-shadow: 0 4px 0 var(--line); cursor: pointer; }
+.aw-chip:active { transform: translateY(3px); box-shadow: 0 1px 0 var(--line); }
+.aw-chip.wide { width: 100%; }
+/* Start */
+.aw-top { display: flex; justify-content: space-between; align-items: center; }
+.aw-hi { margin: 0; color: var(--muted); font-weight: 500; }
+.aw-h1 { margin: 0; font-size: 2rem; line-height: 1.1; }
+.aw-set { display: grid; place-items: center; width: 48px; height: 48px; border-radius: 16px; background: var(--surface); border: 2px solid var(--line); box-shadow: 0 3px 0 var(--line); color: var(--ink); }
+.aw-set svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; }
+.aw-hero { display: flex; align-items: center; gap: 18px; margin: 18px 0; padding: 18px; border-radius: 26px; background: var(--surface); border: 2px solid var(--line); box-shadow: 0 5px 0 var(--line); }
+.aw-ring { position: relative; flex: none; width: 112px; height: 112px; }
+.aw-ring svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+.aw-ring circle { fill: none; stroke-width: 12; stroke-linecap: round; }
+.aw-ring-bg { stroke: var(--surface-2); }
+.aw-ring-fg { stroke: var(--mint); transition: stroke-dashoffset .8s ease; }
+.aw-ring-in { position: absolute; inset: 0; display: grid; place-content: center; text-align: center; }
+.aw-ring-in b { font-size: 1.6rem; line-height: 1; }
+.aw-ring-in small { color: var(--muted); font-size: .72rem; }
+.aw-stats { display: grid; gap: 10px; flex: 1; }
+.aw-stat { display: grid; grid-template-columns: auto 1fr; column-gap: 8px; align-items: center; }
+.aw-stat span { grid-row: span 2; font-size: 1.6rem; }
+.aw-stat b { font-size: 1.4rem; line-height: 1; }
+.aw-stat small { color: var(--muted); font-size: .8rem; }
+.aw-cta { display: flex; flex-direction: column; align-items: center; width: 100%; padding: 16px; border: 0; border-radius: 22px; background: var(--grape); color: #fff; text-decoration: none; font: inherit; box-shadow: 0 7px 0 var(--grape-d); cursor: pointer; transition: transform .06s, box-shadow .06s; }
+.aw-cta:active { transform: translateY(6px); box-shadow: 0 1px 0 var(--grape-d); }
+.aw-cta.alt { background: var(--mint); box-shadow: 0 7px 0 var(--mint-d); }
+.aw-cta-t { font-size: 1.6rem; font-weight: 800; }
+.aw-cta-s { font-size: .9rem; opacity: .92; }
+.aw-done { text-align: center; font-weight: 800; font-size: 1.2rem; margin: 6px 0 12px; }
+.aw-stickers { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 26px 0 8px; }
+.aw-sticker { display: flex; flex-direction: column; gap: 2px; padding: 14px; border-radius: 22px; color: #fff; text-decoration: none; border: 4px solid #fff; box-shadow: 0 6px 14px -6px rgba(27, 21, 48, .35); transform: rotate(var(--r)); transition: transform .15s; }
+.aw-sticker:hover, .aw-sticker:active { transform: rotate(0) scale(1.03); }
+.aw-sticker b { font-size: 1.1rem; }
+.aw-sticker small { opacity: .92; font-size: .78rem; }
+.aw-st-ic { font-size: 1.8rem; line-height: 1; }
+.aw-sticker.grape { background: var(--grape); } .aw-sticker.mint { background: var(--mint); } .aw-sticker.sky { background: var(--sky); }
+.aw-sticker.coral { background: var(--coral); } .aw-sticker.sun { background: var(--sun); color: #3A2A00; }
+.aw-stickers .aw-sticker:last-child:nth-child(odd) { grid-column: span 2; }
+.aw-path { margin-top: 22px; }
+.aw-path h2 { font-size: 1.3rem; margin: 0 0 10px; }
+.aw-badges { display: flex; gap: 8px; }
+.aw-badge { flex: 1; display: grid; place-items: center; padding: 10px 0; border-radius: 16px; background: var(--surface); border: 2px solid var(--line); box-shadow: 0 3px 0 var(--line); }
+.aw-badge b { font-size: 1.1rem; }
+.aw-badge small { font-size: .7rem; color: var(--muted); }
+.aw-badge.done { background: var(--mint); border-color: var(--mint-d); color: #fff; box-shadow: 0 3px 0 var(--mint-d); }
+.aw-badge.done small { color: #fff; }
+.aw-badge.cur { border-color: var(--grape); box-shadow: 0 3px 0 var(--grape); }
+.aw-topic { display: flex; align-items: center; gap: 8px; width: 100%; margin-top: 14px; min-height: 52px; padding: 0 16px; border: 2px solid var(--line); border-radius: 16px; background: var(--surface); color: var(--ink); font: inherit; box-shadow: 0 3px 0 var(--line); cursor: pointer; }
+.aw-topic span { margin-left: auto; font-size: 1.3rem; }
+/* Lernkarte */
+.aw-card { position: relative; margin: 8px 4px 0; padding: 24px 20px 22px; border-radius: 28px; background: var(--surface); border: 5px solid #fff; outline: 2px solid var(--line); box-shadow: 0 12px 24px -12px rgba(27, 21, 48, .35); text-align: center; transform: rotate(-1deg); }
+[data-style="award"] .aw-card { border-color: var(--surface); }
+.aw-card.flip { animation: awFlip .5s cubic-bezier(.2, .8, .2, 1.2); transform: rotate(.6deg); }
+@keyframes awFlip { 0% { transform: rotateY(90deg) rotate(0); } 100% { transform: rotateY(0) rotate(.6deg); } }
+@media (prefers-reduced-motion: reduce) { .aw-card.flip { animation: none; } .aw-sticker { transform: none; } }
+.aw-tag { display: inline-block; padding: 4px 12px; border-radius: 999px; background: var(--accent-soft); color: var(--grape); font-size: .8rem; font-weight: 700; }
+.aw-q { margin-top: 12px; color: var(--muted); }
+.aw-de { font-size: 2.1rem; font-weight: 800; line-height: 1.15; overflow-wrap: anywhere; }
+.aw-en { display: inline-block; margin-top: 12px; padding: 6px 18px; border-radius: 16px; background: var(--mint); color: #fff; font-size: 2rem; font-weight: 800; box-shadow: 0 4px 0 var(--mint-d); transform: rotate(-1.5deg); overflow-wrap: anywhere; }
+.aw-ex { margin-top: 16px; text-align: left; }
+.aw-ex p { margin: 2px 0; }
+.aw-ex .ex-de { color: var(--muted); }
+.aw-card .answer { width: 100%; min-height: 56px; margin-top: 14px; padding: 0 14px; border: 2px solid var(--line); border-radius: 16px; font: inherit; font-size: 1.15rem; background: var(--bg); color: var(--ink); }
+.aw-actions { display: flex; flex-direction: column; gap: 12px; margin-top: 18px; }
+.aw-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.aw-ask { margin: 8px 0 -2px; font-size: 1.3rem; font-weight: 800; }
+.aw-grades { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+.aw-actions .grade.aw-btn { min-height: 76px; }
+.aw-actions .speed { max-width: none; margin: 0; }
+.aw-grades .grade.g1 { background: var(--coral); color: #fff; }
+.aw-grades .grade.g2 { background: var(--sun); color: #3A2A00; }
+.aw-grades .grade.g3 { background: var(--mint); color: #fff; }
+.aw-set svg path { fill: none; }
+html[data-style="award"] .aw-grades .grade.aw-btn.g1 { background: var(--coral); color: #fff; }
+html[data-style="award"] .aw-grades .grade.aw-btn.g2 { background: var(--sun); color: #3A2A00; }
+html[data-style="award"] .aw-grades .grade.aw-btn.g3 { background: var(--mint); color: #fff; }

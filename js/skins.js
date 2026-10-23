@@ -4,6 +4,8 @@
 // damit die Logik in app.js für jedes Design gleich funktioniert.
 
 export const DESIGNS = [
+  { key: "award", name: "Award", desc: "Sticker, Farben, Freude – inspiriert von den besten Sprach-Apps", colors: ["#F4F1FB", "#6C4BF4", "#18C29C"], theme: "#F4F1FB",
+    fonts: "Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800" },
   { key: "einfach", name: "Einfach", desc: "Große Knöpfe, klare Schritte – für alle Altersstufen", colors: ["#FFFFFF", "#1F5BD8", "#1E9E50"], theme: "#FFFFFF",
     fonts: "Atkinson+Hyperlegible:wght@400;700" },
   { key: "glas", name: "iOS-Glas", desc: "wie Apple Karten, Glas und Listen", colors: ["#F2F2F7", "#2F7CF6", "#34C759"], theme: "#F2F2F7" },
@@ -13,7 +15,7 @@ export const DESIGNS = [
     fonts: "Caveat:wght@500;700&family=Lora:ital,wght@0,400;0,600;1,400" },
 ];
 
-export const designKey = (k) => (DESIGNS.some((d) => d.key === k) ? k : "einfach");
+export const designKey = (k) => (DESIGNS.some((d) => d.key === k) ? k : "award");
 
 // Design setzen: data-style, Schriften nachladen, Statusleisten-Farbe
 export function applyDesign(key) {
@@ -63,6 +65,53 @@ function cta(d, label, cls = "") {
 }
 
 const HOME = {
+  // ---------- Award ----------
+  award(d) {
+    const pct = d.levelPct;
+    const R = 46, C = 2 * Math.PI * R;
+    const stickers = [
+      d.weak ? ["#/learn/weak", "🔁", "Fehler üben", n(d.weak, "Wort", "Wörter"), "coral"] : null,
+      [d.ready ? "#/story/new" : "#/stories", "📖", "Geschichte", d.ready ? "neu bereit!" : `${d.storyN}/${d.storyEvery} Wörter`, "sun"],
+      ["#/listen", "🎧", "Hören", "für unterwegs", "mint"],
+      ["#/practice", "🗣️", "Sprechen", "Diktat & Gespräch", "sky"],
+      ["#/words", "🔎", "Wörter", "suchen & hinzufügen", "grape"],
+    ].filter(Boolean);
+    return `
+    <section class="aw-top">
+      <div><p class="aw-hi">Hallo${d.userName ? " " + esc(d.userName) : ""}!</p><h1 class="aw-h1">${esc(d.lang.flag)} ${esc(d.lang.name)}</h1></div>
+      <a class="aw-set" href="#/settings" aria-label="Einstellungen">${d.icon.gear}</a>
+    </section>
+    <section class="aw-hero">
+      <div class="aw-ring" role="img" aria-label="${pct} Prozent auf dem Weg zu C1">
+        <svg viewBox="0 0 112 112"><circle cx="56" cy="56" r="${R}" class="aw-ring-bg"/><circle cx="56" cy="56" r="${R}" class="aw-ring-fg" stroke-dasharray="${C}" stroke-dashoffset="${C * (1 - pct / 100)}"/></svg>
+        <div class="aw-ring-in"><b>${pct}%</b><small>bis C1</small></div>
+      </div>
+      <div class="aw-stats">
+        <div class="aw-stat"><span>🔥</span><b>${d.streak}</b><small>${d.streak === 1 ? "Tag" : "Tage"} am Stück</small></div>
+        <div class="aw-stat"><span>⭐</span><b>${d.secure}</b><small>Wörter sicher</small></div>
+      </div>
+    </section>
+    ${
+      d.total
+        ? `<a class="aw-cta" href="#/learn"><span class="aw-cta-t">Los geht’s</span><span class="aw-cta-s">${n(d.total, "Karte", "Karten")} · ${d.due} Wiederholung${d.due === 1 ? "" : "en"} · ${d.news} neu</span></a>`
+        : `<div class="aw-done">🎉 Heute alles geschafft!</div><button class="aw-cta alt" id="extraBtn"><span class="aw-cta-t">${d.wordsLeft ? "Noch 10 neue" : "Thema wechseln"}</span><span class="aw-cta-s">wenn du Lust hast</span></button>`
+    }
+    <div class="aw-stickers">${stickers
+      .map(([h, ic, t, sub, col], i) => `<a class="aw-sticker ${col}" style="--r:${[-2.2, 1.6, -1.2, 2, -1.6][i % 5]}deg" href="${h}"><span class="aw-st-ic">${ic}</span><b>${t}</b><small>${sub}</small></a>`)
+      .join("")}</div>
+    <section class="aw-path" aria-label="Dein Weg">
+      <h2>Dein Weg</h2>
+      <div class="aw-badges">${d.lvl
+        .map((x, i) => {
+          const done = x.total && x.ok >= x.total;
+          const cur = !done && (i === 0 || d.lvl[i - 1].ok >= d.lvl[i - 1].total);
+          return `<div class="aw-badge ${done ? "done" : cur ? "cur" : ""}"><b>${x.L}</b><small>${x.ok}/${x.total}</small></div>`;
+        })
+        .join("")}</div>
+      <button class="aw-topic" id="pickTopic">🗂️ Thema: <b>${esc(d.focusLabel)}</b> <span aria-hidden="true">›</span></button>
+    </section>`;
+  },
+
   // ---------- 0 Einfach ----------
   einfach(d) {
     const tile = (href, ic, label, sub, attrs = "") =>
@@ -202,6 +251,36 @@ const gradeBtns = (x, labels, cls = "") => `
 const L3 = ["Muss ich noch lernen", "Unsicher", "Wusste ich"];
 
 const CARD = {
+  // ---------- Award ----------
+  award(x) {
+    const c = x.c;
+    const sticker = `
+      <article class="aw-card ${x.revealed ? "flip" : ""}">
+        <div class="aw-tag">${esc(x.topic)} · ${c.level}${x.isNew ? " · <b>neu</b>" : ""}</div>
+        <div class="aw-q">${x.revealed ? "Die Lösung" : `Wie heißt das auf ${esc(x.langName)}?`}</div>
+        <div class="aw-de">${esc(c.de)}</div>
+        ${x.revealed ? `<div class="aw-en">${x.enHtml}</div>${x.ui.typed}` : ""}
+        ${c.ex ? `<div class="aw-ex"><p class="ex">${x.revealed ? x.exMarked : x.cloze}</p>${c.exDe ? `<p class="ex-de">${x.exDeMarked}</p>` : ""}</div>` : ""}
+        ${x.revealed ? x.ui.note : x.ui.hint + x.ui.input}
+      </article>`;
+    const actions = x.revealed
+      ? `<div class="aw-row">
+           <button class="aw-chip" data-say="${esc(c.en)}">🔊 Wort</button>
+           ${c.ex ? `<button class="aw-chip" data-say="${esc(x.exPlain)}">🔊 Satz</button>` : ""}
+         </div>
+         ${x.ui.speed}
+         ${x.ui.mic}
+         <p class="aw-ask">Wusstest du es?</p>
+         <div class="aw-grades">
+           <button class="grade g1 aw-btn coral" data-g="1"><span>Nein</span><small>gleich nochmal</small></button>
+           <button class="grade g2 aw-btn sun" data-g="2"><span>Fast</span><small>${x.practice ? "Übung" : "in " + longIv(x.iv2)}</small></button>
+           <button class="grade g3 aw-btn mint" data-g="3"><span>Ja!</span><small>${x.practice ? "Übung" : "in " + longIv(x.iv3)}</small></button>
+         </div>${x.ui.known}`
+      : `<button class="aw-btn grape big" id="reveal">Lösung zeigen</button>
+         <button class="aw-chip wide" id="hintBtn">💡 Tipp</button>`;
+    return `${x.ui.header}${sticker}<div class="flash-actions aw-actions">${actions}</div>`;
+  },
+
   // ---------- 0 Einfach ----------
   einfach(x) {
     const c = x.c;

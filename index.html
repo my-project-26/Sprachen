@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="de">
-<script>(function(){var k="einfach";try{var g=JSON.parse(localStorage.getItem("wortwerk.settings")||"null");var d=g?{settings:g}:JSON.parse(localStorage.getItem("wortwerk.v1")||"{}");k=(d.settings&&d.settings.designV&&d.settings.design)||"einfach";}catch(e){}
-var F={einfach:"Atkinson+Hyperlegible:wght@400;700",bordkarte:"Barlow+Condensed:wght@500;600;700",heft:"Caveat:wght@500;700&family=Lora:ital,wght@0,400;0,600;1,400"};
-var ok=["einfach","bordkarte","heft","glas"];if(ok.indexOf(k)<0)k="einfach";
+<script>(function(){var k="award";try{var g=JSON.parse(localStorage.getItem("wortwerk.settings")||"null");var d=g?{settings:g}:JSON.parse(localStorage.getItem("wortwerk.v1")||"{}");k=(d.settings&&d.settings.designV>=3&&d.settings.design)||"award";}catch(e){}
+var F={award:"Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800",einfach:"Atkinson+Hyperlegible:wght@400;700",bordkarte:"Barlow+Condensed:wght@500;600;700",heft:"Caveat:wght@500;700&family=Lora:ital,wght@0,400;0,600;1,400"};
+var ok=["award","einfach","bordkarte","heft","glas"];if(ok.indexOf(k)<0)k="award";
 document.documentElement.dataset.style=k;
 if(F[k])document.write('<link id="skinFonts" rel="stylesheet" href="https://fonts.googleapis.com/css2?family='+F[k]+'&display=swap">');})();</script>
 <head>
