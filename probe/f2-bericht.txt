@@ -1,0 +1,18 @@
+en  82.6s  Ähnlichkeit 0.90  We ordered a pizza.
+en  31.3s  Ähnlichkeit 0.81  What's your email address?
+en  30.6s  Ähnlichkeit 0.90  The car park is behind the station.
+en  37.8s  Ähnlichkeit 0.88  I'm very busy today.
+en  30.6s  Ähnlichkeit 0.87  The station is close to the hotel.
+en: mittlere Ähnlichkeit 0.87
+it  41.2s  Ähnlichkeit 0.80  La banca è chiusa.
+it  30.8s  Ähnlichkeit 0.84  C'è una farmacia qui?
+it  39.6s  Ähnlichkeit 0.82  La scuola è vicina.
+it  40.1s  Ähnlichkeit 0.82  L'Italia è un bel paese.
+it  32.9s  Ähnlichkeit 0.77  Un regalo per te.
+it: mittlere Ähnlichkeit 0.81
+es  34.2s  Ähnlichkeit 0.84  Juega un papel importante.
+es  33.0s  Ähnlichkeit 0.88  Este puente nos vamos a la playa.
+es  28.5s  Ähnlichkeit 0.85  Me levanto a las seis.
+es  36.3s  Ähnlichkeit 0.89  Hoy me desperté a las cinco.
+es  33.8s  Ähnlichkeit 0.87  Me acuesto a las once.
+es: mittlere Ähnlichkeit 0.87
