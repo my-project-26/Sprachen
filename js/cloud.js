@@ -232,6 +232,8 @@ export async function logout() {
 // ---------- Anmeldebildschirm ----------
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
 
+const errText = (e) =>
+  ERR[e?.code] || `Das hat nicht geklappt. Bitte versuche es noch einmal. (Fehler: ${e?.code || e?.message || "unbekannt"})`;
 const ERR = {
   "auth/invalid-email": "Diese E-Mail-Adresse sieht nicht richtig aus.",
   "auth/missing-email": "Bitte gib deine E-Mail-Adresse ein.",
@@ -245,6 +247,9 @@ const ERR = {
   "auth/network-request-failed": "Keine Internetverbindung. Bitte prüfe dein WLAN oder deine mobilen Daten.",
   "auth/unauthorized-domain": "Diese Website ist in Firebase noch nicht freigegeben (Autorisierte Domains).",
   "auth/operation-not-allowed": "Anmelden mit E-Mail ist in Firebase noch nicht eingeschaltet.",
+  "auth/configuration-not-found": "Die Anmeldung ist in Firebase noch nicht eingerichtet (Authentication → E-Mail/Passwort aktivieren).",
+  "auth/admin-restricted-operation": "Neue Konten sind in Firebase gerade gesperrt.",
+  "auth/invalid-api-key": "Der Firebase-Schlüssel stimmt nicht.",
 };
 
 export function showLogin(root, { offline = false } = {}) {
@@ -296,7 +301,7 @@ export function showLogin(root, { offline = false } = {}) {
           await fb.sendPasswordResetEmail(auth, email);
           draw("Wir haben dir eine E-Mail geschickt. Darin kannst du ein neues Passwort festlegen.", true);
         } catch (e) {
-          draw(ERR[e.code] || "Das hat nicht geklappt. Bitte versuche es noch einmal.");
+          draw(errText(e));
         }
       };
     form.onsubmit = async (e) => {
@@ -317,7 +322,7 @@ export function showLogin(root, { offline = false } = {}) {
         location.hash = "#/";
         location.reload();
       } catch (err) {
-        draw(ERR[err.code] || "Das hat nicht geklappt. Bitte versuche es noch einmal.");
+        draw(errText(err));
         const f = root.querySelector("form");
         if (f) f.email.value = email;
       }
