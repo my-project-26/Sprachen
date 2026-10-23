@@ -1,0 +1,23 @@
+name: Domains prüfen
+on:
+  push:
+    branches: [main]
+    paths: [".github/workflows/domains.yml"]
+permissions:
+  contents: write
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: RDAP-Abfrage
+        run: |
+          out=probe/domains.txt; mkdir -p probe; : > $out
+          for d in wortwerk.app wortwerk.de wortwerk.com wortwerk.io getwortwerk.com wortwerk-app.de sprachwerk.app vokabelwerk.de lingowerk.app wortreise.app wortwerk.eu wortwerkapp.com; do
+            case $d in *.de) u="https://rdap.denic.de/domain/$d";; *) u="https://rdap.org/domain/$d";; esac
+            c=$(curl -s -L -o /dev/null -w "%{http_code}" "$u")
+            case $c in 404) s=FREI;; 200) s=vergeben;; *) s="unklar ($c)";; esac
+            echo "$d $s" | tee -a $out
+          done
+          git config user.name "wortwerk-bot"; git config user.email "actions@users.noreply.github.com"
+          git add $out && git commit -q -m "Domainprüfung" && for i in 1 2 3 4 5; do git pull -q --rebase origin main && git push -q origin HEAD:main && break; sleep 8; done
