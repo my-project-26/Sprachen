@@ -87,6 +87,7 @@ const HOME = {
       ${d.weak ? tile("#/learn/weak", "🔁", "Fehler üben", n(d.weak, "Wort", "Wörter")) : ""}
       ${tile(d.ready ? "#/story/new" : "#/stories", "📖", "Geschichte lesen", d.ready ? "eine neue ist bereit" : `${d.storyN} von ${d.storyEvery} Wörtern`)}
       ${tile("#/listen", "🎧", "Hören", "Wörter anhören, z. B. unterwegs")}
+      ${tile("#/practice", "✍️", "Üben", "Diktat und Sprechen")}
       ${tile("#/words", "🔎", "Wort suchen", "")}
       ${tile("", "🗂️", "Thema wählen", esc(d.focusLabel), 'id="pickTopic"')}
     </div>`;
@@ -179,6 +180,7 @@ const HOME = {
           : `<button class="gl-row" id="extraBtn"><span class="gl-ic" style="background:#34C759">✓</span><span><b>${d.wordsLeft ? "Alles erledigt – 10 weitere?" : "Anderes Thema wählen"}</b><small>neue Wörter aus ${esc(d.focusLabel)}</small></span></button>`
       }
       ${d.weak ? `<a class="gl-row" href="#/learn/weak"><span class="gl-ic" style="background:#FF3B30">!</span><span><b>Noch lernen</b><small>${n(d.weak, "Wort", "Wörter")}</small></span></a>` : ""}
+      <a class="gl-row" href="#/practice"><span class="gl-ic" style="background:#FF2D55">✍️</span><span><b>Üben</b><small>Diktat und Sprechen</small></span></a>
       <a class="gl-row" href="#/listen"><span class="gl-ic" style="background:#5856D6">🎧</span><span><b>Hören</b><small>deine Wörter zum Anhören</small></span></a>
       <a class="gl-row" href="${d.ready ? "#/story/new" : "#/stories"}"><span class="gl-ic" style="background:#FF9500">❝</span><span><b>${d.ready ? "Geschichte erstellen" : "Nächste Geschichte"}</b><small>${d.storyN} von ${d.storyEvery} Übungswörtern</small></span></a>
     </section>`;
@@ -220,6 +222,7 @@ const CARD = {
          </div>
          <p class="ef-label">Wie schnell soll gesprochen werden?</p>
          ${x.ui.speed}
+         ${x.ui.mic}
          <p class="ef-ask">Wusstest du es?</p>
          <div class="ef-grades">
            <button class="grade g3 ef-btn ef-yes" data-g="3"><span>👍 Ja, gewusst!</span><small>${x.practice ? "Übung" : "kommt wieder in " + longIv(x.iv3)}</small></button>
@@ -299,6 +302,7 @@ const CARD = {
         ${li("#2F7CF6", "🔊", "Wort anhören", "", `data-say="${esc(c.en)}"`)}
         ${c.ex ? li("#FF9500", "❝", x.exMarked, x.exDeMarked, `data-say="${esc(x.exPlain)}"`) : ""}
         <div class="gl-li gl-speed"><span class="gl-ic" style="background:#5856D6">⏱</span>${x.ui.speed}</div>
+        ${x.ui.mic ? `<div class="gl-li gl-speed"><span class="gl-ic" style="background:#FF2D55">🎤</span>${x.ui.mic}</div>` : ""}
         ${c.note ? li(x.noteFF ? "#FF3B30" : "#8E8E93", "i", "Hinweis", esc(c.note)) : ""}
       </section>
       <section class="gl-grp gl-grades">

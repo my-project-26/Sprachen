@@ -8,6 +8,7 @@ import * as tts from "./tts.js";
 import { DESIGNS, designKey, applyDesign, skinHome, skinCard } from "./skins.js";
 import * as cloud from "./cloud.js";
 import { listenView, stopListening } from "./listen.js";
+import { practiceView, micBlock, bindMic } from "./practice.js";
 import { LANGS, READY, L, checkAnswer } from "./langs.js";
 
 const $app = document.getElementById("app");
@@ -137,7 +138,7 @@ function progressRing(card) {
 }
 
 // ---------- Router ----------
-const routes = { home, learn, stories, story, words, add, topics, stats, settings: settingsView, listen: () => listenView($app, { settings, rateSlider, ICON }) };
+const routes = { home, learn, stories, story, words, add, topics, stats, settings: settingsView, listen: () => listenView($app, { settings, rateSlider, ICON }), practice: (m) => practiceView($app, { settings, rateSlider, ICON }, m || "") };
 
 function render() {
   if (document.documentElement.classList.contains("is-login")) return;
@@ -149,7 +150,7 @@ function render() {
   const arg = rest.length ? decodeURIComponent(rest.join("/")) : undefined;
   const view = routes[name] || home;
   document.body.dataset.view = routes[name] ? name : "home";
-  const navKey = { story: "stories", add: "words", topics: "home", settings: "home", listen: "home" }[name] || (routes[name] ? name : "home");
+  const navKey = { story: "stories", add: "words", topics: "home", settings: "home", listen: "home", practice: "home" }[name] || (routes[name] ? name : "home");
   $nav.querySelectorAll("a").forEach((a) => a.classList.toggle("active", a.dataset.route === navKey));
   window.scrollTo(0, 0);
   view(arg);
@@ -534,8 +535,9 @@ function showCard(revealed = false, typed = null) {
         typed: typed != null ? `<p class="typed ${ok ? "ok" : "bad"}">${res === "ok" ? "Richtig!" : res === "almost" ? `Fast richtig – achte auf die Schreibweise: <s>${esc(typed)}</s>` : `Deine Eingabe: <s>${esc(typed) || "–"}</s>`}</p>` : "",
         listen: `<div class="listen-row">
           <button class="btn ghost listen" data-say="${esc(c.en)}">${ICON.speaker}<span>Wort anhören</span></button>
-          ${c.ex ? `<button class="btn ghost listen" data-say="${esc(plain(c.ex))}">${ICON.speaker}<span>Satz anhören</span></button>` : ""}</div>${rateSlider("", c.en)}`,
+          ${c.ex ? `<button class="btn ghost listen" data-say="${esc(plain(c.ex))}">${ICON.speaker}<span>Satz anhören</span></button>` : ""}</div>${rateSlider("", c.en)}${micBlock(c.en)}`,
         speed: rateSlider("", c.en),
+        mic: micBlock(c.en),
         note: c.note ? `<p class="note ${noteFF ? "ff" : ""}">${esc(c.note)}</p>` : "",
         known: `<button class="btn ghost known-btn" id="knownBtn">Kenne ich schon – nicht mehr abfragen</button>`,
       },
@@ -573,6 +575,7 @@ function showCard(revealed = false, typed = null) {
 function bindCardEvents(c, revealed) {
   const s = settings();
   $app.querySelectorAll("[data-say]").forEach((b) => (b.onclick = () => say(b.dataset.say)));
+  bindMic($app);
   bindVoiceToggle();
 
   if (!revealed) {

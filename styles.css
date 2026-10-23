@@ -531,3 +531,22 @@ small.rd { font-size: .45em; margin: 4px 0 0; }
 .sent-play { border: 0; background: none; color: var(--accent); font-size: .75em; padding: 0 4px 0 0; cursor: pointer; vertical-align: .1em; }
 .sent-sub { display: block; font-size: .85em; line-height: 1.4; margin: 2px 0 0 1.2em; color: var(--muted); }
 .sent-sub.wfw { font-style: italic; }
+
+/* ---------- Üben: Nachsprechen & Diktat ---------- */
+.mic-block { margin: 6px 0; }
+.mic-btn { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 0 18px; border: 2px solid var(--accent); border-radius: 24px; background: transparent; color: var(--accent); font: inherit; font-weight: 700; cursor: pointer; }
+.mic-btn.big { width: 100%; justify-content: center; min-height: 64px; font-size: 1.15rem; }
+.mic-btn.rec { background: #FF3B30; border-color: #FF3B30; color: #fff; animation: pulse 1.2s infinite; }
+@keyframes pulse { 50% { opacity: .7; } }
+@media (prefers-reduced-motion: reduce) { .mic-btn.rec { animation: none; } }
+.mic-res.ok, .p-verdict.ok { color: var(--ok, #1E9E50); font-weight: 700; }
+.mic-res.almost, .p-verdict.almost { color: #B07A00; font-weight: 700; }
+.mic-res.bad, .p-verdict.bad { color: var(--bad, #D93636); font-weight: 700; }
+.practice-card { display: flex; flex-direction: column; gap: 12px; }
+.practice-card .listen-play { align-self: center; }
+.practice-card textarea { width: 100%; box-sizing: border-box; min-height: 90px; padding: 12px; border: 2px solid var(--line); border-radius: 14px; font: inherit; font-size: 1.1rem; }
+.p-diff .ok { color: var(--ok, #1E9E50); }
+.p-diff .bad { color: var(--bad, #D93636); text-decoration: underline; }
+.p-sol { margin: 4px 0 0; }
+.center-card { text-align: center; }
+.gl-speed .mic-block { flex: 1; }
