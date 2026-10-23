@@ -165,13 +165,12 @@ function pick(g, langPref, avoid) {
 // Stimm-Profile. rec = eigener Aufnahme-Satz ("" = Standardaufnahmen), sonst Gerätestimme als Ersatz
 export const PRESETS = [
   { key: "entspannt", label: "Entspannte Frau", hint: "ruhig, warm und klar", g: "f", r: 0, pitch: 0.95, rateMul: 0.95, rec: "entspannt" },
-  { key: "rauer", label: "Frau – etwas rauer", hint: "markant, etwas rau", g: "f", r: 0, pitch: 0.92, rateMul: 1.0, rec: "rauer" },
   { key: "mann1", label: "Männerstimme 1", hint: "eigene Stimme", g: "m", r: 0, pitch: 0.9, rateMul: 1.0, rec: "mann1" },
   { key: "mann2", label: "Männerstimme 2", hint: "eigene Stimme", g: "m", r: 0, pitch: 0.9, rateMul: 1.0, rec: "mann2" },
   { key: "friend-f", label: "Standardstimme", hint: "natürlich, freundlich und klar", g: "f", r: 0, pitch: 1.05, rateMul: 1.0, rec: "" },
 ];
 // Alte, entfernte Profile → neue
-export const PRESET_MAP = { "clear-f": "friend-f", "clear-m": "mann1", "friend-m": "mann1", "strict-m": "mann1", "deep-m": "mann1", "sexy-f": "entspannt", "strict-f": "entspannt" };
+export const PRESET_MAP = { "clear-f": "friend-f", "clear-m": "mann1", "friend-m": "mann1", "strict-m": "mann1", "deep-m": "mann1", "sexy-f": "entspannt", "strict-f": "entspannt", rauer: "entspannt" };
 
 // Liefert für ein Profil die Stimme dieses Geräts (oder null, wenn keine passt)
 const region = (r) => LANG.tts[r] || LANG.tts[0];
