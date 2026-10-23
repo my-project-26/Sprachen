@@ -7,8 +7,8 @@ on:
   workflow_dispatch:
     inputs:
       langs:
-        description: "Sprachen/Niveaus, z. B. en:A1 oder en es"
-        default: "en es"
+        description: "Sprachen/Niveaus, z. B. en oder en:A1 (andere Sprachen haben eigene Repos audio-xx)"
+        default: "en"
   push:
     branches: [main]
     paths:
@@ -43,7 +43,7 @@ jobs:
         run: |
           git config user.name "wortwerk-bot"
           git config user.email "actions@users.noreply.github.com"
-          python tools/make-audio.py ${{ inputs.langs || 'en es' }}
+          python tools/make-audio.py ${{ inputs.langs || 'en' }}
       - name: Hochladen
         run: |
           git config user.name "wortwerk-bot"

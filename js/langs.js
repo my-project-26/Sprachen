@@ -3,7 +3,7 @@
 // en: englischer Name (für KI-Prompts), reading: Lautschrift wird mitgelernt.
 export const LANGS = {
   en: { name: "Englisch", native: "English", flag: "🇬🇧", en: "English", tts: ["en-US", "en-GB"], mm: "en", hello: "Hello! This is how I will read your words to you." },
-  es: { name: "Spanisch", native: "Español", flag: "🇪🇸", en: "Spanish", tts: ["es-ES", "es-MX", "es-US"], mm: "es", hello: "¡Hola! Así voy a leerte tus palabras." },
+  es: { audio: "/audio-sp/", name: "Spanisch", native: "Español", flag: "🇪🇸", en: "Spanish", tts: ["es-ES", "es-MX", "es-US"], mm: "es", hello: "¡Hola! Así voy a leerte tus palabras." },
   fr: { name: "Französisch", native: "Français", flag: "🇫🇷", en: "French", tts: ["fr-FR", "fr-CA"], mm: "fr", hello: "Bonjour ! C'est ainsi que je vais te lire tes mots." },
   it: { audio: "/audio-it/", name: "Italienisch", native: "Italiano", flag: "🇮🇹", en: "Italian", tts: ["it-IT"], mm: "it", hello: "Ciao! Così ti leggerò le tue parole." },
   pl: { name: "Polnisch", native: "Polski", flag: "🇵🇱", en: "Polish", tts: ["pl-PL"], mm: "pl", hello: "Cześć! Tak będę ci czytać twoje słowa." },
