@@ -31,17 +31,93 @@ def model():
     return _model
 
 
-def synth(text, lang, ref, out_mp3):
-    import torchaudio
+def clean(x, sr):
+    """Störgeräusche der Klon-Stimme entfernen: lautes Brummen/Rumpeln (Energie fast nur < 120 Hz)
+    und lange Zisch-/Rauschstrecken (fast nur > 4 kHz); Nachklang/Gemurmel am Anfang und Ende abschneiden.
+    Rückgabe: (Audio, Anteil entfernter Störungen 0–1)."""
+    import numpy as np
+    W, H = int(0.04 * sr), int(0.01 * sr)
+    f = np.fft.rfftfreq(W, 1 / sr)
+    n = max(1, (len(x) - W) // H + 1)
+    noise = np.zeros(n, bool)
+    kind = np.zeros(n, int)
+    en = np.zeros(n)
+    for i in range(n):
+        w = x[i * H : i * H + W]
+        if len(w) < W:
+            w = np.pad(w, (0, W - len(w)))
+        sp = np.abs(np.fft.rfft(w * np.hanning(W))) ** 2 + 1e-12
+        tot = sp.sum()
+        en[i] = tot
+        low, hi = sp[f < 120].sum() / tot, sp[f > 4000].sum() / tot
+        if low > 0.45:
+            noise[i], kind[i] = True, 1
+        elif hi > 0.7:
+            noise[i], kind[i] = True, 2
+    db = 10 * np.log10(en / en.max())
+    noise &= db > -50
+    keep = np.ones(len(x), bool)
+    removed = 0
+    i = 0
+    while i < n:
+        if not noise[i]:
+            i += 1
+            continue
+        j = i
+        while j < n and noise[j]:
+            j += 1
+        lim = 0.06 if (kind[i:j] == 1).mean() > 0.5 else 0.22  # Rumpeln ab 60 ms, Zischen ab 220 ms (ein „s“ ist kürzer)
+        if (j - i) * 0.01 >= lim:
+            a, b = i * H, min(len(x), j * H + W)
+            keep[a:b] = False
+            removed += b - a
+        i = j
+    # Entfernte Strecken: innen 0,12 s Pause, am Rand ganz weg
+    out, i, L = [], 0, len(x)
+    while i < L:
+        j = i
+        while j < L and keep[j] == keep[i]:
+            j += 1
+        seg = x[i:j] if keep[i] else np.zeros(0 if i == 0 or j >= L else int(0.12 * sr), np.float32)
+        out.append(seg)
+        i = j
+    y = np.concatenate(out) if out else x
+    # Anfang/Ende: alles leiser als 32 dB unter der lautesten Stelle weg (Nachklang, Gemurmel)
+    m = max(1, (len(y) - W) // H + 1)
+    e = np.array([np.sum(y[k * H : k * H + W] ** 2) + 1e-12 for k in range(m)])
+    loud = np.where(10 * np.log10(e / e.max()) > -32)[0]
+    if len(loud):
+        a = max(0, loud[0] * H - int(0.06 * sr))
+        b = min(len(y), loud[-1] * H + W + int(0.12 * sr))
+        y = y[a:b]
+    return y.astype(np.float32), removed / max(1, len(x))
+
+
+def synth(text, lang, ref, out_mp3, male=False):
+    """Spricht den Text in der Klon-Stimme. Bei starken Störungen bis zu 3 neue Versuche, der sauberste gewinnt."""
+    import numpy as np
+    import torch
     m = model()
-    wav = m.generate(text, language_id=lang, audio_prompt_path=ref, exaggeration=0.5, cfg_weight=0.5, temperature=0.7)
-    tmp = out_mp3 + ".wav"
-    torchaudio.save(tmp, wav, m.sr)
-    # Stille an Anfang/Ende kürzen, Lautstärke angleichen, wie die übrigen Aufnahmen: 24 kHz mono 48 kbit/s
-    subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", tmp, "-af",
-                    "silenceremove=start_periods=1:start_threshold=-45dB,areverse,silenceremove=start_periods=1:start_threshold=-45dB,areverse,loudnorm=I=-18:TP=-2",
-                    "-ac", "1", "-ar", "24000", "-b:a", "48k", out_mp3], check=True)
-    os.remove(tmp)
+    best = None
+    for attempt in range(4):
+        torch.manual_seed(1234 + attempt * 7919)
+        wav = m.generate(text, language_id=lang, audio_prompt_path=ref, exaggeration=0.5, cfg_weight=0.5,
+                         temperature=0.7 if attempt < 2 else 0.6)
+        x = wav.squeeze().cpu().numpy().astype(np.float32)
+        y, rem = clean(x, m.sr)
+        words = max(1, len(text.split()))
+        dur = len(y) / m.sr
+        bad = rem + (0.5 if dur > 1.5 + words * 0.9 else 0) + (0.5 if dur < 0.2 else 0)
+        if best is None or bad < best[0]:
+            best = (bad, y)
+        if bad < 0.15:
+            break
+    y = best[1]
+    hp = 70 if male else 100
+    subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-f", "f32le", "-ar", str(m.sr), "-ac", "1", "-i", "-", "-af",
+                    f"highpass=f={hp},afftdn=nr=10:nf=-50,loudnorm=I=-18:TP=-2", "-ac", "1", "-ar", "24000", "-b:a", "48k", out_mp3],
+                   input=y.tobytes(), check=True)
+    return best[0]
 
 
 _enc = None
@@ -83,24 +159,24 @@ def push(path, msg):
 def probe(voice):
     os.makedirs("probe", exist_ok=True)
     report = []
-    for lang in ("en", "it", "es"):
+    for lang in os.environ.get("PROBE_LANGS", "en it es").split():
         ref = ref_path(voice, lang)
         sents = [t for t in texts_for(lang, {"A1"}) if t.count(" ") >= 3][:5]
         parts, sims = [], []
         for i, t in enumerate(sents):
             out = f"/tmp/{voice}-{lang}-{i}.mp3"
             t0 = time.time()
-            synth(t, lang, ref, out)
+            bad = synth(t, lang, ref, out, voice.startswith("m"))
             sims.append(similarity(ref, out))
-            report.append(f"{lang} {time.time() - t0:5.1f}s  Ähnlichkeit {sims[-1]:.2f}  {t}")
+            report.append(f"{lang} {time.time() - t0:5.1f}s  Ähnlichkeit {sims[-1]:.2f}  Störanteil {bad:.2f}  {t}")
             print(report[-1], flush=True)
             parts.append(out)
         lst = "/tmp/cat.txt"
         with open(lst, "w") as f:
             f.writelines(f"file '{p}'\n" for p in parts)
-        subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-b:a", "64k", f"probe/{voice}-{lang}.mp3"], check=True)
+        subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-b:a", "64k", f"probe/{voice}-{lang}{os.environ.get('PROBE_TAG', '')}.mp3"], check=True)
         report.append(f"{lang}: mittlere Ähnlichkeit {sum(sims) / len(sims):.2f}")
-    open(f"probe/{voice}-bericht.txt", "w").write("\n".join(report) + "\n")
+    open(f"probe/{voice}-bericht{os.environ.get('PROBE_TAG', '')}.txt", "w").write("\n".join(report) + "\n")
 
 
 def run(voice, lang, outdir):
@@ -118,7 +194,7 @@ def run(voice, lang, outdir):
             print("Zeitlimit – Rest beim nächsten Lauf", flush=True)
             break
         try:
-            synth(t, lang, ref, os.path.join(outdir, audio_key(t) + ".mp3"))
+            synth(t, lang, ref, os.path.join(outdir, audio_key(t) + ".mp3"), voice.startswith("m"))
         except Exception as e:
             print(f"  ✗ {t[:40]!r}: {e}", flush=True)
         if i % 50 == 0:

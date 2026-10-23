@@ -16,6 +16,8 @@ jobs:
     timeout-minutes: 120
     env:
       V: ${{ inputs.voice || 'f2' }}
+      PROBE_LANGS: "it es"
+      PROBE_TAG: "-neu"
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
