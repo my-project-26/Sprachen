@@ -1,0 +1,39 @@
+name: Stimmprobe (Klonung)
+on:
+  push:
+    branches: [voice-probe2]
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Chatterbox installieren und Probe
+        run: |
+          exec > >(tee -a /tmp/log.txt) 2>&1
+          set -x
+          sudo apt-get -qq update && sudo apt-get -qq install -y ffmpeg
+          pip install -q torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+          pip install -q chatterbox-tts
+          python tools/clone-probe.py
+      - name: Ergebnis nach main, Zweig löschen
+        run: |
+          git config user.name "wortwerk-bot"
+          git config user.email "actions@users.noreply.github.com"
+          mkdir -p /tmp/out && cp probe/klon-*.mp3 tools/clone-probe.py /tmp/out/
+          git fetch -q origin main && git checkout -q -f -B main origin/main
+          mkdir -p probe && cp /tmp/out/klon-*.mp3 probe/ && cp /tmp/out/clone-probe.py tools/
+          git add probe tools/clone-probe.py && git commit -q -m "Stimmprobe: Klonung" && git pull -q --rebase origin main && git push -q origin HEAD:main
+          git push -q origin --delete voice-probe2
+      - name: Protokoll bei Fehler
+        if: failure()
+        run: |
+          git config user.name "wortwerk-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git checkout -q --orphan voice-log && git rm -rq --cached . && tail -c 60000 /tmp/log.txt > log.txt
+          git add log.txt && git commit -q -m log && git push -qf origin voice-log
