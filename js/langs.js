@@ -4,14 +4,14 @@
 export const LANGS = {
   en: { name: "Englisch", native: "English", flag: "🇬🇧", en: "English", tts: ["en-US", "en-GB"], mm: "en", hello: "Hello! This is how I will read your words to you." },
   es: { audio: "/audio-sp/", name: "Spanisch", native: "Español", flag: "🇪🇸", en: "Spanish", tts: ["es-ES", "es-MX", "es-US"], mm: "es", hello: "¡Hola! Así voy a leerte tus palabras." },
-  fr: { name: "Französisch", native: "Français", flag: "🇫🇷", en: "French", tts: ["fr-FR", "fr-CA"], mm: "fr", hello: "Bonjour ! C'est ainsi que je vais te lire tes mots." },
+  fr: { audio: "/audio-fr/", name: "Französisch", native: "Français", flag: "🇫🇷", en: "French", tts: ["fr-FR", "fr-CA"], mm: "fr", hello: "Bonjour ! C'est ainsi que je vais te lire tes mots." },
   it: { audio: "/audio-it/", name: "Italienisch", native: "Italiano", flag: "🇮🇹", en: "Italian", tts: ["it-IT"], mm: "it", hello: "Ciao! Così ti leggerò le tue parole." },
-  pl: { name: "Polnisch", native: "Polski", flag: "🇵🇱", en: "Polish", tts: ["pl-PL"], mm: "pl", hello: "Cześć! Tak będę ci czytać twoje słowa." },
-  ru: { name: "Russisch", native: "Русский", flag: "🇷🇺", en: "Russian", tts: ["ru-RU"], mm: "ru", reading: "Umschrift", hello: "Привет! Так я буду читать тебе слова." },
-  ja: { name: "Japanisch", native: "日本語", flag: "🇯🇵", en: "Japanese", tts: ["ja-JP"], mm: "ja", reading: "Lesung", cjk: true, hello: "こんにちは！このように単語を読みます。" },
-  zh: { name: "Chinesisch", native: "中文", flag: "🇨🇳", en: "Mandarin Chinese (simplified characters)", tts: ["zh-CN", "zh-TW", "zh-HK"], mm: "zh-CN", reading: "Pinyin", cjk: true, hello: "你好！我会这样给你读单词。" },
-  ko: { name: "Koreanisch", native: "한국어", flag: "🇰🇷", en: "Korean", tts: ["ko-KR"], mm: "ko", reading: "Umschrift", hello: "안녕하세요! 이렇게 단어를 읽어 줄게요." },
-  hi: { name: "Hindi", native: "हिन्दी", flag: "🇮🇳", en: "Hindi", tts: ["hi-IN"], mm: "hi", reading: "Umschrift", hello: "नमस्ते! मैं आपके शब्द ऐसे पढ़ूँगा।" },
+  pl: { audio: "/audio-pl/", name: "Polnisch", native: "Polski", flag: "🇵🇱", en: "Polish", tts: ["pl-PL"], mm: "pl", hello: "Cześć! Tak będę ci czytać twoje słowa." },
+  ru: { audio: "/audio-ru/", name: "Russisch", native: "Русский", flag: "🇷🇺", en: "Russian", tts: ["ru-RU"], mm: "ru", reading: "Umschrift", hello: "Привет! Так я буду читать тебе слова." },
+  ja: { audio: "/audio-ja/", name: "Japanisch", native: "日本語", flag: "🇯🇵", en: "Japanese", tts: ["ja-JP"], mm: "ja", reading: "Lesung", cjk: true, hello: "こんにちは！このように単語を読みます。" },
+  zh: { audio: "/audio-zh/", name: "Chinesisch", native: "中文", flag: "🇨🇳", en: "Mandarin Chinese (simplified characters)", tts: ["zh-CN", "zh-TW", "zh-HK"], mm: "zh-CN", reading: "Pinyin", cjk: true, hello: "你好！我会这样给你读单词。" },
+  ko: { audio: "/audio-ko/", name: "Koreanisch", native: "한국어", flag: "🇰🇷", en: "Korean", tts: ["ko-KR"], mm: "ko", reading: "Umschrift", hello: "안녕하세요! 이렇게 단어를 읽어 줄게요." },
+  hi: { audio: "/audio-hi/", name: "Hindi", native: "हिन्दी", flag: "🇮🇳", en: "Hindi", tts: ["hi-IN"], mm: "hi", reading: "Umschrift", hello: "नमस्ते! मैं आपके शब्द ऐसे पढ़ूँगा।" },
 };
 
 // Sprachen, für die es schon eine Wortliste gibt (js/wordbank.js bzw. js/wordbank.<code>.js)
