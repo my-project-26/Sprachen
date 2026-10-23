@@ -179,7 +179,7 @@ async function browserCall(path, body) {
     for (let attempt = 0; attempt < 2; attempt++) {
       try {
         const lang = langName(body.lang);
-        const text = await browserLLM(storySystem(lang), storyPrompt(body.words, level, body.theme || "", body.known || [], lang), 2500);
+        const text = await browserLLM(storySystem(lang), storyPrompt(body.words, level, body.theme || "", body.known || [], lang), 5000);
         const data = extractJson(text);
         if (!data.text) throw new Error("Antwort ohne Text");
         return data;
@@ -279,6 +279,12 @@ export function normalizeStory(data, words) {
   for (const w of words) if (!glossary[w.en.toLowerCase()]) glossary[w.en.toLowerCase()] = w.de;
   const readings = {};
   for (const g of data.glossary || []) if (g?.en && g.rd) readings[g.en.toLowerCase()] = String(g.rd);
+  // Sätze mit Wort-für-Wort-Übersetzung (Birkenbihl) und freier Übersetzung
+  const sentences = Array.isArray(data.sentences)
+    ? data.sentences
+        .filter((x) => x && typeof x.t === "string" && x.t.trim())
+        .map((x, i) => ({ t: x.t.trim(), wfw: String(x.wfw || ""), de: String(x.de || ""), p: i === 0 || !!x.p }))
+    : [];
   return {
     id: "s-" + Date.now().toString(36),
     createdAt: Date.now(),
@@ -287,6 +293,7 @@ export function normalizeStory(data, words) {
     questions,
     glossary,
     readings,
+    sentences,
     wordIds: words.map((w) => w.id),
     words: words.map((w) => ({ id: w.id, en: w.en, de: w.de })),
     quizScore: null,

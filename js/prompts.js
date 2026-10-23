@@ -32,15 +32,16 @@ ${
 }${theme ? `\nTheme / setting (given in German): ${theme}. Build the plot around this theme so the words appear in a natural situation.\n` : ""}
 Requirements:
 - Language: ${lang} only (the title too). Length: ${level === "A1" || level === "A2" ? "100–160" : "180–260"} words (or the equivalent length), 2–4 paragraphs separated by a blank line (\\n\\n).
-- Language level: CEFR ${level}. Apart from the listed words, use mostly common vocabulary so the listed words stand out and can be understood from context.
+- Language level: CEFR ${level}. 98 % rule: apart from the listed words, at least 98 % of all running words must be very common, high-frequency vocabulary that a learner at this level surely knows. No rare words, slang, idioms or unusual proper names, so the listed words stand out and can be understood from context.
 - Use EVERY target word at least once (inflected forms are fine) in a meaning that matches the German gloss.
 - Mark every occurrence of a target word${known.length ? " and of every review word you use" : ""} with double asterisks, e.g. **word**. Mark nothing else.
 - A coherent plot with a small twist or a clear ending, adult everyday or professional setting, a fitting title.
 - Then write 4 multiple-choice comprehension questions in ${lang} with 4 options each. "answer" is the 0-based index of the correct option. Vary the position of the correct answer.
 - For each marked word give the German meaning as used in the story${reading ? ` and its reading in ${reading} ("rd")` : ""}.
+- Also split the story text into its sentences ("sentences", in order, together they are exactly the text). For each sentence give "t" = the sentence exactly as in the text (keep the ** marks), "wfw" = a word-for-word German decoding in the ${lang} word order (Birkenbihl method: each ${lang} word replaced by its literal German equivalent, even if the German sounds odd; join multi-word glosses with hyphens, e.g. "es-gibt"), and "de" = a natural, idiomatic German translation. Mark "p":true on the first sentence of every new paragraph.
 
 Return exactly this JSON structure:
-{"title":"...","text":"...","questions":[{"q":"...","options":["...","...","...","..."],"answer":0}],"glossary":[{"en":"<${lang} word>","de":"..."${reading ? ',"rd":"..."' : ""}}]}`;
+{"title":"...","text":"...","sentences":[{"t":"...","wfw":"...","de":"...","p":true}],"questions":[{"q":"...","options":["...","...","...","..."],"answer":0}],"glossary":[{"en":"<${lang} word>","de":"..."${reading ? ',"rd":"..."' : ""}}]}`;
 }
 
 export function wordsSystem(lang = "English") {

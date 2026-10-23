@@ -86,6 +86,7 @@ const HOME = {
     <div class="ef-tiles">
       ${d.weak ? tile("#/learn/weak", "🔁", "Fehler üben", n(d.weak, "Wort", "Wörter")) : ""}
       ${tile(d.ready ? "#/story/new" : "#/stories", "📖", "Geschichte lesen", d.ready ? "eine neue ist bereit" : `${d.storyN} von ${d.storyEvery} Wörtern`)}
+      ${tile("#/listen", "🎧", "Hören", "Wörter anhören, z. B. unterwegs")}
       ${tile("#/words", "🔎", "Wort suchen", "")}
       ${tile("", "🗂️", "Thema wählen", esc(d.focusLabel), 'id="pickTopic"')}
     </div>`;
@@ -178,6 +179,7 @@ const HOME = {
           : `<button class="gl-row" id="extraBtn"><span class="gl-ic" style="background:#34C759">✓</span><span><b>${d.wordsLeft ? "Alles erledigt – 10 weitere?" : "Anderes Thema wählen"}</b><small>neue Wörter aus ${esc(d.focusLabel)}</small></span></button>`
       }
       ${d.weak ? `<a class="gl-row" href="#/learn/weak"><span class="gl-ic" style="background:#FF3B30">!</span><span><b>Noch lernen</b><small>${n(d.weak, "Wort", "Wörter")}</small></span></a>` : ""}
+      <a class="gl-row" href="#/listen"><span class="gl-ic" style="background:#5856D6">🎧</span><span><b>Hören</b><small>deine Wörter zum Anhören</small></span></a>
       <a class="gl-row" href="${d.ready ? "#/story/new" : "#/stories"}"><span class="gl-ic" style="background:#FF9500">❝</span><span><b>${d.ready ? "Geschichte erstellen" : "Nächste Geschichte"}</b><small>${d.storyN} von ${d.storyEvery} Übungswörtern</small></span></a>
     </section>`;
   },

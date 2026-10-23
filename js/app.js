@@ -7,6 +7,7 @@ import { callApi, health, normalizeStory, isStaticHost } from "./api.js";
 import * as tts from "./tts.js";
 import { DESIGNS, designKey, applyDesign, skinHome, skinCard } from "./skins.js";
 import * as cloud from "./cloud.js";
+import { listenView, stopListening } from "./listen.js";
 import { LANGS, READY, L, checkAnswer } from "./langs.js";
 
 const $app = document.getElementById("app");
@@ -136,10 +137,11 @@ function progressRing(card) {
 }
 
 // ---------- Router ----------
-const routes = { home, learn, stories, story, words, add, topics, stats, settings: settingsView };
+const routes = { home, learn, stories, story, words, add, topics, stats, settings: settingsView, listen: () => listenView($app, { settings, rateSlider, ICON }) };
 
 function render() {
   if (document.documentElement.classList.contains("is-login")) return;
+  stopListening();
   tts.stop();
   document.getElementById("toast").classList.remove("show");
   document.querySelectorAll(".sheet-backdrop, .word-pop").forEach((x) => x.remove());
@@ -147,7 +149,7 @@ function render() {
   const arg = rest.length ? decodeURIComponent(rest.join("/")) : undefined;
   const view = routes[name] || home;
   document.body.dataset.view = routes[name] ? name : "home";
-  const navKey = { story: "stories", add: "words", topics: "home", settings: "home" }[name] || (routes[name] ? name : "home");
+  const navKey = { story: "stories", add: "words", topics: "home", settings: "home", listen: "home" }[name] || (routes[name] ? name : "home");
   $nav.querySelectorAll("a").forEach((a) => a.classList.toggle("active", a.dataset.route === navKey));
   window.scrollTo(0, 0);
   view(arg);
@@ -808,23 +810,38 @@ function storyNew() {
 }
 
 // Jedes Wort antippbar: markierte Lernwörter gelb, alle anderen unauffällig
-function storyHtml(st) {
+// mode: "" = normaler Text, "wfw" = Wort für Wort (Birkenbihl), "de" = freie Übersetzung
+function storyHtml(st, mode = "") {
   const seg = L().cjk && typeof Intl !== "undefined" && Intl.Segmenter ? new Intl.Segmenter(S.lang(), { granularity: "word" }) : null;
   const wrapWords = (t) =>
     seg
       ? [...seg.segment(t)].map((x) => (x.isWordLike ? `<span class="ow" data-w="${x.segment}">${x.segment}</span>` : x.segment)).join("")
       : t.replace(/[\p{L}\p{M}][\p{L}\p{M}’'-]*[\p{L}\p{M}]|[\p{L}\p{M}]/gu, (w) => `<span class="ow" data-w="${w}">${w}</span>`);
+  const line = (p) =>
+    p
+      .split(/(\*\*[^*]+\*\*)/g)
+      .map((part) => {
+        const m = part.match(/^\*\*([^*]+)\*\*$/);
+        return m ? `<button class="tw" data-w="${esc(m[1])}">${esc(m[1])}</button>` : wrapWords(esc(part));
+      })
+      .join("");
+  if (st.sentences?.length) {
+    // Satzweise: jeder Satz antippbar zum Vorlesen, optional mit Übersetzungszeile
+    const paras = [];
+    st.sentences.forEach((x, i) => {
+      if (x.p || !paras.length) paras.push([]);
+      const sub = mode === "wfw" ? x.wfw : mode === "de" ? x.de : "";
+      paras[paras.length - 1].push(
+        `<span class="sent${mode ? " dec" : ""}" data-s="${i}"><button class="sent-play" data-say-s="${i}" aria-label="Satz vorlesen">▶</button>${line(x.t)}${
+          sub ? `<span class="sent-sub ${mode}">${esc(sub)}</span>` : ""
+        }</span>`
+      );
+    });
+    return paras.map((p) => `<p>${p.join(mode ? "" : " ")}</p>`).join("");
+  }
   return st.text
     .split(/\n\s*\n/)
-    .map((p) => {
-      const parts = p.split(/(\*\*[^*]+\*\*)/g);
-      return `<p>${parts
-        .map((part) => {
-          const m = part.match(/^\*\*([^*]+)\*\*$/);
-          return m ? `<button class="tw" data-w="${esc(m[1])}">${esc(m[1])}</button>` : wrapWords(esc(part));
-        })
-        .join("")}</p>`;
-    })
+    .map((p) => `<p>${line(p)}</p>`)
     .join("");
 }
 
@@ -951,8 +968,20 @@ function storyDetail(st) {
     <div class="reader-controls">
       ${rateSlider("storyRate")}
     </div>
+    ${
+      st.sentences?.length
+        ? `<p class="small muted dec-label">Übersetzung unter jedem Satz</p>
+    <div class="speed seg" id="decMode" role="group" aria-label="Übersetzung">
+      <button type="button" data-dec="" class="on">Aus</button>
+      <button type="button" data-dec="wfw">Wort für Wort</button>
+      <button type="button" data-dec="de">Deutsch</button>
+    </div>`
+        : ""
+    }
     <div class="story-text">${storyHtml(st)}</div>
-    <p class="small muted">Tippe auf ein beliebiges Wort für Übersetzung und Aussprache. Gelb = deine Lernwörter.</p>
+    <p class="small muted">Tippe auf ein Wort für Übersetzung und Aussprache${st.sentences?.length ? ", auf ▶ für den ganzen Satz" : ""}. Gelb = deine Lernwörter.${
+      st.sentences?.length ? " „Wort für Wort“ zeigt die wörtliche Übersetzung (Birkenbihl-Methode): So erkennst du, wie die Sprache gebaut ist." : ""
+    }</p>
   </article>
 
   ${
@@ -992,8 +1021,27 @@ function storyDetail(st) {
     <a class="btn primary" href="#/learn/story:${st.id}">Diese Wörter jetzt üben</a>
   </section>`;
 
-  // Jedes Wort antippen: Übersetzung + Aussprache
-  $app.querySelector(".story-text").addEventListener("click", (e) => {
+  // Übersetzungszeile umschalten (Aus / Wort für Wort / Deutsch)
+  const $text = $app.querySelector(".story-text");
+  $app.querySelectorAll("[data-dec]").forEach(
+    (b) =>
+      (b.onclick = () => {
+        $app.querySelectorAll("[data-dec]").forEach((x) => x.classList.toggle("on", x === b));
+        $text.innerHTML = storyHtml(st, b.dataset.dec);
+      })
+  );
+  const highlight = (i) => $text.querySelectorAll(".sent").forEach((x) => x.classList.toggle("cur", Number(x.dataset.s) === i));
+  const sayCfg = (onend) => ({ rate: settings().voiceRate, preset: settings().voicePreset, onend });
+
+  // Jedes Wort antippen: Übersetzung + Aussprache; ▶ = Satz vorlesen
+  $text.addEventListener("click", (e) => {
+    const sp = e.target.closest("[data-say-s]");
+    if (sp) {
+      const i = Number(sp.dataset.sayS);
+      highlight(i);
+      tts.speak(plain(st.sentences[i].t), sayCfg(() => highlight(-1)));
+      return;
+    }
     const t = e.target.closest(".tw, .ow");
     if (!t) return;
     $app.querySelectorAll(".ow.sel, .tw.sel").forEach((x) => x.classList.remove("sel"));
@@ -1012,11 +1060,24 @@ function storyDetail(st) {
       return;
     }
     play.innerHTML = `${ICON.stop}<span>Stopp</span>`;
-    tts.speak(st.title + ". " + plain(st.text), {
-      rate: settings().voiceRate,
-      preset: settings().voicePreset,
-      onend: () => (play.innerHTML = `${ICON.play}<span>Vorlesen</span>`),
-    });
+    const done = () => {
+      highlight(-1);
+      play.innerHTML = `${ICON.play}<span>Vorlesen</span>`;
+    };
+    if (st.sentences?.length) {
+      // Satz für Satz vorlesen und den aktuellen Satz hervorheben
+      let i = -1;
+      const next = () => {
+        if (!play.innerHTML.includes("Stopp")) return;
+        i++;
+        if (i >= st.sentences.length) return done();
+        highlight(i);
+        tts.speak(plain(st.sentences[i].t), sayCfg(() => setTimeout(next, 250)));
+      };
+      tts.speak(st.title, sayCfg(() => setTimeout(next, 400)));
+    } else {
+      tts.speak(st.title + ". " + plain(st.text), sayCfg(done));
+    }
   };
 
   // Quiz
@@ -1086,7 +1147,7 @@ function words() {
     ["known", "Bekannt"],
   ];
   $app.innerHTML = `
-  <header class="top"><h1>Wortschatz</h1><a class="btn primary small-btn" href="#/add">${ICON.plus}<span>Wort</span></a></header>
+  <header class="top"><h1>Wortschatz</h1><span class="top-actions"><a class="btn ghost small-btn" href="#/listen">🎧<span>Hören</span></a><a class="btn primary small-btn" href="#/add">${ICON.plus}<span>Wort</span></a></span></header>
   <div class="tabs">${tabs
     .map(([k, l]) => `<button class="tab ${wordsTab === k ? "active" : ""}" data-tab="${k}">${l} <small>${counts[k]}</small></button>`)
     .join("")}</div>

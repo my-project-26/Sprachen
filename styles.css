@@ -508,3 +508,26 @@ small.rd { font-size: .45em; margin: 4px 0 0; }
 .login-msg { margin: 0; padding: 12px 14px; border-radius: 14px; background: #FDE2E2; color: #8A1C1C; }
 .login-msg.ok { background: #E5F6EC; color: #145C33; }
 .account p { margin: 6px 0; }
+
+/* ---------- Hörmodus ---------- */
+.top-actions { display: flex; gap: 8px; }
+.listen-how { margin: 0 0 12px; }
+.listen-now { padding: 22px 16px; border-radius: 18px; background: var(--surface-2, rgba(120,120,128,.1)); text-align: center; min-height: 170px; }
+.ln-en { font-size: 2rem; font-weight: 700; line-height: 1.2; overflow-wrap: anywhere; }
+.ln-de { font-size: 1.15rem; color: var(--muted); margin-top: 4px; }
+.ln-ex { margin-top: 12px; font-size: 1rem; }
+.listen-ctrl { display: flex; align-items: center; justify-content: center; gap: 16px; margin: 16px 0 8px; }
+.listen-play { display: inline-flex; align-items: center; gap: 10px; min-height: 64px; padding: 0 28px; border: 0; border-radius: 32px; background: var(--accent); color: var(--accent-ink, #fff); font: inherit; font-size: 1.15rem; font-weight: 700; cursor: pointer; }
+.listen-play svg { width: 24px; height: 24px; fill: currentColor; }
+.icon-btn.big { width: 56px; height: 56px; font-size: 1.4rem; }
+.listen-opts .speed.seg { margin: 4px 0 12px; }
+
+/* ---------- Geschichten: Sätze & Dekodieren ---------- */
+.dec-label { margin: 10px 0 0; }
+#decMode { margin: 4px 0 6px; }
+.sent { border-radius: 6px; transition: background .2s; }
+.sent.cur { background: var(--marker-soft, #fff3b8); }
+.sent.dec { display: block; margin: 0 0 12px; }
+.sent-play { border: 0; background: none; color: var(--accent); font-size: .75em; padding: 0 4px 0 0; cursor: pointer; vertical-align: .1em; }
+.sent-sub { display: block; font-size: .85em; line-height: 1.4; margin: 2px 0 0 1.2em; color: var(--muted); }
+.sent-sub.wfw { font-style: italic; }

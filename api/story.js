@@ -23,7 +23,7 @@ export default wrap(async (req, res) => {
   let lastErr;
   for (let attempt = 0; attempt < 2; attempt++) {
     try {
-      const text = await callLLM(llm, storySystem(lang), storyPrompt(words, level, theme, known, lang), 2500);
+      const text = await callLLM(llm, storySystem(lang), storyPrompt(words, level, theme, known, lang), 5000);
       const data = extractJson(text);
       if (!data.text) throw new Error("Antwort ohne Text");
       return send(res, 200, data);
