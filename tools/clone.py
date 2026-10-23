@@ -37,7 +37,7 @@ def model():
     return _model
 
 
-def clean(x, sr):
+def clean(x, sr, male=False):
     """Störgeräusche der Klon-Stimme entfernen: lautes Brummen/Rumpeln (Energie fast nur < 120 Hz)
     und lange Zisch-/Rauschstrecken (fast nur > 4 kHz); Nachklang/Gemurmel am Anfang und Ende abschneiden.
     Rückgabe: (Audio, Anteil entfernter Störungen 0–1)."""
@@ -55,8 +55,9 @@ def clean(x, sr):
         sp = np.abs(np.fft.rfft(w * np.hanning(W))) ** 2 + 1e-12
         tot = sp.sum()
         en[i] = tot
-        low, hi = sp[f < 120].sum() / tot, sp[f > 4000].sum() / tot
-        if low > 0.45:
+        # Männerstimmen haben ihren Grundton um 100 Hz → Grenze tiefer und strenger
+        low, hi = sp[f < (75 if male else 120)].sum() / tot, sp[f > 4000].sum() / tot
+        if low > (0.6 if male else 0.45):
             noise[i], kind[i] = True, 1
         elif hi > 0.7:
             noise[i], kind[i] = True, 2
@@ -110,7 +111,7 @@ def synth(text, lang, ref, out_mp3, male=False):
         wav = m.generate(text, language_id=lang, audio_prompt_path=ref, exaggeration=0.5, cfg_weight=0.5,
                          temperature=0.7 if attempt < 2 else 0.6)
         x = wav.squeeze().cpu().numpy().astype(np.float32)
-        y, rem = clean(x, m.sr)
+        y, rem = clean(x, m.sr, male)
         words = max(1, len(text.split()))
         dur = len(y) / m.sr
         bad = rem + (0.5 if dur > 1.5 + words * 0.9 else 0) + (0.5 if dur < 0.2 else 0)
