@@ -1,0 +1,92 @@
+name: Stimme klonen (Englisch)
+
+# Spricht alle Wörter und Beispielsätze mit einer gewählten Stimme neu (Chatterbox-Klonung,
+# Vorbild: voices/ref-gemini/<stimme>-en.wav in my-project-26/sprachen).
+# Ergebnis: audio/en-<ordner>/. Startet sich selbst neu, bis alles fertig und geprüft ist.
+on:
+  workflow_dispatch:
+    inputs:
+      voice:
+        description: "Stimme: f2, f3, m2 oder m3"
+        default: "f2"
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: clone-${{ inputs.voice }}
+  cancel-in-progress: false
+
+env:
+  V: ${{ inputs.voice }}
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Chatterbox installieren
+        run: |
+          sudo apt-get -qq update && sudo apt-get -qq install -y ffmpeg
+          pip install -q torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+          pip install -q chatterbox-tts resemblyzer
+      - name: Sprechen
+        env:
+          OV_SHARD: "${{ matrix.shard }}/7"
+          CL_MAX_MIN: "310"
+          CL_PUSH_MIN: "30"
+        run: |
+          git config user.name "wortwerk-bot"
+          git config user.email "actions@users.noreply.github.com"
+          D=$(python3 -c "print({'f2':'frau2','f3':'frau3','m2':'mann2','m3':'mann3'}['$V'])")
+          python tools/clone.py run $V en audio/en-$D
+
+  finish:
+    needs: convert
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Prüfen, Verzeichnis schreiben, ggf. weitermachen
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "wortwerk-bot"
+          git config user.email "actions@users.noreply.github.com"
+          sudo apt-get -qq update && sudo apt-get -qq install -y ffmpeg
+          D=$(python3 -c "print({'f2':'frau2','f3':'frau3','m2':'mann2','m3':'mann3'}['$V'])")
+          OUT=audio/en-$D
+          git pull -q --rebase origin main
+          LEFT=$(python3 -c "
+          import importlib.util as u, os
+          s=u.spec_from_file_location('c','tools/clone.py'); m=u.module_from_spec(s); s.loader.exec_module(m)
+          print(sum(not os.path.exists(os.path.join('$OUT', m.audio_key(t)+'.mp3')) for t in m.texts_for('en')))")
+          echo "Es fehlen noch $LEFT Aufnahmen"
+          if [ "$LEFT" = "0" ]; then
+            pip install -q torch==2.6.0 --index-url https://download.pytorch.org/whl/cpu && pip install -q resemblyzer
+            python tools/clone.py check $V en $OUT
+            mkdir -p audio/pruefung && mv probe/pruefung-$V-en.json audio/pruefung/ 2>/dev/null || true
+            git add -A $OUT audio/pruefung
+          fi
+          python3 tools/write-index.py audio en
+          git add audio/en-*/index.json
+          git diff --cached --quiet || git commit -q -m "Stimme $V (en): Stand"
+          for i in 1 2 3 4 5 6; do git pull -q --rebase -X theirs origin main && git push -q origin HEAD:main && break; sleep 10; done
+          LEFT2=$(python3 -c "
+          import importlib.util as u, os
+          s=u.spec_from_file_location('c','tools/clone.py'); m=u.module_from_spec(s); s.loader.exec_module(m)
+          print(sum(not os.path.exists(os.path.join('$OUT', m.audio_key(t)+'.mp3')) for t in m.texts_for('en')))")
+          if [ "$LEFT2" != "0" ]; then echo "Noch $LEFT2 offen – nächster Durchgang"; gh workflow run clone.yml -R ${{ github.repository }} -f voice=$V; else echo "Fertig und geprüft"; fi
+

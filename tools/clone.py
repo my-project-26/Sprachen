@@ -134,7 +134,7 @@ def check(voice, lang, outdir):
     """Forensische Prüfung: jede Aufnahme da, lesbar, plausible Länge, Stimme passt (Stichprobe je 25. Datei + alle Auffälligen)."""
     texts = texts_for(lang)
     ref = ref_path(voice, lang)
-    missing, broken, odd, sims = [], [], [], []
+    missing, broken, odd, sims, long_ones = [], [], [], [], set()
     for i, t in enumerate(texts):
         p = os.path.join(outdir, audio_key(t) + ".mp3")
         if not os.path.exists(p):
@@ -145,13 +145,15 @@ def check(voice, lang, outdir):
         if d < 0.25:
             broken.append(t)
             continue
-        if d > 2.5 + words * 1.2:  # viel zu lang → vermutlich Gestammel
+        if d > 2.5 + words * 1.2:  # auffällig lang → im Bericht, Stimme wird geprüft
             odd.append(t)
+            long_ones.add(t)
         if i % 25 == 0 or d > 2.5 + words * 1.2:
             s = similarity(ref, p)
             sims.append(s)
             if s < 0.65:
                 odd.append(t)
+                long_ones.discard(t)
     rep = {
         "stimme": voice, "sprache": lang, "texte": len(texts), "fehlen": len(missing), "kaputt": len(broken),
         "auffaellig": sorted(set(odd)), "aehnlichkeit_mittel": round(sum(sims) / max(1, len(sims)), 3),
@@ -161,13 +163,24 @@ def check(voice, lang, outdir):
     os.makedirs("probe", exist_ok=True)
     json.dump(rep, open(f"probe/pruefung-{voice}-{lang}.json", "w"), ensure_ascii=False, indent=1)
     print(json.dumps({k: v for k, v in rep.items() if k != "auffaellig"}, ensure_ascii=False), "auffällig:", len(rep["auffaellig"]))
-    # Auffällige neu erzeugen lassen: Datei löschen, damit der nächste Lauf sie neu macht
-    for t in set(odd) | set(broken):
+    # Kaputte oder fremd klingende Aufnahmen neu erzeugen lassen (Datei löschen → nächster Lauf macht sie neu).
+    # Jede Datei höchstens einmal, damit sich nichts endlos wiederholt.
+    log = os.path.join(outdir, ".neu-erzeugt.txt")
+    done = set(open(log).read().split()) if os.path.exists(log) else set()
+    redo = []
+    for t in set(broken) | {t for t in odd if t not in long_ones}:
+        k = audio_key(t)
+        if k in done:
+            continue
         try:
-            os.remove(os.path.join(outdir, audio_key(t) + ".mp3"))
+            os.remove(os.path.join(outdir, k + ".mp3"))
+            redo.append(k)
         except FileNotFoundError:
             pass
-
+    if redo:
+        with open(log, "a") as f:
+            f.write("\n".join(redo) + "\n")
+    print(f"neu zu erzeugen: {len(redo)}")
 
 if __name__ == "__main__":
     cmd = sys.argv[1]

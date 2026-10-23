@@ -20,7 +20,7 @@ function readGlobal() {
         g.designV = 3;
       }
       // entfernte Stimm-Profile auf die neuen umstellen
-      const VP = { "clear-f": "friend-f", "clear-m": "mann1", "friend-m": "mann1", "strict-m": "mann1", "deep-m": "mann1", "sexy-f": "entspannt", "strict-f": "entspannt" };
+      const VP = { "clear-f": "frau2", "clear-m": "frau2", "friend-m": "frau2", "strict-m": "frau2", "deep-m": "frau2", "sexy-f": "frau2", "strict-f": "frau2", rauer: "frau2", entspannt: "frau2", mann1: "frau2", mann2: "frau2" };
       if (VP[g.voicePreset]) g.voicePreset = VP[g.voicePreset];
       return g;
     }
@@ -45,7 +45,7 @@ export const DEFAULT_SETTINGS = {
   voiceRate: 0.95,
   design: "award", // award | einfach | glas | bordkarte | heft
   designV: 3,
-  voicePreset: "friend-f", // friend-f, sexy-f, deep-m, strict-f
+  voicePreset: "frau2", // frau2 (eigene Stimme), friend-f (Standard)
   apiBase: "",
   appSecret: "",
   typeAnswer: false,
