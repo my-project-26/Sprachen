@@ -2,9 +2,20 @@
 // Feste Texte und Stimmen – nichts frei wählbar. Ergebnisse werden einen Tag zwischengespeichert.
 import { wrap, httpError } from "./_llm.js";
 
-const TEXT =
-  "Hello! I'm your new language coach. Let's learn a few words together: the station, the hotel, a difficult question. " +
-  "Take your time and listen carefully. You're doing really well.";
+const TEXTS = {
+  en: {
+    f: "Hello! I'm your new language coach. Let's learn a few words together: the station, the hotel, a difficult question. Take your time and listen carefully. You're doing really well.",
+    m: "Hello! I'm your new language coach. Let's learn a few words together: the station, the hotel, a difficult question. Take your time and listen carefully. You're doing really well.",
+  },
+  it: {
+    f: "Ciao! Sono la tua nuova insegnante. Impariamo insieme qualche parola: la stazione, l'albergo, una domanda difficile. Prenditi il tuo tempo e ascolta con attenzione. Stai andando benissimo.",
+    m: "Ciao! Sono il tuo nuovo insegnante. Impariamo insieme qualche parola: la stazione, l'albergo, una domanda difficile. Prenditi il tuo tempo e ascolta con attenzione. Stai andando benissimo.",
+  },
+  es: {
+    f: "¡Hola! Soy tu nueva profesora. Aprendamos juntos algunas palabras: la estación, el hotel, una pregunta difícil. Tómate tu tiempo y escucha con atención. Lo estás haciendo muy bien.",
+    m: "¡Hola! Soy tu nuevo profesor. Aprendamos juntos algunas palabras: la estación, el hotel, una pregunta difícil. Tómate tu tiempo y escucha con atención. Lo estás haciendo muy bien.",
+  },
+};
 
 export const VOICES = [
   { id: "f1", label: "Frau 1 – sehr liebevoll und warm", voice: "Achernar", style: "Speak very softly, warmly and lovingly, calm and close to the listener, but every word clearly articulated" },
@@ -33,7 +44,8 @@ function wav(pcm, rate = 24000) {
   return Buffer.concat([h, pcm]);
 }
 
-async function tts(v) {
+async function tts(v, lang = "en") {
+  const TEXT = (TEXTS[lang] || TEXTS.en)[v.id[0]];
   const key = process.env.GEMINI_API_KEY;
   if (!key) throw httpError(500, "GEMINI_API_KEY fehlt");
   let last = "";
@@ -55,7 +67,9 @@ async function tts(v) {
 }
 
 export default wrap(async (req, res) => {
-  const id = new URL(req.url, "http://x").searchParams.get("v");
+  const q = new URL(req.url, "http://x").searchParams;
+  const id = q.get("v");
+  const lang = ["en", "it", "es"].includes(q.get("l")) ? q.get("l") : "en";
   if (!id) {
     res.setHeader("content-type", "text/html; charset=utf-8");
     res.end(`<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -66,7 +80,7 @@ ${VOICES.map((v) => `<h3>${v.label}</h3><audio controls preload="none" src="?v=$
   }
   const v = VOICES.find((x) => x.id === id);
   if (!v) throw httpError(404, "Unbekannte Stimme");
-  const buf = await tts(v);
+  const buf = await tts(v, lang);
   res.setHeader("content-type", "audio/wav");
   res.setHeader("cache-control", "public, s-maxage=604800, max-age=86400");
   res.end(buf);

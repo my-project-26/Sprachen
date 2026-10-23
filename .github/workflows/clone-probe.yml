@@ -1,0 +1,61 @@
+name: Stimmprobe (Klonung der gewählten Stimme)
+on:
+  workflow_dispatch:
+    inputs:
+      voice:
+        description: "Stimme (f2, f3, m2, m3)"
+        default: "f2"
+  push:
+    branches: [main]
+    paths: [".github/workflows/clone-probe.yml"]
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      V: ${{ inputs.voice || 'f2' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Vorbild-Stimme holen (Hörprobe vom eigenen Server)
+        run: |
+          exec > >(tee -a /tmp/log.txt) 2>&1
+          sudo apt-get -qq update && sudo apt-get -qq install -y ffmpeg
+          mkdir -p voices/ref-gemini
+          for l in en it es; do
+            f=voices/ref-gemini/$V-$l.wav
+            [ -s $f ] && continue
+            for t in 1 2 3 4 5; do
+              curl -fsS -o $f "https://sprachen-five.vercel.app/api/voice-sample?v=$V&l=$l" && [ $(stat -c%s $f) -gt 60000 ] && break
+              rm -f $f; sleep 30
+            done
+            [ -s $f ] || { echo "Hörprobe $V-$l fehlt"; exit 1; }
+          done
+          ls -la voices/ref-gemini
+      - name: Chatterbox installieren
+        run: |
+          exec > >(tee -a /tmp/log.txt) 2>&1
+          pip install -q torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+          pip install -q chatterbox-tts resemblyzer
+      - name: Probe
+        run: |
+          exec > >(tee -a /tmp/log.txt) 2>&1
+          python tools/clone.py probe $V
+      - name: Hochladen
+        run: |
+          git config user.name "wortwerk-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add voices/ref-gemini probe
+          git commit -q -m "Stimmprobe $V (Klonung)"
+          for i in 1 2 3 4 5; do git pull -q --rebase origin main && git push -q origin HEAD:main && break; sleep 10; done
+      - name: Protokoll bei Fehler
+        if: failure()
+        run: |
+          git config user.name "wortwerk-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git checkout -q --orphan voice-log && git rm -rq --cached . && tail -c 60000 /tmp/log.txt > log.txt
+          git add log.txt && git commit -q -m log && git push -qf origin voice-log
