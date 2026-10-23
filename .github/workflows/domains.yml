@@ -12,8 +12,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: RDAP-Abfrage
         run: |
-          out=probe/domains-pro.txt; mkdir -p probe; : > $out
-          for d in lingowerk.pro lingotales.pro storylingo.pro lexora.pro lingora.pro vocably.pro wordnest.pro wordwave.pro fluentia.pro lingoloop.pro lingofox.pro talewise.pro wordtales.pro lingobloom.pro; do
+          out=probe/domains-pro2.txt; mkdir -p probe; : > $out
+          for d in lingofox.pro talewise.pro wordtales.pro lingobloom.pro storyvox.pro vocabloom.pro lingomint.pro talelingo.pro lingojoy.pro wordbloom.pro; do sleep 4;
             case $d in *.de) u="https://rdap.denic.de/domain/$d";; *) u="https://rdap.org/domain/$d";; esac
             c=$(curl -s -L -o /dev/null -w "%{http_code}" "$u")
             case $c in 404) s=FREI;; 200) s=vergeben;; *) s="unklar ($c)";; esac
