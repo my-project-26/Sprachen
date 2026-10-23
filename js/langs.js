@@ -5,7 +5,7 @@ export const LANGS = {
   en: { name: "Englisch", native: "English", flag: "🇬🇧", en: "English", tts: ["en-US", "en-GB"], mm: "en", hello: "Hello! This is how I will read your words to you." },
   es: { name: "Spanisch", native: "Español", flag: "🇪🇸", en: "Spanish", tts: ["es-ES", "es-MX", "es-US"], mm: "es", hello: "¡Hola! Así voy a leerte tus palabras." },
   fr: { name: "Französisch", native: "Français", flag: "🇫🇷", en: "French", tts: ["fr-FR", "fr-CA"], mm: "fr", hello: "Bonjour ! C'est ainsi que je vais te lire tes mots." },
-  it: { name: "Italienisch", native: "Italiano", flag: "🇮🇹", en: "Italian", tts: ["it-IT"], mm: "it", hello: "Ciao! Così ti leggerò le tue parole." },
+  it: { audio: "/audio-it/", name: "Italienisch", native: "Italiano", flag: "🇮🇹", en: "Italian", tts: ["it-IT"], mm: "it", hello: "Ciao! Così ti leggerò le tue parole." },
   pl: { name: "Polnisch", native: "Polski", flag: "🇵🇱", en: "Polish", tts: ["pl-PL"], mm: "pl", hello: "Cześć! Tak będę ci czytać twoje słowa." },
   ru: { name: "Russisch", native: "Русский", flag: "🇷🇺", en: "Russian", tts: ["ru-RU"], mm: "ru", reading: "Umschrift", hello: "Привет! Так я буду читать тебе слова." },
   ja: { name: "Japanisch", native: "日本語", flag: "🇯🇵", en: "Japanese", tts: ["ja-JP"], mm: "ja", reading: "Lesung", cjk: true, hello: "こんにちは！このように単語を読みます。" },

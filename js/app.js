@@ -1645,7 +1645,7 @@ function settingsView() {
       (b.onclick = async () => {
         if (b.dataset.lang === S.lang()) return;
         await S.setLanguage(b.dataset.lang);
-        tts.setLang(S.lang(), L().tts);
+        tts.setLang(S.lang(), L().tts, L().audio);
         applyDesign(settings().design);
         toast(`${L().flag} Du lernst jetzt ${L().name}`);
         go("#/");
@@ -1741,7 +1741,7 @@ function settingsView() {
 // Mit Konten: erst anmelden, dann den eigenen Fortschritt aus der Cloud laden
 if (await cloud.start()) {
   await S.init();
-  tts.setLang(S.lang(), L().tts);
+  tts.setLang(S.lang(), L().tts, L().audio);
   applyDesign(settings().design);
   render();
 } else {

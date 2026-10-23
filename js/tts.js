@@ -9,17 +9,19 @@ const synth = typeof window !== "undefined" ? window.speechSynthesis : null;
 let voices = [];
 // Aktuelle Lernsprache: Code (z. B. "es") und bevorzugte Regionen (z. B. ["es-ES", "es-MX"])
 let LANG = { code: "en", tts: ["en-US", "en-GB"] };
-export function setLang(code, tts) {
+export function setLang(code, tts, audioBase) {
   LANG = { code, tts: tts && tts.length ? tts : [code] };
   loadVoices();
-  loadAudioIndex(code);
+  // Aufnahmen: Standard im Ordner audio/<sprache>/ dieser Website; weitere Sprachen
+  // liegen in eigenen Repos (z. B. /audio-it/it/), weil GitHub Pages pro Repo ~1 GB erlaubt.
+  loadAudioIndex(code, `${audioBase || "audio/"}${code}/`);
 }
 
 // ---------- Natürliche Stimme: fertige MP3-Aufnahmen (audio/<sprache>/) ----------
 // Für jedes Wort und jeden Beispielsatz gibt es eine Aufnahme einer neuronalen
 // Stimme (erzeugt mit tools/make-audio.py). Fehlt eine Aufnahme (z. B. bei
 // KI-Geschichten), liest die Gerätestimme vor.
-let AUDIO = { code: null, keys: null, voice: "" };
+let AUDIO = { code: null, keys: null, voice: "", base: "" };
 let natural = true;
 let current = null; // laufende Aufnahme
 
@@ -29,13 +31,13 @@ export function setNatural(on) {
 export function naturalAvailable() {
   return !!(AUDIO.keys && AUDIO.keys.size);
 }
-async function loadAudioIndex(code) {
-  AUDIO = { code, keys: null, voice: "" };
+async function loadAudioIndex(code, base) {
+  AUDIO = { code, keys: null, voice: "", base };
   try {
-    const r = await fetch(`audio/${code}/index.json`, { cache: "no-cache" });
+    const r = await fetch(`${base}index.json`, { cache: "no-cache" });
     if (!r.ok) return;
     const j = await r.json();
-    if (AUDIO.code === code) AUDIO = { code, keys: new Set(j.keys || []), voice: j.voice || "" };
+    if (AUDIO.code === code) AUDIO = { code, keys: new Set(j.keys || []), voice: j.voice || "", base };
   } catch {
     /* offline oder noch keine Aufnahmen */
   }
@@ -192,7 +194,7 @@ export function speak(text, { rate = 0.95, preset = "clear-f", onend } = {}) {
   if (natural && AUDIO.keys) {
     const key = audioKey(text);
     if (AUDIO.keys.has(key)) {
-      const a = new Audio(`audio/${AUDIO.code}/${key}.mp3`);
+      const a = new Audio(`${AUDIO.base}${key}.mp3`);
       a.playbackRate = audioRate(rate);
       a.preservesPitch = true;
       current = a;

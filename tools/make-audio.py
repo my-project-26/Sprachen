@@ -27,6 +27,9 @@ import unicodedata
 import edge_tts
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# Zielordner der Aufnahmen: Standard audio/ in diesem Repo; für eigene
+# Audio-Repos (audio-it …) per AUDIO_DIR auf deren Ordner umstellbar.
+AUDIO_DIR = os.path.abspath(os.environ.get("AUDIO_DIR") or os.path.join(ROOT, "audio"))
 
 # Eine Stimme je Sprache (weiblich, neuronal)
 VOICES = {
@@ -154,9 +157,9 @@ def checkpoint(folder, voice, force=False):
     write_index(folder, voice)
     import subprocess
 
-    sh = lambda *c: subprocess.run(c, cwd=ROOT, check=False)
-    sh("git", "add", "audio")
-    if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=ROOT).returncode == 0:
+    sh = lambda *c: subprocess.run(c, cwd=AUDIO_DIR, check=False)
+    sh("git", "add", "-A", ".")
+    if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=AUDIO_DIR).returncode == 0:
         return
     sh("git", "commit", "-q", "-m", "Sprachaufnahmen (Zwischenstand)")
     sh("git", "pull", "-q", "--rebase", "origin", "main")
@@ -172,7 +175,7 @@ async def build(arg, deadline):
     if not voice or not texts:
         print(f"{lang}: keine Wortliste/Stimme – übersprungen")
         return True
-    folder = os.path.join(ROOT, "audio", lang)
+    folder = os.path.join(AUDIO_DIR, lang)
     os.makedirs(folder, exist_ok=True)
     todo = [(t, os.path.join(folder, audio_key(t) + ".mp3")) for t in texts]
     todo = [(t, p) for t, p in todo if not os.path.exists(p)]
