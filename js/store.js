@@ -20,7 +20,7 @@ function readGlobal() {
         g.designV = 3;
       }
       // entfernte Stimm-Profile auf die neuen umstellen
-      const VP = { "clear-f": "frau2", "clear-m": "frau2", "friend-m": "frau2", "strict-m": "frau2", "deep-m": "frau2", "sexy-f": "frau2", "strict-f": "frau2", rauer: "frau2", entspannt: "frau2", mann1: "frau2", mann2: "frau2" };
+      const VP = { "clear-f": "frau2", "clear-m": "mann2", "friend-m": "mann2", "strict-m": "mann2", "deep-m": "mann2", "sexy-f": "frau2", "strict-f": "frau2", rauer: "frau3", entspannt: "frau2", mann1: "mann2" };
       if (VP[g.voicePreset]) g.voicePreset = VP[g.voicePreset];
       return g;
     }

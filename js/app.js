@@ -3,7 +3,7 @@ import * as S from "./store.js";
 import { schedule, preview, formatInterval, DAY, startOfDay } from "./fsrs.js";
 import { TOPICS, LEVELS } from "./words.js";
 import { storyPrompt, STORY_SYSTEM, extractJson } from "./prompts.js";
-import { callApi, health, normalizeStory, isStaticHost, decodeStory } from "./api.js";
+import { callApi, health, normalizeStory, isStaticHost, decodeStory, DEFAULT_SERVER } from "./api.js";
 import * as tts from "./tts.js";
 import { DESIGNS, designKey, applyDesign, skinHome, skinCard } from "./skins.js";
 import * as cloud from "./cloud.js";
@@ -843,6 +843,13 @@ function storyNew() {
   };
 }
 
+// Stand der Aufnahmen einer Stimme für die Einstellungen
+function voiceStatus(key) {
+  const pr = tts.presetProgress(key);
+  if (pr >= 0.98) return "";
+  return pr > 0 ? ` · Aufnahmen: ${Math.round(pr * 100)} % fertig` : " · Aufnahmen folgen – 🔊 spielt die Hörprobe";
+}
+
 // Wort-für-Wort-Übersetzung im Hintergrund nachladen (Schritt 2 der Geschichte)
 const DECODING = new Set();
 function decodeLater(st) {
@@ -1667,7 +1674,7 @@ function settingsView() {
       const cur = tts.resolvePreset(s.voicePreset).preset.key;
       return `<label class="voice-opt ${ok ? "" : "na"}">
         <input type="radio" name="vp" value="${p.key}" ${cur === p.key ? "checked" : ""} ${ok ? "" : "disabled"}>
-        <span class="vo-text"><b>${esc(p.label)}</b><small class="muted" data-vhint="${p.key}">${esc(tts.presetHint(p))}${rec ? "" : " · Aufnahmen werden gerade erstellt"}</small></span>
+        <span class="vo-text"><b>${esc(p.label)}</b><small class="muted" data-vhint="${p.key}">${esc(tts.presetHint(p))}${voiceStatus(p.key)}</small></span>
         <button type="button" class="icon-btn small" data-try="${p.key}" ${ok ? "" : "disabled"} aria-label="Probe hören">${ICON.speaker}</button>
       </label>`;
     }).join("")}</div>
@@ -1748,6 +1755,8 @@ function settingsView() {
       (b.onclick = (e) => {
         e.preventDefault();
         tts.setNatural(false);
+        // Eigene Stimmen: die Original-Hörprobe vorspielen, solange noch nicht alles aufgenommen ist
+        if (tts.presetProgress(b.dataset.try) < 0.98 && tts.playSample(b.dataset.try, st.settings.apiBase || DEFAULT_SERVER)) return;
         tts.speak(L().hello, { rate: st.settings.voiceRate, preset: b.dataset.try });
       })
   );
@@ -1808,7 +1817,7 @@ function settingsView() {
   tts.voicesReady().then(() =>
     document.querySelectorAll("[data-vhint]").forEach((el) => {
       const p = tts.PRESETS.find((x) => x.key === el.dataset.vhint);
-      if (p) el.textContent = tts.presetHint(p) + (tts.presetRecorded(p.key) ? "" : " · Aufnahmen werden gerade erstellt");
+      if (p) el.textContent = tts.presetHint(p) + voiceStatus(p.key);
     })
   );
   const provSel = document.getElementById("s-provider");
