@@ -257,25 +257,29 @@ const CARD = {
     const sticker = `
       <article class="aw-card ${x.revealed ? "flip" : ""}">
         <div class="aw-tag">${esc(x.topic)} · ${c.level}${x.isNew ? " · <b>neu</b>" : ""}</div>
-        <div class="aw-q">${x.revealed ? "Die Lösung" : `Wie heißt das auf ${esc(x.langName)}?`}</div>
+        ${x.revealed ? "" : `<div class="aw-q">Wie heißt das auf ${esc(x.langName)}?</div>`}
         <div class="aw-de">${esc(c.de)}</div>
         ${x.revealed ? `<div class="aw-en">${x.enHtml}</div>${x.ui.typed}` : ""}
         ${c.ex ? `<div class="aw-ex"><p class="ex">${x.revealed ? x.exMarked : x.cloze}</p>${c.exDe ? `<p class="ex-de">${x.exDeMarked}</p>` : ""}</div>` : ""}
-        ${x.revealed ? x.ui.note : x.ui.hint + x.ui.input}
+        ${x.revealed ? (c.note ? `<p class="aw-note">💡 ${esc(c.note)}</p>` : "") : x.ui.hint + x.ui.input}
       </article>`;
+    const SPD = ["🐢", "🚶", "🐇"];
+    const tools = `<div class="aw-tools">
+        <button class="aw-tool" data-say="${esc(c.en)}"><i>🔊</i><span>Wort</span></button>
+        ${c.ex ? `<button class="aw-tool" data-say="${esc(x.exPlain)}"><i>💬</i><span>Satz</span></button>` : ""}
+        ${x.ui.mic ? `<button class="aw-tool mic-btn" data-mic="${esc(c.en)}"><i>🎤</i><span>Sprechen</span></button>` : ""}
+        <button class="aw-tool aw-speed" data-speed="${(x.ui.speedIdx + 1) % 3}" data-replay="${esc(c.en)}" aria-label="Tempo ändern"><i>${SPD[x.ui.speedIdx]}</i><span>${x.ui.speedLabel}</span></button>
+        <p class="mic-res small" aria-live="polite"></p>
+      </div>`;
     const actions = x.revealed
-      ? `<div class="aw-row ${x.ui.mic ? "three" : ""}">
-           <button class="aw-chip" data-say="${esc(c.en)}">🔊 Wort</button>
-           ${c.ex ? `<button class="aw-chip" data-say="${esc(x.exPlain)}">🔊 Satz</button>` : ""}
-           ${x.ui.mic}
-         </div>
-         ${x.ui.speed}
+      ? `${tools}
          <p class="aw-ask">Wusstest du es?</p>
          <div class="aw-grades">
            <button class="grade g1 aw-btn coral" data-g="1"><span>Nein</span><small>gleich nochmal</small></button>
            <button class="grade g2 aw-btn sun" data-g="2"><span>Fast</span><small>${x.practice ? "Übung" : "in " + longIv(x.iv2)}</small></button>
            <button class="grade g3 aw-btn mint" data-g="3"><span>Ja!</span><small>${x.practice ? "Übung" : "in " + longIv(x.iv3)}</small></button>
-         </div>${x.ui.known}`
+         </div>
+         <button class="aw-known" id="knownBtn">Kenne ich schon – nicht mehr abfragen</button>`
       : `<button class="aw-btn grape big" id="reveal">Lösung zeigen</button>
          <button class="aw-chip wide" id="hintBtn">💡 Tipp</button>`;
     return `${x.ui.header}${sticker}<div class="flash-actions aw-actions">${actions}</div>`;

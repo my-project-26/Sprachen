@@ -86,8 +86,9 @@ export function bindMic(root) {
     (b) =>
       (b.onclick = async () => {
         const out = b.parentElement.querySelector(".mic-res");
+        const label = b.querySelector("span").textContent;
         b.classList.add("rec");
-        b.querySelector("span").textContent = "Ich höre zu …";
+        b.querySelector("span").textContent = "Ich höre …";
         out.textContent = "";
         try {
           const heard = await listenOnce();
@@ -99,7 +100,7 @@ export function bindMic(root) {
           out.textContent = e.message;
         }
         b.classList.remove("rec");
-        b.querySelector("span").textContent = "Nachsprechen";
+        b.querySelector("span").textContent = label;
       })
   );
 }

@@ -52,6 +52,7 @@ function rateSlider(id, replay = "") {
 function bindRateSlider() {
   /* Tempowahl wird global über einen Klick-Listener bedient (siehe unten) */
 }
+const SPEED_IC = ["🐢", "🚶", "🐇"];
 document.addEventListener("click", (e) => {
   const b = e.target.closest("[data-speed]");
   if (!b) return;
@@ -66,8 +67,13 @@ document.addEventListener("click", (e) => {
     x.classList.toggle("on", on);
     x.setAttribute("aria-pressed", on);
   });
+  // kompakte Tempo-Taste (Design „Award“): zeigt aktuelles Tempo, Tippen = nächstes
+  document.querySelectorAll(".aw-speed").forEach((x) => {
+    x.dataset.speed = String((i + 1) % tts.RATE_STEPS.length);
+    x.innerHTML = `<i>${SPEED_IC[i]}</i><span>${st.label}</span>`;
+  });
   if (!tts.setRate(st.rate)) {
-    const replay = b.closest(".speed")?.dataset.replay || "";
+    const replay = b.closest(".speed")?.dataset.replay || b.dataset.replay || "";
     if (replay) say(replay);
   }
 }, true);
@@ -539,6 +545,8 @@ function showCard(revealed = false, typed = null) {
           ${c.ex ? `<button class="btn ghost listen" data-say="${esc(plain(c.ex))}">${ICON.speaker}<span>Satz anhören</span></button>` : ""}</div>${rateSlider("", c.en)}${micBlock(c.en)}`,
         speed: rateSlider("", c.en),
         mic: micBlock(c.en),
+        speedIdx: tts.stepOfRate(settings().voiceRate),
+        speedLabel: tts.RATE_STEPS[tts.stepOfRate(settings().voiceRate)].label,
         note: c.note ? `<p class="note ${noteFF ? "ff" : ""}">${esc(c.note)}</p>` : "",
         known: `<button class="btn ghost known-btn" id="knownBtn">Kenne ich schon – nicht mehr abfragen</button>`,
       },
