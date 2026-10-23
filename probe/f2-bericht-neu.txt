@@ -1,0 +1,12 @@
+it  72.7s  Ähnlichkeit 0.82  Störanteil 0.00  La banca è chiusa.
+it  57.0s  Ähnlichkeit 0.81  Störanteil 0.00  C'è una farmacia qui?
+it  26.7s  Ähnlichkeit 0.87  Störanteil 0.00  La scuola è vicina.
+it  30.1s  Ähnlichkeit 0.87  Störanteil 0.04  L'Italia è un bel paese.
+it  50.3s  Ähnlichkeit 0.70  Störanteil 0.00  Un regalo per te.
+it: mittlere Ähnlichkeit 0.82
+es  52.4s  Ähnlichkeit 0.81  Störanteil 0.00  Juega un papel importante.
+es  45.8s  Ähnlichkeit 0.90  Störanteil 0.04  Este puente nos vamos a la playa.
+es  68.8s  Ähnlichkeit 0.88  Störanteil 0.06  Me levanto a las seis.
+es  30.6s  Ähnlichkeit 0.82  Störanteil 0.05  Hoy me desperté a las cinco.
+es  28.2s  Ähnlichkeit 0.86  Störanteil 0.00  Me acuesto a las once.
+es: mittlere Ähnlichkeit 0.85
