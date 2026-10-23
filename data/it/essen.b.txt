@@ -1,0 +1,65 @@
+# Italienisch – Essen, Einkaufen, Konsum B2/C1
+## B2
+la materia prima | der Rohstoff | n | *Materie prime* di qualità. | Hochwertige *Zutaten*. |
+il prodotto tipico | die regionale Spezialität | n | I *prodotti tipici* della Puglia. | Die *Spezialitäten* Apuliens. |
+la DOP | die geschützte Ursprungsbezeichnung | n | Un formaggio *DOP*. | Ein Käse mit *g.U.* | denominazione di origine protetta
+il chilometro zero | regional, aus der Nähe | n | Prodotti a *chilometro zero*. | Produkte *aus der Region*. |
+la filiera corta | die kurze Lieferkette | n | Comprare dalla *filiera corta*. | Direkt *beim Erzeuger* kaufen. |
+il GAS | die Einkaufsgemeinschaft | n | Faccio parte di un *GAS*. | Ich bin in einer *Einkaufsgemeinschaft*. | gruppo di acquisto solidale
+il mercato contadino | der Bauernmarkt | n | Il *mercato contadino* del sabato. | Der Samstags-*Bauernmarkt*. |
+la stagionalità | die Saisonalität | n | Rispettare la *stagionalità*. | Die *Saison* beachten. |
+di stagione | saisonal | phrase | Frutta *di stagione*. | *Saisonales* Obst. |
+la conservazione | die Haltbarmachung | n | La *conservazione* degli alimenti. | Die *Konservierung* von Lebensmitteln. |
+il conservante | der Konservierungsstoff | n | Senza *conservanti*. | Ohne *Konservierungsstoffe*. |
+la data di scadenza | das Mindesthaltbarkeitsdatum | n | Controlla la *data di scadenza*. | Prüf das *Haltbarkeitsdatum*. |
+scaduto | abgelaufen | adj | Lo yogurt è *scaduto*. | Der Joghurt ist *abgelaufen*. |
+surgelato | tiefgekühlt | adj | Verdure *surgelate*. | *Tiefkühl*gemüse. |
+l'etichetta | das Etikett | n | Leggere l'*etichetta*. | Das *Etikett* lesen. | weiblich (f)
+gli additivi | die Zusatzstoffe | n | Senza *additivi* chimici. | Ohne chemische *Zusatzstoffe*. |
+l'intolleranza | die Unverträglichkeit | n | Un'*intolleranza* al lattosio. | Eine Laktose*intoleranz*. | weiblich (f)
+la celiachia | die Zöliakie | n | Menù per chi soffre di *celiachia*. | Menü für Menschen mit *Zöliakie*. |
+la cucina regionale | die Regionalküche | n | La *cucina regionale* siciliana. | Die sizilianische *Regionalküche*. |
+lo chef | der Chefkoch | n | Uno *chef* stellato. | Ein Sterne*koch*. |
+la stella Michelin | der Michelin-Stern | n | Un ristorante con una *stella Michelin*. | Ein Restaurant mit einem *Michelin-Stern*. |
+l'abbinamento | die Kombination (Speise–Wein) | n | Un *abbinamento* perfetto. | Eine perfekte *Kombination*. | männlich (m)
+il sommelier | der Sommelier | n | Il *sommelier* consiglia un Barolo. | Der *Sommelier* empfiehlt einen Barolo. |
+la degustazione | die Verkostung | n | Una *degustazione* di vini. | Eine Wein*probe*. |
+il tagliere | das Schneidebrett; die Brotzeitplatte | n | Un *tagliere* di salumi. | Eine *Wurstplatte*. |
+il soffritto | das angeschwitzte Gemüse | n | Preparare il *soffritto*. | Das *Suppengemüse anschwitzen*. |
+mantecare | cremig rühren | v | *Mantecare* il risotto. | Das Risotto *cremig rühren*. |
+sfumare | ablöschen | v | *Sfumare* con il vino bianco. | Mit Weißwein *ablöschen*. |
+rosolare | anbraten | v | *Rosolare* la carne. | Das Fleisch *anbraten*. |
+impastare | kneten | v | *Impastare* la pizza. | Den Pizzateig *kneten*. |
+lievitare | gehen (Teig) | v | Lasciare *lievitare* due ore. | Zwei Stunden *gehen* lassen. |
+il consumatore | der Verbraucher | n | I diritti del *consumatore*. | Die *Verbraucher*rechte. |
+il potere d'acquisto | die Kaufkraft | n | Il *potere d'acquisto* cala. | Die *Kaufkraft* sinkt. |
+il carrello | der Einkaufswagen; Warenkorb | n | Aggiungi al *carrello*. | In den *Warenkorb* legen. |
+il pagamento contactless | die kontaktlose Zahlung | n | Accettiamo il *pagamento contactless*. | Wir akzeptieren *kontaktlose Zahlung*. |
+## C1
+lo spreco alimentare | die Lebensmittelverschwendung | n | Ridurre lo *spreco alimentare*. | *Lebensmittelverschwendung* reduzieren. |
+la sovranità alimentare | die Ernährungssouveränität | n | Il dibattito sulla *sovranità alimentare*. | Die Debatte über *Ernährungssouveränität*. |
+la sicurezza alimentare | die Lebensmittelsicherheit | n | Controlli di *sicurezza alimentare*. | Kontrollen der *Lebensmittelsicherheit*. |
+la tracciabilità | die Rückverfolgbarkeit | n | La *tracciabilità* della carne. | Die *Rückverfolgbarkeit* des Fleisches. |
+l'agroalimentare | die Lebensmittelbranche | n | L'export dell'*agroalimentare*. | Der Export der *Lebensmittelbranche*. | männlich (m)
+l'Italian sounding | die Imitation italienischer Produkte | n | Il danno dell'*Italian sounding*. | Der Schaden durch *Fake-Italo-Produkte*. | männlich (m)
+la contraffazione | die Fälschung | n | La *contraffazione* alimentare. | Die Lebensmittel*fälschung*. |
+il marchio di qualità | das Gütesiegel | n | Un *marchio di qualità*. | Ein *Gütesiegel*. |
+il disciplinare | die Herstellungsvorschrift | n | Il *disciplinare* del Parmigiano. | Die *Produktionsvorschriften* für Parmesan. |
+la stagionatura | die Reifung (Käse) | n | Ventiquattro mesi di *stagionatura*. | Vierundzwanzig Monate *Reifung*. |
+l'invecchiamento in botte | die Fassreifung | n | Un vino con *invecchiamento in botte*. | Ein Wein mit *Fassreifung*. | männlich (m)
+il retrogusto | der Nachgeschmack | n | Un *retrogusto* amarognolo. | Ein leicht bitterer *Nachgeschmack*. |
+il bouquet | das Bukett (Wein) | n | Un *bouquet* fruttato. | Ein fruchtiges *Bukett*. |
+corposo | vollmundig | adj | Un vino rosso *corposo*. | Ein *vollmundiger* Rotwein. |
+sapido | würzig, salzig | adj | Un formaggio *sapido*. | Ein *würziger* Käse. |
+la cucina fusion | die Fusionsküche | n | Un locale di *cucina fusion*. | Ein Lokal mit *Fusionsküche*. |
+la rivisitazione | die Neuinterpretation | n | Una *rivisitazione* della carbonara. | Eine *Neuinterpretation* der Carbonara. |
+il consumismo | der Konsumismus | n | Critica al *consumismo*. | Kritik am *Konsumdenken*. |
+l'acquisto compulsivo | der Kaufzwang | n | Il rischio dell'*acquisto compulsivo*. | Die Gefahr des *Kaufrauschs*. | männlich (m)
+la fidelizzazione | die Kundenbindung | n | Programmi di *fidelizzazione*. | *Kundenbindungs*programme. |
+la tessera fedeltà | die Kundenkarte | n | Ha la *tessera fedeltà*? | Haben Sie eine *Kundenkarte*? |
+il caro prezzi | die Teuerung | n | Il *caro prezzi* colpisce le famiglie. | Die *Teuerung* trifft die Familien. |
+il caro bollette | die hohen Energiekosten | n | Aiuti contro il *caro bollette*. | Hilfen gegen die *hohen Energierechnungen*. |
+il paniere | der Warenkorb (Statistik) | n | Il *paniere* ISTAT. | Der ISTAT-*Warenkorb*. |
+il commercio equo e solidale | der faire Handel | n | Caffè del *commercio equo e solidale*. | Kaffee aus *fairem Handel*. |
+il pagamento rateale | die Ratenzahlung | n | Acquisto con *pagamento rateale*. | Kauf auf *Raten*. |
+il recesso | der Rücktritt, Widerruf | n | Esercitare il diritto di *recesso*. | Das *Widerrufsrecht* ausüben. |

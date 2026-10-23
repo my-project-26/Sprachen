@@ -1,0 +1,60 @@
+# Italienisch – Schule & Bildung
+## A1
+la scuola | die Schule | n | Vado a *scuola*. | Ich gehe in die *Schule*. |
+la classe | die Klasse | n | Siamo in *classe*. | Wir sind im *Klassenzimmer*. |
+la lezione | der Unterricht, die Stunde | n | La *lezione* comincia alle otto. | Der *Unterricht* beginnt um acht. |
+il quaderno | das Heft | n | Scrivi sul *quaderno*. | Schreib ins *Heft*. |
+la penna | der Kugelschreiber | n | Hai una *penna*? | Hast du einen *Kuli*? |
+la matita | der Bleistift | n | Una *matita* e una gomma. | Ein *Bleistift* und ein Radiergummi. |
+il professore | der Lehrer (höhere Schule) | n | Il *professore* di matematica. | Der Mathe*lehrer*. | weiblich: la professoressa
+l'esempio | das Beispiel | n | Per *esempio*. | Zum *Beispiel*. | männlich (m)
+la parola | das Wort | n | Una *parola* nuova. | Ein neues *Wort*. |
+la lingua | die Sprache; die Zunge | n | Parlo tre *lingue*. | Ich spreche drei *Sprachen*. |
+## A2
+l'università | die Universität | n | Studio all'*università*. | Ich studiere an der *Uni*. | weiblich (f), unveränderlich
+studiare | lernen; studieren | v | *Studio* per l'esame. | Ich *lerne* für die Prüfung. |
+l'esame | die Prüfung | n | Ho superato l'*esame*. | Ich habe die *Prüfung* bestanden. | männlich (m)
+il voto | die Note; die Stimme (Wahl) | n | Ho preso un bel *voto*. | Ich habe eine gute *Note* bekommen. |
+i compiti | die Hausaufgaben | n | Hai fatto i *compiti*? | Hast du die *Hausaufgaben* gemacht? |
+la materia | das Schulfach | n | La mia *materia* preferita è storia. | Mein Lieblings*fach* ist Geschichte. |
+la matematica | die Mathematik | n | La *matematica* è difficile. | *Mathe* ist schwer. |
+la storia | die Geschichte | n | La *storia* di Roma. | Die *Geschichte* Roms. |
+la geografia | die Erdkunde | n | Ho un test di *geografia*. | Ich habe einen *Erdkunde*test. |
+le scienze | die Naturwissenschaften | n | Mi piacciono le *scienze*. | Ich mag *Naturwissenschaften*. |
+l'inglese | Englisch | n | Parlo *inglese*. | Ich spreche *Englisch*. | männlich (m)
+il dizionario | das Wörterbuch | n | Cerca nel *dizionario*. | Schlag im *Wörterbuch* nach. |
+la frase | der Satz | n | Leggi la *frase*. | Lies den *Satz*. |
+tradurre | übersetzen | v | Puoi *tradurre* questo? | Kannst du das *übersetzen*? | traduco
+ripetere | wiederholen | v | Può *ripetere*, per favore? | Können Sie das bitte *wiederholen*? |
+sbagliare | einen Fehler machen | v | Ho *sbagliato*. | Ich habe mich *geirrt*. |
+l'errore | der Fehler | n | Un *errore* di grammatica. | Ein Grammatik*fehler*. | männlich (m)
+la biblioteca | die Bibliothek | n | Studio in *biblioteca*. | Ich lerne in der *Bibliothek*. |
+lo zaino | der Schulranzen | n | Lo *zaino* è pesante. | Der *Ranzen* ist schwer. |
+la lavagna | die Tafel | n | Scrivi alla *lavagna*. | Schreib an die *Tafel*. |
+## B1
+la scuola elementare | die Grundschule | n | Mio figlio va alla *scuola elementare*. | Mein Sohn geht in die *Grundschule*. | auch: la primaria
+la scuola media | die Mittelschule (Kl. 6–8) | n | È in terza *media*. | Er ist in der 8. Klasse. |
+il liceo | das Gymnasium | n | Frequento il *liceo* classico. | Ich besuche das humanistische *Gymnasium*. |
+la maturità | das Abitur | n | Ho fatto la *maturità* nel 2010. | Ich habe 2010 *Abitur* gemacht. |
+la laurea | der Hochschulabschluss | n | Ha una *laurea* in medicina. | Sie hat einen Abschluss in Medizin. |
+laurearsi | den Abschluss machen (Uni) | v | Mi sono *laureato* a Bologna. | Ich habe in Bologna *abgeschlossen*. |
+la facoltà | die Fakultät | n | La *facoltà* di lettere. | Die philosophische *Fakultät*. |
+la borsa di studio | das Stipendium | n | Ha vinto una *borsa di studio*. | Sie hat ein *Stipendium* bekommen. |
+la tesi | die Abschlussarbeit | n | Scrivo la *tesi*. | Ich schreibe meine *Abschlussarbeit*. | unveränderlich
+il corso | der Kurs | n | Un *corso* d'italiano. | Ein Italienisch*kurs*. |
+iscriversi | sich anmelden, einschreiben | v | Mi sono *iscritto* al corso. | Ich habe mich zum Kurs *angemeldet*. |
+la lezione privata | die Nachhilfe | n | Prende *lezioni private*. | Er bekommt *Nachhilfe*. | auch: ripetizioni
+superare | bestehen; übertreffen | v | Ho *superato* l'esame. | Ich habe die Prüfung *bestanden*. |
+bocciare | durchfallen lassen | v | Mi hanno *bocciato*. | Ich bin *durchgefallen*. |
+la pagella | das Zeugnis | n | Una bella *pagella*. | Ein gutes *Zeugnis*. |
+la ricreazione | die Pause (Schule) | n | Giochiamo durante la *ricreazione*. | Wir spielen in der *Pause*. | auch: l'intervallo
+la grammatica | die Grammatik | n | La *grammatica* italiana. | Die italienische *Grammatik*. |
+il verbo | das Verb | n | Un *verbo* irregolare. | Ein unregelmäßiges *Verb*. |
+la pronuncia | die Aussprache | n | La tua *pronuncia* è ottima. | Deine *Aussprache* ist sehr gut. |
+madrelingua | Muttersprachler | n | È *madrelingua* italiana. | Sie ist italienische *Muttersprachlerin*. |
+il riassunto | die Zusammenfassung | n | Scrivi un *riassunto*. | Schreib eine *Zusammenfassung*. |
+il tema | der Aufsatz; das Thema | n | Un *tema* sulle vacanze. | Ein *Aufsatz* über die Ferien. | männlich trotz -a
+imparare a memoria | auswendig lernen | phrase | *Impara* la poesia *a memoria*. | Lern das Gedicht *auswendig*. |
+la conoscenza | das Wissen, die Kenntnis | n | Ha una buona *conoscenza* dell'inglese. | Er hat gute Englisch*kenntnisse*. |
+la formazione | die Ausbildung | n | La *formazione* professionale. | Die Berufs*ausbildung*. |
+l'apprendista | der Lehrling | n | Lavora come *apprendista*. | Er arbeitet als *Lehrling*. |

@@ -1,0 +1,89 @@
+# Italienisch – Freizeit, Sport, Kultur, Wetter
+## A1
+il tempo libero | die Freizeit | n | Che cosa fai nel *tempo libero*? | Was machst du in deiner *Freizeit*? |
+lo sport | der Sport | n | Faccio *sport* ogni giorno. | Ich mache jeden Tag *Sport*. |
+il calcio | der Fußball | n | Giochiamo a *calcio*. | Wir spielen *Fußball*. |
+la musica | die Musik | n | Ascolto *musica*. | Ich höre *Musik*. |
+il film | der Film | n | Un *film* italiano. | Ein italienischer *Film*. |
+il cinema | das Kino | n | Andiamo al *cinema*? | Gehen wir ins *Kino*? |
+il libro | das Buch | n | Leggo un *libro*. | Ich lese ein *Buch*. |
+la festa | das Fest, die Party | n | Una *festa* di compleanno. | Eine Geburtstags*party*. |
+ballare | tanzen | v | Ti piace *ballare*? | *Tanzt* du gern? |
+cantare | singen | v | *Canta* molto bene. | Sie *singt* sehr gut. |
+il tempo | das Wetter; die Zeit | n | Che *tempo* fa? | Wie ist das *Wetter*? |
+il sole | die Sonne | n | C'è il *sole*. | Die *Sonne* scheint. |
+la pioggia | der Regen | n | Sotto la *pioggia*. | Im *Regen*. |
+piovere | regnen | v | *Piove*. | Es *regnet*. |
+la neve | der Schnee | n | La *neve* è bianca. | Der *Schnee* ist weiß. |
+il vento | der Wind | n | C'è *vento*. | Es ist *windig*. |
+fa caldo | es ist warm | phrase | Oggi *fa caldo*. | Heute *ist es warm*. |
+fa freddo | es ist kalt | phrase | D'inverno *fa freddo*. | Im Winter *ist es kalt*. |
+la primavera | der Frühling | n | In *primavera*. | Im *Frühling*. |
+l'estate | der Sommer | n | D'*estate* andiamo al mare. | Im *Sommer* fahren wir ans Meer. | weiblich (f)
+l'autunno | der Herbst | n | In *autunno* cadono le foglie. | Im *Herbst* fallen die Blätter. | männlich (m)
+l'inverno | der Winter | n | L'*inverno* è lungo. | Der *Winter* ist lang. | männlich (m)
+## A2
+l'hobby | das Hobby | n | Il mio *hobby* è la fotografia. | Mein *Hobby* ist Fotografie. | männlich (m)
+la partita | das Spiel (Sport) | n | Guardiamo la *partita*. | Wir schauen das *Spiel*. |
+la squadra | die Mannschaft | n | La mia *squadra* ha vinto. | Meine *Mannschaft* hat gewonnen. |
+il giocatore | der Spieler | n | Un bravo *giocatore*. | Ein guter *Spieler*. |
+la palestra | das Fitnessstudio | n | Vado in *palestra*. | Ich gehe ins *Fitnessstudio*. |
+la piscina | das Schwimmbad | n | Andiamo in *piscina*. | Wir gehen ins *Schwimmbad*. |
+correre | joggen, laufen | v | *Corro* nel parco. | Ich *jogge* im Park. |
+sciare | Ski fahren | v | *Sciamo* sulle Alpi. | Wir *fahren* in den Alpen *Ski*. |
+andare in bicicletta | Rad fahren | phrase | *Vado in bicicletta* la domenica. | Sonntags *fahre* ich *Rad*. |
+il concerto | das Konzert | n | Un *concerto* rock. | Ein Rock*konzert*. |
+il teatro | das Theater | n | Stasera andiamo a *teatro*. | Heute Abend gehen wir ins *Theater*. |
+la mostra | die Ausstellung | n | Una *mostra* di Caravaggio. | Eine Caravaggio-*Ausstellung*. |
+il quadro | das Gemälde | n | Un *quadro* famoso. | Ein berühmtes *Gemälde*. |
+la canzone | das Lied | n | Una *canzone* italiana. | Ein italienisches *Lied*. |
+suonare | spielen (Instrument); klingeln | v | *Suono* la chitarra. | Ich *spiele* Gitarre. |
+il pianoforte | das Klavier | n | Suona il *pianoforte*. | Er spielt *Klavier*. |
+disegnare | zeichnen | v | Mi piace *disegnare*. | Ich *zeichne* gern. |
+la passeggiata | der Spaziergang | n | Facciamo una *passeggiata*. | Machen wir einen *Spaziergang*. |
+il parco | der Park | n | Giochiamo nel *parco*. | Wir spielen im *Park*. |
+divertirsi | sich amüsieren | v | Ci siamo *divertiti*. | Wir hatten *Spaß*. |
+annoiarsi | sich langweilen | v | Mi *annoio*. | Mir ist *langweilig*. |
+invitare | einladen | v | Ti *invito* alla festa. | Ich *lade* dich zur Party *ein*. |
+nuvoloso | bewölkt | adj | Il cielo è *nuvoloso*. | Der Himmel ist *bewölkt*. |
+la nuvola | die Wolke | n | Ci sono molte *nuvole*. | Es gibt viele *Wolken*. |
+il temporale | das Gewitter | n | Arriva un *temporale*. | Ein *Gewitter* kommt. |
+la nebbia | der Nebel | n | C'è *nebbia* in pianura. | In der Ebene ist *Nebel*. |
+il grado | der Grad | n | Ci sono trenta *gradi*. | Es sind dreißig *Grad*. |
+nevicare | schneien | v | *Nevica* in montagna. | In den Bergen *schneit* es. |
+## B1
+la gara | der Wettkampf | n | Ha vinto la *gara*. | Er hat den *Wettkampf* gewonnen. |
+il campionato | die Meisterschaft | n | Il *campionato* di Serie A. | Die *Meisterschaft* der Serie A. |
+l'allenamento | das Training | n | L'*allenamento* è alle sei. | Das *Training* ist um sechs. | männlich (m)
+allenarsi | trainieren | v | Mi *alleno* tre volte a settimana. | Ich *trainiere* dreimal pro Woche. |
+il tifoso | der Fan | n | I *tifosi* cantano. | Die *Fans* singen. |
+lo stadio | das Stadion | n | Lo *stadio* è pieno. | Das *Stadion* ist voll. |
+il pareggio | das Unentschieden | n | La partita è finita in *pareggio*. | Das Spiel endete *unentschieden*. |
+segnare | ein Tor schießen | v | Ha *segnato* due gol. | Er hat zwei Tore *geschossen*. |
+l'arbitro | der Schiedsrichter | n | L'*arbitro* fischia. | Der *Schiedsrichter* pfeift. | männlich (m)
+l'escursione | die Wanderung | n | Un'*escursione* in montagna. | Eine Berg*wanderung*. | weiblich (f)
+l'arrampicata | das Klettern | n | Faccio *arrampicata*. | Ich *klettere*. | weiblich (f)
+la vela | das Segeln | n | Facciamo *vela* sul lago. | Wir *segeln* auf dem See. |
+la pesca | das Angeln | n | Mio nonno va a *pesca*. | Mein Opa geht *angeln*. |
+il romanzo | der Roman | n | Un *romanzo* giallo. | Ein Kriminal*roman*. | giallo = Krimi
+lo scrittore | der Schriftsteller | n | Il mio *scrittore* preferito. | Mein Lieblings*autor*. |
+il regista | der Regisseur | n | Un *regista* famoso. | Ein bekannter *Regisseur*. |
+l'attore | der Schauspieler | n | Un *attore* bravissimo. | Ein großartiger *Schauspieler*. | weiblich: l'attrice
+la trama | die Handlung | n | La *trama* è complicata. | Die *Handlung* ist kompliziert. |
+il palcoscenico | die Bühne | n | Sale sul *palcoscenico*. | Er betritt die *Bühne*. |
+lo spettacolo | die Vorstellung, Show | n | Lo *spettacolo* inizia alle nove. | Die *Vorstellung* beginnt um neun. |
+il pubblico | das Publikum | n | Il *pubblico* applaude. | Das *Publikum* klatscht. |
+l'opera lirica | die Oper | n | Amo l'*opera lirica*. | Ich liebe die *Oper*. | weiblich (f)
+la sagra | das Dorffest (Essen) | n | Una *sagra* del tartufo. | Ein Trüffel*fest*. |
+il festival | das Festival | n | Il *festival* di Sanremo. | Das *Festival* von Sanremo. |
+la previsione del tempo | die Wettervorhersage | n | Hai visto le *previsioni del tempo*? | Hast du die *Wettervorhersage* gesehen? |
+umido | feucht, schwül | adj | Fa caldo *umido*. | Es ist *schwül*. |
+sereno | heiter, wolkenlos | adj | Cielo *sereno*. | *Wolkenloser* Himmel. |
+il fulmine | der Blitz | n | È caduto un *fulmine*. | Ein *Blitz* hat eingeschlagen. |
+il tuono | der Donner | n | Senti il *tuono*? | Hörst du den *Donner*? |
+la grandine | der Hagel | n | La *grandine* ha rovinato l'uva. | Der *Hagel* hat die Trauben zerstört. |
+il gioco da tavolo | das Brettspiel | n | Giochiamo a un *gioco da tavolo*. | Spielen wir ein *Brettspiel*. |
+le carte | die Spielkarten | n | Giochiamo a *carte*. | Wir spielen *Karten*. |
+il fai da te | das Heimwerken | n | Mi piace il *fai da te*. | Ich *heimwerke* gern. |
+il giardinaggio | die Gartenarbeit | n | Il *giardinaggio* mi rilassa. | *Gartenarbeit* entspannt mich. |
+il volontariato | das Ehrenamt | n | Faccio *volontariato*. | Ich engagiere mich *ehrenamtlich*. |

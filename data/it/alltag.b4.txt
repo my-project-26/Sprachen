@@ -1,0 +1,87 @@
+# Italienisch – Abstrakte Begriffe & Alltag B2/C1
+## B2
+l'atteggiamento | die Haltung | n | Un *atteggiamento* positivo. | Eine positive *Einstellung*. | männlich (m)
+il comportamento | das Verhalten | n | Un *comportamento* strano. | Ein seltsames *Verhalten*. |
+l'abilità | die Fähigkeit | n | Ha molte *abilità*. | Er hat viele *Fähigkeiten*. | weiblich (f)
+la capacità | die Fähigkeit, Kapazität | n | La *capacità* di ascoltare. | Die *Fähigkeit* zuzuhören. |
+il talento | das Talent | n | Ha *talento* per la musica. | Er hat *Talent* für Musik. |
+lo sforzo | die Anstrengung | n | Fare uno *sforzo*. | Sich *anstrengen*. |
+l'impegno | der Einsatz; die Verpflichtung | n | Grazie per l'*impegno*. | Danke für den *Einsatz*. | männlich (m)
+la fatica | die Mühe | n | Con molta *fatica*. | Mit viel *Mühe*. |
+il successo | der Erfolg | n | Un grande *successo*. | Ein großer *Erfolg*. |
+il fallimento | das Scheitern | n | Il *fallimento* del piano. | Das *Scheitern* des Plans. |
+la sfida | die Herausforderung | n | Una *sfida* difficile. | Eine schwierige *Herausforderung*. |
+l'ostacolo | das Hindernis | n | Superare gli *ostacoli*. | *Hindernisse* überwinden. | männlich (m)
+la difficoltà | die Schwierigkeit | n | Ho qualche *difficoltà*. | Ich habe einige *Schwierigkeiten*. |
+la soluzione | die Lösung | n | Troviamo una *soluzione*. | Finden wir eine *Lösung*. |
+la conseguenza | die Folge | n | Le *conseguenze* sono gravi. | Die *Folgen* sind schwer. |
+la causa | die Ursache | n | La *causa* dell'incidente. | Die *Ursache* des Unfalls. |
+l'effetto | die Wirkung | n | Nessun *effetto*. | Keine *Wirkung*. | männlich (m)
+lo scopo | der Zweck | n | A che *scopo*? | Zu welchem *Zweck*? |
+il criterio | das Kriterium | n | In base a quali *criteri*? | Nach welchen *Kriterien*? |
+il principio | das Prinzip; der Anfang | n | Per *principio*. | Aus *Prinzip*. |
+il valore | der Wert | n | I *valori* della famiglia. | Die Familien*werte*. |
+la priorità | die Priorität | n | La salute è la *priorità*. | Gesundheit hat *Vorrang*. |
+l'esigenza | das Bedürfnis, die Anforderung | n | Le *esigenze* dei clienti. | Die *Bedürfnisse* der Kunden. | weiblich (f)
+la necessità | die Notwendigkeit | n | In caso di *necessità*. | Im *Notfall*. |
+la possibilità | die Möglichkeit | n | Non c'è *possibilità*. | Es gibt keine *Möglichkeit*. |
+l'opportunità | die Chance | n | Una grande *opportunità*. | Eine große *Chance*. | weiblich (f)
+la prospettiva | die Perspektive, Aussicht | n | Nuove *prospettive* di lavoro. | Neue berufliche *Aussichten*. |
+la situazione | die Lage | n | La *situazione* è grave. | Die *Lage* ist ernst. |
+la circostanza | der Umstand | n | Date le *circostanze*... | Unter diesen *Umständen* … |
+il contesto | der Zusammenhang | n | Nel *contesto* attuale. | Im aktuellen *Kontext*. |
+la condizione | die Bedingung; der Zustand | n | A una *condizione*. | Unter einer *Bedingung*. |
+lo stato | der Zustand | n | In buono *stato*. | In gutem *Zustand*. |
+la qualità | die Eigenschaft | n | Ha molte *qualità*. | Er hat viele gute *Eigenschaften*. |
+il difetto | der Fehler, die Schwäche | n | Tutti hanno *difetti*. | Jeder hat *Schwächen*. |
+il pregio | der Vorzug | n | Il suo *pregio* è la pazienza. | Sein *Vorzug* ist die Geduld. |
+la somiglianza | die Ähnlichkeit | n | Una forte *somiglianza*. | Eine starke *Ähnlichkeit*. |
+il contrasto | der Gegensatz | n | Un forte *contrasto*. | Ein starker *Gegensatz*. |
+l'equilibrio | das Gleichgewicht | n | Trovare l'*equilibrio*. | Das *Gleichgewicht* finden. | männlich (m)
+il limite | die Grenze | n | Tutto ha un *limite*. | Alles hat eine *Grenze*. |
+la misura | das Maß | n | Senza *misura*. | Ohne *Maß*. |
+l'eccezione | die Ausnahme | n | Senza *eccezioni*. | Ohne *Ausnahme*. | weiblich (f)
+la regola generale | die Faustregel | n | Come *regola generale*... | Als *Faustregel* … |
+il dettaglio | das Detail | n | Nei minimi *dettagli*. | Bis ins kleinste *Detail*. |
+il caso | der Fall; der Zufall | n | Per *caso*. | Durch *Zufall*. |
+la coincidenza | der Zufall | n | Che *coincidenza*! | Was für ein *Zufall*! |
+il destino | das Schicksal | n | È il *destino*. | Das ist *Schicksal*. |
+la fortuna | das Glück | n | Che *fortuna*! | Was für ein *Glück*! |
+la sfortuna | das Pech | n | Che *sfortuna*! | So ein *Pech*! |
+l'imprevisto | das Unvorhergesehene | n | C'è stato un *imprevisto*. | Es kam etwas *dazwischen*. | männlich (m)
+il contrattempo | die Panne, Verzögerung | n | Un piccolo *contrattempo*. | Ein kleines *Missgeschick*. |
+il ritmo | der Rhythmus | n | Il *ritmo* della città. | Der *Rhythmus* der Stadt. |
+la pausa pranzo | die Mittagspause | n | Durante la *pausa pranzo*. | In der *Mittagspause*. |
+la commissione | die Besorgung; die Kommission | n | Devo fare una *commissione*. | Ich muss etwas *erledigen*. |
+l'impegno | der Termin, die Verpflichtung | n | Ho un *impegno* domani. | Ich habe morgen einen *Termin*. |
+## C1
+la consapevolezza | das Bewusstsein | n | Una nuova *consapevolezza*. | Ein neues *Bewusstsein*. |
+la percezione | die Wahrnehmung | n | La *percezione* del rischio. | Die *Wahrnehmung* des Risikos. |
+la sfumatura | die Nuance | n | Una *sfumatura* di ironia. | Ein *Hauch* von Ironie. |
+il connubio | die Verbindung | n | Un *connubio* perfetto tra arte e tecnica. | Eine perfekte *Verbindung* von Kunst und Technik. |
+il divario | die Kluft | n | Colmare il *divario*. | Die *Kluft* schließen. |
+il compromesso | der Kompromiss | n | Trovare un *compromesso*. | Einen *Kompromiss* finden. |
+il pretesto | der Vorwand | n | Con il *pretesto* del lavoro. | Unter dem *Vorwand* der Arbeit. |
+l'escamotage | der Kniff | n | Un *escamotage* per evitare la fila. | Ein *Trick*, um die Schlange zu umgehen. | männlich (m)
+l'espediente | der Notbehelf | n | Un *espediente* temporaneo. | Ein vorläufiger *Notbehelf*. | männlich (m)
+il malinteso | das Missverständnis | n | Chiarire un *malinteso*. | Ein *Missverständnis* aufklären. |
+la svista | das Versehen | n | È stata una *svista*. | Es war ein *Versehen*. |
+il disguido | das Missgeschick (Organisation) | n | Un *disguido* postale. | Ein *Fehler* bei der Post. |
+la lungaggine | die Langwierigkeit | n | Le *lungaggini* burocratiche. | Die bürokratischen *Verzögerungen*. |
+l'intoppo | die Stockung | n | Un *intoppo* imprevisto. | Eine unerwartete *Stockung*. |
+la battuta d'arresto | der Rückschlag | n | Una *battuta d'arresto* per l'economia. | Ein *Rückschlag* für die Wirtschaft. |
+la svolta | die Wende | n | Una *svolta* decisiva. | Eine entscheidende *Wende*. |
+il punto di svolta | der Wendepunkt | n | Il *punto di svolta* della storia. | Der *Wendepunkt* der Geschichte. |
+il retroscena | der Hintergrund (geheim) | n | I *retroscena* della trattativa. | Die *Hintergründe* der Verhandlung. | unveränderlich
+la posta in gioco | der Einsatz (was auf dem Spiel steht) | n | La *posta in gioco* è alta. | Es *steht* viel *auf dem Spiel*. |
+il tornaconto | der Eigennutz | n | Lo fa per *tornaconto* personale. | Er tut es aus *Eigennutz*. |
+la parvenza | der Anschein | n | Una *parvenza* di normalità. | Ein *Anschein* von Normalität. |
+il senno di poi | die Klugheit im Nachhinein | n | Col *senno di poi* è facile. | *Hinterher* ist man immer klüger. |
+la sinergia | die Synergie | n | Creare *sinergie*. | *Synergien* schaffen. |
+la ricaduta | die Auswirkung | n | Le *ricadute* sul territorio. | Die *Auswirkungen* auf die Region. |
+l'incognita | die Unbekannte | n | Il futuro è un'*incognita*. | Die Zukunft ist *ungewiss*. | weiblich (f)
+la fattibilità | die Machbarkeit | n | Uno studio di *fattibilità*. | Eine *Machbarkeits*studie. |
+la tempistica | der Zeitplan | n | La *tempistica* è stretta. | Der *Zeitplan* ist knapp. |
+il cronoprogramma | der Zeitplan (Projekt) | n | Rispettare il *cronoprogramma*. | Den *Zeitplan* einhalten. |
+la discrezionalità | der Ermessensspielraum | n | Un margine di *discrezionalità*. | Ein *Ermessensspielraum*. |
+la prassi | die gängige Praxis | n | È *prassi* consolidata. | Das ist *gängige Praxis*. | unveränderlich

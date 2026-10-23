@@ -1,0 +1,62 @@
+# Italienisch – Wissenschaft, Technik, Recht, Camping (A2/B1)
+## A2
+la tenda | das Zelt | n | Montiamo la *tenda*. | Wir bauen das *Zelt* auf. |
+il campeggio | der Campingplatz | n | Dormiamo in *campeggio*. | Wir schlafen auf dem *Campingplatz*. |
+il sacco a pelo | der Schlafsack | n | Un *sacco a pelo* caldo. | Ein warmer *Schlafsack*. |
+la torcia | die Taschenlampe | n | Hai una *torcia*? | Hast du eine *Taschenlampe*? |
+il fuoco | das Feuer | n | Accendiamo il *fuoco*. | Wir machen *Feuer*. |
+la bici da corsa | das Rennrad | n | Ho una *bici da corsa*. | Ich habe ein *Rennrad*. |
+la ruota | das Rad (Reifen) | n | La *ruota* è bucata. | Der *Reifen* ist platt. |
+pedalare | in die Pedale treten | v | *Pedaliamo* fino al lago. | Wir *radeln* bis zum See. |
+il lucchetto | das Fahrradschloss | n | Chiudi la bici con il *lucchetto*. | Schließ das Rad mit dem *Schloss* ab. |
+## B1
+la scienza | die Wissenschaft | n | La *scienza* moderna. | Die moderne *Wissenschaft*. |
+lo scienziato | der Wissenschaftler | n | Uno *scienziato* famoso. | Ein berühmter *Wissenschaftler*. |
+la ricerca | die Forschung; die Suche | n | La *ricerca* medica. | Die medizinische *Forschung*. |
+l'esperimento | das Experiment | n | Un *esperimento* in laboratorio. | Ein *Experiment* im Labor. | männlich (m)
+il laboratorio | das Labor | n | Lavora in *laboratorio*. | Sie arbeitet im *Labor*. |
+la scoperta | die Entdeckung | n | Una *scoperta* importante. | Eine wichtige *Entdeckung*. |
+scoprire | entdecken | v | Hanno *scoperto* un pianeta. | Sie haben einen Planeten *entdeckt*. |
+inventare | erfinden | v | Chi ha *inventato* il telefono? | Wer hat das Telefon *erfunden*? |
+l'invenzione | die Erfindung | n | Una grande *invenzione*. | Eine große *Erfindung*. | weiblich (f)
+la tecnologia | die Technologie | n | La *tecnologia* cambia tutto. | *Technik* verändert alles. |
+il dispositivo | das Gerät | n | Un *dispositivo* elettronico. | Ein elektronisches *Gerät*. |
+l'intelligenza artificiale | die künstliche Intelligenz | n | L'*intelligenza artificiale* avanza. | Die *KI* schreitet voran. | weiblich (f)
+il robot | der Roboter | n | Un *robot* aspirapolvere. | Ein Saug*roboter*. |
+il programma | das Programm | n | Un *programma* gratuito. | Ein kostenloses *Programm*. | männlich trotz -a
+l'informatica | die Informatik | n | Studia *informatica*. | Er studiert *Informatik*. | weiblich (f)
+il pianeta | der Planet | n | Il *pianeta* Terra. | Der *Planet* Erde. | männlich trotz -a
+lo spazio | der Weltraum; der Platz | n | Viaggiare nello *spazio*. | Ins *All* reisen. |
+la chimica | die Chemie | n | La *chimica* organica. | Die organische *Chemie*. |
+la fisica | die Physik | n | Una legge della *fisica*. | Ein Gesetz der *Physik*. |
+la biologia | die Biologie | n | Insegna *biologia*. | Sie unterrichtet *Biologie*. |
+misurare | messen | v | *Misura* la stanza. | *Miss* das Zimmer *aus*. |
+la misura | das Maß; die Maßnahme | n | Prendere le *misure*. | *Maß* nehmen. |
+il peso | das Gewicht | n | Il *peso* del bagaglio. | Das *Gewicht* des Gepäcks. |
+la lunghezza | die Länge | n | La *lunghezza* del ponte. | Die *Länge* der Brücke. |
+la velocità | die Geschwindigkeit | n | Alta *velocità*. | Hohe *Geschwindigkeit*. |
+il contratto di lavoro | der Arbeitsvertrag | n | Leggi bene il *contratto di lavoro*. | Lies den *Arbeitsvertrag* genau. |
+l'avvocato difensore | der Verteidiger | n | Ha un buon *avvocato difensore*. | Er hat einen guten *Verteidiger*. | männlich (m)
+il reato | die Straftat | n | Un *reato* grave. | Eine schwere *Straftat*. |
+il colpevole | der Schuldige | n | Chi è il *colpevole*? | Wer ist der *Schuldige*? |
+innocente | unschuldig | adj | È *innocente*. | Er ist *unschuldig*. |
+la prigione | das Gefängnis | n | È finito in *prigione*. | Er ist im *Gefängnis* gelandet. | auch: il carcere
+il testimone | der Zeuge | n | C'è un *testimone*. | Es gibt einen *Zeugen*. |
+arrestare | festnehmen | v | Lo hanno *arrestato*. | Sie haben ihn *festgenommen*. |
+la truffa | der Betrug | n | Attenzione alle *truffe*. | Vorsicht vor *Betrug*. |
+legale | legal | adj | È tutto *legale*. | Alles ist *legal*. |
+illegale | illegal | adj | È *illegale* parcheggiare qui. | Hier zu parken ist *illegal*. |
+la regola | die Regel | n | Rispetta le *regole*. | Halte dich an die *Regeln*. |
+il divieto | das Verbot | n | *Divieto* di sosta. | *Halteverbot*. |
+il permesso di guida | die Fahrerlaubnis | n | Gli hanno ritirato il *permesso di guida*. | Ihm wurde die *Fahrerlaubnis* entzogen. |
+l'assicurazione | die Versicherung | n | L'*assicurazione* auto. | Die Kfz-*Versicherung*. | weiblich (f)
+il danno | der Schaden | n | Chi paga il *danno*? | Wer zahlt den *Schaden*? |
+risarcire | entschädigen | v | Devono *risarcirti*. | Sie müssen dich *entschädigen*. | risarcisco
+il terreno | das Gelände; der Boden | n | Un *terreno* in collina. | Ein *Grundstück* am Hügel. |
+il sacco della spazzatura | der Müllsack | n | Porta un *sacco della spazzatura*. | Nimm einen *Müllsack* mit. |
+il fornello | der Kocher | n | Un *fornello* a gas. | Ein Gas*kocher*. |
+la piazzola | der Stellplatz | n | Una *piazzola* all'ombra. | Ein schattiger *Stellplatz*. |
+il camper | das Wohnmobil | n | Viaggiamo in *camper*. | Wir reisen mit dem *Wohnmobil*. |
+il casco da bici | der Fahrradhelm | n | Metti il *casco da bici*. | Setz den *Fahrradhelm* auf. |
+la camera d'aria | der Fahrradschlauch | n | Cambio la *camera d'aria*. | Ich wechsle den *Schlauch*. |
+la pompa | die Pumpe | n | Mi presti la *pompa*? | Leihst du mir die *Pumpe*? |

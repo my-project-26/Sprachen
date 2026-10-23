@@ -1,0 +1,84 @@
+# Italienisch – Alltag, Stadt, Zeit (Ergänzung A1/A2)
+## A1
+la banca | die Bank | n | La *banca* è chiusa. | Die *Bank* ist geschlossen. |
+la posta | die Post | n | Vado alla *posta*. | Ich gehe zur *Post*. |
+la farmacia | die Apotheke | n | C'è una *farmacia* qui? | Gibt es hier eine *Apotheke*? |
+il ristorante | das Restaurant | n | Un *ristorante* tipico. | Ein typisches *Restaurant*. |
+la scuola | die Schule | n | La *scuola* è vicina. | Die *Schule* ist nah. |
+il centro | das Zentrum | n | Abito in *centro*. | Ich wohne im *Zentrum*. |
+il paese | das Land | n | L'Italia è un bel *paese*. | Italien ist ein schönes *Land*. |
+l'Italia | Italien | n | Vivo in *Italia*. | Ich lebe in *Italien*. | weiblich (f)
+la Germania | Deutschland | n | Vengo dalla *Germania*. | Ich komme aus *Deutschland*. |
+italiano | italienisch; Italiener | adj | Sono *italiano*. | Ich bin *Italiener*. |
+tedesco | deutsch; Deutscher | adj | Parlo *tedesco*. | Ich spreche *Deutsch*. |
+la cosa | das Ding | n | Che *cosa* è? | Was ist das? |
+il regalo | das Geschenk | n | Un *regalo* per te. | Ein *Geschenk* für dich. |
+la foto | das Foto | n | Una bella *foto*. | Ein schönes *Foto*. |
+il numero di telefono | die Telefonnummer | n | Qual è il tuo *numero di telefono*? | Wie ist deine *Telefonnummer*? |
+l'orologio | die Uhr | n | Il mio *orologio* è fermo. | Meine *Uhr* steht. | männlich (m)
+l'ombrello | der Regenschirm | n | Prendi l'*ombrello*. | Nimm den *Schirm* mit. | männlich (m)
+il portafoglio | die Geldbörse | n | Ho perso il *portafoglio*. | Ich habe meine *Geldbörse* verloren. |
+la carta | das Papier; die Karte | n | Un foglio di *carta*. | Ein Blatt *Papier*. |
+la mezzanotte | die Mitternacht | n | A *mezzanotte*. | Um *Mitternacht*. |
+il fine settimana | das Wochenende | n | Buon *fine settimana*! | Schönes *Wochenende*! | auch: il weekend
+gennaio | Januar | n | A *gennaio* fa freddo. | Im *Januar* ist es kalt. |
+febbraio | Februar | n | *Febbraio* è corto. | Der *Februar* ist kurz. |
+marzo | März | n | Il 21 *marzo*. | Der 21. *März*. |
+aprile | April | n | Ad *aprile* piove. | Im *April* regnet es. |
+maggio | Mai | n | Il primo *maggio*. | Der erste *Mai*. |
+giugno | Juni | n | A *giugno* finisce la scuola. | Im *Juni* endet die Schule. |
+luglio | Juli | n | A *luglio* andiamo al mare. | Im *Juli* fahren wir ans Meer. |
+agosto | August | n | Ad *agosto* tutto è chiuso. | Im *August* ist alles zu. |
+settembre | September | n | A *settembre* ricomincia la scuola. | Im *September* beginnt die Schule wieder. |
+ottobre | Oktober | n | A *ottobre* raccogliamo le castagne. | Im *Oktober* sammeln wir Kastanien. |
+novembre | November | n | *Novembre* è grigio. | Der *November* ist grau. |
+dicembre | Dezember | n | A *dicembre* c'è Natale. | Im *Dezember* ist Weihnachten. |
+il Natale | Weihnachten | n | Buon *Natale*! | Frohe *Weihnachten*! |
+la Pasqua | Ostern | n | Buona *Pasqua*! | Frohe *Ostern*! |
+## A2
+il municipio | das Rathaus | n | Il *municipio* è in piazza. | Das *Rathaus* ist am Platz. |
+la questura | die Polizeidirektion | n | Il passaporto si fa in *questura*. | Den Pass macht man bei der *Questura*. |
+l'ufficio postale | das Postamt | n | L'*ufficio postale* chiude alle due. | Das *Postamt* schließt um zwei. | männlich (m)
+il francobollo | die Briefmarke | n | Un *francobollo* per la Germania. | Eine *Briefmarke* nach Deutschland. |
+la busta | der Umschlag | n | Metti la lettera nella *busta*. | Steck den Brief in den *Umschlag*. |
+spedire | verschicken | v | *Spedisco* un pacco. | Ich *verschicke* ein Paket. | spedisco
+il modulo | das Formular | n | Compili il *modulo*. | Füllen Sie das *Formular* aus. |
+compilare | ausfüllen | v | *Compila* questo modulo. | *Füll* dieses Formular *aus*. |
+firmare | unterschreiben | v | *Firmi* qui, per favore. | *Unterschreiben* Sie bitte hier. |
+la firma | die Unterschrift | n | Manca la *firma*. | Die *Unterschrift* fehlt. |
+il documento | das Dokument; der Ausweis | n | Un *documento*, per favore. | Einen *Ausweis* bitte. |
+la data di nascita | das Geburtsdatum | n | La *data di nascita*. | Das *Geburtsdatum*. |
+il luogo di nascita | der Geburtsort | n | Il *luogo di nascita*. | Der *Geburtsort*. |
+la nazionalità | die Staatsangehörigkeit | n | Di che *nazionalità* sei? | Welche *Staatsangehörigkeit* hast du? |
+l'età | das Alter | n | Che *età* ha? | Wie *alt* ist er? | weiblich (f)
+il giorno festivo | der Feiertag | n | Domani è *giorno festivo*. | Morgen ist *Feiertag*. |
+il Ferragosto | Mariä Himmelfahrt (15. Aug.) | n | A *Ferragosto* si va al mare. | An *Ferragosto* fährt man ans Meer. |
+il Capodanno | Neujahr | n | Festeggiamo il *Capodanno*. | Wir feiern *Silvester*. |
+l'appuntamento | die Verabredung | n | Ho un *appuntamento* con Giulia. | Ich bin mit Giulia *verabredet*. | männlich (m)
+in ritardo | zu spät, verspätet | phrase | Sono *in ritardo*. | Ich bin *spät dran*. |
+in anticipo | zu früh | phrase | Siamo arrivati *in anticipo*. | Wir sind *zu früh* angekommen. |
+in orario | pünktlich | phrase | Il treno è *in orario*. | Der Zug ist *pünktlich*. |
+puntuale | pünktlich | adj | È sempre *puntuale*. | Er ist immer *pünktlich*. |
+la mezz'ora | die halbe Stunde | n | Tra *mezz'ora*. | In einer *halben Stunde*. |
+il quarto d'ora | die Viertelstunde | n | Un *quarto d'ora* di ritardo. | Eine *Viertelstunde* Verspätung. |
+il secolo | das Jahrhundert | n | Nel Novecento, il ventesimo *secolo*. | Im 20. *Jahrhundert*. |
+il passato | die Vergangenheit | n | Nel *passato*. | In der *Vergangenheit*. |
+il futuro | die Zukunft | n | Che cosa farai in *futuro*? | Was wirst du in *Zukunft* machen? |
+il presente | die Gegenwart | n | Vivi il *presente*. | Leb in der *Gegenwart*. |
+fra poco | gleich, bald | phrase | Arrivo *fra poco*. | Ich komme *gleich*. |
+l'altro ieri | vorgestern | adv | L'ho visto *l'altro ieri*. | Ich habe ihn *vorgestern* gesehen. |
+dopodomani | übermorgen | adv | Parto *dopodomani*. | Ich fahre *übermorgen*. |
+stamattina | heute Morgen | adv | *Stamattina* ho fatto jogging. | *Heute Morgen* war ich joggen. |
+stasera | heute Abend | adv | Che fai *stasera*? | Was machst du *heute Abend*? |
+stanotte | heute Nacht | adv | *Stanotte* ha piovuto. | *Heute Nacht* hat es geregnet. |
+la settimana scorsa | letzte Woche | phrase | *La settimana scorsa* ero a Napoli. | *Letzte Woche* war ich in Neapel. |
+il mese prossimo | nächsten Monat | phrase | *Il mese prossimo* traslochiamo. | *Nächsten Monat* ziehen wir um. |
+la metà | die Hälfte | n | La *metà* della torta. | Die *Hälfte* des Kuchens. |
+il doppio | das Doppelte | n | Costa il *doppio*. | Es kostet das *Doppelte*. |
+il paio | das Paar | n | Un *paio* di scarpe. | Ein *Paar* Schuhe. | Plural: le paia
+la decina | etwa zehn | n | Una *decina* di persone. | *Etwa zehn* Personen. |
+il centinaio | etwa hundert | n | Un *centinaio* di euro. | *Etwa hundert* Euro. | Plural: le centinaia
+il metro | der Meter | n | Cento *metri*. | Hundert *Meter*. |
+il chilometro | der Kilometer | n | Dieci *chilometri*. | Zehn *Kilometer*. |
+il litro | der Liter | n | Un *litro* di latte. | Ein *Liter* Milch. |
+il centimetro | der Zentimeter | n | Venti *centimetri*. | Zwanzig *Zentimeter*. |

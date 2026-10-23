@@ -1,0 +1,57 @@
+# Italienisch – Natur & Umwelt
+## A1
+il cane | der Hund | n | Ho un *cane*. | Ich habe einen *Hund*. |
+il gatto | die Katze | n | Il *gatto* dorme. | Die *Katze* schläft. |
+l'albero | der Baum | n | Un *albero* alto. | Ein hoher *Baum*. | männlich (m)
+il fiore | die Blume | n | *Fiori* per te. | *Blumen* für dich. |
+il cielo | der Himmel | n | Il *cielo* è azzurro. | Der *Himmel* ist blau. |
+## A2
+la natura | die Natur | n | Amo la *natura*. | Ich liebe die *Natur*. |
+l'animale | das Tier | n | Un *animale* domestico. | Ein Haus*tier*. | männlich (m)
+l'uccello | der Vogel | n | Gli *uccelli* cantano. | Die *Vögel* singen. | männlich (m)
+il cavallo | das Pferd | n | Andare a *cavallo*. | *Reiten*. |
+la mucca | die Kuh | n | Le *mucche* nel prato. | Die *Kühe* auf der Wiese. |
+la pecora | das Schaf | n | Un gregge di *pecore*. | Eine *Schaf*herde. |
+il bosco | der Wald | n | Passeggiamo nel *bosco*. | Wir gehen im *Wald* spazieren. |
+il fiume | der Fluss | n | Il *fiume* Tevere. | Der *Fluss* Tiber. |
+la collina | der Hügel | n | Le *colline* toscane. | Die toskanischen *Hügel*. |
+il prato | die Wiese | n | Un *prato* verde. | Eine grüne *Wiese*. |
+la foglia | das Blatt | n | Le *foglie* cadono. | Die *Blätter* fallen. |
+la pianta | die Pflanze | n | Annaffia le *piante*. | Gieß die *Pflanzen*. |
+la terra | die Erde | n | La *Terra* gira. | Die *Erde* dreht sich. |
+la pietra | der Stein | n | Una casa di *pietra*. | Ein *Stein*haus. |
+la campagna | das Land (ländlich) | n | Vivo in *campagna*. | Ich lebe auf dem *Land*. |
+la luna | der Mond | n | La *luna* piena. | Der Voll*mond*. |
+la stella | der Stern | n | Guarda le *stelle*. | Schau die *Sterne* an. |
+## B1
+l'ambiente | die Umwelt | n | Proteggere l'*ambiente*. | Die *Umwelt* schützen. | männlich (m)
+l'inquinamento | die Verschmutzung | n | L'*inquinamento* dell'aria. | Die *Luftverschmutzung*. | männlich (m)
+inquinare | verschmutzen | v | Le auto *inquinano*. | Autos *verschmutzen* die Luft. |
+il riciclaggio | das Recycling | n | Il *riciclaggio* della plastica. | Das *Recycling* von Plastik. |
+riciclare | recyceln | v | *Ricicliamo* il vetro. | Wir *recyceln* Glas. |
+il rifiuto | der Abfall | n | I *rifiuti* organici. | Der Bio*müll*. |
+il cambiamento climatico | der Klimawandel | n | Il *cambiamento climatico* è reale. | Der *Klimawandel* ist real. |
+il riscaldamento globale | die Erderwärmung | n | Il *riscaldamento globale* aumenta. | Die *Erderwärmung* nimmt zu. |
+l'energia rinnovabile | die erneuerbare Energie | n | Investire nell'*energia rinnovabile*. | In *erneuerbare Energie* investieren. | weiblich (f)
+il pannello solare | die Solaranlage | n | *Pannelli solari* sul tetto. | *Solarzellen* auf dem Dach. |
+risparmiare energia | Energie sparen | phrase | Spegni la luce per *risparmiare energia*. | Mach das Licht aus, um *Energie zu sparen*. |
+la siccità | die Dürre | n | La *siccità* colpisce il Sud. | Die *Dürre* trifft den Süden. |
+l'alluvione | die Überschwemmung | n | Un'*alluvione* in Emilia. | Eine *Überschwemmung* in der Emilia. | weiblich (f)
+il terremoto | das Erdbeben | n | Un forte *terremoto*. | Ein starkes *Erdbeben*. |
+il vulcano | der Vulkan | n | Il *vulcano* Etna. | Der *Vulkan* Ätna. |
+l'incendio | der Brand | n | Un *incendio* nel bosco. | Ein Wald*brand*. | männlich (m)
+la specie | die Art (Tier, Pflanze) | n | Una *specie* in pericolo. | Eine gefährdete *Art*. | unveränderlich
+estinguersi | aussterben | v | Molte specie si *estinguono*. | Viele Arten *sterben aus*. |
+il parco nazionale | der Nationalpark | n | Il *parco nazionale* del Gran Paradiso. | Der *Nationalpark* Gran Paradiso. |
+la plastica | das Plastik | n | Meno *plastica*! | Weniger *Plastik*! |
+l'usa e getta | das Einwegprodukt | n | Basta con l'*usa e getta*. | Schluss mit *Einwegprodukten*. | männlich (m)
+sostenibile | nachhaltig | adj | Un turismo *sostenibile*. | Ein *nachhaltiger* Tourismus. |
+ecologico | umweltfreundlich | adj | Un prodotto *ecologico*. | Ein *umweltfreundliches* Produkt. |
+biologico | bio, ökologisch | adj | Frutta *biologica*. | *Bio*-Obst. |
+il clima | das Klima | n | Il *clima* mediterraneo. | Das Mittelmeer*klima*. | männlich trotz -a
+la temperatura | die Temperatur | n | La *temperatura* sale. | Die *Temperatur* steigt. |
+l'ape | die Biene | n | Le *api* sono importanti. | *Bienen* sind wichtig. | weiblich (f)
+la zanzara | die Mücke | n | Ci sono tante *zanzare*. | Es gibt viele *Mücken*. |
+il lupo | der Wolf | n | Il *lupo* è tornato sulle Alpi. | Der *Wolf* ist in die Alpen zurückgekehrt. |
+la volpe | der Fuchs | n | Una *volpe* nel giardino. | Ein *Fuchs* im Garten. |
+il delfino | der Delfin | n | Abbiamo visto i *delfini*. | Wir haben *Delfine* gesehen. |

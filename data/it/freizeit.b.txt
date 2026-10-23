@@ -1,0 +1,67 @@
+# Italienisch – Sport, Freizeit, Familie B2/C1
+## B2
+l'agonismo | der Wettkampfgeist | n | Lo sport senza *agonismo*. | Sport ohne *Wettkampfdruck*. | männlich (m)
+l'atleta | der Athlet | n | Un'*atleta* olimpica. | Eine Olympia*athletin*. |
+la medaglia d'oro | die Goldmedaille | n | Ha vinto la *medaglia d'oro*. | Er hat *Gold* gewonnen. |
+il record | der Rekord | n | Un nuovo *record* mondiale. | Ein neuer Welt*rekord*. |
+la classifica | die Tabelle, Rangliste | n | Primo in *classifica*. | Tabellen*führer*. |
+la retrocessione | der Abstieg | n | La squadra rischia la *retrocessione*. | Die Mannschaft ist *abstiegsgefährdet*. |
+la promozione | der Aufstieg | n | Festeggiano la *promozione* in Serie A. | Sie feiern den *Aufstieg* in die Serie A. |
+l'allenatore | der Trainer | n | L'*allenatore* è stato esonerato. | Der *Trainer* wurde entlassen. | männlich (m)
+esonerare | entlassen (Trainer) | v | Hanno *esonerato* il mister. | Sie haben den Trainer *gefeuert*. |
+il calciomercato | der Transfermarkt | n | Le notizie del *calciomercato*. | Die Neuigkeiten vom *Transfermarkt*. |
+il rigore | der Elfmeter | n | Ha segnato su *rigore*. | Er hat per *Elfmeter* getroffen. |
+il fuorigioco | das Abseits | n | Il gol è in *fuorigioco*. | Das Tor war *Abseits*. |
+il cartellino rosso | die rote Karte | n | Espulso con il *cartellino rosso*. | Mit *Rot* vom Platz gestellt. |
+il VAR | der Videobeweis | n | L'arbitro consulta il *VAR*. | Der Schiedsrichter schaut den *Videobeweis*. |
+il derby | das Derby | n | Il *derby* di Milano. | Das Mailänder *Derby*. |
+la maglia rosa | das rosa Trikot (Giro) | n | Indossa la *maglia rosa*. | Er trägt das *Rosa Trikot*. |
+il Giro d'Italia | die Italien-Rundfahrt | n | La tappa del *Giro d'Italia*. | Die Etappe des *Giro d'Italia*. |
+il doping | das Doping | n | Squalificato per *doping*. | Wegen *Doping* gesperrt. |
+squalificare | sperren | v | L'hanno *squalificato* per due anni. | Er wurde für zwei Jahre *gesperrt*. |
+la maratona | der Marathon | n | Corre la *maratona* di Roma. | Er läuft den Rom-*Marathon*. |
+il benessere | das Wellness | n | Un centro *benessere*. | Ein *Wellness*zentrum. |
+le terme | die Thermen | n | Un weekend alle *terme*. | Ein Wochenende in der *Therme*. |
+lo yoga | das Yoga | n | Faccio *yoga* il martedì. | Dienstags mache ich *Yoga*. |
+la meditazione | die Meditation | n | Dieci minuti di *meditazione*. | Zehn Minuten *Meditation*. |
+il circolo | der Verein, Club | n | Il *circolo* del tennis. | Der Tennis*club*. |
+la collezione | die Sammlung | n | Una *collezione* di francobolli. | Eine Briefmarken*sammlung*. |
+il modellismo | der Modellbau | n | Appassionato di *modellismo*. | *Modellbau*fan. |
+il bricolage | das Basteln, Heimwerken | n | Un negozio di *bricolage*. | Ein *Baumarkt*. |
+la famiglia allargata | die Patchworkfamilie | n | Viviamo in una *famiglia allargata*. | Wir sind eine *Patchworkfamilie*. |
+la famiglia monoparentale | die Einelternfamilie | n | Le *famiglie monoparentali* aumentano. | *Alleinerziehende* nehmen zu. |
+il congedo parentale | die Elternzeit | n | Prendo il *congedo parentale*. | Ich nehme *Elternzeit*. |
+il congedo di maternità | der Mutterschutz | n | È in *congedo di maternità*. | Sie ist im *Mutterschutz*. |
+l'asilo nido | die Krippe | n | Iscrivere il figlio all'*asilo nido*. | Das Kind in der *Krippe* anmelden. | männlich (m)
+la scuola materna | der Kindergarten | n | La *scuola materna* comunale. | Der städtische *Kindergarten*. |
+la baby-sitter | der Babysitter | n | Cerchiamo una *baby-sitter*. | Wir suchen einen *Babysitter*. |
+i nonni | die Großeltern | n | I *nonni* aiutano con i bambini. | Die *Großeltern* helfen mit den Kindern. |
+la conciliazione | die Vereinbarkeit | n | La *conciliazione* tra lavoro e famiglia. | Die *Vereinbarkeit* von Beruf und Familie. |
+## C1
+il tifo | die Fankultur; das Anfeuern | n | Il *tifo* organizzato. | Die organisierte *Fanszene*. |
+gli ultras | die Ultras | n | Scontri tra *ultras*. | Zusammenstöße zwischen *Ultras*. |
+il fair play | das Fairplay | n | Un gesto di *fair play*. | Eine *faire* Geste. |
+lo spirito di squadra | der Teamgeist | n | Vince lo *spirito di squadra*. | Der *Teamgeist* gewinnt. |
+la rimonta | die Aufholjagd | n | Una *rimonta* incredibile. | Eine unglaubliche *Aufholjagd*. |
+il palmarès | die Titelsammlung | n | Un *palmarès* ricchissimo. | Eine riesige *Titelsammlung*. |
+il fuoriclasse | der Ausnahmekönner | n | Un vero *fuoriclasse*. | Ein echter *Ausnahmespieler*. | unveränderlich
+il dilettante | der Amateur | n | Gioca nei *dilettanti*. | Er spielt im *Amateurfußball*. |
+il vivaio | die Nachwuchsabteilung | n | Un talento del *vivaio*. | Ein Talent aus der *Jugend*. |
+la sponsorizzazione | das Sponsoring | n | Un contratto di *sponsorizzazione*. | Ein *Sponsoring*vertrag. |
+i diritti televisivi | die TV-Rechte | n | La vendita dei *diritti televisivi*. | Der Verkauf der *TV-Rechte*. |
+la denatalità | der Geburtenrückgang | n | Il problema della *denatalità*. | Das Problem des *Geburtenrückgangs*. |
+l'inverno demografico | der demografische Winter | n | L'Italia vive un *inverno demografico*. | Italien erlebt einen *demografischen Winter*. | männlich (m)
+il ricongiungimento familiare | die Familienzusammenführung | n | Chiedere il *ricongiungimento familiare*. | *Familiennachzug* beantragen. |
+la genitorialità | die Elternschaft | n | Sostegno alla *genitorialità*. | Unterstützung für *Eltern*. |
+l'affidamento condiviso | das gemeinsame Sorgerecht | n | Hanno l'*affidamento condiviso*. | Sie haben das *gemeinsame Sorgerecht*. | männlich (m)
+l'assegno di mantenimento | der Unterhalt | n | Versa l'*assegno di mantenimento*. | Er zahlt *Unterhalt*. | männlich (m)
+le unioni civili | die eingetragene Partnerschaft | n | La legge sulle *unioni civili*. | Das Gesetz über *eingetragene Partnerschaften*. |
+la convivenza more uxorio | die eheähnliche Gemeinschaft | n | Una *convivenza more uxorio*. | Eine *eheähnliche Lebensgemeinschaft*. |
+il mammone | das Muttersöhnchen | n | Un trentenne *mammone*. | Ein dreißigjähriges *Muttersöhnchen*. |
+il bamboccione | der Nesthocker | n | I *bamboccioni* italiani. | Die italienischen *Nesthocker*. |
+il caregiver | der pflegende Angehörige | n | Il ruolo del *caregiver* familiare. | Die Rolle *pflegender Angehöriger*. |
+la badante | die Pflegekraft (häuslich) | n | La nonna ha una *badante*. | Die Oma hat eine *Pflegekraft*. |
+la RSA | das Pflegeheim | n | Il nonno è in *RSA*. | Opa ist im *Pflegeheim*. | residenza sanitaria assistenziale
+il passatempo | der Zeitvertreib | n | Il mio *passatempo* preferito. | Mein liebster *Zeitvertreib*. |
+lo svago | die Zerstreuung | n | Un momento di *svago*. | Ein Moment der *Entspannung*. |
+la villeggiatura | die Sommerfrische | n | Le vacanze in *villeggiatura*. | Ferien in der *Sommerfrische*. |

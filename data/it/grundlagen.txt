@@ -1,0 +1,280 @@
+# Italienisch – Grundwortschatz
+## A1
+ciao | hallo; tschüss | phrase | *Ciao*, come stai? | *Hallo*, wie geht's? |
+buongiorno | guten Morgen, guten Tag | phrase | *Buongiorno*, signora! | *Guten Tag*, Frau …! |
+buonasera | guten Abend | phrase | *Buonasera* a tutti. | *Guten Abend* allerseits. |
+buonanotte | gute Nacht | phrase | *Buonanotte*, dormi bene. | *Gute Nacht*, schlaf gut. |
+arrivederci | auf Wiedersehen | phrase | *Arrivederci* e grazie! | *Auf Wiedersehen* und danke! |
+a presto | bis bald | phrase | Ci vediamo, *a presto*! | Wir sehen uns, *bis bald*! |
+per favore | bitte | phrase | Un caffè, *per favore*. | Einen Kaffee, *bitte*. |
+grazie | danke | phrase | *Grazie* mille! | Tausend *Dank*! |
+prego | bitte (schön); gern geschehen | phrase | — Grazie! — *Prego*. | „Danke!“ – „*Bitte schön*.“ |
+scusa | Entschuldigung (du) | phrase | *Scusa*, dov'è il bagno? | *Entschuldigung*, wo ist das Bad? |
+scusi | Entschuldigung (Sie) | phrase | *Scusi*, che ore sono? | *Entschuldigen Sie*, wie spät ist es? |
+mi dispiace | es tut mir leid | phrase | *Mi dispiace*, sono in ritardo. | *Es tut mir leid*, ich bin spät dran. |
+sì | ja | adv | *Sì*, certo. | *Ja*, sicher. |
+no | nein | adv | *No*, grazie. | *Nein*, danke. |
+forse | vielleicht | adv | *Forse* domani. | *Vielleicht* morgen. |
+va bene | in Ordnung, okay | phrase | *Va bene*, andiamo. | *Okay*, gehen wir. |
+come stai? | wie geht's dir? | phrase | Ciao Marco, *come stai*? | Hallo Marco, *wie geht's*? |
+come sta? | wie geht es Ihnen? | phrase | Buongiorno, *come sta*? | Guten Tag, *wie geht es Ihnen*? |
+bene | gut | adv | Sto *bene*, grazie. | Mir geht es *gut*, danke. |
+piacere | freut mich | phrase | *Piacere*, sono Luca. | *Freut mich*, ich bin Luca. |
+mi chiamo | ich heiße | phrase | *Mi chiamo* Anna. | *Ich heiße* Anna. |
+il nome | der Name | n | Qual è il tuo *nome*? | Wie ist dein *Name*? |
+il cognome | der Nachname | n | Il mio *cognome* è Rossi. | Mein *Nachname* ist Rossi. |
+essere | sein | v | *Sono* tedesco. | Ich *bin* Deutscher. | sono, sei, è
+avere | haben | v | *Ho* due fratelli. | Ich *habe* zwei Brüder. | ho, hai, ha
+andare | gehen, fahren | v | *Vado* a scuola. | Ich *gehe* zur Schule. | vado, vai, va
+fare | machen, tun | v | Che cosa *fai*? | Was *machst* du? | faccio, fai, fa
+venire | kommen | v | *Vieni* con noi? | *Kommst* du mit uns? | vengo, vieni
+potere | können, dürfen | v | *Posso* aiutarti. | Ich *kann* dir helfen. | posso, puoi
+volere | wollen | v | *Voglio* un tè. | Ich *will* einen Tee. | voglio, vuoi
+dovere | müssen | v | *Devo* andare. | Ich *muss* gehen. | devo, devi
+sapere | wissen; können | v | Non lo *so*. | Ich *weiß* es nicht. | so, sai, sa
+dire | sagen | v | Che cosa *dici*? | Was *sagst* du? | dico, dici
+vedere | sehen | v | *Vedo* il mare. | Ich *sehe* das Meer. |
+prendere | nehmen | v | *Prendo* l'autobus. | Ich *nehme* den Bus. |
+parlare | sprechen | v | *Parli* italiano? | *Sprichst* du Italienisch? |
+capire | verstehen | v | Non *capisco*. | Ich *verstehe* nicht. | capisco
+mangiare | essen | v | *Mangiamo* alle otto. | Wir *essen* um acht. |
+bere | trinken | v | *Bevo* acqua. | Ich *trinke* Wasser. | bevo
+dormire | schlafen | v | Il bambino *dorme*. | Das Kind *schläft*. |
+abitare | wohnen | v | *Abito* a Berlino. | Ich *wohne* in Berlin. |
+lavorare | arbeiten | v | Lei *lavora* molto. | Sie *arbeitet* viel. |
+amare | lieben | v | Ti *amo*. | Ich *liebe* dich. |
+piacere (mi piace) | gefallen (ich mag) | v | *Mi piace* la pizza. | Ich *mag* Pizza. | mi piacciono + Plural
+cercare | suchen | v | *Cerco* le chiavi. | Ich *suche* die Schlüssel. |
+trovare | finden | v | Non *trovo* la borsa. | Ich *finde* die Tasche nicht. |
+dare | geben | v | Mi *dai* il sale? | *Gibst* du mir das Salz? | do, dai, dà
+comprare | kaufen | v | *Compro* il pane. | Ich *kaufe* Brot. |
+ascoltare | zuhören, hören | v | *Ascolto* la radio. | Ich *höre* Radio. |
+guardare | ansehen, schauen | v | *Guardiamo* un film. | Wir *schauen* einen Film. |
+leggere | lesen | v | *Leggo* un libro. | Ich *lese* ein Buch. |
+scrivere | schreiben | v | *Scrivo* una lettera. | Ich *schreibe* einen Brief. |
+aprire | öffnen | v | *Apri* la finestra. | *Öffne* das Fenster. |
+chiudere | schließen | v | *Chiudi* la porta. | *Schließ* die Tür. |
+aspettare | warten | v | *Aspetto* il treno. | Ich *warte* auf den Zug. |
+arrivare | ankommen | v | Il treno *arriva* alle otto. | Der Zug *kommt* um acht *an*. |
+partire | abfahren, abreisen | v | *Partiamo* domani. | Wir *fahren* morgen *ab*. |
+tornare | zurückkommen | v | *Torno* a casa. | Ich *gehe* nach Hause. |
+cominciare | anfangen | v | La lezione *comincia*. | Der Unterricht *beginnt*. |
+finire | beenden, fertig sein | v | Ho *finito* i compiti. | Ich bin mit den Hausaufgaben *fertig*. | finisco
+aiutare | helfen | v | Mi puoi *aiutare*? | Kannst du mir *helfen*? |
+giocare | spielen | v | I bambini *giocano* fuori. | Die Kinder *spielen* draußen. |
+imparare | lernen | v | *Imparo* l'italiano. | Ich *lerne* Italienisch. |
+uno | eins; ein | num | Ho *un* cane. | Ich habe *einen* Hund. |
+due | zwei | num | *Due* caffè, per favore. | *Zwei* Kaffee, bitte. |
+tre | drei | num | Ha *tre* figli. | Er hat *drei* Kinder. |
+quattro | vier | num | *Quattro* persone. | *Vier* Personen. |
+cinque | fünf | num | *Cinque* minuti. | *Fünf* Minuten. |
+sei | sechs | num | Alle *sei*. | Um *sechs*. |
+sette | sieben | num | *Sette* giorni. | *Sieben* Tage. |
+otto | acht | num | *Otto* euro. | *Acht* Euro. |
+nove | neun | num | Sono le *nove*. | Es ist *neun* Uhr. |
+dieci | zehn | num | *Dieci* anni. | *Zehn* Jahre. |
+undici | elf | num | *Undici* giocatori. | *Elf* Spieler. |
+dodici | zwölf | num | *Dodici* uova. | *Zwölf* Eier. |
+venti | zwanzig | num | Ho *venti* anni. | Ich bin *zwanzig*. |
+trenta | dreißig | num | *Trenta* euro. | *Dreißig* Euro. |
+cinquanta | fünfzig | num | *Cinquanta* pagine. | *Fünfzig* Seiten. |
+cento | hundert | num | *Cento* euro. | *Hundert* Euro. |
+mille | tausend | num | *Mille* grazie! | *Tausend* Dank! | Plural: duemila
+primo | erster | adj | È il mio *primo* giorno. | Das ist mein *erster* Tag. |
+lunedì | Montag | n | A *lunedì*! | Bis *Montag*! |
+martedì | Dienstag | n | Il *martedì* faccio sport. | *Dienstags* mache ich Sport. |
+mercoledì | Mittwoch | n | *Mercoledì* pomeriggio. | *Mittwoch*nachmittag. |
+giovedì | Donnerstag | n | Ci vediamo *giovedì*. | Wir sehen uns *Donnerstag*. |
+venerdì | Freitag | n | *Venerdì* sera. | *Freitag*abend. |
+sabato | Samstag | n | Il *sabato* dormo. | *Samstags* schlafe ich. |
+domenica | Sonntag | n | La *domenica* in famiglia. | *Sonntags* mit der Familie. |
+il giorno | der Tag | n | Un bel *giorno*. | Ein schöner *Tag*. |
+la settimana | die Woche | n | La *settimana* prossima. | Nächste *Woche*. |
+il mese | der Monat | n | Il *mese* di maggio. | Der *Monat* Mai. |
+l'anno | das Jahr | n | Buon *anno*! | Frohes neues *Jahr*! | männlich (m)
+oggi | heute | adv | *Oggi* fa bel tempo. | *Heute* ist schönes Wetter. |
+domani | morgen | adv | A *domani*! | Bis *morgen*! |
+ieri | gestern | adv | *Ieri* ero malato. | *Gestern* war ich krank. |
+adesso | jetzt | adv | Vieni *adesso*! | Komm *jetzt*! | auch: ora
+sempre | immer | adv | È *sempre* in ritardo. | Er ist *immer* zu spät. |
+spesso | oft | adv | Vado *spesso* al cinema. | Ich gehe *oft* ins Kino. |
+a volte | manchmal | adv | *A volte* cucino. | *Manchmal* koche ich. |
+mai | nie | adv | Non fumo *mai*. | Ich rauche *nie*. | mit non: non … mai
+la mattina | der Morgen | n | La *mattina* bevo il caffè. | *Morgens* trinke ich Kaffee. |
+il pomeriggio | der Nachmittag | n | Oggi *pomeriggio* sono libero. | Heute *Nachmittag* habe ich frei. |
+la sera | der Abend | n | La *sera* leggo. | *Abends* lese ich. |
+la notte | die Nacht | n | Di *notte* piove. | *Nachts* regnet es. |
+l'ora | die Stunde; die Uhrzeit | n | Che *ora* è? | Wie *spät* ist es? | weiblich (f)
+il minuto | die Minute | n | Aspetta un *minuto*. | Warte eine *Minute*. |
+mezzogiorno | Mittag (12 Uhr) | n | Pranziamo a *mezzogiorno*. | Wir essen *mittags*. |
+grande | groß | adj | Una casa *grande*. | Ein *großes* Haus. |
+piccolo | klein | adj | Un gatto *piccolo*. | Eine *kleine* Katze. |
+buono | gut (Geschmack, Qualität) | adj | È molto *buono*! | Das ist sehr *gut*! |
+cattivo | schlecht; böse | adj | Un odore *cattivo*. | Ein *schlechter* Geruch. |
+bello | schön | adj | Un *bel* giardino. | Ein *schöner* Garten. | vor Konsonant: bel
+nuovo | neu | adj | Un telefono *nuovo*. | Ein *neues* Handy. |
+vecchio | alt | adj | Un libro *vecchio*. | Ein *altes* Buch. |
+giovane | jung | adj | È *giovane*. | Sie ist *jung*. |
+caldo | warm, heiß | adj | Il caffè è *caldo*. | Der Kaffee ist *heiß*. |
+freddo | kalt | adj | L'acqua è *fredda*. | Das Wasser ist *kalt*. |
+facile | leicht, einfach | adj | È *facile*. | Das ist *einfach*. |
+difficile | schwierig | adj | L'esame è *difficile*. | Die Prüfung ist *schwer*. |
+caro | teuer; lieb | adj | È troppo *caro*. | Das ist zu *teuer*. |
+contento | froh, zufrieden | adj | Sono *contento*. | Ich bin *froh*. |
+stanco | müde | adj | Sono molto *stanco*. | Ich bin sehr *müde*. |
+qui | hier | adv | Vieni *qui*. | Komm *her*. | auch: qua
+lì | da, dort | adv | È *lì*. | Er ist *dort*. | auch: là
+molto | viel; sehr | adv | Grazie *molto*. | Vielen Dank. |
+un po' | ein bisschen | adv | Parlo *un po'* d'italiano. | Ich spreche *ein bisschen* Italienisch. |
+troppo | zu, zu viel | adv | È *troppo* lontano. | Das ist *zu* weit. |
+anche | auch | adv | *Anch*'io. | Ich *auch*. |
+e | und | conj | Tu *e* io. | Du *und* ich. |
+o | oder | conj | Tè *o* caffè? | Tee *oder* Kaffee? |
+ma | aber | conj | È piccolo *ma* forte. | Er ist klein, *aber* stark. |
+perché | warum; weil | conj | Resto *perché* sono malato. | Ich bleibe, *weil* ich krank bin. |
+con | mit | prep | Vengo *con* te. | Ich komme *mit* dir. |
+senza | ohne | prep | Un caffè *senza* zucchero. | Ein Kaffee *ohne* Zucker. |
+per | für; um zu | prep | È *per* te. | Das ist *für* dich. |
+in | in | prep | Il libro è *nella* borsa. | Das Buch ist *in* der Tasche. | in + la = nella
+su | auf | prep | Il gatto è *sul* tavolo. | Die Katze ist *auf* dem Tisch. | su + il = sul
+sotto | unter | prep | *Sotto* il letto. | *Unter* dem Bett. |
+da | von; bei (jemandem) | prep | Vado *da* Maria. | Ich gehe *zu* Maria. |
+accanto a | neben | prep | La banca è *accanto alla* posta. | Die Bank ist *neben* der Post. |
+chi | wer | pron | *Chi* è? | *Wer* ist das? |
+che cosa | was | pron | *Che cosa* vuoi? | *Was* willst du? | auch: cosa, che
+dove | wo, wohin | adv | *Dove* abiti? | *Wo* wohnst du? |
+quando | wann | adv | *Quando* parti? | *Wann* fährst du? |
+come | wie | adv | *Come* ti chiami? | *Wie* heißt du? |
+quanto | wie viel | adv | *Quanto* costa? | *Wie viel* kostet das? |
+quale | welcher | det | *Quale* preferisci? | *Welchen* magst du lieber? |
+io | ich | pron | *Io* sono qui. | *Ich* bin hier. |
+tu | du | pron | *Tu* vieni? | Kommst *du*? |
+lui | er | pron | *Lui* è alto. | *Er* ist groß. |
+lei | sie; Sie | pron | *Lei* canta bene. | *Sie* singt gut. |
+noi | wir | pron | *Noi* siamo amici. | *Wir* sind Freunde. |
+voi | ihr | pron | *Voi* siete italiani? | Seid *ihr* Italiener? |
+loro | sie (Plural) | pron | *Loro* giocano a calcio. | *Sie* spielen Fußball. |
+il colore | die Farbe | n | Qual è il tuo *colore* preferito? | Was ist deine Lieblings*farbe*? |
+rosso | rot | adj | Un vestito *rosso*. | Ein *rotes* Kleid. |
+blu | blau | adj | Il cielo è *blu*. | Der Himmel ist *blau*. | unveränderlich
+verde | grün | adj | Una mela *verde*. | Ein *grüner* Apfel. |
+giallo | gelb | adj | Il sole è *giallo*. | Die Sonne ist *gelb*. |
+nero | schwarz | adj | Un gatto *nero*. | Eine *schwarze* Katze. |
+bianco | weiß | adj | La neve è *bianca*. | Der Schnee ist *weiß*. |
+grigio | grau | adj | Un cielo *grigio*. | Ein *grauer* Himmel. |
+## A2
+altro | anderer | adj | Un'*altra* volta. | Ein *anderes* Mal. |
+stesso | gleich, derselbe | adj | La *stessa* cosa. | Das *Gleiche*. |
+tutto | alles; ganz | pron | *Tutto* bene. | *Alles* gut. |
+niente | nichts | pron | Non vedo *niente*. | Ich sehe *nichts*. | auch: nulla
+qualcosa | etwas | pron | Vuoi *qualcosa*? | Willst du *etwas*? |
+qualcuno | jemand | pron | C'è *qualcuno*? | Ist da *jemand*? |
+nessuno | niemand; kein | pron | Non c'è *nessuno*. | Da ist *niemand*. |
+ogni | jeder | det | *Ogni* giorno. | *Jeden* Tag. | unveränderlich
+alcuni | einige | det | *Alcuni* amici. | *Einige* Freunde. |
+ancora | noch; wieder | adv | Sei *ancora* qui? | Bist du *noch* da? |
+già | schon | adv | Ho *già* mangiato. | Ich habe *schon* gegessen. |
+presto | früh; bald | adv | Mi alzo *presto*. | Ich stehe *früh* auf. |
+tardi | spät | adv | È *tardi*. | Es ist *spät*. |
+poi | dann, danach | adv | *Poi* mangiamo. | *Danach* essen wir. |
+prima | zuerst; vorher | adv | *Prima* faccio la doccia. | *Zuerst* dusche ich. |
+finalmente | endlich | adv | *Finalmente* le vacanze! | *Endlich* Ferien! |
+subito | sofort | adv | Vengo *subito*. | Ich komme *sofort*. |
+piano | langsam; leise | adv | Parla *piano*, per favore. | Sprich bitte *langsam*. |
+insieme | zusammen | adv | Mangiamo *insieme*? | Essen wir *zusammen*? |
+solo | nur; allein | adv | Ho *solo* cinque euro. | Ich habe *nur* fünf Euro. |
+quasi | fast | adv | È *quasi* mezzogiorno. | Es ist *fast* Mittag. |
+davvero | wirklich | adv | È *davvero* bello. | Das ist *wirklich* schön. |
+soprattutto | vor allem | adv | Mi piace *soprattutto* il jazz. | Ich mag *vor allem* Jazz. |
+abbastanza | genug; ziemlich | adv | Ho mangiato *abbastanza*. | Ich habe *genug* gegessen. |
+dappertutto | überall | adv | C'è gente *dappertutto*. | *Überall* sind Leute. |
+durante | während | prep | *Durante* le vacanze. | *In* den Ferien. |
+da (seit) | seit | prep | Abito qui *da* due anni. | Ich wohne *seit* zwei Jahren hier. |
+prima di | vor (zeitlich) | prep | *Prima di* cena. | *Vor* dem Abendessen. |
+dopo | nach | prep | *Dopo* il lavoro. | *Nach* der Arbeit. |
+tra | zwischen; in (Zeit) | prep | *Tra* due giorni. | *In* zwei Tagen. | auch: fra
+davanti a | vor (örtlich) | prep | *Davanti alla* casa. | *Vor* dem Haus. |
+dietro | hinter | prep | *Dietro* l'albero. | *Hinter* dem Baum. |
+vicino a | nahe bei | prep | *Vicino alla* stazione. | *In der Nähe* des Bahnhofs. |
+lontano da | weit weg von | prep | È *lontano da* qui? | Ist das *weit von* hier? |
+contro | gegen | prep | Sono *contro*. | Ich bin *dagegen*. |
+verso | gegen (Zeit); in Richtung | prep | *Verso* le otto. | *Gegen* acht. |
+quindi | also, deshalb | conj | Piove, *quindi* resto a casa. | Es regnet, *deshalb* bleibe ich zu Hause. |
+allora | also, dann | adv | *Allora*, andiamo? | *Also*, gehen wir? |
+se | wenn, ob | conj | *Se* vuoi. | *Wenn* du willst. |
+comunque | jedenfalls; trotzdem | adv | Vengo *comunque*. | Ich komme *trotzdem*. |
+però | aber, jedoch | conj | È caro, *però* bello. | Es ist teuer, *aber* schön. |
+pensare | denken | v | *Penso* a te. | Ich *denke* an dich. |
+credere | glauben | v | Ti *credo*. | Ich *glaube* dir. |
+conoscere | kennen; kennenlernen | v | *Conosci* Roma? | *Kennst* du Rom? |
+mettere | legen, stellen; anziehen | v | *Metti* il cappotto. | *Zieh* den Mantel *an*. |
+uscire | ausgehen | v | *Usciamo* stasera? | Gehen wir heute Abend *aus*? | esco, esci
+passare | vorbeigehen; verbringen | v | *Passo* da te. | Ich *komme* bei dir *vorbei*. |
+restare | bleiben | v | *Resto* a casa. | Ich *bleibe* zu Hause. | auch: rimanere
+cadere | fallen | v | Attento, *cadi*! | Pass auf, du *fällst*! |
+portare | tragen; bringen | v | *Porta* il vino. | *Bring* den Wein *mit*. |
+mostrare | zeigen | v | *Mostrami* la foto. | *Zeig* mir das Foto. |
+dimenticare | vergessen | v | Ho *dimenticato* l'ombrello. | Ich habe den Schirm *vergessen*. |
+ricordare | sich erinnern | v | Non *ricordo* il nome. | Ich *erinnere* mich nicht an den Namen. |
+provare | versuchen; anprobieren | v | *Prova* ancora. | *Versuch* es noch mal. |
+usare | benutzen | v | *Usi* questa app? | *Benutzt* du diese App? |
+spiegare | erklären | v | Mi puoi *spiegare*? | Kannst du es mir *erklären*? |
+chiedere | fragen; bitten | v | *Chiedo* al professore. | Ich *frage* den Lehrer. |
+rispondere | antworten | v | Non *risponde*. | Er *antwortet* nicht. |
+chiamare | anrufen; rufen | v | Ti *chiamo* stasera. | Ich *rufe* dich heute Abend *an*. |
+mandare | schicken | v | *Mandami* un messaggio. | *Schick* mir eine Nachricht. |
+ricevere | bekommen | v | Ho *ricevuto* la tua lettera. | Ich habe deinen Brief *bekommen*. |
+pagare | bezahlen | v | *Pago* con la carta. | Ich *zahle* mit Karte. |
+costare | kosten | v | Quanto *costa*? | Wie viel *kostet* das? |
+cambiare | ändern; wechseln | v | Devo *cambiare* treno. | Ich muss *umsteigen*. |
+vincere | gewinnen | v | Abbiamo *vinto*! | Wir haben *gewonnen*! |
+perdere | verlieren; verpassen | v | Ho *perso* le chiavi. | Ich habe die Schlüssel *verloren*. |
+scegliere | wählen, aussuchen | v | *Scegli* una carta. | *Such* dir eine Karte *aus*. | scelgo
+preferire | vorziehen | v | *Preferisco* il tè. | Ich *trinke lieber* Tee. | preferisco
+diventare | werden | v | Vuole *diventare* medico. | Er will Arzt *werden*. |
+salire | hinaufgehen; einsteigen | v | *Sali* in macchina. | *Steig* ins Auto. | salgo
+scendere | hinuntergehen; aussteigen | v | *Scendo* qui. | Ich *steige* hier *aus*. |
+correre | rennen, laufen | v | *Corre* ogni mattina. | Er *läuft* jeden Morgen. |
+camminare | gehen, zu Fuß gehen | v | Mi piace *camminare*. | Ich *gehe* gern zu Fuß. |
+funzionare | funktionieren | v | Non *funziona*. | Es *funktioniert* nicht. |
+sedersi | sich setzen | v | Si *sieda*, prego. | *Setzen Sie sich* bitte. |
+alzarsi | aufstehen | v | Mi *alzo* alle sette. | Ich *stehe* um sieben *auf*. |
+andare a letto | ins Bett gehen | phrase | *Vado a letto* tardi. | Ich *gehe* spät *ins Bett*. |
+bisogna | man muss | phrase | *Bisogna* partire. | *Wir müssen* los. |
+c'è / ci sono | es gibt | phrase | *C'è* un problema. | *Es gibt* ein Problem. |
+la cosa | die Sache | n | Una *cosa* importante. | Eine wichtige *Sache*. |
+la volta | das Mal | n | La prima *volta*. | Das erste *Mal*. |
+il modo | die Art und Weise | n | In che *modo*? | Auf welche *Weise*? |
+il momento | der Moment | n | Un *momento*, per favore. | Einen *Moment* bitte. |
+la fine | das Ende | n | Alla *fine* del film. | Am *Ende* des Films. |
+l'inizio | der Anfang | n | All'*inizio* era difficile. | *Anfangs* war es schwer. | männlich (m)
+il problema | das Problem | n | Nessun *problema*! | Kein *Problem*! | männlich trotz -a
+la domanda | die Frage | n | Ho una *domanda*. | Ich habe eine *Frage*. |
+la risposta | die Antwort | n | La *risposta* giusta. | Die richtige *Antwort*. |
+l'idea | die Idee | n | Buona *idea*! | Gute *Idee*! | weiblich (f)
+il mondo | die Welt | n | Il *mondo* è piccolo. | Die *Welt* ist klein. |
+la persona | die Person | n | Un tavolo per due *persone*. | Ein Tisch für zwei *Personen*. |
+la gente | die Leute | n | La *gente* è gentile qui. | Die *Leute* sind hier nett. | Singular!
+possibile | möglich | adj | È *possibile*. | Das ist *möglich*. |
+importante | wichtig | adj | È molto *importante*. | Das ist sehr *wichtig*. |
+pronto | fertig, bereit | adj | Sei *pronto*? | Bist du *fertig*? | am Telefon: Pronto? = Hallo?
+libero | frei | adj | Questo posto è *libero*? | Ist dieser Platz *frei*? |
+occupato | besetzt; beschäftigt | adj | Il bagno è *occupato*. | Das Bad ist *besetzt*. |
+pieno | voll | adj | Il bicchiere è *pieno*. | Das Glas ist *voll*. |
+vuoto | leer | adj | La bottiglia è *vuota*. | Die Flasche ist *leer*. |
+lungo | lang | adj | Un viaggio *lungo*. | Eine *lange* Reise. |
+corto | kurz | adj | Un film *corto*. | Ein *kurzer* Film. |
+pesante | schwer (Gewicht) | adj | Questa borsa è *pesante*. | Diese Tasche ist *schwer*. |
+leggero | leicht (Gewicht) | adj | Un pasto *leggero*. | Eine *leichte* Mahlzeit. |
+pulito | sauber | adj | La cucina è *pulita*. | Die Küche ist *sauber*. |
+sporco | schmutzig | adj | Le scarpe sono *sporche*. | Die Schuhe sind *schmutzig*. |
+forte | stark; laut | adj | È molto *forte*. | Er ist sehr *stark*. |
+debole | schwach | adj | Il segnale è *debole*. | Das Signal ist *schwach*. |
+veloce | schnell | adj | Un treno *veloce*. | Ein *schneller* Zug. |
+lento | langsam | adj | Internet è *lento*. | Das Internet ist *langsam*. |
+ultimo | letzter | adj | L'*ultimo* autobus. | Der *letzte* Bus. |
+prossimo | nächster | adj | La *prossima* settimana. | *Nächste* Woche. |
+vero | wahr, echt | adj | È *vero*? | Ist das *wahr*? |
+falso | falsch | adj | È *falso*. | Das ist *falsch*. |
+giusto | richtig; gerecht | adj | La risposta *giusta*. | Die *richtige* Antwort. |
+sbagliato | falsch | adj | Il numero *sbagliato*. | Die *falsche* Nummer. |

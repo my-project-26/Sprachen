@@ -1,0 +1,65 @@
+# Italienisch – Wohnen, Stadt, Verkehr B2/C1
+## B2
+il mercato immobiliare | der Immobilienmarkt | n | Il *mercato immobiliare* è in crisi. | Der *Immobilienmarkt* steckt in der Krise. |
+l'agenzia immobiliare | der Immobilienmakler | n | Tramite un'*agenzia immobiliare*. | Über einen *Makler*. | weiblich (f)
+la compravendita | der Kauf und Verkauf | n | La *compravendita* di case. | Der Häuser*handel*. |
+il rogito | der notarielle Kaufvertrag | n | Firmiamo il *rogito* dal notaio. | Wir unterschreiben den *Kaufvertrag* beim Notar. |
+il notaio | der Notar | n | Appuntamento dal *notaio*. | Termin beim *Notar*. |
+la prima casa | das selbstgenutzte Eigenheim | n | Agevolazioni per la *prima casa*. | Vergünstigungen fürs *erste Eigenheim*. |
+il canone d'affitto | die Mietzahlung | n | Il *canone d'affitto* mensile. | Die monatliche *Miete*. |
+lo sfratto | die Zwangsräumung | n | Hanno ricevuto lo *sfratto*. | Sie haben die *Räumungsklage* bekommen. |
+il moroso | der säumige Zahler | n | Un inquilino *moroso*. | Ein *säumiger* Mieter. |
+l'amministratore di condominio | der Hausverwalter | n | Chiama l'*amministratore di condominio*. | Ruf den *Hausverwalter* an. | männlich (m)
+la riunione condominiale | die Eigentümerversammlung | n | Una *riunione condominiale* infinita. | Eine endlose *Eigentümerversammlung*. |
+le parti comuni | das Gemeinschaftseigentum | n | La pulizia delle *parti comuni*. | Die Reinigung der *Gemeinschaftsflächen*. |
+la classe energetica | die Energieeffizienzklasse | n | Una casa in *classe energetica* A. | Ein Haus der *Energieklasse* A. |
+il cappotto termico | die Außendämmung | n | Rifare il *cappotto termico*. | Die *Wärmedämmung* erneuern. |
+il superbonus | der Steuerbonus für Sanierungen | n | Lavori con il *superbonus*. | Arbeiten mit dem *Sanierungsbonus*. |
+la caldaia | der Heizkessel | n | Cambiare la *caldaia*. | Den *Heizkessel* austauschen. |
+il condizionatore | die Klimaanlage | n | Accendi il *condizionatore*. | Mach die *Klimaanlage* an. |
+gli infissi | die Fenster (Rahmen) | n | *Infissi* nuovi a doppio vetro. | Neue *Fenster* mit Doppelverglasung. |
+la tapparella | der Rollladen | n | Abbassa la *tapparella*. | Mach den *Rollladen* runter. |
+il terrazzo | die Dachterrasse | n | Ceniamo sul *terrazzo*. | Wir essen auf der *Terrasse*. |
+il box auto | die Garage | n | Un *box auto* in affitto. | Eine *Garage* zur Miete. |
+la periferia | der Stadtrand | n | Abitiamo in *periferia*. | Wir wohnen am *Stadtrand*. |
+il pendolarismo | das Pendeln | n | Il *pendolarismo* costa tempo. | *Pendeln* kostet Zeit. |
+la viabilità | die Verkehrsführung | n | Modifiche alla *viabilità*. | Änderungen der *Verkehrsführung*. |
+i lavori in corso | die Baustelle | n | Strada chiusa per *lavori in corso*. | Straße wegen *Baustelle* gesperrt. |
+la deviazione | die Umleitung | n | Seguire la *deviazione*. | Der *Umleitung* folgen. |
+il passaggio a livello | der Bahnübergang | n | Il *passaggio a livello* è chiuso. | Der *Bahnübergang* ist geschlossen. |
+il casello | die Mautstelle | n | Uscire al *casello* di Firenze. | An der *Mautstelle* Florenz rausfahren. |
+il Telepass | die elektronische Mautbox | n | Corsia *Telepass*. | *Telepass*-Spur. |
+l'autovelox | der Blitzer | n | Attenzione, c'è un *autovelox*! | Achtung, *Blitzer*! | männlich (m)
+il tagliando | die Inspektion (Auto) | n | Portare l'auto al *tagliando*. | Das Auto zur *Inspektion* bringen. |
+la revisione | die Hauptuntersuchung (TÜV) | n | La *revisione* è scaduta. | Der *TÜV* ist abgelaufen. |
+il bollo auto | die Kfz-Steuer | n | Pagare il *bollo auto*. | Die *Kfz-Steuer* zahlen. |
+la constatazione amichevole | der Unfallbericht | n | Compilare la *constatazione amichevole*. | Den *Unfallbericht* ausfüllen. |
+## C1
+la gentrificazione | die Gentrifizierung | n | La *gentrificazione* dei quartieri storici. | Die *Gentrifizierung* der Altstadtviertel. |
+gli affitti brevi | die Kurzzeitvermietung | n | Regolare gli *affitti brevi*. | Die *Kurzzeitvermietung* regulieren. |
+l'emergenza abitativa | die Wohnungsnot | n | L'*emergenza abitativa* nelle città. | Die *Wohnungsnot* in den Städten. | weiblich (f)
+l'edilizia popolare | der soziale Wohnungsbau | n | Case di *edilizia popolare*. | Wohnungen des *sozialen Wohnungsbaus*. | weiblich (f)
+la speculazione edilizia | die Bauspekulation | n | La *speculazione edilizia* degli anni '60. | Die *Bauspekulation* der 60er-Jahre. |
+il piano regolatore | der Flächennutzungsplan | n | Modificare il *piano regolatore*. | Den *Bebauungsplan* ändern. |
+il catasto | das Kataster | n | La rendita al *catasto*. | Der Wert im *Kataster*. |
+la planimetria | der Grundriss | n | Allego la *planimetria*. | Ich hänge den *Grundriss* an. |
+il vincolo paesaggistico | die Landschaftsschutzauflage | n | Un edificio sotto *vincolo paesaggistico*. | Ein Gebäude unter *Landschaftsschutz*. |
+il condono edilizio | die Bauamnestie | n | Sanare con il *condono edilizio*. | Mit der *Bauamnestie* legalisieren. |
+la nuda proprietà | das Eigentum ohne Nießbrauch | n | Vendere la *nuda proprietà*. | Das Haus *mit Wohnrecht* verkaufen. |
+l'usufrutto | der Nießbrauch | n | La nonna ha l'*usufrutto*. | Die Oma hat das *Nießbrauchrecht*. | männlich (m)
+la mobilità sostenibile | die nachhaltige Mobilität | n | Investire nella *mobilità sostenibile*. | In *nachhaltige Mobilität* investieren. |
+la micromobilità | die Mikromobilität | n | Monopattini e *micromobilità*. | E-Roller und *Mikromobilität*. |
+il monopattino elettrico | der E-Scooter | n | Noleggiare un *monopattino elettrico*. | Einen *E-Scooter* leihen. |
+il car sharing | das Carsharing | n | Uso il *car sharing*. | Ich nutze *Carsharing*. |
+l'arredo urbano | die Stadtmöblierung | n | Rinnovare l'*arredo urbano*. | Die *Stadtausstattung* erneuern. | männlich (m)
+la riqualificazione urbana | die Stadterneuerung | n | Un progetto di *riqualificazione urbana*. | Ein Projekt zur *Stadterneuerung*. |
+lo sprawl urbano | die Zersiedelung | n | Limitare lo *sprawl urbano*. | Die *Zersiedelung* begrenzen. |
+il dormitorio | die Schlafstadt | n | Un quartiere *dormitorio*. | Eine *Schlafstadt*. |
+il degrado urbano | der städtische Verfall | n | Lottare contro il *degrado urbano*. | Gegen den *Verfall der Städte* kämpfen. |
+l'isola pedonale | die Fußgängerzone | n | Il centro è *isola pedonale*. | Das Zentrum ist *Fußgängerzone*. | weiblich (f)
+la congestione del traffico | die Verkehrsüberlastung | n | Ridurre la *congestione del traffico*. | Die *Verkehrsüberlastung* verringern. |
+il trasporto su gomma | der Straßengüterverkehr | n | Spostare il *trasporto su gomma* alla ferrovia. | Den *Straßengüterverkehr* auf die Schiene verlagern. |
+l'alta velocità | der Hochgeschwindigkeitsverkehr | n | Il treno dell'*alta velocità*. | Der *Hochgeschwindigkeits*zug. | weiblich (f)
+la linea ferroviaria | die Bahnstrecke | n | Una nuova *linea ferroviaria*. | Eine neue *Bahnstrecke*. |
+il disservizio | die Störung (Dienst) | n | Scusate il *disservizio*. | Entschuldigen Sie die *Störung*. |
+la soppressione del treno | der Zugausfall | n | Annunciata la *soppressione del treno*. | Der *Zugausfall* wurde angekündigt. |

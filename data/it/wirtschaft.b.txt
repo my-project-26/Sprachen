@@ -1,0 +1,69 @@
+# Italienisch – Geld, Wirtschaft, Gesellschaft B2/C1
+## B2
+il risparmiatore | der Sparer | n | Tutelare i *risparmiatori*. | Die *Sparer* schützen. |
+il conto deposito | das Tagesgeldkonto | n | Un *conto deposito* al 3%. | Ein *Tagesgeldkonto* mit 3 %. |
+l'home banking | das Onlinebanking | n | Pago con l'*home banking*. | Ich zahle per *Onlinebanking*. | männlich (m)
+la commissione | die Gebühr | n | Senza *commissioni*. | Ohne *Gebühren*. |
+il saldo | der Kontostand; der Ausverkauf | n | Controlla il *saldo*. | Prüf den *Kontostand*. |
+il prelievo | die Abhebung | n | Un *prelievo* al bancomat. | Eine *Abhebung* am Automaten. |
+il versamento | die Einzahlung | n | Fare un *versamento*. | Eine *Einzahlung* machen. |
+l'addebito | die Lastschrift | n | L'*addebito* diretto. | Die *Lastschrift*. | männlich (m)
+la carta prepagata | die Prepaidkarte | n | Ricarico la *carta prepagata*. | Ich lade die *Prepaidkarte* auf. |
+il budget | das Budget | n | Rispettare il *budget*. | Das *Budget* einhalten. |
+il preventivo | der Kostenvoranschlag | n | Chiedere un *preventivo*. | Einen *Kostenvoranschlag* einholen. |
+la spesa | die Ausgabe | n | Le *spese* mensili. | Die monatlichen *Ausgaben*. |
+le entrate | die Einnahmen | n | *Entrate* e uscite. | *Einnahmen* und Ausgaben. |
+il reddito | das Einkommen | n | Un *reddito* medio. | Ein mittleres *Einkommen*. |
+la dichiarazione dei redditi | die Einkommensteuererklärung | n | Fare la *dichiarazione dei redditi*. | Die *Steuererklärung* machen. |
+la detrazione | der Steuerabzug | n | Una *detrazione* fiscale. | Eine steuerliche *Absetzung*. |
+il bonus | der Zuschuss, Bonus | n | Il *bonus* per le famiglie. | Der Familien*zuschuss*. |
+l'assegno | der Scheck; die Zulage | n | L'*assegno* unico per i figli. | Das *Kindergeld*. | männlich (m)
+il sussidio | die Unterstützung (Geld) | n | Un *sussidio* di disoccupazione. | *Arbeitslosengeld*. |
+la pensione minima | die Mindestrente | n | Vive con la *pensione minima*. | Er lebt von der *Mindestrente*. |
+la previdenza sociale | die Sozialversicherung | n | I contributi di *previdenza sociale*. | Die *Sozialversicherungs*beiträge. |
+i contributi | die Beiträge (Sozialversicherung) | n | Versare i *contributi*. | *Beiträge* einzahlen. |
+l'INPS | die Rentenversicherungsanstalt | n | Una domanda all'*INPS*. | Ein Antrag bei der *INPS*. | männlich (m)
+l'Agenzia delle Entrate | das Finanzamt | n | Una lettera dall'*Agenzia delle Entrate*. | Ein Brief vom *Finanzamt*. | weiblich (f)
+la multinazionale | der Konzern | n | Lavora per una *multinazionale*. | Er arbeitet für einen *Konzern*. |
+la globalizzazione | die Globalisierung | n | Gli effetti della *globalizzazione*. | Die Folgen der *Globalisierung*. |
+il commercio estero | der Außenhandel | n | Il *commercio estero* cresce. | Der *Außenhandel* wächst. |
+i dazi | die Zölle | n | Nuovi *dazi* sulle importazioni. | Neue *Zölle* auf Importe. |
+l'importazione | der Import | n | L'*importazione* di gas. | Der Gas*import*. | weiblich (f)
+la domanda e l'offerta | Angebot und Nachfrage | phrase | La legge della *domanda e dell'offerta*. | Das Gesetz von *Angebot und Nachfrage*. |
+il consumo | der Konsum, Verbrauch | n | Il *consumo* di energia. | Der Energie*verbrauch*. |
+## C1
+la politica monetaria | die Geldpolitik | n | La *politica monetaria* della BCE. | Die *Geldpolitik* der EZB. |
+il rialzo dei tassi | die Zinserhöhung | n | Un nuovo *rialzo dei tassi*. | Eine neue *Zinserhöhung*. |
+la stagflazione | die Stagflation | n | Il rischio di *stagflazione*. | Die Gefahr einer *Stagflation*. |
+il potere contrattuale | die Verhandlungsmacht | n | I sindacati perdono *potere contrattuale*. | Die Gewerkschaften verlieren *Verhandlungsmacht*. |
+il salario minimo | der Mindestlohn | n | Il dibattito sul *salario minimo*. | Die Debatte über den *Mindestlohn*. |
+il lavoro povero | die Erwerbsarmut | n | Il fenomeno del *lavoro povero*. | Das Phänomen der *Erwerbsarmut*. |
+la produttività del lavoro | die Arbeitsproduktivität | n | La *produttività del lavoro* ristagna. | Die *Arbeitsproduktivität* stagniert. |
+ristagnare | stagnieren | v | L'economia *ristagna*. | Die Wirtschaft *stagniert*. |
+il PNRR | der Wiederaufbauplan | n | I fondi del *PNRR*. | Die Mittel des *Wiederaufbauplans*. | Piano nazionale di ripresa e resilienza
+i fondi strutturali | die Strukturfonds | n | Spendere i *fondi strutturali* europei. | Die EU-*Strukturfonds* abrufen. |
+la spesa pubblica | die Staatsausgaben | n | Tagliare la *spesa pubblica*. | Die *Staatsausgaben* kürzen. |
+l'austerità | die Sparpolitik | n | Anni di *austerità*. | Jahre der *Sparpolitik*. | weiblich (f)
+il deficit | das Defizit | n | Il *deficit* supera il 3%. | Das *Defizit* übersteigt 3 %. |
+il patto di stabilità | der Stabilitätspakt | n | Le regole del *patto di stabilità*. | Die Regeln des *Stabilitätspakts*. |
+i titoli di Stato | die Staatsanleihen | n | Comprare *titoli di Stato*. | *Staatsanleihen* kaufen. |
+il BTP | die italienische Staatsanleihe | n | Investire in *BTP*. | In *BTP* investieren. |
+il rating | das Rating | n | Il *rating* dell'Italia. | Das *Rating* Italiens. |
+la speculazione | die Spekulation | n | La *speculazione* finanziaria. | Die Finanz*spekulation*. |
+la bolla speculativa | die Spekulationsblase | n | Scoppia la *bolla speculativa*. | Die *Blase* platzt. |
+il crollo | der Einbruch, Zusammenbruch | n | Il *crollo* delle vendite. | Der *Einbruch* der Verkäufe. |
+il default | die Staatspleite | n | Evitare il *default*. | Die *Staatspleite* abwenden. |
+il risanamento | die Sanierung | n | Il *risanamento* dei conti pubblici. | Die *Sanierung* der Staatsfinanzen. |
+la crescita economica | das Wirtschaftswachstum | n | Una *crescita economica* debole. | Ein schwaches *Wirtschaftswachstum*. |
+il tessuto produttivo | die Wirtschaftsstruktur | n | Il *tessuto produttivo* del Nord. | Die *Wirtschaftsstruktur* des Nordens. |
+la competitività | die Wettbewerbsfähigkeit | n | Perdere *competitività*. | *Wettbewerbsfähigkeit* verlieren. |
+la reindustrializzazione | die Reindustrialisierung | n | Una politica di *reindustrializzazione*. | Eine Politik der *Reindustrialisierung*. |
+il reshoring | die Rückverlagerung | n | Il *reshoring* delle aziende. | Die *Rückverlagerung* von Firmen. |
+le materie prime critiche | die kritischen Rohstoffe | n | La dipendenza dalle *materie prime critiche*. | Die Abhängigkeit von *kritischen Rohstoffen*. |
+la catena di approvvigionamento | die Lieferkette | n | Interruzioni nella *catena di approvvigionamento*. | Störungen der *Lieferkette*. |
+il caro energia | die hohen Energiepreise | n | Il *caro energia* pesa sulle imprese. | Die *hohen Energiepreise* belasten die Unternehmen. |
+la povertà assoluta | die absolute Armut | n | Cinque milioni in *povertà assoluta*. | Fünf Millionen in *absoluter Armut*. |
+la redistribuzione | die Umverteilung | n | La *redistribuzione* della ricchezza. | Die *Umverteilung* des Reichtums. |
+la patrimoniale | die Vermögenssteuer | n | Introdurre una *patrimoniale*. | Eine *Vermögenssteuer* einführen. |
+la flat tax | die Einheitssteuer | n | La proposta della *flat tax*. | Der Vorschlag einer *Flat Tax*. |
+il cuneo contributivo | die Sozialabgabenlast | n | Ridurre il *cuneo contributivo*. | Die *Sozialabgaben* senken. |

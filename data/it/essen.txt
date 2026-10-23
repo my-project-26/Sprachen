@@ -1,0 +1,129 @@
+# Italienisch – Essen & Trinken
+## A1
+il cibo | das Essen | n | Il *cibo* italiano è buonissimo. | Das italienische *Essen* ist super. |
+la colazione | das Frühstück | n | Faccio *colazione* al bar. | Ich *frühstücke* in der Bar. |
+il pranzo | das Mittagessen | n | Il *pranzo* è pronto. | Das *Mittagessen* ist fertig. |
+la cena | das Abendessen | n | A che ora è la *cena*? | Wann gibt es *Abendessen*? |
+l'acqua | das Wasser | n | Un bicchiere d'*acqua*. | Ein Glas *Wasser*. | weiblich (f); frizzante/naturale
+il caffè | der Kaffee | n | Un *caffè*, per favore. | Einen *Espresso*, bitte. | caffè = Espresso
+il cappuccino | der Cappuccino | n | Un *cappuccino* e una brioche. | Einen *Cappuccino* und ein Hörnchen. | nur morgens üblich
+il tè | der Tee | n | Prendo un *tè*. | Ich nehme einen *Tee*. |
+il latte | die Milch | n | Il *latte* è freddo. | Die *Milch* ist kalt. |
+il succo | der Saft | n | Un *succo* d'arancia. | Ein Orangen*saft*. |
+la birra | das Bier | n | Una *birra* media. | Ein mittleres *Bier*. |
+il vino | der Wein | n | Un bicchiere di *vino* rosso. | Ein Glas *Rot*wein. |
+il pane | das Brot | n | Il *pane* è fresco. | Das *Brot* ist frisch. |
+il burro | die Butter | n | Pane e *burro*. | Brot und *Butter*. |
+il formaggio | der Käse | n | Mi piace il *formaggio*. | Ich mag *Käse*. |
+il prosciutto | der Schinken | n | *Prosciutto* e melone. | *Schinken* mit Melone. | crudo = roh, cotto = gekocht
+l'uovo | das Ei | n | Un *uovo* sodo. | Ein hartgekochtes *Ei*. | Plural: le uova
+la carne | das Fleisch | n | Non mangio *carne*. | Ich esse kein *Fleisch*. |
+il pollo | das Hähnchen | n | *Pollo* con patate. | *Hähnchen* mit Kartoffeln. |
+il pesce | der Fisch | n | Il *pesce* è fresco. | Der *Fisch* ist frisch. |
+la pasta | die Nudeln; das Gebäck | n | Mangiamo la *pasta*. | Wir essen *Nudeln*. |
+la pizza | die Pizza | n | Una *pizza* margherita. | Eine *Pizza* Margherita. |
+il riso | der Reis | n | *Riso* con verdure. | *Reis* mit Gemüse. |
+la verdura | das Gemüse | n | Mangia più *verdura*. | Iss mehr *Gemüse*. |
+la frutta | das Obst | n | La *frutta* fa bene. | *Obst* ist gesund. |
+la mela | der Apfel | n | Una *mela* verde. | Ein grüner *Apfel*. |
+la banana | die Banane | n | Una *banana* matura. | Eine reife *Banane*. |
+l'arancia | die Orange | n | Una spremuta d'*arancia*. | Ein frisch gepresster *Orangen*saft. | weiblich (f)
+il pomodoro | die Tomate | n | Pasta al *pomodoro*. | Nudeln mit *Tomaten*soße. |
+la patata | die Kartoffel | n | *Patate* fritte. | Pommes *frites*. |
+l'insalata | der Salat | n | Un'*insalata* mista. | Ein gemischter *Salat*. | weiblich (f)
+il sale | das Salz | n | Mi passi il *sale*? | Gibst du mir das *Salz*? |
+lo zucchero | der Zucker | n | Il caffè senza *zucchero*. | Der Kaffee ohne *Zucker*. |
+l'olio | das Öl | n | *Olio* d'oliva. | Oliven*öl*. | männlich (m)
+il gelato | das Eis | n | Un *gelato* al cioccolato. | Ein Schokoladen*eis*. |
+la torta | der Kuchen | n | Una fetta di *torta*. | Ein Stück *Kuchen*. |
+il dolce | die Süßspeise, der Nachtisch | n | Che cosa c'è come *dolce*? | Was gibt es als *Nachtisch*? |
+avere fame | Hunger haben | phrase | *Ho fame*! | Ich *habe Hunger*! |
+avere sete | Durst haben | phrase | *Hai sete*? | *Hast* du *Durst*? |
+buonissimo | sehr lecker | adj | La pizza è *buonissima*! | Die Pizza ist *super lecker*! |
+il ristorante | das Restaurant | n | Andiamo al *ristorante*. | Gehen wir ins *Restaurant*. |
+il bar | die Bar, das Café | n | Prendiamo un caffè al *bar*. | Trinken wir einen Kaffee in der *Bar*. |
+il menù | die Speisekarte | n | Il *menù*, per favore. | Die *Speisekarte* bitte. |
+il conto | die Rechnung | n | Il *conto*, per favore. | Die *Rechnung* bitte. |
+il cameriere | der Kellner | n | Il *cameriere* è gentile. | Der *Kellner* ist nett. | weiblich: la cameriera
+il bicchiere | das Glas | n | Un *bicchiere* di vino. | Ein *Glas* Wein. |
+la tazza | die Tasse | n | Una *tazza* di tè. | Eine *Tasse* Tee. |
+il piatto | der Teller; das Gericht | n | Un *piatto* tipico. | Ein typisches *Gericht*. |
+la forchetta | die Gabel | n | Mi serve una *forchetta*. | Ich brauche eine *Gabel*. |
+il coltello | das Messer | n | Il *coltello* non taglia. | Das *Messer* schneidet nicht. |
+il cucchiaio | der Löffel | n | Un *cucchiaio* per la zuppa. | Ein *Löffel* für die Suppe. |
+## A2
+l'antipasto | die Vorspeise | n | Come *antipasto* prendo la bruschetta. | Als *Vorspeise* nehme ich Bruschetta. | männlich (m)
+il primo | der erste Gang (Pasta, Reis) | n | Come *primo*, spaghetti. | Als *ersten Gang* Spaghetti. |
+il secondo | der Hauptgang (Fleisch, Fisch) | n | Per *secondo* prendo il pesce. | Als *Hauptgang* nehme ich Fisch. |
+il contorno | die Beilage | n | Come *contorno*, patate. | Als *Beilage* Kartoffeln. |
+la zuppa | die Suppe | n | Una *zuppa* di verdure. | Eine Gemüse*suppe*. | auch: la minestra
+il manzo | das Rindfleisch | n | Una bistecca di *manzo*. | Ein *Rinder*steak. |
+il maiale | das Schweinefleisch; das Schwein | n | Non mangio *maiale*. | Ich esse kein *Schweinefleisch*. |
+il tonno | der Thunfisch | n | Pasta al *tonno*. | Nudeln mit *Thunfisch*. |
+i frutti di mare | die Meeresfrüchte | n | Spaghetti ai *frutti di mare*. | Spaghetti mit *Meeresfrüchten*. |
+la cipolla | die Zwiebel | n | Taglia la *cipolla*. | Schneid die *Zwiebel*. |
+l'aglio | der Knoblauch | n | Senza *aglio*, per favore. | Ohne *Knoblauch* bitte. | männlich (m)
+la carota | die Karotte | n | Una *carota* cruda. | Eine rohe *Karotte*. |
+il peperone | die Paprika | n | *Peperoni* ripieni. | Gefüllte *Paprika*. |
+la melanzana | die Aubergine | n | Parmigiana di *melanzane*. | *Auberginen*auflauf. |
+le zucchine | die Zucchini | n | Pasta con le *zucchine*. | Nudeln mit *Zucchini*. |
+i fagioli | die Bohnen | n | Pasta e *fagioli*. | Nudeln mit *Bohnen*. |
+il fungo | der Pilz | n | Risotto ai *funghi*. | *Pilz*risotto. |
+il limone | die Zitrone | n | Una fetta di *limone*. | Eine Scheibe *Zitrone*. |
+la fragola | die Erdbeere | n | Gelato alla *fragola*. | *Erdbeer*eis. |
+l'uva | die Weintrauben | n | Un grappolo d'*uva*. | Eine *Weintraube*. | weiblich (f), Singular
+la pesca | der Pfirsich | n | Una *pesca* matura. | Ein reifer *Pfirsich*. |
+la farina | das Mehl | n | Mezzo chilo di *farina*. | Ein Pfund *Mehl*. |
+il pepe | der Pfeffer | n | Sale e *pepe*. | Salz und *Pfeffer*. |
+l'aceto | der Essig | n | Olio e *aceto*. | Öl und *Essig*. | männlich (m)
+la marmellata | die Marmelade | n | Pane e *marmellata*. | Brot mit *Marmelade*. |
+il biscotto | der Keks | n | *Biscotti* con il latte. | *Kekse* mit Milch. |
+il panino | das belegte Brötchen | n | Un *panino* al prosciutto. | Ein Schinken*brötchen*. |
+il cornetto | das Hörnchen, Croissant | n | Un cappuccino e un *cornetto*. | Ein Cappuccino und ein *Hörnchen*. | Norditalien: brioche
+cucinare | kochen | v | Mi piace *cucinare*. | Ich *koche* gern. |
+cuocere | garen, kochen | v | *Cuoci* la pasta per dieci minuti. | *Koch* die Nudeln zehn Minuten. |
+tagliare | schneiden | v | *Taglia* il pane. | *Schneid* das Brot. |
+assaggiare | probieren | v | *Assaggia* questo vino. | *Probier* diesen Wein. |
+ordinare | bestellen | v | Vorrei *ordinare*. | Ich möchte *bestellen*. |
+prenotare | reservieren | v | Ho *prenotato* un tavolo. | Ich habe einen Tisch *reserviert*. |
+vorrei | ich hätte gern | phrase | *Vorrei* un bicchiere d'acqua. | *Ich hätte gern* ein Glas Wasser. |
+il coperto | das Gedeck (Gebühr) | n | Il *coperto* costa due euro. | Das *Gedeck* kostet zwei Euro. |
+la mancia | das Trinkgeld | n | Lasciamo la *mancia*. | Wir geben *Trinkgeld*. |
+dolce | süß | adj | Il dolce è troppo *dolce*. | Der Nachtisch ist zu *süß*. |
+salato | salzig | adj | La zuppa è *salata*. | Die Suppe ist *salzig*. |
+piccante | scharf | adj | Mi piace il cibo *piccante*. | Ich mag *scharfes* Essen. |
+fresco | frisch | adj | Pesce *fresco*. | *Frischer* Fisch. |
+cotto | gekocht, gar | adj | La pasta è *cotta*. | Die Nudeln sind *gar*. |
+crudo | roh | adj | Prosciutto *crudo*. | *Roher* Schinken. |
+al dente | bissfest | phrase | La pasta *al dente*. | *Bissfeste* Nudeln. |
+## B1
+la ricetta | das Rezept | n | La *ricetta* della nonna. | Omas *Rezept*. |
+l'ingrediente | die Zutat | n | Pochi *ingredienti*, ma buoni. | Wenige *Zutaten*, aber gute. | männlich (m)
+la cucina casalinga | die Hausmannskost | n | Amo la *cucina casalinga*. | Ich liebe *Hausmannskost*. |
+il sugo | die Soße | n | Il *sugo* deve cuocere a lungo. | Die *Soße* muss lange köcheln. |
+bollire | kochen (Wasser) | v | L'acqua *bolle*. | Das Wasser *kocht*. |
+friggere | frittieren | v | *Friggere* il pesce. | Den Fisch *frittieren*. |
+arrostire | braten (im Ofen) | v | *Arrostire* la carne. | Das Fleisch *braten*. |
+mescolare | umrühren, mischen | v | *Mescola* bene. | *Rühr* gut *um*. |
+aggiungere | hinzufügen | v | *Aggiungi* un pizzico di sale. | *Gib* eine Prise Salz *dazu*. |
+la padella | die Pfanne | n | Scalda l'olio in *padella*. | Erhitze das Öl in der *Pfanne*. |
+la pentola | der Kochtopf | n | Una *pentola* d'acqua. | Ein *Topf* Wasser. |
+il forno | der Backofen | n | Cuoci in *forno* a 180 gradi. | Im *Ofen* bei 180 Grad backen. |
+la fetta | die Scheibe | n | Una *fetta* di pane. | Eine *Scheibe* Brot. |
+il pezzo | das Stück | n | Un *pezzo* di formaggio. | Ein *Stück* Käse. |
+il sapore | der Geschmack | n | Ha un *sapore* strano. | Es hat einen seltsamen *Geschmack*. |
+saporito | schmackhaft | adj | Un piatto *saporito*. | Ein *schmackhaftes* Gericht. |
+insipido | fade | adj | La minestra è *insipida*. | Die Suppe ist *fade*. |
+vegetariano | vegetarisch | adj | Sono *vegetariano*. | Ich bin *Vegetarier*. |
+vegano | vegan | adj | Un menù *vegano*. | Ein *veganes* Menü. |
+senza glutine | glutenfrei | phrase | Avete pasta *senza glutine*? | Haben Sie *glutenfreie* Nudeln? |
+la dieta | die Diät; Ernährung | n | Sono a *dieta*. | Ich mache *Diät*. |
+la porzione | die Portion | n | Una *porzione* abbondante. | Eine großzügige *Portion*. |
+il digestivo | der Verdauungsschnaps | n | Prendiamo un *digestivo*? | Nehmen wir einen *Verdauungsschnaps*? |
+l'aperitivo | der Aperitif | n | Facciamo l'*aperitivo* alle sette. | Wir trinken um sieben den *Aperitif*. | männlich (m)
+la trattoria | das einfache Gasthaus | n | Una *trattoria* di famiglia. | Ein familiäres *Gasthaus*. |
+la specialità | die Spezialität | n | Qual è la *specialità* della casa? | Was ist die *Spezialität* des Hauses? |
+consigliare | empfehlen | v | Che cosa ci *consiglia*? | Was *empfehlen* Sie uns? |
+avanzare | übrig bleiben | v | È *avanzata* un po' di pasta. | Es sind ein paar Nudeln *übrig*. |
+da asporto | zum Mitnehmen | phrase | Una pizza *da asporto*. | Eine Pizza *zum Mitnehmen*. |
+la cantina | der Weinkeller | n | Visitiamo una *cantina*. | Wir besichtigen ein *Weingut*. |

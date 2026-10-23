@@ -1,0 +1,72 @@
+# Italienisch – Medien & Technik B2/C1
+## B2
+l'emittente | der Sender | n | Un'*emittente* privata. | Ein Privat*sender*. | weiblich (f)
+il palinsesto | das Programmschema | n | Il *palinsesto* autunnale. | Das Herbst*programm*. |
+l'ascolto | die Einschaltquote | n | *Ascolti* record per la finale. | Rekord-*Quoten* fürs Finale. |
+il conduttore | der Moderator | n | Il *conduttore* del telegiornale. | Der Nachrichten*sprecher*. |
+il talk show | die Talkshow | n | Ospite di un *talk show*. | Gast in einer *Talkshow*. |
+il reality | die Reality-Show | n | Un *reality* di successo. | Eine erfolgreiche *Reality-Show*. |
+la piattaforma di streaming | die Streaming-Plattform | n | Una nuova *piattaforma di streaming*. | Eine neue *Streaming-Plattform*. |
+l'influencer | der Influencer | n | Un *influencer* con un milione di follower. | Ein *Influencer* mit einer Million Followern. |
+il follower | der Follower | n | Ha perso molti *follower*. | Er hat viele *Follower* verloren. |
+la storia | die Story (Social Media) | n | Ha pubblicato una *storia*. | Er hat eine *Story* gepostet. |
+virale | viral | adj | Il video è diventato *virale*. | Das Video ging *viral*. |
+la bufala | die Falschmeldung, Ente | n | Era una *bufala*! | Das war eine *Ente*! |
+verificare le fonti | Quellen prüfen | phrase | Bisogna *verificare le fonti*. | Man muss die *Quellen prüfen*. |
+l'algoritmo | der Algorithmus | n | L'*algoritmo* decide cosa vediamo. | Der *Algorithmus* entscheidet, was wir sehen. | männlich (m)
+la dipendenza dallo smartphone | die Handysucht | n | La *dipendenza dallo smartphone*. | Die *Handysucht*. |
+il cyberbullismo | das Cybermobbing | n | Prevenire il *cyberbullismo*. | *Cybermobbing* vorbeugen. |
+la sicurezza informatica | die IT-Sicherheit | n | Investire nella *sicurezza informatica*. | In *IT-Sicherheit* investieren. |
+l'attacco hacker | der Hackerangriff | n | Un *attacco hacker* alla banca. | Ein *Hackerangriff* auf die Bank. | männlich (m)
+il virus informatico | der Computervirus | n | Il pc ha un *virus informatico*. | Der PC hat einen *Virus*. |
+il backup | die Datensicherung | n | Fai il *backup* dei dati. | Mach eine *Sicherung* der Daten. |
+il cloud | die Cloud | n | Salvo tutto nel *cloud*. | Ich speichere alles in der *Cloud*. |
+l'app | die App | n | Un'*app* per imparare le lingue. | Eine *App* zum Sprachenlernen. | weiblich (f)
+lo sviluppatore | der Entwickler | n | Lavora come *sviluppatore* software. | Er arbeitet als Software*entwickler*. |
+il software | die Software | n | Un *software* gratuito. | Eine kostenlose *Software*. |
+l'hardware | die Hardware | n | Un problema di *hardware*. | Ein *Hardware*problem. | männlich (m)
+il codice | der Code | n | Scrivere *codice*. | *Code* schreiben. |
+la banda larga | das Breitband | n | La *banda larga* nelle campagne. | *Breitband* auf dem Land. |
+la fibra ottica | die Glasfaser | n | Abbiamo la *fibra ottica*. | Wir haben *Glasfaser*. |
+il digitale | das Digitale | n | La transizione al *digitale*. | Der Übergang ins *Digitale*. |
+digitalizzare | digitalisieren | v | *Digitalizzare* la pubblica amministrazione. | Die Verwaltung *digitalisieren*. |
+lo SPID | die digitale Identität (Italien) | n | Accedi con lo *SPID*. | Melde dich mit *SPID* an. |
+la PEC | die zertifizierte E-Mail | n | Inviare una *PEC*. | Eine *zertifizierte E-Mail* senden. | posta elettronica certificata
+il tutorial | das Tutorial | n | Ho guardato un *tutorial*. | Ich habe ein *Tutorial* geschaut. |
+la diretta streaming | der Livestream | n | Seguire in *diretta streaming*. | Im *Livestream* verfolgen. |
+la redazione | die Redaktion | n | Lavora in *redazione*. | Sie arbeitet in der *Redaktion*. |
+il caporedattore | der Chefredakteur | n | Il *caporedattore* approva il pezzo. | Der *Chefredakteur* genehmigt den Artikel. |
+l'inviato | der Korrespondent | n | Il nostro *inviato* a Bruxelles. | Unser *Korrespondent* in Brüssel. | männlich (m)
+la tiratura | die Auflage | n | La *tiratura* del giornale cala. | Die *Auflage* der Zeitung sinkt. |
+la cronaca | die Lokalnachrichten; Chronik | n | Un fatto di *cronaca* nera. | Eine *Kriminal*meldung. | cronaca nera = Verbrechen
+## C1
+l'intelligenza artificiale generativa | die generative KI | n | I rischi dell'*intelligenza artificiale generativa*. | Die Risiken der *generativen KI*. | weiblich (f)
+l'apprendimento automatico | das maschinelle Lernen | n | Un modello di *apprendimento automatico*. | Ein Modell des *maschinellen Lernens*. | männlich (m)
+la profilazione | das Profiling (Daten) | n | La *profilazione* degli utenti. | Das *Profiling* der Nutzer. |
+la sorveglianza di massa | die Massenüberwachung | n | Il pericolo della *sorveglianza di massa*. | Die Gefahr der *Massenüberwachung*. |
+la protezione dei dati | der Datenschutz | n | Il regolamento sulla *protezione dei dati*. | Die *Datenschutz*verordnung. |
+il garante della privacy | der Datenschutzbeauftragte | n | Il *garante della privacy* interviene. | Die *Datenschutzbehörde* greift ein. |
+la bolla informativa | die Filterblase | n | Vivere in una *bolla informativa*. | In einer *Filterblase* leben. |
+la camera dell'eco | die Echokammer | n | I social come *camera dell'eco*. | Soziale Medien als *Echokammer*. |
+il clickbait | der Klickköder | n | Titoli *clickbait*. | *Klickköder*-Überschriften. |
+il debunking | die Faktenprüfung | n | Un sito di *debunking*. | Eine *Faktencheck*-Seite. |
+il giornalismo d'inchiesta | der investigative Journalismus | n | Un premio di *giornalismo d'inchiesta*. | Ein Preis für *investigativen Journalismus*. |
+la querela | die Klage (Verleumdung) | n | Una *querela* per diffamazione. | Eine *Verleumdungsklage*. |
+la diffamazione | die Verleumdung | n | Accusato di *diffamazione*. | Wegen *Verleumdung* angeklagt. |
+la fonte anonima | die anonyme Quelle | n | Secondo una *fonte anonima*... | Laut einer *anonymen Quelle* … |
+l'embargo | die Sperrfrist | n | La notizia è sotto *embargo*. | Die Meldung unterliegt einer *Sperrfrist*. | männlich (m)
+il comunicato stampa | die Pressemitteilung | n | Diffondere un *comunicato stampa*. | Eine *Pressemitteilung* herausgeben. |
+la conferenza stampa | die Pressekonferenz | n | Il ministro tiene una *conferenza stampa*. | Der Minister hält eine *Pressekonferenz*. |
+l'audience | die Zuschauerzahl | n | Un'*audience* di cinque milioni. | Fünf Millionen *Zuschauer*. | weiblich (f)
+lo share | der Marktanteil (TV) | n | Uno *share* del 20%. | Ein *Marktanteil* von 20 %. |
+la lottizzazione | die parteipolitische Postenvergabe | n | La *lottizzazione* della RAI. | Die *Proporzvergabe* bei der RAI. |
+il servizio pubblico | der öffentlich-rechtliche Rundfunk | n | Il canone del *servizio pubblico*. | Die Gebühr des *öffentlich-rechtlichen Rundfunks*. |
+il canone | die Rundfunkgebühr | n | Pagare il *canone* RAI. | Die RAI-*Gebühr* zahlen. |
+la transizione digitale | die digitale Transformation | n | I fondi per la *transizione digitale*. | Die Mittel für die *digitale Transformation*. |
+il divario digitale | die digitale Kluft | n | Ridurre il *divario digitale*. | Die *digitale Kluft* verringern. |
+l'alfabetizzazione digitale | die digitale Kompetenz | n | Corsi di *alfabetizzazione digitale*. | Kurse für *digitale Grundkenntnisse*. | weiblich (f)
+la blockchain | die Blockchain | n | La tecnologia *blockchain*. | Die *Blockchain*-Technologie. |
+la criptovaluta | die Kryptowährung | n | Investire in *criptovalute*. | In *Kryptowährungen* investieren. |
+il phishing | das Phishing | n | Un tentativo di *phishing*. | Ein *Phishing*-Versuch. |
+la crittografia | die Verschlüsselung | n | Messaggi con *crittografia* end-to-end. | Nachrichten mit Ende-zu-Ende-*Verschlüsselung*. |
+l'obsolescenza programmata | die geplante Obsoleszenz | n | Lottare contro l'*obsolescenza programmata*. | Gegen *geplante Obsoleszenz* kämpfen. | weiblich (f)

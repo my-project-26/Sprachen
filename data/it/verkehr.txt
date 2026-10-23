@@ -1,0 +1,60 @@
+# Italienisch – Verkehr & Stadt
+## A1
+la macchina | das Auto | n | Vado in *macchina*. | Ich fahre mit dem *Auto*. | auch: l'auto
+l'autobus | der Bus | n | Prendo l'*autobus*. | Ich nehme den *Bus*. | männlich (m)
+la metro | die U-Bahn | n | La *metro* è veloce. | Die *U-Bahn* ist schnell. | auch: la metropolitana
+la bicicletta | das Fahrrad | n | Vado in *bicicletta*. | Ich fahre *Rad*. | ugs.: la bici
+la strada | die Straße | n | Attraversa la *strada*. | Überquere die *Straße*. |
+a destra | rechts | phrase | Gira *a destra*. | Bieg *rechts* ab. |
+a sinistra | links | phrase | La banca è *a sinistra*. | Die Bank ist *links*. |
+dritto | geradeaus | adv | Vai sempre *dritto*. | Geh immer *geradeaus*. |
+lontano | weit | adv | È *lontano*? | Ist es *weit*? |
+vicino | nah | adv | È qui *vicino*. | Es ist hier in der *Nähe*. |
+la fermata | die Haltestelle | n | La *fermata* dell'autobus. | Die Bus*haltestelle*. |
+il taxi | das Taxi | n | Chiamo un *taxi*. | Ich rufe ein *Taxi*. |
+guidare | fahren (Auto), lenken | v | *Guidi* tu? | *Fährst* du? |
+il semaforo | die Ampel | n | Al *semaforo* gira a destra. | An der *Ampel* rechts abbiegen. |
+l'incrocio | die Kreuzung | n | All'*incrocio*, dritto. | An der *Kreuzung* geradeaus. | männlich (m)
+## A2
+la patente | der Führerschein | n | Ho la *patente* da dieci anni. | Ich habe seit zehn Jahren den *Führerschein*. |
+il parcheggio | der Parkplatz | n | Non trovo *parcheggio*. | Ich finde keinen *Parkplatz*. |
+parcheggiare | parken | v | Dove posso *parcheggiare*? | Wo kann ich *parken*? |
+la benzina | das Benzin | n | Dobbiamo fare *benzina*. | Wir müssen *tanken*. |
+il distributore | die Tankstelle | n | C'è un *distributore* vicino? | Gibt es eine *Tankstelle* in der Nähe? |
+il traffico | der Verkehr | n | C'è molto *traffico*. | Es ist viel *Verkehr*. |
+l'ingorgo | der Stau | n | Siamo bloccati in un *ingorgo*. | Wir stehen im *Stau*. | männlich (m)
+l'autostrada | die Autobahn | n | Prendiamo l'*autostrada*. | Wir nehmen die *Autobahn*. | weiblich (f)
+il pedaggio | die Maut | n | Il *pedaggio* costa dieci euro. | Die *Maut* kostet zehn Euro. |
+la rotonda | der Kreisverkehr | n | Alla *rotonda*, seconda uscita. | Im *Kreisel* die zweite Ausfahrt. |
+il marciapiede | der Bürgersteig | n | Cammina sul *marciapiede*. | Geh auf dem *Bürgersteig*. |
+le strisce pedonali | der Zebrastreifen | n | Attraversa sulle *strisce pedonali*. | Geh über den *Zebrastreifen*. |
+il pedone | der Fußgänger | n | Attenzione ai *pedoni*. | Achtung, *Fußgänger*. |
+il binario | das Gleis | n | Il treno parte dal *binario* tre. | Der Zug fährt von *Gleis* drei. |
+l'orario | der Fahrplan; die Uhrzeit | n | Controlla l'*orario* dei treni. | Prüf den *Fahrplan*. | männlich (m)
+convalidare | entwerten | v | *Convalida* il biglietto! | *Entwerte* die Fahrkarte! |
+andata e ritorno | hin und zurück | phrase | Un biglietto di *andata e ritorno*. | Eine Fahrkarte *hin und zurück*. |
+la coincidenza | der Anschluss (Zug) | n | Ho perso la *coincidenza*. | Ich habe den *Anschluss* verpasst. |
+il tram | die Straßenbahn | n | Prendiamo il *tram*. | Wir nehmen die *Straßenbahn*. |
+il motorino | der Roller | n | Va al lavoro in *motorino*. | Er fährt mit dem *Roller* zur Arbeit. |
+il casco | der Helm | n | Metti il *casco*! | Setz den *Helm* auf! |
+## B1
+la ZTL | die verkehrsbeschränkte Zone | n | Non entrare nella *ZTL*! | Fahr nicht in die *ZTL*! | zona a traffico limitato
+la multa | das Bußgeld, der Strafzettel | n | Ho preso una *multa*. | Ich habe einen *Strafzettel* bekommen. |
+il limite di velocità | die Geschwindigkeitsbegrenzung | n | Rispetta il *limite di velocità*. | Halte die *Geschwindigkeitsbegrenzung* ein. |
+sorpassare | überholen | v | Non *sorpassare* in curva. | In der Kurve nicht *überholen*. |
+frenare | bremsen | v | *Frena*! | *Brems*! |
+la curva | die Kurve | n | Una *curva* pericolosa. | Eine gefährliche *Kurve*. |
+l'incidente | der Unfall | n | C'è stato un *incidente*. | Es gab einen *Unfall*. | männlich (m)
+il carro attrezzi | der Abschleppwagen | n | Chiamiamo il *carro attrezzi*. | Wir rufen den *Abschleppwagen*. |
+la gomma a terra | der Platten | n | Ho una *gomma a terra*. | Ich habe einen *Platten*. |
+il noleggio auto | die Autovermietung | n | Il *noleggio auto* in aeroporto. | Die *Autovermietung* am Flughafen. |
+la cintura di sicurezza | der Sicherheitsgurt | n | Allaccia la *cintura di sicurezza*. | Schnall dich *an*. |
+la corsia | die Fahrspur | n | Resta nella *corsia* di destra. | Bleib auf der rechten *Spur*. |
+l'uscita | die Ausfahrt; der Ausgang | n | Prendi la prossima *uscita*. | Nimm die nächste *Ausfahrt*. | weiblich (f)
+il navigatore | das Navi | n | Il *navigatore* dice di girare. | Das *Navi* sagt, abbiegen. |
+lo sciopero | der Streik | n | Oggi c'è *sciopero* dei treni. | Heute *streikt* die Bahn. |
+i mezzi pubblici | die öffentlichen Verkehrsmittel | n | Uso i *mezzi pubblici*. | Ich nutze *öffentliche Verkehrsmittel*. |
+l'abbonamento | die Zeitkarte, das Abo | n | Ho l'*abbonamento* mensile. | Ich habe eine Monats*karte*. | männlich (m)
+la pista ciclabile | der Radweg | n | Una nuova *pista ciclabile*. | Ein neuer *Radweg*. |
+il pendolare | der Pendler | n | Sono un *pendolare*. | Ich bin *Pendler*. |
+l'ora di punta | die Hauptverkehrszeit | n | Evita l'*ora di punta*. | Meide die *Rushhour*. | weiblich (f)

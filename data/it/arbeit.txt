@@ -1,0 +1,65 @@
+# Italienisch – Arbeit & Beruf
+## A1
+il lavoro | die Arbeit | n | Vado al *lavoro*. | Ich gehe zur *Arbeit*. |
+l'ufficio | das Büro | n | Lavoro in *ufficio*. | Ich arbeite im *Büro*. | männlich (m)
+il collega | der Kollege | n | I miei *colleghi* sono simpatici. | Meine *Kollegen* sind nett. |
+il capo | der Chef | n | Il *capo* è in riunione. | Der *Chef* ist in einer Besprechung. |
+l'insegnante | der Lehrer | n | Fa l'*insegnante*. | Er ist *Lehrer*. |
+l'impiegato | der Angestellte | n | È *impiegata* in banca. | Sie ist *Angestellte* bei der Bank. | männlich (m)
+il cuoco | der Koch | n | Mio padre è *cuoco*. | Mein Vater ist *Koch*. |
+lo studente | der Student, Schüler | n | Sono *studente*. | Ich bin *Student*. | weiblich: la studentessa
+## A2
+la professione | der Beruf | n | Che *professione* fa? | Was sind Sie von *Beruf*? |
+il mestiere | das Handwerk, der Beruf | n | Il *mestiere* del falegname. | Das *Handwerk* des Schreiners. |
+l'azienda | das Unternehmen | n | Lavoro per un'*azienda* tedesca. | Ich arbeite für ein deutsches *Unternehmen*. | weiblich (f)
+la ditta | die Firma | n | Una piccola *ditta*. | Eine kleine *Firma*. |
+la fabbrica | die Fabrik | n | Lavora in *fabbrica*. | Er arbeitet in der *Fabrik*. |
+lo stipendio | das Gehalt | n | Lo *stipendio* è basso. | Das *Gehalt* ist niedrig. |
+guadagnare | verdienen | v | *Guadagna* bene. | Er *verdient* gut. |
+la riunione | die Besprechung | n | Ho una *riunione* alle tre. | Ich habe um drei eine *Besprechung*. |
+il computer | der Computer | n | Lavoro al *computer*. | Ich arbeite am *Computer*. |
+la stampante | der Drucker | n | La *stampante* non funziona. | Der *Drucker* geht nicht. |
+l'orario di lavoro | die Arbeitszeit | n | L'*orario di lavoro* è flessibile. | Die *Arbeitszeit* ist flexibel. | männlich (m)
+il tempo pieno | Vollzeit | n | Lavoro a *tempo pieno*. | Ich arbeite *Vollzeit*. |
+il part-time | Teilzeit | n | Lavora *part-time*. | Sie arbeitet *Teilzeit*. |
+le ferie | der (bezahlte) Urlaub | n | Sono in *ferie* ad agosto. | Im August habe ich *Urlaub*. |
+il disoccupato | der Arbeitslose | n | È *disoccupato* da un anno. | Er ist seit einem Jahr *arbeitslos*. |
+cercare lavoro | Arbeit suchen | phrase | Sto *cercando lavoro*. | Ich *suche Arbeit*. |
+il commerciante | der Händler | n | Un *commerciante* di vini. | Ein Wein*händler*. |
+l'avvocato | der Anwalt | n | Parla con un *avvocato*. | Sprich mit einem *Anwalt*. | männlich (m)
+l'ingegnere | der Ingenieur | n | È *ingegnere* civile. | Er ist Bau*ingenieur*. | männlich (m)
+il poliziotto | der Polizist | n | Chiedi al *poliziotto*. | Frag den *Polizisten*. |
+il contadino | der Bauer | n | I *contadini* raccolgono le olive. | Die *Bauern* ernten Oliven. |
+## B1
+il colloquio di lavoro | das Vorstellungsgespräch | n | Domani ho un *colloquio di lavoro*. | Morgen habe ich ein *Vorstellungsgespräch*. |
+il curriculum | der Lebenslauf | n | Mandami il tuo *curriculum*. | Schick mir deinen *Lebenslauf*. |
+la candidatura | die Bewerbung | n | Ho inviato la *candidatura*. | Ich habe die *Bewerbung* abgeschickt. |
+candidarsi | sich bewerben | v | Mi sono *candidato* per il posto. | Ich habe mich auf die Stelle *beworben*. |
+l'annuncio di lavoro | die Stellenanzeige | n | Ho visto un *annuncio di lavoro*. | Ich habe eine *Stellenanzeige* gesehen. | männlich (m)
+assumere | einstellen | v | L'azienda *assume* personale. | Die Firma *stellt* Personal *ein*. |
+licenziare | entlassen | v | Lo hanno *licenziato*. | Sie haben ihn *entlassen*. |
+licenziarsi | kündigen (selbst) | v | Mi sono *licenziato*. | Ich habe *gekündigt*. |
+il contratto | der Vertrag | n | Un *contratto* a tempo indeterminato. | Ein unbefristeter *Vertrag*. |
+il periodo di prova | die Probezeit | n | Sono in *periodo di prova*. | Ich bin in der *Probezeit*. |
+gli straordinari | die Überstunden | n | Faccio molti *straordinari*. | Ich mache viele *Überstunden*. |
+il turno | die Schicht | n | Lavoro nel *turno* di notte. | Ich arbeite in der Nacht*schicht*. |
+la pensione | die Rente; die Pension | n | Va in *pensione* l'anno prossimo. | Er geht nächstes Jahr in *Rente*. |
+il sindacato | die Gewerkschaft | n | È iscritto al *sindacato*. | Er ist *Gewerkschafts*mitglied. |
+lo sciopero | der Streik | n | I lavoratori sono in *sciopero*. | Die Arbeiter *streiken*. |
+il datore di lavoro | der Arbeitgeber | n | Il mio *datore di lavoro* è corretto. | Mein *Arbeitgeber* ist fair. |
+il dipendente | der Arbeitnehmer | n | L'azienda ha cento *dipendenti*. | Die Firma hat hundert *Mitarbeiter*. |
+il lavoratore autonomo | der Selbständige | n | Sono un *lavoratore autonomo*. | Ich bin *selbständig*. |
+la carriera | die Karriere | n | Ha fatto *carriera*. | Er hat *Karriere* gemacht. |
+la promozione | die Beförderung | n | Ha avuto una *promozione*. | Sie wurde *befördert*. |
+l'aumento | die Gehaltserhöhung | n | Chiedo un *aumento*. | Ich bitte um eine *Gehaltserhöhung*. | männlich (m)
+la scadenza | die Frist, der Termin | n | La *scadenza* è venerdì. | Die *Frist* ist Freitag. |
+il progetto | das Projekt | n | Lavoriamo a un nuovo *progetto*. | Wir arbeiten an einem neuen *Projekt*. |
+il cliente | der Kunde | n | Il *cliente* ha sempre ragione. | Der *Kunde* ist König. |
+il fornitore | der Lieferant | n | Cambiamo *fornitore*. | Wir wechseln den *Lieferanten*. |
+la trasferta | die Dienstreise | n | Sono in *trasferta* a Milano. | Ich bin auf *Dienstreise* in Mailand. |
+lo smart working | das Homeoffice | n | Oggi faccio *smart working*. | Heute arbeite ich im *Homeoffice*. |
+l'esperienza | die Erfahrung | n | Ho molta *esperienza*. | Ich habe viel *Erfahrung*. | weiblich (f)
+la competenza | die Kompetenz | n | Le tue *competenze* informatiche. | Deine IT-*Kenntnisse*. |
+il tirocinio | das Praktikum | n | Faccio un *tirocinio* in un'agenzia. | Ich mache ein *Praktikum* in einer Agentur. | auch: lo stage
+la busta paga | die Gehaltsabrechnung | n | Controlla la *busta paga*. | Prüf die *Gehaltsabrechnung*. |
+il commercialista | der Steuerberater | n | Il *commercialista* fa le tasse. | Der *Steuerberater* macht die Steuer. |

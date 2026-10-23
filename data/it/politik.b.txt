@@ -1,0 +1,90 @@
+# Italienisch – Politik, Recht, Medien B2/C1
+## B2
+il parlamento | das Parlament | n | Il *parlamento* approva la legge. | Das *Parlament* verabschiedet das Gesetz. |
+la Camera dei deputati | die Abgeordnetenkammer | n | La *Camera dei deputati* vota oggi. | Die *Abgeordnetenkammer* stimmt heute ab. |
+il Senato | der Senat | n | Il *Senato* ha respinto la proposta. | Der *Senat* hat den Vorschlag abgelehnt. |
+il deputato | der Abgeordnete | n | Un *deputato* dell'opposizione. | Ein *Abgeordneter* der Opposition. |
+il presidente del Consiglio | der Ministerpräsident | n | Il *presidente del Consiglio* parla oggi. | Der *Ministerpräsident* spricht heute. |
+il ministro | der Minister | n | Il *ministro* dell'Interno. | Der *Innenminister*. |
+la maggioranza | die Mehrheit | n | La *maggioranza* è divisa. | Die *Mehrheit* ist gespalten. |
+l'opposizione | die Opposition | n | L'*opposizione* critica il governo. | Die *Opposition* kritisiert die Regierung. | weiblich (f)
+la coalizione | die Koalition | n | Un governo di *coalizione*. | Eine *Koalitions*regierung. |
+la campagna elettorale | der Wahlkampf | n | La *campagna elettorale* è iniziata. | Der *Wahlkampf* hat begonnen. |
+il candidato | der Kandidat | n | I *candidati* sindaco. | Die Bürgermeister*kandidaten*. |
+l'elettore | der Wähler | n | Gli *elettori* sono delusi. | Die *Wähler* sind enttäuscht. | männlich (m)
+l'astensione | die Stimmenthaltung, Nichtwahl | n | L'*astensione* è alta. | Die *Nichtwählerquote* ist hoch. | weiblich (f)
+il referendum | die Volksabstimmung | n | Un *referendum* sulla riforma. | Eine *Volksabstimmung* über die Reform. |
+la riforma | die Reform | n | La *riforma* della scuola. | Die Schul*reform*. |
+la Costituzione | die Verfassung | n | Articolo 1 della *Costituzione*. | Artikel 1 der *Verfassung*. |
+la democrazia | die Demokratie | n | La *democrazia* è fragile. | Die *Demokratie* ist zerbrechlich. |
+la dittatura | die Diktatur | n | Gli anni della *dittatura*. | Die Jahre der *Diktatur*. |
+la destra | die Rechte | n | La *destra* ha vinto. | Die *Rechte* hat gewonnen. |
+la sinistra | die Linke | n | Un partito di *sinistra*. | Eine *linke* Partei. |
+il centro | die Mitte | n | Un elettore di *centro*. | Ein Wähler der *Mitte*. |
+la regione | die Region | n | La *regione* Toscana. | Die *Region* Toskana. |
+la provincia | die Provinz | n | La *provincia* di Bergamo. | Die *Provinz* Bergamo. |
+l'Unione europea | die Europäische Union | n | L'Italia nell'*Unione europea*. | Italien in der *EU*. | weiblich (f)
+il trattato | der Vertrag (international) | n | Il *trattato* di Roma. | Die Römischen *Verträge*. |
+le sanzioni | die Sanktionen | n | Nuove *sanzioni* economiche. | Neue Wirtschafts*sanktionen*. |
+il vertice | der Gipfel (Treffen) | n | Il *vertice* del G7. | Der G7-*Gipfel*. |
+la diplomazia | die Diplomatie | n | La *diplomazia* lavora. | Die *Diplomatie* arbeitet. |
+il conflitto | der Konflikt | n | Un *conflitto* armato. | Ein bewaffneter *Konflikt*. |
+il profugo | der Flüchtling | n | I *profughi* di guerra. | Die Kriegs*flüchtlinge*. | auch: il rifugiato
+la corruzione | die Korruption | n | Uno scandalo di *corruzione*. | Ein *Korruptions*skandal. |
+lo scandalo | der Skandal | n | Lo *scandalo* è scoppiato ieri. | Der *Skandal* ist gestern aufgeflogen. |
+il processo | der Prozess | n | Il *processo* inizia lunedì. | Der *Prozess* beginnt Montag. |
+l'imputato | der Angeklagte | n | L'*imputato* si dichiara innocente. | Der *Angeklagte* erklärt sich für unschuldig. | männlich (m)
+la sentenza | das Urteil | n | La *sentenza* è definitiva. | Das *Urteil* ist rechtskräftig. |
+condannare | verurteilen | v | È stato *condannato* a due anni. | Er wurde zu zwei Jahren *verurteilt*. |
+assolvere | freisprechen | v | L'hanno *assolto*. | Sie haben ihn *freigesprochen*. |
+il ricorso | die Berufung, der Einspruch | n | Presentare *ricorso*. | *Einspruch* einlegen. |
+l'indagine | die Ermittlung | n | La procura apre un'*indagine*. | Die Staatsanwaltschaft leitet *Ermittlungen* ein. | weiblich (f)
+la procura | die Staatsanwaltschaft | n | La *procura* di Milano. | Die *Staatsanwaltschaft* Mailand. |
+le forze dell'ordine | die Ordnungskräfte | n | Intervengono le *forze dell'ordine*. | Die *Polizei* greift ein. |
+i carabinieri | die Carabinieri | n | Chiama i *carabinieri*! | Ruf die *Carabinieri*! |
+la libertà di stampa | die Pressefreiheit | n | Difendere la *libertà di stampa*. | Die *Pressefreiheit* verteidigen. |
+l'informazione | die Information; der Journalismus | n | Il diritto all'*informazione*. | Das Recht auf *Information*. | weiblich (f)
+il quotidiano nazionale | die überregionale Zeitung | n | Un *quotidiano nazionale*. | Eine *überregionale Tageszeitung*. |
+il servizio | der Beitrag (TV) | n | Un *servizio* del telegiornale. | Ein *Beitrag* der Nachrichten. |
+la censura | die Zensur | n | No alla *censura*! | Nein zur *Zensur*! |
+## C1
+la legislatura | die Legislaturperiode | n | Alla fine della *legislatura*. | Am Ende der *Legislaturperiode*. |
+lo scioglimento delle Camere | die Parlamentsauflösung | n | Si va verso lo *scioglimento delle Camere*. | Es läuft auf die *Auflösung des Parlaments* hinaus. |
+la fiducia | das Vertrauensvotum | n | Il governo ottiene la *fiducia*. | Die Regierung gewinnt die *Vertrauensabstimmung*. |
+la crisi di governo | die Regierungskrise | n | Una nuova *crisi di governo*. | Eine neue *Regierungskrise*. |
+il decreto legge | die Notverordnung | n | Approvato un *decreto legge*. | Eine *Eilverordnung* wurde verabschiedet. |
+il disegno di legge | der Gesetzentwurf | n | Il *disegno di legge* sul clima. | Der *Gesetzentwurf* zum Klima. |
+l'emendamento | der Änderungsantrag | n | Presentare un *emendamento*. | Einen *Änderungsantrag* einbringen. | männlich (m)
+il quorum | das Quorum | n | Il referendum non ha raggiunto il *quorum*. | Das Referendum hat das *Quorum* verfehlt. |
+la legge elettorale | das Wahlgesetz | n | Cambiare la *legge elettorale*. | Das *Wahlrecht* ändern. |
+il ballottaggio | die Stichwahl | n | Si va al *ballottaggio*. | Es kommt zur *Stichwahl*. |
+lo schieramento | das politische Lager | n | I due *schieramenti*. | Die beiden *Lager*. |
+il populismo | der Populismus | n | L'ascesa del *populismo*. | Der Aufstieg des *Populismus*. |
+il sovranismo | der Nationalismus (souveränistisch) | n | Il *sovranismo* europeo. | Der europäische *Souveränismus*. |
+la polarizzazione | die Polarisierung | n | La *polarizzazione* del dibattito. | Die *Polarisierung* der Debatte. |
+il dibattito | die Debatte | n | Un *dibattito* televisivo. | Eine TV-*Debatte*. |
+la propaganda | die Propaganda | n | Pura *propaganda*. | Reine *Propaganda*. |
+la retorica | die Rhetorik | n | La *retorica* del leader. | Die *Rhetorik* des Anführers. |
+lo slogan | der Slogan | n | Uno *slogan* efficace. | Ein wirkungsvoller *Slogan*. |
+il consenso | die Zustimmung | n | Il partito perde *consenso*. | Die Partei verliert *Zustimmung*. |
+il mandato | das Mandat; der Haftbefehl | n | Il *mandato* del presidente. | Das *Mandat* des Präsidenten. |
+la magistratura | die Justiz | n | L'indipendenza della *magistratura*. | Die Unabhängigkeit der *Justiz*. |
+il magistrato | der Richter, Staatsanwalt | n | Un *magistrato* antimafia. | Ein Antimafia-*Staatsanwalt*. |
+la prescrizione | die Verjährung | n | Il reato è caduto in *prescrizione*. | Die Straftat ist *verjährt*. |
+il patteggiamento | der Strafdeal | n | Ha scelto il *patteggiamento*. | Er hat sich auf einen *Deal* eingelassen. |
+gli arresti domiciliari | der Hausarrest | n | È agli *arresti domiciliari*. | Er steht unter *Hausarrest*. |
+la custodia cautelare | die Untersuchungshaft | n | In *custodia cautelare*. | In *U-Haft*. |
+il pentito | der Kronzeuge (Mafia) | n | Le dichiarazioni di un *pentito*. | Die Aussagen eines *Kronzeugen*. |
+il garantismo | das Prinzip der Unschuldsvermutung | n | Il *garantismo* è un principio fondamentale. | Die *Unschuldsvermutung* ist ein Grundprinzip. |
+la gogna mediatica | der mediale Pranger | n | Finire alla *gogna mediatica*. | An den *medialen Pranger* gestellt werden. |
+la disinformazione | die Desinformation | n | Campagne di *disinformazione*. | *Desinformations*kampagnen. |
+la par condicio | die Chancengleichheit (Sendezeit) | n | Le regole della *par condicio*. | Die Regeln der *gleichen Sendezeit*. |
+lo scoop | die Exklusivmeldung | n | Uno *scoop* del giornale. | Eine *Exklusivmeldung* der Zeitung. |
+l'editoriale | der Leitartikel | n | L'*editoriale* del direttore. | Der *Leitartikel* des Chefredakteurs. | männlich (m)
+la smentita | das Dementi | n | Il ministero diffonde una *smentita*. | Das Ministerium veröffentlicht ein *Dementi*. |
+smentire | dementieren | v | Il portavoce *smentisce*. | Der Sprecher *dementiert*. | smentisco
+il portavoce | der Sprecher | n | Il *portavoce* del governo. | Der Regierungs*sprecher*. | unveränderlich
+la geopolitica | die Geopolitik | n | Le sfide della *geopolitica*. | Die Herausforderungen der *Geopolitik*. |
+il multilateralismo | der Multilateralismus | n | Difendere il *multilateralismo*. | Den *Multilateralismus* verteidigen. |
+il cessate il fuoco | der Waffenstillstand | n | Un *cessate il fuoco* fragile. | Ein brüchiger *Waffenstillstand*. |
+l'ostaggio | die Geisel | n | Liberare gli *ostaggi*. | Die *Geiseln* befreien. | männlich (m)

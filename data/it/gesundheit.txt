@@ -1,0 +1,66 @@
+# Italienisch – Gesundheit
+## A1
+il medico | der Arzt | n | Vado dal *medico*. | Ich gehe zum *Arzt*. | auch: il dottore
+malato | krank | adj | Sono *malato*. | Ich bin *krank*. |
+sano | gesund | adj | Mangia *sano*. | Iss *gesund*. |
+il dolore | der Schmerz | n | Ho un *dolore* qui. | Ich habe hier *Schmerzen*. |
+fare male | wehtun | phrase | Mi *fa male* la testa. | Mir *tut* der Kopf *weh*. |
+la febbre | das Fieber | n | Ho la *febbre*. | Ich habe *Fieber*. |
+il raffreddore | die Erkältung | n | Ho il *raffreddore*. | Ich bin *erkältet*. |
+la medicina | das Medikament | n | Prendi la *medicina*. | Nimm das *Medikament*. |
+l'ospedale | das Krankenhaus | n | È in *ospedale*. | Er ist im *Krankenhaus*. | männlich (m)
+aiuto! | Hilfe! | phrase | *Aiuto*! Chiamate un'ambulanza! | *Hilfe*! Ruft einen Krankenwagen! |
+## A2
+la tosse | der Husten | n | Ho la *tosse*. | Ich habe *Husten*. |
+l'influenza | die Grippe | n | Ho preso l'*influenza*. | Ich habe die *Grippe*. | weiblich (f)
+la pastiglia | die Tablette | n | Prendi una *pastiglia*. | Nimm eine *Tablette*. | auch: la compressa
+la ricetta | das Rezept (Arzt) | n | Serve la *ricetta*. | Man braucht ein *Rezept*. |
+l'appuntamento | der Termin | n | Ho un *appuntamento* dal dentista. | Ich habe einen *Termin* beim Zahnarzt. | männlich (m)
+il dentista | der Zahnarzt | n | Il *dentista* è bravo. | Der *Zahnarzt* ist gut. |
+l'infermiere | der Krankenpfleger | n | L'*infermiera* è gentile. | Die *Krankenschwester* ist nett. | weiblich: l'infermiera
+il pronto soccorso | die Notaufnahme | n | Andiamo al *pronto soccorso*. | Wir fahren in die *Notaufnahme*. |
+l'ambulanza | der Krankenwagen | n | Chiama l'*ambulanza*! | Ruf den *Krankenwagen*! | weiblich (f)
+ferito | verletzt | adj | È *ferito* a una gamba. | Er ist am Bein *verletzt*. |
+rompersi | sich brechen | v | Mi sono *rotto* il braccio. | Ich habe mir den Arm *gebrochen*. |
+sentirsi | sich fühlen | v | Non mi *sento* bene. | Ich *fühle* mich nicht gut. |
+guarire | gesund werden | v | Spero di *guarire* presto. | Ich hoffe, bald *gesund* zu werden. | guarisco
+riposare | sich ausruhen | v | Devi *riposare*. | Du musst dich *ausruhen*. |
+la salute | die Gesundheit | n | Alla *salute*! | Auf die *Gesundheit*! | Prost!
+il mal di testa | die Kopfschmerzen | n | Ho un forte *mal di testa*. | Ich habe starke *Kopfschmerzen*. |
+la nausea | die Übelkeit | n | Ho la *nausea*. | Mir ist *übel*. |
+vomitare | sich übergeben | v | Ho *vomitato*. | Ich habe mich *übergeben*. |
+l'allergia | die Allergie | n | Ho un'*allergia* alle noci. | Ich bin gegen Nüsse *allergisch*. | weiblich (f)
+il cerotto | das Pflaster | n | Mettici un *cerotto*. | Mach ein *Pflaster* drauf. |
+## B1
+la visita | die Untersuchung | n | Una *visita* di controllo. | Eine Kontroll*untersuchung*. |
+il paziente | der Patient | n | Il *paziente* sta meglio. | Dem *Patienten* geht es besser. |
+la malattia | die Krankheit | n | Una *malattia* grave. | Eine schwere *Krankheit*. |
+il sintomo | das Symptom | n | Quali sono i *sintomi*? | Welche *Symptome* gibt es? |
+la diagnosi | die Diagnose | n | La *diagnosi* è chiara. | Die *Diagnose* ist eindeutig. | unveränderlich
+la cura | die Behandlung; die Pflege | n | La *cura* dura un mese. | Die *Behandlung* dauert einen Monat. |
+l'operazione | die Operation | n | Deve fare un'*operazione*. | Er muss *operiert* werden. | weiblich (f)
+l'esame del sangue | die Blutuntersuchung | n | Faccio l'*esame del sangue*. | Ich lasse eine *Blutuntersuchung* machen. |
+la radiografia | das Röntgenbild | n | Serve una *radiografia*. | Man braucht ein *Röntgenbild*. |
+la pressione | der Blutdruck; der Druck | n | Misura la *pressione*. | Miss den *Blutdruck*. |
+l'iniezione | die Spritze | n | Una *iniezione* nel braccio. | Eine *Spritze* in den Arm. | weiblich (f)
+il vaccino | der Impfstoff; die Impfung | n | Ho fatto il *vaccino*. | Ich bin *geimpft*. |
+la farmacia di turno | die Notdienstapotheke | n | Cerco la *farmacia di turno*. | Ich suche die *Notdienstapotheke*. |
+gli effetti collaterali | die Nebenwirkungen | n | Ha pochi *effetti collaterali*. | Es hat wenige *Nebenwirkungen*. |
+il certificato medico | das ärztliche Attest | n | Porta il *certificato medico*. | Bring das *Attest* mit. |
+in malattia | krankgeschrieben | phrase | Sono *in malattia* da lunedì. | Ich bin seit Montag *krankgeschrieben*. |
+la ferita | die Wunde | n | La *ferita* guarisce. | Die *Wunde* heilt. |
+la frattura | der Knochenbruch | n | Una *frattura* al polso. | Ein *Bruch* am Handgelenk. |
+la distorsione | die Verstauchung | n | Una *distorsione* alla caviglia. | Eine *Verstauchung* am Knöchel. |
+lo stress | der Stress | n | Lo *stress* fa male. | *Stress* schadet. |
+dimagrire | abnehmen | v | Voglio *dimagrire*. | Ich will *abnehmen*. | dimagrisco
+ingrassare | zunehmen | v | Sono *ingrassato* in vacanza. | Ich habe im Urlaub *zugenommen*. |
+fare attività fisica | sich bewegen, Sport treiben | phrase | Bisogna *fare attività fisica*. | Man muss sich *bewegen*. |
+smettere di fumare | mit dem Rauchen aufhören | phrase | Ho *smesso di fumare*. | Ich habe *mit dem Rauchen aufgehört*. |
+la mutua | die Krankenkasse | n | La visita la paga la *mutua*. | Die Untersuchung zahlt die *Kasse*. | auch: il servizio sanitario
+il medico di base | der Hausarzt | n | Chiama il *medico di base*. | Ruf den *Hausarzt* an. |
+lo specialista | der Facharzt | n | Ti manda da uno *specialista*. | Er überweist dich zum *Facharzt*. |
+la gravidanza | die Schwangerschaft | n | Una *gravidanza* tranquilla. | Eine ruhige *Schwangerschaft*. |
+il parto | die Geburt (Entbindung) | n | Il *parto* è andato bene. | Die *Entbindung* verlief gut. |
+svenire | ohnmächtig werden | v | È *svenuta* per il caldo. | Sie ist wegen der Hitze *ohnmächtig* geworden. | svengo
+il prurito | der Juckreiz | n | Ho *prurito* alla pelle. | Meine Haut *juckt*. |
+la puntura | der Stich | n | Una *puntura* di zanzara. | Ein Mücken*stich*. |

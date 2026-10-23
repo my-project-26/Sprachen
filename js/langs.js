@@ -15,7 +15,7 @@ export const LANGS = {
 };
 
 // Sprachen, für die es schon eine Wortliste gibt (js/wordbank.js bzw. js/wordbank.<code>.js)
-export const READY = ["en", "es"];
+export const READY = ["en", "es", "it"];
 
 // Nur bekannte Sprachnamen an die KI geben (Schutz vor beliebigem Text im Prompt)
 export const langName = (x) => (Object.values(LANGS).some((l) => l.en === x) ? x : "English");
@@ -40,7 +40,7 @@ const fold = (s) =>
     .replace(/[̀-ͯ]/g, "")
     .replace(/[^\p{L}\p{N}]+/gu, "");
 // Artikel am Anfang dürfen beim Eintippen fehlen (el libro → libro)
-const ARTICLE = /^(el|la|los|las|un|una|le|les|l'|l’|il|lo|gli|i|un'|uno|der|die|das)\s*/i;
+const ARTICLE = /^(el|la|los|las|un|una|une|des|le|les|l'|l’|il|lo|gli|i|un'|uno|der|die|das)\s*/i;
 export function checkAnswer(typed, card) {
   const t = String(typed || "").trim().toLowerCase();
   if (!t) return "bad";

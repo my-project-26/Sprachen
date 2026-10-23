@@ -1,0 +1,71 @@
+# Italienisch – Wissenschaft, Bildung, Denken B2/C1
+## B2
+la ricerca scientifica | die wissenschaftliche Forschung | n | Finanziare la *ricerca scientifica*. | Die *Forschung* finanzieren. |
+il ricercatore | der Forscher | n | Un *ricercatore* precario. | Ein befristet angestellter *Forscher*. |
+lo studio | die Studie | n | Uno *studio* recente dimostra... | Eine neue *Studie* zeigt … |
+l'ipotesi | die Hypothese | n | Formulare un'*ipotesi*. | Eine *Hypothese* aufstellen. | weiblich (f), unveränderlich
+la teoria | die Theorie | n | La *teoria* della relatività. | Die Relativitäts*theorie*. |
+il metodo | die Methode | n | Il *metodo* scientifico. | Die wissenschaftliche *Methode*. |
+il campione | die Stichprobe; der Champion | n | Un *campione* rappresentativo. | Eine repräsentative *Stichprobe*. |
+i risultati | die Ergebnisse | n | I *risultati* sono incoraggianti. | Die *Ergebnisse* sind ermutigend. |
+il brevetto | das Patent | n | Depositare un *brevetto*. | Ein *Patent* anmelden. |
+l'innovazione | die Innovation | n | Puntare sull'*innovazione*. | Auf *Innovation* setzen. | weiblich (f)
+il progresso | der Fortschritt | n | Il *progresso* tecnologico. | Der technische *Fortschritt*. |
+la genetica | die Genetik | n | Studi di *genetica*. | *Genetik*studien. |
+il DNA | die DNA | n | L'analisi del *DNA*. | Die *DNA*-Analyse. |
+la cellula | die Zelle | n | Le *cellule* staminali. | Die Stamm*zellen*. |
+l'universo | das Universum | n | L'origine dell'*universo*. | Der Ursprung des *Universums*. | männlich (m)
+la galassia | die Galaxie | n | Una *galassia* lontana. | Eine ferne *Galaxie*. |
+il satellite | der Satellit | n | Lanciare un *satellite*. | Einen *Satelliten* starten. |
+l'astronauta | der Astronaut | n | Un'*astronauta* italiana. | Eine italienische *Astronautin*. |
+la fonte d'energia | die Energiequelle | n | Una nuova *fonte d'energia*. | Eine neue *Energiequelle*. |
+l'istruzione | die Bildung | n | Il diritto all'*istruzione*. | Das Recht auf *Bildung*. | weiblich (f)
+il sistema scolastico | das Schulsystem | n | Il *sistema scolastico* italiano. | Das italienische *Schulsystem*. |
+l'abbandono scolastico | der Schulabbruch | n | Combattere l'*abbandono scolastico*. | *Schulabbruch* bekämpfen. | männlich (m)
+l'ateneo | die Hochschule | n | Un *ateneo* prestigioso. | Eine renommierte *Hochschule*. | männlich (m)
+il docente | der Dozent | n | Un *docente* universitario. | Ein Hochschul*dozent*. |
+il dottorato | die Promotion | n | Fa il *dottorato* in fisica. | Er *promoviert* in Physik. |
+il master | der Masterstudiengang | n | Un *master* in economia. | Ein *Master* in Wirtschaft. |
+la laurea triennale | der Bachelor | n | Ho una *laurea triennale*. | Ich habe einen *Bachelor*. |
+il relatore | der Betreuer (Abschlussarbeit) | n | Il *relatore* della tesi. | Der *Betreuer* der Arbeit. |
+la bibliografia | das Literaturverzeichnis | n | Aggiungi la *bibliografia*. | Füge das *Literaturverzeichnis* hinzu. |
+la citazione | das Zitat | n | Una *citazione* di Dante. | Ein *Zitat* von Dante. |
+il plagio | das Plagiat | n | Accusato di *plagio*. | Des *Plagiats* beschuldigt. |
+l'apprendimento | das Lernen | n | L'*apprendimento* delle lingue. | Das *Erlernen* von Sprachen. | männlich (m)
+il ragionamento | die Überlegung, Argumentation | n | Un *ragionamento* logico. | Eine logische *Argumentation*. |
+dedurre | ableiten | v | Ne *deduco* che... | Daraus *schließe* ich, dass … | deduco
+l'argomentazione | die Argumentation | n | Un'*argomentazione* convincente. | Eine überzeugende *Argumentation*. | weiblich (f)
+la tesi | die These | n | Sostenere una *tesi*. | Eine *These* vertreten. |
+la premessa | die Voraussetzung | n | Partiamo da una *premessa*. | Gehen wir von einer *Voraussetzung* aus. |
+il paradosso | das Paradox | n | È un *paradosso*. | Das ist ein *Paradox*. |
+## C1
+la divulgazione scientifica | die Wissenschaftsvermittlung | n | Un programma di *divulgazione scientifica*. | Eine *Wissenschafts*sendung. |
+la revisione paritaria | das Peer-Review | n | Un articolo sottoposto a *revisione paritaria*. | Ein *begutachteter* Artikel. |
+la riproducibilità | die Reproduzierbarkeit | n | La *riproducibilità* dei risultati. | Die *Reproduzierbarkeit* der Ergebnisse. |
+la correlazione | die Korrelation | n | *Correlazione* non significa causalità. | *Korrelation* ist nicht Kausalität. |
+il nesso causale | der Kausalzusammenhang | n | Dimostrare un *nesso causale*. | Einen *Kausalzusammenhang* nachweisen. |
+la variabile | die Variable | n | Una *variabile* indipendente. | Eine unabhängige *Variable*. |
+l'evidenza empirica | die empirische Evidenz | n | Manca l'*evidenza empirica*. | Es fehlt an *empirischen Belegen*. | weiblich (f)
+la pseudoscienza | die Pseudowissenschaft | n | Smascherare la *pseudoscienza*. | *Pseudowissenschaft* entlarven. |
+il rigore | die Strenge, Genauigkeit | n | Il *rigore* metodologico. | Die methodische *Strenge*. |
+l'epistemologia | die Erkenntnistheorie | n | Un saggio di *epistemologia*. | Ein Essay über *Erkenntnistheorie*. | weiblich (f)
+la bioetica | die Bioethik | n | Un dilemma di *bioetica*. | Ein *bioethisches* Dilemma. |
+l'editing genetico | die Genom-Editierung | n | I limiti dell'*editing genetico*. | Die Grenzen der *Genom-Editierung*. | männlich (m)
+la fuga di cervelli | die Abwanderung von Akademikern | n | La *fuga di cervelli* verso l'estero. | Die *Abwanderung* von Akademikern ins Ausland. |
+il precariato accademico | die befristete Wissenschaftlerstelle | n | Il *precariato accademico* in Italia. | *Befristete Stellen* an italienischen Unis. |
+il concorso | das Auswahlverfahren | n | Vincere un *concorso* pubblico. | Ein *Auswahlverfahren* gewinnen. |
+il baronato | die Seilschaften (Uni) | n | Il *baronato* universitario. | Die universitären *Seilschaften*. |
+la didattica | die Didaktik; der Lehrbetrieb | n | La *didattica* a distanza. | Der *Fernunterricht*. |
+la valutazione | die Bewertung | n | La *valutazione* degli studenti. | Die *Bewertung* der Studierenden. |
+il pensiero critico | das kritische Denken | n | Sviluppare il *pensiero critico*. | *Kritisches Denken* entwickeln. |
+il sillogismo | der Syllogismus | n | Un *sillogismo* classico. | Ein klassischer *Syllogismus*. |
+la fallacia | der Trugschluss | n | Una *fallacia* logica. | Ein logischer *Trugschluss*. |
+il pregiudizio cognitivo | die kognitive Verzerrung | n | Il *pregiudizio cognitivo* di conferma. | Der Bestätigungs*fehler*. |
+il paradigma | das Paradigma | n | Un cambio di *paradigma*. | Ein *Paradigmen*wechsel. | männlich trotz -a
+l'assunto | die Grundannahme | n | Partire da un *assunto* sbagliato. | Von einer falschen *Annahme* ausgehen. | männlich (m)
+la confutazione | die Widerlegung | n | La *confutazione* della tesi. | Die *Widerlegung* der These. |
+confutare | widerlegen | v | *Confutare* un argomento. | Ein Argument *widerlegen*. |
+avvalorare | untermauern | v | I dati *avvalorano* l'ipotesi. | Die Daten *untermauern* die Hypothese. |
+l'astrazione | die Abstraktion | n | Un alto livello di *astrazione*. | Ein hohes *Abstraktions*niveau. | weiblich (f)
+la sintesi | die Synthese; Zusammenfassung | n | Fare una *sintesi*. | Eine *Zusammenfassung* machen. | unveränderlich
+il quadro teorico | der theoretische Rahmen | n | Il *quadro teorico* della ricerca. | Der *theoretische Rahmen* der Forschung. |

@@ -1,0 +1,68 @@
+# Italienisch – Umwelt, Natur, Landwirtschaft B2/C1
+## B2
+l'effetto serra | der Treibhauseffekt | n | I gas a *effetto serra*. | Die *Treibhaus*gase. | männlich (m)
+le emissioni | die Emissionen | n | Ridurre le *emissioni* di CO₂. | Die CO₂-*Emissionen* senken. |
+i combustibili fossili | die fossilen Brennstoffe | n | Abbandonare i *combustibili fossili*. | Aus den *fossilen Brennstoffen* aussteigen. |
+l'energia eolica | die Windenergie | n | Parchi di *energia eolica*. | *Windparks*. | weiblich (f)
+l'energia solare | die Solarenergie | n | Sfruttare l'*energia solare*. | *Sonnenenergie* nutzen. | weiblich (f)
+la centrale nucleare | das Atomkraftwerk | n | L'Italia non ha *centrali nucleari*. | Italien hat keine *Atomkraftwerke*. |
+il risparmio energetico | das Energiesparen | n | Misure di *risparmio energetico*. | Maßnahmen zum *Energiesparen*. |
+l'auto elettrica | das E-Auto | n | Ho comprato un'*auto elettrica*. | Ich habe ein *E-Auto* gekauft. | weiblich (f)
+la colonnina di ricarica | die Ladesäule | n | Mancano *colonnine di ricarica*. | Es fehlen *Ladesäulen*. |
+lo smog | der Smog | n | Allarme *smog* a Milano. | *Smog*alarm in Mailand. |
+le polveri sottili | der Feinstaub | n | Le *polveri sottili* superano i limiti. | Der *Feinstaub* überschreitet die Grenzwerte. |
+la deforestazione | die Abholzung | n | La *deforestazione* dell'Amazzonia. | Die *Abholzung* des Amazonas. |
+la biodiversità | die Artenvielfalt | n | Proteggere la *biodiversità*. | Die *Artenvielfalt* schützen. |
+l'ecosistema | das Ökosystem | n | Un *ecosistema* fragile. | Ein empfindliches *Ökosystem*. | männlich (m)
+la specie protetta | die geschützte Art | n | L'orso è una *specie protetta*. | Der Bär ist eine *geschützte Art*. |
+lo scioglimento dei ghiacciai | die Gletscherschmelze | n | Lo *scioglimento dei ghiacciai* alpini. | Die *Gletscherschmelze* in den Alpen. |
+l'innalzamento del mare | der Meeresspiegelanstieg | n | L'*innalzamento del mare* minaccia Venezia. | Der *Meeresspiegelanstieg* bedroht Venedig. | männlich (m)
+l'acqua alta | das Hochwasser (Venedig) | n | C'è *acqua alta* in piazza San Marco. | Auf dem Markusplatz ist *Hochwasser*. | weiblich (f)
+il dissesto idrogeologico | die Bodeninstabilität | n | Il *dissesto idrogeologico* in Liguria. | Die *Erdrutschgefahr* in Ligurien. |
+la frana | der Erdrutsch | n | Una *frana* ha bloccato la strada. | Ein *Erdrutsch* hat die Straße blockiert. |
+l'esondazione | das Überlaufen (Fluss) | n | L'*esondazione* del fiume. | Das *Übertreten* des Flusses. | weiblich (f)
+l'ondata di calore | die Hitzewelle | n | Una lunga *ondata di calore*. | Eine lange *Hitzewelle*. | weiblich (f)
+la carenza idrica | die Wasserknappheit | n | *Carenza idrica* in Sicilia. | *Wasserknappheit* auf Sizilien. |
+lo spreco | die Verschwendung | n | Lo *spreco* alimentare. | Die Lebensmittel*verschwendung*. |
+il compost | der Kompost | n | Fare il *compost*. | *Kompost* anlegen. |
+la differenziata | die Mülltrennung | n | La *differenziata* è obbligatoria. | *Mülltrennung* ist Pflicht. |
+la discarica | die Mülldeponie | n | Chiudere le *discariche*. | Die *Deponien* schließen. |
+l'inceneritore | die Müllverbrennungsanlage | n | Costruire un *inceneritore*. | Eine *Müllverbrennungsanlage* bauen. | männlich (m)
+la vendemmia | die Weinlese | n | La *vendemmia* inizia a settembre. | Die *Weinlese* beginnt im September. |
+la raccolta delle olive | die Olivenernte | n | Aiutiamo nella *raccolta delle olive*. | Wir helfen bei der *Olivenernte*. |
+il frantoio | die Ölmühle | n | L'olio nuovo del *frantoio*. | Frisches Öl aus der *Ölmühle*. |
+il vigneto | der Weinberg | n | I *vigneti* delle Langhe. | Die *Weinberge* der Langhe. |
+l'uliveto | der Olivenhain | n | Un *uliveto* secolare. | Ein jahrhundertealter *Olivenhain*. | männlich (m)
+l'agricoltura biologica | der ökologische Landbau | n | Un'azienda di *agricoltura biologica*. | Ein *Bio*betrieb. | weiblich (f)
+il pesticida | das Pestizid | n | Senza *pesticidi*. | Ohne *Pestizide*. |
+## C1
+la transizione ecologica | die ökologische Wende | n | Il ministero della *transizione ecologica*. | Das Ministerium für den *ökologischen Wandel*. |
+la decarbonizzazione | die Dekarbonisierung | n | Gli obiettivi di *decarbonizzazione*. | Die Ziele der *Dekarbonisierung*. |
+la neutralità climatica | die Klimaneutralität | n | Raggiungere la *neutralità climatica* nel 2050. | 2050 *klimaneutral* sein. |
+l'impronta ecologica | der ökologische Fußabdruck | n | Ridurre la propria *impronta ecologica*. | Den eigenen *ökologischen Fußabdruck* verringern. | weiblich (f)
+la compensazione delle emissioni | der CO₂-Ausgleich | n | Progetti di *compensazione delle emissioni*. | *Kompensations*projekte. |
+il greenwashing | das Greenwashing | n | Un caso di *greenwashing*. | Ein Fall von *Greenwashing*. |
+l'economia circolare | die Kreislaufwirtschaft | n | Il modello dell'*economia circolare*. | Das Modell der *Kreislaufwirtschaft*. | weiblich (f)
+il riuso | die Wiederverwendung | n | Favorire il *riuso*. | *Wiederverwendung* fördern. |
+lo smaltimento | die Entsorgung | n | Lo *smaltimento* dei rifiuti tossici. | Die *Entsorgung* von Giftmüll. |
+la bonifica | die Sanierung (Boden) | n | La *bonifica* dell'area industriale. | Die *Sanierung* des Industriegebiets. |
+l'ecomafia | die Umweltmafia | n | I traffici dell'*ecomafia*. | Die Geschäfte der *Umweltmafia*. | weiblich (f)
+la Terra dei fuochi | die „Land der Feuer“-Region | n | L'inquinamento della *Terra dei fuochi*. | Die Verseuchung der *Terra dei fuochi*. |
+la desertificazione | die Wüstenbildung | n | Il rischio di *desertificazione* al Sud. | Die Gefahr der *Wüstenbildung* im Süden. |
+l'erosione costiera | die Küstenerosion | n | L'*erosione costiera* avanza. | Die *Küstenerosion* schreitet voran. | weiblich (f)
+la cementificazione | die Zubetonierung | n | Fermare la *cementificazione*. | Die *Zubetonierung* stoppen. |
+il consumo di suolo | der Flächenverbrauch | n | Il *consumo di suolo* in Italia. | Der *Flächenverbrauch* in Italien. |
+l'adattamento climatico | die Klimaanpassung | n | Piani di *adattamento climatico*. | Pläne zur *Klimaanpassung*. | männlich (m)
+la mitigazione | die Eindämmung | n | Misure di *mitigazione*. | Maßnahmen zur *Eindämmung*. |
+il punto di non ritorno | der Kipppunkt | n | Vicini al *punto di non ritorno*. | Nahe am *Kipppunkt*. |
+il negazionismo climatico | die Klimaleugnung | n | Il *negazionismo climatico* è pericoloso. | *Klimaleugnung* ist gefährlich. |
+l'attivismo | der Aktivismus | n | L'*attivismo* dei giovani. | Der *Aktivismus* der Jugend. | männlich (m)
+la specie invasiva | die invasive Art | n | Il granchio blu, una *specie invasiva*. | Die Blaukrabbe, eine *invasive Art*. |
+la fauna selvatica | die Wildtiere | n | Proteggere la *fauna selvatica*. | *Wildtiere* schützen. |
+la flora | die Pflanzenwelt | n | La *flora* mediterranea. | Die Mittelmeer*flora*. |
+la macchia mediterranea | die Macchia | n | Profumo di *macchia mediterranea*. | Duft der *Macchia*. |
+la pesca intensiva | die Überfischung | n | I danni della *pesca intensiva*. | Die Schäden der *Überfischung*. |
+la microplastica | das Mikroplastik | n | *Microplastiche* nel mare. | *Mikroplastik* im Meer. |
+la siccità prolungata | die anhaltende Dürre | n | La *siccità prolungata* del Po. | Die *anhaltende Dürre* am Po. |
+la falda acquifera | das Grundwasser | n | Le *falde acquifere* si abbassano. | Der *Grundwasser*spiegel sinkt. |
+il dissalatore | die Entsalzungsanlage | n | Un *dissalatore* in Sardegna. | Eine *Entsalzungsanlage* auf Sardinien. |

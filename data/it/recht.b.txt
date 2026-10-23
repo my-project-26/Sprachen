@@ -1,0 +1,62 @@
+# Italienisch – Recht & Verwaltung B2/C1
+## B2
+il codice civile | das Bürgerliche Gesetzbuch | n | Secondo il *codice civile*... | Laut *BGB* … |
+il codice penale | das Strafgesetzbuch | n | Un articolo del *codice penale*. | Ein Artikel des *Strafgesetzbuchs*. |
+la norma | die Vorschrift | n | Le *norme* di sicurezza. | Die Sicherheits*vorschriften*. |
+il regolamento | die Verordnung, Ordnung | n | Il *regolamento* condominiale. | Die *Haus*ordnung. |
+la clausola | die Klausel | n | Una *clausola* del contratto. | Eine Vertrags*klausel*. |
+la firma digitale | die elektronische Signatur | n | Firmare con *firma digitale*. | Mit *elektronischer Signatur* unterschreiben. |
+l'autorizzazione | die Genehmigung | n | Serve un'*autorizzazione*. | Man braucht eine *Genehmigung*. | weiblich (f)
+la domanda | der Antrag | n | Presentare *domanda*. | Einen *Antrag* stellen. |
+la richiesta | die Anfrage, der Antrag | n | Una *richiesta* di rimborso. | Ein Erstattungs*antrag*. |
+il certificato | die Bescheinigung | n | Un *certificato* di residenza. | Eine *Meldebescheinigung*. |
+la marca da bollo | die Stempelmarke | n | Serve una *marca da bollo*. | Man braucht eine *Stempelmarke*. |
+l'anagrafe | das Einwohnermeldeamt | n | Andare all'*anagrafe*. | Zum *Einwohnermeldeamt* gehen. | weiblich (f)
+lo stato civile | der Familienstand | n | Indicare lo *stato civile*. | Den *Familienstand* angeben. |
+il testamento | das Testament | n | Ha lasciato un *testamento*. | Er hat ein *Testament* hinterlassen. |
+l'eredità | das Erbe | n | Ricevere un'*eredità*. | Ein *Erbe* antreten. | weiblich (f)
+l'erede | der Erbe | n | L'unico *erede*. | Der einzige *Erbe*. |
+la proprietà | das Eigentum | n | Una *proprietà* privata. | Privat*eigentum*. |
+il proprietario | der Eigentümer | n | Il *proprietario* dell'auto. | Der *Halter* des Autos. |
+l'affittuario | der Pächter, Mieter | n | L'*affittuario* paga in ritardo. | Der *Mieter* zahlt zu spät. | männlich (m)
+la causa | der Rechtsstreit | n | Fare *causa* a qualcuno. | Jemanden *verklagen*. |
+l'accusa | die Anklage | n | L'*accusa* chiede cinque anni. | Die *Anklage* fordert fünf Jahre. | weiblich (f)
+la difesa | die Verteidigung | n | La *difesa* presenta prove. | Die *Verteidigung* legt Beweise vor. |
+la testimonianza | die Zeugenaussage | n | Una *testimonianza* chiave. | Eine entscheidende *Zeugenaussage*. |
+il verdetto | das Urteil (Jury) | n | Il *verdetto* della giuria. | Das *Urteil* der Jury. |
+la pena | die Strafe | n | Una *pena* di tre anni. | Eine *Strafe* von drei Jahren. |
+il risarcimento | der Schadensersatz | n | Chiedere un *risarcimento*. | *Schadensersatz* fordern. |
+il furto d'identità | der Identitätsdiebstahl | n | Vittima di *furto d'identità*. | Opfer von *Identitätsdiebstahl*. |
+la violazione | der Verstoß | n | Una *violazione* della privacy. | Ein *Verstoß* gegen den Datenschutz. |
+violare | verletzen, verstoßen | v | *Violare* la legge. | Gegen das Gesetz *verstoßen*. |
+denunciare | anzeigen | v | Ho *denunciato* il furto. | Ich habe den Diebstahl *angezeigt*. |
+il sequestro | die Beschlagnahme; die Entführung | n | Il *sequestro* della merce. | Die *Beschlagnahme* der Ware. |
+## C1
+la giurisprudenza | die Rechtsprechung | n | Secondo la *giurisprudenza* consolidata. | Nach ständiger *Rechtsprechung*. |
+il diritto amministrativo | das Verwaltungsrecht | n | Un esperto di *diritto amministrativo*. | Ein Experte für *Verwaltungsrecht*. |
+il TAR | das Verwaltungsgericht | n | Ricorso al *TAR*. | Klage beim *Verwaltungsgericht*. | Tribunale amministrativo regionale
+la Corte di Cassazione | das Kassationsgericht | n | La sentenza della *Cassazione*. | Das Urteil des *Kassationsgerichts*. |
+la Corte costituzionale | das Verfassungsgericht | n | La *Corte costituzionale* boccia la legge. | Das *Verfassungsgericht* kippt das Gesetz. |
+l'impugnazione | die Anfechtung | n | L'*impugnazione* della sentenza. | Die *Anfechtung* des Urteils. | weiblich (f)
+impugnare | anfechten | v | *Impugnare* un provvedimento. | Einen Bescheid *anfechten*. |
+il provvedimento | die Verfügung, Maßnahme | n | Un *provvedimento* urgente. | Eine Eil*verfügung*. |
+la decadenza | der Verfall (Frist) | n | Termini di *decadenza*. | *Ausschluss*fristen. |
+l'inadempienza | die Nichterfüllung | n | *Inadempienza* contrattuale. | Vertragliche *Nichterfüllung*. |
+la rescissione | die Aufhebung (Vertrag) | n | La *rescissione* del contratto. | Die *Aufhebung* des Vertrags. |
+la fideiussione | die Bürgschaft | n | Una *fideiussione* bancaria. | Eine Bank*bürgschaft*. |
+il pignoramento | die Pfändung | n | Il *pignoramento* dello stipendio. | Die Lohn*pfändung*. |
+l'ufficiale giudiziario | der Gerichtsvollzieher | n | È arrivato l'*ufficiale giudiziario*. | Der *Gerichtsvollzieher* ist gekommen. | männlich (m)
+la querela di parte | der Strafantrag | n | Reato perseguibile a *querela di parte*. | Antragsdelikt. |
+il concorso in reato | die Mittäterschaft | n | Accusato di *concorso in reato*. | Wegen *Mittäterschaft* angeklagt. |
+il favoreggiamento | die Begünstigung | n | Accusato di *favoreggiamento*. | Der *Begünstigung* beschuldigt. |
+il riciclaggio | die Geldwäsche | n | Un'inchiesta per *riciclaggio*. | Ermittlungen wegen *Geldwäsche*. |
+la frode fiscale | der Steuerbetrug | n | Condannato per *frode fiscale*. | Wegen *Steuerbetrugs* verurteilt. |
+il peculato | die Veruntreuung (Amt) | n | Il sindaco è indagato per *peculato*. | Gegen den Bürgermeister wird wegen *Veruntreuung* ermittelt. |
+l'abuso d'ufficio | der Amtsmissbrauch | n | Il reato di *abuso d'ufficio*. | Der Tatbestand des *Amtsmissbrauchs*. | männlich (m)
+il voto di scambio | der Stimmenkauf | n | Arresti per *voto di scambio*. | Festnahmen wegen *Stimmenkaufs*. |
+le intercettazioni | die Abhöraktionen | n | Le *intercettazioni* telefoniche. | Die Telefon*überwachung*. |
+l'avviso di garanzia | die Mitteilung über ein Ermittlungsverfahren | n | Ha ricevuto un *avviso di garanzia*. | Ihm wurde mitgeteilt, dass gegen ihn *ermittelt* wird. | männlich (m)
+la presunzione d'innocenza | die Unschuldsvermutung | n | Vale la *presunzione d'innocenza*. | Es gilt die *Unschuldsvermutung*. |
+il giusto processo | das faire Verfahren | n | Il diritto al *giusto processo*. | Das Recht auf ein *faires Verfahren*. |
+lo stato di diritto | der Rechtsstaat | n | Difendere lo *stato di diritto*. | Den *Rechtsstaat* verteidigen. |
+la separazione dei poteri | die Gewaltenteilung | n | Il principio della *separazione dei poteri*. | Das Prinzip der *Gewaltenteilung*. |

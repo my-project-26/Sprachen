@@ -1,0 +1,74 @@
+# Italienisch – Gesundheit B2/C1
+## B2
+il benessere psicofisico | das körperliche und seelische Wohlbefinden | n | Curare il *benessere psicofisico*. | Auf *Körper und Seele* achten. |
+la prevenzione | die Vorbeugung | n | La *prevenzione* è fondamentale. | *Vorbeugung* ist entscheidend. |
+lo screening | die Vorsorgeuntersuchung | n | Uno *screening* gratuito. | Eine kostenlose *Vorsorgeuntersuchung*. |
+il ricovero | die Einweisung (Klinik) | n | Un *ricovero* d'urgenza. | Eine Not*einweisung*. |
+ricoverare | ins Krankenhaus einweisen | v | L'hanno *ricoverato* ieri. | Er wurde gestern *eingeliefert*. |
+dimettere | entlassen (Klinik) | v | Lo *dimettono* domani. | Er wird morgen *entlassen*. |
+il reparto | die Station | n | Il *reparto* di cardiologia. | Die kardiologische *Station*. |
+il primario | der Chefarzt | n | Il *primario* di chirurgia. | Der *Chefarzt* der Chirurgie. |
+il chirurgo | der Chirurg | n | Un *chirurgo* esperto. | Ein erfahrener *Chirurg*. |
+l'intervento chirurgico | der chirurgische Eingriff | n | Un *intervento chirurgico* delicato. | Ein heikler *Eingriff*. | männlich (m)
+l'anestesia | die Narkose | n | In *anestesia* totale. | Unter Voll*narkose*. | weiblich (f)
+la terapia | die Therapie | n | Una *terapia* lunga. | Eine lange *Therapie*. |
+la riabilitazione | die Reha | n | Un mese di *riabilitazione*. | Ein Monat *Reha*. |
+la fisioterapia | die Physiotherapie | n | Faccio *fisioterapia*. | Ich mache *Physiotherapie*. |
+il dosaggio | die Dosierung | n | Rispetta il *dosaggio*. | Halte die *Dosierung* ein. |
+il farmaco | das Arzneimittel | n | Un *farmaco* da banco. | Ein rezeptfreies *Medikament*. |
+l'antibiotico | das Antibiotikum | n | Prendo l'*antibiotico* per una settimana. | Ich nehme eine Woche lang *Antibiotika*. | männlich (m)
+l'antidolorifico | das Schmerzmittel | n | Un *antidolorifico* leggero. | Ein leichtes *Schmerzmittel*. | männlich (m)
+l'infiammazione | die Entzündung | n | Un'*infiammazione* al ginocchio. | Eine Knie*entzündung*. | weiblich (f)
+l'infezione | die Infektion | n | Un'*infezione* virale. | Eine Virus*infektion*. | weiblich (f)
+il virus | das Virus | n | Un *virus* contagioso. | Ein ansteckendes *Virus*. |
+contagioso | ansteckend | adj | È molto *contagioso*. | Es ist sehr *ansteckend*. |
+cronico | chronisch | adj | Un dolore *cronico*. | Ein *chronischer* Schmerz. |
+acuto | akut | adj | Un dolore *acuto*. | Ein *akuter* Schmerz. |
+il diabete | der Diabetes | n | Soffre di *diabete*. | Er hat *Diabetes*. |
+l'infarto | der Herzinfarkt | n | Ha avuto un *infarto*. | Er hatte einen *Herzinfarkt*. | männlich (m)
+l'ictus | der Schlaganfall | n | Un *ictus* improvviso. | Ein plötzlicher *Schlaganfall*. | männlich (m)
+il tumore | der Tumor | n | Un *tumore* benigno. | Ein gutartiger *Tumor*. |
+la depressione | die Depression | n | Curare la *depressione*. | Eine *Depression* behandeln. |
+l'insonnia | die Schlaflosigkeit | n | Soffro d'*insonnia*. | Ich leide an *Schlaflosigkeit*. | weiblich (f)
+l'alimentazione | die Ernährung | n | Un'*alimentazione* equilibrata. | Eine ausgewogene *Ernährung*. | weiblich (f)
+la dieta mediterranea | die Mittelmeerdiät | n | I benefici della *dieta mediterranea*. | Die Vorteile der *Mittelmeerküche*. |
+il sovrappeso | das Übergewicht | n | Il *sovrappeso* nei bambini. | *Übergewicht* bei Kindern. |
+sedentario | bewegungsarm | adj | Una vita *sedentaria*. | Ein *bewegungsarmes* Leben. |
+il sistema immunitario | das Immunsystem | n | Rafforzare il *sistema immunitario*. | Das *Immunsystem* stärken. |
+la tessera sanitaria | die Krankenversicherungskarte | n | Mostri la *tessera sanitaria*. | Zeigen Sie die *Versichertenkarte*. |
+il ticket | die Zuzahlung | n | Il *ticket* per la visita. | Die *Zuzahlung* für die Untersuchung. |
+la lista d'attesa | die Warteliste | n | Mesi di *lista d'attesa*. | Monate auf der *Warteliste*. |
+il donatore | der Spender | n | Un *donatore* di sangue. | Ein Blut*spender*. |
+## C1
+la sanità pubblica | das öffentliche Gesundheitswesen | n | I tagli alla *sanità pubblica*. | Die Kürzungen im *Gesundheitswesen*. |
+il Servizio sanitario nazionale | der nationale Gesundheitsdienst | n | Il *Servizio sanitario nazionale* garantisce le cure. | Der *nationale Gesundheitsdienst* garantiert die Versorgung. |
+la medicina di base | die hausärztliche Versorgung | n | Rafforzare la *medicina di base*. | Die *hausärztliche Versorgung* stärken. |
+la diagnosi precoce | die Früherkennung | n | L'importanza della *diagnosi precoce*. | Die Bedeutung der *Früherkennung*. |
+la prognosi | die Prognose | n | Una *prognosi* riservata. | Eine *unsichere Prognose*. | unveränderlich
+la patologia | die Erkrankung | n | Una *patologia* rara. | Eine seltene *Erkrankung*. |
+la comorbilità | die Begleiterkrankung | n | Pazienti con *comorbilità*. | Patienten mit *Vorerkrankungen*. |
+il decorso | der Verlauf (Krankheit) | n | Il *decorso* è favorevole. | Der *Verlauf* ist günstig. |
+la ricaduta | der Rückfall | n | Ha avuto una *ricaduta*. | Er hatte einen *Rückfall*. |
+la convalescenza | die Genesung | n | Un periodo di *convalescenza*. | Eine *Genesungs*zeit. |
+il trapianto | die Transplantation | n | Un *trapianto* di rene. | Eine Nieren*transplantation*. |
+l'accanimento terapeutico | die Übertherapie | n | Rifiuta l'*accanimento terapeutico*. | Er lehnt *lebensverlängernde Maßnahmen um jeden Preis* ab. | männlich (m)
+il testamento biologico | die Patientenverfügung | n | Ha firmato il *testamento biologico*. | Er hat eine *Patientenverfügung* unterschrieben. |
+le cure palliative | die Palliativmedizin | n | Un reparto di *cure palliative*. | Eine *Palliativ*station. |
+l'eutanasia | die Sterbehilfe | n | Il dibattito sull'*eutanasia*. | Die Debatte über *Sterbehilfe*. | weiblich (f)
+l'obiezione di coscienza | die Gewissensverweigerung | n | I medici e l'*obiezione di coscienza*. | Ärzte und *Verweigerung aus Gewissensgründen*. | weiblich (f)
+la malasanità | die Missstände im Gesundheitswesen | n | Un caso di *malasanità*. | Ein *Behandlungsfehler*-Skandal. |
+la negligenza medica | der ärztliche Kunstfehler | n | Accusato di *negligenza medica*. | Eines *Behandlungsfehlers* beschuldigt. |
+il consenso informato | die Einwilligungserklärung | n | Firmare il *consenso informato*. | Die *Einverständniserklärung* unterschreiben. |
+la dipendenza | die Abhängigkeit, Sucht | n | La *dipendenza* dal gioco. | Die *Spielsucht*. |
+la ludopatia | die Spielsucht | n | Combattere la *ludopatia*. | *Spielsucht* bekämpfen. |
+il disturbo alimentare | die Essstörung | n | Un *disturbo alimentare* diffuso. | Eine verbreitete *Essstörung*. |
+l'esaurimento nervoso | der Nervenzusammenbruch | n | Ha avuto un *esaurimento nervoso*. | Er hatte einen *Nervenzusammenbruch*. | männlich (m)
+lo psichiatra | der Psychiater | n | Una visita dallo *psichiatra*. | Ein Termin beim *Psychiater*. |
+il placebo | das Placebo | n | L'effetto *placebo*. | Der *Placebo*-Effekt. |
+la sperimentazione clinica | die klinische Studie | n | La fase tre della *sperimentazione clinica*. | Phase drei der *klinischen Studie*. |
+l'epidemia | die Epidemie | n | Un'*epidemia* di influenza. | Eine Grippe*epidemie*. | weiblich (f)
+la pandemia | die Pandemie | n | Durante la *pandemia*. | Während der *Pandemie*. |
+il contagio | die Ansteckung | n | Il rischio di *contagio*. | Das *Ansteckungs*risiko. |
+la quarantena | die Quarantäne | n | Dieci giorni di *quarantena*. | Zehn Tage *Quarantäne*. |
+l'immunità di gregge | die Herdenimmunität | n | Raggiungere l'*immunità di gregge*. | *Herdenimmunität* erreichen. | weiblich (f)
+la longevità | die Langlebigkeit | n | Il segreto della *longevità*. | Das Geheimnis der *Langlebigkeit*. |

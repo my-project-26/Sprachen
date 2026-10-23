@@ -1,0 +1,52 @@
+# Italienisch – Wirtschaft, Politik, Gesellschaft (B1)
+## B1
+l'economia | die Wirtschaft | n | L'*economia* cresce. | Die *Wirtschaft* wächst. | weiblich (f)
+la banca | die Bank | n | Apro un conto in *banca*. | Ich eröffne ein Konto bei der *Bank*. |
+il conto corrente | das Girokonto | n | Il mio *conto corrente*. | Mein *Girokonto*. |
+il bonifico | die Überweisung | n | Ti faccio un *bonifico*. | Ich mache dir eine *Überweisung*. |
+il prestito | der Kredit, das Darlehen | n | Chiedere un *prestito*. | Einen *Kredit* beantragen. |
+il debito | die Schuld (Geld) | n | Ha molti *debiti*. | Er hat viele *Schulden*. |
+le tasse | die Steuern | n | Pagare le *tasse*. | *Steuern* zahlen. |
+il costo della vita | die Lebenshaltungskosten | n | Il *costo della vita* aumenta. | Die *Lebenshaltungskosten* steigen. |
+l'inflazione | die Inflation | n | L'*inflazione* è alta. | Die *Inflation* ist hoch. | weiblich (f)
+la crisi | die Krise | n | Una *crisi* economica. | Eine Wirtschafts*krise*. | unveränderlich
+la disoccupazione | die Arbeitslosigkeit | n | La *disoccupazione* giovanile. | Die Jugend*arbeitslosigkeit*. |
+il mercato | der Markt | n | Il *mercato* del lavoro. | Der Arbeits*markt*. |
+il prodotto | das Produkt | n | Un *prodotto* italiano. | Ein italienisches *Produkt*. |
+l'esportazione | der Export | n | L'*esportazione* di vino. | Der Wein*export*. | weiblich (f)
+la concorrenza | die Konkurrenz | n | C'è molta *concorrenza*. | Es gibt viel *Konkurrenz*. |
+il guadagno | der Gewinn, Verdienst | n | Un buon *guadagno*. | Ein guter *Verdienst*. |
+la politica | die Politik | n | Non mi interessa la *politica*. | *Politik* interessiert mich nicht. |
+il governo | die Regierung | n | Il *governo* ha deciso. | Die *Regierung* hat entschieden. |
+le elezioni | die Wahlen | n | Le *elezioni* sono a giugno. | Die *Wahlen* sind im Juni. |
+votare | wählen, abstimmen | v | Domenica vado a *votare*. | Sonntag gehe ich *wählen*. |
+il partito | die Partei | n | Un *partito* politico. | Eine politische *Partei*. |
+il sindaco | der Bürgermeister | n | Il *sindaco* di Roma. | Der *Bürgermeister* von Rom. |
+il comune | die Gemeinde; das Rathaus | n | Vado in *comune*. | Ich gehe aufs *Rathaus*. |
+lo Stato | der Staat | n | Lo *Stato* italiano. | Der italienische *Staat*. |
+la legge | das Gesetz | n | Una nuova *legge*. | Ein neues *Gesetz*. |
+il diritto | das Recht | n | I *diritti* umani. | Die Menschen*rechte*. |
+il dovere | die Pflicht | n | È un mio *dovere*. | Das ist meine *Pflicht*. |
+il cittadino | der Bürger | n | I *cittadini* europei. | Die europäischen *Bürger*. |
+la società | die Gesellschaft; die Firma | n | La *società* moderna. | Die moderne *Gesellschaft*. | unveränderlich
+la manifestazione | die Demonstration | n | Una *manifestazione* per il clima. | Eine *Demo* fürs Klima. |
+la guerra | der Krieg | n | La *guerra* è finita. | Der *Krieg* ist vorbei. |
+la pace | der Frieden | n | Vogliamo la *pace*. | Wir wollen *Frieden*. |
+la polizia | die Polizei | n | Chiama la *polizia*! | Ruf die *Polizei*! |
+il furto | der Diebstahl | n | Denunciare un *furto*. | Einen *Diebstahl* anzeigen. |
+il ladro | der Dieb | n | Hanno preso il *ladro*. | Sie haben den *Dieb* gefasst. |
+rubare | stehlen | v | Mi hanno *rubato* il portafoglio. | Man hat mir das Portemonnaie *gestohlen*. |
+la denuncia | die Anzeige | n | Faccio *denuncia* alla polizia. | Ich erstatte *Anzeige* bei der Polizei. |
+il tribunale | das Gericht | n | Il caso va in *tribunale*. | Der Fall kommt vor *Gericht*. |
+il giudice | der Richter | n | Il *giudice* decide. | Der *Richter* entscheidet. |
+la multa | die Geldstrafe | n | Ha pagato una *multa*. | Er hat eine *Geldstrafe* gezahlt. |
+l'immigrazione | die Einwanderung | n | Il tema dell'*immigrazione*. | Das Thema *Einwanderung*. | weiblich (f)
+il permesso di soggiorno | die Aufenthaltsgenehmigung | n | Rinnovare il *permesso di soggiorno*. | Die *Aufenthaltsgenehmigung* verlängern. |
+la religione | die Religion | n | Libertà di *religione*. | *Religions*freiheit. |
+la povertà | die Armut | n | Lottare contro la *povertà*. | Gegen *Armut* kämpfen. |
+la ricchezza | der Reichtum | n | La *ricchezza* è mal distribuita. | Der *Reichtum* ist ungleich verteilt. |
+ricco | reich | adj | Una famiglia *ricca*. | Eine *reiche* Familie. |
+povero | arm | adj | Un paese *povero*. | Ein *armes* Land. |
+pubblico | öffentlich | adj | Il servizio *pubblico*. | Der *öffentliche* Dienst. |
+privato | privat | adj | Una scuola *privata*. | Eine *Privat*schule. |
+internazionale | international | adj | Una crisi *internazionale*. | Eine *internationale* Krise. |

@@ -1,0 +1,94 @@
+# Italienisch – Arbeit & Wirtschaft B2/C1
+## B2
+la gestione | die Verwaltung, das Management | n | La *gestione* del personale. | Das *Personal*management. |
+gestire | leiten, verwalten | v | *Gestisce* un ristorante. | Er *führt* ein Restaurant. | gestisco
+il dirigente | die Führungskraft | n | Un *dirigente* d'azienda. | Eine *Führungskraft*. |
+l'amministratore delegato | der Geschäftsführer, CEO | n | L'*amministratore delegato* si è dimesso. | Der *CEO* ist zurückgetreten. | männlich (m)
+dimettersi | zurücktreten | v | Il ministro si è *dimesso*. | Der Minister ist *zurückgetreten*. |
+il bilancio | die Bilanz; der Haushalt | n | Il *bilancio* dell'anno. | Die *Jahresbilanz*. |
+il fatturato | der Umsatz | n | Il *fatturato* è cresciuto. | Der *Umsatz* ist gestiegen. |
+il profitto | der Gewinn | n | Un *profitto* del 10%. | Ein *Gewinn* von 10 %. |
+la perdita | der Verlust | n | L'azienda è in *perdita*. | Das Unternehmen macht *Verlust*. |
+l'investimento | die Investition | n | Un *investimento* sicuro. | Eine sichere *Investition*. | männlich (m)
+investire | investieren | v | *Investire* in borsa. | An der Börse *investieren*. |
+la borsa | die Börse | n | Il crollo della *borsa*. | Der *Börsen*crash. |
+l'azione | die Aktie; die Handlung | n | Ha comprato *azioni*. | Er hat *Aktien* gekauft. | weiblich (f)
+il socio | der Gesellschafter, Partner | n | È *socio* dello studio. | Er ist *Partner* der Kanzlei. |
+la società per azioni | die Aktiengesellschaft | n | Una *società per azioni* (S.p.A.). | Eine *Aktiengesellschaft* (AG). |
+la partita IVA | die Umsatzsteuer-ID; Selbständigkeit | n | Lavoro con *partita IVA*. | Ich arbeite *freiberuflich*. |
+l'IVA | die Mehrwertsteuer | n | Prezzo *IVA* inclusa. | Preis inkl. *MwSt*. | weiblich (f)
+la fattura | die Rechnung | n | Emettere una *fattura*. | Eine *Rechnung* ausstellen. |
+la trattativa | die Verhandlung | n | Le *trattative* sono in corso. | Die *Verhandlungen* laufen. |
+negoziare | verhandeln | v | *Negoziare* il prezzo. | Über den Preis *verhandeln*. |
+l'accordo | die Vereinbarung | n | Abbiamo raggiunto un *accordo*. | Wir haben eine *Einigung* erzielt. | männlich (m)
+la strategia | die Strategie | n | Una nuova *strategia* di marketing. | Eine neue Marketing*strategie*. |
+l'obiettivo | das Ziel | n | Raggiungere gli *obiettivi*. | Die *Ziele* erreichen. | männlich (m)
+la produttività | die Produktivität | n | Aumentare la *produttività*. | Die *Produktivität* steigern. |
+l'efficienza | die Effizienz | n | Migliorare l'*efficienza*. | Die *Effizienz* verbessern. | weiblich (f)
+la delocalizzazione | die Produktionsverlagerung | n | La *delocalizzazione* in Asia. | Die *Verlagerung* nach Asien. |
+la piccola e media impresa | der Mittelstand (KMU) | n | Le *PMI* sono la base dell'economia. | Der *Mittelstand* ist die Basis der Wirtschaft. |
+l'imprenditore | der Unternehmer | n | Un giovane *imprenditore*. | Ein junger *Unternehmer*. | männlich (m)
+la start-up | das Start-up | n | Ha fondato una *start-up*. | Er hat ein *Start-up* gegründet. |
+fondare | gründen | v | *Fondare* un'azienda. | Ein Unternehmen *gründen*. |
+il fallimento | die Pleite, der Konkurs | n | L'azienda è in *fallimento*. | Die Firma ist *pleite*. |
+la cassa integrazione | das Kurzarbeitergeld | n | Gli operai sono in *cassa integrazione*. | Die Arbeiter sind in *Kurzarbeit*. |
+il TFR | die Abfindung (Betriebsrente) | n | Ho ricevuto il *TFR*. | Ich habe die *Abfindung* bekommen. |
+il preavviso | die Kündigungsfrist | n | Un mese di *preavviso*. | Ein Monat *Kündigungsfrist*. |
+le dimissioni | die Kündigung (Arbeitnehmer) | n | Ha dato le *dimissioni*. | Er hat *gekündigt*. |
+il licenziamento | die Entlassung | n | Un *licenziamento* ingiusto. | Eine ungerechtfertigte *Kündigung*. |
+il contratto a termine | der befristete Vertrag | n | Ho un *contratto a termine*. | Ich habe einen *befristeten Vertrag*. |
+il colloquio | das Gespräch | n | Un *colloquio* con il direttore. | Ein *Gespräch* mit dem Direktor. |
+la riunione di lavoro | das Arbeitstreffen | n | Una *riunione di lavoro* a Milano. | Ein *Arbeitstreffen* in Mailand. |
+l'ordine del giorno | die Tagesordnung | n | Il primo punto all'*ordine del giorno*. | Der erste Punkt der *Tagesordnung*. | männlich (m)
+il verbale | das Protokoll | n | Scrivere il *verbale*. | Das *Protokoll* schreiben. |
+la presentazione | die Präsentation | n | Preparo la *presentazione*. | Ich bereite die *Präsentation* vor. |
+la scadenza | die Deadline | n | Rispettare le *scadenze*. | Die *Fristen* einhalten. |
+delegare | delegieren | v | Devi imparare a *delegare*. | Du musst *delegieren* lernen. |
+il carico di lavoro | die Arbeitsbelastung | n | Un *carico di lavoro* eccessivo. | Eine zu hohe *Arbeitsbelastung*. |
+il burnout | der Burnout | n | Rischia il *burnout*. | Ihm droht ein *Burnout*. |
+l'equilibrio vita-lavoro | die Work-Life-Balance | n | Cerco un *equilibrio vita-lavoro*. | Ich suche eine *Work-Life-Balance*. | männlich (m)
+## C1
+la congiuntura | die Konjunktur | n | Una *congiuntura* sfavorevole. | Eine ungünstige *Konjunktur*. |
+la recessione | die Rezession | n | Il paese è in *recessione*. | Das Land ist in einer *Rezession*. |
+la ripresa | der Aufschwung | n | Segnali di *ripresa*. | Anzeichen eines *Aufschwungs*. |
+il PIL | das BIP | n | Il *PIL* è cresciuto dell'1%. | Das *BIP* ist um 1 % gewachsen. | prodotto interno lordo
+il debito pubblico | die Staatsverschuldung | n | Il *debito pubblico* italiano. | Die italienische *Staatsverschuldung*. |
+lo spread | der Zinsabstand (Staatsanleihen) | n | Lo *spread* sale. | Der *Risikoaufschlag* steigt. |
+il tasso d'interesse | der Zinssatz | n | La BCE alza i *tassi d'interesse*. | Die EZB erhöht die *Zinsen*. |
+il mutuo | die Hypothek | n | Abbiamo acceso un *mutuo*. | Wir haben eine *Hypothek* aufgenommen. |
+la rata | die Rate | n | Pago la *rata* del mutuo. | Ich zahle die Kredit*rate*. |
+l'indebitamento | die Verschuldung | n | L'*indebitamento* delle famiglie. | Die *Verschuldung* der Haushalte. | männlich (m)
+la liquidità | die Liquidität | n | Problemi di *liquidità*. | *Liquiditäts*probleme. |
+il fisco | der Fiskus, das Finanzamt | n | Pagare il *fisco*. | Ans *Finanzamt* zahlen. |
+la pressione fiscale | die Steuerlast | n | La *pressione fiscale* è alta. | Die *Steuerlast* ist hoch. |
+il cuneo fiscale | die Steuer- und Abgabenlast auf Arbeit | n | Ridurre il *cuneo fiscale*. | Die *Lohnnebenkosten* senken. |
+la manovra | das Haushaltsgesetz | n | La *manovra* finanziaria. | Das *Haushaltspaket*. |
+la privatizzazione | die Privatisierung | n | La *privatizzazione* delle ferrovie. | Die *Privatisierung* der Bahn. |
+la concorrenza sleale | der unlautere Wettbewerb | n | Accusa di *concorrenza sleale*. | Vorwurf des *unlauteren Wettbewerbs*. |
+il monopolio | das Monopol | n | Un *monopolio* di fatto. | Ein faktisches *Monopol*. |
+la filiera | die Lieferkette, Wertschöpfungskette | n | La *filiera* agroalimentare. | Die Lebensmittel*kette*. |
+l'indotto | die Zulieferindustrie | n | L'auto e il suo *indotto*. | Die Autoindustrie und ihre *Zulieferer*. | männlich (m)
+il made in Italy | das Made in Italy | n | Il *made in Italy* nel mondo. | Das *Made in Italy* in der Welt. |
+il distretto industriale | der Industriebezirk | n | Il *distretto* del tessile di Prato. | Der Textil*bezirk* von Prato. |
+la contrattazione collettiva | die Tarifverhandlung | n | La *contrattazione collettiva* nazionale. | Die nationalen *Tarifverhandlungen*. |
+il contratto collettivo | der Tarifvertrag | n | Il *contratto collettivo* dei metalmeccanici. | Der *Tarifvertrag* der Metallbranche. |
+la vertenza | der Arbeitskonflikt | n | Una *vertenza* sindacale. | Ein gewerkschaftlicher *Arbeitskonflikt*. |
+l'esubero | der Personalüberhang | n | L'azienda annuncia 200 *esuberi*. | Die Firma kündigt 200 *Stellenstreichungen* an. | männlich (m)
+la ristrutturazione aziendale | die Umstrukturierung | n | Una *ristrutturazione aziendale* dolorosa. | Eine schmerzhafte *Umstrukturierung*. |
+la fusione | die Fusion | n | La *fusione* tra due banche. | Die *Fusion* zweier Banken. |
+l'acquisizione | die Übernahme | n | Un'*acquisizione* da un miliardo. | Eine Milliarden-*Übernahme*. | weiblich (f)
+la quotazione | die Börsennotierung | n | La *quotazione* in borsa. | Der *Börsengang*. |
+l'azionista | der Aktionär | n | Gli *azionisti* protestano. | Die *Aktionäre* protestieren. |
+il dividendo | die Dividende | n | Distribuire i *dividendi*. | *Dividenden* ausschütten. |
+il rendimento | die Rendite | n | Un *rendimento* del 3%. | Eine *Rendite* von 3 %. |
+il risparmio | das Sparen; die Ersparnisse | n | Il *risparmio* delle famiglie. | Die *Ersparnisse* der Haushalte. |
+la previdenza | die Altersvorsorge | n | La *previdenza* complementare. | Die private *Altersvorsorge*. |
+il lavoro agile | das mobile Arbeiten | n | Il *lavoro agile* è regolato per legge. | *Mobiles Arbeiten* ist gesetzlich geregelt. |
+la gig economy | die Plattformarbeit | n | I rider della *gig economy*. | Die Lieferfahrer der *Plattformökonomie*. |
+il caporalato | die illegale Arbeitsvermittlung | n | Lo sfruttamento del *caporalato*. | Die Ausbeutung durch *illegale Vermittler*. |
+lo sfruttamento | die Ausbeutung | n | Lo *sfruttamento* dei lavoratori. | Die *Ausbeutung* der Arbeiter. |
+la mansione | die Aufgabe, der Tätigkeitsbereich | n | Le mie *mansioni* sono varie. | Meine *Aufgaben* sind vielfältig. |
+l'inquadramento | die Eingruppierung | n | Il livello di *inquadramento*. | Die *Gehaltsstufe*. | männlich (m)
+la retribuzione | die Vergütung | n | Una *retribuzione* adeguata. | Eine angemessene *Vergütung*. |
+lordo | brutto | adj | Lo stipendio *lordo*. | Das *Brutto*gehalt. |
+netto | netto | adj | Guadagno 1.800 euro *netti*. | Ich verdiene 1.800 Euro *netto*. |

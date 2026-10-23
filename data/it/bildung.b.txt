@@ -1,0 +1,57 @@
+# Italienisch – Bildung, Sprache, Kultur B2/C1
+## B2
+l'istituto tecnico | die technische Oberschule | n | Frequenta un *istituto tecnico*. | Er besucht eine *technische Oberschule*. | männlich (m)
+l'istituto professionale | die Berufsfachschule | n | Un *istituto professionale* alberghiero. | Eine *Hotelfachschule*. | männlich (m)
+il preside | der Schulleiter | n | Il *preside* ha convocato i genitori. | Der *Schulleiter* hat die Eltern einbestellt. |
+il registro elettronico | das digitale Klassenbuch | n | I voti sono sul *registro elettronico*. | Die Noten stehen im *digitalen Klassenbuch*. |
+la verifica | die Klassenarbeit | n | Domani c'è la *verifica* di latino. | Morgen ist die Latein*arbeit*. |
+l'interrogazione | die mündliche Abfrage | n | Ho un'*interrogazione* di storia. | Ich werde in Geschichte *abgefragt*. | weiblich (f)
+il debito formativo | die Nachprüfung | n | Ha il *debito formativo* in matematica. | Er hat eine *Nachprüfung* in Mathe. |
+ripetere l'anno | sitzenbleiben | phrase | Ha dovuto *ripetere l'anno*. | Er musste *sitzenbleiben*. |
+la gita scolastica | die Klassenfahrt | n | La *gita scolastica* a Firenze. | Die *Klassenfahrt* nach Florenz. |
+l'orientamento | die Studien-/Berufsberatung | n | Giornate di *orientamento*. | *Orientierungs*tage. | männlich (m)
+il test d'ingresso | die Aufnahmeprüfung | n | Il *test d'ingresso* a medicina. | Die *Aufnahmeprüfung* für Medizin. |
+il numero chiuso | die Zulassungsbeschränkung | n | Una facoltà a *numero chiuso*. | Ein Fach mit *Numerus clausus*. |
+le tasse universitarie | die Studiengebühren | n | Le *tasse universitarie* sono alte. | Die *Studiengebühren* sind hoch. |
+il fuorisede | der auswärtige Student | n | Studenti *fuorisede*. | *Auswärtige* Studierende. |
+l'Erasmus | das Erasmus-Programm | n | Ho fatto l'*Erasmus* a Madrid. | Ich war mit *Erasmus* in Madrid. | männlich (m)
+il credito formativo | der Leistungspunkt | n | Sessanta *crediti formativi*. | Sechzig *Leistungspunkte*. |
+la sessione d'esami | die Prüfungsphase | n | La *sessione d'esami* estiva. | Die Sommer*prüfungsphase*. |
+la lezione frontale | die Vorlesung (Frontalunterricht) | n | Troppe *lezioni frontali*. | Zu viel *Frontalunterricht*. |
+il seminario | das Seminar | n | Un *seminario* di filosofia. | Ein Philosophie*seminar*. |
+la formazione continua | die Weiterbildung | n | Corsi di *formazione continua*. | *Weiterbildungs*kurse. |
+l'autodidatta | der Autodidakt | n | Ha imparato da *autodidatta*. | Er hat es sich *selbst beigebracht*. |
+il lessico | der Wortschatz | n | Arricchire il *lessico*. | Den *Wortschatz* erweitern. |
+il vocabolo | das Wort, die Vokabel | n | Un *vocabolo* raro. | Ein seltenes *Wort*. |
+il sinonimo | das Synonym | n | Un *sinonimo* di "bello". | Ein *Synonym* für „schön“. |
+il contrario | das Gegenteil | n | Il *contrario* di "alto". | Das *Gegenteil* von „hoch“. |
+il congiuntivo | der Konjunktiv | n | Usare il *congiuntivo*. | Den *Konjunktiv* benutzen. |
+il registro | das Sprachregister | n | Un *registro* formale. | Ein formelles *Register*. |
+il modo di dire | die Redewendung | n | Un *modo di dire* tipico. | Eine typische *Redewendung*. |
+il proverbio | das Sprichwort | n | Come dice il *proverbio*... | Wie das *Sprichwort* sagt … |
+l'accento | der Akzent; die Betonung | n | Ha un *accento* siciliano. | Er hat einen sizilianischen *Akzent*. | männlich (m)
+## C1
+il bilinguismo | die Zweisprachigkeit | n | I vantaggi del *bilinguismo*. | Die Vorteile der *Zweisprachigkeit*. |
+la lingua madre | die Muttersprache | n | La sua *lingua madre* è il tedesco. | Seine *Muttersprache* ist Deutsch. |
+la padronanza | die Beherrschung | n | Una buona *padronanza* della lingua. | Eine gute *Beherrschung* der Sprache. |
+la scioltezza | die Gewandtheit | n | Parla con *scioltezza*. | Er spricht *flüssig*. |
+il neologismo | die Wortneuschöpfung | n | Un *neologismo* dei social. | Eine *Wortneuschöpfung* aus den sozialen Medien. |
+il forestierismo | das Fremdwort | n | Troppi *forestierismi* nell'italiano. | Zu viele *Fremdwörter* im Italienischen. |
+l'anglicismo | der Anglizismus | n | Evitare gli *anglicismi*. | *Anglizismen* vermeiden. | männlich (m)
+l'Accademia della Crusca | die Sprachakademie (Italien) | n | Secondo l'*Accademia della Crusca*... | Laut der *Accademia della Crusca* … | weiblich (f)
+la variante regionale | die regionale Variante | n | Una *variante regionale* dell'italiano. | Eine *regionale Variante* des Italienischen. |
+la koinè | die Gemeinsprache | n | La *koinè* letteraria. | Die literarische *Gemeinsprache*. |
+il lettore | der Lektor (Uni) | n | Lavora come *lettore* di tedesco. | Er arbeitet als Deutsch*lektor*. |
+la cattedra | der Lehrstuhl | n | Ha vinto una *cattedra*. | Er hat einen *Lehrstuhl* bekommen. |
+l'ordinario | der ordentliche Professor | n | Un professore *ordinario*. | Ein *ordentlicher* Professor. | männlich (m)
+l'abilitazione | die Lehrbefähigung | n | Conseguire l'*abilitazione*. | Die *Lehrbefähigung* erwerben. | weiblich (f)
+il supplente | der Vertretungslehrer | n | Un *supplente* per un mese. | Ein *Vertretungslehrer* für einen Monat. |
+la dispersione scolastica | der vorzeitige Schulabgang | n | Ridurre la *dispersione scolastica*. | *Schulabbrüche* verringern. |
+l'inclusione | die Inklusion | n | L'*inclusione* degli alunni disabili. | Die *Inklusion* behinderter Schüler. | weiblich (f)
+l'insegnante di sostegno | die Förderlehrkraft | n | Un *insegnante di sostegno*. | Eine *Förderlehrkraft*. |
+il percorso formativo | der Bildungsweg | n | Un *percorso formativo* atipico. | Ein ungewöhnlicher *Bildungsweg*. |
+le competenze trasversali | die Soft Skills | n | Sviluppare le *competenze trasversali*. | *Soft Skills* entwickeln. |
+la pedagogia | die Pädagogik | n | Un corso di *pedagogia*. | Ein *Pädagogik*kurs. |
+l'erudizione | die Gelehrsamkeit | n | Un uomo di grande *erudizione*. | Ein sehr *gelehrter* Mann. | weiblich (f)
+il nozionismo | das Faktenwissen (abwertend) | n | Una scuola basata sul *nozionismo*. | Eine Schule, die auf *Auswendiglernen* setzt. |
+la cultura generale | die Allgemeinbildung | n | Ha una vasta *cultura generale*. | Er hat eine breite *Allgemeinbildung*. |
