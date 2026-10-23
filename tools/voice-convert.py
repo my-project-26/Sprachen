@@ -94,51 +94,19 @@ def main():
             print("Probe fertig")
             return
         if cmd == "run":
-            # OV_SHARD=i/n: nur jede n-te Datei (mehrere Läufe parallel); OV_PUSH_MIN: Zwischenstände hochladen
             srcdir, outdir = sys.argv[3], sys.argv[4]
             os.makedirs(outdir, exist_ok=True)
-            shard, nshard = (int(x) for x in os.environ.get("OV_SHARD", "0/1").split("/"))
-            files = sorted(glob.glob(f"{srcdir}/*.mp3"))
-            files = [f for i, f in enumerate(files) if i % nshard == shard]
-            todo = [f for f in files if not os.path.exists(os.path.join(outdir, os.path.basename(f)))]
-            print(f"{outdir} Teil {shard + 1}/{nshard}: {len(todo)} von {len(files)} fehlen", flush=True)
-            if not todo:
-                return
             src_se = source_se(conv, srcdir, tmp)
+            files = sorted(glob.glob(f"{srcdir}/*.mp3"))
+            todo = [f for f in files if not os.path.exists(os.path.join(outdir, os.path.basename(f)))]
+            print(f"{len(todo)} von {len(files)} fehlen", flush=True)
             limit = time.time() + float(os.environ.get("OV_MAX_MIN", "300")) * 60
-            push_every = float(os.environ.get("OV_PUSH_MIN", "0") or 0) * 60
-            last = time.time()
             for i, f in enumerate(todo):
                 if time.time() > limit:
-                    print("Zeitlimit – Rest beim nächsten Lauf", flush=True)
                     break
-                try:
-                    convert_one(conv, f, os.path.join(outdir, os.path.basename(f)), src_se, tgt, tmp)
-                except Exception as e:
-                    print(f"  ✗ {os.path.basename(f)}: {e}", flush=True)
-                if i % 100 == 0:
+                convert_one(conv, f, os.path.join(outdir, os.path.basename(f)), src_se, tgt, tmp)
+                if i % 200 == 0:
                     print(f"  {i}/{len(todo)}", flush=True)
-                if push_every and time.time() - last > push_every:
-                    last = time.time()
-                    push(outdir)
-            if push_every:
-                push(outdir)
-
-
-def push(path):
-    """Zwischenstand hochladen (mit Wiederholung, weil parallele Läufe gleichzeitig pushen)."""
-    run = lambda *a: subprocess.run(a, check=False, capture_output=True).returncode
-    run("git", "add", path)
-    if run("git", "diff", "--cached", "--quiet") == 0:
-        return
-    run("git", "commit", "-q", "-m", f"Stimmen: {os.path.basename(path)}")
-    for _ in range(8):
-        run("git", "pull", "-q", "--rebase", "-X", "theirs", "origin", "main")
-        if run("git", "push", "-q", "origin", "HEAD:main") == 0:
-            print("  ↑ hochgeladen", flush=True)
-            return
-        time.sleep(5 + 10 * __import__("random").random())
-    print("  ! Hochladen fehlgeschlagen", flush=True)
 
 
 if __name__ == "__main__":
