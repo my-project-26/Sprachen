@@ -300,3 +300,21 @@ export function normalizeStory(data, words) {
     clozeScore: null,
   };
 }
+
+// ---------- KI-Gespräch (Rollenspiel) ----------
+// history: [{role:"user"|"ai", text}] – liefert {reply, de, correction}
+export async function chatTurn({ scenario, level, words = [], history = [] }) {
+  const lang = L().en;
+  const system =
+    `You are a friendly conversation partner for a German native speaker learning ${lang} (CEFR ${level}). ` +
+    `Role-play this situation and stay in role: ${scenario}. Speak ONLY ${lang} in "reply", in short natural turns (1–3 sentences, CEFR ${level}), ` +
+    `and end most turns with a question to keep the conversation going. ` +
+    (words.length ? `Where natural, use some of these words the learner is practising: ${words.join(", ")}. ` : "") +
+    `Reply with valid JSON only: {"reply":"<your turn in ${lang}>","de":"<German translation of your turn>","correction":"<if the learner's last message had mistakes: short friendly German explanation with the corrected ${lang} sentence; otherwise empty string>"}`;
+  const transcript = history.length
+    ? history.map((m) => `${m.role === "user" ? "Learner" : "You"}: ${m.text}`).join("\n")
+    : "(The conversation starts now. Open the scene with a short greeting and a question.)";
+  const text = await browserLLM(system, transcript, 700);
+  const d = extractJson(text);
+  return { reply: String(d.reply || ""), de: String(d.de || ""), correction: String(d.correction || "") };
+}

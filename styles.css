@@ -550,3 +550,20 @@ small.rd { font-size: .45em; margin: 4px 0 0; }
 .p-sol { margin: 4px 0 0; }
 .center-card { text-align: center; }
 .gl-speed .mic-block { flex: 1; }
+
+/* ---------- KI-Gespräch ---------- */
+.chat-scene { margin: 0 0 10px; }
+.chat-log { display: flex; flex-direction: column; gap: 10px; min-height: 40vh; padding-bottom: 8px; }
+.msg { position: relative; max-width: 86%; padding: 10px 14px; border-radius: 18px; }
+.msg p { margin: 0; }
+.msg.ai { align-self: flex-start; background: var(--surface-2, #E8EDF5); border-bottom-left-radius: 6px; padding-right: 40px; cursor: pointer; }
+.msg.me { align-self: flex-end; background: var(--accent); color: var(--accent-ink, #fff); border-bottom-right-radius: 6px; }
+.msg-de { margin-top: 6px !important; font-size: .9em; color: var(--muted); }
+.msg-fix { margin-top: 6px !important; padding: 8px 10px; border-radius: 10px; background: #FFF3B8; color: #5a4300; font-size: .9em; }
+.msg-say { position: absolute; right: 6px; top: 6px; border: 0; background: none; font-size: 1rem; cursor: pointer; }
+.msg.typing p { letter-spacing: .3em; }
+.chat-form { position: sticky; bottom: calc(76px + env(safe-area-inset-bottom)); display: flex; gap: 8px; align-items: center; padding: 8px 0; background: var(--bg); }
+.chat-form input { flex: 1; min-width: 0; min-height: 52px; padding: 0 14px; border: 2px solid var(--line); border-radius: 14px; font: inherit; }
+.chat-send { width: auto; min-height: 52px; padding: 0 16px; font-size: 1rem; }
+.chat-form .ef-btn.chat-send { width: auto; flex: none; min-height: 52px; padding: 0 18px; font-size: 1rem; }
+.chat-form .icon-btn.big { flex: none; }

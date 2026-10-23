@@ -9,6 +9,7 @@ import { DESIGNS, designKey, applyDesign, skinHome, skinCard } from "./skins.js"
 import * as cloud from "./cloud.js";
 import { listenView, stopListening } from "./listen.js";
 import { practiceView, micBlock, bindMic } from "./practice.js";
+import { chatView } from "./chat.js";
 import { LANGS, READY, L, checkAnswer } from "./langs.js";
 
 const $app = document.getElementById("app");
@@ -138,7 +139,7 @@ function progressRing(card) {
 }
 
 // ---------- Router ----------
-const routes = { home, learn, stories, story, words, add, topics, stats, settings: settingsView, listen: () => listenView($app, { settings, rateSlider, ICON }), practice: (m) => practiceView($app, { settings, rateSlider, ICON }, m || "") };
+const routes = { home, learn, stories, story, words, add, topics, stats, settings: settingsView, listen: () => listenView($app, { settings, rateSlider, ICON }), practice: (m) => practiceView($app, { settings, rateSlider, ICON }, m || ""), chat: (k) => chatView($app, { settings, ICON }, k || "") };
 
 function render() {
   if (document.documentElement.classList.contains("is-login")) return;
@@ -150,7 +151,7 @@ function render() {
   const arg = rest.length ? decodeURIComponent(rest.join("/")) : undefined;
   const view = routes[name] || home;
   document.body.dataset.view = routes[name] ? name : "home";
-  const navKey = { story: "stories", add: "words", topics: "home", settings: "home", listen: "home", practice: "home" }[name] || (routes[name] ? name : "home");
+  const navKey = { story: "stories", add: "words", topics: "home", settings: "home", listen: "home", practice: "home", chat: "home" }[name] || (routes[name] ? name : "home");
   $nav.querySelectorAll("a").forEach((a) => a.classList.toggle("active", a.dataset.route === navKey));
   window.scrollTo(0, 0);
   view(arg);
@@ -1598,6 +1599,12 @@ function settingsView() {
     ).join("")}</div>
   </section>
   <section class="card">
+    <h2>Tägliche Erinnerung</h2>
+    <p class="small muted">Trag dir eine tägliche Lernzeit in deinen Kalender ein. Dein Handy erinnert dich dann jeden Tag – auf iPhone und Android.</p>
+    <div class="inline-form"><input type="time" id="remTime" value="${esc(s.reminderTime || "19:00")}" aria-label="Uhrzeit">
+      <button class="btn primary" id="remAdd">📅 In Kalender eintragen</button></div>
+  </section>
+  <section class="card">
     <h2>Stimme</h2>
     <label class="check"><input type="checkbox" id="s-natural" ${s.voiceNatural !== false ? "checked" : ""}> Natürliche Stimme (Aufnahmen für alle Wörter und Beispielsätze)</label>
     <p class="small muted">${tts.naturalAvailable() ? "Aufnahmen sind da. Die Stimmen unten gelten dann nur noch für Geschichten und als Ersatz." : "Für diese Sprache werden die Aufnahmen gerade erstellt – bis dahin liest die Gerätestimme."}</p>
@@ -1696,6 +1703,30 @@ function settingsView() {
   document.getElementById("s-ret").addEventListener("input", (e) => (document.getElementById("retv").textContent = Math.round(e.target.value * 100) + " %"));
 
   document.getElementById("testVoice").onclick = () => say(L().hello);
+  document.getElementById("remAdd").onclick = () => {
+    const t = document.getElementById("remTime").value || "19:00";
+    st.settings.reminderTime = t;
+    S.save();
+    const [h, m] = t.split(":");
+    const d = new Date();
+    const ymd = `${d.getFullYear()}${String(d.getMonth() + 1).padStart(2, "0")}${String(d.getDate()).padStart(2, "0")}`;
+    const url = location.href.split("#")[0];
+    const ics = [
+      "BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Wortwerk//DE", "BEGIN:VEVENT",
+      `UID:wortwerk-${Date.now()}@wortwerk`, `DTSTAMP:${ymd}T000000Z`,
+      `DTSTART:${ymd}T${h}${m}00`, "DURATION:PT15M", "RRULE:FREQ=DAILY",
+      `SUMMARY:${L().flag} Wortwerk – ${L().name} lernen`, `DESCRIPTION:10 Minuten Vokabeln: ${url}`, `URL:${url}`,
+      "BEGIN:VALARM", "ACTION:DISPLAY", "DESCRIPTION:Zeit zum Lernen!", "TRIGGER:PT0M", "END:VALARM",
+      "END:VEVENT", "END:VCALENDAR",
+    ].join("\r\n");
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(new Blob([ics], { type: "text/calendar" }));
+    a.download = "wortwerk-erinnerung.ics";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    toast("Öffne die Datei und tippe auf „Hinzufügen“ – fertig.", 4000);
+  };
   const lo = document.getElementById("logoutBtn");
   if (lo)
     lo.onclick = async () => {
