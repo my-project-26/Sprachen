@@ -13,7 +13,14 @@ const omitKeys = (o, keys) => Object.fromEntries(Object.entries(o).filter(([k]) 
 function readGlobal() {
   try {
     const g = JSON.parse(localStorage.getItem(SETTINGS_KEY) || "null");
-    if (g) return g;
+    if (g) {
+      // einmalig: neues Standard-Design „Einfach“ für alle
+      if (!g.designV) {
+        g.design = "einfach";
+        g.designV = 2;
+      }
+      return g;
+    }
     // Umstieg: bisher standen alle Einstellungen im englischen Speicher
     const en = JSON.parse(localStorage.getItem("wortwerk.v1") || "null");
     return en?.settings ? omitKeys(en.settings, PER_LANG) : {};
@@ -33,7 +40,8 @@ export const DEFAULT_SETTINGS = {
   startLevel: "B1",
   storyLevel: "B2",
   voiceRate: 0.95,
-  design: "glas", // glas | bordkarte | heft
+  design: "einfach", // einfach | glas | bordkarte | heft
+  designV: 2,
   voicePreset: "clear-f", // clear-f/m, friend-f/m, strict-f/m
   apiBase: "",
   appSecret: "",

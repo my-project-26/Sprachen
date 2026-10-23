@@ -4,14 +4,16 @@
 // damit die Logik in app.js für jedes Design gleich funktioniert.
 
 export const DESIGNS = [
-  { key: "glas", name: "iOS-Glas", desc: "Standard – wie Apple Karten, Glas und Listen", colors: ["#F2F2F7", "#2F7CF6", "#34C759"], theme: "#F2F2F7" },
+  { key: "einfach", name: "Einfach", desc: "Große Knöpfe, klare Schritte – für alle Altersstufen", colors: ["#FFFFFF", "#1F5BD8", "#1E9E50"], theme: "#FFFFFF",
+    fonts: "Atkinson+Hyperlegible:wght@400;700" },
+  { key: "glas", name: "iOS-Glas", desc: "wie Apple Karten, Glas und Listen", colors: ["#F2F2F7", "#2F7CF6", "#34C759"], theme: "#F2F2F7" },
   { key: "bordkarte", name: "Bordkarte", desc: "Lernen als Reise, jede Vokabel ein Ticket", colors: ["#0E2240", "#FFC72C", "#E6E9EE"], theme: "#0E2240",
     fonts: "Barlow+Condensed:wght@500;600;700" },
   { key: "heft", name: "Vokabelheft", desc: "Linien, Handschrift, Textmarker", colors: ["#FDFDFB", "#23408E", "#FFF27A"], theme: "#FDFDFB",
     fonts: "Caveat:wght@500;700&family=Lora:ital,wght@0,400;0,600;1,400" },
 ];
 
-export const designKey = (k) => (DESIGNS.some((d) => d.key === k) ? k : "glas");
+export const designKey = (k) => (DESIGNS.some((d) => d.key === k) ? k : "einfach");
 
 // Design setzen: data-style, Schriften nachladen, Statusleisten-Farbe
 export function applyDesign(key) {
@@ -38,6 +40,13 @@ const esc = (s) =>
   String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
 const hash = (s) => [...String(s)].reduce((a, ch) => (a * 31 + ch.charCodeAt(0)) >>> 0, 7);
 const n = (x, one, many) => `${x} ${x === 1 ? one : many}`;
+// „3 T“ → „3 Tagen“ usw. (ausgeschrieben für das Design „Einfach“)
+const longIv = (iv) =>
+  String(iv).replace(/^([\d.,]+) (Min|Std|T|Mon|J)$/, (_, v, u) => {
+    const one = v === "1";
+    const w = { Min: one ? "Minute" : "Minuten", Std: one ? "Stunde" : "Stunden", T: one ? "Tag" : "Tagen", Mon: one ? "Monat" : "Monaten", J: one ? "Jahr" : "Jahren" }[u];
+    return `${v.replace(".", ",")} ${w}`;
+  });
 
 // ================= STARTSEITE =================
 // d: Daten aus home() in app.js
@@ -54,6 +63,34 @@ function cta(d, label, cls = "") {
 }
 
 const HOME = {
+  // ---------- 0 Einfach ----------
+  einfach(d) {
+    const tile = (href, ic, label, sub, attrs = "") =>
+      `<${href ? `a href="${href}"` : "button"} class="ef-tile" ${attrs}><span class="ef-tic">${ic}</span><b>${label}</b>${sub ? `<small>${sub}</small>` : ""}</${href ? "a" : "button"}>`;
+    return `
+    <section class="ef-top">
+      <p>Hallo! 👋</p>
+      <a class="ef-set" href="#/settings" aria-label="Einstellungen"><span class="sk-flag">${d.lang.flag}</span>${d.icon.gear}</a>
+    </section>
+    <h1 class="ef-h1">Du lernst ${esc(d.lang.name)}</h1>
+    ${
+      d.total
+        ? `<a class="ef-go" href="#/learn"><span class="ef-play">▶</span><span><b>Jetzt lernen</b><small>${n(d.total, "Wort wartet", "Wörter warten")} auf dich</small></span></a>
+           <div class="ef-how"><b>So geht’s:</b>
+             <ol><li>Du siehst ein deutsches Wort.</li><li>Überlege: Wie heißt es auf ${esc(d.lang.name)}?</li><li>Tippe auf <b>Lösung zeigen</b> und sag, ob du es wusstest.</li></ol></div>`
+        : `<div class="ef-done"><span>🎉</span><b>Für heute ist alles geschafft!</b></div>
+           <button class="ef-go alt" id="extraBtn"><span class="ef-play">＋</span><span><b>${d.wordsLeft ? "Noch 10 neue Wörter" : "Anderes Thema wählen"}</b><small>wenn du noch Lust hast</small></span></button>`
+    }
+    ${d.streak ? `<p class="ef-streak">🔥 Du lernst seit <b>${n(d.streak, "Tag", "Tagen")}</b> am Stück. Weiter so!</p>` : ""}
+    <h2 class="ef-h2">Was möchtest du machen?</h2>
+    <div class="ef-tiles">
+      ${d.weak ? tile("#/learn/weak", "🔁", "Fehler üben", n(d.weak, "Wort", "Wörter")) : ""}
+      ${tile(d.ready ? "#/story/new" : "#/stories", "📖", "Geschichte lesen", d.ready ? "eine neue ist bereit" : `${d.storyN} von ${d.storyEvery} Wörtern`)}
+      ${tile("#/words", "🔎", "Wort suchen", "")}
+      ${tile("", "🗂️", "Thema wählen", esc(d.focusLabel), 'id="pickTopic"')}
+    </div>`;
+  },
+
   // ---------- 1 Bordkarte ----------
   bordkarte(d) {
     const stops = d.lvl;
@@ -161,6 +198,37 @@ const gradeBtns = (x, labels, cls = "") => `
 const L3 = ["Muss ich noch lernen", "Unsicher", "Wusste ich"];
 
 const CARD = {
+  // ---------- 0 Einfach ----------
+  einfach(x) {
+    const c = x.c;
+    const step = x.revealed ? 2 : 1;
+    const card = `
+      <p class="ef-step"><span>Schritt ${step} von 2</span><span>Wort ${x.pos} von ${x.total}</span></p>
+      <section class="ef-card">
+        <p class="ef-q">${x.revealed ? "Die Lösung:" : `Wie heißt das auf ${esc(x.langName)}?`}</p>
+        <div class="ef-de">${esc(c.de)}</div>
+        ${x.revealed ? `<div class="ef-en">${x.enHtml}</div>${x.ui.typed}` : ""}
+        ${c.ex ? `<div class="ef-ex"><p class="ex">${x.revealed ? x.exMarked : x.cloze}</p>${c.exDe ? `<p class="ex-de">${x.exDeMarked}</p>` : ""}</div>` : ""}
+        ${x.revealed ? x.ui.note : x.ui.hint + x.ui.input}
+      </section>`;
+    const actions = x.revealed
+      ? `<div class="ef-listen">
+           <button class="ef-btn ef-sec" data-say="${esc(c.en)}">🔊 Wort anhören</button>
+           ${c.ex ? `<button class="ef-btn ef-sec" data-say="${esc(x.exPlain)}">🔊 Satz anhören</button>` : ""}
+         </div>
+         <p class="ef-label">Wie schnell soll gesprochen werden?</p>
+         ${x.ui.speed}
+         <p class="ef-ask">Wusstest du es?</p>
+         <div class="ef-grades">
+           <button class="grade g3 ef-btn ef-yes" data-g="3"><span>👍 Ja, gewusst!</span><small>${x.practice ? "Übung" : "kommt wieder in " + longIv(x.iv3)}</small></button>
+           <button class="grade g2 ef-btn ef-mid" data-g="2"><span>🤔 Ein bisschen</span><small>${x.practice ? "Übung" : "kommt wieder in " + longIv(x.iv2)}</small></button>
+           <button class="grade g1 ef-btn ef-no" data-g="1"><span>👎 Nein, nochmal üben</span><small>kommt gleich nochmal</small></button>
+         </div>${x.ui.known}`
+      : `<button class="ef-btn ef-pri" id="reveal">👀 Lösung zeigen</button>
+         <button class="ef-btn ef-sec" id="hintBtn">💡 Tipp: erster Buchstabe</button>`;
+    return `${x.ui.header}${card}<div class="flash-actions ef-actions">${actions}</div>`;
+  },
+
   // ---------- 1 Bordkarte ----------
   bordkarte(x) {
     const c = x.c;

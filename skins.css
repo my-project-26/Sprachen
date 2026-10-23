@@ -256,3 +256,79 @@ div.gl-li::after { content: ""; }
 /* Sprachflagge am Einstellungen-Knopf, Lautschrift */
 .sk-home a[href="#/settings"]:not(.gl-gear) { position: relative; }
 .sk-flag { position: absolute; left: -6px; bottom: -4px; font-size: 15px; line-height: 1; }
+
+/* =====================================================================
+   0 · EINFACH – große Knöpfe, klare Schritte, gut lesbar für Kinder und Senioren
+   ===================================================================== */
+html:root[data-style="einfach"] {
+  --bg: #FFFFFF; --surface: #F2F5FA; --surface-2: #E8EDF5; --ink: #14213D; --muted: #4A5670; --line: #D5DCE8;
+  --accent: #1F5BD8; --accent-ink: #FFFFFF; --accent-soft: #E3ECFC; --marker: #FFE066; --marker-soft: #FFF3B8;
+  --ok: #1E9E50; --bad: #D93636; --radius: 18px; --shadow: none;
+  --serif: "Atkinson Hyperlegible", system-ui, sans-serif; --sans: "Atkinson Hyperlegible", system-ui, sans-serif;
+  color-scheme: light; font-size: 19px;
+}
+[data-style="einfach"] body { font-family: var(--sans); line-height: 1.5; }
+[data-style="einfach"] h1, [data-style="einfach"] h2, [data-style="einfach"] h3 { font-family: var(--sans); font-weight: 700; letter-spacing: 0; }
+[data-style="einfach"] .card { border: 2px solid var(--line); box-shadow: none; }
+[data-style="einfach"] .btn { min-height: 56px; border-radius: 14px; font-size: 1rem; }
+[data-style="einfach"] .nav a { font-size: .8rem; font-weight: 700; }
+[data-style="einfach"] .nav a.active { color: var(--accent); background: var(--accent-soft); }
+[data-style="einfach"] :focus-visible { outline: 3px solid #F2B705; outline-offset: 2px; }
+/* Start */
+.ef-top { display: flex; justify-content: space-between; align-items: center; margin-top: 4px; }
+.ef-top p { margin: 0; font-size: 1.1rem; color: var(--muted); }
+.ef-set { display: inline-flex; align-items: center; gap: 6px; min-height: 48px; padding: 0 12px; border-radius: 14px; background: var(--surface); color: var(--ink); text-decoration: none; position: relative; }
+.ef-h1 { font-size: 1.7rem; margin: 6px 0 16px; }
+.ef-go { display: flex; align-items: center; gap: 16px; width: 100%; padding: 20px; border: 0; border-radius: 22px; background: var(--accent); color: #fff; text-decoration: none; font: inherit; text-align: left; cursor: pointer; }
+.ef-go.alt { background: var(--ok); }
+.ef-go b { display: block; font-size: 1.45rem; line-height: 1.2; }
+.ef-go small { display: block; font-size: 1rem; opacity: .92; }
+.ef-play { flex: none; display: grid; place-items: center; width: 64px; height: 64px; border-radius: 50%; background: #fff; color: var(--accent); font-size: 1.6rem; }
+.ef-go.alt .ef-play { color: var(--ok); }
+.ef-how { margin: 14px 0 0; padding: 14px 18px; border-radius: 18px; background: var(--surface); }
+.ef-how ol { margin: 6px 0 0; padding-left: 1.3em; }
+.ef-how li { margin: 4px 0; }
+.ef-done { display: flex; align-items: center; gap: 12px; padding: 16px 18px; margin-bottom: 12px; border-radius: 18px; background: #E5F6EC; font-size: 1.1rem; }
+.ef-done span { font-size: 2rem; }
+.ef-streak { margin: 14px 0 0; padding: 12px 16px; border-radius: 16px; background: #FFF3B8; }
+.ef-h2 { font-size: 1.2rem; margin: 26px 0 10px; }
+.ef-tiles { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.ef-tile { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; min-height: 120px; padding: 16px; border: 2px solid var(--line); border-radius: 18px; background: #fff; color: var(--ink); text-decoration: none; font: inherit; text-align: left; cursor: pointer; }
+.ef-tile:active, .ef-go:active, .ef-btn:active { transform: scale(.98); }
+.ef-tic { font-size: 1.9rem; line-height: 1; }
+.ef-tile b { font-size: 1.05rem; }
+.ef-tile small { color: var(--muted); font-size: .85rem; }
+/* Lernen */
+.ef-step { display: flex; justify-content: space-between; margin: 4px 2px 8px; font-weight: 700; color: var(--muted); font-size: .95rem; }
+.ef-step span:first-child { color: var(--accent); }
+.ef-card { padding: 22px 20px; border-radius: 22px; background: var(--surface); text-align: center; }
+.ef-q { margin: 0 0 6px; font-size: 1.05rem; color: var(--muted); }
+.ef-de { font-size: 2.1rem; font-weight: 700; line-height: 1.2; overflow-wrap: anywhere; }
+.ef-en { margin-top: 12px; padding: 10px 14px; border-radius: 16px; background: #fff; border: 3px solid var(--ok); font-size: 2.1rem; font-weight: 700; color: var(--ok); overflow-wrap: anywhere; }
+.ef-ex { margin-top: 16px; text-align: left; font-size: 1.05rem; }
+.ef-ex p { margin: 2px 0; }
+.ef-ex .ex-de { color: var(--muted); }
+.ef-card .answer { width: 100%; min-height: 56px; margin-top: 14px; font-size: 1.2rem; border: 2px solid var(--line); border-radius: 14px; padding: 0 14px; }
+.ef-card .hint { font-size: 1.3rem; font-weight: 700; letter-spacing: .1em; }
+.ef-actions { display: flex; flex-direction: column; gap: 12px; margin-top: 16px; }
+.ef-btn { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; min-height: 62px; padding: 10px 16px; border: 0; border-radius: 18px; font: inherit; font-size: 1.15rem; font-weight: 700; cursor: pointer; }
+.ef-btn small { font-size: .85rem; font-weight: 400; opacity: .9; }
+.ef-pri { background: var(--accent); color: #fff; min-height: 72px; font-size: 1.35rem; }
+.ef-sec { background: #fff; color: var(--accent); border: 2px solid var(--accent); }
+.ef-listen { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.ef-listen .ef-btn { font-size: 1rem; }
+.ef-label, .ef-ask { margin: 6px 0 -4px; font-weight: 700; }
+.ef-ask { font-size: 1.3rem; margin-top: 10px; }
+.ef-actions .speed { max-width: none; margin: 0; }
+.ef-actions .speed button { min-height: 48px; font-size: 1rem; }
+.ef-grades { display: flex; flex-direction: column; gap: 10px; }
+.ef-yes { background: var(--ok); color: #fff; }
+.ef-mid { background: #F2B705; color: #14213D; }
+.ef-no { background: var(--bad); color: #fff; }
+[data-style="einfach"] .known-btn { font-size: .95rem; }
+.ef-grades .grade.ef-yes { background: var(--ok); color: #fff; }
+.ef-grades .grade.ef-mid { background: #F2B705; color: #14213D; }
+.ef-grades .grade.ef-no { background: var(--bad); color: #fff; }
+.ef-grades .grade small { opacity: .95; font-size: .85rem; }
+.ef-set .sk-flag { position: static; font-size: 20px; }
+.ef-tile:last-child:nth-child(odd) { grid-column: span 2; min-height: 0; }
