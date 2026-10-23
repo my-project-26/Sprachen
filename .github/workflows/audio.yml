@@ -8,7 +8,7 @@ on:
     inputs:
       langs:
         description: "Sprachen/Niveaus, z. B. en:A1 oder en es"
-        default: "en:A1"
+        default: "en es"
   push:
     branches: [main]
     paths:
@@ -39,7 +39,7 @@ jobs:
         env:
           AUDIO_MAX_MIN: "300"
           AUDIO_PARALLEL: "6"
-        run: python tools/make-audio.py ${{ inputs.langs || 'en:A1' }}
+        run: python tools/make-audio.py ${{ inputs.langs || 'en es' }}
       - name: Hochladen
         run: |
           git config user.name "wortwerk-bot"
