@@ -1,0 +1,67 @@
+name: Eigene Stimmen erzeugen (Englisch)
+
+# Gibt den Aufnahmen die Klangfarbe der eigenen Stimmen (OpenVoice, voices/se/*.pth).
+# Frauenstimmen entstehen aus audio/en, Männerstimmen aus audio/en-m.
+# Ergebnis: audio/en-<stimme>/. Läuft täglich weiter, bis alles fertig ist.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/workflows/voices.yml", "voices/se/**"]
+  schedule:
+    - cron: "47 4 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: voices
+  cancel-in-progress: false
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    strategy:
+      fail-fast: false
+      matrix:
+        voice: [entspannt, rauer, mann1, mann2]
+        shard: [0, 1, 2, 3]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - name: OpenVoice installieren
+        run: bash tools/openvoice-setup.sh
+      - name: Umwandeln
+        env:
+          OV_SHARD: "${{ matrix.shard }}/4"
+          OV_MAX_MIN: "300"
+          OV_PUSH_MIN: "25"
+        run: |
+          git config user.name "wortwerk-bot"
+          git config user.email "actions@users.noreply.github.com"
+          v=${{ matrix.voice }}
+          [ -f voices/se/$v.pth ] || { echo "Kein Stimmprofil $v"; exit 0; }
+          case $v in mann*) SRC=audio/en-m ;; *) SRC=audio/en ;; esac
+          python tools/voice-convert.py run $v $SRC audio/en-$v
+
+  index:
+    needs: convert
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verzeichnisse schreiben
+        run: |
+          git config user.name "wortwerk-bot"
+          git config user.email "actions@users.noreply.github.com"
+          for i in 1 2 3 4 5 6; do
+            git pull -q --rebase origin main
+            python3 tools/write-index.py audio en
+            git add audio/*/index.json
+            git diff --cached --quiet && exit 0
+            git commit -q -m "Stimmen: Verzeichnisse" && git push -q origin HEAD:main && exit 0
+            git reset -q --hard origin/main; sleep 10
+          done
