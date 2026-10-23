@@ -16,6 +16,12 @@ exec(compile(open(_mp, encoding="utf-8").read().replace("import edge_tts", "edge
 texts_for, audio_key = _ma["texts_for"], _ma["audio_key"]
 
 
+def levels():
+    """Nur bestimmte Niveaus, z. B. CL_LEVELS=A1 oder A1,A2 (leer = alle)."""
+    v = os.environ.get("CL_LEVELS", "").strip()
+    return set(v.upper().replace(" ", "").split(",")) if v else None
+
+
 def ref_path(voice, lang):
     return os.path.join(ROOT, "voices", "ref-gemini", f"{voice}-{lang}.wav")
 
@@ -181,7 +187,7 @@ def probe(voice):
 
 def run(voice, lang, outdir):
     shard, n = (int(x) for x in os.environ.get("OV_SHARD", "0/1").split("/"))
-    texts = [t for i, t in enumerate(texts_for(lang)) if i % n == shard]
+    texts = [t for i, t in enumerate(texts_for(lang, levels())) if i % n == shard]
     os.makedirs(outdir, exist_ok=True)
     todo = [t for t in texts if not os.path.exists(os.path.join(outdir, audio_key(t) + ".mp3"))]
     print(f"{outdir} Teil {shard + 1}/{n}: {len(todo)} von {len(texts)} fehlen", flush=True)
@@ -208,7 +214,7 @@ def run(voice, lang, outdir):
 
 def check(voice, lang, outdir):
     """Forensische Prüfung: jede Aufnahme da, lesbar, plausible Länge, Stimme passt (Stichprobe je 25. Datei + alle Auffälligen)."""
-    texts = texts_for(lang)
+    texts = texts_for(lang, levels())
     ref = ref_path(voice, lang)
     missing, broken, odd, sims, long_ones = [], [], [], [], set()
     for i, t in enumerate(texts):
