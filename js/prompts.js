@@ -9,6 +9,55 @@ const READING = {
   Hindi: "simple Latin transliteration",
 };
 
+const SENT_RULE = (lang) =>
+  `Split the story text into its sentences ("sentences", in order, together they are exactly the text). For each sentence give "t" = the sentence exactly as in the text (keep the ** marks), "wfw" = a word-for-word German decoding in the ${lang} word order (Birkenbihl method: each ${lang} word replaced by its literal German equivalent, even if the German sounds odd; join multi-word glosses with hyphens, e.g. "es-gibt"), and "de" = a natural, idiomatic German translation. Mark "p":true on the first sentence of every new paragraph.`;
+
+// Zweiter Schritt: Sätze einer fertigen Geschichte Wort für Wort und frei übersetzen
+export function decodeSystem(lang = "English") {
+  return `You help German native speakers decode ${lang} texts (Birkenbihl method). You reply with valid JSON only, no markdown fences.`;
+}
+export function decodePrompt(text, lang = "English") {
+  return `${SENT_RULE(lang)}
+
+Text:
+${text}
+
+Return exactly: {"sentences":[{"t":"...","wfw":"...","de":"...","p":true}]}`;
+}
+
+// KI-Gespräch (Rollenspiel)
+export function chatSystem({ scenario, level = "B1", words = [], lang = "English" }) {
+  return (
+    `You are a friendly conversation partner for a German native speaker learning ${lang} (CEFR ${level}). ` +
+    `Role-play this situation and stay in role: ${scenario}. Speak ONLY ${lang} in "reply", in short natural turns (1–3 sentences, CEFR ${level}), ` +
+    `and end most turns with a question to keep the conversation going. ` +
+    (words.length ? `Where natural, use some of these words the learner is practising: ${words.join(", ")}. ` : "") +
+    `Reply with valid JSON only: {"reply":"<your turn in ${lang}>","de":"<German translation of your turn>","correction":"<if the learner's last message had mistakes: short friendly German explanation with the corrected ${lang} sentence; otherwise empty string>"}`
+  );
+}
+export function chatTranscript(history = []) {
+  return history.length
+    ? history.map((m) => `${m.role === "user" ? "Learner" : "You"}: ${m.text}`).join("\n")
+    : "(The conversation starts now. Open the scene with a short greeting and a question.)";
+}
+
+// Robust: Geschichte auch erkennen, wenn die KI sie verschachtelt oder anders benennt
+export function storyFrom(data) {
+  let d = Array.isArray(data) ? data[0] : data;
+  if (d && typeof d === "object" && !d.text) d = d.story || d.result || d.data || d;
+  if (!d || typeof d !== "object") return null;
+  if (typeof d.text !== "string" || !d.text.trim()) {
+    const alt = d.story_text || d.content || d.body || (Array.isArray(d.paragraphs) ? d.paragraphs.join("\n\n") : "");
+    if (typeof alt === "string" && alt.trim()) d = { ...d, text: alt };
+    else if (Array.isArray(d.sentences) && d.sentences.length) {
+      let t = "";
+      d.sentences.forEach((x, i) => (t += (i && x.p ? "\n\n" : i ? " " : "") + String(x.t || "")));
+      d = { ...d, text: t };
+    } else return null;
+  }
+  return d;
+}
+
 export function storySystem(lang = "English") {
   return (
     `You write short graded-reader stories for an adult German native speaker who is learning ${lang}. ` +
@@ -19,7 +68,8 @@ export const STORY_SYSTEM = storySystem("English");
 
 // words: Wörter, die geübt werden (müssen alle vorkommen)
 // known: Wörter, die schon sitzen (zur Wiederholung, so viele wie natürlich passen)
-export function storyPrompt(words, level = "B2", theme = "", known = [], lang = "English") {
+// withSentences=false: nur Geschichte (schnell); die Satz-Übersetzungen kommen danach per decodePrompt
+export function storyPrompt(words, level = "B2", theme = "", known = [], lang = "English", withSentences = true) {
   const list = words.map((w) => `- ${w.en} (${w.de})`).join("\n");
   const knownList = known.map((w) => `- ${w.en} (${w.de})`).join("\n");
   const reading = READING[lang];
@@ -38,10 +88,9 @@ Requirements:
 - A coherent plot with a small twist or a clear ending, adult everyday or professional setting, a fitting title.
 - Then write 4 multiple-choice comprehension questions in ${lang} with 4 options each. "answer" is the 0-based index of the correct option. Vary the position of the correct answer.
 - For each marked word give the German meaning as used in the story${reading ? ` and its reading in ${reading} ("rd")` : ""}.
-- Also split the story text into its sentences ("sentences", in order, together they are exactly the text). For each sentence give "t" = the sentence exactly as in the text (keep the ** marks), "wfw" = a word-for-word German decoding in the ${lang} word order (Birkenbihl method: each ${lang} word replaced by its literal German equivalent, even if the German sounds odd; join multi-word glosses with hyphens, e.g. "es-gibt"), and "de" = a natural, idiomatic German translation. Mark "p":true on the first sentence of every new paragraph.
-
+${withSentences ? `- ${SENT_RULE(lang)}\n` : ""}
 Return exactly this JSON structure:
-{"title":"...","text":"...","sentences":[{"t":"...","wfw":"...","de":"...","p":true}],"questions":[{"q":"...","options":["...","...","...","..."],"answer":0}],"glossary":[{"en":"<${lang} word>","de":"..."${reading ? ',"rd":"..."' : ""}}]}`;
+{"title":"...","text":"..."${withSentences ? ',"sentences":[{"t":"...","wfw":"...","de":"...","p":true}]' : ""},"questions":[{"q":"...","options":["...","...","...","..."],"answer":0}],"glossary":[{"en":"<${lang} word>","de":"..."${reading ? ',"rd":"..."' : ""}}]}`;
 }
 
 export function wordsSystem(lang = "English") {

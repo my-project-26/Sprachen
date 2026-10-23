@@ -3,7 +3,7 @@ import * as S from "./store.js";
 import { schedule, preview, formatInterval, DAY, startOfDay } from "./fsrs.js";
 import { TOPICS, LEVELS } from "./words.js";
 import { storyPrompt, STORY_SYSTEM, extractJson } from "./prompts.js";
-import { callApi, health, normalizeStory, isStaticHost } from "./api.js";
+import { callApi, health, normalizeStory, isStaticHost, decodeStory } from "./api.js";
 import * as tts from "./tts.js";
 import { DESIGNS, designKey, applyDesign, skinHome, skinCard } from "./skins.js";
 import * as cloud from "./cloud.js";
@@ -737,16 +737,13 @@ function storyNew() {
     <label class="field"><span>Sprachniveau des Textes</span>
       <select id="lvl">${["A2", "B1", "B2", "C1"].map((L) => `<option ${L === lvl ? "selected" : ""}>${L}</option>`).join("")}</select></label>
     ${
-      isStaticHost() && !settings().geminiKey && !settings().apiBase
-        ? `<details class="key-box">
-             <summary class="small">Läuft ohne Anmeldung über eine kostenlose KI. <u>Optional: eigenen Gemini-Key nutzen</u></summary>
-             <p class="small">Mit eigenem Key (kostenlos unter aistudio.google.com) wird es oft schneller und zuverlässiger. Er bleibt nur auf diesem Gerät.</p>
-             <div class="inline-form"><input id="gkeyInline" type="password" autocomplete="off" placeholder="AIza…">
-             <button class="btn ghost" id="gkeySave">Speichern</button></div>
-           </details>`
-        : ""
+      ""
     }
     <button class="btn primary big" id="gen">Mit KI erstellen</button>
+    <div class="gen-progress" id="genProg" hidden aria-live="polite">
+      <div class="gp-bar"><i id="gpFill"></i></div>
+      <p class="gp-row"><b id="gpStep">Los geht's …</b><span id="gpTime">0 s</span></p>
+    </div>
     <p class="small muted" id="status"></p>
   </section>
   <details class="card">
@@ -777,17 +774,37 @@ function storyNew() {
     const s = S.getState();
     s.settings.storyLevel = level();
     S.save();
+    if (!st.sentences?.length) decodeLater(st);
     go("#/story/" + st.id);
   };
   document.getElementById("gen").onclick = async (e) => {
     const btn = e.currentTarget;
     const status = document.getElementById("status");
+    const prog = document.getElementById("genProg");
+    const fill = document.getElementById("gpFill");
+    const step = document.getElementById("gpStep");
+    const time = document.getElementById("gpTime");
     btn.disabled = true;
-    btn.textContent = "Geschichte wird geschrieben…";
-    status.textContent =
-      settings().provider === "ollama"
-        ? "Lokales Modell – kann je nach Mac 30–90 Sekunden dauern."
-        : "Das dauert meist 10–40 Sekunden. Ist eine KI überlastet, probiert die App automatisch die nächste.";
+    btn.textContent = "Geschichte wird geschrieben …";
+    status.textContent = "";
+    prog.hidden = false;
+    const t0 = Date.now();
+    const STEPS = [
+      [0, "Deine Wörter werden zusammengestellt"],
+      [3, "Die Handlung wird ausgedacht"],
+      [9, "Die Geschichte wird geschrieben"],
+      [20, "Fragen zum Text werden erstellt"],
+      [32, "Fast fertig …"],
+      [50, "Die KI braucht heute etwas länger – gleich ist es soweit"],
+    ];
+    const tick = () => {
+      const t = (Date.now() - t0) / 1000;
+      fill.style.width = Math.min(96, 100 * (1 - Math.exp(-t / 16))).toFixed(1) + "%";
+      step.textContent = STEPS.filter(([at]) => t >= at).pop()[1];
+      time.textContent = `${Math.floor(t)} s`;
+    };
+    tick();
+    const timer = setInterval(tick, 250);
     try {
       const data = await callApi("story", {
         words: learning.map((w) => ({ en: w.en, de: w.de })),
@@ -795,8 +812,13 @@ function storyNew() {
         level: level(),
         theme,
       });
-      finish(data);
+      clearInterval(timer);
+      fill.style.width = "100%";
+      step.textContent = "Fertig! 🎉";
+      setTimeout(() => finish(data), 350);
     } catch (err) {
+      clearInterval(timer);
+      prog.hidden = true;
       btn.disabled = false;
       btn.textContent = "Erneut versuchen";
       status.innerHTML = `<span class="err">${esc(err.message)}</span>`;
@@ -819,6 +841,25 @@ function storyNew() {
       toast("Konnte die Antwort nicht lesen: " + esc(err.message), 4000);
     }
   };
+}
+
+// Wort-für-Wort-Übersetzung im Hintergrund nachladen (Schritt 2 der Geschichte)
+const DECODING = new Set();
+function decodeLater(st) {
+  if (DECODING.has(st.id)) return;
+  DECODING.add(st.id);
+  decodeStory(st.text)
+    .then((sentences) => {
+      if (!sentences.length) return;
+      const cur = S.getState().stories.find((x) => x.id === st.id);
+      if (!cur) return;
+      S.updateStory({ ...cur, sentences });
+    })
+    .catch(() => {})
+    .finally(() => {
+      DECODING.delete(st.id);
+      if (location.hash === "#/story/" + st.id) story(st.id);
+    });
 }
 
 // Jedes Wort antippbar: markierte Lernwörter gelb, alle anderen unauffällig
@@ -988,7 +1029,9 @@ function storyDetail(st) {
       <button type="button" data-dec="wfw">Wort für Wort</button>
       <button type="button" data-dec="de">Deutsch</button>
     </div>`
-        : ""
+        : DECODING.has(st.id)
+          ? `<p class="small muted dec-wait"><span class="spin"></span> Wort-für-Wort-Übersetzung wird vorbereitet …</p>`
+          : `<button class="btn ghost" id="decLoad">Wort für Wort übersetzen</button>`
     }
     <div class="story-text">${storyHtml(st)}</div>
     <p class="small muted">Tippe auf ein Wort für Übersetzung und Aussprache${st.sentences?.length ? ", auf ▶ für den ganzen Satz" : ""}. Gelb = deine Lernwörter.${
@@ -1134,6 +1177,8 @@ function storyDetail(st) {
       S.updateStory({ ...st, clozeScore: ok });
     };
 
+  const decLoad = document.getElementById("decLoad");
+  if (decLoad) decLoad.onclick = () => (decodeLater(st), storyDetail(st));
   document.getElementById("del").onclick = () => {
     if (confirm("Diese Geschichte löschen?")) {
       S.deleteStory(st.id);

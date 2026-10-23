@@ -1,5 +1,5 @@
 import { callLLM, checkAuth, readBody, send, wrap, httpError, providerFrom } from "./_llm.js";
-import { storySystem, storyPrompt, extractJson } from "../js/prompts.js";
+import { storySystem, storyPrompt, extractJson, storyFrom } from "../js/prompts.js";
 import { langName } from "../js/langs.js";
 
 const cleanList = (list, max) =>
@@ -19,13 +19,15 @@ export default wrap(async (req, res) => {
   const llm = providerFrom(body);
   const theme = String(body.theme || "").slice(0, 60);
   const lang = langName(body.lang);
+  // Standard: erst nur die Geschichte (schnell); Sätze/Wort-für-Wort holt die App danach über /api/decode
+  const withSentences = body.sentences === true;
 
   let lastErr;
   for (let attempt = 0; attempt < 2; attempt++) {
     try {
-      const text = await callLLM(llm, storySystem(lang), storyPrompt(words, level, theme, known, lang), 5000);
-      const data = extractJson(text);
-      if (!data.text) throw new Error("Antwort ohne Text");
+      const text = await callLLM(llm, storySystem(lang), storyPrompt(words, level, theme, known, lang, withSentences), withSentences ? 5000 : 2500);
+      const data = storyFrom(extractJson(text));
+      if (!data) throw new Error("Antwort ohne Text");
       return send(res, 200, data);
     } catch (e) {
       lastErr = e;

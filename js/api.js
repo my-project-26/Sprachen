@@ -1,13 +1,17 @@
 // KI-Aufrufe: entweder über den eigenen Server (api/*) oder direkt aus dem Browser
 // an Gemini (für GitHub Pages / iPhone, wo kein eigener Server läuft).
 import { getState } from "./store.js";
-import { storySystem, storyPrompt, wordsSystem, generateWordsPrompt, fillWordPrompt, extractJson } from "./prompts.js";
+import { storySystem, storyPrompt, wordsSystem, generateWordsPrompt, fillWordPrompt, extractJson, storyFrom, decodeSystem, decodePrompt, chatSystem, chatTranscript } from "./prompts.js";
 import { L, langName } from "./langs.js";
 
 const LEVELS = ["A1", "A2", "B1", "B2", "C1"];
 
+// Eigener KI-Server (Vercel) – wird auf GitHub Pages automatisch benutzt
+export const DEFAULT_SERVER = "https://sprachen-five.vercel.app";
+
 function base() {
-  return (getState().settings.apiBase || "").trim().replace(/\/$/, "");
+  const own = (getState().settings.apiBase || "").trim().replace(/\/$/, "");
+  return own || (isStaticHost() ? DEFAULT_SERVER : "");
 }
 
 function headers() {
@@ -27,8 +31,8 @@ export function isStaticHost() {
 // 2. sonst / bei Überlastung über einen kostenlosen Dienst ohne Key (Pollinations).
 export function usesBrowserGemini() {
   const s = getState().settings;
-  if (s.provider === "browser" || s.provider === "free") return true;
-  return s.provider === "auto" && isStaticHost() && !s.apiBase;
+  // Nur wer ausdrücklich „Gemini direkt im Browser“ mit eigenem Key gewählt hat; sonst immer über den Server
+  return s.provider === "browser" && !!s.geminiKey;
 }
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -179,9 +183,10 @@ async function browserCall(path, body) {
     for (let attempt = 0; attempt < 2; attempt++) {
       try {
         const lang = langName(body.lang);
-        const text = await browserLLM(storySystem(lang), storyPrompt(body.words, level, body.theme || "", body.known || [], lang), 5000);
-        const data = extractJson(text);
-        if (!data.text) throw new Error("Antwort ohne Text");
+        const withS = body.sentences === true;
+        const text = await browserLLM(storySystem(lang), storyPrompt(body.words, level, body.theme || "", body.known || [], lang, withS), withS ? 5000 : 2500);
+        const data = storyFrom(extractJson(text));
+        if (!data) throw new Error("Antwort ohne Text");
         return data;
       } catch (e) {
         lastErr = e;
@@ -189,6 +194,15 @@ async function browserCall(path, body) {
       }
     }
     throw new Error("Geschichte konnte nicht erstellt werden: " + lastErr.message);
+  }
+  if (path === "decode") {
+    const lang = langName(body.lang);
+    const data = extractJson(await browserLLM(decodeSystem(lang), decodePrompt(body.text, lang), 4000));
+    return { sentences: Array.isArray(data) ? data : data.sentences || [] };
+  }
+  if (path === "chat") {
+    const sys = chatSystem({ ...body, lang: langName(body.lang) });
+    return extractJson(await browserLLM(sys, chatTranscript(body.history || []), 700));
   }
   if (path === "words") {
     const prompt =
@@ -212,29 +226,34 @@ async function browserCall(path, body) {
 
 // ---------- Öffentliche Funktionen ----------
 
+const SERVER_DOWN = "Der KI-Server ist gerade nicht erreichbar. Bitte in einer Minute erneut versuchen.";
+
 export async function callApi(path, body) {
   body = { ...body, lang: L().en };
   if (usesBrowserGemini()) return browserCall(path, body);
   const s = getState().settings;
-  const payload = { ...body, provider: s.provider || "auto", model: s.provider === "ollama" ? s.ollamaModel || "" : "" };
-  let res;
+  const provider = ["claude", "gemini", "ollama"].includes(s.provider) ? s.provider : "auto";
+  const payload = { ...body, provider, model: provider === "ollama" ? s.ollamaModel || "" : "" };
+  let res, data;
   try {
     res = await fetch(`${base()}/api/${path}`, {
       method: "POST",
       headers: headers(),
       body: JSON.stringify(payload),
     });
+    data = await res.json().catch(() => ({}));
   } catch (e) {
-    throw new Error(
-      isStaticHost()
-        ? "Auf GitHub Pages gibt es keinen eigenen Server. Wähle unter Einstellungen → KI-Server „Gemini direkt im Browser“ und trage deinen Gemini-Key ein."
-        : "Server nicht erreichbar. Läuft die App über `node server.js`?"
-    );
+    // Notfalls direkt mit dem eigenen Gemini-Key
+    if (s.geminiKey) return browserCall(path, body);
+    throw new Error(isStaticHost() ? SERVER_DOWN : "Server nicht erreichbar. Läuft die App über `node server.js`?");
   }
-  const data = await res.json().catch(() => ({}));
   if (!res.ok) {
-    if (res.status === 404 && isStaticHost())
-      throw new Error("Auf GitHub Pages gibt es keinen eigenen Server. Wähle unter Einstellungen → KI-Server „Gemini direkt im Browser“ und trage deinen Gemini-Key ein.");
+    if (s.geminiKey && res.status !== 400) {
+      try {
+        return await browserCall(path, body);
+      } catch {}
+    }
+    if (res.status === 404) throw new Error(SERVER_DOWN);
     throw new Error(data.error || `Serverfehler (${res.status})`);
   }
   return data;
@@ -262,6 +281,7 @@ export async function health() {
 
 // Prüft und bereinigt eine Geschichte (vom Server oder manuell eingefügt)
 export function normalizeStory(data, words) {
+  data = storyFrom(data) || data;
   if (!data || typeof data.text !== "string" || !data.text.trim()) {
     throw new Error("Die Antwort enthält keinen Geschichtentext.");
   }
@@ -304,17 +324,16 @@ export function normalizeStory(data, words) {
 // ---------- KI-Gespräch (Rollenspiel) ----------
 // history: [{role:"user"|"ai", text}] – liefert {reply, de, correction}
 export async function chatTurn({ scenario, level, words = [], history = [] }) {
-  const lang = L().en;
-  const system =
-    `You are a friendly conversation partner for a German native speaker learning ${lang} (CEFR ${level}). ` +
-    `Role-play this situation and stay in role: ${scenario}. Speak ONLY ${lang} in "reply", in short natural turns (1–3 sentences, CEFR ${level}), ` +
-    `and end most turns with a question to keep the conversation going. ` +
-    (words.length ? `Where natural, use some of these words the learner is practising: ${words.join(", ")}. ` : "") +
-    `Reply with valid JSON only: {"reply":"<your turn in ${lang}>","de":"<German translation of your turn>","correction":"<if the learner's last message had mistakes: short friendly German explanation with the corrected ${lang} sentence; otherwise empty string>"}`;
-  const transcript = history.length
-    ? history.map((m) => `${m.role === "user" ? "Learner" : "You"}: ${m.text}`).join("\n")
-    : "(The conversation starts now. Open the scene with a short greeting and a question.)";
-  const text = await browserLLM(system, transcript, 700);
-  const d = extractJson(text);
+  const d = await callApi("chat", { scenario, level, words, history });
   return { reply: String(d.reply || ""), de: String(d.de || ""), correction: String(d.correction || "") };
+}
+
+// Sätze einer Geschichte nachträglich Wort für Wort + frei übersetzen
+export async function decodeStory(text) {
+  const d = await callApi("decode", { text: String(text || "") });
+  return Array.isArray(d.sentences)
+    ? d.sentences
+        .filter((x) => x && typeof x.t === "string" && x.t.trim())
+        .map((x, i) => ({ t: x.t.trim(), wfw: String(x.wfw || ""), de: String(x.de || ""), p: i === 0 || !!x.p }))
+    : [];
 }

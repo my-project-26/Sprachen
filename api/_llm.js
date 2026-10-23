@@ -34,10 +34,9 @@ async function callClaude(system, user, maxTokens) {
   return (data.content || []).filter((b) => b.type === "text").map((b) => b.text).join("");
 }
 
-async function callGemini(system, user, maxTokens) {
-  const key = env("GEMINI_API_KEY");
-  if (!key) throw httpError(500, "GEMINI_API_KEY ist auf dem Server nicht gesetzt.");
-  const model = GEMINI_MODEL();
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+async function geminiOnce(model, system, user, maxTokens, key) {
   const res = await fetch(
     `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent`,
     {
@@ -50,17 +49,40 @@ async function callGemini(system, user, maxTokens) {
         generationConfig: { maxOutputTokens: Math.max(maxTokens * 3, 8192), responseMimeType: "application/json" },
       }),
     }
-  );
+  ).catch(() => null);
+  if (!res) throw Object.assign(httpError(502, "Gemini nicht erreichbar"), { retry: true });
   const data = await res.json().catch(() => ({}));
   if (!res.ok) {
     const msg = data?.error?.message || `Fehler ${res.status}`;
     const hint = res.status === 429 ? " (Gratis-Kontingent erschöpft – später erneut versuchen)" : "";
-    throw httpError(502, "Gemini: " + msg + hint);
+    const e = httpError(502, "Gemini: " + msg + hint);
+    e.retry = res.status === 429 || res.status >= 500 || res.status === 404;
+    e.code = res.status;
+    throw e;
   }
   const parts = data?.candidates?.[0]?.content?.parts || [];
   const text = parts.filter((p) => p.text && !p.thought).map((p) => p.text).join("");
-  if (!text) throw httpError(502, "Gemini hat keinen Text geliefert (" + (data?.candidates?.[0]?.finishReason || "unbekannt") + ")");
+  if (!text)
+    throw Object.assign(httpError(502, "Gemini hat keinen Text geliefert (" + (data?.candidates?.[0]?.finishReason || "unbekannt") + ")"), { retry: true });
   return text;
+}
+
+// Probiert mehrere Gemini-Modelle nacheinander (falls eines überlastet ist)
+async function callGemini(system, user, maxTokens) {
+  const key = env("GEMINI_API_KEY");
+  if (!key) throw httpError(500, "GEMINI_API_KEY ist auf dem Server nicht gesetzt.");
+  const models = [GEMINI_MODEL(), "gemini-flash-latest", "gemini-2.5-flash", "gemini-flash-lite-latest"].filter((m, i, a) => a.indexOf(m) === i);
+  let last;
+  for (const m of models) {
+    try {
+      return await geminiOnce(m, system, user, maxTokens, key);
+    } catch (e) {
+      last = e;
+      if (!e.retry) throw e;
+      if (e.code !== 404) await sleep(800);
+    }
+  }
+  throw last;
 }
 
 export async function ollamaModels() {

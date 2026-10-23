@@ -567,3 +567,14 @@ small.rd { font-size: .45em; margin: 4px 0 0; }
 .chat-send { width: auto; min-height: 52px; padding: 0 16px; font-size: 1rem; }
 .chat-form .ef-btn.chat-send { width: auto; flex: none; min-height: 52px; padding: 0 18px; font-size: 1rem; }
 .chat-form .icon-btn.big { flex: none; }
+
+/* Fortschritt beim Erstellen einer Geschichte */
+.gen-progress{margin:14px 0 4px}
+.gp-bar{height:12px;border-radius:99px;background:color-mix(in srgb,currentColor 12%,transparent);overflow:hidden}
+.gp-bar i{display:block;height:100%;width:0;border-radius:inherit;background:var(--accent,#3b6cf6);transition:width .25s linear}
+.gp-row{display:flex;justify-content:space-between;gap:12px;margin:8px 0 0;font-size:.95rem}
+.gp-row span{font-variant-numeric:tabular-nums;opacity:.7;white-space:nowrap}
+.dec-wait{display:flex;align-items:center;gap:8px}
+.spin{width:14px;height:14px;border-radius:50%;border:2px solid currentColor;border-right-color:transparent;animation:spin .8s linear infinite;flex:none}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.spin{animation:none}.gp-bar i{transition:none}}
