@@ -167,7 +167,7 @@ def probe(voice):
     report = []
     for lang in os.environ.get("PROBE_LANGS", "en it es").split():
         ref = ref_path(voice, lang)
-        sents = [t for t in texts_for(lang, {"A1"}) if t.count(" ") >= 3][:5]
+        sents = [t for t in texts_for(lang, {"A1"}) if t.count(" ") >= 3][: int(os.environ.get("PROBE_N", "5"))]
         parts, sims = [], []
         for i, t in enumerate(sents):
             out = f"/tmp/{voice}-{lang}-{i}.mp3"

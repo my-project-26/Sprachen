@@ -5,9 +5,12 @@ on:
       voice:
         description: "Stimme (f2, f3, m2, m3)"
         default: "f2"
-  push:
-    branches: [main]
-    paths: [".github/workflows/clone-probe.yml"]
+      langs:
+        description: "Sprachen, z. B. en oder it es"
+        default: "en"
+      n:
+        description: "Anzahl Sätze"
+        default: "8"
 permissions:
   contents: write
 jobs:
@@ -16,8 +19,9 @@ jobs:
     timeout-minutes: 120
     env:
       V: ${{ inputs.voice || 'f2' }}
-      PROBE_LANGS: "it es"
-      PROBE_TAG: "-neu"
+      PROBE_LANGS: ${{ inputs.langs || 'en' }}
+      PROBE_N: ${{ inputs.n || '8' }}
+      PROBE_TAG: "-probe"
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -28,7 +32,7 @@ jobs:
           exec > >(tee -a /tmp/log.txt) 2>&1
           sudo apt-get -qq update && sudo apt-get -qq install -y ffmpeg
           mkdir -p voices/ref-gemini
-          for l in en it es; do
+          for l in $PROBE_LANGS; do
             f=voices/ref-gemini/$V-$l.wav
             [ -s $f ] && continue
             for t in 1 2 3 4 5; do
@@ -52,7 +56,7 @@ jobs:
           git config user.name "wortwerk-bot"
           git config user.email "actions@users.noreply.github.com"
           git add voices/ref-gemini probe
-          git commit -q -m "Stimmprobe $V (Klonung)"
+          git commit -q -m "Stimmprobe $V (Klonung)" || true
           for i in 1 2 3 4 5; do git pull -q --rebase origin main && git push -q origin HEAD:main && break; sleep 10; done
       - name: Protokoll bei Fehler
         if: failure()
