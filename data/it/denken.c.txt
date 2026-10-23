@@ -1,0 +1,66 @@
+# Italienisch – Gehobener Wortschatz C1 (Nomen)
+## C1
+l'accezione | die Bedeutung (eines Wortes) | n | In senso lato, nella sua *accezione* più ampia. | Im weitesten *Sinne*. | weiblich (f)
+l'ambiguità | die Mehrdeutigkeit | n | L'*ambiguità* del testo. | Die *Mehrdeutigkeit* des Textes. | weiblich (f)
+l'antefatto | die Vorgeschichte | n | L'*antefatto* della vicenda. | Die *Vorgeschichte* der Affäre. | männlich (m)
+l'arbitrio | die Willkür | n | Il libero *arbitrio*. | Der freie *Wille*. | männlich (m)
+l'aspettativa | die Erwartung | n | Superare le *aspettative*. | Die *Erwartungen* übertreffen. | weiblich (f)
+l'assetto | die Ordnung, Struktur | n | Il nuovo *assetto* societario. | Die neue Gesellschafts*struktur*. | männlich (m)
+il baratro | der Abgrund | n | Sull'orlo del *baratro*. | Am Rande des *Abgrunds*. |
+il bilico | das Schwanken | n | Il governo è in *bilico*. | Die Regierung *wackelt*. |
+il caposaldo | der Eckpfeiler | n | Un *caposaldo* della democrazia. | Ein *Eckpfeiler* der Demokratie. |
+la carenza | der Mangel | n | La *carenza* di medici. | Der Ärzte*mangel*. |
+il cavillo legale | das juristische Schlupfloch | n | Un *cavillo legale*. | Ein juristisches *Schlupfloch*. |
+la congettura | die Mutmaßung | n | Sono solo *congetture*. | Das sind nur *Mutmaßungen*. |
+il connotato | das Merkmal | n | I *connotati* del sospettato. | Die *Merkmale* des Verdächtigen. |
+il contraccolpo | der Rückschlag | n | Un duro *contraccolpo*. | Ein harter *Rückschlag*. |
+il corollario | die Folgerung | n | Ne è il naturale *corollario*. | Es ist die logische *Folge*. |
+la deroga | die Ausnahmeregelung | n | Una *deroga* alla legge. | Eine *Ausnahme* vom Gesetz. |
+il dilemma | das Dilemma | n | Un *dilemma* morale. | Ein moralisches *Dilemma*. | männlich trotz -a
+il discapito | der Nachteil | n | A *discapito* della qualità. | Zu *Lasten* der Qualität. |
+il disincanto | die Ernüchterung | n | Un senso di *disincanto*. | Ein Gefühl der *Ernüchterung*. |
+il divieto assoluto | das absolute Verbot | n | Un *divieto assoluto* di caccia. | Ein absolutes Jagd*verbot*. |
+l'eccellenza | die Spitzenleistung | n | Un'*eccellenza* italiana. | Ein italienisches *Spitzenprodukt*. | weiblich (f)
+l'egemonia | die Vorherrschaft | n | L'*egemonia* culturale. | Die kulturelle *Vorherrschaft*. | weiblich (f)
+l'emblema | das Sinnbild | n | L'*emblema* della città. | Das *Wahrzeichen* der Stadt. | männlich (m)
+l'enfasi | der Nachdruck | n | Parlare con *enfasi*. | Mit *Nachdruck* sprechen. | weiblich (f)
+l'equivoco | das Missverständnis | n | A scanso di *equivoci*. | Um *Missverständnisse* zu vermeiden. | männlich (m)
+l'esasperazione | die Verzweiflung, Erbitterung | n | Al limite dell'*esasperazione*. | Am Rande der *Verzweiflung*. | weiblich (f)
+il fervore | die Inbrunst, der Eifer | n | Con grande *fervore*. | Mit großem *Eifer*. |
+il fulcro | der Dreh- und Angelpunkt | n | Il *fulcro* della questione. | Der *Kernpunkt* der Frage. |
+il germe | der Keim | n | Il *germe* del dubbio. | Der *Keim* des Zweifels. |
+la gerarchia | die Hierarchie | n | Una rigida *gerarchia*. | Eine starre *Hierarchie*. |
+il giro di vite | die Verschärfung | n | Un *giro di vite* sui controlli. | Eine *Verschärfung* der Kontrollen. |
+l'impasse | die Sackgasse | n | Una situazione di *impasse*. | Eine *festgefahrene* Situation. | weiblich (f)
+l'incombenza | die lästige Pflicht | n | Le *incombenze* quotidiane. | Die täglichen *Pflichten*. | weiblich (f)
+l'indole | das Naturell | n | È di *indole* mite. | Er ist von sanftem *Wesen*. | weiblich (f)
+l'insidia | die Tücke | n | Le *insidie* del mercato. | Die *Tücken* des Marktes. | weiblich (f)
+l'intransigenza | die Unnachgiebigkeit | n | Con *intransigenza*. | *Unnachgiebig*. | weiblich (f)
+il lassismo | die Laxheit | n | Il *lassismo* delle autorità. | Die *Nachlässigkeit* der Behörden. |
+il malcontento | die Unzufriedenheit | n | Cresce il *malcontento*. | Die *Unzufriedenheit* wächst. |
+il marasma | das Chaos | n | Il *marasma* politico. | Das politische *Chaos*. |
+la mistificazione | die Verfälschung | n | Una *mistificazione* della realtà. | Eine *Verfälschung* der Wirklichkeit. |
+il monito | die Mahnung | n | Un *monito* per tutti. | Eine *Mahnung* für alle. |
+la nomea | der (schlechte) Ruf | n | Ha la *nomea* di bugiardo. | Er hat den *Ruf* eines Lügners. |
+l'onere | die Last, Pflicht | n | L'*onere* della prova. | Die *Beweislast*. | männlich (m)
+l'oblio | das Vergessen | n | Cadere nell'*oblio*. | In *Vergessenheit* geraten. | männlich (m)
+la parsimonia | die Sparsamkeit | n | Con *parsimonia*. | *Sparsam*. |
+la pervicacia | die Hartnäckigkeit | n | Con *pervicacia*. | Mit *Hartnäckigkeit*. |
+il presupposto | die Voraussetzung | n | Mancano i *presupposti*. | Es fehlen die *Voraussetzungen*. |
+la prerogativa | das Vorrecht | n | Una *prerogativa* del presidente. | Ein *Vorrecht* des Präsidenten. |
+il pudore | das Schamgefühl | n | Senza *pudore*. | *Schamlos*. |
+il raggiro | der Schwindel | n | Vittima di un *raggiro*. | Opfer eines *Schwindels*. |
+il retaggio | das Erbe (kulturell) | n | Un *retaggio* del passato. | Ein *Erbe* der Vergangenheit. |
+la reticenza | die Verschwiegenheit | n | Con *reticenza*. | *Zurückhaltend*. |
+il sentore | die Ahnung | n | Ho il *sentore* che... | Ich habe die *Ahnung*, dass … |
+lo sgomento | die Bestürzung | n | Con *sgomento*. | Mit *Bestürzung*. |
+il sopruso | der Übergriff | n | Subire un *sopruso*. | Einen *Übergriff* erleiden. |
+la stasi | der Stillstand | n | Una fase di *stasi*. | Eine Phase des *Stillstands*. |
+lo stratagemma | die List | n | Un abile *stratagemma*. | Eine geschickte *List*. | männlich trotz -a
+il sussulto | das Aufbäumen | n | Un *sussulto* d'orgoglio. | Ein *Aufbäumen* des Stolzes. |
+la tutela | der Schutz | n | La *tutela* dei consumatori. | Der Verbraucher*schutz*. |
+l'ubiquità | die Allgegenwart | n | L'*ubiquità* degli smartphone. | Die *Allgegenwart* der Smartphones. | weiblich (f)
+la velleità | der vergebliche Wunsch | n | Le sue *velleità* artistiche. | Seine künstlerischen *Ambitionen*. |
+la vessazione | die Schikane | n | Anni di *vessazioni*. | Jahre der *Schikane*. |
+il vincolo | die Bindung, Auflage | n | Senza *vincoli*. | Ohne *Verpflichtungen*. |
+lo zelo | der Eifer | n | Con troppo *zelo*. | Mit zu viel *Eifer*. |

@@ -1,0 +1,80 @@
+# Italienisch – Häufige Wörter B2 (Ergänzung 2)
+## B2
+l'abitante | der Einwohner | n | Una città di centomila *abitanti*. | Eine Stadt mit hunderttausend *Einwohnern*. |
+l'accesso | der Zugang | n | L'*accesso* è libero. | Der *Zugang* ist frei. | männlich (m)
+l'adeguamento | die Anpassung | n | L'*adeguamento* degli stipendi. | Die *Anpassung* der Gehälter. | männlich (m)
+l'ambito | der Bereich | n | Nell'*ambito* sanitario. | Im Gesundheits*bereich*. | männlich (m)
+l'andamento | der Verlauf, die Entwicklung | n | L'*andamento* dei prezzi. | Die Preis*entwicklung*. | männlich (m)
+l'apertura | die Öffnung; Offenheit | n | L'*apertura* del nuovo negozio. | Die *Eröffnung* des neuen Ladens. | weiblich (f)
+l'appalto | die Ausschreibung, der Auftrag | n | Vincere un *appalto*. | Einen *Auftrag* gewinnen. | männlich (m)
+l'approccio | der Ansatz | n | Un *approccio* nuovo. | Ein neuer *Ansatz*. | männlich (m)
+l'avvio | der Start, Beginn | n | L'*avvio* dei lavori. | Der *Beginn* der Arbeiten. | männlich (m)
+il bando | die Ausschreibung | n | Un *bando* di concorso. | Eine *Stellenausschreibung*. |
+il beneficio | der Nutzen | n | I *benefici* dello sport. | Der *Nutzen* von Sport. |
+la carica | das Amt; die Ladung | n | La *carica* di sindaco. | Das *Amt* des Bürgermeisters. |
+il caso limite | der Grenzfall | n | È un *caso limite*. | Das ist ein *Grenzfall*. |
+la chiusura | die Schließung | n | La *chiusura* della fabbrica. | Die *Schließung* der Fabrik. |
+il coinvolgimento | die Beteiligung | n | Il *coinvolgimento* dei cittadini. | Die *Beteiligung* der Bürger. |
+la collaborazione | die Zusammenarbeit | n | Grazie per la *collaborazione*. | Danke für die *Zusammenarbeit*. |
+il compenso | die Vergütung | n | Un *compenso* adeguato. | Eine angemessene *Vergütung*. |
+la componente | der Bestandteil | n | Una *componente* essenziale. | Ein wesentlicher *Bestandteil*. |
+il comunicato | die Mitteilung | n | Un *comunicato* ufficiale. | Eine offizielle *Mitteilung*. |
+il consiglio comunale | der Gemeinderat | n | Il *consiglio comunale* si riunisce. | Der *Gemeinderat* tagt. |
+il contenuto | der Inhalt | n | Il *contenuto* del pacco. | Der *Inhalt* des Pakets. |
+il contributo | der Beitrag | n | Un *contributo* importante. | Ein wichtiger *Beitrag*. |
+la crescita | das Wachstum | n | Una *crescita* rapida. | Ein schnelles *Wachstum*. |
+il danno | der Schaden | n | *Danni* ingenti. | Hohe *Schäden*. |
+il dirigente scolastico | der Schulleiter | n | Il *dirigente scolastico* ha deciso. | Die *Schulleitung* hat entschieden. |
+la disposizione | die Verfügung; Anordnung | n | Sono a tua *disposizione*. | Ich stehe dir zur *Verfügung*. |
+la durata | die Dauer | n | La *durata* del corso. | Die *Dauer* des Kurses. |
+l'edificio | das Gebäude | n | Un *edificio* storico. | Ein historisches *Gebäude*. | männlich (m)
+l'elenco | die Liste | n | L'*elenco* dei partecipanti. | Die *Teilnehmerliste*. | männlich (m)
+l'esito | das Ergebnis, der Ausgang | n | L'*esito* dell'esame. | Das *Ergebnis* der Prüfung. | männlich (m)
+la fascia | das Band; die Gruppe, Spanne | n | La *fascia* d'età 18–25. | Die *Altersgruppe* 18–25. |
+il fattore | der Faktor | n | Un *fattore* decisivo. | Ein entscheidender *Faktor*. |
+la fonte | die Quelle | n | Una *fonte* attendibile. | Eine verlässliche *Quelle*. |
+la gestione | die Verwaltung | n | La *gestione* dei rifiuti. | Die *Abfallwirtschaft*. |
+l'impatto | die Auswirkung | n | L'*impatto* ambientale. | Die Umwelt*auswirkung*. | männlich (m)
+l'incarico | der Auftrag | n | Un *incarico* importante. | Ein wichtiger *Auftrag*. | männlich (m)
+l'incremento | die Zunahme | n | Un *incremento* del 5%. | Eine *Zunahme* von 5 %. | männlich (m)
+l'indirizzo | die Ausrichtung; die Adresse | n | L'*indirizzo* politico. | Die politische *Ausrichtung*. | männlich (m)
+l'iscrizione | die Anmeldung | n | L'*iscrizione* è gratuita. | Die *Anmeldung* ist kostenlos. | weiblich (f)
+la gamma | die Palette | n | Un'ampia *gamma* di prodotti. | Eine breite *Produktpalette*. |
+il margine | der Spielraum; der Rand | n | Un *margine* di errore. | Eine *Fehlertoleranz*. |
+il meccanismo | der Mechanismus | n | Un *meccanismo* complesso. | Ein komplexer *Mechanismus*. |
+la modalità | die Art und Weise; der Modus | n | Le *modalità* di pagamento. | Die *Zahlungsarten*. |
+il modulo online | das Online-Formular | n | Compila il *modulo online*. | Füll das *Online-Formular* aus. |
+la normativa | die Vorschriften | n | La *normativa* europea. | Die EU-*Vorschriften*. |
+l'operazione | der Vorgang, Einsatz | n | Un'*operazione* di polizia. | Ein Polizei*einsatz*. | weiblich (f)
+l'organizzazione | die Organisation | n | Un'*organizzazione* internazionale. | Eine internationale *Organisation*. | weiblich (f)
+il patrimonio | das Vermögen; das Erbe | n | Il *patrimonio* artistico. | Das künstlerische *Erbe*. |
+il percorso | der Weg, die Strecke | n | Un *percorso* di dieci chilometri. | Eine Zehn-Kilometer-*Strecke*. |
+il periodo | der Zeitraum | n | In questo *periodo*. | In dieser *Zeit*. |
+la pianificazione | die Planung | n | Una buona *pianificazione*. | Eine gute *Planung*. |
+la popolazione | die Bevölkerung | n | La *popolazione* invecchia. | Die *Bevölkerung* altert. |
+la pratica sportiva | die sportliche Betätigung | n | Promuovere la *pratica sportiva*. | *Sport* fördern. |
+la presenza | die Anwesenheit | n | Grazie per la *presenza*. | Danke für Ihr *Kommen*. |
+la procedura | das Verfahren | n | Una *procedura* semplice. | Ein einfaches *Verfahren*. |
+la proposta | der Vorschlag | n | Una *proposta* interessante. | Ein interessanter *Vorschlag*. |
+la quota | der Anteil; die Gebühr | n | La *quota* d'iscrizione. | Die Anmelde*gebühr*. |
+il rapporto | der Bericht; das Verhältnis | n | Il *rapporto* annuale. | Der Jahres*bericht*. |
+la realizzazione | die Umsetzung | n | La *realizzazione* del progetto. | Die *Umsetzung* des Projekts. |
+il recupero | die Rückgewinnung; Nachholung | n | Il *recupero* dei dati. | Die Daten*wiederherstellung*. |
+il rendimento | die Leistung | n | Il *rendimento* scolastico. | Die schulische *Leistung*. |
+la rete | das Netz | n | La *rete* ferroviaria. | Das Schienen*netz*. |
+la richiesta | die Nachfrage | n | La *richiesta* è alta. | Die *Nachfrage* ist hoch. |
+la risorsa | die Ressource | n | Le *risorse* naturali. | Die natürlichen *Ressourcen*. |
+il servizio | der Dienst, die Dienstleistung | n | Un *servizio* gratuito. | Ein kostenloser *Service*. |
+la sede legale | der Geschäftssitz | n | La *sede legale* è a Roma. | Der *Geschäftssitz* ist in Rom. |
+la serie | die Reihe | n | Una *serie* di problemi. | Eine *Reihe* von Problemen. |
+il soggetto | das Subjekt; der Akteur | n | I *soggetti* coinvolti. | Die beteiligten *Akteure*. |
+la sostanza | die Substanz; der Stoff | n | Una *sostanza* tossica. | Ein giftiger *Stoff*. |
+lo strumento | das Instrument, Mittel | n | Uno *strumento* utile. | Ein nützliches *Instrument*. |
+la tappa | die Etappe | n | La prima *tappa*. | Die erste *Etappe*. |
+il tasso | die Rate, Quote | n | Il *tasso* di disoccupazione. | Die Arbeitslosen*quote*. |
+la tematica | die Thematik | n | Una *tematica* attuale. | Eine aktuelle *Thematik*. |
+il trattamento | die Behandlung | n | Il *trattamento* dei dati. | Die Daten*verarbeitung*. |
+l'uscita | der Ausgang; die Veröffentlichung | n | L'*uscita* del nuovo album. | Die *Veröffentlichung* des neuen Albums. | weiblich (f)
+la validità | die Gültigkeit | n | La *validità* del documento. | Die *Gültigkeit* des Dokuments. |
+la vicenda | die Angelegenheit, Geschichte | n | Una *vicenda* complicata. | Eine komplizierte *Geschichte*. |
+la visione | die Vision; Sicht | n | Una *visione* del futuro. | Eine *Zukunftsvision*. |
