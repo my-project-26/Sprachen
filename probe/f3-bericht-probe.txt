@@ -1,0 +1,9 @@
+en 161.2s  Ähnlichkeit 0.91  Störanteil 0.03  We ordered a pizza.
+en  64.0s  Ähnlichkeit 0.82  Störanteil 0.13  What's your email address?
+en  33.2s  Ähnlichkeit 0.86  Störanteil 0.07  The car park is behind the station.
+en  40.4s  Ähnlichkeit 0.87  Störanteil 0.07  I'm very busy today.
+en  35.1s  Ähnlichkeit 0.87  Störanteil 0.09  The station is close to the hotel.
+en  39.3s  Ähnlichkeit 0.92  Störanteil 0.00  It's a difficult question.
+en  29.0s  Ähnlichkeit 0.78  Störanteil 0.00  Is it far from here?
+en  32.1s  Ähnlichkeit 0.88  Störanteil 0.05  The bag is very light.
+en: mittlere Ähnlichkeit 0.86
