@@ -42,6 +42,10 @@ VOICES = {
     "hi": "hi-IN-SwaraNeural",
 }
 
+# Auf GitHub: Zwischenstände regelmäßig hochladen (Fortschritt sichtbar, nichts geht verloren)
+PUSH_EVERY_MIN = float(os.environ.get("AUDIO_PUSH_EVERY_MIN", "0") or 0)
+_last_push = time.time()
+
 PARALLEL = int(os.environ.get("AUDIO_PARALLEL", "6"))
 # Maximale Laufzeit in Minuten (für GitHub Actions; danach wird sauber beendet)
 MAX_MIN = float(os.environ.get("AUDIO_MAX_MIN", "0") or 0)
@@ -135,6 +139,31 @@ async def one(text, voice, path, sem, stats):
                 await asyncio.sleep(2 + attempt * 4)
 
 
+def write_index(folder, voice):
+    keys = sorted(f[:-4] for f in os.listdir(folder) if f.endswith(".mp3"))
+    with open(os.path.join(folder, "index.json"), "w", encoding="utf-8") as f:
+        json.dump({"voice": voice, "keys": keys}, f, separators=(",", ":"))
+    return keys
+
+
+def checkpoint(folder, voice, force=False):
+    global _last_push
+    if not PUSH_EVERY_MIN or (not force and time.time() - _last_push < PUSH_EVERY_MIN * 60):
+        return
+    _last_push = time.time()
+    write_index(folder, voice)
+    import subprocess
+
+    sh = lambda *c: subprocess.run(c, cwd=ROOT, check=False)
+    sh("git", "add", "audio")
+    if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=ROOT).returncode == 0:
+        return
+    sh("git", "commit", "-q", "-m", "Sprachaufnahmen (Zwischenstand)")
+    sh("git", "pull", "-q", "--rebase", "origin", "main")
+    sh("git", "push", "-q", "origin", "HEAD:main")
+    print("  ↑ Zwischenstand hochgeladen", flush=True)
+
+
 async def build(arg, deadline):
     lang, _, lv = arg.partition(":")
     levels = set(lv.upper().split(",")) if lv else None
@@ -159,10 +188,9 @@ async def build(arg, deadline):
             break
         await asyncio.gather(*(one(t, voice, p, sem, stats) for t, p in todo[i : i + batch]))
         print(f"  {lang}: {min(i + batch, len(todo))}/{len(todo)}", flush=True)
+        checkpoint(folder, voice)
     # Verzeichnis der vorhandenen Aufnahmen für die App
-    keys = sorted(f[:-4] for f in os.listdir(folder) if f.endswith(".mp3"))
-    with open(os.path.join(folder, "index.json"), "w", encoding="utf-8") as f:
-        json.dump({"voice": voice, "keys": keys}, f, separators=(",", ":"))
+    keys = write_index(folder, voice)
     print(f"{lang}: {stats['ok']} neu, {stats['fail']} Fehler, {len(keys)} gesamt", flush=True)
     return done
 
