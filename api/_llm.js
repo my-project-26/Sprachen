@@ -129,6 +129,9 @@ export function resolveProvider(requested) {
   if (["claude", "gemini", "ollama"].includes(requested)) return requested;
   if (env("ANTHROPIC_API_KEY")) return "claude";
   if (env("GEMINI_API_KEY")) return "gemini";
+  // Auf Vercel gibt es kein Ollama → klare Meldung statt Ollama-Fehler
+  if (env("VERCEL"))
+    throw httpError(500, "Auf dem Server fehlt GEMINI_API_KEY. Vercel → Settings → Environment Variables → GEMINI_API_KEY eintragen, danach Deployments → Redeploy.");
   return "ollama";
 }
 
