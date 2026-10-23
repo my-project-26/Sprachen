@@ -27,7 +27,7 @@ function variant(rec) {
     const code = ROOT.code;
     const base = `${ROOT.base}${code}-${rec}/`;
     const v = (VAR[rec] = { keys: null, base });
-    fetch(`${base}index.json`, { cache: "no-cache" })
+    v.ready = fetch(`${base}index.json`, { cache: "no-cache" })
       .then((r) => (r.ok ? r.json() : null))
       .then((j) => {
         if (j && ROOT.code === code) v.keys = new Set(j.keys || []);
@@ -43,6 +43,10 @@ export function presetRecorded(key) {
   if (!p.rec) return naturalAvailable();
   const v = variant(p.rec);
   return !!(v.keys && v.keys.size);
+}
+// Wartet, bis alle Verzeichnisse der Aufnahmen geladen sind
+export function voicesReady() {
+  return Promise.all([MAIN_P, ...Object.values(VAR).map((v) => v.ready)]).catch(() => {});
 }
 export function preloadVariants() {
   PRESETS.forEach((p) => variant(p.rec));
@@ -62,7 +66,12 @@ export function setNatural(on) {
 export function naturalAvailable() {
   return !!(AUDIO.keys && AUDIO.keys.size);
 }
-async function loadAudioIndex(code, base) {
+let MAIN_P = Promise.resolve();
+function loadAudioIndex(code, base) {
+  MAIN_P = loadAudioIndex2(code, base);
+  return MAIN_P;
+}
+async function loadAudioIndex2(code, base) {
   AUDIO = { code, keys: null, voice: "", base };
   try {
     const r = await fetch(`${base}index.json`, { cache: "no-cache" });

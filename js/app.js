@@ -1667,7 +1667,7 @@ function settingsView() {
       const cur = tts.resolvePreset(s.voicePreset).preset.key;
       return `<label class="voice-opt ${ok ? "" : "na"}">
         <input type="radio" name="vp" value="${p.key}" ${cur === p.key ? "checked" : ""} ${ok ? "" : "disabled"}>
-        <span class="vo-text"><b>${esc(p.label)}</b><small class="muted">${esc(tts.presetHint(p))}${rec ? "" : " · Aufnahmen werden gerade erstellt"}</small></span>
+        <span class="vo-text"><b>${esc(p.label)}</b><small class="muted" data-vhint="${p.key}">${esc(tts.presetHint(p))}${rec ? "" : " · Aufnahmen werden gerade erstellt"}</small></span>
         <button type="button" class="icon-btn small" data-try="${p.key}" ${ok ? "" : "disabled"} aria-label="Probe hören">${ICON.speaker}</button>
       </label>`;
     }).join("")}</div>
@@ -1804,6 +1804,13 @@ function settingsView() {
 
   bind("s-ollama", "ollamaModel");
   bind("s-gkey", "geminiKey", (x) => x.trim());
+  // Stand der Aufnahmen nachtragen, sobald die Verzeichnisse geladen sind
+  tts.voicesReady().then(() =>
+    document.querySelectorAll("[data-vhint]").forEach((el) => {
+      const p = tts.PRESETS.find((x) => x.key === el.dataset.vhint);
+      if (p) el.textContent = tts.presetHint(p) + (tts.presetRecorded(p.key) ? "" : " · Aufnahmen werden gerade erstellt");
+    })
+  );
   const provSel = document.getElementById("s-provider");
   provSel.addEventListener("change", () => {
     st.settings.provider = provSel.value;
