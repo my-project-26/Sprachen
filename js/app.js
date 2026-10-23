@@ -6,6 +6,7 @@ import { storyPrompt, STORY_SYSTEM, extractJson } from "./prompts.js";
 import { callApi, health, normalizeStory, isStaticHost } from "./api.js";
 import * as tts from "./tts.js";
 import { DESIGNS, designKey, applyDesign, skinHome, skinCard } from "./skins.js";
+import * as cloud from "./cloud.js";
 import { LANGS, READY, L, checkAnswer } from "./langs.js";
 
 const $app = document.getElementById("app");
@@ -138,6 +139,7 @@ function progressRing(card) {
 const routes = { home, learn, stories, story, words, add, topics, stats, settings: settingsView };
 
 function render() {
+  if (document.documentElement.classList.contains("is-login")) return;
   tts.stop();
   document.getElementById("toast").classList.remove("show");
   document.querySelectorAll(".sheet-backdrop, .word-pop").forEach((x) => x.remove());
@@ -192,6 +194,7 @@ function home() {
     const d = {
       icon: ICON,
       lang: L(),
+      userName: cloud.userName(),
       dateStr: new Date().toLocaleDateString("de-DE", { weekday: "long", day: "numeric", month: "long" }),
       weekday: new Date().toLocaleDateString("de-DE", { weekday: "long" }),
       total, due: due.length, news: news.length, weak: weakList.length,
@@ -1490,6 +1493,12 @@ function settingsView() {
   $app.innerHTML = `
   <header class="top"><a class="icon-btn plain" href="#/" aria-label="Zurück">${ICON.back}</a>
     <h1 class="h-sm">Einstellungen</h1><span></span></header>
+  ${cloud.currentUser() ? `<section class="card account">
+    <h2>Mein Konto</h2>
+    <p><b>${esc(cloud.userName())}</b><br><span class="small muted">${esc(cloud.currentUser().email || "")}</span></p>
+    <p class="small muted">Dein Fortschritt wird automatisch in deinem Konto gespeichert – auf jedem Gerät, auf dem du dich anmeldest.</p>
+    <button class="btn ghost" id="logoutBtn">Abmelden</button>
+  </section>` : ""}
   <section class="card">
     <h2>Sprache</h2>
     <p class="small muted">Jede Sprache hat ihren eigenen Fortschritt, eigene Geschichten und eine passende Stimme.</p>
@@ -1623,6 +1632,14 @@ function settingsView() {
   document.getElementById("s-ret").addEventListener("input", (e) => (document.getElementById("retv").textContent = Math.round(e.target.value * 100) + " %"));
 
   document.getElementById("testVoice").onclick = () => say(L().hello);
+  const lo = document.getElementById("logoutBtn");
+  if (lo)
+    lo.onclick = async () => {
+      if (!confirm("Wirklich abmelden? Dein Fortschritt bleibt in deinem Konto gespeichert.")) return;
+      lo.disabled = true;
+      lo.textContent = "Wird gespeichert …";
+      await cloud.logout();
+    };
   $app.querySelectorAll("[data-lang]").forEach(
     (b) =>
       (b.onclick = async () => {
@@ -1721,10 +1738,16 @@ function settingsView() {
 }
 
 // ---------- Start ----------
-await S.init();
-tts.setLang(S.lang(), L().tts);
-applyDesign(settings().design);
-render();
+// Mit Konten: erst anmelden, dann den eigenen Fortschritt aus der Cloud laden
+if (await cloud.start()) {
+  await S.init();
+  tts.setLang(S.lang(), L().tts);
+  applyDesign(settings().design);
+  render();
+} else {
+  applyDesign("einfach");
+  cloud.showLogin($app, { offline: !cloud.sdkLoaded() });
+}
 
 if ("serviceWorker" in navigator && location.protocol !== "file:") {
   navigator.serviceWorker.register("sw.js").catch(() => {});

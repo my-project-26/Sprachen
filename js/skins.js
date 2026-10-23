@@ -69,7 +69,7 @@ const HOME = {
       `<${href ? `a href="${href}"` : "button"} class="ef-tile" ${attrs}><span class="ef-tic">${ic}</span><b>${label}</b>${sub ? `<small>${sub}</small>` : ""}</${href ? "a" : "button"}>`;
     return `
     <section class="ef-top">
-      <p>Hallo! 👋</p>
+      <p>Hallo${d.userName ? " " + esc(d.userName) : ""}! 👋</p>
       <a class="ef-set" href="#/settings" aria-label="Einstellungen"><span class="sk-flag">${d.lang.flag}</span>${d.icon.gear}</a>
     </section>
     <h1 class="ef-h1">Du lernst ${esc(d.lang.name)}</h1>

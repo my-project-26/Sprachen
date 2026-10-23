@@ -482,3 +482,29 @@ body[data-view="learn"] .toast { bottom: calc(env(safe-area-inset-bottom) + 24px
 .rd { display: block; font-family: var(--sans); font-size: .95rem; font-weight: 500; color: var(--muted); letter-spacing: .02em; margin: 2px 0 8px; }
 small.rd { font-size: .45em; margin: 4px 0 0; }
 .wp-main .rd { display: inline; font-size: .9rem; margin: 0; }
+
+/* ---------- Anmeldung ---------- */
+.is-login .nav { display: none !important; }
+.login { max-width: 440px; margin: 0 auto; padding: calc(env(safe-area-inset-top) + 24px) 4px 40px; font-family: "Atkinson Hyperlegible", system-ui, sans-serif; font-size: 19px; color: #14213D; }
+.login-head { text-align: center; margin-bottom: 22px; }
+.login-logo { display: grid; place-items: center; width: 76px; height: 76px; margin: 0 auto 10px; border-radius: 22px; background: #1F5BD8; color: #fff; font-size: 2.4rem; font-weight: 700; }
+.login-head h1 { margin: 0; font-size: 2rem; }
+.login-head p { margin: 4px 0 0; color: #4A5670; }
+.login-tabs { display: flex; gap: 4px; padding: 4px; border-radius: 16px; background: #E8EDF5; }
+.login-tabs button { flex: 1; min-height: 52px; border: 0; border-radius: 12px; background: transparent; font: inherit; font-weight: 700; color: #4A5670; cursor: pointer; }
+.login-tabs button.on { background: #fff; color: #14213D; box-shadow: 0 1px 3px rgba(0,0,0,.15); }
+.login-intro { margin: 16px 2px; }
+.login-form { display: flex; flex-direction: column; gap: 14px; }
+.login-form label { display: flex; flex-direction: column; gap: 6px; font-weight: 700; }
+.login-form label small { font-weight: 400; color: #4A5670; }
+.login-form input { width: 100%; min-height: 58px; padding: 0 16px; border: 2px solid #C9D2E1; border-radius: 14px; font: inherit; font-weight: 400; background: #fff; color: #14213D; box-sizing: border-box; }
+.login-form input:focus { outline: 3px solid #F2B705; outline-offset: 1px; border-color: #1F5BD8; }
+.login-pw { position: relative; display: block; }
+.login-pw input { padding-right: 60px; }
+.login-eye { position: absolute; right: 6px; top: 50%; transform: translateY(-50%); width: 48px; height: 48px; border: 0; background: none; font-size: 1.3rem; cursor: pointer; }
+.login-go { min-height: 64px; border: 0; border-radius: 18px; background: #1F5BD8; color: #fff; font: inherit; font-size: 1.25rem; font-weight: 700; cursor: pointer; }
+.login-go:disabled { opacity: .7; }
+.login-link { min-height: 48px; border: 0; background: none; color: #1F5BD8; font: inherit; text-decoration: underline; cursor: pointer; }
+.login-msg { margin: 0; padding: 12px 14px; border-radius: 14px; background: #FDE2E2; color: #8A1C1C; }
+.login-msg.ok { background: #E5F6EC; color: #145C33; }
+.account p { margin: 6px 0; }
