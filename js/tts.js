@@ -128,7 +128,7 @@ export const PRESETS = [
   { key: "clear-m", label: "Klar & deutlich – männlich", hint: "wie eine Navi-Ansage", g: "m", r: 0, pitch: 1.0, rateMul: 1.0 },
   { key: "friend-f", label: "Beste Freundin", hint: "warm, locker, etwas lebhafter", g: "f", r: 0, pitch: 1.12, rateMul: 1.05 },
   { key: "friend-m", label: "Bester Freund", hint: "warm, locker, etwas lebhafter", g: "m", r: 0, pitch: 1.1, rateMul: 1.05 },
-  { key: "strict-f", label: "Strenge Lehrerin", hint: "tiefer, betont langsam", g: "f", r: 1, pitch: 0.85, rateMul: 0.88 },
+  { key: "strict-f", label: "Strenge Lehrerin", hint: "sanft, weich und ganz klar", g: "f", r: 1, pitch: 0.92, rateMul: 0.86, soft: true },
   { key: "strict-m", label: "Strenger Lehrer", hint: "tiefer, betont langsam", g: "m", r: 1, pitch: 0.8, rateMul: 0.88 },
 ];
 
@@ -147,7 +147,8 @@ export function resolvePreset(key) {
 
 // Hinweistext je Sprache (beim Englischen ist der strenge Lehrer britisch)
 export function presetHint(p) {
-  return p.key.startsWith("strict") && LANG.code === "en" ? "britisch, tiefer, betont langsam" : p.hint;
+  if (p.key.startsWith("strict") && LANG.code === "en") return p.soft ? "britisch, sanft, weich und ganz klar" : "britisch, tiefer, betont langsam";
+  return p.hint;
 }
 
 export function presetAvailable(key) {
@@ -170,13 +171,50 @@ export function stepOfRate(rate) {
 }
 
 let lastSpeak = null; // für Tempowechsel während der Wiedergabe
+
+// Sanfte Stimme für Aufnahmen: etwas tiefer und ruhiger, wärmerer Klang, weiche Höhen,
+// leichte Präsenz bei 3 kHz, damit jedes Wort klar bleibt. Läuft über Web Audio.
+let AC = null;
+const SOFT_SLOW = 0.93; // tiefer + langsamer (Tonhöhe wird mit abgesenkt)
+function softChain(a) {
+  try {
+    if (new URL(a.src, location.href).origin !== location.origin) return false; // fremde Quelle → stumm, daher nicht
+    AC = AC || new (window.AudioContext || window.webkitAudioContext)();
+    if (AC.state !== "running") {
+      AC.resume().catch(() => {});
+      return false; // beim ersten Mal ohne Filter; ab dem nächsten Wort sanft
+    }
+    const src = AC.createMediaElementSource(a);
+    const warm = Object.assign(AC.createBiquadFilter(), { type: "lowshelf" });
+    warm.frequency.value = 220;
+    warm.gain.value = 4;
+    const clear = Object.assign(AC.createBiquadFilter(), { type: "peaking" });
+    clear.frequency.value = 3000;
+    clear.Q.value = 0.9;
+    clear.gain.value = 1.5;
+    const soft = Object.assign(AC.createBiquadFilter(), { type: "highshelf" });
+    soft.frequency.value = 7000;
+    soft.gain.value = -7;
+    const comp = AC.createDynamicsCompressor();
+    comp.threshold.value = -26;
+    comp.ratio.value = 3;
+    comp.attack.value = 0.01;
+    comp.release.value = 0.25;
+    const out = AC.createGain();
+    out.gain.value = 1.15;
+    src.connect(warm).connect(clear).connect(soft).connect(comp).connect(out).connect(AC.destination);
+    return true;
+  } catch {
+    return false;
+  }
+}
 const audioRate = (rate) => Math.min(2, Math.max(0.5, rate / 0.95));
 
 // Tempo ändern. Läuft gerade etwas, wird es sofort angepasst (Aufnahme live,
 // Gerätestimme startet neu). Rückgabe: true, wenn gerade etwas lief.
 export function setRate(rate) {
   if (current) {
-    current.playbackRate = audioRate(rate);
+    current.playbackRate = audioRate(rate) * (current.soft ? SOFT_SLOW : 1);
     if (lastSpeak) lastSpeak.opts.rate = rate;
     return true;
   }
@@ -195,8 +233,16 @@ export function speak(text, { rate = 0.95, preset = "clear-f", onend } = {}) {
     const key = audioKey(text);
     if (AUDIO.keys.has(key)) {
       const a = new Audio(`${AUDIO.base}${key}.mp3`);
-      a.playbackRate = audioRate(rate);
-      a.preservesPitch = true;
+      const p = PRESETS.find((x) => x.key === preset);
+      if (p?.soft && softChain(a)) {
+        a.preservesPitch = false;
+        a.webkitPreservesPitch = false;
+        a.soft = true;
+        a.playbackRate = audioRate(rate) * SOFT_SLOW;
+      } else {
+        a.playbackRate = audioRate(rate);
+        a.preservesPitch = true;
+      }
       current = a;
       a.onended = () => {
         current = null;
