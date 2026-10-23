@@ -1660,13 +1660,14 @@ function settingsView() {
   <section class="card">
     <h2>Stimme</h2>
     <label class="check"><input type="checkbox" id="s-natural" ${s.voiceNatural !== false ? "checked" : ""}> Natürliche Stimme (Aufnahmen für alle Wörter und Beispielsätze)</label>
-    <p class="small muted">${tts.naturalAvailable() ? "Aufnahmen sind da. Die Stimmen unten gelten dann nur noch für Geschichten und als Ersatz." : "Für diese Sprache werden die Aufnahmen gerade erstellt – bis dahin liest die Gerätestimme."}</p>
+    <p class="small muted">Wähle, wer dir die Wörter vorliest. Geschichten liest die Stimme deines Geräts.</p>
     <div class="voice-list">${tts.PRESETS.map((p) => {
       const ok = tts.presetAvailable(p.key);
-      const v = tts.resolvePreset(p.key).voice;
+      const rec = tts.presetRecorded(p.key);
+      const cur = tts.resolvePreset(s.voicePreset).preset.key;
       return `<label class="voice-opt ${ok ? "" : "na"}">
-        <input type="radio" name="vp" value="${p.key}" ${s.voicePreset === p.key ? "checked" : ""} ${ok ? "" : "disabled"}>
-        <span class="vo-text"><b>${esc(p.label)}</b><small class="muted">${ok ? esc(tts.presetHint(p)) + (v ? " · " + esc(v.name.replace(/\s*\(.*\)$/, "")) : "") : "auf diesem Gerät keine passende Stimme"}</small></span>
+        <input type="radio" name="vp" value="${p.key}" ${cur === p.key ? "checked" : ""} ${ok ? "" : "disabled"}>
+        <span class="vo-text"><b>${esc(p.label)}</b><small class="muted">${esc(tts.presetHint(p))}${rec ? "" : " · Aufnahmen werden gerade erstellt"}</small></span>
         <button type="button" class="icon-btn small" data-try="${p.key}" ${ok ? "" : "disabled"} aria-label="Probe hören">${ICON.speaker}</button>
       </label>`;
     }).join("")}</div>
@@ -1794,6 +1795,7 @@ function settingsView() {
         if (b.dataset.lang === S.lang()) return;
         await S.setLanguage(b.dataset.lang);
         tts.setLang(S.lang(), L().tts, L().audio);
+  tts.preloadVariants();
         applyDesign(settings().design);
         toast(`${L().flag} Du lernst jetzt ${L().name}`);
         go("#/");
@@ -1890,6 +1892,7 @@ function settingsView() {
 if (await cloud.start()) {
   await S.init();
   tts.setLang(S.lang(), L().tts, L().audio);
+  tts.preloadVariants();
   applyDesign(settings().design);
   render();
 } else {

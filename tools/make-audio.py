@@ -9,6 +9,8 @@ für alle Wörter und Beispielsätze einer Sprache.
   python tools/make-audio.py all         # alle Sprachen mit Wortliste
   python tools/make-audio.py en:A1       # nur Englisch, Niveau A1
   python tools/make-audio.py en:A1,A2 es # Englisch A1+A2, Spanisch komplett
+  python tools/make-audio.py en@m        # Englisch, tiefe Männerstimme (Ordner audio/en-m)
+  python tools/make-audio.py it@f2:A1    # Italienisch A1, verführerische Frauenstimme (it-f2)
 
 Ergebnis: audio/<sprache>/<hash>.mp3 und audio/<sprache>/index.json
 (Liste der vorhandenen Aufnahmen). Bereits vorhandene Dateien werden
@@ -43,6 +45,29 @@ VOICES = {
     "zh": "zh-CN-XiaoxiaoNeural",
     "ko": "ko-KR-SunHiNeural",
     "hi": "hi-IN-SwaraNeural",
+}
+
+# Zusätzliche Stimmen je Sprache: (Stimmen zur Auswahl, Tempo, Tonhöhe).
+# Die erste Stimme, die funktioniert, wird genommen.
+VARIANTS = {
+    # tiefe, warme Männerstimme
+    "m": {
+        "en": ["en-US-AndrewNeural", "en-US-ChristopherNeural", "en-US-GuyNeural"],
+        "es": ["es-ES-AlvaroNeural"],
+        "it": ["it-IT-DiegoNeural", "it-IT-GiuseppeMultilingualNeural"],
+        "fr": ["fr-FR-HenriNeural"],
+        "_rate": "-6%",
+        "_pitch": "-8Hz",
+    },
+    # sanfte, verführerische Frauenstimme
+    "f2": {
+        "en": ["en-US-EmmaNeural", "en-US-AriaNeural", "en-GB-SoniaNeural"],
+        "es": ["es-ES-XimenaNeural", "es-MX-DaliaNeural"],
+        "it": ["it-IT-IsabellaNeural", "it-IT-ElsaNeural"],
+        "fr": ["fr-FR-VivienneMultilingualNeural", "fr-FR-EloiseNeural"],
+        "_rate": "-10%",
+        "_pitch": "-6Hz",
+    },
 }
 
 # Auf GitHub: Zwischenstände regelmäßig hochladen (Fortschritt sichtbar, nichts geht verloren)
@@ -123,12 +148,12 @@ def texts_for(lang, levels=None):
     return uniq
 
 
-async def one(text, voice, path, sem, stats):
+async def one(text, voice, path, sem, stats, rate="+0%", pitch="+0Hz"):
     async with sem:
         for attempt in range(4):
             try:
                 tmp = path + ".part"
-                await edge_tts.Communicate(text, voice).save(tmp)
+                await edge_tts.Communicate(text, voice, rate=rate, pitch=pitch).save(tmp)
                 if os.path.getsize(tmp) < 500:
                     raise RuntimeError("leere Aufnahme")
                 os.replace(tmp, path)
@@ -167,34 +192,56 @@ def checkpoint(folder, voice, force=False):
     print("  ↑ Zwischenstand hochgeladen", flush=True)
 
 
+async def pick_voice(candidates, rate, pitch):
+    """Erste Stimme aus der Liste, die wirklich eine Aufnahme liefert."""
+    for v in candidates:
+        try:
+            got = b""
+            async for c in edge_tts.Communicate("Hello", v, rate=rate, pitch=pitch).stream():
+                if c["type"] == "audio":
+                    got += c["data"]
+            if len(got) > 500:
+                return v
+        except Exception as e:
+            print(f"  Stimme {v} geht nicht: {e}", flush=True)
+    return None
+
+
 async def build(arg, deadline):
-    lang, _, lv = arg.partition(":")
+    spec, _, lv = arg.partition(":")
+    lang, _, var = spec.partition("@")
     levels = set(lv.upper().split(",")) if lv else None
-    voice = VOICES.get(lang)
+    rate, pitch = "+0%", "+0Hz"
+    if var:
+        cfg = VARIANTS.get(var, {})
+        rate, pitch = cfg.get("_rate", rate), cfg.get("_pitch", pitch)
+        voice = await pick_voice(cfg.get(lang, []), rate, pitch)
+    else:
+        voice = VOICES.get(lang)
     texts = texts_for(lang, levels)
     if not voice or not texts:
-        print(f"{lang}: keine Wortliste/Stimme – übersprungen")
+        print(f"{spec}: keine Wortliste/Stimme – übersprungen")
         return True
-    folder = os.path.join(AUDIO_DIR, lang)
+    folder = os.path.join(AUDIO_DIR, f"{lang}-{var}" if var else lang)
     os.makedirs(folder, exist_ok=True)
     todo = [(t, os.path.join(folder, audio_key(t) + ".mp3")) for t in texts]
     todo = [(t, p) for t, p in todo if not os.path.exists(p)]
-    print(f"{lang}: {len(texts)} Texte, {len(todo)} fehlen noch ({voice})", flush=True)
+    print(f"{spec}: {len(texts)} Texte, {len(todo)} fehlen noch ({voice} {rate} {pitch})", flush=True)
     sem = asyncio.Semaphore(PARALLEL)
     stats = {"ok": 0, "fail": 0}
     done = True
     batch = 200
     for i in range(0, len(todo), batch):
         if deadline and time.time() > deadline:
-            print(f"{lang}: Zeitlimit erreicht – Rest beim nächsten Lauf", flush=True)
+            print(f"{spec}: Zeitlimit erreicht – Rest beim nächsten Lauf", flush=True)
             done = False
             break
-        await asyncio.gather(*(one(t, voice, p, sem, stats) for t, p in todo[i : i + batch]))
-        print(f"  {lang}: {min(i + batch, len(todo))}/{len(todo)}", flush=True)
+        await asyncio.gather(*(one(t, voice, p, sem, stats, rate, pitch) for t, p in todo[i : i + batch]))
+        print(f"  {spec}: {min(i + batch, len(todo))}/{len(todo)}", flush=True)
         checkpoint(folder, voice)
     # Verzeichnis der vorhandenen Aufnahmen für die App
     keys = write_index(folder, voice)
-    print(f"{lang}: {stats['ok']} neu, {stats['fail']} Fehler, {len(keys)} gesamt", flush=True)
+    print(f"{spec}: {stats['ok']} neu, {stats['fail']} Fehler, {len(keys)} gesamt", flush=True)
     return done
 
 

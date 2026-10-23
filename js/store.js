@@ -19,6 +19,9 @@ function readGlobal() {
         g.design = "award";
         g.designV = 3;
       }
+      // entfernte Stimm-Profile auf die neuen umstellen
+      const VP = { "clear-f": "friend-f", "clear-m": "deep-m", "friend-m": "deep-m", "strict-m": "deep-m" };
+      if (VP[g.voicePreset]) g.voicePreset = VP[g.voicePreset];
       return g;
     }
     // Umstieg: bisher standen alle Einstellungen im englischen Speicher
@@ -42,7 +45,7 @@ export const DEFAULT_SETTINGS = {
   voiceRate: 0.95,
   design: "award", // award | einfach | glas | bordkarte | heft
   designV: 3,
-  voicePreset: "clear-f", // clear-f/m, friend-f/m, strict-f/m
+  voicePreset: "friend-f", // friend-f, sexy-f, deep-m, strict-f
   apiBase: "",
   appSecret: "",
   typeAnswer: false,

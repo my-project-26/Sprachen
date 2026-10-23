@@ -1,9 +1,8 @@
 // Sprachausgabe über die im Browser eingebaute Stimme (kostenlos, offline auf iOS/macOS)
 //
 // Statt einer langen Liste aller Systemstimmen (inkl. Spaßstimmen wie „Orgel“ oder
-// „Glocken“) gibt es 6 Stimm-Profile: klar, wie ein Freund, strenger Lehrer –
-// jeweils weiblich und männlich. Jedes Profil sucht sich die beste passende
-// Stimme des Geräts und passt Tonhöhe und Tempo an.
+// „Glocken“) gibt es wenige Stimm-Profile. Mit Aufnahmen klingen sie natürlich;
+// ohne Aufnahme sucht sich jedes Profil die beste passende Gerätestimme.
 
 const synth = typeof window !== "undefined" ? window.speechSynthesis : null;
 let voices = [];
@@ -14,7 +13,39 @@ export function setLang(code, tts, audioBase) {
   loadVoices();
   // Aufnahmen: Standard im Ordner audio/<sprache>/ dieser Website; weitere Sprachen
   // liegen in eigenen Repos (z. B. /audio-it/it/), weil GitHub Pages pro Repo ~1 GB erlaubt.
-  loadAudioIndex(code, `${audioBase || "audio/"}${code}/`);
+  ROOT = { code, base: audioBase || "audio/" };
+  VAR = {};
+  loadAudioIndex(code, `${ROOT.base}${code}/`);
+}
+
+// Weitere Stimmen als eigene Aufnahmen: audio/<sprache>-m/ (tief, männlich), <sprache>-f2/ (sanft, weiblich)
+let ROOT = { code: "en", base: "audio/" };
+let VAR = {}; // rec → { keys:Set|null, base }
+function variant(rec) {
+  if (!rec) return null;
+  if (!VAR[rec]) {
+    const code = ROOT.code;
+    const base = `${ROOT.base}${code}-${rec}/`;
+    const v = (VAR[rec] = { keys: null, base });
+    fetch(`${base}index.json`, { cache: "no-cache" })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((j) => {
+        if (j && ROOT.code === code) v.keys = new Set(j.keys || []);
+      })
+      .catch(() => {});
+  }
+  return VAR[rec];
+}
+// Für die Einstellungen: Gibt es für dieses Profil schon eigene Aufnahmen?
+export function presetRecorded(key) {
+  const p = PRESETS.find((x) => x.key === key);
+  if (!p) return false;
+  if (!p.rec) return naturalAvailable();
+  const v = variant(p.rec);
+  return !!(v.keys && v.keys.size);
+}
+export function preloadVariants() {
+  PRESETS.forEach((p) => variant(p.rec));
 }
 
 // ---------- Natürliche Stimme: fertige MP3-Aufnahmen (audio/<sprache>/) ----------
@@ -122,19 +153,20 @@ function pick(g, langPref, avoid) {
   return [...list].sort((a, b) => score(b) - score(a))[0];
 }
 
-// Die 6 Stimm-Profile (r: 0 = Hauptregion, 1 = zweite Region, z. B. britisch)
+// Stimm-Profile. rec = eigener Aufnahme-Satz ("" = Standardaufnahmen), sonst Gerätestimme als Ersatz
 export const PRESETS = [
-  { key: "clear-f", label: "Klar & deutlich – weiblich", hint: "wie eine Navi-Ansage", g: "f", r: 0, pitch: 1.0, rateMul: 1.0 },
-  { key: "clear-m", label: "Klar & deutlich – männlich", hint: "wie eine Navi-Ansage", g: "m", r: 0, pitch: 1.0, rateMul: 1.0 },
-  { key: "friend-f", label: "Beste Freundin", hint: "warm, locker, etwas lebhafter", g: "f", r: 0, pitch: 1.12, rateMul: 1.05 },
-  { key: "friend-m", label: "Bester Freund", hint: "warm, locker, etwas lebhafter", g: "m", r: 0, pitch: 1.1, rateMul: 1.05 },
-  { key: "strict-f", label: "Strenge Lehrerin", hint: "sanft, weich und ganz klar", g: "f", r: 1, pitch: 0.92, rateMul: 0.86, soft: true },
-  { key: "strict-m", label: "Strenger Lehrer", hint: "tiefer, betont langsam", g: "m", r: 1, pitch: 0.8, rateMul: 0.88 },
+  { key: "friend-f", label: "Beste Freundin", hint: "natürlich, freundlich und klar", g: "f", r: 0, pitch: 1.05, rateMul: 1.0, rec: "" },
+  { key: "sexy-f", label: "Verführerische Frauenstimme", hint: "sanft, weich, ruhig und sehr klar", g: "f", r: 0, pitch: 0.92, rateMul: 0.9, rec: "f2" },
+  { key: "deep-m", label: "Tiefe Männerstimme", hint: "warm, tief und ruhig", g: "m", r: 0, pitch: 0.82, rateMul: 0.92, rec: "m" },
+  { key: "strict-f", label: "Strenge Lehrerin", hint: "sanft, weich und ganz klar", g: "f", r: 1, pitch: 0.92, rateMul: 0.86, soft: true, rec: "" },
 ];
+// Alte, entfernte Profile → neue
+export const PRESET_MAP = { "clear-f": "friend-f", "clear-m": "deep-m", "friend-m": "deep-m", "strict-m": "deep-m" };
 
 // Liefert für ein Profil die Stimme dieses Geräts (oder null, wenn keine passt)
 const region = (r) => LANG.tts[r] || LANG.tts[0];
 export function resolvePreset(key) {
+  key = PRESET_MAP[key] || key;
   const p = PRESETS.find((x) => x.key === key) || PRESETS[0];
   let voice = pick(p.g, region(p.r));
   // Freund/in: möglichst eine andere Stimme als „klar“, damit sie sich unterscheiden
@@ -147,12 +179,12 @@ export function resolvePreset(key) {
 
 // Hinweistext je Sprache (beim Englischen ist der strenge Lehrer britisch)
 export function presetHint(p) {
-  if (p.key.startsWith("strict") && LANG.code === "en") return p.soft ? "britisch, sanft, weich und ganz klar" : "britisch, tiefer, betont langsam";
   return p.hint;
 }
 
 export function presetAvailable(key) {
-  return !!resolvePreset(key).voice;
+  const p = resolvePreset(key).preset;
+  return p.rec !== undefined || !!resolvePreset(key).voice;
 }
 
 // Drei Tempostufen – überall gleich (Lernen, Wörterliste, Geschichten, Einstellungen).
@@ -229,11 +261,30 @@ export function speak(text, { rate = 0.95, preset = "clear-f", onend } = {}) {
   lastSpeak = { text, opts: { rate, preset, onend } };
   stopAudio();
   if (synth) synth.cancel();
+  const p = resolvePreset(preset).preset;
+  const v = natural ? variant(p.rec) : null;
+  const key = audioKey(text);
+  if (v && v.keys && v.keys.has(key)) {
+    const a = new Audio(`${v.base}${key}.mp3`);
+    a.playbackRate = audioRate(rate);
+    a.preservesPitch = true;
+    current = a;
+    a.onended = () => {
+      current = null;
+      onend && onend();
+    };
+    a.onerror = () => {
+      current = null;
+      speakDevice(text, { rate, preset, onend });
+    };
+    a.play().catch(() => {
+      if (current === a) a.onerror();
+    });
+    return;
+  }
   if (natural && AUDIO.keys) {
-    const key = audioKey(text);
     if (AUDIO.keys.has(key)) {
       const a = new Audio(`${AUDIO.base}${key}.mp3`);
-      const p = PRESETS.find((x) => x.key === preset);
       if (p?.soft && softChain(a)) {
         a.preservesPitch = false;
         a.webkitPreservesPitch = false;
