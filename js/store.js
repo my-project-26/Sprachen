@@ -20,7 +20,7 @@ function readGlobal() {
         g.designV = 3;
       }
       // entfernte Stimm-Profile auf die neuen umstellen
-      const VP = { "clear-f": "friend-f", "clear-m": "deep-m", "friend-m": "deep-m", "strict-m": "deep-m" };
+      const VP = { "clear-f": "friend-f", "clear-m": "mann1", "friend-m": "mann1", "strict-m": "mann1", "deep-m": "mann1", "sexy-f": "entspannt", "strict-f": "entspannt" };
       if (VP[g.voicePreset]) g.voicePreset = VP[g.voicePreset];
       return g;
     }
