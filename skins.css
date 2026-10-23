@@ -448,3 +448,37 @@ html:root[data-style="award"][data-theme="dark"] {
 html[data-style="award"] .aw-grades .grade.aw-btn.g1 { background: var(--coral); color: #fff; }
 html[data-style="award"] .aw-grades .grade.aw-btn.g2 { background: var(--sun); color: #3A2A00; }
 html[data-style="award"] .aw-grades .grade.aw-btn.g3 { background: var(--mint); color: #fff; }
+/* Award: kompakte Lernkarte – alles auf einen Bildschirm */
+[data-style="award"] .sk-learn .session-top { margin-bottom: 4px; }
+.aw-card { margin-top: 4px; padding: 14px 16px 14px; border-width: 4px; border-radius: 24px; }
+.aw-tag { padding: 3px 10px; font-size: .72rem; }
+.aw-q { margin-top: 6px; font-size: .85rem; }
+.aw-de { font-size: 1.6rem; }
+.aw-en { margin-top: 6px; padding: 3px 14px; font-size: 1.5rem; border-radius: 14px; box-shadow: 0 3px 0 var(--mint-d); }
+.aw-ex { margin-top: 10px; font-size: .92rem; line-height: 1.4; }
+.aw-card .typed { margin: 6px 0 0; font-size: .9rem; }
+.aw-card .note { margin: 8px 0 0; font-size: .85rem; }
+.aw-actions { gap: 8px; margin-top: 12px; }
+.aw-row.three { grid-template-columns: 1fr 1fr 1.25fr; }
+.aw-row .mic-block { display: contents; }
+.aw-row .mic-btn { min-height: 44px; padding: 0 10px; justify-content: center; border-width: 2px; border-radius: 16px; font-size: .92rem; box-shadow: 0 4px 0 var(--accent-soft); }
+.aw-row .mic-res { grid-column: 1 / -1; margin: 0; }
+.aw-row .mic-res:empty { display: none; }
+.aw-chip { min-height: 44px; padding: 0 10px; font-size: .92rem; }
+.aw-actions .speed button { min-height: 36px; font-size: .88rem; }
+.aw-ask { margin: 4px 0 0; font-size: 1.05rem; }
+.aw-actions .grade.aw-btn { min-height: 58px; font-size: 1.1rem; border-radius: 16px; }
+.aw-actions .grade.aw-btn small { font-size: .72rem; }
+.aw-actions .known-btn { min-height: 40px; padding: 6px 12px; font-size: .85rem; }
+.aw-btn.big { min-height: 60px; font-size: 1.2rem; }
+/* sehr niedrige Bildschirme (kleine Handys, Safari mit Leisten) */
+@media (max-height: 760px) {
+  .aw-card { padding: 10px 14px; }
+  .aw-de { font-size: 1.4rem; }
+  .aw-en { font-size: 1.3rem; }
+  .aw-ex { margin-top: 6px; font-size: .86rem; }
+  .aw-actions { gap: 6px; margin-top: 8px; }
+  .aw-actions .grade.aw-btn { min-height: 52px; }
+}
+.aw-row.three { grid-template-columns: .8fr .8fr 1.4fr; gap: 6px; }
+.aw-row .aw-chip, .aw-row .mic-btn { white-space: nowrap; font-size: .86rem; gap: 4px; }

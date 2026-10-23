@@ -264,12 +264,12 @@ const CARD = {
         ${x.revealed ? x.ui.note : x.ui.hint + x.ui.input}
       </article>`;
     const actions = x.revealed
-      ? `<div class="aw-row">
+      ? `<div class="aw-row ${x.ui.mic ? "three" : ""}">
            <button class="aw-chip" data-say="${esc(c.en)}">🔊 Wort</button>
            ${c.ex ? `<button class="aw-chip" data-say="${esc(x.exPlain)}">🔊 Satz</button>` : ""}
+           ${x.ui.mic}
          </div>
          ${x.ui.speed}
-         ${x.ui.mic}
          <p class="aw-ask">Wusstest du es?</p>
          <div class="aw-grades">
            <button class="grade g1 aw-btn coral" data-g="1"><span>Nein</span><small>gleich nochmal</small></button>
