@@ -42,7 +42,7 @@ export const DEFAULT_SETTINGS = {
   retention: 0.9,
   startLevel: "B1",
   storyLevel: "B2",
-  voiceRate: 0.78,
+  voiceRate: 0.95,
   design: "award", // award | einfach | glas | bordkarte | heft
   designV: 3,
   voicePreset: "frau", // frau (Achernar), mann (Algenib)

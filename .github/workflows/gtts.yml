@@ -10,6 +10,9 @@ on:
         default: "f1 m3"
       lang:
         default: "en"
+      slow:
+        description: "Zusätzlich langsam gesprochene Fassung (Ordner …-slow)"
+        default: "no"
 permissions:
   contents: write
 concurrency:
@@ -33,6 +36,7 @@ jobs:
           L=${{ inputs.lang }}
           for v in ${{ inputs.voices }}; do
             D=$(python3 -c "print({'f1':'achernar','f2':'sulafat','f3':'gacrux','m2':'charon','m3':'algenib'}['$v'])")
+            if [ "${{ inputs.slow }}" = "yes" ]; then D=$D-slow; export GTTS_RATE=0.72; fi
             python3 tools/gtts.py run $v $L audio/$L-$D
             python3 tools/write-index.py audio $L
             git add audio/$L-$D audio/$L-*/index.json voices/gtts-usage.json

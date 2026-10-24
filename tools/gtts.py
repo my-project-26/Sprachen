@@ -44,7 +44,7 @@ def synth(text, lang, voice):
     body = {
         "input": {"text": text},
         "voice": {"languageCode": LOCALE[lang], "name": f"{LOCALE[lang]}-Chirp3-HD-{voice}"},
-        "audioConfig": {"audioEncoding": "MP3", "sampleRateHertz": 24000},
+        "audioConfig": {"audioEncoding": "MP3", "sampleRateHertz": 24000, "speakingRate": float(os.environ.get("GTTS_RATE", "1.0"))},
     }
     req = urllib.request.Request(
         f"https://texttospeech.googleapis.com/v1/text:synthesize?key={KEY}",

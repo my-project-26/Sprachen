@@ -54,7 +54,7 @@ export function voicesReady() {
   return Promise.all([MAIN_P, ...Object.values(VAR).map((v) => v.ready)]).catch(() => {});
 }
 export function preloadVariants() {
-  PRESETS.forEach((p) => variant(p.rec));
+  PRESETS.forEach((p) => (variant(p.rec), p.rec && variant(p.rec + "-slow")));
 }
 
 // ---------- Natürliche Stimme: fertige MP3-Aufnahmen (audio/<sprache>/) ----------
@@ -238,9 +238,9 @@ export function presetAvailable(key) {
 // Drei Tempostufen – überall gleich (Lernen, Wörterliste, Geschichten, Einstellungen).
 // Bei Aufnahmen: Faktor zur Originalgeschwindigkeit (0.95 = Original).
 export const RATE_STEPS = [
-  { key: "slow", rate: 0.6, label: "Langsam" }, // wirklich langsam: Anfänger hören jedes Wort
-  { key: "mid", rate: 0.78, label: "Mittel" },
-  { key: "fast", rate: 0.95, label: "Schnell" }, // natürliches Sprechtempo
+  { key: "slow", rate: 0.7, label: "Langsam" }, // eigene, langsam gesprochene Aufnahmen (sonst gestreckt)
+  { key: "mid", rate: 0.95, label: "Mittel" }, // Originaltempo der Aufnahme – unverändert, beste Tonqualität
+  { key: "fast", rate: 1.15, label: "Schnell" },
 ];
 export function stepOfRate(rate) {
   let best = 1;
@@ -313,6 +313,24 @@ export function speak(text, { rate = 0.95, preset = "clear-f", onend } = {}) {
   const p = resolvePreset(preset).preset;
   const v = natural ? variant(p.rec) : null;
   const key = audioKey(text);
+  // Langsam: wenn vorhanden, eigens langsam gesprochene Aufnahme in Originaltempo (kein Strecken → kein Scheppern)
+  const vs = natural && p.rec && rate < 0.85 ? variant(p.rec + "-slow") : null;
+  if (vs && vs.keys && vs.keys.has(key)) {
+    const a = new Audio(`${vs.base}${key}.mp3`);
+    current = a;
+    a.onended = () => {
+      current = null;
+      onend && onend();
+    };
+    a.onerror = () => {
+      current = null;
+      speakDevice(text, { rate, preset, onend });
+    };
+    a.play().catch(() => {
+      if (current === a) a.onerror();
+    });
+    return;
+  }
   if (v && v.keys && v.keys.has(key)) {
     const a = new Audio(`${v.base}${key}.mp3`);
     a.playbackRate = audioRate(rate);
