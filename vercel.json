@@ -1,5 +1,8 @@
 {
   "functions": {
-    "api/*.js": { "maxDuration": 60 }
-  }
+    "api/*.js": {
+      "maxDuration": 60
+    }
+  },
+  "ignoreCommand": "git diff --quiet HEAD^ HEAD -- api js/prompts.js js/langs.js vercel.json package.json"
 }

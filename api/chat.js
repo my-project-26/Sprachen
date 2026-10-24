@@ -4,6 +4,13 @@ import { chatSystem, chatTranscript, saySystem, extractJson } from "../js/prompt
 import { langName } from "../js/langs.js";
 
 export default wrap(async (req, res) => {
+  // Selbsttest im Browser: /api/chat → kurze Antwort der KI mit Zeitmessung
+  if (req.method === "GET") {
+    const t0 = Date.now();
+    const sys = chatSystem({ scenario: "Casual small talk", level: "A2", lang: "English" });
+    const d = extractJson(await callLLM(providerFrom({}), sys, chatTranscript([]), 1000));
+    return send(res, 200, { ok: true, sekunden: (Date.now() - t0) / 1000, antwort: d.reply, vorschlaege: d.suggestions });
+  }
   if (req.method !== "POST") throw httpError(405, "Nur POST erlaubt");
   checkAuth(req);
   const body = await readBody(req);

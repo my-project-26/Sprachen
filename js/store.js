@@ -42,7 +42,7 @@ export const DEFAULT_SETTINGS = {
   retention: 0.9,
   startLevel: "B1",
   storyLevel: "B2",
-  voiceRate: 0.95,
+  voiceRate: 0.78,
   design: "award", // award | einfach | glas | bordkarte | heft
   designV: 3,
   voicePreset: "frau2", // frau2 (eigene Stimme), friend-f (Standard)

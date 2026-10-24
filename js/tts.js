@@ -235,9 +235,9 @@ export function presetAvailable(key) {
 // Drei Tempostufen – überall gleich (Lernen, Wörterliste, Geschichten, Einstellungen).
 // Bei Aufnahmen: Faktor zur Originalgeschwindigkeit (0.95 = Original).
 export const RATE_STEPS = [
-  { key: "slow", rate: 0.7, label: "Langsam" },
-  { key: "mid", rate: 0.95, label: "Mittel" },
-  { key: "fast", rate: 1.25, label: "Schnell" },
+  { key: "slow", rate: 0.6, label: "Langsam" }, // wirklich langsam: Anfänger hören jedes Wort
+  { key: "mid", rate: 0.78, label: "Mittel" },
+  { key: "fast", rate: 0.95, label: "Schnell" }, // natürliches Sprechtempo
 ];
 export function stepOfRate(rate) {
   let best = 1;
