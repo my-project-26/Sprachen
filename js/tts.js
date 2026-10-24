@@ -170,10 +170,10 @@ function pick(g, langPref, avoid) {
 // Stimm-Profile. rec = eigener Aufnahme-Satz ("" = Standardaufnahmen), sonst Gerätestimme als Ersatz
 // sample = Hörprobe der Stimme (die Demo, aus der die Aufnahmen geklont werden)
 export const PRESETS = [
-  { key: "frau2", label: "Frau 2 – warm und lebendig", hint: "freundlich, entspannt, sehr klar", g: "f", r: 0, pitch: 1.0, rateMul: 1.0, rec: "frau2", sample: "f2" },
-  { key: "frau3", label: "Frau 3 – rau und rauchig", hint: "markant, cool, klar", g: "f", r: 0, pitch: 0.95, rateMul: 1.0, rec: "frau3", sample: "f3" },
-  { key: "mann2", label: "Mann 2 – tief und ruhig", hint: "warm, tief, entspannt", g: "m", r: 0, pitch: 0.85, rateMul: 1.0, rec: "mann2", sample: "m2" },
-  { key: "mann3", label: "Mann 3 – sehr rau", hint: "kräftig, rau, energisch", g: "m", r: 0, pitch: 0.85, rateMul: 1.0, rec: "mann3", sample: "m3" },
+  { key: "frau2", label: "Frau 2 – warm und lebendig", hint: "freundlich, entspannt, sehr klar", g: "f", r: 0, pitch: 1.0, rateMul: 1.0, rec: "sulafat", sample: "f2" },
+  { key: "frau3", label: "Frau 3 – rau und rauchig", hint: "markant, cool, klar", g: "f", r: 0, pitch: 0.95, rateMul: 1.0, rec: "gacrux", sample: "f3" },
+  { key: "mann2", label: "Mann 2 – tief und ruhig", hint: "warm, tief, entspannt", g: "m", r: 0, pitch: 0.85, rateMul: 1.0, rec: "charon", sample: "m2" },
+  { key: "mann3", label: "Mann 3 – sehr rau", hint: "kräftig, rau, energisch", g: "m", r: 0, pitch: 0.85, rateMul: 1.0, rec: "algenib", sample: "m3" },
   { key: "friend-f", label: "Standardstimme", hint: "natürlich und klar", g: "f", r: 0, pitch: 1.05, rateMul: 1.0, rec: "" },
 ];
 // Alte, entfernte Profile → neue
