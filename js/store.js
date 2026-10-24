@@ -20,7 +20,7 @@ function readGlobal() {
         g.designV = 3;
       }
       // entfernte Stimm-Profile auf die neuen umstellen
-      const VP = { "clear-f": "frau2", "clear-m": "mann2", "friend-m": "mann2", "strict-m": "mann2", "deep-m": "mann2", "sexy-f": "frau2", "strict-f": "frau2", rauer: "frau3", entspannt: "frau2", mann1: "mann2" };
+      const VP = { "clear-f": "frau", "clear-m": "mann", "friend-m": "mann", "strict-m": "mann", "deep-m": "mann", "sexy-f": "frau", "strict-f": "frau", rauer: "frau", entspannt: "frau", mann1: "mann", mann2: "mann", mann3: "mann", frau2: "frau", frau3: "frau" };
       if (VP[g.voicePreset]) g.voicePreset = VP[g.voicePreset];
       return g;
     }
@@ -45,7 +45,7 @@ export const DEFAULT_SETTINGS = {
   voiceRate: 0.78,
   design: "award", // award | einfach | glas | bordkarte | heft
   designV: 3,
-  voicePreset: "frau2", // frau2 (eigene Stimme), friend-f (Standard)
+  voicePreset: "frau", // frau (Achernar), mann (Algenib)
   apiBase: "",
   appSecret: "",
   typeAnswer: false,

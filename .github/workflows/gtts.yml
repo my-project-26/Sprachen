@@ -7,7 +7,7 @@ on:
     inputs:
       voices:
         description: "Stimmen, z. B. f2 f3 m2 m3"
-        default: "f2 f3 m2 m3"
+        default: "f1 m3"
       lang:
         default: "en"
 permissions:
@@ -32,7 +32,7 @@ jobs:
           git config user.name "wortwerk-bot"; git config user.email "actions@users.noreply.github.com"
           L=${{ inputs.lang }}
           for v in ${{ inputs.voices }}; do
-            D=$(python3 -c "print({'f2':'sulafat','f3':'gacrux','m2':'charon','m3':'algenib'}['$v'])")
+            D=$(python3 -c "print({'f1':'achernar','f2':'sulafat','f3':'gacrux','m2':'charon','m3':'algenib'}['$v'])")
             python3 tools/gtts.py run $v $L audio/$L-$D
             python3 tools/write-index.py audio $L
             git add audio/$L-$D audio/$L-*/index.json voices/gtts-usage.json

@@ -170,14 +170,12 @@ function pick(g, langPref, avoid) {
 // Stimm-Profile. rec = eigener Aufnahme-Satz ("" = Standardaufnahmen), sonst Gerätestimme als Ersatz
 // sample = Hörprobe der Stimme (die Demo, aus der die Aufnahmen geklont werden)
 export const PRESETS = [
-  { key: "frau2", label: "Frau 2 – warm und lebendig", hint: "freundlich, entspannt, sehr klar", g: "f", r: 0, pitch: 1.0, rateMul: 1.0, rec: "sulafat", sample: "f2" },
-  { key: "frau3", label: "Frau 3 – rau und rauchig", hint: "markant, cool, klar", g: "f", r: 0, pitch: 0.95, rateMul: 1.0, rec: "gacrux", sample: "f3" },
-  { key: "mann2", label: "Mann 2 – tief und ruhig", hint: "warm, tief, entspannt", g: "m", r: 0, pitch: 0.85, rateMul: 1.0, rec: "charon", sample: "m2" },
-  { key: "mann3", label: "Mann 3 – sehr rau", hint: "kräftig, rau, energisch", g: "m", r: 0, pitch: 0.85, rateMul: 1.0, rec: "algenib", sample: "m3" },
+  { key: "frau", label: "Frau – sanft und klar", hint: "ruhig, freundlich, gut verständlich", g: "f", r: 0, pitch: 1.0, rateMul: 1.0, rec: "achernar" },
+  { key: "mann", label: "Mann – rau und kräftig", hint: "markant, tief, energisch", g: "m", r: 0, pitch: 0.85, rateMul: 1.0, rec: "algenib" },
   { key: "friend-f", label: "Standardstimme", hint: "natürlich und klar", g: "f", r: 0, pitch: 1.05, rateMul: 1.0, rec: "" },
 ];
 // Alte, entfernte Profile → neue
-export const PRESET_MAP = { "clear-f": "frau2", "clear-m": "mann2", "friend-m": "mann2", "strict-m": "mann2", "deep-m": "mann2", "sexy-f": "frau2", "strict-f": "frau2", rauer: "frau3", entspannt: "frau2", mann1: "mann2" };
+export const PRESET_MAP = { "clear-f": "frau", "clear-m": "mann", "friend-m": "mann", "strict-m": "mann", "deep-m": "mann", "sexy-f": "frau", "strict-f": "frau", rauer: "frau", entspannt: "frau", mann1: "mann", mann2: "mann", mann3: "mann", frau2: "frau", frau3: "frau" };
 
 // Wie weit sind die Aufnahmen einer Stimme? (0–1, gemessen an den Standardaufnahmen)
 export function presetProgress(key) {

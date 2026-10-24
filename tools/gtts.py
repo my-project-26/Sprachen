@@ -17,7 +17,7 @@ clone = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(clone)
 texts_for, audio_key = clone.texts_for, clone.audio_key
 
-VOICES = {"f2": "Sulafat", "f3": "Gacrux", "m2": "Charon", "m3": "Algenib"}
+VOICES = {"f1": "Achernar", "f2": "Sulafat", "f3": "Gacrux", "m2": "Charon", "m3": "Algenib"}
 LOCALE = {"en": "en-US", "it": "it-IT", "es": "es-ES", "fr": "fr-FR"}
 KEY = os.environ.get("GOOGLE_TTS_KEY", "")
 CAP = int(os.environ.get("GTTS_CAP", "300000"))
