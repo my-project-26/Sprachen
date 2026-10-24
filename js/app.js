@@ -1668,12 +1668,12 @@ function settingsView() {
     <h2>Test-Funktionen</h2>
     <label class="check"><input type="checkbox" id="s-chatv2" ${s.chatV2 !== false ? "checked" : ""}> Neues Gespräch (Test): Antwortvorschläge, „Sag es auf Deutsch“, Ziel und Auswertung</label>
     <p class="small muted">Ausschalten = das bisherige Gespräch.</p>
-    <p class="small muted">App-Version 41</p>
+    <p class="small muted">App-Version 42</p>
   </section>
   <section class="card">
     <h2>Stimme</h2>
     <label class="check"><input type="checkbox" id="s-natural" ${s.voiceNatural !== false ? "checked" : ""}> Natürliche Stimme (Aufnahmen für alle Wörter und Beispielsätze)</label>
-    <p class="small muted">Wähle, wer dir die Wörter vorliest. Geschichten liest die Stimme deines Geräts.</p>
+    <p class="small muted">Wähle, wer dir Wörter und Beispielsätze vorliest. Gespräche und Geschichten liest eine natürliche Standardstimme.</p>
     <div class="voice-list">${tts.PRESETS.map((p) => {
       const ok = tts.presetReady(p.key);
       const cur = tts.effectivePreset(s.voicePreset);
