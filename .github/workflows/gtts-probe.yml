@@ -1,0 +1,36 @@
+name: Google-Stimme Hörprobe
+on:
+  workflow_dispatch:
+    inputs:
+      voice:
+        default: "f2"
+  push:
+    branches: [main]
+    paths: [".github/workflows/gtts-probe.yml"]
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            js
+            tools
+            probe
+            voices
+      - run: sudo apt-get -qq update && sudo apt-get -qq install -y ffmpeg
+      - name: Probe
+        env:
+          GOOGLE_TTS_KEY: ${{ secrets.GOOGLE_TTS_KEY }}
+          GTTS_USAGE: voices/gtts-usage.json
+        run: python3 tools/gtts.py probe ${{ inputs.voice || 'f2' }} en it es 2>&1 | tee /tmp/log.txt
+      - name: Hochladen
+        if: always()
+        run: |
+          git config user.name "wortwerk-bot"; git config user.email "actions@users.noreply.github.com"
+          cp /tmp/log.txt probe/google-log.txt || true
+          git add probe voices/gtts-usage.json 2>/dev/null; git add probe
+          git commit -q -m "Google-Stimme: Hörprobe" || exit 0
+          for i in 1 2 3 4 5; do git pull -q --rebase origin main && git push -q origin HEAD:main && break; sleep 8; done
