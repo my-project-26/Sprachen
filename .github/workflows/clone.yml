@@ -95,5 +95,8 @@ jobs:
           import importlib.util as u, os
           s=u.spec_from_file_location('c','tools/clone.py'); m=u.module_from_spec(s); s.loader.exec_module(m)
           print(sum(not os.path.exists(os.path.join('$OUT', m.audio_key(t)+'.mp3')) for t in m.texts_for('en', m.levels())))")
+          PREV=$(cat $OUT/.offen.txt 2>/dev/null || echo -1)
+          if [ "$LEFT2" != "0" ] && [ "$LEFT2" = "$PREV" ]; then echo "Kein Fortschritt ($LEFT2 offen) – Stopp, bitte prüfen"; exit 1; fi
+          if [ "$LEFT2" != "0" ]; then echo $LEFT2 > $OUT/.offen.txt; git add $OUT/.offen.txt; git commit -q -m "Stimme $V: $LEFT2 offen" && for i in 1 2 3 4 5; do git pull -q --rebase -X theirs origin main && git push -q origin HEAD:main && break; sleep 8; done; fi
           if [ "$LEFT2" != "0" ]; then echo "Noch $LEFT2 offen – nächster Durchgang"; gh workflow run clone.yml -R ${{ github.repository }} -f voice=$V -f levels="$CL_LEVELS"; else echo "Fertig und geprüft"; fi
 
