@@ -1,0 +1,24 @@
+{
+ "stimme": "m3",
+ "sprache": "en",
+ "texte": 9126,
+ "fehlen": 0,
+ "kaputt": 2,
+ "auffaellig": [
+  "act",
+  "bear",
+  "earth",
+  "fridge",
+  "growth",
+  "layer",
+  "pure",
+  "quit",
+  "walk",
+  "wall",
+  "who"
+ ],
+ "aehnlichkeit_mittel": 0.8,
+ "aehnlichkeit_min": 0.56,
+ "geprueft": 366,
+ "beispiele_fehlend": []
+}
