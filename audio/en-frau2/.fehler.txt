@@ -46,7 +46,7 @@ Traceback (most recent call last):
     raise RuntimeError("keine brauchbare Aufnahme")
 RuntimeError: keine brauchbare Aufnahme
 
-you	RuntimeError('keine brauchbare Aufnahme')
+him	RuntimeError('keine brauchbare Aufnahme')
 Traceback (most recent call last):
   File "/home/runner/work/Sprachen/Sprachen/tools/clone.py", line 336, in run
     synth(t, lang, ref, os.path.join(outdir, audio_key(t) + ".mp3"), voice.startswith("m"))
@@ -54,7 +54,7 @@ Traceback (most recent call last):
     raise RuntimeError("keine brauchbare Aufnahme")
 RuntimeError: keine brauchbare Aufnahme
 
-other	RuntimeError('keine brauchbare Aufnahme')
+to	RuntimeError('keine brauchbare Aufnahme')
 Traceback (most recent call last):
   File "/home/runner/work/Sprachen/Sprachen/tools/clone.py", line 336, in run
     synth(t, lang, ref, os.path.join(outdir, audio_key(t) + ".mp3"), voice.startswith("m"))
@@ -62,7 +62,7 @@ Traceback (most recent call last):
     raise RuntimeError("keine brauchbare Aufnahme")
 RuntimeError: keine brauchbare Aufnahme
 
-just	RuntimeError('keine brauchbare Aufnahme')
+use	RuntimeError('keine brauchbare Aufnahme')
 Traceback (most recent call last):
   File "/home/runner/work/Sprachen/Sprachen/tools/clone.py", line 336, in run
     synth(t, lang, ref, os.path.join(outdir, audio_key(t) + ".mp3"), voice.startswith("m"))
@@ -70,7 +70,7 @@ Traceback (most recent call last):
     raise RuntimeError("keine brauchbare Aufnahme")
 RuntimeError: keine brauchbare Aufnahme
 
-into	RuntimeError('keine brauchbare Aufnahme')
+as	RuntimeError('keine brauchbare Aufnahme')
 Traceback (most recent call last):
   File "/home/runner/work/Sprachen/Sprachen/tools/clone.py", line 336, in run
     synth(t, lang, ref, os.path.join(outdir, audio_key(t) + ".mp3"), voice.startswith("m"))
