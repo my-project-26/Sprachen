@@ -25,7 +25,7 @@ jobs:
         env:
           GOOGLE_TTS_KEY: ${{ secrets.GOOGLE_TTS_KEY }}
           GTTS_USAGE: voices/gtts-usage.json
-        run: python3 tools/gtts.py probe ${{ inputs.voice || 'f2' }} en it es 2>&1 | tee /tmp/log.txt
+        run: python3 tools/gtts.py gallery 2>&1 | tee /tmp/log.txt
       - name: Hochladen
         if: always()
         run: |

@@ -142,10 +142,48 @@ def run(voice, lang, outdir):
     print(f"{outdir}: {len(batch) - fails} neu, {fails} Fehler · Zeichen diesen Monat: {total}", flush=True)
 
 
+GALLERY = {
+    "f": [("Achernar", "sanft"), ("Aoede", "luftig"), ("Autonoe", "hell"), ("Callirrhoe", "locker"), ("Despina", "weich"),
+          ("Erinome", "klar"), ("Gacrux", "reif, tief"), ("Kore", "bestimmt"), ("Laomedeia", "fröhlich"), ("Leda", "jugendlich"),
+          ("Pulcherrima", "direkt"), ("Sulafat", "warm"), ("Vindemiatrix", "behutsam"), ("Zephyr", "strahlend")],
+    "m": [("Achird", "freundlich"), ("Algenib", "rau"), ("Algieba", "geschmeidig"), ("Alnilam", "fest"), ("Charon", "sachlich"),
+          ("Enceladus", "hauchig"), ("Fenrir", "lebhaft"), ("Iapetus", "klar"), ("Orus", "fest, tief"), ("Puck", "munter"),
+          ("Rasalgethi", "erzählend"), ("Sadachbia", "lebendig"), ("Sadaltager", "kundig"), ("Schedar", "ausgeglichen"),
+          ("Umbriel", "entspannt"), ("Zubenelgenubi", "lässig")],
+}
+
+
+def gallery(lang="en"):
+    """Alle Chirp-3-HD-Stimmen mit demselben Satz → probe/stimmen/ + Übersichtsseite probe/stimmen.html"""
+    text = "Hello! I'm your new language coach. Let's practise a few words together: the station, the hotel, a difficult question."
+    os.makedirs("probe/stimmen", exist_ok=True)
+    rows = []
+    total = 0
+    for g, lst in GALLERY.items():
+        for name, desc in lst:
+            path = f"probe/stimmen/{name}.mp3"
+            if not os.path.exists(path):
+                save_mp3(synth(text, lang, name), path)
+                total += len(text)
+            rows.append((g, name, desc))
+    usage_add(total)
+    sect = lambda g, title: f"<h2>{title}</h2>" + "".join(
+        f'<div class="v"><b>{n}</b> <span>{d}</span><audio controls preload="none" src="stimmen/{n}.mp3"></audio></div>' for gg, n, d in rows if gg == g)
+    html = f"""<!doctype html><html lang="de"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stimmen vergleichen</title><style>body{{font:17px system-ui;max-width:620px;margin:20px auto;padding:0 16px;background:#F4F2FB;color:#1C1A2E}}
+.v{{background:#fff;border-radius:14px;padding:10px 14px;margin:8px 0}}.v span{{color:#666}}audio{{width:100%;margin-top:6px}}</style>
+<h1>Stimmen vergleichen</h1><p>Alle sprechen denselben Satz. Merk dir die Namen, die dir gefallen.</p>
+{sect("f", "Frauen")}{sect("m", "Männer")}</html>"""
+    open("probe/stimmen.html", "w").write(html)
+    print("Galerie fertig, Zeichen:", total)
+
+
 if __name__ == "__main__":
     if not KEY:
         sys.exit("GOOGLE_TTS_KEY fehlt (GitHub-Secret)")
-    if sys.argv[1] == "probe":
+    if sys.argv[1] == "gallery":
+        gallery()
+    elif sys.argv[1] == "probe":
         probe(sys.argv[2], sys.argv[3:])
     else:
         run(sys.argv[2], sys.argv[3], sys.argv[4])
