@@ -45,6 +45,8 @@ VOICES = {
     "zh": "zh-CN-XiaoxiaoNeural",
     "ko": "ko-KR-SunHiNeural",
     "hi": "hi-IN-SwaraNeural",
+    # Deutsch: Übersetzungen (Wort + Beispielsatz) der englischen Karten für den Hörmodus
+    "de": "de-DE-SeraphinaMultilingualNeural",
 }
 
 # Zusätzliche Stimmen je Sprache: (Stimmen zur Auswahl, Tempo, Tonhöhe).
@@ -118,6 +120,18 @@ def rows_from(path, start=None, end="];"):
 
 def texts_for(lang, levels=None):
     js = os.path.join(ROOT, "js")
+    if lang == "de":
+        rows = rows_from(os.path.join(js, "words.js"), "const RAW = [") + rows_from(os.path.join(js, "wordbank.js"))
+        if levels:
+            rows = [r for r in rows if len(r) > 3 and r[3] in levels]
+        out, seen = [], set()
+        for r in rows:
+            for t in (r[1] if len(r) > 1 else "", r[6] if len(r) > 6 else ""):
+                t = norm(str(t).replace(";", ","))
+                if t and t not in seen:
+                    seen.add(t)
+                    out.append(t)
+        return out
     if lang == "en":
         rows = rows_from(os.path.join(js, "words.js"), "const RAW = [")
         rows += rows_from(os.path.join(js, "wordbank.js"))

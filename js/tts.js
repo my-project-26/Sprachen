@@ -403,10 +403,26 @@ if (PLAYER && typeof document !== "undefined") {
 }
 
 // Deutsch (z. B. Übersetzung im Hörmodus): natürliche Server-Stimme statt Computerstimme
+let DE = null; // Verzeichnis der deutschen Aufnahmen (audio/de/)
+function loadDe() {
+  if (DE) return DE;
+  DE = { keys: null };
+  fetch("audio/de/index.json", { cache: "no-cache" })
+    .then((r) => (r.ok ? r.json() : null))
+    .then((j) => j && (DE.keys = new Set(j.keys || [])))
+    .catch(() => {});
+  return DE;
+}
+if (typeof window !== "undefined") setTimeout(loadDe, 1500);
+
 export function speakGermanNatural(text, { onend, onfail } = {}) {
-  if (!SERVER || !text) return onfail && onfail();
+  if (!text) return onfail && onfail();
+  const de = loadDe();
+  const key = audioKey(text);
+  const local = de.keys && de.keys.has(key);
+  if (!local && !SERVER) return onfail && onfail();
   stopAudio();
-  const a = new Audio(`${SERVER}/api/tts?l=de&t=${encodeURIComponent(normText(text).slice(0, 600))}`);
+  const a = new Audio(local ? `audio/de/${key}.mp3` : `${SERVER}/api/tts?l=de&t=${encodeURIComponent(normText(text).slice(0, 600))}`);
   current = a;
   let done = false;
   const fail = () => {
