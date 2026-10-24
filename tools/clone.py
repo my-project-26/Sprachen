@@ -214,13 +214,19 @@ def synth(text, lang, ref, out_mp3, male=False):
     m = model()
     best = None
     words = max(1, len(text.split()))
-    # Sehr kurze Wörter („I“, „a“, „own“) liefern sonst manchmal nichts: mit Satzzeichen sprechen lassen
-    say = text if len(text) > 4 or text[-1:] in ".!?" else text + "."
-    for attempt in range(5):
+    # Sehr kurze Wörter („I“, „a“, „own“) liefert das Modell oft gar nicht (bricht sofort ab).
+    # Dann nacheinander: mit Satzzeichen, betont, und notfalls doppelt sprechen und das erste Wort ausschneiden.
+    plain = text if len(text) > 4 or text[-1:] in ".!?" else text + "."
+    tries = [(plain, False, 0.7), (plain, False, 0.6)]
+    if is_short(text) and len(text) <= 12:
+        w = text.rstrip(".!?")
+        tries += [(w + "!", False, 0.6), (f"{w}, {w}.", True, 0.6), (f"{w}... {w}... {w}.", True, 0.6), (f'"{w}".', False, 0.8)]
+    else:
+        tries += [(plain, False, 0.6), (plain, False, 0.5)]
+    for attempt, (say, split, temp) in enumerate(tries):
         try:
             torch.manual_seed(1234 + attempt * 7919)
-            wav = m.generate(say, language_id=lang, audio_prompt_path=ref, exaggeration=0.5, cfg_weight=0.5,
-                             temperature=0.7 if attempt < 2 else 0.6)
+            wav = m.generate(say, language_id=lang, audio_prompt_path=ref, exaggeration=0.5, cfg_weight=0.5, temperature=temp)
             x = np.atleast_1d(wav.squeeze().detach().cpu().numpy().astype(np.float32)).reshape(-1)
         except Exception as e:
             print(f"  Versuch {attempt + 1} für {text!r}: {e}", flush=True)
@@ -228,12 +234,17 @@ def synth(text, lang, ref, out_mp3, male=False):
         if len(x) < m.sr * 0.1:
             continue
         y, rem = clean(x, m.sr, male)
-        if is_short(text):
+        if len(y) < m.sr * 0.15:  # Filter hat zu viel weggenommen → ungefiltert
+            y, rem = trim_edges(x, m.sr), 0.3
+        if split:
+            first = cut_after_pause(y, m.sr, pause=0.1)
+            if len(first) > len(y) * 0.75 or len(first) < m.sr * 0.15:
+                continue  # Wiederholung ließ sich nicht sauber trennen
+            y = first
+        elif is_short(text):
             y = cut_after_pause(y, m.sr)
-        if len(y) < m.sr * 0.15:  # Filter hat zu viel weggenommen → ungefiltert, nur Ränder kürzen
-            y, rem = x, 0.3
         dur = len(y) / m.sr
-        bad = rem + (0.5 if dur > 1.5 + words * 0.9 else 0)
+        bad = rem + (0.5 if dur > 1.5 + words * 0.9 else 0) + (0.2 if split else 0)
         if best is None or bad < best[0]:
             best = (bad, y)
         if bad < 0.15:
