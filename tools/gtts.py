@@ -49,14 +49,14 @@ def synth(text, lang, voice):
     req = urllib.request.Request(
         f"https://texttospeech.googleapis.com/v1/text:synthesize?key={KEY}",
         data=json.dumps(body).encode(), headers={"content-type": "application/json"}, method="POST")
-    for attempt in range(5):
+    for attempt in range(8):
         try:
             with urllib.request.urlopen(req, timeout=60) as r:
                 return base64.b64decode(json.load(r)["audioContent"])
         except urllib.error.HTTPError as e:
             msg = e.read().decode()[:300]
-            if e.code in (429, 500, 503) and attempt < 4:
-                time.sleep(3 + attempt * 5)
+            if e.code in (429, 500, 503) and attempt < 7:
+                time.sleep(5 + attempt * 10)
                 continue
             raise RuntimeError(f"Google {e.code}: {msg}")
         except urllib.error.URLError:
@@ -126,7 +126,7 @@ def run(voice, lang, outdir):
         return len(t)
 
     counted = 0
-    with cf.ThreadPoolExecutor(8) as ex:
+    with cf.ThreadPoolExecutor(int(os.environ.get("GTTS_THREADS", "8"))) as ex:
         futs = {ex.submit(one, t): t for t in batch}
         for i, f in enumerate(cf.as_completed(futs)):
             try:

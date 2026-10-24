@@ -27,6 +27,7 @@ jobs:
           GOOGLE_TTS_KEY: ${{ secrets.GOOGLE_TTS_KEY }}
           GTTS_USAGE: voices/gtts-usage.json
           GTTS_CAP: "950000"
+          GTTS_THREADS: "4"
         run: |
           git config user.name "wortwerk-bot"; git config user.email "actions@users.noreply.github.com"
           L=${{ inputs.lang }}
