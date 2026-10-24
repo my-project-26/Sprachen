@@ -1668,7 +1668,7 @@ function settingsView() {
     <h2>Test-Funktionen</h2>
     <label class="check"><input type="checkbox" id="s-chatv2" ${s.chatV2 !== false ? "checked" : ""}> Neues Gespräch (Test): Antwortvorschläge, „Sag es auf Deutsch“, Ziel und Auswertung</label>
     <p class="small muted">Ausschalten = das bisherige Gespräch.</p>
-    <p class="small muted">App-Version 47</p>
+    <p class="small muted">App-Version 48</p>
   </section>
   <section class="card">
     <h2>Stimme</h2>
@@ -1684,7 +1684,6 @@ function settingsView() {
       </label>`;
     }).join("")}</div>
     ${rateSlider("s-rate5", L().hello)}
-    <button class="btn ghost" id="testVoice">${ICON.speaker}<span>Testen</span></button>
   </section>
   <section class="card">
     <h2>KI-Server</h2>
@@ -1772,7 +1771,6 @@ function settingsView() {
   bind("s-secret", "appSecret");
   document.getElementById("s-ret").addEventListener("input", (e) => (document.getElementById("retv").textContent = Math.round(e.target.value * 100) + " %"));
 
-  document.getElementById("testVoice").onclick = () => say(L().hello);
   document.getElementById("remAdd").onclick = () => {
     const t = document.getElementById("remTime").value || "19:00";
     st.settings.reminderTime = t;
