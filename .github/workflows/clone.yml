@@ -4,9 +4,6 @@ name: Stimme klonen (Englisch)
 # Vorbild: voices/ref-gemini/<stimme>-en.wav in my-project-26/sprachen).
 # Ergebnis: audio/en-<ordner>/. Startet sich selbst neu, bis alles fertig und geprüft ist.
 on:
-  # alle 2 Stunden: weitermachen, falls noch etwas fehlt (ohne Angaben: Frau 2, alle Niveaus)
-  schedule:
-    - cron: "13 */2 * * *"
   workflow_dispatch:
     inputs:
       voice:

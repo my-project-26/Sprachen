@@ -847,7 +847,7 @@ function storyNew() {
 function voiceStatus(key) {
   const pr = tts.presetProgress(key);
   if (pr >= 0.98) return "";
-  return pr > 0 ? ` · Aufnahmen: ${Math.round(pr * 100)} % fertig` : " · Aufnahmen folgen – 🔊 spielt die Hörprobe";
+  return pr > 0 ? ` · kommt bald (${Math.round(pr * 100)} % aufgenommen) – 🔊 Hörprobe` : " · kommt bald – 🔊 Hörprobe";
 }
 
 // Wort-für-Wort-Übersetzung im Hintergrund nachladen (Schritt 2 der Geschichte)
@@ -1669,13 +1669,12 @@ function settingsView() {
     <label class="check"><input type="checkbox" id="s-natural" ${s.voiceNatural !== false ? "checked" : ""}> Natürliche Stimme (Aufnahmen für alle Wörter und Beispielsätze)</label>
     <p class="small muted">Wähle, wer dir die Wörter vorliest. Geschichten liest die Stimme deines Geräts.</p>
     <div class="voice-list">${tts.PRESETS.map((p) => {
-      const ok = tts.presetAvailable(p.key);
-      const rec = tts.presetRecorded(p.key);
-      const cur = tts.resolvePreset(s.voicePreset).preset.key;
-      return `<label class="voice-opt ${ok ? "" : "na"}">
+      const ok = tts.presetReady(p.key);
+      const cur = tts.effectivePreset(s.voicePreset);
+      return `<label class="voice-opt ${ok ? "" : "na"}" data-vopt="${p.key}">
         <input type="radio" name="vp" value="${p.key}" ${cur === p.key ? "checked" : ""} ${ok ? "" : "disabled"}>
         <span class="vo-text"><b>${esc(p.label)}</b><small class="muted" data-vhint="${p.key}">${esc(tts.presetHint(p))}${voiceStatus(p.key)}</small></span>
-        <button type="button" class="icon-btn small" data-try="${p.key}" ${ok ? "" : "disabled"} aria-label="Probe hören">${ICON.speaker}</button>
+        <button type="button" class="icon-btn small" data-try="${p.key}" aria-label="Probe hören">${ICON.speaker}</button>
       </label>`;
     }).join("")}</div>
     ${rateSlider("s-rate5", L().hello)}
@@ -1817,7 +1816,14 @@ function settingsView() {
   tts.voicesReady().then(() =>
     document.querySelectorAll("[data-vhint]").forEach((el) => {
       const p = tts.PRESETS.find((x) => x.key === el.dataset.vhint);
-      if (p) el.textContent = tts.presetHint(p) + voiceStatus(p.key);
+      if (!p) return;
+      el.textContent = tts.presetHint(p) + voiceStatus(p.key);
+      const ok = tts.presetReady(p.key);
+      const box = el.closest("[data-vopt]");
+      box.classList.toggle("na", !ok);
+      const r = box.querySelector("input");
+      r.disabled = !ok;
+      r.checked = tts.effectivePreset(S.getState().settings.voicePreset) === p.key;
     })
   );
   const provSel = document.getElementById("s-provider");

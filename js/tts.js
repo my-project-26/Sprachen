@@ -184,6 +184,18 @@ export function presetProgress(key) {
   return total ? Math.min(1, have / total) : have ? 1 : 0;
 }
 
+// Eigene Stimme erst nutzbar, wenn ALLE Aufnahmen der Sprache fertig sind (vorher grau)
+export function presetReady(key) {
+  const p = PRESETS.find((x) => x.key === (PRESET_MAP[key] || key));
+  if (!p) return false;
+  return !p.rec || presetProgress(p.key) >= 0.98;
+}
+// Profil, das wirklich spricht: noch nicht fertige Stimme → Standardstimme
+export function effectivePreset(key) {
+  key = PRESET_MAP[key] || key;
+  return presetReady(key) ? key : "friend-f";
+}
+
 // Hörprobe (Demo-Stimme vom eigenen Server) abspielen; false, wenn es keine gibt
 export function playSample(key, server) {
   const p = PRESETS.find((x) => x.key === key);
@@ -294,6 +306,7 @@ export function speak(text, { rate = 0.95, preset = "clear-f", onend } = {}) {
   lastSpeak = { text, opts: { rate, preset, onend } };
   stopAudio();
   if (synth) synth.cancel();
+  preset = effectivePreset(preset);
   const p = resolvePreset(preset).preset;
   const v = natural ? variant(p.rec) : null;
   const key = audioKey(text);
