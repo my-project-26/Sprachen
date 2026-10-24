@@ -1,7 +1,7 @@
 // KI-Aufrufe: entweder über den eigenen Server (api/*) oder direkt aus dem Browser
 // an Gemini (für GitHub Pages / iPhone, wo kein eigener Server läuft).
 import { getState } from "./store.js";
-import { storySystem, storyPrompt, wordsSystem, generateWordsPrompt, fillWordPrompt, extractJson, storyFrom, decodeSystem, decodePrompt, chatSystem, chatTranscript } from "./prompts.js";
+import { storySystem, storyPrompt, wordsSystem, generateWordsPrompt, fillWordPrompt, extractJson, storyFrom, decodeSystem, decodePrompt, chatSystem, chatTranscript, saySystem } from "./prompts.js";
 import { L, langName } from "./langs.js";
 
 const LEVELS = ["A1", "A2", "B1", "B2", "C1"];
@@ -201,8 +201,9 @@ async function browserCall(path, body) {
     return { sentences: Array.isArray(data) ? data : data.sentences || [] };
   }
   if (path === "chat") {
+    if (body.say) return extractJson(await browserLLM(saySystem(langName(body.lang), body.level), body.say, 300));
     const sys = chatSystem({ ...body, lang: langName(body.lang) });
-    return extractJson(await browserLLM(sys, chatTranscript(body.history || []), 700));
+    return extractJson(await browserLLM(sys, chatTranscript(body.history || []), 1000));
   }
   if (path === "words") {
     const prompt =
@@ -323,9 +324,23 @@ export function normalizeStory(data, words) {
 
 // ---------- KI-Gespräch (Rollenspiel) ----------
 // history: [{role:"user"|"ai", text}] – liefert {reply, de, correction}
-export async function chatTurn({ scenario, level, words = [], history = [] }) {
-  const d = await callApi("chat", { scenario, level, words, history });
-  return { reply: String(d.reply || ""), de: String(d.de || ""), correction: String(d.correction || "") };
+export async function chatTurn({ scenario, level, words = [], history = [], goal = "" }) {
+  const d = await callApi("chat", { scenario, level, words, history, goal });
+  const arr = (x) => (Array.isArray(x) ? x : []);
+  return {
+    reply: String(d.reply || ""),
+    de: String(d.de || ""),
+    correction: String(d.correction || ""),
+    suggestions: arr(d.suggestions).filter((x) => x && x.t).slice(0, 3).map((x) => ({ t: String(x.t), de: String(x.de || "") })),
+    words: arr(d.words).filter((x) => x && x.en).slice(0, 3).map((x) => ({ en: String(x.en), de: String(x.de || "") })),
+    bye: d.bye === true,
+  };
+}
+
+// „Sag …“: deutschen Satz in die Lernsprache übertragen
+export async function sayIn(text, level) {
+  const d = await callApi("chat", { say: text, level });
+  return String(d.t || "");
 }
 
 // Sätze einer Geschichte nachträglich Wort für Wort + frei übersetzen

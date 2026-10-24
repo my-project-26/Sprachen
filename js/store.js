@@ -473,6 +473,11 @@ function index() {
   return wordIndex;
 }
 
+// Gibt es dieses Wort schon im Wortschatz?
+export function findCard(en) {
+  return index().get(String(en || "").toLowerCase().trim()) || null;
+}
+
 // Grundform raten: travelled → travel, countries → country, making → make …
 export function lemmaCandidates(word) {
   if (bankLang() !== "en") {

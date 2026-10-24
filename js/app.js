@@ -1665,6 +1665,11 @@ function settingsView() {
       <button class="btn primary" id="remAdd">📅 In Kalender eintragen</button></div>
   </section>
   <section class="card">
+    <h2>Test-Funktionen</h2>
+    <label class="check"><input type="checkbox" id="s-chatv2" ${s.chatV2 !== false ? "checked" : ""}> Neues Gespräch (Test): Antwortvorschläge, „Sag es auf Deutsch“, Ziel und Auswertung</label>
+    <p class="small muted">Ausschalten = das bisherige Gespräch.</p>
+  </section>
+  <section class="card">
     <h2>Stimme</h2>
     <label class="check"><input type="checkbox" id="s-natural" ${s.voiceNatural !== false ? "checked" : ""}> Natürliche Stimme (Aufnahmen für alle Wörter und Beispielsätze)</label>
     <p class="small muted">Wähle, wer dir die Wörter vorliest. Geschichten liest die Stimme deines Geräts.</p>
@@ -1732,6 +1737,7 @@ function settingsView() {
   bind("s-type", "typeAnswer");
   bind("s-auto", "autoSpeak");
   bind("s-natural", "voiceNatural");
+  bind("s-chatv2", "chatV2");
   $app.querySelectorAll("[data-design]").forEach(
     (b) =>
       (b.onclick = () => {

@@ -26,15 +26,26 @@ Return exactly: {"sentences":[{"t":"...","wfw":"...","de":"...","p":true}]}`;
 }
 
 // KI-Gespräch (Rollenspiel)
-export function chatSystem({ scenario, level = "B1", words = [], lang = "English" }) {
+export function chatSystem({ scenario, level = "B1", words = [], lang = "English", goal = "" }) {
   return (
     `You are a friendly conversation partner for a German native speaker learning ${lang} (CEFR ${level}). ` +
     `Role-play this situation and stay in role: ${scenario}. Speak ONLY ${lang} in "reply", in short natural turns (1–3 sentences, CEFR ${level}), ` +
     `and end most turns with a question to keep the conversation going. ` +
-    (words.length ? `Where natural, use some of these words the learner is practising: ${words.join(", ")}. ` : "") +
-    `Reply with valid JSON only: {"reply":"<your turn in ${lang}>","de":"<German translation of your turn>","correction":"<if the learner's last message had mistakes: short friendly German explanation with the corrected ${lang} sentence; otherwise empty string>"}`
+    (words.length ? `Weave in these words the learner is practising, one or two per turn, so the learner hears and reuses them: ${words.join(", ")}. ` : "") +
+    (goal ? `The learner's goal in this conversation: ${goal}. After about 6 learner turns, steer naturally towards a goodbye. ` : "") +
+    `Reply with valid JSON only: {"reply":"<your turn in ${lang}>","de":"<German translation of your turn>",` +
+    `"correction":"<if the learner's last message had mistakes: short friendly German explanation with the corrected ${lang} sentence; otherwise empty string>",` +
+    `"suggestions":[{"t":"<a natural short answer the learner could give, in ${lang}, CEFR ${level}>","de":"<German>"},{"t":"<a different answer>","de":"<German>"}],` +
+    `"words":[{"en":"<a useful ${lang} word or phrase from your reply the learner may not know yet (dictionary form)>","de":"<German>"}],` +
+    `"bye":<true if the conversation has clearly ended with a goodbye, else false>}`
   );
 }
+
+// „Sag …“: Deutsch eingeben → so sagt man es in der Lernsprache
+export function saySystem(lang = "English", level = "B1") {
+  return `Translate what a German learner wants to say into natural, simple ${lang} (CEFR ${level}) for a spoken conversation. Reply with valid JSON only: {"t":"<${lang}>"}`;
+}
+
 export function chatTranscript(history = []) {
   return history.length
     ? history.map((m) => `${m.role === "user" ? "Learner" : "You"}: ${m.text}`).join("\n")
