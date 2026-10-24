@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Vorhandene Klon-Aufnahmen nachbearbeiten: Rauschen/Gemurmel am Anfang und Ende abschneiden.
-  python tools/polish.py <ordner> [<ordner> …]   (Dateien werden nur ersetzt, wenn sich etwas ändert)"""
+  python tools/polish.py <lang> <ordner> [<ordner> …]   (Dateien werden nur ersetzt, wenn sich etwas ändert)"""
 import importlib.util, os, subprocess, sys
 import numpy as np
 
@@ -15,7 +15,10 @@ def load(p):
     return np.frombuffer(raw, dtype=np.float32).copy()
 
 
-for folder in sys.argv[1:]:
+lang = sys.argv[1]
+short = {clone.audio_key(t) for t in clone.texts_for(lang) if clone.is_short(t)}
+
+for folder in sys.argv[2:]:
     files = sorted(f for f in os.listdir(folder) if f.endswith(".mp3"))
     changed = cut = 0
     for i, f in enumerate(files):
@@ -23,7 +26,9 @@ for folder in sys.argv[1:]:
         x = load(p)
         if len(x) < SR * 0.1:
             continue
-        y = clone.trim_edges(x, SR)
+        y = clone.trim_edges(clone.noise_blocks(x, SR), SR)
+        if f[:-4] in short:
+            y = clone.cut_after_pause(y, SR)
         if len(x) - len(y) < SR * 0.08:  # weniger als 0,08 s → so lassen
             continue
         tmp = p + ".tmp.mp3"

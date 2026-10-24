@@ -43,7 +43,15 @@ def trim_edges(y, sr, end_db=-19, start_db=-30):
     import numpy as np
     W, H = int(0.03 * sr), int(0.01 * sr)
     m = max(1, (len(y) - W) // H + 1)
-    e = np.array([np.sum(y[k * H : k * H + W] ** 2) + 1e-12 for k in range(m)])
+    f = np.fft.rfftfreq(W, 1 / sr)
+    band = (f >= 150) & (f <= 4000)  # Sprachbereich: Rumpeln und Zischen zählen nicht als Stimme
+    win = np.hanning(W)
+    e = np.zeros(m)
+    for k in range(m):
+        w = y[k * H : k * H + W]
+        if len(w) < W:
+            w = np.pad(w, (0, W - len(w)))
+        e[k] = (np.abs(np.fft.rfft(w * win)) ** 2)[band].sum() + 1e-12
     db = 10 * np.log10(e / e.max())
     def runs(mask, min_len=6):  # nur zusammenhängende Strecken ab 60 ms zählen (kein Knacken am Dateiende)
         keep = np.zeros_like(mask)
@@ -70,6 +78,76 @@ def trim_edges(y, sr, end_db=-19, start_db=-30):
     fade = min(len(out), int(0.03 * sr))  # weiches Ausblenden, kein Knacken
     out[-fade:] *= np.linspace(1, 0, fade, dtype=out.dtype)
     return out
+
+
+def cut_after_pause(y, sr, pause=0.18):
+    """Für einzelne Wörter: nach der ersten richtigen Pause (≥ 0,18 s, 30 dB leiser) kommt nur noch Störgeräusch → abschneiden."""
+    import numpy as np
+    W, H = int(0.03 * sr), int(0.01 * sr)
+    n = max(1, (len(y) - W) // H + 1)
+    e = np.array([np.sum(y[i * H : i * H + W] ** 2) + 1e-12 for i in range(n)])
+    db = 10 * np.log10(e / e.max())
+    loud = np.where(db > -20)[0]
+    if not len(loud):
+        return y
+    i, quiet = loud[0], 0
+    while i < n:
+        quiet = quiet + 1 if db[i] < -30 else 0
+        if quiet * 0.01 >= pause:
+            end = (i - quiet + 1) * H + int(0.08 * sr)
+            out = y[: min(len(y), end)].copy()
+            fade = min(len(out), int(0.03 * sr))
+            out[-fade:] *= np.linspace(1, 0, fade, dtype=out.dtype)
+            return out
+        i += 1
+    return y
+
+
+def is_short(text):
+    return len(text.split()) <= 3 and "," not in text
+
+
+def noise_blocks(y, sr, min_len=0.25):
+    """Rausch-Strecken in der Mitte (keine Stimme: nicht periodisch, flaches Spektrum) ab 0,25 s auf 0,08 s Pause kürzen."""
+    import numpy as np
+    W, H = int(0.03 * sr), int(0.01 * sr)
+    n = max(1, (len(y) - W) // H + 1)
+    lo, hi = int(sr / 400), int(sr / 70)
+    # Merkmale ohne Rumpeln berechnen (alles unter 150 Hz weg), sonst wirkt Brummen „periodisch“ wie Stimme
+    F = np.fft.rfft(y)
+    F[np.fft.rfftfreq(len(y), 1 / sr) < 150] = 0
+    yh = np.fft.irfft(F, len(y)).astype(np.float32)
+    noisy = np.zeros(n, bool)
+    en = np.zeros(n)
+    win = np.hanning(W)
+    for i in range(n):
+        w = yh[i * H : i * H + W]
+        if len(w) < W:
+            w = np.pad(w, (0, W - len(w)))
+        w = w - w.mean()
+        en[i] = (w ** 2).sum() + 1e-12
+        c = np.correlate(w, w, "full")[W - 1 :]
+        per = c[lo:hi].max() / c[0] if c[0] > 0 else 0
+        sp = np.abs(np.fft.rfft(w * win)) + 1e-9
+        flat = np.exp(np.log(sp).mean()) / sp.mean()
+        noisy[i] = per < 0.35 and flat > 0.2
+    db = 10 * np.log10(en / en.max())
+    noisy |= db < -45  # Stille gehört zur Pause
+    keep = np.ones(len(y), bool)
+    i = 0
+    while i < n:
+        if not noisy[i]:
+            i += 1
+            continue
+        j = i
+        while j < n and noisy[j]:
+            j += 1
+        if (j - i) * 0.01 >= min_len and (db[i:j] > -45).mean() > 0.3:  # echte Geräusche, nicht nur Stille
+            a, b = i * H + int(0.04 * sr), min(len(y), j * H)
+            if b > a:
+                keep[a:b] = False
+        i = j
+    return y[keep]
 
 
 def clean(x, sr, male=False):
@@ -124,6 +202,7 @@ def clean(x, sr, male=False):
         out.append(seg)
         i = j
     y = np.concatenate(out) if out else x
+    y = noise_blocks(y, sr)
     y = trim_edges(y, sr)
     return y.astype(np.float32), removed / max(1, len(x))
 
@@ -149,6 +228,8 @@ def synth(text, lang, ref, out_mp3, male=False):
         if len(x) < m.sr * 0.1:
             continue
         y, rem = clean(x, m.sr, male)
+        if is_short(text):
+            y = cut_after_pause(y, m.sr)
         if len(y) < m.sr * 0.15:  # Filter hat zu viel weggenommen → ungefiltert, nur Ränder kürzen
             y, rem = x, 0.3
         dur = len(y) / m.sr
