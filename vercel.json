@@ -4,5 +4,5 @@
       "maxDuration": 60
     }
   },
-  "ignoreCommand": "git diff --quiet HEAD^ HEAD -- api js/prompts.js js/langs.js vercel.json package.json"
+  "ignoreCommand": "case \"$VERCEL_GIT_COMMIT_MESSAGE\" in Sprachaufnahmen*|Stimme*|Google-Stimme*|Frau*|Aufnahmen*|Deutsche*|Alte*) exit 0;; *) exit 1;; esac"
 }
