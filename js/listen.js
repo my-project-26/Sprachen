@@ -21,6 +21,19 @@ const sleep = (ms, run) =>
 // Deutsch über die Gerätestimme
 function speakGerman(text, rate, run) {
   return new Promise((res) => {
+    let fin0 = false;
+    const ok = () => (fin0 ? 0 : ((fin0 = true), res()));
+    run.cancel.push(() => {
+      tts.stop();
+      ok();
+    });
+    setTimeout(ok, 15000);
+    tts.speakGermanNatural(text.replace(/;/g, ","), { onend: ok, onfail: () => speakGermanDevice(text, rate, run).then(ok) });
+  });
+}
+
+function speakGermanDevice(text, rate, run) {
+  return new Promise((res) => {
     const synth = window.speechSynthesis;
     if (!synth || !text) return setTimeout(res, 600);
     const u = new SpeechSynthesisUtterance(text.replace(/;/g, ","));

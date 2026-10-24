@@ -402,6 +402,28 @@ if (PLAYER && typeof document !== "undefined") {
   document.addEventListener("pointerdown", unlock, true);
 }
 
+// Deutsch (z. B. Übersetzung im Hörmodus): natürliche Server-Stimme statt Computerstimme
+export function speakGermanNatural(text, { onend, onfail } = {}) {
+  if (!SERVER || !text) return onfail && onfail();
+  stopAudio();
+  const a = new Audio(`${SERVER}/api/tts?l=de&t=${encodeURIComponent(normText(text).slice(0, 600))}`);
+  current = a;
+  let done = false;
+  const fail = () => {
+    if (done) return;
+    done = true;
+    current = null;
+    onfail && onfail();
+  };
+  a.onended = () => {
+    done = true;
+    current = null;
+    onend && onend();
+  };
+  a.onerror = fail;
+  a.play().catch(fail);
+}
+
 function speakServer(text, { rate, preset, onend }) {
   const clean = normText(text);
   const a = PLAYER || new Audio();
