@@ -22,6 +22,11 @@ function readGlobal() {
       // entfernte Stimm-Profile auf die neuen umstellen
       const VP = { "clear-f": "frau", "clear-m": "mann", "friend-m": "mann", "strict-m": "mann", "deep-m": "mann", "sexy-f": "frau", "strict-f": "frau", rauer: "frau", entspannt: "frau", mann1: "mann", mann2: "mann", mann3: "mann", frau2: "frau", frau3: "frau" };
       if (VP[g.voicePreset]) g.voicePreset = VP[g.voicePreset];
+      // neues Tempo-Schema: Mittel = Originaltempo der Aufnahmen
+      if ((g.rateV || 0) < 2) {
+        if (g.voiceRate && g.voiceRate > 0.72 && g.voiceRate < 0.95) g.voiceRate = 0.95;
+        g.rateV = 2;
+      }
       return g;
     }
     // Umstieg: bisher standen alle Einstellungen im englischen Speicher
