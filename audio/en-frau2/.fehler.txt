@@ -1,4 +1,4 @@
-our	RuntimeError('keine brauchbare Aufnahme')
+thing	RuntimeError('keine brauchbare Aufnahme')
 Traceback (most recent call last):
   File "/home/runner/work/Sprachen/Sprachen/tools/clone.py", line 336, in run
     synth(t, lang, ref, os.path.join(outdir, audio_key(t) + ".mp3"), voice.startswith("m"))
@@ -6,7 +6,7 @@ Traceback (most recent call last):
     raise RuntimeError("keine brauchbare Aufnahme")
 RuntimeError: keine brauchbare Aufnahme
 
-all	RuntimeError('keine brauchbare Aufnahme')
+me	RuntimeError('keine brauchbare Aufnahme')
 Traceback (most recent call last):
   File "/home/runner/work/Sprachen/Sprachen/tools/clone.py", line 336, in run
     synth(t, lang, ref, os.path.join(outdir, audio_key(t) + ".mp3"), voice.startswith("m"))
@@ -14,23 +14,7 @@ Traceback (most recent call last):
     raise RuntimeError("keine brauchbare Aufnahme")
 RuntimeError: keine brauchbare Aufnahme
 
-very	RuntimeError('keine brauchbare Aufnahme')
-Traceback (most recent call last):
-  File "/home/runner/work/Sprachen/Sprachen/tools/clone.py", line 336, in run
-    synth(t, lang, ref, os.path.join(outdir, audio_key(t) + ".mp3"), voice.startswith("m"))
-  File "/home/runner/work/Sprachen/Sprachen/tools/clone.py", line 242, in synth
-    raise RuntimeError("keine brauchbare Aufnahme")
-RuntimeError: keine brauchbare Aufnahme
-
-then	RuntimeError('keine brauchbare Aufnahme')
-Traceback (most recent call last):
-  File "/home/runner/work/Sprachen/Sprachen/tools/clone.py", line 336, in run
-    synth(t, lang, ref, os.path.join(outdir, audio_key(t) + ".mp3"), voice.startswith("m"))
-  File "/home/runner/work/Sprachen/Sprachen/tools/clone.py", line 242, in synth
-    raise RuntimeError("keine brauchbare Aufnahme")
-RuntimeError: keine brauchbare Aufnahme
-
-back	RuntimeError('keine brauchbare Aufnahme')
+from	RuntimeError('keine brauchbare Aufnahme')
 Traceback (most recent call last):
   File "/home/runner/work/Sprachen/Sprachen/tools/clone.py", line 336, in run
     synth(t, lang, ref, os.path.join(outdir, audio_key(t) + ".mp3"), voice.startswith("m"))
