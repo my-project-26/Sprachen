@@ -37,6 +37,41 @@ def model():
     return _model
 
 
+def trim_edges(y, sr, end_db=-19, start_db=-30):
+    """Anfang/Ende auf die eigentliche Stimme kürzen: danach folgt bei der Klon-Stimme oft leises
+    Rauschen oder Gemurmel (20–30 dB leiser). Ende = letzte Stelle höchstens 19 dB unter der lautesten + 0,15 s."""
+    import numpy as np
+    W, H = int(0.03 * sr), int(0.01 * sr)
+    m = max(1, (len(y) - W) // H + 1)
+    e = np.array([np.sum(y[k * H : k * H + W] ** 2) + 1e-12 for k in range(m)])
+    db = 10 * np.log10(e / e.max())
+    def runs(mask, min_len=6):  # nur zusammenhängende Strecken ab 60 ms zählen (kein Knacken am Dateiende)
+        keep = np.zeros_like(mask)
+        i = 0
+        while i < len(mask):
+            if mask[i]:
+                j = i
+                while j < len(mask) and mask[j]:
+                    j += 1
+                if j - i >= min_len:
+                    keep[i:j] = True
+                i = j
+            else:
+                i += 1
+        return np.where(keep)[0]
+
+    s_idx = runs(db > start_db, 4)
+    e_idx = runs(db > end_db)
+    if not len(s_idx) or not len(e_idx):
+        return y
+    a = max(0, s_idx[0] * H - int(0.05 * sr))
+    b = min(len(y), e_idx[-1] * H + W + int(0.15 * sr))
+    out = y[a:b].copy()
+    fade = min(len(out), int(0.03 * sr))  # weiches Ausblenden, kein Knacken
+    out[-fade:] *= np.linspace(1, 0, fade, dtype=out.dtype)
+    return out
+
+
 def clean(x, sr, male=False):
     """Störgeräusche der Klon-Stimme entfernen: lautes Brummen/Rumpeln (Energie fast nur < 120 Hz)
     und lange Zisch-/Rauschstrecken (fast nur > 4 kHz); Nachklang/Gemurmel am Anfang und Ende abschneiden.
@@ -89,14 +124,7 @@ def clean(x, sr, male=False):
         out.append(seg)
         i = j
     y = np.concatenate(out) if out else x
-    # Anfang/Ende: alles leiser als 32 dB unter der lautesten Stelle weg (Nachklang, Gemurmel)
-    m = max(1, (len(y) - W) // H + 1)
-    e = np.array([np.sum(y[k * H : k * H + W] ** 2) + 1e-12 for k in range(m)])
-    loud = np.where(10 * np.log10(e / e.max()) > -32)[0]
-    if len(loud):
-        a = max(0, loud[0] * H - int(0.06 * sr))
-        b = min(len(y), loud[-1] * H + W + int(0.12 * sr))
-        y = y[a:b]
+    y = trim_edges(y, sr)
     return y.astype(np.float32), removed / max(1, len(x))
 
 
