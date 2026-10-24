@@ -221,7 +221,7 @@ def synth(text, lang, ref, out_mp3, male=False):
             torch.manual_seed(1234 + attempt * 7919)
             wav = m.generate(say, language_id=lang, audio_prompt_path=ref, exaggeration=0.5, cfg_weight=0.5,
                              temperature=0.7 if attempt < 2 else 0.6)
-            x = wav.squeeze().cpu().numpy().astype(np.float32)
+            x = np.atleast_1d(wav.squeeze().detach().cpu().numpy().astype(np.float32)).reshape(-1)
         except Exception as e:
             print(f"  Versuch {attempt + 1} für {text!r}: {e}", flush=True)
             continue
@@ -335,7 +335,10 @@ def run(voice, lang, outdir):
         try:
             synth(t, lang, ref, os.path.join(outdir, audio_key(t) + ".mp3"), voice.startswith("m"))
         except Exception as e:
+            import traceback
             print(f"  ✗ {t[:40]!r}: {e}", flush=True)
+            with open(os.path.join(outdir, ".fehler.txt"), "a") as fh:  # landet im Repo → nachvollziehbar
+                fh.write(f"{t}\t{e!r}\n{traceback.format_exc()[-800:]}\n")
         if i % 50 == 0:
             print(f"  {i}/{len(todo)}", flush=True)
         if every and time.time() - last > every:
