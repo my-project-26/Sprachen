@@ -1668,6 +1668,7 @@ function settingsView() {
     <h2>Test-Funktionen</h2>
     <label class="check"><input type="checkbox" id="s-chatv2" ${s.chatV2 !== false ? "checked" : ""}> Neues Gespräch (Test): Antwortvorschläge, „Sag es auf Deutsch“, Ziel und Auswertung</label>
     <p class="small muted">Ausschalten = das bisherige Gespräch.</p>
+    <p class="small muted">App-Version 40</p>
   </section>
   <section class="card">
     <h2>Stimme</h2>
@@ -1810,6 +1811,7 @@ function settingsView() {
         await S.setLanguage(b.dataset.lang);
         tts.setLang(S.lang(), L().tts, L().audio);
   tts.preloadVariants();
+  tts.setServer(settings().apiBase || (isStaticHost() ? DEFAULT_SERVER : ""));
         applyDesign(settings().design);
         toast(`${L().flag} Du lernst jetzt ${L().name}`);
         go("#/");
@@ -1921,6 +1923,7 @@ if (await cloud.start()) {
   await S.init();
   tts.setLang(S.lang(), L().tts, L().audio);
   tts.preloadVariants();
+  tts.setServer(settings().apiBase || (isStaticHost() ? DEFAULT_SERVER : ""));
   applyDesign(settings().design);
   render();
 } else {

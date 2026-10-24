@@ -68,10 +68,10 @@ async function geminiOnce(model, system, user, maxTokens, key) {
 }
 
 // Probiert mehrere Gemini-Modelle nacheinander (falls eines überlastet ist)
-async function callGemini(system, user, maxTokens) {
+async function callGemini(system, user, maxTokens, prefer = "") {
   const key = env("GEMINI_API_KEY");
   if (!key) throw httpError(500, "GEMINI_API_KEY ist auf dem Server nicht gesetzt.");
-  const models = [GEMINI_MODEL(), "gemini-flash-latest", "gemini-2.5-flash", "gemini-flash-lite-latest"].filter((m, i, a) => a.indexOf(m) === i);
+  const models = [prefer, GEMINI_MODEL(), "gemini-flash-latest", "gemini-2.5-flash", "gemini-flash-lite-latest"].filter(Boolean).filter((m, i, a) => a.indexOf(m) === i);
   let last;
   for (const m of models) {
     try {
@@ -138,7 +138,7 @@ export function resolveProvider(requested) {
 export async function callLLM({ provider, model }, system, user, maxTokens = 2000) {
   const p = resolveProvider(provider);
   if (p === "claude") return callClaude(system, user, maxTokens);
-  if (p === "gemini") return callGemini(system, user, maxTokens);
+  if (p === "gemini") return callGemini(system, user, maxTokens, /^gemini/.test(model || "") ? model : "");
   return callOllama(system, user, maxTokens, model);
 }
 

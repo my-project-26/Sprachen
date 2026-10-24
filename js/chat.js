@@ -113,8 +113,10 @@ function chatClassic($app, { settings, ICON }, sceneKey = "") {
     mic.onclick = async () => {
       mic.classList.add("rec");
       try {
-        const heard = await listenOnce();
+        $in.placeholder = "Ich höre zu …";
+        const heard = await listenOnce((t) => ($in.value = t));
         if (heard) $in.value = String(heard);
+        $in.placeholder = `Deine Antwort auf ${L().name} …`;
       } catch (e) {
         st.err = e.message;
         draw();
@@ -274,8 +276,10 @@ function chatV2($app, { settings, ICON }, sceneKey = "") {
     mic.onclick = async () => {
       mic.classList.add("rec");
       try {
-        const heard = await listenOnce();
+        $in.placeholder = "Ich höre zu …";
+        const heard = await listenOnce((t) => ($in.value = t));
         if (heard) $in.value = String(heard);
+        $in.placeholder = `Deine Antwort auf ${L().name} …`;
       } catch (e) {
         st.err = e.message;
         draw();

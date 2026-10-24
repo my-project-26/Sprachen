@@ -46,25 +46,53 @@ function diffHtml(target, typed) {
 
 export const canSpeak = () => !!(window.SpeechRecognition || window.webkitSpeechRecognition);
 
-// Spracherkennung: liefert den erkannten Text (oder "")
-export function listenOnce() {
-  return new Promise((res, rej) => {
-    const R = window.SpeechRecognition || window.webkitSpeechRecognition;
-    if (!R) return rej(new Error("Spracherkennung wird von diesem Browser nicht unterstützt."));
-    const r = new R();
-    r.lang = (L().tts && L().tts[0]) || S.lang();
-    r.interimResults = false;
-    r.maxAlternatives = 3;
-    let best = "";
-    r.onresult = (e) => {
-      const alts = [...e.results[0]].map((x) => x.transcript);
-      best = alts[0] || "";
-      r._alts = alts;
-    };
-    r.onerror = (e) => (e.error === "no-speech" ? res("") : rej(new Error(e.error === "not-allowed" ? "Bitte erlaube den Zugriff aufs Mikrofon." : e.error)));
-    r.onend = () => res(best ? Object.assign(new String(best), { alts: r._alts || [best] }) : "");
-    r.start();
-  });
+// Spracherkennung: liefert den erkannten Text (oder "").
+// onPartial(text) zeigt schon während des Sprechens, was erkannt wird.
+// Safari bricht die Erkennung ab („aborted“), wenn gleichzeitig Ton läuft → vorher Ton stoppen, notfalls einmal neu starten.
+export function listenOnce(onPartial) {
+  const R = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (!R) return Promise.reject(new Error("Spracherkennung geht in diesem Browser nicht. Bitte Chrome oder Safari am iPhone nutzen."));
+  tts.stop();
+  const attempt = (retry) =>
+    new Promise((res, rej) => {
+      const r = new R();
+      r.lang = (L().tts && L().tts[0]) || S.lang();
+      r.interimResults = true;
+      r.continuous = false;
+      r.maxAlternatives = 3;
+      let best = "",
+        alts = [],
+        failed = null;
+      r.onresult = (e) => {
+        let text = "";
+        for (let i = 0; i < e.results.length; i++) text += e.results[i][0].transcript;
+        best = text.trim();
+        const last = e.results[e.results.length - 1];
+        if (last.isFinal) alts = [...last].map((x) => x.transcript);
+        onPartial && onPartial(best);
+      };
+      r.onerror = (e) => (failed = e.error);
+      r.onend = () => {
+        if (best) return res(Object.assign(new String(best), { alts: alts.length ? alts : [best] }));
+        if (failed === "aborted" && retry) return setTimeout(() => attempt(false).then(res, rej), 350);
+        if (!failed || failed === "no-speech") return res("");
+        rej(
+          new Error(
+            failed === "not-allowed" || failed === "service-not-allowed"
+              ? "Bitte erlaube den Zugriff aufs Mikrofon (Safari: Einstellungen für diese Website → Mikrofon → Erlauben)."
+              : failed === "aborted"
+                ? "Die Aufnahme wurde unterbrochen. Bitte noch einmal tippen und kurz warten, bis „Ich höre zu …“ erscheint."
+                : "Spracherkennung: " + failed
+          )
+        );
+      };
+      try {
+        r.start();
+      } catch (e) {
+        rej(e);
+      }
+    });
+  return new Promise((res) => setTimeout(res, 250)).then(() => attempt(true));
 }
 
 // Bewertung eines gesprochenen Versuchs
@@ -91,7 +119,7 @@ export function bindMic(root) {
         b.querySelector("span").textContent = "Ich höre …";
         out.textContent = "";
         try {
-          const heard = await listenOnce();
+          const heard = await listenOnce((t) => (out.textContent = "„" + t + "“"));
           const r = rateSpeech(b.dataset.mic, heard);
           out.className = `mic-res small ${r.cls}`;
           out.innerHTML = `${r.text}${heard ? `<br><span class="muted">Verstanden: „${esc(String(heard))}“</span>` : ""}`;
@@ -181,7 +209,7 @@ export function practiceView($app, { settings, rateSlider, ICON }, mode = "") {
         mic.classList.add("rec");
         mic.querySelector("span").textContent = "Ich höre zu …";
         try {
-          const heard = await listenOnce();
+          const heard = await listenOnce((t) => (res.innerHTML = `<p class="small muted">„${esc(t)}“</p>`));
           const r = rateSpeech(sent, heard);
           reveal(r.cls === "ok", `<p class="p-verdict ${r.cls}">${r.text}</p>${heard ? `<p class="small muted">Verstanden: „${esc(String(heard))}“</p>` : ""}`);
         } catch (e) {

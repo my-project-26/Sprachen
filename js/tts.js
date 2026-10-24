@@ -20,6 +20,11 @@ export function setLang(code, tts, audioBase) {
 
 // Weitere Stimmen als eigene Aufnahmen: audio/<sprache>-m/ (tief, männlich), <sprache>-f2/ (sanft, weiblich)
 let ROOT = { code: "en", base: "audio/" };
+// Eigener Server für natürliche Stimme bei Texten ohne Aufnahme (Gespräch, Geschichten)
+let SERVER = "";
+export function setServer(base) {
+  SERVER = (base || "").replace(/\/$/, "");
+}
 let VAR = {}; // rec → { keys:Set|null, base }
 function variant(rec) {
   if (!rec) return null;
@@ -355,7 +360,53 @@ export function speak(text, { rate = 0.95, preset = "clear-f", onend } = {}) {
       return;
     }
   }
+  // Keine Aufnahme vorhanden → natürliche Stimme vom Server, sonst Gerätestimme
+  if (natural && SERVER && String(text).length <= 600) return speakServer(text, { rate, preset, onend });
   speakDevice(text, { rate, preset, onend });
+}
+
+// Ein fester Player, der beim ersten Antippen freigeschaltet wird – so darf er später
+// auch ohne Tippen abspielen (z. B. wenn die Antwort der KI eintrifft; iPhone/Safari)
+const PLAYER = typeof Audio !== "undefined" ? new Audio() : null;
+// 0,05 s Stille als WAV (zum Freischalten)
+function silentWav() {
+  const n = 1200, b = new DataView(new ArrayBuffer(44 + n * 2));
+  const w = (o, t) => [...t].forEach((c, i) => b.setUint8(o + i, c.charCodeAt(0)));
+  w(0, "RIFF"); b.setUint32(4, 36 + n * 2, true); w(8, "WAVEfmt "); b.setUint32(16, 16, true);
+  b.setUint16(20, 1, true); b.setUint16(22, 1, true); b.setUint32(24, 24000, true); b.setUint32(28, 48000, true);
+  b.setUint16(32, 2, true); b.setUint16(34, 16, true); w(36, "data"); b.setUint32(40, n * 2, true);
+  return URL.createObjectURL(new Blob([b.buffer], { type: "audio/wav" }));
+}
+if (PLAYER && typeof document !== "undefined") {
+  const unlock = () => {
+    PLAYER.src = silentWav();
+    PLAYER.play().then(() => PLAYER.pause()).catch(() => {});
+    document.removeEventListener("pointerdown", unlock, true);
+  };
+  document.addEventListener("pointerdown", unlock, true);
+}
+
+function speakServer(text, { rate, preset, onend }) {
+  const clean = normText(text);
+  const a = PLAYER || new Audio();
+  a.onended = a.onerror = null;
+  a.src = `${SERVER}/api/tts?l=${encodeURIComponent(LANG.code)}&t=${encodeURIComponent(clean)}`;
+  a.playbackRate = audioRate(rate);
+  a.preservesPitch = true;
+  current = a;
+  let fell = false;
+  const fallback = () => {
+    if (fell || current !== a) return;
+    fell = true;
+    current = null;
+    speakDevice(text, { rate, preset, onend });
+  };
+  a.onended = () => {
+    current = null;
+    onend && onend();
+  };
+  a.onerror = fallback;
+  a.play().catch(fallback);
 }
 
 function speakDevice(text, { rate, preset, onend }) {
