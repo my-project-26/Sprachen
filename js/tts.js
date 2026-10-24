@@ -422,7 +422,7 @@ export function speakGermanNatural(text, { onend, onfail } = {}) {
   const local = de.keys && de.keys.has(key);
   if (!local && !SERVER) return onfail && onfail();
   stopAudio();
-  const a = new Audio(local ? `audio/de/${key}.mp3` : `${SERVER}/api/tts?l=de&t=${encodeURIComponent(normText(text).slice(0, 600))}`);
+  const a = new Audio(local ? `audio/de/${key}.mp3` : `${SERVER}/api/tts?l=de&v=Achernar&t=${encodeURIComponent(normText(text).slice(0, 600))}`);
   current = a;
   let done = false;
   const fail = () => {
@@ -440,12 +440,20 @@ export function speakGermanNatural(text, { onend, onfail } = {}) {
   a.play().catch(fail);
 }
 
+// Google-Name der gewählten Stimme (für Texte ohne Aufnahme)
+function serverVoice(preset) {
+  const rec = resolvePreset(effectivePreset(preset)).preset.rec || "achernar";
+  return rec.replace(/-slow$/, "").replace(/^./, (c) => c.toUpperCase());
+}
+const serverRate = (rate) => Math.min(1.3, Math.max(0.6, rate / 0.95)).toFixed(2);
+
 function speakServer(text, { rate, preset, onend }) {
   const clean = normText(text);
   const a = PLAYER || new Audio();
   a.onended = a.onerror = null;
-  a.src = `${SERVER}/api/tts?l=${encodeURIComponent(LANG.code)}&t=${encodeURIComponent(clean)}`;
-  a.playbackRate = audioRate(rate);
+  // Tempo spricht Google selbst (kein Strecken im Browser → sauberer Klang)
+  a.src = `${SERVER}/api/tts?l=${encodeURIComponent(LANG.code)}&v=${serverVoice(preset)}&r=${serverRate(rate)}&t=${encodeURIComponent(clean)}`;
+  a.playbackRate = 1;
   a.preservesPitch = true;
   current = a;
   let fell = false;
