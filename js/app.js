@@ -949,12 +949,12 @@ async function showWordPop(st, word, isTarget) {
         <div class="wp-de">${loading ? '<span class="muted">übersetze …</span>' : esc(trans || "keine Übersetzung gefunden")}</div>
         ${stateTxt ? `<div class="small muted">${stateTxt}</div>` : ""}
       </div>
+      <button class="icon-btn plain wp-close" data-wp="close" aria-label="Schließen">${ICON.close}</button>
       <div class="wp-actions">
         <button class="icon-btn" data-wp="say" aria-label="Anhören">${ICON.speaker}</button>
         ${!card || card.state === "known" || card.state === "new" ? `<button class="btn primary small-btn" data-wp="add">${ICON.plus}<span>Lernen</span></button>` : ""}
-        <button class="icon-btn plain" data-wp="close" aria-label="Schließen">${ICON.close}</button>
-      </div>
-      ${rateSlider("", card && card.en.toLowerCase() !== word.toLowerCase() ? word : card?.en || word)}`;
+        ${rateSlider("", card && card.en.toLowerCase() !== word.toLowerCase() ? word : card?.en || word)}
+      </div>`;
   };
   render(de, !de);
   document.body.appendChild(pop);
@@ -1668,7 +1668,7 @@ function settingsView() {
     <h2>Test-Funktionen</h2>
     <label class="check"><input type="checkbox" id="s-chatv2" ${s.chatV2 !== false ? "checked" : ""}> Neues Gespräch (Test): Antwortvorschläge, „Sag es auf Deutsch“, Ziel und Auswertung</label>
     <p class="small muted">Ausschalten = das bisherige Gespräch.</p>
-    <p class="small muted">App-Version 49</p>
+    <p class="small muted">App-Version 50</p>
   </section>
   <section class="card">
     <h2>Stimme</h2>
