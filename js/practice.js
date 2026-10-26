@@ -86,9 +86,25 @@ export function listenOnce(onPartial) {
           )
         );
       };
+      // Sicherheitsnetz: iPhone beendet die Erkennung manchmal nie → nach 9 s selbst beenden
+      const guard = setTimeout(() => {
+        try {
+          r.stop();
+        } catch {}
+        setTimeout(() => r.onend && r.onend(), 800);
+      }, 9000);
+      const end0 = r.onend;
+      let ended = false;
+      r.onend = () => {
+        if (ended) return;
+        ended = true;
+        clearTimeout(guard);
+        end0();
+      };
       try {
         r.start();
       } catch (e) {
+        clearTimeout(guard);
         rej(e);
       }
     });
@@ -175,7 +191,9 @@ export function practiceView($app, { settings, rateSlider, ICON }, mode = "") {
         mode === "diktat"
           ? `<textarea id="pIn" rows="3" autocapitalize="off" autocomplete="off" spellcheck="false" placeholder="Schreib hier, was du hörst …"></textarea>
              <button class="ef-btn ef-pri" id="pCheck">Prüfen</button>`
-          : `<button class="mic-btn big" id="pMic">🎤 <span>Jetzt sprechen</span></button>`
+          : `<button class="mic-btn big" id="pMic">🎤 <span>Jetzt sprechen</span></button>
+             <button class="linkish" id="pShow" type="button">📝 Satz anzeigen</button>
+             <p class="p-sol" id="pText" hidden><b>${esc(sent)}</b><br><span class="muted">${esc(plain(c.exDe))}</span></p>`
       }
       <div id="pRes" aria-live="polite"></div>
       <button class="ef-btn ef-sec" id="pNext" hidden>Weiter</button>
@@ -205,7 +223,15 @@ export function practiceView($app, { settings, rateSlider, ICON }, mode = "") {
       };
     } else {
       const mic = document.getElementById("pMic");
+      document.getElementById("pShow").onclick = () => {
+        const t = document.getElementById("pText");
+        t.hidden = !t.hidden;
+        document.getElementById("pShow").textContent = t.hidden ? "📝 Satz anzeigen" : "📝 Satz ausblenden";
+      };
+      let busy = false;
       mic.onclick = async () => {
+        if (busy) return;
+        busy = true;
         mic.classList.add("rec");
         mic.querySelector("span").textContent = "Ich höre zu …";
         try {
@@ -217,6 +243,7 @@ export function practiceView($app, { settings, rateSlider, ICON }, mode = "") {
         }
         mic.classList.remove("rec");
         mic.querySelector("span").textContent = "Nochmal sprechen";
+        busy = false;
       };
     }
   };
