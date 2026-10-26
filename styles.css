@@ -633,3 +633,5 @@ body[data-view="onboarding"] .nav { display: none; }
 .ob-opt.ok { border-color: #1E9E55; background: #DDF6E6; color: #0C4A27; }
 .ob-opt.bad { border-color: #D93B3B; background: #FBE1E1; color: #6B1414; }
 .ob-skip { color: var(--muted); border-style: dashed; }
+.ob-sent { margin: 16px 0 0; font-size: 1.5rem; line-height: 1.35; text-wrap: balance; }
+.ob-lv.rec { border-color: var(--accent); }
