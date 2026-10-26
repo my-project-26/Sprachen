@@ -614,3 +614,22 @@ small.rd { font-size: .45em; margin: 4px 0 0; }
 .cv-nw small { display: block; color: var(--muted); }
 .cv-say[hidden] { display: none; }
 a.ef-btn { text-decoration: none; display: flex; align-items: center; justify-content: center; margin-top: 10px; }
+
+/* Einstieg */
+body[data-view="onboarding"] .nav { display: none; }
+.ob { display: flex; flex-direction: column; gap: 14px; padding-top: 12px; }
+.ob-title { margin: 0; font-size: 2rem; }
+.ob-lead { margin: 0; color: var(--muted); }
+.ob-h { margin: 10px 0 0; font-size: 1.1rem; }
+.ob-levels { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }
+.ob-lv { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; padding: 14px; border: 2px solid var(--line); border-radius: 16px; background: var(--surface); color: inherit; font: inherit; cursor: pointer; }
+.ob-lv b { font-size: 1.4rem; }
+.ob-lv span { color: var(--muted); font-size: .9rem; }
+.ob-lv:hover, .ob-lv:focus-visible { border-color: var(--accent); }
+.ob-step { margin: 0; color: var(--muted); }
+.ob-word { margin: 18px 0 0; font-size: 2.4rem; text-align: center; }
+.ob-opts { display: flex; flex-direction: column; gap: 10px; }
+.ob-opt { min-height: 54px; padding: 0 16px; border: 2px solid var(--line); border-radius: 14px; background: var(--surface); color: inherit; font: inherit; font-size: 1.05rem; text-align: left; cursor: pointer; }
+.ob-opt.ok { border-color: #1E9E55; background: #DDF6E6; color: #0C4A27; }
+.ob-opt.bad { border-color: #D93B3B; background: #FBE1E1; color: #6B1414; }
+.ob-skip { color: var(--muted); border-style: dashed; }

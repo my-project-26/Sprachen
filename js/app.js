@@ -10,6 +10,7 @@ import * as cloud from "./cloud.js";
 import { listenView, stopListening } from "./listen.js";
 import { practiceView, micBlock, bindMic } from "./practice.js";
 import { chatView } from "./chat.js";
+import { needsOnboarding, onboardingView } from "./onboarding.js";
 import { LANGS, READY, L, checkAnswer } from "./langs.js";
 
 const $app = document.getElementById("app");
@@ -153,6 +154,10 @@ function render() {
   tts.stop();
   document.getElementById("toast").classList.remove("show");
   document.querySelectorAll(".sheet-backdrop, .word-pop").forEach((x) => x.remove());
+  if (needsOnboarding()) {
+    document.body.dataset.view = "onboarding";
+    return onboardingView($app, () => ((location.hash = "#/"), render()));
+  }
   const [name, ...rest] = location.hash.replace(/^#\/?/, "").split("/");
   const arg = rest.length ? decodeURIComponent(rest.join("/")) : undefined;
   const view = routes[name] || home;
@@ -1668,7 +1673,7 @@ function settingsView() {
     <h2>Test-Funktionen</h2>
     <label class="check"><input type="checkbox" id="s-chatv2" ${s.chatV2 !== false ? "checked" : ""}> Neues Gespräch (Test): Antwortvorschläge, „Sag es auf Deutsch“, Ziel und Auswertung</label>
     <p class="small muted">Ausschalten = das bisherige Gespräch.</p>
-    <p class="small muted">App-Version 50</p>
+    <p class="small muted">App-Version 51</p>
   </section>
   <section class="card">
     <h2>Stimme</h2>

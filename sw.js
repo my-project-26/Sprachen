@@ -1,6 +1,6 @@
 // Service Worker: macht die App offline nutzbar (Lernen geht ohne Internet,
 // nur Geschichten/KI brauchen eine Verbindung).
-const CACHE = "wortwerk-v50";
+const CACHE = "wortwerk-v51";
 const ASSETS = [
   "./",
   "index.html",
@@ -12,6 +12,7 @@ const ASSETS = [
   "js/listen.js",
   "js/practice.js",
   "js/chat.js",
+  "js/onboarding.js",
   "js/firebase-config.js",
   "js/store.js",
   "js/fsrs.js",
